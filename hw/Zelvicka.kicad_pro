@@ -244,7 +244,9 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "RKL-MotorDrivers"
+    ]
   },
   "meta": {
     "filename": "Zelvicka.kicad_pro",
