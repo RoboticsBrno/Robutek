@@ -678,7 +678,7 @@
     )
   )
 
-  (symbol (lib_id "Device:LED") (at 113.03 93.98 0) (unit 1)
+  (symbol (lib_id "Device:LED") (at 113.03 93.98 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4d2608f9-6fea-4d10-8f6d-a36d41df9481)
     (property "Reference" "D3" (at 113.03 88.9 0)
@@ -843,7 +843,7 @@
     )
   )
 
-  (symbol (lib_id "Device:LED") (at 113.03 99.06 0) (unit 1)
+  (symbol (lib_id "Device:LED") (at 113.03 99.06 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8db7963e-1cc7-424e-ab8f-e3cb35d11ae4)
     (property "Reference" "D7" (at 113.03 101.6 0)

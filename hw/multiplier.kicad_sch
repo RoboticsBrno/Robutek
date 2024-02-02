@@ -494,6 +494,11 @@
     (stroke (width 0) (type default))
     (uuid 31dec325-b8bc-4947-9e46-27a7b36108fe)
   )
+  (polyline (pts (xy 107.95 111.76) (xy 107.95 113.03))
+    (stroke (width 0) (type default))
+    (uuid 3292b775-53f6-465f-86a8-ec7c5c1c7853)
+  )
+
   (wire (pts (xy 63.5 45.72) (xy 63.5 83.82))
     (stroke (width 0) (type default))
     (uuid 333d84d7-05d7-4e89-b7e4-5bfcbdbcfc06)
@@ -546,6 +551,11 @@
     (stroke (width 0) (type default))
     (uuid 50de3449-a3a3-4b2f-be40-bb1f204fe3a8)
   )
+  (polyline (pts (xy 107.95 118.11) (xy 107.95 119.38))
+    (stroke (width 0) (type default))
+    (uuid 510d9074-c545-4906-9e2e-91aa28ef38da)
+  )
+
   (wire (pts (xy 101.6 93.98) (xy 101.6 88.9))
     (stroke (width 0) (type default))
     (uuid 5944d57e-8657-4ef2-bee7-fbc0c0fcdfa6)
@@ -554,6 +564,11 @@
     (stroke (width 0) (type default))
     (uuid 5a18c093-10d9-4d6b-9084-b7380e46c394)
   )
+  (polyline (pts (xy 106.68 113.03) (xy 106.68 118.11))
+    (stroke (width 0) (type default))
+    (uuid 5a86d4e8-c6e5-4fa9-ae70-9c277183bcd7)
+  )
+
   (wire (pts (xy 88.9 99.06) (xy 88.9 101.6))
     (stroke (width 0) (type default))
     (uuid 5c28ebde-b86f-45c9-869a-4aa6450e75a6)
@@ -574,6 +589,11 @@
     (stroke (width 0) (type default))
     (uuid 705b906b-75f2-4e44-a594-854688cf83d0)
   )
+  (polyline (pts (xy 109.22 113.03) (xy 106.68 113.03))
+    (stroke (width 0) (type default))
+    (uuid 84afa8e6-d856-4af2-ac45-c36bbc9d44c5)
+  )
+
   (wire (pts (xy 175.26 83.82) (xy 196.85 83.82))
     (stroke (width 0) (type default))
     (uuid 84e7d701-2852-4245-87fb-c8e4bf9a9d62)
@@ -611,6 +631,10 @@
     (stroke (width 1) (type default))
     (uuid a05178ad-80fb-43e1-84da-4da1c903c124)
   )
+  (polyline (pts (xy 106.68 118.11) (xy 109.22 118.11))
+    (stroke (width 0) (type default))
+    (uuid a062bd91-1d70-4150-96e7-de37295b666d)
+  )
 
   (wire (pts (xy 133.35 48.26) (xy 142.24 48.26))
     (stroke (width 0) (type default))
@@ -624,6 +648,11 @@
     (stroke (width 0) (type default))
     (uuid a7d8fb82-1bc7-4e74-9009-f437eb5a9cd3)
   )
+  (polyline (pts (xy 106.68 118.11) (xy 107.95 118.11))
+    (stroke (width 0) (type default))
+    (uuid aa9ffc71-124f-4f61-9991-3245d9f6a873)
+  )
+
   (wire (pts (xy 63.5 83.82) (xy 63.5 101.6))
     (stroke (width 0) (type default))
     (uuid ac039fd3-5f56-43db-8205-7280023dafd4)
@@ -667,6 +696,10 @@
   (polyline (pts (xy 50.8 73.66) (xy 50.8 138.43))
     (stroke (width 1) (type default))
     (uuid c814bff5-713c-43d5-8396-2e88f05aee8f)
+  )
+  (polyline (pts (xy 109.22 118.11) (xy 109.22 113.03))
+    (stroke (width 0) (type default))
+    (uuid d2a05bfe-3c9e-4827-8703-153df9f5e0ea)
   )
 
   (wire (pts (xy 162.56 99.06) (xy 162.56 93.98))
@@ -753,6 +786,10 @@
   (text "5V Step-UP:" (at 217.17 83.82 0)
     (effects (font (size 2.5 2.5) bold) (justify left bottom))
     (uuid a185bc10-8306-4397-beb7-ba2cda5bde42)
+  )
+  (text "Us Pull-down \non ESP " (at 106.68 118.11 0)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid a21d8700-9868-4313-998a-bc3e492de419)
   )
   (text "3V3 LDO" (at 217.17 46.99 0)
     (effects (font (size 2.5 2.5) bold) (justify left bottom))
@@ -889,8 +926,8 @@
     (pin "2" (uuid 275d3f50-365a-4dbc-b48f-f7066e19ff98))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
-          (reference "C22") (unit 1)
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
+          (reference "C4") (unit 1)
         )
       )
       (project "ZakladniElektronika"
@@ -931,8 +968,8 @@
     (pin "2" (uuid d240ee3d-5e9e-46ff-8cd5-bc19eaf6f4ba))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
-          (reference "R29") (unit 1)
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
+          (reference "R32") (unit 1)
         )
       )
       (project "ZakladniElektronika"
@@ -976,8 +1013,8 @@
     (pin "2" (uuid c05467c2-19db-4a40-b3ed-ec929528093c))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
-          (reference "C28") (unit 1)
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
+          (reference "C22") (unit 1)
         )
       )
       (project "ZakladniElektronika"
@@ -1021,8 +1058,8 @@
     (pin "2" (uuid 2ca0e433-eda4-44a6-a276-dcfe31739759))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
-          (reference "C29") (unit 1)
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
+          (reference "C10") (unit 1)
         )
       )
       (project "ZakladniElektronika"
@@ -1066,8 +1103,8 @@
     (pin "2" (uuid 152da6fb-fc25-4d04-b144-51b28dc1ac64))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
-          (reference "C20") (unit 1)
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
+          (reference "C2") (unit 1)
         )
       )
       (project "ZakladniElektronika"
@@ -1115,8 +1152,8 @@
     (pin "9" (uuid 7590f63a-03e0-48c1-8970-32e706dbc0cc))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
-          (reference "U8") (unit 1)
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
+          (reference "U2") (unit 1)
         )
       )
       (project "ZakladniElektronika"
@@ -1155,8 +1192,8 @@
     (pin "2" (uuid 000ed3f7-418d-4451-9ea9-ebf7ac19d2b1))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
-          (reference "C24") (unit 1)
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
+          (reference "C21") (unit 1)
         )
       )
       (project "ZakladniElektronika"
@@ -1200,8 +1237,8 @@
     (pin "2" (uuid cb3d41b5-66ba-4309-a737-1a66fb060447))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
-          (reference "C27") (unit 1)
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
+          (reference "C9") (unit 1)
         )
       )
       (project "ZakladniElektronika"
@@ -1262,8 +1299,8 @@
     (pin "12" (uuid 11d85189-50dc-4577-b1bc-92149549eaaf))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
-          (reference "U9") (unit 1)
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
+          (reference "U7") (unit 1)
         )
       )
       (project "ZakladniElektronika"
@@ -1299,8 +1336,8 @@
     (pin "2" (uuid fb00146b-924d-4c7f-8cc3-2990373ba8ca))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
-          (reference "L2") (unit 1)
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
+          (reference "L1") (unit 1)
         )
       )
       (project "ZakladniElektronika"
@@ -1341,7 +1378,7 @@
     (pin "2" (uuid a3beafda-e369-41b2-96ef-ee26e113ae64))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
           (reference "R28") (unit 1)
         )
       )
@@ -1383,8 +1420,8 @@
     (pin "2" (uuid dcf73ab0-5d1e-4b6e-a838-67204f4971dd))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
-          (reference "R31") (unit 1)
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
+          (reference "R27") (unit 1)
         )
       )
       (project "ZakladniElektronika"
@@ -1431,8 +1468,8 @@
     (pin "2" (uuid 517b6969-5420-45ef-9dfe-ada4dfb6fbae))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
-          (reference "C23") (unit 1)
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
+          (reference "C7") (unit 1)
         )
       )
       (project "ZakladniElektronika"
@@ -1473,7 +1510,7 @@
     (pin "2" (uuid eceed200-b777-4260-8dd8-45f8d39e6c7b))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
           (reference "R26") (unit 1)
         )
       )
@@ -1518,7 +1555,7 @@
     (pin "2" (uuid efe44f5c-e814-4b13-a0ef-6eb0986c3282))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
           (reference "C18") (unit 1)
         )
       )
@@ -1563,8 +1600,8 @@
     (pin "2" (uuid 0a444b43-8fe8-40f1-8475-8d66597fa1c3))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
-          (reference "C25") (unit 1)
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
+          (reference "C3") (unit 1)
         )
       )
       (project "ZakladniElektronika"
@@ -1608,8 +1645,8 @@
     (pin "2" (uuid 873539aa-0288-4dc9-9a65-295fde3ff348))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
-          (reference "C31") (unit 1)
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
+          (reference "C24") (unit 1)
         )
       )
       (project "ZakladniElektronika"
@@ -1650,8 +1687,8 @@
     (pin "2" (uuid 0d9d1e7b-64b2-4f62-9391-2bc89f81e9a9))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
-          (reference "C30") (unit 1)
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
+          (reference "C23") (unit 1)
         )
       )
       (project "ZakladniElektronika"
@@ -1695,7 +1732,7 @@
     (pin "2" (uuid 0435d326-80de-4980-9ddd-ef04672e781e))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
           (reference "C19") (unit 1)
         )
       )
@@ -1737,8 +1774,8 @@
     (pin "2" (uuid 93b70630-99e8-4448-a756-698c3f35ce89))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
-          (reference "R32") (unit 1)
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
+          (reference "R29") (unit 1)
         )
       )
       (project "ZakladniElektronika"
@@ -1782,8 +1819,8 @@
     (pin "2" (uuid ecb56b82-1136-4700-a98b-6ec473590df2))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
-          (reference "C26") (unit 1)
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
+          (reference "C8") (unit 1)
         )
       )
       (project "ZakladniElektronika"
@@ -1827,8 +1864,8 @@
     (pin "2" (uuid 19199e9e-6c0a-43bb-a7a2-6caf7dc54fdc))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
-          (reference "C21") (unit 1)
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
+          (reference "C20") (unit 1)
         )
       )
       (project "ZakladniElektronika"
@@ -1862,7 +1899,7 @@
     (pin "1" (uuid 3850a1f9-1230-4700-a616-c438d2bacd31))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
           (reference "#FLG02") (unit 1)
         )
       )
@@ -1872,48 +1909,6 @@
         )
         (path "/99cd3e15-4eb6-4cbb-8726-789aedd3df15/c3b70d9b-0dcb-4344-9507-13ff5b4c000e/aae02708-da26-44dd-a602-660fbe003309/3940fef8-969a-4db4-8b0b-434b96d98566"
           (reference "#FLG09") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 107.95 115.57 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid e8848661-c7f0-461f-9fed-f00531944e91)
-    (property "Reference" "R27" (at 105.41 114.3 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "200k" (at 105.41 116.84 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 109.728 115.57 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 107.95 115.57 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C25764" (at 107.95 115.57 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Basic/Extended" "B" (at 107.95 115.57 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0a610981-51bc-4bdb-8849-8d22c8fa4273))
-    (pin "2" (uuid dfcafafb-2861-4578-a57f-7f37c0fa1d1c))
-    (instances
-      (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
-          (reference "R27") (unit 1)
-        )
-      )
-      (project "ZakladniElektronika"
-        (path "/99cd3e15-4eb6-4cbb-8726-789aedd3df15/c3b70d9b-0dcb-4344-9507-13ff5b4c000e/aae02708-da26-44dd-a602-660fbe003309/3940fef8-969a-4db4-8b0b-434b96d98566"
-          (reference "R41") (unit 1)
-        )
-      )
-      (project "RB3203"
-        (path "/dc7f8a41-3453-4df6-94dc-e94521e89591/9c917b4f-c6c7-4191-9aaa-f982c264da50/8773969d-b2cc-42c4-9a6d-35c6f165cf16/da5be375-027b-4f55-96f0-042c23671c4c"
-          (reference "U?") (unit 1)
         )
       )
     )
@@ -1944,8 +1939,8 @@
     (pin "2" (uuid 70c0361c-6e6b-4e39-966d-41ab80b31feb))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/c6bf567c-a6c5-4076-b3cd-c82569307b79"
-          (reference "R30") (unit 1)
+        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
+          (reference "R31") (unit 1)
         )
       )
       (project "ZakladniElektronika"
