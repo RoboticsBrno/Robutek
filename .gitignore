@@ -29,3 +29,6 @@ fp-info-cache
 *.csv
 hw/#auto_saved_files#
 hw/~Zelvicka.kicad_sch.lck
+hw/~Zelvicka.kicad_pcb.lck
+hw/~_autosave-Zelvicka.kicad_pcb.lck
+
