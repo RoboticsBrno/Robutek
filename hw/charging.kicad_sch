@@ -1044,7 +1044,7 @@
     (property "Reference" "U17" (at 152.4 58.42 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "~" (at 152.4 60.96 0)
+    (property "Value" "MAX77757" (at 152.4 60.96 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "RKL-SpecialModules:IC_MAX77757JEFG435_" (at 152.4 60.96 0)
