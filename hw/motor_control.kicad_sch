@@ -1009,9 +1009,9 @@
     (property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png" (at 96.52 110.236 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f282b316-d5d9-486d-9977-885c59786a68))
-    (pin "2" (uuid 9d28fe29-5851-4a36-830a-cb0634970cc6))
-    (pin "3" (uuid 344c34b6-3fc1-4e3f-b405-86a72b1defac))
+    (pin "1" (uuid 79a61edc-3082-407e-a5fb-2ce008edf878))
+    (pin "2" (uuid e3d88563-d66a-4878-a525-859145a31584))
+    (pin "3" (uuid 025b60ad-8634-458b-a139-f054313c1da3))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/30180d4c-33b6-4015-8bb1-ca093d0ad03d"
@@ -1149,9 +1149,9 @@
     (property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png" (at 96.52 81.026 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f15b6f48-dd4c-4f64-ad19-b3feaea0a51f))
-    (pin "2" (uuid c085923e-0f6f-4944-b048-aa20c3c5cce5))
-    (pin "3" (uuid 2b44f629-df73-4d42-b982-b0e1d582c439))
+    (pin "1" (uuid dd7bc7a5-fb3d-45f4-bad7-95c00227a9bc))
+    (pin "2" (uuid e3d832fb-1d98-494e-ba47-efcebc9d07c5))
+    (pin "3" (uuid 3fbe62e8-ba41-492c-ac56-54f3c35f43ce))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/30180d4c-33b6-4015-8bb1-ca093d0ad03d"
