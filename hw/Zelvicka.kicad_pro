@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 0.1,
-          "width": 0.1
+          "drill": 0.3,
+          "height": 0.6,
+          "width": 0.6
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -45,7 +45,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.15
+          "min_clearance": 0.12
         }
       },
       "diff_pair_dimensions": [
@@ -418,7 +418,20 @@
   "libraries": {
     "pinned_footprint_libs": [],
     "pinned_symbol_libs": [
-      "RKL-MotorDrivers"
+      "RKL-MotorDrivers",
+      "RKL-BatteryManager",
+      "RKL-BusCnverters",
+      "RKL-WirelessModules",
+      "RKL-LDO",
+      "RKL-ESP",
+      "RKL-STM",
+      "RKL-MEMS",
+      "RKL-Logos",
+      "RKL-DiscreteLogic",
+      "RKL-DcDcConverters",
+      "RKL-MOSFET",
+      "RKL-Chargers",
+      "RKL-Uncategorized"
     ]
   },
   "meta": {
