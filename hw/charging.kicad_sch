@@ -1050,7 +1050,7 @@
     (property "Footprint" "RKL-SpecialModules:IC_MAX77757JEFG435_" (at 152.4 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 152.4 60.96 0)
+    (property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/max77757.pdf" (at 152.4 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid ffd2fc7d-60a9-4912-8ffe-7e5d2ec580b2))
