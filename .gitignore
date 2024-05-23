@@ -32,3 +32,5 @@ hw/~Zelvicka.kicad_sch.lck
 hw/~Zelvicka.kicad_pcb.lck
 hw/~_autosave-Zelvicka.kicad_pcb.lck
 
+hw/jlcdata/gerber
+hw/jlcdata/gerbers.zip
