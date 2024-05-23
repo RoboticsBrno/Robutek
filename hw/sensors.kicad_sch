@@ -2347,10 +2347,10 @@
     (property "LCSC" "C81632" (at 132.08 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 487c5f6d-eb68-4e66-8519-5d5958833fb9))
-    (pin "2" (uuid 23d7d089-eb99-4947-8877-d0b603edfea7))
-    (pin "3" (uuid fd818f97-e5f0-4cd9-819e-4c57e31f539a))
-    (pin "4" (uuid fed7c867-e10a-4513-a5be-3fbe294551af))
+    (pin "1" (uuid c6adcc7c-5a1e-4471-96a7-edcfdf99795d))
+    (pin "2" (uuid e6a9179c-887d-4581-aaf3-f9da14ec674d))
+    (pin "3" (uuid b5cef61b-bbf3-4612-b053-9a6f4a914498))
+    (pin "4" (uuid 8c420c83-3952-4e3b-9d7a-fce8bc76b718))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -2381,10 +2381,10 @@
     (property "LCSC" "C81632" (at 246.38 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 18762ee3-89cc-4d21-8473-d23abb88e431))
-    (pin "2" (uuid c8135102-dceb-4cd8-af8f-c7a71a36a2ed))
-    (pin "3" (uuid c3059e9c-15d6-486f-991c-9108e628eb17))
-    (pin "4" (uuid 15b7d739-cadc-4a1b-be10-348c8d687a89))
+    (pin "1" (uuid c9bc34cb-0630-48ab-ae61-ca298667563b))
+    (pin "2" (uuid 791eef73-0695-47eb-9a2b-5e10566202e1))
+    (pin "3" (uuid da3bfec1-0fd0-4502-956a-287a7068fe7c))
+    (pin "4" (uuid e1c676e2-48be-41dd-93e3-149744a735bb))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -2415,8 +2415,8 @@
     (property "LCSC" "C25741" (at 73.66 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7fa4a374-03c1-4171-98b6-772222d93c4b))
-    (pin "2" (uuid 8449f2ca-a721-400a-aac1-5e32aaaef0fd))
+    (pin "1" (uuid b5511ddc-4d82-41d9-80a7-1796c7613b19))
+    (pin "2" (uuid b1a9aef7-3883-4215-91f0-de461b1d8ab7))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e"
@@ -2447,29 +2447,29 @@
     (property "LCSC" "C3001682" (at 96.52 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 419a0eb8-9c39-4e48-88c2-07c442c794be))
-    (pin "10" (uuid b79aa71d-dd25-42d9-aa3d-4cd7f9a2031d))
-    (pin "11" (uuid c82f4906-55ba-46c6-a8d7-595a94668533))
-    (pin "12" (uuid be6a804e-2fb7-4c83-a525-bb6ac9a2d315))
-    (pin "13" (uuid c7a51507-a051-4be9-93ff-406d8b39f034))
-    (pin "14" (uuid 49d66c68-64d9-4a2d-a10f-77abc36d1480))
-    (pin "15" (uuid 2987df81-ec6d-4b33-a483-89034b22e02b))
-    (pin "16" (uuid 7128b742-d04a-46ed-9ce1-c2d490f9f122))
-    (pin "17" (uuid 77b5ee5e-abb7-4386-a861-c2caea0f6152))
-    (pin "18" (uuid ee6ce5f0-7c5c-41c3-9424-45e65f47726b))
-    (pin "19" (uuid e5948263-885f-47dc-a36d-13e7f8304c6e))
-    (pin "2" (uuid 244e41b2-eda2-4b0c-b96f-f62450059855))
-    (pin "20" (uuid 68625b5e-1a29-4b9c-bc6d-7f855508b650))
-    (pin "21" (uuid b3168727-925d-43b7-984b-1375ce0b11ec))
-    (pin "22" (uuid e6016094-d561-4901-a70e-65f933d2f59c))
-    (pin "23" (uuid 3c05c015-245a-462f-b2e4-9c304bad101b))
-    (pin "3" (uuid c0296249-cee3-418a-9d00-36e82dffe63a))
-    (pin "4" (uuid 2c6be251-143b-4b7c-ab58-9e2d2bd7bf4d))
-    (pin "5" (uuid ae792d5c-fb49-4394-b23f-c7747c59a508))
-    (pin "6" (uuid 3acd8da2-9d86-4310-8d14-e07a90009021))
-    (pin "7" (uuid 66fd5180-d4ee-40aa-8017-fa3b0cb559b2))
-    (pin "8" (uuid 40976172-8b71-41b7-b7c1-d66a468b3d88))
-    (pin "9" (uuid b9daf3ce-c7a7-4b11-9447-6da7f837fdc7))
+    (pin "1" (uuid e65171a1-3173-4758-9295-da3e122f1595))
+    (pin "10" (uuid 8ea6add8-129c-4942-88c9-e0129968e1aa))
+    (pin "11" (uuid a1ad3f8a-c695-46d6-8a87-f19c5bf0a138))
+    (pin "12" (uuid a025f725-d0e4-4b46-9d11-34994e977989))
+    (pin "13" (uuid fadce119-c3ef-4725-a3c5-144b8130c0e5))
+    (pin "14" (uuid 3506b7b0-e536-4c87-9d8b-4c681c1da810))
+    (pin "15" (uuid 085c680d-d283-4638-9bd6-28a738b8229a))
+    (pin "16" (uuid 4a086730-4fd1-491c-8551-15a53fdf7794))
+    (pin "17" (uuid d82d933c-0df7-424a-90f2-9f62747798e8))
+    (pin "18" (uuid db968de5-c852-4c0c-b0a7-8f7c16d2a9aa))
+    (pin "19" (uuid 8b1dbea0-26b6-442d-b05b-2d23e9f4c9e8))
+    (pin "2" (uuid 4284ff5d-a1e5-4a25-9228-65e0e223bd1b))
+    (pin "20" (uuid afbcca93-32f2-4b63-a627-bb98149928f0))
+    (pin "21" (uuid 99fb755e-ad7f-4dbd-8874-229591c477c2))
+    (pin "22" (uuid 7eb435da-3ba5-4cb5-b5ee-ab2153e168e5))
+    (pin "23" (uuid 50308fee-5837-4a4a-833f-689d6fd95caa))
+    (pin "3" (uuid a0be47fb-7943-4ad4-8412-0869f3318a08))
+    (pin "4" (uuid 7131c150-3673-40ca-900b-bbb07c1dbf4a))
+    (pin "5" (uuid 2000d3e8-dbea-4b48-8ea7-accb36f5e1b7))
+    (pin "6" (uuid c0ee2e7c-dbdb-472f-bda4-0dfc74278a28))
+    (pin "7" (uuid 856cb770-d2d6-45e5-bc82-cb2598be312e))
+    (pin "8" (uuid 5649afd2-976e-4bf6-9e96-a9172c13fd3e))
+    (pin "9" (uuid 86b8d318-bb7d-4d41-ab7c-75d70c1fd894))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/75e5fa41-7632-4cae-90f1-8adc7193968e"
@@ -2503,10 +2503,10 @@
     (property "LCSC" "C81632" (at 208.28 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d8ab99e9-2cf9-418d-acba-c0eda7c7cbf5))
-    (pin "2" (uuid 44760b1a-3714-4aa7-87a3-bd34f606a4d0))
-    (pin "3" (uuid 6765688d-5f57-4fcb-adb8-930014fa5463))
-    (pin "4" (uuid 5615a1a3-31c4-4424-ae64-c11d5192282b))
+    (pin "1" (uuid e6e46de9-6c27-429c-8b0f-460f58afebd1))
+    (pin "2" (uuid 76d89f42-45f6-4ce9-938a-ff222640a073))
+    (pin "3" (uuid 4933fb4d-44d8-4970-9c20-3cda6b6309b3))
+    (pin "4" (uuid d934eb0b-62ae-4ff0-aa20-e4deb4ac1b08))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -2546,9 +2546,12 @@
     (property "Basic/Extended" "E" (at 78.74 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9ad90d74-aefe-4bb2-a89d-900ee4050aa6))
-    (pin "2" (uuid e1c21778-e219-4aab-a31d-04fdf8096a9e))
-    (pin "3" (uuid 1cfe6645-5e73-434f-ac04-4aa1a825c2e9))
+    (property "JLCPCB_CORRECTION" "0;0;180" (at 78.74 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 9d1b9b94-03fa-4b16-be60-4b484a9edc20))
+    (pin "2" (uuid 6b6d8a90-4519-413e-b694-927e2446b9f1))
+    (pin "3" (uuid 18c7b3cc-a6b0-414d-842b-69670495f4a6))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e"
@@ -2582,10 +2585,10 @@
     (property "LCSC" "C81632" (at 132.08 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bb6edf7e-b4ac-410d-bbd5-6633b8022ba6))
-    (pin "2" (uuid eb2bacb2-0f00-4ce2-ad8a-5a02870cb3d5))
-    (pin "3" (uuid ee8d1d7d-cb61-4ce9-b6f0-4da691695010))
-    (pin "4" (uuid 789859fa-6e51-4237-9f37-81a6f420ce45))
+    (pin "1" (uuid abfd661b-724d-4e94-9fbf-fc51e819237f))
+    (pin "2" (uuid 8d200f4c-d58e-4241-8197-257e6a075e0f))
+    (pin "3" (uuid ae92d9dd-0aea-424e-8da8-c94a7f874ac6))
+    (pin "4" (uuid 35ae11b9-0136-422e-b0cf-855361890a2b))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -2616,8 +2619,8 @@
     (property "Basic/Extended" "B" (at 160.02 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ed9f9a4e-473b-4a3b-8ea9-ee33659e5cd8))
-    (pin "2" (uuid a6f83e6e-4e99-4b55-8cee-a37343fc0651))
+    (pin "1" (uuid 0b440625-890b-423c-94a8-9ba673284b8a))
+    (pin "2" (uuid db908a70-1809-4da0-b134-2a7dfd9f841a))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -2648,8 +2651,8 @@
     (property "Basic/Extended" "B" (at 69.85 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 566dcaed-bfae-4bd6-b7d4-07e1423d4977))
-    (pin "2" (uuid 8cb25a17-9868-46bf-8f76-04d05295503b))
+    (pin "1" (uuid 96917b0d-34ac-42f3-b8dc-219e38c5d926))
+    (pin "2" (uuid 9ae697fe-c485-453d-b558-c99ef5a22f9f))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -2685,8 +2688,8 @@
     (property "Basic/Extended" "B" (at 100.33 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f4b8d35b-4fd4-4653-ace4-0ef80f50ed5b))
-    (pin "2" (uuid cbbac383-e943-45a1-a26b-2484d1269a70))
+    (pin "1" (uuid 7a8f2dfd-9b54-4b53-92d4-104162e5f909))
+    (pin "2" (uuid 34aa42f7-0273-4a89-a7e0-3cdfcd4029e2))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -2722,8 +2725,8 @@
     (property "LCSC" "C25900" (at 218.44 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 12064460-7c15-4efd-accc-d666b931e9eb))
-    (pin "2" (uuid 681a4361-0ff3-400c-a899-716d1319e0ce))
+    (pin "1" (uuid 1f97d860-8962-4767-93af-bc20b88aa94d))
+    (pin "2" (uuid 447f425a-c5cf-4db3-b302-a857ab618f42))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/cf5a8cac-e720-4f6c-b6d8-8f40c3604d15"
@@ -2757,8 +2760,8 @@
     (property "Basic/Extended" "B" (at 69.85 168.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 871fde90-d198-4dd0-bab0-b5163cfe4308))
-    (pin "2" (uuid 61e11f9a-3723-45fd-b49d-a6ab91af82aa))
+    (pin "1" (uuid aa480fe3-6619-40ea-81b2-3c182d7a3b4b))
+    (pin "2" (uuid 5970ffa7-a7a1-47b8-a628-501617528d75))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -2794,18 +2797,18 @@
     (property "Basic/Extended" "E" (at 83.82 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid cfb0d3a5-a8c1-4771-ba41-70914366f642))
-    (pin "10" (uuid 2e228ea3-a350-4d11-a360-d3e15abea1dc))
-    (pin "11" (uuid b0192875-eef8-415b-bd3a-058f9bd7b563))
-    (pin "12" (uuid 8b9f6591-6627-41d3-92df-cdad1ced32aa))
-    (pin "2" (uuid 844a5b88-eea9-4540-b6f9-18a669ef629d))
-    (pin "3" (uuid 20e01372-2345-4395-9d6b-79a30a56855e))
-    (pin "4" (uuid d8f54272-5ba2-44e1-9739-59c0be23e27f))
-    (pin "5" (uuid c23acdb2-396c-41e9-8a51-bbede3adb93e))
-    (pin "6" (uuid a964a6a3-1dd7-452a-8a60-75cb263c484c))
-    (pin "7" (uuid 8cde2c6b-fa9a-42ab-ab15-572cf208642c))
-    (pin "8" (uuid 9c224a9e-e994-41e9-adb9-dd2504acbdd8))
-    (pin "9" (uuid 17b017c7-9edf-4c58-8f86-ffd468c3fc01))
+    (pin "1" (uuid 39ad3a47-d8bf-4ba6-809e-697dd4789b73))
+    (pin "10" (uuid f98fa39e-37b2-4512-9007-695c12e2f10c))
+    (pin "11" (uuid 104f8986-46c4-491a-9882-e8c950809959))
+    (pin "12" (uuid 620a62db-203f-43ff-b441-c61146eb4db4))
+    (pin "2" (uuid 4c888290-60a7-4e8b-8360-e8d9c2867ea3))
+    (pin "3" (uuid ddf68d36-3c81-4a7c-b1d6-6f4fb14516e3))
+    (pin "4" (uuid d330781d-f108-41ac-9fca-2e78d884fcc6))
+    (pin "5" (uuid a461374b-7855-4867-991d-df19df9970ab))
+    (pin "6" (uuid fe546c44-ec76-41c3-bf9c-e6e4416b0b0b))
+    (pin "7" (uuid 3a74600a-5aba-4b82-9fba-239d62742dc1))
+    (pin "8" (uuid 556aec44-d1b4-4373-81dd-43833367efde))
+    (pin "9" (uuid f3c383ea-7183-4b9d-a5b1-a58831f7b6e3))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -2841,8 +2844,8 @@
     (property "LCSC" "C25900" (at 218.44 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9aca3970-32b5-4bdb-b8a8-eb01afd792e6))
-    (pin "2" (uuid a246e740-d157-4879-98a8-fefb45268540))
+    (pin "1" (uuid 08459f78-9e06-4092-b2e7-c9b5255addf1))
+    (pin "2" (uuid 18388361-9a49-4373-9558-2a5415a61725))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/cf5a8cac-e720-4f6c-b6d8-8f40c3604d15"
@@ -2873,14 +2876,14 @@
     (property "LCSC" "C2938482" (at 99.06 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid fa8d8682-78ab-473b-8f1e-29f06ada1a6e))
-    (pin "2" (uuid a55f812b-1f2f-49d5-8373-78ac860ebe07))
-    (pin "3" (uuid 4895c30b-9f18-47e2-9436-9212849c5e22))
-    (pin "4" (uuid 8c747ed2-f65b-490e-8ca2-b85c99d6d070))
-    (pin "5" (uuid eb0cad07-354a-45a1-bdb3-657cfd463edc))
-    (pin "6" (uuid 19268810-90da-44b0-8efc-2dbba2881d74))
-    (pin "7" (uuid f6fd72ca-3d87-46cc-9fb3-8242625bc1b8))
-    (pin "8" (uuid c2b7bb30-4e40-418d-81b4-7f3e5afd44e4))
+    (pin "1" (uuid d01a3f23-1fe1-47c4-a4f5-ae71dec558b1))
+    (pin "2" (uuid 660242cb-2225-40b8-a016-6045277fe962))
+    (pin "3" (uuid 6ceeb5db-4ab4-4a80-b4ab-b5741d17ced9))
+    (pin "4" (uuid 6dc53c31-c62d-4198-8013-e4bd54f29189))
+    (pin "5" (uuid 920fd131-77b6-4753-b1ce-2afa26091cb7))
+    (pin "6" (uuid d9d99c52-5af8-4095-a464-23299dc78b08))
+    (pin "7" (uuid 3192cb9b-22f3-4953-972e-aa5f23c4267e))
+    (pin "8" (uuid f8e5344e-6387-498f-82de-eb71844ef99d))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -2911,8 +2914,8 @@
     (property "Basic/Extended" "B" (at 100.33 171.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0fcfcdf2-8563-4ed7-8ccb-3c7694972142))
-    (pin "2" (uuid 58a0d000-eeb8-41bb-9483-edd9c7b3490c))
+    (pin "1" (uuid f2520c72-99c3-48c5-beb6-d0e8fd5a3d9b))
+    (pin "2" (uuid 4d5c42d4-7d21-4abd-a1c9-75fb45ed4326))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -2948,8 +2951,8 @@
     (property "Basic/Extended" "B" (at 100.33 176.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b9a90568-ea18-44dd-b484-8d6e17bf9f31))
-    (pin "2" (uuid 77aad562-3946-4b9d-95a8-e16ef34069ac))
+    (pin "1" (uuid 9cc7b715-d0a1-4efa-9a8d-a3a2d08fcf63))
+    (pin "2" (uuid 121ac460-e46f-47e0-b92c-2f25e9afb215))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -2985,8 +2988,8 @@
     (property "Basic/Extended" "B" (at 236.22 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ec2ae72d-8074-4356-b975-58874c06cb24))
-    (pin "2" (uuid 54ec058a-a89b-4c4c-b162-c91e0d713db3))
+    (pin "1" (uuid 398dc2cb-39ef-46d5-bdd7-7f43d36fc86d))
+    (pin "2" (uuid 22ac05e3-6d2d-4216-98c3-3ae0fded3172))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -3017,8 +3020,8 @@
     (property "LCSC" "C25900" (at 142.24 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid cc83aba4-fea3-47bf-8f10-bd08c181421f))
-    (pin "2" (uuid b49d6b62-368f-45f6-b12b-c71f4c7a796b))
+    (pin "1" (uuid 33513d94-0ecb-4d47-bde4-7a0e272a9202))
+    (pin "2" (uuid 4538b352-0246-4734-9c27-d8f773f7824a))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/cf5a8cac-e720-4f6c-b6d8-8f40c3604d15"
@@ -3052,10 +3055,10 @@
     (property "LCSC" "C81632" (at 170.18 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid cd9dbbed-56c8-48cb-9011-b0e24401b20c))
-    (pin "2" (uuid d3ec5187-7ac1-432b-ab60-2ff0e115f280))
-    (pin "3" (uuid 28fd300c-4f68-49d8-8a6b-ecd1b72c47ff))
-    (pin "4" (uuid 9fd64d90-061a-4730-a71f-f7f35523d9a8))
+    (pin "1" (uuid 63444f48-6f0d-458b-b712-b82d9b6c8ee0))
+    (pin "2" (uuid fbb558c2-2798-4901-9731-54b6885cbd4f))
+    (pin "3" (uuid c7d8e493-fe64-48d9-9c37-e1eca1d25a70))
+    (pin "4" (uuid 43cb236c-367f-4259-9eea-e5b900c9b5ac))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -3086,10 +3089,10 @@
     (property "LCSC" "C81632" (at 170.18 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 542f9f30-b322-4cb2-a1e4-b1c74d99a269))
-    (pin "2" (uuid 17c899c5-fcb0-47f2-bb0a-1de98a468a74))
-    (pin "3" (uuid ed1fdac1-f231-472f-8bb8-82b69c201d7f))
-    (pin "4" (uuid 80a95594-ca66-417b-ba26-07d070921caf))
+    (pin "1" (uuid e3a65dfb-cfa1-42c0-8bbd-7d1ac16860c9))
+    (pin "2" (uuid de6e358d-2821-43ad-8f96-d282b154fade))
+    (pin "3" (uuid cc37171f-1e3a-4c7c-858b-62de5b9bfa0c))
+    (pin "4" (uuid 88e3faa7-9287-4167-983a-c596f0271f05))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -3120,10 +3123,10 @@
     (property "LCSC" "C81632" (at 246.38 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2e56b891-e5e8-488f-bc1f-08d47ad26c24))
-    (pin "2" (uuid 2e201b11-ad3a-4170-88fa-bb1b90359946))
-    (pin "3" (uuid 4eeee44e-b73b-4d30-841d-9c10d3a67ca9))
-    (pin "4" (uuid 2393651b-fddb-447f-8c9a-4dbe4f21f4ce))
+    (pin "1" (uuid 67b532d2-773b-413f-9369-e17786302cf1))
+    (pin "2" (uuid 10fb87b3-e6b5-4032-ac33-9a7fc3e02906))
+    (pin "3" (uuid 6e63b6d8-8c2c-424b-afdf-f5f30a4a57ee))
+    (pin "4" (uuid 432c814d-cb5c-442b-82a1-f66926dce1b5))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -3154,8 +3157,8 @@
     (property "LCSC" "C25900" (at 256.54 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3c626627-8d71-4e3b-aa90-310280f702db))
-    (pin "2" (uuid ee8a3302-39be-49f0-bb19-61bfa9dd2f7a))
+    (pin "1" (uuid 67a82e9e-cd66-48c2-ad24-faceceb725f9))
+    (pin "2" (uuid 80a1a15b-6cdb-444e-934e-d3e9439f6e05))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/cf5a8cac-e720-4f6c-b6d8-8f40c3604d15"
@@ -3189,8 +3192,8 @@
     (property "LCSC" "C25900" (at 256.54 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0f69d4f3-604a-4344-a39b-9264385fccd1))
-    (pin "2" (uuid 58d86fdb-f2da-4641-9543-b703c509e16c))
+    (pin "1" (uuid 62a75a22-9e65-414a-a9a6-7c98044bdf97))
+    (pin "2" (uuid c94b2bab-a5a7-42d9-98f4-a0a5c361bacc))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/cf5a8cac-e720-4f6c-b6d8-8f40c3604d15"
@@ -3221,14 +3224,14 @@
     (property "LCSC" "C2938482" (at 81.28 20.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d2c587ae-6f80-42c3-901e-5216e4f02483))
-    (pin "2" (uuid e8218080-d619-4d57-9b34-0249de418ab9))
-    (pin "3" (uuid 9028c55f-3704-4328-ad75-d3de0a8c2f91))
-    (pin "4" (uuid ee912383-59e5-4f5f-ae51-25f087f0a533))
-    (pin "5" (uuid 22e2ebaf-2a0b-4da0-8a7d-4dbb27553a63))
-    (pin "6" (uuid 14d1ac24-d05f-4486-90d6-2b766e24c2a3))
-    (pin "7" (uuid 83a03475-0348-4c5a-8147-0ef8f64e82d4))
-    (pin "8" (uuid 41a5bff9-c7f9-48a7-9e6a-5228ddd34742))
+    (pin "1" (uuid 04c289a7-a574-4231-aa0a-b92f2442a8f0))
+    (pin "2" (uuid b989c36a-a20e-4030-aa4c-525ad0647466))
+    (pin "3" (uuid 67aad279-8cef-483b-8631-9e6eff5cfc1e))
+    (pin "4" (uuid 71e67e77-b642-41ad-b429-99768d38fff6))
+    (pin "5" (uuid 6e7f9c58-c9ac-4cb0-abb5-00132d88ab6b))
+    (pin "6" (uuid 5c4a0619-d9d6-4803-a39a-55d23229f56c))
+    (pin "7" (uuid 5a22395b-4dc5-462f-8e5d-02eca648e89f))
+    (pin "8" (uuid 5b8822f1-5ae3-48fc-8165-3c441938812c))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -3259,8 +3262,8 @@
     (property "Basic/Extended" "B" (at 100.33 168.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 715355de-6bab-4d1a-b6bb-d62ea2e4cc0c))
-    (pin "2" (uuid 4f3236ba-c754-46f0-b4f2-5cfa00e02039))
+    (pin "1" (uuid 5016aff5-da25-4e90-a4b9-d73f63fbbb30))
+    (pin "2" (uuid 09991475-78e7-4704-8088-8dacfc8eb17f))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -3296,9 +3299,12 @@
     (property "Basic/Extended" "E" (at 144.78 170.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8640a21c-eca2-4f9f-8c51-aa484a61fb6c))
-    (pin "2" (uuid 58dfb296-6433-43ff-ad19-48eea0571790))
-    (pin "3" (uuid 7a397589-c31b-456c-9629-20a52a59ce32))
+    (property "JLCPCB_CORRECTION" "0;2.54;90" (at 144.78 170.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 167760d1-9307-41a9-be21-a872ceceedb6))
+    (pin "2" (uuid f3351ac3-b5ce-4759-89d2-a2aecaa777b5))
+    (pin "3" (uuid b26e7fca-4413-4cc4-867c-e2bf439ba572))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -3334,10 +3340,10 @@
     (property "LCSC" "C81632" (at 208.28 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8ba10890-2a4c-44a9-a455-7cee4c52460e))
-    (pin "2" (uuid 420c6d6f-3864-4a72-b6a8-3af7a314b2ec))
-    (pin "3" (uuid de412fa4-f389-4dd3-9dd0-7bd1d7a02339))
-    (pin "4" (uuid 4f3bef8e-b0bf-49cf-8b07-526587a3465f))
+    (pin "1" (uuid 94846210-3b93-45a5-9e55-07b08031b165))
+    (pin "2" (uuid 5afb81d8-e88b-4e55-ba1e-55212804acb6))
+    (pin "3" (uuid f38bd96d-a267-4087-a507-92035e573d52))
+    (pin "4" (uuid 6d8cd5e0-50f3-4ae5-b70e-c68887a89370))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -3371,8 +3377,8 @@
     (property "info" "25V, X5R" (at 69.85 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6eee6e75-4dfd-43ce-968d-f10696c7c22b))
-    (pin "2" (uuid 3449f33d-2e77-4a43-b712-78ee4efa0d58))
+    (pin "1" (uuid 7d445f24-2af4-4924-86fd-9ad4837acf62))
+    (pin "2" (uuid 97f7c2fb-870d-4b65-b6be-70fb203100f5))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -3408,8 +3414,8 @@
     (property "Basic/Extended" "B" (at 69.85 171.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 93ef4b7f-f866-44be-905b-ef75b5d7e5e6))
-    (pin "2" (uuid c274ad6b-aef9-4cb4-a081-fe7bc99b895f))
+    (pin "1" (uuid f8bd0eed-dfa7-4634-be8c-ccafeb2f96cc))
+    (pin "2" (uuid 0143b588-1abf-49cd-817c-a31d934741db))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -3445,8 +3451,8 @@
     (property "Basic/Extended" "B" (at 121.92 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid cf680ae0-6e65-4f6a-b8b5-2f9e422fffaf))
-    (pin "2" (uuid 70dcb590-7c71-423d-b412-e9db2e306eb4))
+    (pin "1" (uuid 124b48e0-5089-4273-9e25-6f8a370915f5))
+    (pin "2" (uuid b5e82cca-0323-4fc8-be5a-06ae1dbf2a58))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -3477,8 +3483,8 @@
     (property "Basic/Extended" "B" (at 69.85 176.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e1bfabf3-7d38-49ac-8b6f-5dae498241d1))
-    (pin "2" (uuid d498dad5-556d-448b-a5de-c222607b43be))
+    (pin "1" (uuid dbee4f24-c930-4d60-9574-692cb85310b6))
+    (pin "2" (uuid c0d91970-a067-43fd-924b-7b03c0fadfce))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -3520,8 +3526,8 @@
     (property "info" "16V, X7R" (at 63.5 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bdb0f68a-b988-4397-b8df-e8db44f3086c))
-    (pin "2" (uuid 1c09f6e2-be21-4d10-a1de-b9f5dc1ddec5))
+    (pin "1" (uuid 2c2f2555-0ded-455e-acb0-dcfdb82fe6d1))
+    (pin "2" (uuid b6d5b4d3-25e3-4b39-bd9a-9c2ce7676e89))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/75e5fa41-7632-4cae-90f1-8adc7193968e"
@@ -3573,8 +3579,8 @@
     (property "LCSC" "C25900" (at 180.34 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f92b72d9-c209-4619-a8e2-b789019b1d15))
-    (pin "2" (uuid 9d7d40af-2a67-4134-b843-afa1c5f499a8))
+    (pin "1" (uuid c2d9a91b-b566-48bd-a6d8-dc428eabe75a))
+    (pin "2" (uuid e05ab1b1-2ee7-496f-8e05-132b473cf5da))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/cf5a8cac-e720-4f6c-b6d8-8f40c3604d15"
@@ -3608,8 +3614,8 @@
     (property "LCSC" "C25900" (at 180.34 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 055c169a-5366-435e-80c4-dd4e29027118))
-    (pin "2" (uuid 34f7c3d1-1b26-4fe6-a97b-4c820d51627c))
+    (pin "1" (uuid f555374d-1ffb-48bd-9f66-09aab621cb98))
+    (pin "2" (uuid ac8c1e86-c508-4516-86b3-78d4b060e01a))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/cf5a8cac-e720-4f6c-b6d8-8f40c3604d15"
@@ -3643,8 +3649,8 @@
     (property "Basic/Extended" "B" (at 198.12 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a1671346-1723-44b2-9709-2219aaf35936))
-    (pin "2" (uuid 96fbc7b3-172a-449e-aef0-9591093203db))
+    (pin "1" (uuid 57ea4415-bdd6-4abe-b9c0-b6aa478a20b0))
+    (pin "2" (uuid ece12723-d300-4e6d-960a-22c660a6b654))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -3675,8 +3681,8 @@
     (property "LCSC" "C25900" (at 142.24 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 37755fbf-7c38-49e2-b343-4bf9dd5185bc))
-    (pin "2" (uuid 499100cf-75bb-4211-842f-f3350817b963))
+    (pin "1" (uuid 76b1c592-7b80-45f2-923c-18c4061f1b0a))
+    (pin "2" (uuid e07574e5-37b7-4896-ade1-3c278a16a7fe))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/cf5a8cac-e720-4f6c-b6d8-8f40c3604d15"
@@ -3713,8 +3719,8 @@
     (property "info" "25V, X5R" (at 100.33 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 430ba336-93bd-4144-8a3a-140b070954a8))
-    (pin "2" (uuid 89fe894b-3447-4c38-8ca1-7dedc5fe364a))
+    (pin "1" (uuid 524fbf0f-e56d-4914-b858-34bedd77ae31))
+    (pin "2" (uuid 3564233f-dcf3-4854-9728-61962c1941ed))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"

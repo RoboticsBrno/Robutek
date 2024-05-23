@@ -426,16 +426,22 @@
       )
     )
     (symbol "RKL-Uncategorized:WS2812B" (in_bom yes) (on_board yes)
-      (property "Reference" "U" (at 2.54 6.35 0)
-        (effects (font (size 1.27 1.27)) (justify left))
+      (property "Reference" "U9" (at 6.35 6.35 0)
+        (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "WS2812B" (at 2.54 3.81 0)
-        (effects (font (size 1.27 1.27)) (justify left))
+      (property "Value" "WS2812B" (at 6.35 3.81 0)
+        (effects (font (size 1.27 1.27)))
       )
-      (property "Footprint" "" (at 0 -2.54 0)
+      (property "Footprint" "RKL-LED:WS2812-2020" (at 0 30.48 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "" (at 0 -2.54 0)
+      (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2301111010_XINGLIGHT-XL-2020RGBC-WS2812B_C5349955.pdf" (at 0 25.4 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "LCSC" "C5349955" (at 0 27.94 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Basic/Extended" "E" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "WS2812B_0_0"
@@ -515,16 +521,16 @@
           (name "DOUT" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
-        (pin power_in line (at 0 5.08 270) (length 2.54)
-          (name "VDD" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
         (pin power_in line (at 0 -10.16 90) (length 2.54)
           (name "VSS" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
         )
         (pin input line (at -7.62 -2.54 0) (length 2.54)
           (name "DIN" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_in line (at 0 5.08 270) (length 2.54)
+          (name "VDD" (effects (font (size 1.27 1.27))))
           (number "4" (effects (font (size 1.27 1.27))))
         )
       )
@@ -1172,8 +1178,8 @@
     (property "LCSC" "C127488" (at 129.54 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 67069603-739a-419c-bd24-9d945be48fed))
-    (pin "2" (uuid ab15e2f2-dcd9-4248-83d6-d01efcc9bcaf))
+    (pin "1" (uuid 2dae3874-7c2b-4099-ba59-a812851e4f38))
+    (pin "2" (uuid 02d52703-5f8b-481e-abd6-150bf6e60c10))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/75e5fa41-7632-4cae-90f1-8adc7193968e"
@@ -1223,8 +1229,8 @@
     (property "info" "16V, X7R" (at 63.5 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6fcbcf98-6f5c-4044-8302-671cad341004))
-    (pin "2" (uuid f14dc4a9-6500-479a-afb6-183e89f6089f))
+    (pin "1" (uuid 448c4fb5-5120-48bd-aeb8-861c71b15752))
+    (pin "2" (uuid 2443d997-f7cd-49de-a1e6-380c37c37760))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/75e5fa41-7632-4cae-90f1-8adc7193968e"
@@ -1273,8 +1279,8 @@
     (property "LCSC" "C11702" (at 119.38 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b82fe15c-5aff-49f8-a16a-1438f7e04a68))
-    (pin "2" (uuid 14c1f61f-3c39-4a8d-ae56-3129136a1355))
+    (pin "1" (uuid 881f6cab-a642-4595-b72d-b250a9edd6a5))
+    (pin "2" (uuid 5cacd1ab-101a-4bdf-9ed9-209909d57652))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/e22ea24c-0368-422d-a8f9-a65d7c1f87fe"
@@ -1308,8 +1314,8 @@
     (property "Basic/Extended" "B" (at 86.36 171.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 61abf650-f8cb-4e08-b87a-22006398feba))
-    (pin "2" (uuid 640467bb-e29d-4875-a5f6-330fbf5afb32))
+    (pin "1" (uuid 8d91a58f-de16-4bf6-9cb8-5f6898d874f4))
+    (pin "2" (uuid d473ce33-a6b1-450c-b2d2-8813fb2270f9))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42"
@@ -1354,9 +1360,12 @@
     (property "Basic/Extended" "E" (at 93.98 175.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6dabcf61-52bd-43fb-8b1d-b952cdb233b7))
-    (pin "2" (uuid 952536f9-c13f-4c9a-b0a4-841608b5b874))
-    (pin "3" (uuid d09121fa-c315-40d2-a118-379e154afd7e))
+    (property "JLCPCB_CORRECTION" "0;0;180" (at 93.98 175.26 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 17e2b247-eb39-4c5b-a774-3b5d85cbe3dc))
+    (pin "2" (uuid a73d40fc-7f63-46f2-b7a2-2fa07db304ff))
+    (pin "3" (uuid a9d1f35e-e550-4683-b1a0-5723a8526ec2))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42"
@@ -1392,9 +1401,12 @@
     (property "Basic/Extended" "E" (at 39.37 180.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2c799933-dedf-4beb-bfb1-31eaeee24a3b))
-    (pin "2" (uuid 2c2a22d1-19d9-4ade-aab0-f99a5d1bccd5))
-    (pin "3" (uuid bb71f252-4760-47a6-aba1-0a3f24850fab))
+    (property "JLCPCB_CORRECTION" "2.54;0;0" (at 39.37 180.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 31456d7e-9c5a-4140-a209-a21e27e90230))
+    (pin "2" (uuid 4eb92051-1429-466a-8cce-77c6d0df7493))
+    (pin "3" (uuid bc941d23-1f4d-4453-883f-7735f434d8a3))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42"
@@ -1430,8 +1442,8 @@
     (property "LCSC" "C965799" (at 119.38 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6d86bbab-2716-44fe-a84d-85af0237bc99))
-    (pin "2" (uuid afaf444d-cf9f-4182-9873-3376f6b064e1))
+    (pin "1" (uuid 3d8ceba1-f0e6-4a61-91f1-10526360fad6))
+    (pin "2" (uuid 608284af-6308-4b99-97e1-2384e314a30c))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/e22ea24c-0368-422d-a8f9-a65d7c1f87fe"
@@ -1453,22 +1465,22 @@
     (property "Value" "WS2812B" (at 69.85 171.45 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "RKL-LED:WS2812-2020" (at 76.2 177.8 0)
+    (property "Footprint" "RKL-LED:WS2812-2020" (at 76.2 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2301111010_XINGLIGHT-XL-2020RGBC-WS2812B_C5349955.pdf" (at 76.2 177.8 0)
+    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2301111010_XINGLIGHT-XL-2020RGBC-WS2812B_C5349955.pdf" (at 76.2 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C5349955" (at 76.2 175.26 0)
+    (property "LCSC" "C5349955" (at 76.2 147.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Basic/Extended" "E" (at 76.2 175.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e3cd7699-7b48-4709-9bfc-6a1939c6b09b))
-    (pin "2" (uuid 4bc47d19-e505-4c22-a2f8-3f28ef2f9b62))
-    (pin "3" (uuid ac4d7cbf-37ec-443b-8261-e4559cfd720d))
-    (pin "4" (uuid 1d8376be-8ad2-47d0-9b82-77018fb12493))
+    (pin "1" (uuid 24b53f79-c8f9-4fa7-a66a-a2db2e80b8c1))
+    (pin "2" (uuid e230b1df-daa4-43f3-9eca-1b3c09ed4d0a))
+    (pin "3" (uuid ca09e49c-0b14-4b06-8858-992cedb8e6b1))
+    (pin "4" (uuid 8bec2d67-e750-48d7-9660-c76ed11cb0c9))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42"
@@ -1496,8 +1508,8 @@
     (property "info" "" (at 99.06 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c4d19370-6113-4006-8ff1-a4e6016789b8))
-    (pin "2" (uuid e505feb8-9160-4470-a9bf-2395f445f1a6))
+    (pin "1" (uuid 2bcc046a-5406-4e63-9f7c-108bf025b812))
+    (pin "2" (uuid 66e21f03-d8e8-4af0-a403-9b024ae08ab0))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42"
@@ -1534,8 +1546,8 @@
     (property "info" "16V, X7R" (at 137.16 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c7ab0ce0-e7bd-4579-a2f0-9f4dda700db8))
-    (pin "2" (uuid 1fbf1718-6fc4-4277-ba69-4b319e306f42))
+    (pin "1" (uuid df338eb1-7472-4619-a4ee-591c9ca3e8e4))
+    (pin "2" (uuid 3bcbc059-44bb-4013-a423-479edb9ae1e0))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/75e5fa41-7632-4cae-90f1-8adc7193968e"
@@ -1587,8 +1599,8 @@
     (property "Basic/Extended" "B" (at 52.07 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c71a2135-ade7-46e7-beea-f51322ace908))
-    (pin "2" (uuid 902a0ffd-99c1-4466-a137-ba59fd40e4ce))
+    (pin "1" (uuid d2711c78-79bc-4415-8921-784664cfd43a))
+    (pin "2" (uuid 036dadbe-0ce9-4b9f-9c2d-252a1a5f18e2))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
@@ -1633,8 +1645,8 @@
     (property "Basic/Extended" "B" (at 129.54 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7d43a2ad-5499-409a-8a55-d79e459e7515))
-    (pin "2" (uuid cdb5d704-5ab7-4423-b837-a29b6cfbbd83))
+    (pin "1" (uuid a19d6604-cece-4abb-9410-93a5e5a4e4c7))
+    (pin "2" (uuid bc49a78f-a9e4-4dc8-b55e-96d6068b4463))
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/75e5fa41-7632-4cae-90f1-8adc7193968e"
