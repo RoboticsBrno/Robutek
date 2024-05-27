@@ -19059,7 +19059,7 @@
   (gr_text "L" (at 122.7 108.9) (layer "B.SilkS") (tstamp 596de2f2-1a37-4095-ae0a-1150f6a072e4)
     (effects (font (size 1 1) (thickness 0.15)) (justify top mirror))
   )
-  (gr_text "Designed by Tomáš Vavrinec\n\ngithub.com/RoboticsBrno/Zelvicka\n" (at 111 77.5) (layer "B.SilkS") (tstamp 616bd9bc-fe49-467b-bb4e-d3d5cf1d0123)
+  (gr_text "Designed by Tomáš Vavrinec\n\nrobutek.vzorek.com" (at 111 77.5) (layer "B.SilkS") (tstamp 616bd9bc-fe49-467b-bb4e-d3d5cf1d0123)
     (effects (font (size 1.5 1.5) (thickness 0.25) bold) (justify top mirror))
   )
   (gr_text "A3" (at 92.2 100.6) (layer "B.SilkS") (tstamp 61d53687-c3d9-470d-aefb-595f6bb471f3)
