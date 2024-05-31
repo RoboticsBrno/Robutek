@@ -2957,7 +2957,7 @@
     (property "Datasheet" "~" (at 83.82 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C18723057" (at 83.82 173.99 0)
+    (property "LCSC" "C541855" (at 83.82 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Basic/Extended" "E" (at 83.82 173.99 0)
