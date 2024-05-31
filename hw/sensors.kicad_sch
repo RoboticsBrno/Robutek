@@ -3340,7 +3340,7 @@
   (symbol (lib_id "RKL-MOSFET:JMTV210P02A") (at 81.28 35.56 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 99d49905-e647-47dd-8e6a-fd9f372c66b8)
-    (property "Reference" "U8" (at 81.28 29.21 0)
+    (property "Reference" "Qp4" (at 81.28 29.21 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "JMTV210P02A" (at 81.28 31.75 0)
@@ -3366,7 +3366,7 @@
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
-          (reference "U8") (unit 1)
+          (reference "Qp4") (unit 1)
         )
       )
     )
