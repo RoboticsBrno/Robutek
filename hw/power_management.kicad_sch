@@ -2343,7 +2343,7 @@
     (property "Datasheet" "~" (at 177.8 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C226818" (at 177.8 123.19 0)
+    (property "LCSC" "C208810" (at 177.8 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Basic/Extended" "E" (at 177.8 123.19 0)

@@ -1133,7 +1133,7 @@
     (property "info" "ESP32-S3-WROOM-1-N16R8" (at 179.07 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLCPCB_CORRECTION" "0;10;0" (at 179.07 55.88 0)
+    (property "JLCPCB_CORRECTION" "0;11.2;0" (at 179.07 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 586e8855-0473-4016-8337-06cb4c814965))
