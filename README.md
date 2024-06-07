@@ -1,8 +1,8 @@
 # Želvička
 
-![top](https://roboticsbrno.github.io/Zelvicka/top.png)
-![bottom](https://roboticsbrno.github.io/Zelvicka/bottom.png)
-![gif](https://roboticsbrno.github.io/Zelvicka/rotating.gif)
+![top](https://roboticsbrno.github.io/Zelvicka/top.png?)
+![bottom](https://roboticsbrno.github.io/Zelvicka/bottom.png?)
+![gif](https://roboticsbrno.github.io/Zelvicka/rotating.gif?)
 
 
 
