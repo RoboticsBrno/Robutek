@@ -1,6 +1,9 @@
 # Želvička
 
-![](img/bitmapa.svg)
+![top](https://roboticsbrno.github.io/Zelvicka/top.png)
+![bottom](https://roboticsbrno.github.io/Zelvicka/bottom.png)
+![gif](https://roboticsbrno.github.io/Zelvicka/rotating.gif)
+
 
 ## elektro
 * 1x 18650 ve slotu
@@ -11,7 +14,7 @@
 * vypínač před stepupy (mechanický)
 * 2x H mosty, motorové výstupy (+ enkodér vstupy)
 * 8x senzory jízdy po čáře (viz obrázek)
-* 8x LEDky + konektor 
+* 8x LEDky + konektor
 * 1x servo konektor
 * pípák
 * nx kde n € N && n <= 5 User tlačítko, Reset tlačítko, Boot tlačítko
