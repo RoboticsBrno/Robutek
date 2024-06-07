@@ -5,6 +5,7 @@
 ![gif](https://roboticsbrno.github.io/Zelvicka/rotating.gif)
 
 
+
 ## elektro
 * 1x 18650 ve slotu
 * nabíjení z USB-C z 5V - avšak je potřeba rozpoznávat proudové schopnosti portu 0,5/1,5/víc?
