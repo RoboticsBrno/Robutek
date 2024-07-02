@@ -1,4 +1,4 @@
-# Želvička
+# Robůtek
 
 ![top](https://roboticsbrno.github.io/Robutek/top.png)
 ![bottom](https://roboticsbrno.github.io/Robutek/bottom.png)
