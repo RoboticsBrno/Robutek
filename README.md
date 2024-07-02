@@ -5,7 +5,7 @@
 ![gif](https://roboticsbrno.github.io/Robutek/rotating.gif)
 
 
-## elektro
+<!-- ## elektro
 * 1x 18650 ve slotu
 * nabíjení z USB-C z 5V - avšak je potřeba rozpoznávat proudové schopnosti portu 0,5/1,5/víc?
 * stepup na předběžně 6V pro motory a serva
@@ -63,4 +63,4 @@
     * MAX77757
     * LD39200
     * DRV8833
-    * ITR8307/S17/TR8(B)
+    * ITR8307/S17/TR8(B) -->
