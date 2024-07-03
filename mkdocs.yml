@@ -116,18 +116,18 @@ extra_css:
 nav:
   - Domů:
       - index.md
-  # - Programování robota:
-  #     - robot/index.md
-  #     - robot/faq/index.md
-  #     - robot/lekce1/index.md
-  #     - robot/lekce2/index.md
-  #     - robot/lekce3/index.md
-  #     - robot/lekce4/index.md
-  #     - robot/lekce5/index.md
-  #     - robot/lekce6/index.md
-  #     - robot/lekce7/index.md
-  #     - robot/lekce8/index.md
-  #     - robot/lekce9/index.md
-  #     - robot/lekce10/index.md
-  # - Složení robota:
-  #     - robotAssembly/index.md
+  - Programování robota:
+      - robot/index.md
+      - robot/faq/index.md
+      - robot/lekce1/index.md
+      - robot/lekce2/index.md
+      - robot/lekce3/index.md
+      - robot/lekce4/index.md
+      - robot/lekce5/index.md
+      - robot/lekce6/index.md
+      - robot/lekce7/index.md
+      - robot/lekce8/index.md
+      - robot/lekce9/index.md
+      - robot/lekce10/index.md
+  - Složení robota:
+      - robotAssembly/index.md

@@ -39,3 +39,8 @@ hw/Zelvicka.step
 .DS_Store
 .venv/
 site/
+
+
+# ignore large photos: mkdocs-resize-images
+assets-large
+.resize-hash
