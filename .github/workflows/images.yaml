@@ -1,15 +1,18 @@
-name: images
+name: Render and Deploy Images
 on:
   push:
+    branches:
+      - master
+      - main
 jobs:
   render-images:
-    name: render-images
+    name: Render Images
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
 
-      - name: render pcb images
+      - name: Render PCB images
         uses: linalinn/kicad-render@main
         with:
           pcb_file: hw/Zelvicka.kicad_pcb
@@ -17,17 +20,17 @@ jobs:
           animation: gif
 
       - name: Setup Pages
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
         uses: actions/configure-pages@v3
 
       - name: Upload Artifact
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
         uses: actions/upload-pages-artifact@v1
         with:
           path: "images"
 
   deploy-pages:
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     needs: render-images
 
@@ -40,6 +43,14 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Download Artifact
+        uses: actions/download-pages-artifact@v1
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+        with:
+          append: true
