@@ -1,7 +1,9 @@
 # Stage 2 - Servo, fixa
 
-Seznam potřebných věcí:
+## Seznam potřebných věcí
+ - Vrchní dřevěná deska
  - Servo
  - Fixa
- - Vršek
- - Šroubeka na fixu
+ - Šroubek + držák na fixu
+
+
