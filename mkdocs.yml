@@ -7,8 +7,8 @@ site_description: >-
 repo_name: RoboticsBrno/Robutek
 repo_url: https://github.com/RoboticsBrno/Robutek
 
-# Copyright
-# copyright: Copyright © RoboticsBrno
+dev_addr: "127.0.0.1:8001"
+copyright: Copyright © RoboticsBrno
 use_directory_urls: True
 
 theme:
@@ -73,21 +73,21 @@ plugins:
       enable_cache: True
       size: [1000, 800]
       extensions: [".jpg", ".jpeg", ".png", ".gif"]
-  # - typedoc:
-  #     source: "./docs/elks/lekce1/example1/@types/*.d.ts"
-  #     output_dir: "jaculusApi"
-  #     tsconfig: "./docs/elks/lekce1/example1/tsconfig.json"
-  #     options: "typedoc.json"
-  #     name: "Jaculus API documentation"
+  - typedoc:
+      source: "./docs/robot/lekce1/example1/@types/*.d.ts"
+      output_dir: "jaculusApi"
+      tsconfig: "./docs/robot/lekce1/example1/tsconfig.json"
+      options: "typedoc.json"
+      name: "Jaculus API documentation"
 
-  # - zip_folders:
-  #     folders:
-  #       - robot/lekce1/example1
-  #       - robot/lekce3/project3
-  #       - robot/lekce4/project4
-  #       - robot/lekce6/project6
-  #       - robot/lekce8/project8
-  #     debug: true
+  - zip_folders:
+      folders:
+        - robot/lekce1/example1
+        - robot/lekce3/project3
+        - robot/lekce4/project4
+        - robot/lekce6/project6
+        - robot/lekce8/project8
+      debug: true
 
   - auto-refresh-build-pages:
       update_message: "Návod byl aktualizován, chcete načíst novou verzi?"

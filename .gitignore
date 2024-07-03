@@ -44,3 +44,5 @@ site/
 # ignore large photos: mkdocs-resize-images
 assets-large
 .resize-hash
+
+node_modules/

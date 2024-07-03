@@ -1,0 +1,6 @@
+{
+	// this configuration is not possible to pass through the CLI
+	"navigationLinks": {
+		"Zpět na dokumentaci": "/"
+	},
+}
