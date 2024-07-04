@@ -18,77 +18,77 @@ V této kapitole si postavíme samotného Robůtka.
 
 ## Návod na složení
 
-![Krok postupu](assets/IMG-step1.png)<br>
-![Krok postupu](assets/IMG-step1-done-back.png)<br>
+![](assets/IMG-step1.png)<br>
+![](assets/IMG-step1-done-back.png)<br>
 1. Ulomíme okraje desky.
 <hr>
 
-![Krok postupu](assets/IMG-step2-cut.png)<br>
-![Krok postupu](assets/IMG-step2-done.png)<br>
+![](assets/IMG-step2-cut.png)<br>
+![](assets/IMG-step2-done.png)<br>
 2. Ustřihneme si oba kabely přesně na 5cm (délka měřená bez konektoru). Konce drátků zbavíme izolace pomocí odizolovávacích kleští.
 <hr>
 
-![Krok postupu](assets/IMG-step3-one.png)<br>
-![Krok postupu](assets/IMG-step3-two.png)<br>
+![](assets/IMG-step3-one.png)<br>
+![](assets/IMG-step3-two.png)<br>
 3. Odizolované konce drátků pocínujeme a připájíme na desku Robůtka ve stejném pořadí, jak na obrázku s bílým drátkem v díře ve tvaru čtverce.
 
 <hr>
 
-![Krok postupu](assets/IMG-step4.png)<br>
-![Krok postupu](assets/IMG-step4-doing.png)<br>
+![](assets/IMG-step4.png)<br>
+![](assets/IMG-step4-doing.png)<br>
 4. Obrousíme rohy domečku pro motory.
 <hr>
 
-![Krok postupu](assets/IMG-step5.png)<br>
-![Krok postupu](assets/IMG-step5-done.png)<br>
+![](assets/IMG-step5.png)<br>
+![](assets/IMG-step5-done.png)<br>
 5. Vsadíme oba motory do domečku a dotlačíme je o hranu stolu.
 !!! danger "Ze spodu domečku je uprostřed výstupek, dejte si pozor, abyste ho nezlomili."
 <hr>
 
-![Krok postupu](assets/IMG-step6-house.png)<br>
+![](assets/IMG-step6-house.png)<br>
 6. Domeček s motory posadíme na desku. 
 <hr>
 
-![Krok postupu](assets/IMG-step6-done.png)<br>
+![](assets/IMG-step6-done.png)<br>
 7. Ze spodu upevníme domeček na mortorky, zarážkou fixy.
 <hr>
 
-![Krok postupu](assets/IMG-step7.png)<br>
+![](assets/IMG-step7.png)<br>
 7. Na osy motorů nasadíme podložky kol (zelenou stranou k motoru).
 
-![Krok postupu](assets/IMG-step7-done.png)<br>
-![Krok postupu](assets/IMG-step7-detail.png)<br>
+![](assets/IMG-step7-done.png)<br>
+![](assets/IMG-step7-detail.png)<br>
 8. Kola tak aby prodloužená část kola byla otočená ven z Robůtka.
 <hr>
 
-![Krok postupu](assets/IMG-step8-done.png)<br>
+![](assets/IMG-step8-done.png)<br>
 9. Připojíme kabely k motorům.
 <hr>
 
-![Krok postupu](assets/IMG-step9-done.png)<br>
+![](assets/IMG-step9-done.png)<br>
 10. Robůtka si otočíme na druhou stranu a ucvakneme zbytky zapájených drátků od motoru.
 <hr>
 
-![Krok postupu](assets/IMG-step10-done.png)<br>
+![](assets/IMG-step10-done.png)<br>
 11. Nasadíme dřevěnou základnu.
 !!! danger "Základna sedne přesně, jestli si nejste jistí nepoužívejte sílu, zkuste otočit dřevěnou základnu, případně se ptejte."
 <hr>
  
-![Krok postupu](assets/IMG-step11-done.png)<br>
+![](assets/IMG-step11-done.png)<br>
 12. Přišroubujte dřevěnou základnu a základní desku s krytem motorů k sobě čtiřmi šroubky zespodu.
 <hr>
 
-![Krok postupu](assets/IMG-step12-done.png)<br>
+![](assets/IMG-step12-done.png)<br>
 13. Vložíme malý kartáček do malé dírky a větší kartáček do větší dírky (viz obrázek).
 <hr>
 
-![Krok postupu](assets/IMG-step13.png)<br>
-![Krok postupu](assets/IMG-step13-done.png)<br>
+![](assets/IMG-step13.png)<br>
+![](assets/IMG-step13-done.png)<br>
 14. Vložíme baterku 
 !!! danger "Dejte si pozor na orientaci baterky ověřte si jestli dáváte plus baterky na plus v držáku baterky."
 <hr>
 
-![Krok postupu](assets/IMG-step13-done.png)<br>
+![](assets/IMG-step13-done.png)<br>
 15. Máme hotovo!!!
 <hr>
  
