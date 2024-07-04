@@ -131,3 +131,5 @@ nav:
       - robot/lekce10/index.md
   - Složení robota:
       - robotAssembly/index.md
+      - robotAssembly/stage1.md
+      - robotAssembly/stage2.md

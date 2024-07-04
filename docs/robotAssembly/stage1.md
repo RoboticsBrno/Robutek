@@ -1,4 +1,4 @@
-# Stage 1
+# Stage 1 - Základ
 V této kapitole si postavíme samotného Robůtka.
 
 ## Seznam potřebných součástek
