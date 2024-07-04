@@ -66,7 +66,7 @@ V této kapitole si postavíme samotného Robůtka.
 <hr>
 
 ![](assets/IMG-step9-done.png)<br>
-10. Robůtka si otočíme na druhou stranu a ucvakneme zbytky zapájených drátků od motoru.
+10. Robůtka si otočíme na druhou stranu, ucvakneme zbytky zapájených drátků od motoru a vyčistíme.
 <hr>
 
 ![](assets/IMG-step10-done.png)<br>
