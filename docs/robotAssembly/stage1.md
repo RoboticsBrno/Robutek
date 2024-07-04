@@ -2,7 +2,7 @@
 V této kapitole si postavíme samotného Robůtka.
 
 ## Seznam potřebných součástek
- - 4 Šroubky
+ - 4 Šroubky M3x20
  - 2 Motorky
  - 2 Kabely
  - 2 Kola
