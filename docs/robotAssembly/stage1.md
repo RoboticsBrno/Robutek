@@ -20,7 +20,7 @@ V této kapitole si postavíme samotného Robůtka.
 
 ![](assets/IMG-step1.png)<br>
 ![](assets/IMG-step1-done-back.png)<br>
-1. Ulomíme okraje desky.
+1. Ulomíme okraje desky (některé už jsou odlámané).
 <hr>
 
 ![](assets/IMG-step2-cut.png)<br>
@@ -31,7 +31,6 @@ V této kapitole si postavíme samotného Robůtka.
 ![](assets/IMG-step3-one.png)<br>
 ![](assets/IMG-step3-two.png)<br>
 3. Odizolované konce drátků pocínujeme a připájíme na desku Robůtka ve stejném pořadí, jak na obrázku s bílým drátkem v díře ve tvaru čtverce.
-
 <hr>
 
 ![](assets/IMG-step4.png)<br>
