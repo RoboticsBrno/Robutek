@@ -103,7 +103,7 @@ Rozšíření pro VSCode nám umožní jednoduše nahrávat kód do Jacula pomoc
 
 ## První projekt
 
-Zde si vyzkoušíme vytvořit první projekt a nahrát jej do ELKS.
+Zde si vyzkoušíme vytvořit první projekt a nahrát jej do Robůtka.
 
 [Stáhnout ZIP s prvním projektem](./example1.zip){ .md-button .md-button--primary }
 
@@ -112,11 +112,12 @@ Zde si vyzkoušíme vytvořit první projekt a nahrát jej do ELKS.
 2. Dále si [stáhneme zip](./example1.zip) soubor s prvním projektem.
 3. Poté si jej **rozbalíme** do vytvořené složky k táboru.
 4. Spustíme VSCode a pomocí záložky `File` -> `Open Folder` vybereme složku s projektem.
-5. V levém spodním rohu vybereme :material-power-plug:`Select COM port` pro výběr portu, na kterém je ELKS připojený. Poté se nápis změní na vybraný port.
+5. Připojíme Robůtka přes `USB-C`. `micro-USB` požívejte primárně pokud nefunguje nahrávání přes `USB-C`.
+6. V levém spodním rohu vybereme :material-power-plug:`Select COM port` pro výběr portu, na kterém je Robůtek připojený. Poté se nápis změní na vybraný port.
 
 	??? tip "Mám více portů"
-		Pokud se vám v nabídce zobrazí více portů, odpojte ELKS a zjisťe, který port zmizel. Po připojení ELKS tento port vyberte.
-6. Dále zvolíme :material-eye:`Monitor`, ten slouží pro komunikaci se zařízením.
+		Pokud se vám v nabídce zobrazí více portů, odpojte Robůtka a zjisťe, který port zmizel. Po připojení Robůtka tento port vyberte.
+7. Dále zvolíme :material-eye:`Monitor`, ten slouží pro komunikaci se zařízením.
 
 ## Nahrání programu
 

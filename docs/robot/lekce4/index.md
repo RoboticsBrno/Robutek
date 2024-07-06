@@ -3,8 +3,6 @@
 V této lekci si představíme cykly, což je nástroj který nám umožňuje opakovat kód podle nějakého pravidla.
 Zatím je využijeme pro komunikaci s robotem, v následující lekci si ukážeme jejich použití při řízení robota.
 
-(Nejsem si jistý jak moc tady tu lekci chceme. Přijde mi to méně zajímavé než jezdit s želvičkou, ale když jsem se to snažil dát do jedné lekce, přišla mi moc dlouhá.)
-
 Máme primárně dva typy cyklů:
 
 - `#!ts for` pro případ kdy víme kolikrát se cyklus má opakovat
@@ -40,9 +38,9 @@ Kod napište tak aby bylo jednoduché ho upravit na výpis jakéhokoli jiného i
     ```ts
 	import * as gpio from "gpio";
 
-    const BTN_PIN = 18;
+    const BTN_PIN = 0;
 
-	gpio.pinMode(BTN_PIN, gpio.PinMode.INPUT); // nastaví pin 18 jako vstup
+	gpio.pinMode(BTN_PIN, gpio.PinMode.INPUT); // nastaví pin 0 jako vstup
 
 	gpio.on("falling", BTN_PIN, () => { // událost, která proběhne při stisknutí tlačítka připojeného na pin 0
 		console.log("Stisknuto, začínáme počítat");
@@ -59,7 +57,7 @@ Pokud nevíme, kolikrát se má cyklus opakovat, použijeme místo cyklu `#!ts f
 Do kulatých závorek teď píšeme jen výraz který určuje jestli se cyklus vykoná znovu nebo ne.
 Kód, který se má vykonávat, dokud platí podmínka, vypadá takto:
 ```ts
-while (condition - podmínka) {
+while (podmínka) {
 	// náš kód
 }
 ```
