@@ -42,7 +42,7 @@ S událostí řízenou časem už jsme se setkali: pomocí `setInterval` umíme 
 Události řízené stiskem tlačítka můžeme ovládat pomocí přiložené knihovny `gpio`.
 `GPIO` je jednoduchá elektronická konstrukce, která nám umožňuje posílat nebo přijímat bit informace, a na základě toho měnit chování našeho programu.
 
-Abychom mohli přijímat signál ze stisknutí tlačítka, nejdříve musíme nastavit vybraný pin jako vstupní. To uděláme příkazem `#!ts gpio.pinMode(PIN, gpio.PinMode.INPUT)`, kde PIN je číslo pinu (najdeme na stránce), a druhý argument je režim. Pokud bychom chtěli např. použít LEDky přímo na desce, chceme dané piny použít jako výstupní, tedy `gpio.PinMode.OUTPUT`.
+Abychom mohli přijímat signál ze stisknutí tlačítka, nejdříve musíme nastavit vybraný pin jako vstupní. To uděláme příkazem `#!ts gpio.pinMode(PIN, gpio.PinMode.INPUT)`, kde PIN je číslo pinu (najdeme na stránce [Piny](../index.md#přehled-pinů)), a druhý argument je režim. Pokud bychom chtěli např. použít LEDky přímo na desce, chceme dané piny použít jako výstupní, tedy `gpio.PinMode.OUTPUT`.
 
 Jakmile máme nastavené vstupní tlačítko, můžeme na něm pozorovat události pomocí `#!ts gpio.on()`. Reakci na stisknutí tlačítka vyvoláme argumentem `"falling"`, reakci na puštění `"rising"`. Kód, který při stisku tlačítka něco vykoná, tedy může vypadat takto:
 
