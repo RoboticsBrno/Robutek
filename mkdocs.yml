@@ -134,3 +134,5 @@ nav:
       - robotAssembly/stage1.md
       - robotAssembly/stage2.md
       - robotAssembly/stage3.md
+  - Příslušenství robota:
+      - robotAccessories/index.md
