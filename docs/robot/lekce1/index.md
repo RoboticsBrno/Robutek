@@ -112,7 +112,7 @@ Zde si vyzkoušíme vytvořit první projekt a nahrát jej do Robůtka.
 2. Dále si [stáhneme zip](./example1.zip) soubor s prvním projektem.
 3. Poté si jej **rozbalíme** do vytvořené složky k táboru.
 4. Spustíme VSCode a pomocí záložky `File` -> `Open Folder` vybereme složku s projektem.
-5. Připojíme Robůtka přes `USB-C`. `micro-USB` požívejte pouze pokud nefunguje nahrávání přes `USB-C`.
+5. Připojíme Robůtka přes `USB-C`. `micro-USB` požívejte primárně pokud nefunguje nahrávání přes `USB-C`.
 6. V levém spodním rohu vybereme :material-power-plug:`Select COM port` pro výběr portu, na kterém je Robůtek připojený. Poté se nápis změní na vybraný port.
 
 	??? tip "Mám více portů"
