@@ -32,15 +32,15 @@ let d : number = b - a;
 Abychom na základě hodnot proměnných mohli měnit chování programu, potřebujeme **podmínky**.
 
 Podmínka `if` na základě pravdivostní hodnoty rozhodne, zda se vykoná daný kus kódu. Pokud proměnná
-`condition` je typu bool, potom po vykonání následujícího kódu:
+`podmínka` je typu bool, potom po vykonání následujícího kódu:
 ```ts
 let result : number = 10;
-if (condition) {
+if (podmínka) {
   result = 20;
 }
 ```
 
-Pokud `condition` má hodnotu `true`, bude v `result` 20, pokud má `condition` hodnotu `false`, bude v `result` 10.
+Pokud `podmínka` má hodnotu `true`, bude v `result` 20, pokud má `podmínka` hodnotu `false`, bude v `result` 10.
 
 Rovněž se můžeme v podmínce rozhodovat na základě porovnávání číselných hodnot.
 
@@ -53,7 +53,7 @@ if (first == second) {
 }
 ```
 
-To, zda jsou dvě čísla stejná, zjistíme pomocí `==`, zda je jedno větší než druhé zjišťujeme pomocí `<` a `>`, případně `<=` a `>=`.
+To, zda jsou dvě čísla stejná, zjistíme pomocí `==`, zda je jedno větší než druhé zjišťujeme pomocí `<` a `>`, případně `<=` a `>=` pokud chceme připustit rovnost.
 
 Pokud se chceme zachovat dvěma různými způsoby, použijeme konstrukci
 
@@ -164,7 +164,7 @@ Pokud při stisku tlačítka svítí poslední LED, zhasneme ji, a rozsvítíme 
     const LED_PIN = 21;
     const LED_COUNT = 8;
 
-    const BTN_PIN = 18;
+    const BTN_PIN = 0;
 
     gpio.pinMode(BTN_PIN, gpio.PinMode.INPUT_PULLUP); // Nastavíme tlačítko
     const ledStrip = new SmartLed(LED_PIN, LED_COUNT, LED_WS2812);  // připojí pásek na pin 21, s 8 ledkami a typem WS2812
