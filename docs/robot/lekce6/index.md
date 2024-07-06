@@ -8,11 +8,8 @@ Převádí napětí na hodnotu v rozsahu `0-1023`, kterou pak můžeme dále zpr
 To využijeme pro čtení dat ze **senzorů čáry** a **senzorů kolem kol**.
 Své řešení opět můžeme psát do souborů z předchozích cvičení, nebo stáhnout [novou kostru](./project6.zip).
 
-## Zadání A
+Nejprve se naučíme, jak číst data z jednoho senzoru ze senzorů kolem kol a vypisovat je na monitoru:
 
-Nejprve si napíšeme program, který nám bude číst data z jednoho senzoru ze senzorů kolem kol a vypisovat je na monitoru.
-
-??? note "Řešení"
     ```ts
     import * as gpio from "gpio";
     import * as adc from "adc";
@@ -31,7 +28,7 @@ Nejprve si napíšeme program, který nám bude číst data z jednoho senzoru ze
     }, 100);
     ```
 
-## Zadání B
+## Zadání A
 
 Data už jsme vyčetli, ale většinou je budeme muset ještě upravit.
 Ve většině využití totiž nemůžeme použít číslo od `0-1023`.
@@ -62,7 +59,7 @@ Proto musíme data takzvaně přemapovat na jiný číselný rozsah, k čemuž s
     }, 100);
     ```
 
-## Zadání C
+## Zadání B
 
 Napíšeme program, který bude pomocí dat z senzoru kolem kol měnit jas RGB LED pásek.
 
@@ -100,7 +97,7 @@ Napíšeme program, který bude pomocí dat z senzoru kolem kol měnit jas RGB L
     }, 10); 
     ```
 
-## Zadání D
+## Zadání C
 Senzorů čáry a senzorů kolem kol je dohromady 8, ale pro zmenšení počtu využitých pinů na ESP jsou namapované jen na 4 piny a jeden přepínací. Teď si napíšeme program, který míto pravého předního senzoru u kola přečte pravý přední senzor čáry.
 
 ??? note "Řešení"
