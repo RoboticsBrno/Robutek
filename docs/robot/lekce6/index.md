@@ -124,7 +124,7 @@ Senzorů čáry a senzorů kolem kol je dohromady 8, ale pro zmenšení počtu v
 
 ## Výstupní úkol V1
 
-Napište program, který vypíše do konzole 1 když černou čáru vidí jenom pravé senzory a -1 když čáru vidí jenom levé senzory a ypíše 0 když vidí i černou i bílou. Jinak vypíše něco mezi tím.
+Napište program, který vypíše hodnotu v rozsahu -1 až 1 na základě toho, zda je robot napravo nebo nalevo od čáry. Tzn. program, který vypíše do konzole 1, když černou čáru vidí jenom pravé senzory, a -1, když čáru vidí jenom levé senzory. Pokud černou vidí jen část senzorů na dané straně, vrátí hodnotu mezi 0 a 1 (-1). Pokud černou nevidí vůbec, vypíše 0. 
 <!--
 ??? note "Řešení"
 ```ts
