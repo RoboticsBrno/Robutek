@@ -21,6 +21,7 @@ Aby nám všechno správně fungovalo, musíme ho nejprve nainstalovat a k němu
 4. V pop-up okénku zvolíme port `COM` na windows nebo `ttyACM` na unix-like systémech a stiskneme **Connect**<br>
 ![](assets/JacWebInstall4.png)<br>
 5. Po chvilce se nám zobrazí tlačítko **flash**, které zmáčkneme.<br>
+!!! tip "když vám flash přes USB-C nepojede zkuste Micro-USB"
 6. Chvilku počkáme a jakmile přestanou v konzoli přibývat nové řádky, tak máme nainstalovaného jacula!
 
 
