@@ -98,7 +98,7 @@ Napíšeme program, který bude pomocí dat z senzoru kolem kol měnit jas RGB L
     ```
 
 ## Zadání C
-Senzorů čáry a senzorů kolem kol je dohromady 8, ale pro zmenšení počtu využitých pinů na ESP jsou namapované jen na 4 piny a jeden přepínací. Teď si napíšeme program, který míto pravého předního senzoru u kola přečte pravý přední senzor čáry.
+Senzorů čáry a senzorů kolem kol je dohromady 8, ale pro zmenšení počtu využitých pinů na ESP jsou namapované jen na 4 piny a jeden přepínací. Nastavením tohoto pinu změníme, zda měříme na přední straně robota, nebo senzory kolem kol. Teď si napíšeme program, který místo pravého předního senzoru u kola přečte pravý přední senzor čáry.
 
 ??? note "Řešení"
     ```ts
