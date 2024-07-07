@@ -21,19 +21,22 @@ Aby nám všechno správně fungovalo, musíme ho nejprve nainstalovat a k němu
 ![](assets/JacWebInstall5.png)<br>
 3. Přepínač `Erase Flash` slouží k vymazání programů co už jsou nahrané na ESP. V defaultním stavu na `No` nevymaže programy na ESP.<br> 
 <hr>
+![]()
+4. Zapneme robůtka a podržíme tlačítko `IO0` a zmáčkneme tlačítko nalevo odtlačítka `IO0` což je tlačítko `RESET`. Tímto si přepneme robůtka to tzv. boot módu. 
+<hr>
 ![](assets/JacWebInstall2.png)<br>
-4. Po připojení robůtka k počítači stiskneme tlačítko `Connenct`<br>
+5. Po připojení robůtka v boot módu k počítači stiskneme v Jaculus web instalátoru tlačítko `Connenct`<br>
 <hr>
 ![](assets/JacWebInstall3.png)<br>
-5. V pop-up okénku zvolíme port `COM` na windows nebo `ttyACM` na unix-like systémech a stiskneme 
+6. V pop-up okénku zvolíme port `COM` na windows nebo `ttyACM` na unix-like systémech a stiskneme 
 **Connect**<br>
 <hr>
 ![](assets/JacWebInstall4.png)<br>
-6. Po chvilce se nám zobrazí tlačítko **flash**, které zmáčkneme.<br>
+7. Po chvilce se nám zobrazí tlačítko **flash**, které zmáčkneme.<br>
 !!! tip "když vám flash přes USB-C nepojede zkuste Micro-USB"
 <hr>
 ![]()
-7. Chvilku počkáme a jakmile přestanou v konzoli přibývat nové řádky, tak máme nainstalovaného Jacula!
+8. Chvilku počkáme a jakmile přestanou v konzoli přibývat nové řádky, tak máme nainstalovaného Jacula!
 
 
 ### Node.js
