@@ -73,14 +73,14 @@ Napíšeme program, který bude pomocí dat z senzoru kolem kol měnit jas RGB L
     const LIGHTN_PIN: number  = 47; // pin na zapnutí podsvícení pro senzory
 
     const LED_PIN: number  = 48;
-    const LED_COUNT: number  = 8+1; // LED světlo na desce robůtka plus led světla na RGB pásku
-    
+    const LED_COUNT: number  = 1+8; // LED světlo na desce robůtka plus led světla na RGB pásku
+
     function mapADC(targetRange: number, num: number): number{
         let result: number = (num / (1023/targetRange));
         return Math.round(result);
     }
 
-    const ledStrip: number  = new SmartLed(LED_PIN, LED_COUNT, LED_WS2812);  // připojí pásek na pin 48, s 1 ledkou a typem WS2812
+    const ledStrip: SmartLed  = new SmartLed(LED_PIN, LED_COUNT, LED_WS2812);  // připojí pásek na pin LED_PIN, s LED_COUT ledkami a typem WS2812
     adc.configure(SENSOR_PIN, adc.Attenuation.Db0); // pin senzoru nakonfigurujeme s útlumem nastaveným na 0
 
     gpio.pinMode(LIGHTN_PIN, gpio.PinMode.OUTPUT); // nastavíme mód pinu podsvícení na output 
@@ -90,7 +90,7 @@ Napíšeme program, který bude pomocí dat z senzoru kolem kol měnit jas RGB L
         const value: number  = mapADC(255, adc.read(SENSOR_PIN));
         
         for(let i = 0; i<LED_COUNT; i++) {
-            ledStrip.set(i, {r: value, g: 0, b:0}) // nastavíme intenzitu červené barvy na hodnotu z Senzoru čáry (0-255)
+            ledStrip.set(i, {r: value, g: (255 - value*8), b: 0}) // nastavíme intenzitu červené barvy na hodnotu z Senzoru čáry (0-255) a zároveň čím více se povrch pod robůtkem bude blížit bílé tím více bude barva fialová
         }
         
         ledStrip.show();
@@ -100,6 +100,8 @@ Napíšeme program, který bude pomocí dat z senzoru kolem kol měnit jas RGB L
 ## Zadání C
 Senzorů čáry a senzorů kolem kol je dohromady 8, ale pro zmenšení počtu využitých pinů na ESP jsou namapované jen na 4 piny a jeden přepínací. Nastavením tohoto pinu změníme, zda měříme na přední straně robota, nebo senzory kolem kol. Teď si napíšeme program, který místo pravého předního senzoru u kola přečte pravý přední senzor čáry.
 
+![](assets/IMG-back.png)
+
 ??? note "Řešení"
     ```ts
     import * as adc from "adc";
@@ -107,7 +109,7 @@ Senzorů čáry a senzorů kolem kol je dohromady 8, ale pro zmenšení počtu v
 
     const SENSOR_PIN: number  = 4; // pin levého předního senzoru 
     const LIGHTN_PIN: number  = 47; // pin na zapnutí podsvícení pro senzory
-    const SENSOR_SWITCH_PIN: number  = 18; // pin na přepnutí mezi senzory u kola a senzory čáry
+    const SENSOR_SWITCH_PIN: number  = 8; // pin na přepnutí mezi senzory u kola a senzory čáry
 
     adc.configure(SENSOR_PIN, adc.Attenuation.Db0); // pin senzoru nakonfigurujeme s útlumem nastaveným na 0
 
@@ -141,7 +143,7 @@ const RIGHT_DOWN_PIN: number  = 5;
 const LEFT_UP_PIN: number  = 6;
 const LEFT_DOWN_PIN: number  = 7;
 const PIN_LENT: number  = 47 // pin podsvícení
-const PIN_SWITCH: number  = 18 // pin přepínaní mezi krajními a prostředními senzory
+const PIN_SWITCH: number  = 8 // pin přepínaní mezi krajními a prostředními senzory
 
 
 adc.configure(RIGHT_UP_PIN, adc.Attenuation.Db0);
@@ -174,7 +176,6 @@ setInterval(() => { // každých 100 ms vyčteme data a vypíšeme je do konzole
     console.log(result); 
     
 }, 1000);
-
 ``` -->
 
 
