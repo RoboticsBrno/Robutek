@@ -11,18 +11,29 @@ Aby nám všechno správně fungovalo, musíme ho nejprve nainstalovat a k němu
 
 ### Jaculus
 
-1. Otevřeme si [Jaculus web installer](https://cubicap.github.io/Jaculus-web-installer/) v Google chrome.
+1. Otevřeme si [Jaculus web installer](https://installer.jaculus.org/) v Chrome nebo Edge.
 !!! warning "Tento postup nefunguje ve Firefoxu a jinych prohlížečích nezaložených na chromium"
+<hr>
+
 ![](assets/JacWebInstall1.png)<br>
-2. Zvolíme desku na `ESP32 S3 DevKitC`<br>
+2. Zvolíme desku `ESP32 S3 DevKitC`<br>
+<hr>
+![](assets/JacWebInstall5.png)<br>
+3. Přepínač `Erase Flash` slouží k vymazání programů co už jsou nahrané na ESP. V defaultním stavu na `No` nevymaže programy na ESP.<br> 
+<hr>
 ![](assets/JacWebInstall2.png)<br>
-3. Po připojení robůtka k počítači stiskneme tlačítko `Connenct`<br>
+4. Po připojení robůtka k počítači stiskneme tlačítko `Connenct`<br>
+<hr>
 ![](assets/JacWebInstall3.png)<br>
-4. V pop-up okénku zvolíme port `COM` na windows nebo `ttyACM` na unix-like systémech a stiskneme **Connect**<br>
+5. V pop-up okénku zvolíme port `COM` na windows nebo `ttyACM` na unix-like systémech a stiskneme 
+**Connect**<br>
+<hr>
 ![](assets/JacWebInstall4.png)<br>
-5. Po chvilce se nám zobrazí tlačítko **flash**, které zmáčkneme.<br>
+6. Po chvilce se nám zobrazí tlačítko **flash**, které zmáčkneme.<br>
 !!! tip "když vám flash přes USB-C nepojede zkuste Micro-USB"
-6. Chvilku počkáme a jakmile přestanou v konzoli přibývat nové řádky, tak máme nainstalovaného jacula!
+<hr>
+![]()
+7. Chvilku počkáme a jakmile přestanou v konzoli přibývat nové řádky, tak máme nainstalovaného Jacula!
 
 
 ### Node.js
