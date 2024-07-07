@@ -4,6 +4,7 @@
  - Robůtka stage 1
  - Vrchní dřevěná deska
  - Servo
+ - Stahovací zip páska
  - Fixa
  - Šroubek
  - 5 matek
@@ -30,7 +31,7 @@
 <hr>
 
 ![](assets/IMG-pen6.jpg)<br>
-5. Nasadíme na držák šroubek a matku. 
+5. Nasadíme na držák šroubek a matku.
 <hr>
 
 ![](assets/IMG-pen7.jpg)<br>
@@ -65,7 +66,7 @@
 <hr>
 
 ![](assets/IMG-pen16.jpg)<br>
-13. Posadíme vrchní dřevěnou desku se servem na šrouby s distančními sloupky. 
+13. Posadíme vrchní dřevěnou desku se servem na šrouby s distančními sloupky.
 <hr>
 
 ![](assets/IMG-pen17.jpg)<br>
@@ -92,5 +93,5 @@
 ![]()<br>
 19. Máme hotovo!!!
 <hr>
- 
+
 
