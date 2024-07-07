@@ -4,10 +4,25 @@ V této lekci si představíme Jaculus, nainstalujeme si programovací prostřed
 
 ## Instalace
 
-Na našich robotech běží program, který se jmenuje Jaculus.
+Na našich robotech poběží program, který se jmenuje Jaculus.
 Tento program nám umožní jednoduše psát instrukce (programy), které nahrajeme do robota.
 Tyto programy budou specifikovat, jak se robot má chovat, a umožní nám s ním komunikovat.
-Aby nám všechno správně fungovalo, musíme nejprve nainstalovat několik programů.
+Aby nám všechno správně fungovalo, musíme ho nejprve nainstalovat a k němu i několik dalších programů.
+
+### Jaculus
+
+1. Otevřeme si [Jaculus web installer](https://cubicap.github.io/Jaculus-web-installer/) v Google chrome.
+!!! warning "Tento postup nefunguje ve Firefoxu a jinych prohlížečích nezaložených na chromium"
+![](assets/JacWebInstall1.png)<br>
+2. Zvolíme desku na `ESP32 S3 DevKitC`<br>
+![](assets/JacWebInstall2.png)<br>
+3. Po připojení robůtka k počítači stiskneme tlačítko `Connenct`<br>
+![](assets/JacWebInstall3.png)<br>
+4. V pop-up okénku zvolíme port `COM` na windows nebo `ttyACM` na unix-like systémech a stiskneme **Connect**<br>
+![](assets/JacWebInstall4.png)<br>
+5. Po chvilce se nám zobrazí tlačítko **flash**, které zmáčkneme.<br>
+6. Chvilku počkáme a jakmile přestanou v konzoli přibývat nové řádky, tak máme nainstalovaného jacula!
+
 
 ### Node.js
 
