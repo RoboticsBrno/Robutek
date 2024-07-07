@@ -80,15 +80,20 @@ type RotateDuration = {
 }
 export function rotate(duration: RotateDuration) {
 
-    LMOT.write(duration.speed);
-    RMOT.write(duration.speed);
+    if (duration.angle < 0) {
+        LMOT.write(duration.speed);
+        RMOT.write(-duration.speed);
+    } else {
+        LMOT.write(-duration.speed);
+        RMOT.write(duration.speed);
+    }
 
     //wheels.rotate(duration)
 }
 
 export function stop() {
-    LMOT.write(1);
-    RMOT.write(1);
+    LMOT.write(0);
+    RMOT.write(0);
 
     //wheels.stop()
 }
