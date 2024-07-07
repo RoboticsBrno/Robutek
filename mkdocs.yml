@@ -87,6 +87,7 @@ plugins:
         - robot/lekce4/project4
         - robot/lekce6/project6
         - robot/lekce8/project8
+        - robutekLibrary/Robutek-library
       debug: true
 
   - auto-refresh-build-pages:
