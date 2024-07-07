@@ -22,7 +22,7 @@ Aby nám všechno správně fungovalo, musíme ho nejprve nainstalovat a k němu
 3. Přepínač `Erase Flash` slouží k vymazání programů co už jsou nahrané na ESP. V defaultním stavu na `No` nevymaže programy na ESP.<br> 
 <hr>
 ![]()
-4. Zapneme robůtka a podržíme tlačítko `IO0` a zmáčkneme tlačítko nalevo odtlačítka `IO0` což je tlačítko `RESET`. Tímto si přepneme robůtka to tzv. boot módu. 
+4. Zapneme robůtka a podržíme tlačítko `IO0` a zmáčkneme tlačítko nalevo odtlačítka `IO0` což je tlačítko `RESET`. Tímto si přepneme robůtka do tzv. boot módu. 
 <hr>
 ![](assets/JacWebInstall2.png)<br>
 5. Po připojení robůtka v boot módu k počítači stiskneme v Jaculus web instalátoru tlačítko `Connenct`<br>
