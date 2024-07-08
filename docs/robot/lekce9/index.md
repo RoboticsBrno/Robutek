@@ -1,6 +1,6 @@
 # Lekce 9 - radio
 
-Na ELKS je k dispozici jednoduchá bezdrátová komunikace na vzdálenost jednotek metrů.
+Na ELKSRobůtkovi je k dispozici jednoduchá bezdrátová komunikace na vzdálenost jednotek metrů.
 
 - Až 16 "skupin", všechny desky ve stejné skupině přijmají zprávy od všech ostatních zároveň
 - Podporuje tři datové typy:
@@ -113,12 +113,12 @@ radio.off("keyvalue");
 
 ## Zadání A
 
-Vytvořte program, který pomocí klíč-hodnota bude přes rádio odesílat stav tří tlačítek na desce
+Vytvořte program, který pomocí klíč-hodnota bude přes rádio odesílat stav dvou tlačítek na desce
 (stisknuto == `1`, nestisknuto == `0`).
-Zároveň bude reagovat na příchozí hodnoty a rosvicovat první 3 LED na desce podle příchozího stavu.
+Zároveň bude reagovat na příchozí hodnoty a rosvicovat první 2 LED na LED pásku podle příchozího stavu.
 
-Jako klíče použijte `sw0`, `sw1` a `sw2`. Vždy, když přijde klíč `sw0` s hodnotou 1, rozsvítíte LED-G, a když 0, tak ji zhasnete,
-a stejně tak pro další dvě tlačítka a LED.
+Jako klíče použijte `IO0` a `IO2`. Vždy, když přijde klíč `IO0` s hodnotou 1, rozsvítíte LED na indexu 1, a když 0, tak ji zhasnete,
+a stejně tak pro další tlačítko a LED.
 
 Najděte kamaráda, abyste si mohli navzájem zkusit, zda program funguje (jeden vysílá, druhý přijmá).
 
@@ -126,64 +126,52 @@ Najděte kamaráda, abyste si mohli navzájem zkusit, zda program funguje (jeden
     ```ts
     import * as radio from "simpleradio";
     import * as gpio from "gpio";
+    import { SmartLed, LED_WS2812 } from "smartled";
+    import * as colors from "./libs/colors.js";
 
     radio.begin(5); // skupina 5
 
-    const PIN_SW0 = 18;
-    const PIN_SW1 = 16;
-    const PIN_SW2 = 42;
+    const PIN_BTN_LEFT = 2;
+    const PIN_BTN_RIGHT = 0;
 
-    const PIN_LED0 = 17;
-    const PIN_LED1 = 15;
-    const PIN_LED2 = 45;
+    const LED_PIN = 48;
+    const LED_COUNT = 3;
 
     // Nastavíme tlačítka jako vstupy
-    gpio.pinMode(PIN_SW0, gpio.PinMode.INPUT);
-    gpio.pinMode(PIN_SW1, gpio.PinMode.INPUT);
-    gpio.pinMode(PIN_SW2, gpio.PinMode.INPUT);
+    gpio.pinMode(PIN_BTN_LEFT, gpio.PinMode.INPUT);
+    gpio.pinMode(PIN_BTN_RIGHT, gpio.PinMode.INPUT);
 
-    gpio.on("falling", PIN_SW0, () => {
-      // Při stisknutí tlačítka 0
-      radio.sendKeyValue("sw0", 1); // odešleme hodnotu 1 s klíčem sw0
+    gpio.on("falling", PIN_BTN_LEFT, () => {
+        // Při stisknutí tlačítka 0
+        radio.sendKeyValue("IO2", 1); // odešleme hodnotu 1 s klíčem sw0
     });
-    gpio.on("rising", PIN_SW0, () => {
-      // Při uvolnění tlačítka 0
-      radio.sendKeyValue("sw0", 0); // odešleme hodnotu 0 s klíčem sw0
-    });
-
-    gpio.on("falling", PIN_SW1, () => {
-      radio.sendKeyValue("sw1", 1);
-    });
-    gpio.on("rising", PIN_SW1, () => {
-      radio.sendKeyValue("sw1", 0);
+    gpio.on("rising", PIN_BTN_LEFT, () => {
+        // Při uvolnění tlačítka 0
+        radio.sendKeyValue("IO2", 0); // odešleme hodnotu 0 s klíčem sw0
     });
 
-    gpio.on("falling", PIN_SW2, () => {
-      radio.sendKeyValue("sw2", 1);
+    gpio.on("falling", PIN_BTN_RIGHT, () => {
+        radio.sendKeyValue("IO0", 1);
     });
-    gpio.on("rising", PIN_SW2, () => {
-      radio.sendKeyValue("sw2", 0);
+    gpio.on("rising", PIN_BTN_RIGHT, () => {
+        radio.sendKeyValue("IO0", 0);
     });
-
-
 
     // Nastavíme LED piny jako výstupy
-    gpio.pinMode(PIN_LED0, gpio.PinMode.OUTPUT);
-    gpio.pinMode(PIN_LED1, gpio.PinMode.OUTPUT);
-    gpio.pinMode(PIN_LED2, gpio.PinMode.OUTPUT);
+    const strip = new SmartLed(LED_PIN, LED_COUNT);
 
     // Zpracování příchozích správ
     radio.on("keyvalue", (klic, hodnota, info) => {
-      if (klic === "sw0") {
-        gpio.write(PIN_LED0, hodnota);
-      } else if (klic === "sw1") {
-        gpio.write(PIN_LED1, hodnota);
-      } else if (klic === "sw2") {
-        gpio.write(PIN_LED2, hodnota);
-      }
+        if (klic === "IO0") {
+            strip.set(1, colors.rainbow(0, hodnota * 10))
+        } else if (klic === "IO2") {
+            strip.set(2, colors.rainbow(150, hodnota * 10))
+        }
+
+        strip.show();
     });
     ```
 
 ## Výchozí úkol V1
 
-Změňtě program ze zadání A tak, aby místo tlačítek vyčítal potenciometr, a místo ledek rozsvicoval LED pásek. Je na vás, zda vzládnete rozsvicovat a pohybovat duhou, nebo pouze jednou z LED podle toho, jak se natočí potenciometr na vysílači.
+Změňtě program ze zadání A tak, aby místo tlačítek vyčítal ADC převodník. Na LED pásku se bude zobrazovat hondota z ADC.

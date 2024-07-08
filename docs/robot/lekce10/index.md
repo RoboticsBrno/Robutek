@@ -1,9 +1,6 @@
 # Lekce 10 - servo
 
-Na ELKS jsou k dispozici dva jednoduché servo porty na levé straně ELSKu.
-
-- `SER0` - pin 35
-- `SER1` - pin 40
+Na Robůtkovi je připojené servo na pinu 38
 
 ## Začátek
 
@@ -12,7 +9,7 @@ Abychom mohli používat servo musíme ho získat příkazem `#!ts const servo =
 ```ts
 import { Servo } from "./libs/servo.js"
 
-const SERVO_PIN = 35;
+const SERVO_PIN = 38;
 const servo = new Servo(SERVO_PIN, 1, 3);
 ```
 
@@ -23,41 +20,49 @@ servo.write(512);  // 90°
 servo.write(1023); // 180°
 ```
 
-## Dvě serva
+## Kreslení tužkou
 
-Pokud chceme používat dvě serva, musíme změnít kanál v konfiguraci druhého serva.
+Na servo se dá připojit tužka. Abychom mohli tužku ovládat musíme ji získat příkazem `#!ts cosnt pen = new Pen(<číslo pinu>)`. Robůtek má 4 předdefinované konstaty pro ovládání `UP`, `DOWN`, `MIDDLE` a `UNLOAD`.
 
 ```ts
-import { Servo } from "./libs/servo.js"
+import { Pen } from "./libs/robot.js"
 
-const SERVO_PIN_0 = 35;
-const SERVO_PIN_1 = 40;
-const servo_0 = new Servo(SERVO_PIN_0, 1, 3);
-const servo_1 = new Servo(SERVO_PIN_1, 1, 4);
+const SERVO_PIN = 38;
+
+const pen = new Pen(SERVO_PIN);
+```
+
+Na nastavení pozice tužky použijeme funkci `#!ts pen.move()` a do závorek zadejte číslo on 0 od 1023 nebo jednu z konstant `Pen.UP`, `Pen.DOWN`, `Pen.MIDDLE` a `Pen.UNLOAD`.
+
+```ts
+pen.move(Pen.DOWN);     // Začne kreslit
+pen.move(Pen.UP);       // Přestane kreslit
+pen.move(Pen.UNLOAD);   // Vytáhne tužku
 ```
 
 ## Zadání A
 
-Vytvořte program který bude číst data z joysticku a zapisovat je do dvou serv.
+Vytvořte program, který při zmáčknutí tlačítka zasune pero a druhé tlačítko, které ho vysune.
 
 ??? note "Řešení"
     ```ts
-    import * as adc from "adc";
-    import { Servo } from "./libs/servo.js"
+    import { Pen } from "./libs/robot.js"
+    import * as gpio from "gpio"
 
-    const SERVO_PIN_0 = 35;
-    const SERVO_PIN_1 = 40;
-    const POT_PIN_X = 9;
-    const POT_PIN_Y = 10;
+    const SERVO_PIN = 38;
+    const LBTN_PIN = 2;
+    const RBTN_PIN = 0;
 
-    adc.configure(POT_PIN_X);
-    adc.configure(POT_PIN_Y);
+    gpio.pinMode(LBTN_PIN, gpio.PinMode.INPUT);
+    gpio.pinMode(RBTN_PIN, gpio.PinMode.INPUT);
 
-    const servo_0 = new Servo(SERVO_PIN_0, 1, 3);
-    const servo_1 = new Servo(SERVO_PIN_1, 1, 4);
+    const pen = new Pen(SERVO_PIN);
 
-    setInterval(() => {
-        servo_0.write(adc.read(POT_PIN_X));
-        servo_0.write(adc.read(POT_PIN_Y));
-    }, 25);
+    gpio.on("falling", LBTN_PIN, () => {
+        pen.move(Pen.DOWN);
+    });
+
+    gpio.on("falling", RBTN_PIN, () => {
+        pen.move(Pen.UP);
+    });
     ```

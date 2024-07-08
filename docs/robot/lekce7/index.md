@@ -45,36 +45,37 @@ Složku si můžete rozbalit jako project7.
 
 ## Zadání A
 
-Opět navážeme na předchozí lekce, a budeme do pole ukládat hodnoty z potenciometru.
-Vytvoříme si pole, které při stisku vybraného tlačítka přidá aktuální hodnotu z `POT 0`.
+Opět navážeme na předchozí lekce, a budeme do pole ukládat hodnoty ze sensoru.
+Vytvoříme si pole, které při stisku vybraného tlačítka přidá aktuální hodnotu z ADC převodníku.
 Druhé tlačítko z tohoto pole poslední hodnotu smaže.
 Stav pole si můžeme po každé změně vypsat pomocí `#!ts console.log(pole)`.
 
 ??? note "Řešení"
     ```ts
-    import { SmartLed, LED_WS2812 } from "smartled";
-    import * as colors from "./libs/colors.js";
     import * as adc from "adc";
     import * as gpio from "gpio";
 
-    const INPUT_PIN : number = 2;
-    const LED_PIN : number = 21;
-    const LED_COUNT : number = 8;
-    const BTN_PIN : number = 18;
-    const MBTN_PIN : number = 16;
+    const SENSOR_PIN: number  = 4; // pin levého předního senzoru u kola z pohledu zvrchu
+    const LIGHTN_PIN: number  = 47; // pin na zapnutí podsvícení pro senzory
 
-    const ledStrip = new SmartLed(LED_PIN, LED_COUNT); // Nastavíme LED pásek
-    gpio.pinMode(BTN_PIN, gpio.PinMode.INPUT); // Nastavíme levé tlačítko
-    gpio.pinMode(MBTN_PIN, gpio.PinMode.INPUT); // Nastavíme střední tlačítko
-    adc.configure(INPUT_PIN); // Nastavíme vstup z POT0
+    const LBTN_PIN : number = 2; // pin levého tlačítka
+    const RBTN_PIN : number = 0; // pin pravého tlačítka
+
+    gpio.pinMode(LBTN_PIN, gpio.PinMode.INPUT); // nastavíme levé tlačítko
+    gpio.pinMode(RBTN_PIN, gpio.PinMode.INPUT); // nastavíme pravé tlačítko
+
+    adc.configure(SENSOR_PIN); // nakonfigurujeme pin senzoru
+
+    gpio.pinMode(LIGHTN_PIN, gpio.PinMode.OUTPUT); // nastavíme mód pinu podsvícení na output 
+    gpio.write(LIGHTN_PIN, 1); // zapneme podsvícení robůtka
 
     let arr : number[] = [];
 
-    gpio.on("falling", BTN_PIN, () => { // Při stisknutí levého tlačítka
-        arr.push(adc.read(INPUT_PIN)); // Přidáme do pole naměřenou hodnotu
+    gpio.on("falling", LBTN_PIN, () => { // Při stisknutí levého tlačítka
+        arr.push(adc.read(SENSOR_PIN)); // Přidáme do pole naměřenou hodnotu
         console.log(arr); // Vypíšeme nový stav
     });
-    gpio.on("falling", MBTN_PIN, () => { // Při stisknutí středního tlačítka
+    gpio.on("falling", RBTN_PIN, () => { // Při stisknutí pravého tlačítka
         arr.pop(); // Odebereme z pole poslední hodnotu
         console.log(arr); // Vypíšeme nový stav
     });
@@ -83,12 +84,12 @@ Stav pole si můžeme po každé změně vypsat pomocí `#!ts console.log(pole)`
 ## Výchozí úkol V1
 
 Tentokrát si vytvoříme o něco rozsáhlejší program, který naváže na předchozí úkol.
-Vytvoříme si pole čísel, do kterého pomocí prvního tlačítka načteme naměřené hodnoty z potenciometru.
+Vytvoříme si pole čísel, do kterého pomocí prvního tlačítka načteme naměřené hodnoty z ADC převodníku.
 Při stisku prvního tlačítka kontrolujeme, jestli už pole má délku 8.
 Pokud už je délka 8, další hodnoty nepřidáváme a stisk tlačítka pole nezmění.
 
 Druhé tlačítko smaže poslední prvek -- zde kontrolujeme, jestli tam nějaký prvek je.
 
-Třetí tlačítko na základě hodnot v poli rozsvítí LED pásek podle naměřených hodnot.
+Při každé změně hodnot v poli se rozsvítí LED pásek podle naměřených hodnot.
 Všechny hodnoty v poli převedeme na rozsah `colors.rainbow` (tedy 0-360) a rozsvítíme LED
 na odpovídajícím indexu naměřenou hodnotou.

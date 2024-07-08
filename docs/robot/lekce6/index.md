@@ -10,23 +10,23 @@ Své řešení opět můžeme psát do souborů z předchozích cvičení, nebo 
 
 Nejprve se naučíme, jak číst data z jednoho senzoru ze senzorů kolem kol a vypisovat je na monitoru:
 
-    ```ts
-    import * as gpio from "gpio";
-    import * as adc from "adc";
+```ts
+import * as gpio from "gpio";
+import * as adc from "adc";
 
-    const SENSOR_PIN: number  = 4; // pin levého předního senzoru u kola z pohledu zvrchu
-    const LIGHTN_PIN: number  = 47; // pin na zapnutí podsvícení pro senzory
+const SENSOR_PIN: number  = 4; // pin levého předního senzoru u kola z pohledu zvrchu
+const LIGHTN_PIN: number  = 47; // pin na zapnutí podsvícení pro senzory
 
-    adc.configure(SENSOR_PIN, adc.Attenuation.Db0); // pin senzoru nakonfigurujeme s útlumem nastaveným na 0
+adc.configure(SENSOR_PIN); // nakonfigurujeme pin senzoru
 
-    gpio.pinMode(LIGHTN_PIN, gpio.PinMode.OUTPUT); // nastavíme mód pinu podsvícení na output 
-    gpio.write(LIGHTN_PIN, 1); // zapneme podsvícení robůtka
+gpio.pinMode(LIGHTN_PIN, gpio.PinMode.OUTPUT); // nastavíme mód pinu podsvícení na output 
+gpio.write(LIGHTN_PIN, 1); // zapneme podsvícení robůtka
 
-    setInterval(() => { // každých 100 ms vyčteme data a vypíšeme je do konzole
-        const value = adc.read(SENSOR_PIN); // pomocí funkce read čteme data z SENZOR_PIN
-        console.log(value); //vypisujeme hodnotu do konzole
-    }, 100);
-    ```
+setInterval(() => { // každých 100 ms vyčteme data a vypíšeme je do konzole
+    const value = adc.read(SENSOR_PIN); // pomocí funkce read čteme data z SENZOR_PIN
+    console.log(value); //vypisujeme hodnotu do konzole
+}, 100);
+```
 
 ## Zadání A
 
@@ -48,7 +48,7 @@ Proto musíme data takzvaně přemapovat na jiný číselný rozsah, k čemuž s
     const SENSOR_PIN: number  = 4; // pin levého předního senzoru u kola z pohledu zvrchu
     const LIGHTN_PIN: number  = 47; // pin na zapnutí podsvícení pro senzory
 
-    adc.configure(SENSOR_PIN, adc.Attenuation.Db0); // pin senzoru nakonfigurujeme s útlumem nastaveným na 0
+    adc.configure(SENSOR_PIN); // nakonfigurujeme pin senzoru
 
     gpio.pinMode(LIGHTN_PIN, gpio.PinMode.OUTPUT); // nastavíme mód pinu podsvícení na output 
     gpio.write(LIGHTN_PIN, 1); // zapneme podsvícení robůtka
@@ -81,7 +81,7 @@ Napíšeme program, který bude pomocí dat z senzoru kolem kol měnit jas RGB L
     }
 
     const ledStrip: SmartLed  = new SmartLed(LED_PIN, LED_COUNT, LED_WS2812);  // připojí pásek na pin LED_PIN, s LED_COUT ledkami a typem WS2812
-    adc.configure(SENSOR_PIN, adc.Attenuation.Db0); // pin senzoru nakonfigurujeme s útlumem nastaveným na 0
+    adc.configure(SENSOR_PIN); // nakonfigurujeme pin senzoru
 
     gpio.pinMode(LIGHTN_PIN, gpio.PinMode.OUTPUT); // nastavíme mód pinu podsvícení na output 
     gpio.write(LIGHTN_PIN, 1); // zapneme podsvícení robůtka
@@ -111,7 +111,7 @@ Senzorů čáry a senzorů kolem kol je dohromady 8, ale pro zmenšení počtu v
     const LIGHTN_PIN: number  = 47; // pin na zapnutí podsvícení pro senzory
     const SENSOR_SWITCH_PIN: number  = 8; // pin na přepnutí mezi senzory u kola a senzory čáry
 
-    adc.configure(SENSOR_PIN, adc.Attenuation.Db0); // pin senzoru nakonfigurujeme s útlumem nastaveným na 0
+    adc.configure(SENSOR_PIN); // nakonfigurujeme pin senzoru
 
     gpio.pinMode(LIGHTN_PIN, gpio.PinMode.OUTPUT); // nastavíme mód pinu podsvícení na output 
     gpio.pinMode(SENSOR_SWITCH_PIN, gpio.PinMode.OUTPUT);
