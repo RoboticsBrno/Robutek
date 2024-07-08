@@ -11,6 +11,12 @@ Aby nám všechno správně fungovalo, musíme ho nejprve nainstalovat a k němu
 
 ### Jaculus
 
+#### Linux
+
+Na linuxu je třeba přidat oprávnění udev, [více zde](https://docs.espressif.com/projects/esp-idf/en/v5.2.2/esp32s2/api-guides/dfu.html#udev-rule-linux-only).
+
+#### Flash Jacula
+
 1. Otevřeme si [Jaculus web installer](https://installer.jaculus.org/) v Chrome nebo Edge.
 !!! warning "Tento postup nefunguje ve Firefoxu a jinych prohlížečích nezaložených na chromium"
 <hr>
