@@ -222,13 +222,13 @@ Ve zdrojovém kódu jsou komentáře (`// tohle je komentář`), které nám pop
 2. Dole na liště klikneme na `Config WiFi`
 
 ![](assets/add-wifi.png) <br>
-3. Vybere možnost `Add a WiFi network`
+3. Vyberte možnost `Add a WiFi network`
 
 ![](assets/wifi-ssid.png) <br>
-4. Do pole zadejte název WiFi sítě.
+4. Do pole zadejte název WiFi sítě `TechnikaNaVylete`
 
 ![](assets/wifi-passwd.png) <br>
-5. Dole v terminálu zadejte heslo WiFi sítě
+5. Dole v terminálu zadejte heslo WiFi sítě `huratabor`
 
 ![](assets/connect-wifi.png) <br>
 6. Znovu klikneme na `Config WiFi` a vybereme `Set WiFI to Station mode (connect to wifi)`
