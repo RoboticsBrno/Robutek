@@ -29,9 +29,9 @@ Letos budeme vývojové desky programovat na platformě ESP32-S3. Pro programov�
     <img src="./assets/elks-model.png">
 </div> -->
 
-## Přehled pinů
+<!--## Přehled pinů
 
-<!-- ### Tlačítka
+ ### Tlačítka
 
 - `SW0` - 18
 - `SW1` - 16

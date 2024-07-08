@@ -52,6 +52,7 @@ markdown_extensions:
   - attr_list
   - pymdownx.tabbed
   - meta
+  - md_in_html
   - pymdownx.snippets:
       url_download: True
   - pymdownx.tasklist:
@@ -120,10 +121,6 @@ nav:
       - robotAssembly/index.md
       - robotAssembly/stage1.md
       - robotAssembly/stage2.md
-  - Příslušenství robota:
-      - robotAccessories/ledStrip.md
-      - robotAccessories/button.md
-      - robotAccessories/lidar.md
   - Programování robota:
       - robot/index.md
       - robot/faq/index.md
@@ -138,3 +135,7 @@ nav:
       - robot/lekce8/index.md
       - robot/lekce9/index.md
       - robot/lekce10/index.md
+  - Příslušenství robota:
+      - robotAccessories/ledStrip.md
+      - robotAccessories/button.md
+      - robotAccessories/lidar.md

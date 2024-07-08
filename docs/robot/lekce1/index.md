@@ -18,25 +18,28 @@ Aby nám všechno správně fungovalo, musíme ho nejprve nainstalovat a k němu
 ![](assets/JacWebInstall1.png)<br>
 2. Zvolíme desku `ESP32 S3 DevKitC`<br>
 <hr>
+![]()
+3. V přepínači `Select board version` vybertne nejnovější dostupnou **(s nejvyšším číslem)**.
+<hr>
 ![](assets/JacWebInstall5.png)<br>
-3. Přepínač `Erase Flash` slouží k vymazání programů co už jsou nahrané na ESP. V defaultním stavu na `No` nevymaže programy na ESP.<br> 
+4. Přepínač `Erase Flash` slouží k vymazání programů co už jsou nahrané na ESP. V defaultním stavu na `No` nevymaže programy na ESP.<br> 
 <hr>
 ![]()
-4. Zapneme Robůtka a podržíme tlačítko `IO0`. Současně s ním zmáčkneme tlačítko nalevo od tlačítka - `IO0` což je tlačítko `RESET`. Tímto si přepneme robůtka do tzv. boot módu. 
+5. Zapneme Robůtka a podržíme tlačítko `IO0`. Současně s ním zmáčkneme tlačítko nalevo od tlačítka - `IO0` což je tlačítko `RESET`. Tímto si přepneme robůtka do tzv. boot módu. 
 <hr>
 ![](assets/JacWebInstall2.png)<br>
-5. Po připojení Robůtka v boot módu k počítači stiskneme v Jaculus web instalátoru tlačítko `Connenct`<br>
+6. Po připojení Robůtka v boot módu k počítači stiskneme v Jaculus web instalátoru tlačítko `Connenct`<br>
 <hr>
 ![](assets/JacWebInstall3.png)<br>
-6. V pop-up okénku zvolíme port `COM` na Windows nebo `ttyACM` na unix-like systémech a stiskneme 
+7. V pop-up okénku zvolíme port `COM` na Windows nebo `ttyACM` na unix-like systémech a stiskneme 
 **Connect**<br>
 <hr>
 ![](assets/JacWebInstall4.png)<br>
-7. Po chvilce se nám zobrazí tlačítko **flash**, které zmáčkneme.<br>
+8. Po chvilce se nám zobrazí tlačítko **flash**, které zmáčkneme.<br>
 !!! tip "když vám flash přes USB-C nepojede zkuste Micro-USB"
 <hr>
 ![]()
-8. Chvilku počkáme a jakmile přestanou v konzoli přibývat nové řádky, tak máme nainstalovaného Jacula!
+9. Chvilku počkáme a jakmile přestanou v konzoli přibývat nové řádky, tak máme nainstalovaného Jacula!
 
 
 ### Node.js
