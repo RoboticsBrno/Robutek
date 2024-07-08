@@ -1,10 +1,10 @@
+import * as colors from "./libs/colors.js"
 import * as Robutek from "./libs/robutek.js"
 
-Robutek.init()
 
-Robutek.strip.clear();
-Robutek.strip.set(0, { r: 255, g: 0, b: 0 });
-Robutek.strip.show();
+Robutek.ledStrip.set(0, colors.green); // nastaví barvu LED na desce na zelenou, LED na pásku začínají od 1
+Robutek.ledStrip.show(); // zobrazí nastavení na LED
 
-
-console.log("Robotický tábor 2024")
+setInterval(() => { // pravidelně vyvolává událost
+    console.log("Robotický tábor 2024, zdraví Jirka Vácha!"); // vypíše text: Robotický tábor 2024, zdraví Jirka Vácha!
+}, 1000); // čas opakování se udává v milisekundách (1000 ms je 1 sekunda)
