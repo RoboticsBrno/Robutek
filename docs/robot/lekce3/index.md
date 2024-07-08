@@ -82,11 +82,11 @@ barev na maximum (hodnoty `(255, 255, 255)`).
 Druhou variantou je použití předdefinovaných barev, které jsou v souboru `colors.ts`. Příklad použití obou variant:
 
   ```ts
-  Robutek.ledStrip.set(0, colors.off); // Vypne LEDku pomocí předdefinované barvy
-  Robutek.ledStrip.set(0, {r: 0, g: 0, b: 0}); // Vypne LEDku pomocí vlastní barvy
+  ledStrip.set(0, colors.off); // Vypne LEDku pomocí předdefinované barvy
+  ledStrip.set(0, {r: 0, g: 0, b: 0}); // Vypne LEDku pomocí vlastní barvy
 
-  Robutek.ledStrip.set(0, colors.green); // Rozsvítí LEDku zeleně pomocí předdefinované barvy
-  Robutek.ledStrip.set(0, {r: 0, g: 255, b: 0}); // Rozsvítí LEDku zeleně pomocí vlastní barvy
+  ledStrip.set(0, colors.green); // Rozsvítí LEDku zeleně pomocí předdefinované barvy
+  ledStrip.set(0, {r: 0, g: 255, b: 0}); // Rozsvítí LEDku zeleně pomocí vlastní barvy
   ```
 
 Pro tuto lekci si stáhneme [zip](./project3.zip), nebo navážeme na předchozí cvičení. Své řešení budeme psát do souboru `index.ts`.
@@ -98,17 +98,21 @@ Pomocí jedné proměnné se stavem a podmínky každou sekundu buď rozsvítím
 ??? note "Řešení"
     ```ts
     import * as Robutek from "./libs/robutek.js"
+    import { SmartLed } from "smartled"
     import * as colors from "./libs/colors.js"
+
+    const ledStrip = new SmartLed(Robutek.LedStrip.Pin, Robutek.LedStrip.Count, Robutek.LedStrip.Type);
+
     let on: boolean = false; // LED je vypnutá
 
     setInterval(() => {
       if (on) { // Pokud je LED zapnutá
-        Robutek.ledStrip.set(0, colors.off); // Vypneme LED
-        Robutek.ledStrip.show(); // Zobrazíme změny
+        ledStrip.set(0, colors.off); // Vypneme LED
+        ledStrip.show(); // Zobrazíme změny
         on = false;
       } else {
-        Robutek.ledStrip.set(0, colors.green); // Rozsvítíme LED zelenou barvou
-        Robutek.ledStrip.show(); // Zobrazíme změny
+        ledStrip.set(0, colors.green); // Rozsvítíme LED zelenou barvou
+        ledStrip.show(); // Zobrazíme změny
         on = true
       }
     }, 1000);
@@ -124,12 +128,15 @@ opět nastavit na `0`.
     ```ts
     import * as Robutek from "./libs/robutek.js"
     import * as colors from "./libs/colors.js"
+    import { SmartLed } from "smartled"
+
+    const ledStrip = new SmartLed(Robutek.LedStrip.Pin, Robutek.LedStrip.Count, Robutek.LedStrip.Type);
 
     let shade = 0; // Držíme si stav s aktuálním odstínem
 
     setInterval(() => {
-        Robutek.ledStrip.set(0, colors.rainbow(shade)); // Nastavíme LED na aktuální odstín
-        Robutek.ledStrip.show(); // Zobrazíme vybranou barvu
+        ledStrip.set(0, colors.rainbow(shade)); // Nastavíme LED na aktuální odstín
+        ledStrip.show(); // Zobrazíme vybranou barvu
         shade = shade + 1; // Zvedneme odstín (lze i shade += 1)
         if (shade > 360) {
             shade = 0;
@@ -151,7 +158,11 @@ Pokud při stisku tlačítka svítí poslední LED, zhasneme ji, a rozsvítíme 
     ```ts
     import * as Robutek from "./libs/robutek.js"
     import * as colors from "./libs/colors.js"
+    import { SmartLed } from "smartled"
+
     import * as gpio from "gpio";
+
+    const ledStrip = new SmartLed(Robutek.LedStrip.Pin, Robutek.LedStrip.Count, Robutek.LedStrip.Type);
 
     const BTN_PIN = 0;
 
@@ -159,17 +170,17 @@ Pokud při stisku tlačítka svítí poslední LED, zhasneme ji, a rozsvítíme 
 
     let index : number = 1;
     let color : Rgb = colors.light_blue; // Vybereme si barvu
-    Robutek.ledStrip.set(0, color); // Nastavíme LED na aktuální odstín
-    Robutek.ledStrip.show(); // Zobrazíme změny
+    ledStrip.set(0, color); // Nastavíme LED na aktuální odstín
+    ledStrip.show(); // Zobrazíme změny
 
     gpio.on("falling", BTN_PIN, () => {
-        Robutek.ledStrip.set(index, colors.off); // Vypneme předchozí LED
+        ledStrip.set(index, colors.off); // Vypneme předchozí LED
         index = index + 1; // Zvedneme index (lze i index += 1)
         if(index > 8){ // Pokud jsme mimo rozsah pásku, vrátíme se na začátek
             index = 1;
         }
-        Robutek.ledStrip.set(index, color); // Nastavíme aktuální LED
-        Robutek.ledStrip.show();  // Zobrazíme změny
+        ledStrip.set(index, color); // Nastavíme aktuální LED
+        ledStrip.show();  // Zobrazíme změny
     });
     ```
 
