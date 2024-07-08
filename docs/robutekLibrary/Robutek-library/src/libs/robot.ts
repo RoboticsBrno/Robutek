@@ -6,32 +6,38 @@ import { Servo } from "./servo.js";
 
 import { SmartLed, LED_WS2812, Rgb } from "smartled";
 
+import * as motors from "motor"
+
+const leftMotorPins: motors.MotorPins = { motA: 11, motB: 12, encA: 39, encB: 40 }
+const rightMotorPins: motors.MotorPins = { motA: 45, motB: 13, encA: 41, encB: 42 }
+
+const leftMotorLedc: motors.LedcConfig = { timer: 1, channelA: 0, channelB: 1 }
+const rightMotorLedc: motors.LedcConfig = { timer: 1, channelA: 2, channelB: 3 }
+
+export const LeftMot = new motors.Motor({pins:leftMotorPins, ledc:leftMotorLedc, encTicks:400, diameter:10});
+export const RightMot = new motors.Motor({pins:rightMotorPins, ledc:rightMotorLedc, encTicks:400, diameter:10});
+
+//const wheels = new motors.Wheels({ left: leftMotor, right: rightMotor, diameter: 20, width: 100 })
+
 /*
-import * as motors from "motors"
 
-const leftMotor: motors.MotorConf = { neg: 1, pos: 2, encA: 3, encB: 4, encTicks: 200 }
-const rightMotor: motors.MotorConf = { neg: 5, pos: 6, encA: 7, encB: 8, encTicks: 200, reverse: true }
+import * as simplemotors from "./simplemotors.js"
 
-const wheels = new motors.Wheels({ left: leftMotor, right: rightMotor, diameter: 20, width: 100 })
+const LMOT = new simplemotors.Motor(11, 12, 1, 2, 3);
+const RMOT = new simplemotors.Motor(45, 13, 1, 4, 5);
+
 */
 
-import * as motors from "./simplemotors.js"
-
-const LMOT = new motors.Motor(11, 12, 1, 2, 3);
-const RMOT = new motors.Motor(45, 13, 1, 4, 5);
-
-
-
 export function init() {
-    adc.configure(Sensors.S_1, adc.Attenuation.Db0); // pin senzoru nakonfigurujeme s útlumem nastaveným na 0
-    adc.configure(Sensors.S_2, adc.Attenuation.Db0); // pin senzoru nakonfigurujeme s útlumem nastaveným na 0
-    adc.configure(Sensors.S_3, adc.Attenuation.Db0); // pin senzoru nakonfigurujeme s útlumem nastaveným na 0
-    adc.configure(Sensors.S_4, adc.Attenuation.Db0); // pin senzoru nakonfigurujeme s útlumem nastaveným na 0
+    adc.configure(LineSensors.S_1, adc.Attenuation.Db0);
+    adc.configure(LineSensors.S_2, adc.Attenuation.Db0);
+    adc.configure(LineSensors.S_3, adc.Attenuation.Db0);
+    adc.configure(LineSensors.S_4, adc.Attenuation.Db0);
 
-    gpio.pinMode(Sensors.S_PWR, gpio.PinMode.OUTPUT); // nastavíme mód pinu podsvícení na output
-    gpio.pinMode(Sensors.S_SW, gpio.PinMode.OUTPUT);
+    gpio.pinMode(LineSensors.S_PWR, gpio.PinMode.OUTPUT);
+    gpio.pinMode(LineSensors.S_SW, gpio.PinMode.OUTPUT);
 
-    gpio.write(Sensors.S_PWR, 1); // zapneme podsvícení robůtka
+    gpio.write(LineSensors.S_PWR, 1);
 }
 
 
@@ -40,6 +46,7 @@ type MoveDuration = {
     distance?: number; // distance in cm
     speed?: number; // speed in mm/s?
 }
+/*
 export async function move(curve: number, duration?: MoveDuration) {
     // curve = -1 to 1
 
@@ -79,7 +86,7 @@ type RotateDuration = {
     speed?: number; // speed in mm/s?
 }
 export function rotate(duration: RotateDuration) {
-
+    
     if (duration.angle < 0) {
         LMOT.write(duration.speed);
         RMOT.write(-duration.speed);
@@ -87,21 +94,22 @@ export function rotate(duration: RotateDuration) {
         LMOT.write(-duration.speed);
         RMOT.write(duration.speed);
     }
-
+    
     //wheels.rotate(duration)
 }
 
 export function stop() {
     LMOT.write(0);
     RMOT.write(0);
-
+    
     //wheels.stop()
 }
+*/
 
 
 export type SensorType = 'W_FR' | 'W_FL' | 'W_BL' | 'W_BR' | 'L_FR' | 'L_FL' | 'L_BL' | 'L_BR';
-export class Sensors {
-
+export class LineSensors {
+    
     public static readonly S_1: number = 4;
     public static readonly S_2: number = 5;
     public static readonly S_3: number = 6;
@@ -117,7 +125,7 @@ export class Sensors {
             return;
         }
         this.sw = to_value;
-        gpio.write(Sensors.S_SW, to_value);
+        gpio.write(LineSensors.S_SW, to_value);
         await sleep(5);
     }
 
@@ -125,36 +133,36 @@ export class Sensors {
         switch (sensor) {
             case 'W_FR':
                 this.switch_sensors(0);
-                return adc.read(Sensors.S_1);
+                return adc.read(LineSensors.S_1);
 
             case 'W_FL':
                 this.switch_sensors(0);
-                return adc.read(Sensors.S_2);
+                return adc.read(LineSensors.S_2);
 
             case 'W_BL':
                 this.switch_sensors(0);
-                return adc.read(Sensors.S_3);
+                return adc.read(LineSensors.S_3);
 
             case 'W_BR':
                 this.switch_sensors(0);
-                return adc.read(Sensors.S_4);
+                return adc.read(LineSensors.S_4);
 
 
             case 'L_FR':
                 this.switch_sensors(1);
-                return adc.read(Sensors.S_1);
+                return adc.read(LineSensors.S_1);
 
             case 'L_FL':
                 this.switch_sensors(1);
-                return adc.read(Sensors.S_2);
+                return adc.read(LineSensors.S_2);
 
             case 'L_BL':
                 this.switch_sensors(1);
-                return adc.read(Sensors.S_3);
+                return adc.read(LineSensors.S_3);
 
             case 'L_BR':
                 this.switch_sensors(1);
-                return adc.read(Sensors.S_4);
+                return adc.read(LineSensors.S_4);
 
             default:
                 return 0;
@@ -184,39 +192,15 @@ export class Pen {
     }
 }
 
-export class Strip {
-    private strip: SmartLed;
-
-    constructor() {
-        this.strip = new SmartLed(48, 9, LED_WS2812);
-    }
-
-    public set(index: number, color: Rgb) {
-        this.strip.set(index, color);
-    }
-
-    public fill(color: Rgb) {
-        for (let i = 0; i < 9; i++) {
-            this.strip.set(i, color);
-        }
-    }
-
-    public show() {
-        this.strip.show();
-    }
-
-    public clear() {
-        this.strip.clear();
-    }
-}
+export const strip = new SmartLed(48, 9, LED_WS2812);
 
 export class Pins {
     public static readonly Status_LED: number = 46;
 
-    public static readonly M1_1 = 11;
-    public static readonly M1_2 = 12;
-    public static readonly M2_1 = 45;
-    public static readonly M2_2 = 13;
+    public static readonly Motor1_A = 11;
+    public static readonly Motor1_B = 12;
+    public static readonly Motor2_A = 45;
+    public static readonly Motor2_B = 13;
     public static readonly ENC1_1 = 39;
     public static readonly ENC1_2 = 40;
     public static readonly ENC2_1 = 41;
