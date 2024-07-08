@@ -4,7 +4,7 @@ import * as gpio from "gpio";
 
 import { Servo } from "./servo.js";
 
-import { SmartLed, LED_WS2812, Rgb } from "smartled";
+import { SmartLed, LED_WS2812 } from "smartled";
 
 import * as motors from "motor"
 
@@ -14,19 +14,9 @@ const rightMotorPins: motors.MotorPins = { motA: 45, motB: 13, encA: 41, encB: 4
 const leftMotorLedc: motors.LedcConfig = { timer: 1, channelA: 0, channelB: 1 }
 const rightMotorLedc: motors.LedcConfig = { timer: 1, channelA: 2, channelB: 3 }
 
-export const LeftMot = new motors.Motor({pins:leftMotorPins, ledc:leftMotorLedc, encTicks:400, diameter:10});
-export const RightMot = new motors.Motor({pins:rightMotorPins, ledc:rightMotorLedc, encTicks:400, diameter:10});
+export const LeftMot = new motors.Motor({ pins: leftMotorPins, ledc: leftMotorLedc, encTicks: 400, diameter: 10 });
+export const RightMot = new motors.Motor({ pins: rightMotorPins, ledc: rightMotorLedc, encTicks: 400, diameter: 10 });
 
-//const wheels = new motors.Wheels({ left: leftMotor, right: rightMotor, diameter: 20, width: 100 })
-
-/*
-
-import * as simplemotors from "./simplemotors.js"
-
-const LMOT = new simplemotors.Motor(11, 12, 1, 2, 3);
-const RMOT = new simplemotors.Motor(45, 13, 1, 4, 5);
-
-*/
 
 export function init() {
     adc.configure(LineSensors.S_1, adc.Attenuation.Db0);
@@ -46,70 +36,11 @@ type MoveDuration = {
     distance?: number; // distance in cm
     speed?: number; // speed in mm/s?
 }
-/*
-export async function move(curve: number, duration?: MoveDuration) {
-    // curve = -1 to 1
-
-    // Ensure the curve is between -1 and 1
-    if (curve < -1) curve = -1;
-    if (curve > 1) curve = 1;
-
-    if (duration.speed != undefined) {
-        // Just a temporary motor driver
-
-
-        // Calculate motor speeds
-        let m1: number;
-        let m2: number;
-
-        if (curve >= 0) {
-            // Curve from 0 to 1 (m1 is max, m2 decreases)
-            m1 = duration.speed;
-            m2 = duration.speed * (1 - curve);
-        } else {
-            // Curve from -1 to 0 (m2 is max, m1 decreases)
-            m1 = duration.speed * (1 + curve); // curve is negative, so this increases from 0 to speed
-            m2 = duration.speed;
-        }
-
-        LMOT.write(m1)
-        RMOT.write(m2)
-
-    }
-
-    //await wheels.move(curve, duration)
-}
-
-
-type RotateDuration = {
-    angle?: number; // angle in degrees
-    speed?: number; // speed in mm/s?
-}
-export function rotate(duration: RotateDuration) {
-    
-    if (duration.angle < 0) {
-        LMOT.write(duration.speed);
-        RMOT.write(-duration.speed);
-    } else {
-        LMOT.write(-duration.speed);
-        RMOT.write(duration.speed);
-    }
-    
-    //wheels.rotate(duration)
-}
-
-export function stop() {
-    LMOT.write(0);
-    RMOT.write(0);
-    
-    //wheels.stop()
-}
-*/
 
 
 export type SensorType = 'W_FR' | 'W_FL' | 'W_BL' | 'W_BR' | 'L_FR' | 'L_FL' | 'L_BL' | 'L_BR';
 export class LineSensors {
-    
+
     public static readonly S_1: number = 4;
     public static readonly S_2: number = 5;
     public static readonly S_3: number = 6;
