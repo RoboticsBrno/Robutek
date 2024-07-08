@@ -16,15 +16,19 @@ Nejdříve si zopakujeme předchozí lekci, a rozsvítíme RGB LED na Robůtkovi
 
 Na začátku tohoto úkolu si stáhneme nový [zip](./blank_project.zip) soubor obsahující prázdný projekt. Po stažení složku rozbalíme a otevřeme ve Visual Studio Code. V souboru `index.ts` jsou připraveny `import` příkazy: ty nám umožní využívat funkcionalitu z různých souborů, např. jednoduše ovládat LEDku, nebo využívat nadefinované barvy.
 
-Barvu LED nastavíme pomocí `Robutek.ledStrip.set(0, colors.nějaká_barva)` a zobrazíme pomocí `Robutek.ledStrip.show()`.
+Pásek se inicializuje pomocí `const ledStrip = new SmartLed(Robutek.LedStrip.Pin, Robutek.LedStrip.Count, Robutek.LedStrip.Type);`.
+Barvu LED nastavíme pomocí `ledStrip.set(0, colors.nějaká_barva)` a zobrazíme pomocí `ledStrip.show()`.
 
 ??? note "Řešení"
     ```ts
     import * as Robutek from "./libs/robutek.js"
     import * as colors from "./libs/colors.js"
+    import { SmartLed } from "smartled"
 
-    Robutek.ledStrip.set(0, colors.red); // nastaví barvu nulté LED na červenou (RGB 255 0 0)
-    Robutek.ledStrip.show(); // zobrazí nastavení na LED
+    const ledStrip = new SmartLed(Robutek.LedStrip.Pin, Robutek.LedStrip.Count, Robutek.LedStrip.Type);
+
+    ledStrip.set(0, colors.red); // nastaví barvu nulté LED na červenou (RGB 255 0 0)
+    ledStrip.show(); // zobrazí nastavení na LED
     ```
 
 ## Co je to událost v programování?
@@ -58,20 +62,23 @@ Pomocí událostí rozsvítíme při stisknutí tlačítka (GPIO 0) RGB LED na E
     ```ts
     import * as Robutek from "./libs/robutek.js"
     import * as colors from "./libs/colors.js"
+    import { SmartLed } from "smartled"
     import * as gpio from "gpio"
+
+    const ledStrip = new SmartLed(Robutek.LedStrip.Pin, Robutek.LedStrip.Count, Robutek.LedStrip.Type);
 
     const BTN_RIGHT = 0;
 
     gpio.pinMode(BTN_RIGHT, gpio.PinMode.INPUT); // nastaví pin 0 jako vstup
 
     gpio.on("falling", BTN_RIGHT, () => { // událost, která proběhne při stisknutí tlačítka připojeného na pin 0
-        Robutek.ledStrip.set(0, colors.red); // nastaví barvu nulté LED na červenou (RGB 255 0 0)
-        Robutek.ledStrip.show(); // zobrazí nastavení na LED
+        ledStrip.set(0, colors.red); // nastaví barvu nulté LED na červenou (RGB 255 0 0)
+        ledStrip.show(); // zobrazí nastavení na LED
     });
 
     gpio.on("rising", BTN_RIGHT, () => { // událost, která proběhne při puštění tlačítka připojeného na pin 0
-        Robutek.ledStrip.set(0, colors.off); // nastaví nultou LED na zhasnutou (RGB 0 0 0)
-        Robutek.ledStrip.show(); // zobrazí nastavení na LED
+        ledStrip.set(0, colors.off); // nastaví nultou LED na zhasnutou (RGB 0 0 0)
+        ledStrip.show(); // zobrazí nastavení na LED
     });
     ```
 

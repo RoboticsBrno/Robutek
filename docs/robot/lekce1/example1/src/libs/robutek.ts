@@ -2,46 +2,53 @@
 import * as adc from "adc";
 import * as gpio from "gpio";
 
-import { Servo } from "./servo.js";
-
-import { SmartLed, LED_WS2812 } from "smartled";
+import { LED_WS2812 } from "smartled";
 
 import * as motors from "motor"
 import * as ledc from "ledc";
 
-ledc.configureTimer(0, 64000, 10);
+const robutekDiameter = 80; // mm
 
-const leftMotorPins: motors.MotorPins = { motA: 11, motB: 12, encA: 39, encB: 40 }
-const rightMotorPins: motors.MotorPins = { motA: 45, motB: 13, encA: 42, encB: 41 }
-
-const leftMotorLedc: motors.LedcConfig = { timer: 0, channelA: 0, channelB: 1 }
-const rightMotorLedc: motors.LedcConfig = { timer: 0, channelA: 2, channelB: 3 }
-
-export const LeftMot = new motors.Motor({ pins: leftMotorPins, ledc: leftMotorLedc, encTicks: 406, diameter: 34 });
-export const RightMot = new motors.Motor({ pins: rightMotorPins, ledc: rightMotorLedc, encTicks: 406, diameter: 34 });
-
-
-export function init() {
-    adc.configure(LineSensors.S_1, adc.Attenuation.Db0);
-    adc.configure(LineSensors.S_2, adc.Attenuation.Db0);
-    adc.configure(LineSensors.S_3, adc.Attenuation.Db0);
-    adc.configure(LineSensors.S_4, adc.Attenuation.Db0);
-
-    gpio.pinMode(LineSensors.S_PWR, gpio.PinMode.OUTPUT);
-    gpio.pinMode(LineSensors.S_SW, gpio.PinMode.OUTPUT);
-
-    gpio.write(LineSensors.S_PWR, 1);
+export class Pen {
+    public static readonly Pin: number = 38;
+    public static readonly Timer: number = 1;
+    public static readonly Channel: number = 4;
+    
+    public static readonly Up: number = 512 + 180;
+    public static readonly Down: number = 512 - 180;
+    public static readonly Middle: number = 512;
+    public static readonly Unload: number = 0;
 }
+
+export class LedStrip {
+    public static readonly Count = 9;
+    public static readonly Pin = 48;
+    public static readonly Type = LED_WS2812;
+}
+
+export class Pins {
+    public static readonly StatusLED: number = 46;
+
+    public static readonly Motor1A: number = 11;
+    public static readonly Motor1B: number = 12;
+    public static readonly Motor2A: number = 45;
+    public static readonly Motor2B: number = 13;
+    public static readonly Enc1A: number = 39;
+    public static readonly Enc1B: number = 40;
+    public static readonly Enc2A: number = 42;
+    public static readonly Enc2B: number = 41;
+}
+
 
 export type SensorType = 'W_FR' | 'W_FL' | 'W_BL' | 'W_BR' | 'L_FR' | 'L_FL' | 'L_BL' | 'L_BR';
 export class LineSensors {
 
-    public static readonly S_1: number = 4;
-    public static readonly S_2: number = 5;
-    public static readonly S_3: number = 6;
-    public static readonly S_4: number = 7;
-    public static readonly S_SW: number = 8;
-    public static readonly S_PWR: number = 47;
+    public static readonly Sens_1: number = 4;
+    public static readonly Sens_2: number = 5;
+    public static readonly Sens_3: number = 6;
+    public static readonly Sens_4: number = 7;
+    public static readonly Sens_SW: number = 8;
+    public static readonly Sens_EN: number = 47;
 
     private sw: number = 0;
 
@@ -51,7 +58,7 @@ export class LineSensors {
             return;
         }
         this.sw = to_value;
-        gpio.write(LineSensors.S_SW, to_value);
+        gpio.write(LineSensors.Sens_SW, to_value);
         await sleep(5);
     }
 
@@ -59,36 +66,36 @@ export class LineSensors {
         switch (sensor) {
             case 'W_FR':
                 this.switch_sensors(0);
-                return adc.read(LineSensors.S_1);
+                return adc.read(LineSensors.Sens_1);
 
             case 'W_FL':
                 this.switch_sensors(0);
-                return adc.read(LineSensors.S_2);
+                return adc.read(LineSensors.Sens_2);
 
             case 'W_BL':
                 this.switch_sensors(0);
-                return adc.read(LineSensors.S_3);
+                return adc.read(LineSensors.Sens_3);
 
             case 'W_BR':
                 this.switch_sensors(0);
-                return adc.read(LineSensors.S_4);
+                return adc.read(LineSensors.Sens_4);
 
 
             case 'L_FR':
                 this.switch_sensors(1);
-                return adc.read(LineSensors.S_1);
+                return adc.read(LineSensors.Sens_1);
 
             case 'L_FL':
                 this.switch_sensors(1);
-                return adc.read(LineSensors.S_2);
+                return adc.read(LineSensors.Sens_2);
 
             case 'L_BL':
                 this.switch_sensors(1);
-                return adc.read(LineSensors.S_3);
+                return adc.read(LineSensors.Sens_3);
 
             case 'L_BR':
                 this.switch_sensors(1);
-                return adc.read(LineSensors.S_4);
+                return adc.read(LineSensors.Sens_4);
 
             default:
                 return 0;
@@ -97,38 +104,106 @@ export class LineSensors {
     }
 }
 
-export class Pen {
-    private servo: Servo;
+ledc.configureTimer(0, 64000, 10);
 
-    public static readonly UP = 512 + 180;
-    public static readonly DOWN = 512 - 180;
-    public static readonly MIDDLE = 512;
-    public static readonly UNLOAD = 0;
+const leftMotorPins: motors.MotorPins = { motA: Pins.Motor1A, motB: Pins.Motor1B, encA: Pins.Enc1A, encB: Pins.Enc1B }
+const rightMotorPins: motors.MotorPins = { motA: Pins.Motor2A, motB: Pins.Motor2B, encA: Pins.Enc2A, encB: Pins.Enc2B }
 
-    constructor(pin: number) {
-        this.servo = new Servo(pin, 1, 0);
+const leftMotorLedc: motors.LedcConfig = { timer: 0, channelA: 0, channelB: 1 }
+const rightMotorLedc: motors.LedcConfig = { timer: 0, channelA: 2, channelB: 3 }
+
+export const leftMot = new motors.Motor({ pins: leftMotorPins, ledc: leftMotorLedc, encTicks: 410, diameter: 34 });
+export const rightMot = new motors.Motor({ pins: rightMotorPins, ledc: rightMotorLedc, encTicks: 410, diameter: 34 });
+
+
+adc.configure(LineSensors.Sens_1, adc.Attenuation.Db0);
+adc.configure(LineSensors.Sens_2, adc.Attenuation.Db0);
+adc.configure(LineSensors.Sens_3, adc.Attenuation.Db0);
+adc.configure(LineSensors.Sens_4, adc.Attenuation.Db0);
+
+gpio.pinMode(LineSensors.Sens_EN, gpio.PinMode.OUTPUT);
+gpio.write(LineSensors.Sens_EN, 1);
+
+gpio.pinMode(LineSensors.Sens_SW, gpio.PinMode.OUTPUT);
+
+let speed = 0;
+
+export function setSpeed(value: number) {
+    speed = value;
+}
+
+export function getSpeed() {
+    return speed;
+}
+
+export type MoveDuration = { distance?: number, time?: number };
+
+/**
+ * Move the robot
+ * @param curve -1 (left) to 1 (right)
+ * @param duration 
+ */
+export async function move(curve: number, duration?: MoveDuration) {
+    let lMot = 0;
+    let rMot = 0;
+
+    if (curve < 0) {
+        lMot = curve+1;
+        rMot = 1;
+    }
+    else if (curve > 0) {
+        lMot = 1;
+        rMot = 1-curve;
+    }
+    else {
+        lMot = 1;
+        rMot = 1;
     }
 
-    /**
-     * Set the pen servo position.
-     * @param value The position to set the servo to, from 0 to 1023.
-     */
-    public move(value: number) {
-        this.servo.write(value);
+    leftMot.setSpeed(lMot*speed);
+    rightMot.setSpeed(rMot*speed);
+
+    if (duration) {
+        if (duration.time) {
+            await Promise.allSettled([leftMot.move({ time: duration.time*lMot }), rightMot.move({ time: duration.time*rMot })]);
+        }
+        else if (duration.distance) {
+            await Promise.allSettled([leftMot.move({ distance: duration.distance*lMot }), rightMot.move({ distance: duration.distance*rMot })]);
+        }
     }
 }
 
-export const ledStrip = new SmartLed(48, 9, LED_WS2812);
+/**
+ * Rotate the robot
+ * @param angle in degrees (optional)
+ */
+export async function rotate(angle?: number) {
+    leftMot.setSpeed(speed);
+    rightMot.setSpeed(speed);
+    
+    if (!angle) {
+        await Promise.allSettled([leftMot.move(), rightMot.move()]);
+    }
+    else {
+        const arcLength = (Math.abs(angle) / 360) * Math.PI * robutekDiameter;
+        
+        let lMot:number;
+        let rMot:number;
+        
+        if (angle < 0) {
+            lMot = -arcLength;
+            rMot = arcLength;
+        }
+        else {
+            lMot = arcLength;
+            rMot = -arcLength;
+        }
 
-export class Pins {
-    public static readonly Status_LED: number = 46;
+        await Promise.allSettled([leftMot.move({ distance: lMot }), rightMot.move({ distance: rMot })]);
 
-    public static readonly Motor1_A = 11;
-    public static readonly Motor1_B = 12;
-    public static readonly Motor2_A = 45;
-    public static readonly Motor2_B = 13;
-    public static readonly ENC1_1 = 39;
-    public static readonly ENC1_2 = 40;
-    public static readonly ENC2_1 = 41;
-    public static readonly ENC2_2 = 42;
+    }
+}
+
+export async function stop(brake?: boolean) {
+    await Promise.allSettled([leftMot.stop(brake), rightMot.stop(brake)]);
 }

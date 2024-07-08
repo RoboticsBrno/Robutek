@@ -1,8 +1,9 @@
 import * as Robutek from "./libs/robutek.js"
 import * as wifi from "wifi";
+import {SmartLed, LED_WS2812} from "smartled"
 import Layout from "./layout.js"
 
-Robutek.init() // Zprovozní Robůtka
+const ledStrip = new SmartLed(Robutek.LedStrip.Pin, Robutek.LedStrip.Count, Robutek.LedStrip.Type);
 
 function scale(value) {
   // Scale the joystick value from -32768..32767 to -1..1
@@ -40,10 +41,10 @@ function setMotorsJoystick(x: number, y: number, coef = 2.5) {
   console.log(`left motor power: ${l}, right motor power: ${r}`);
 
   // Set motor power
-  Robutek.LeftMot.setSpeed(l);
-  Robutek.LeftMot.move();
-  Robutek.RightMot.setSpeed(r);
-  Robutek.RightMot.move();
+  Robutek.leftMot.setSpeed(l);
+  Robutek.leftMot.move();
+  Robutek.rightMot.setSpeed(r);
+  Robutek.rightMot.move();
 }
 
 
@@ -52,13 +53,13 @@ let speedLimiter = 0.5;
 Layout.begin("Owner name", "Device Name", builder => {
 
   builder.ButtonBlink.onPress(async () => {
-    Robutek.ledStrip.clear();
-    Robutek.ledStrip.set(0, { r: 255, g: 0, b: 0 });
-    Robutek.ledStrip.show();
+    ledStrip.clear();
+    ledStrip.set(0, { r: 255, g: 0, b: 0 });
+    ledStrip.show();
     await sleep(500);
-    Robutek.ledStrip.clear();
-    Robutek.ledStrip.set(0, { r: 0, g: 255, b: 0 });
-    Robutek.ledStrip.show();
+    ledStrip.clear();
+    ledStrip.set(0, { r: 0, g: 255, b: 0 });
+    ledStrip.show();
     await sleep(500);
   });
 

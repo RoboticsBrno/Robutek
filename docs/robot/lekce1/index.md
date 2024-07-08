@@ -213,7 +213,7 @@ Ve zdrojovém kódu jsou komentáře (`// tohle je komentář`), které nám pop
 	??? note "Řešení"
 		```ts
 		...
-		Robutek.ledStrip.set(0, colors.red); // nastaví barvu LED na ESP32 na červenou
+		ledStrip.set(0, colors.red); // nastaví barvu LED na Robůtkovi na červenou
 		...
 		```
 
