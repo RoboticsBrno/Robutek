@@ -83,6 +83,7 @@ plugins:
   - zip_folders:
       folders:
         - robot/lekce1/example1
+        - robot/lekce2/blank_project
         - robot/lekce3/project3
         - robot/lekce4/project4
         - robot/lekce6/project6

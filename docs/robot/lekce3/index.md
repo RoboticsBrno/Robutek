@@ -82,11 +82,11 @@ barev na maximum (hodnoty `(255, 255, 255)`).
 Druhou variantou je použití předdefinovaných barev, které jsou v souboru `colors.ts`. Příklad použití obou variant:
 
   ```ts
-  ledStrip.set(0, colors.off); // Vypne LEDku pomocí předdefinované barvy
-  ledStrip.set(0, {r: 0, g: 0, b: 0}); // Vypne LEDku pomocí vlastní barvy
+  Robutek.ledStrip.set(0, colors.off); // Vypne LEDku pomocí předdefinované barvy
+  Robutek.ledStrip.set(0, {r: 0, g: 0, b: 0}); // Vypne LEDku pomocí vlastní barvy
 
-  ledStrip.set(0, colors.green); // Rozsvítí LEDku zeleně pomocí předdefinované barvy
-  ledStrip.set(0, {r: 0, g: 255, b: 0}); // Rozsvítí LEDku zeleně pomocí vlastní barvy
+  Robutek.ledStrip.set(0, colors.green); // Rozsvítí LEDku zeleně pomocí předdefinované barvy
+  Robutek.ledStrip.set(0, {r: 0, g: 255, b: 0}); // Rozsvítí LEDku zeleně pomocí vlastní barvy
   ```
 
 Pro tuto lekci si stáhneme [zip](./project3.zip), nebo navážeme na předchozí cvičení. Své řešení budeme psát do souboru `index.ts`.
@@ -97,24 +97,18 @@ Pomocí jedné proměnné se stavem a podmínky každou sekundu buď rozsvítím
 
 ??? note "Řešení"
     ```ts
-    import { SmartLed, LED_WS2812 } from "smartled";
+    import * as Robutek from "./libs/robutek.js"
     import * as colors from "./libs/colors.js"
-
-    const LED_PIN = 48;
-    const LED_COUNT = 1;
-
-    const ledStrip = new SmartLed(LED_PIN, LED_COUNT, LED_WS2812);  // připojí pásek na pin 48, s 1 ledkou a typem WS2812
-
     let on: boolean = false; // LED je vypnutá
 
     setInterval(() => {
       if (on) { // Pokud je LED zapnutá
-        ledStrip.set(0, colors.off); // Vypneme LED
-        ledStrip.show(); // Zobrazíme změny
+        Robutek.ledStrip.set(0, colors.off); // Vypneme LED
+        Robutek.ledStrip.show(); // Zobrazíme změny
         on = false;
       } else {
-        ledStrip.set(0, colors.green); // Rozsvítíme LED zelenou barvou
-        ledStrip.show(); // Zobrazíme změny
+        Robutek.ledStrip.set(0, colors.green); // Rozsvítíme LED zelenou barvou
+        Robutek.ledStrip.show(); // Zobrazíme změny
         on = true
       }
     }, 1000);
@@ -128,19 +122,14 @@ opět nastavit na `0`.
 
 ??? note "Řešení"
     ```ts
-    import { SmartLed, LED_WS2812 } from "smartled";
+    import * as Robutek from "./libs/robutek.js"
     import * as colors from "./libs/colors.js"
-
-    const LED_PIN = 48;
-    const LED_COUNT = 1;
-
-    const ledStrip = new SmartLed(LED_PIN, LED_COUNT, LED_WS2812);  // připojí pásek na pin 48, s 1 ledkou a typem WS2812
 
     let shade = 0; // Držíme si stav s aktuálním odstínem
 
     setInterval(() => {
-        ledStrip.set(0, colors.rainbow(shade)); // Nastavíme LED na aktuální odstín
-        ledStrip.show(); // Zobrazíme vybranou barvu
+        Robutek.ledStrip.set(0, colors.rainbow(shade)); // Nastavíme LED na aktuální odstín
+        Robutek.ledStrip.show(); // Zobrazíme vybranou barvu
         shade = shade + 1; // Zvedneme odstín (lze i shade += 1)
         if (shade > 360) {
             shade = 0;
@@ -152,36 +141,35 @@ opět nastavit na `0`.
 
 Tentokrát budeme reagovat na stisk tlačítka.
 Do desky si zapojíme pásku 8 inteligentních ledek, a vybranou barvou je budeme rozsvěcet.
+
 Po stisku tlačítka zhasneme aktuální LEDku, a rozsvítíme tu další.
 Pokud při stisku tlačítka svítí poslední LED, zhasneme ji, a rozsvítíme opět první LED.
 
+!!! note "Led pásek je připojený za inteligentní ledku na desce, takže inde pásku začíná na 1"
+
 ??? note "Řešení"
     ```ts
-    import { SmartLed, Rgb, LED_WS2812 } from "smartled";
+    import * as Robutek from "./libs/robutek.js"
     import * as colors from "./libs/colors.js"
     import * as gpio from "gpio";
-
-    const LED_PIN = 21;
-    const LED_COUNT = 8;
 
     const BTN_PIN = 0;
 
     gpio.pinMode(BTN_PIN, gpio.PinMode.INPUT_PULLUP); // Nastavíme tlačítko
-    const ledStrip = new SmartLed(LED_PIN, LED_COUNT, LED_WS2812);  // připojí pásek na pin 21, s 8 ledkami a typem WS2812
 
-    let index : number = 0;
+    let index : number = 1;
     let color : Rgb = colors.light_blue; // Vybereme si barvu
-    ledStrip.set(0, color); // Nastavíme LED na aktuální odstín
-    ledStrip.show(); // Zobrazíme změny
+    Robutek.ledStrip.set(0, color); // Nastavíme LED na aktuální odstín
+    Robutek.ledStrip.show(); // Zobrazíme změny
 
     gpio.on("falling", BTN_PIN, () => {
-        ledStrip.set(index, colors.off); // Vypneme předchozí LED
+        Robutek.ledStrip.set(index, colors.off); // Vypneme předchozí LED
         index = index + 1; // Zvedneme index (lze i index += 1)
-        if(index > 7){ // Pokud jsme mimo rozsah pásku, vrátíme se na začátek
-            index = 0;
+        if(index > 8){ // Pokud jsme mimo rozsah pásku, vrátíme se na začátek
+            index = 1;
         }
-        ledStrip.set(index, color); // Nastavíme aktuální LED
-        ledStrip.show();  // Zobrazíme změny
+        Robutek.ledStrip.set(index, color); // Nastavíme aktuální LED
+        Robutek.ledStrip.show();  // Zobrazíme změny
     });
     ```
 
