@@ -4,10 +4,40 @@ V této lekci si představíme Jaculus, nainstalujeme si programovací prostřed
 
 ## Instalace
 
-Na našich robotech běží program, který se jmenuje Jaculus.
+Na našich robotech poběží program, který se jmenuje Jaculus.
 Tento program nám umožní jednoduše psát instrukce (programy), které nahrajeme do robota.
 Tyto programy budou specifikovat, jak se robot má chovat, a umožní nám s ním komunikovat.
-Aby nám všechno správně fungovalo, musíme nejprve nainstalovat několik programů.
+Aby nám všechno správně fungovalo, musíme ho nejprve nainstalovat a k němu i několik dalších programů.
+
+### Jaculus
+
+1. Otevřeme si [Jaculus web installer](https://installer.jaculus.org/) v Chrome nebo Edge.
+!!! warning "Tento postup nefunguje ve Firefoxu a jinych prohlížečích nezaložených na chromium"
+<hr>
+
+![](assets/JacWebInstall1.png)<br>
+2. Zvolíme desku `ESP32 S3 DevKitC`<br>
+<hr>
+![](assets/JacWebInstall5.png)<br>
+3. Přepínač `Erase Flash` slouží k vymazání programů co už jsou nahrané na ESP. V defaultním stavu na `No` nevymaže programy na ESP.<br> 
+<hr>
+![]()
+4. Zapneme Robůtka a podržíme tlačítko `IO0`. Současně s ním zmáčkneme tlačítko nalevo od tlačítka - `IO0` což je tlačítko `RESET`. Tímto si přepneme robůtka do tzv. boot módu. 
+<hr>
+![](assets/JacWebInstall2.png)<br>
+5. Po připojení Robůtka v boot módu k počítači stiskneme v Jaculus web instalátoru tlačítko `Connenct`<br>
+<hr>
+![](assets/JacWebInstall3.png)<br>
+6. V pop-up okénku zvolíme port `COM` na Windows nebo `ttyACM` na unix-like systémech a stiskneme 
+**Connect**<br>
+<hr>
+![](assets/JacWebInstall4.png)<br>
+7. Po chvilce se nám zobrazí tlačítko **flash**, které zmáčkneme.<br>
+!!! tip "když vám flash přes USB-C nepojede zkuste Micro-USB"
+<hr>
+![]()
+8. Chvilku počkáme a jakmile přestanou v konzoli přibývat nové řádky, tak máme nainstalovaného Jacula!
+
 
 ### Node.js
 
@@ -112,11 +142,12 @@ Zde si vyzkoušíme vytvořit první projekt a nahrát jej do Robůtka.
 2. Dále si [stáhneme zip](./example1.zip) soubor s prvním projektem.
 3. Poté si jej **rozbalíme** do vytvořené složky k táboru.
 4. Spustíme VSCode a pomocí záložky `File` -> `Open Folder` vybereme složku s projektem.
-5. V levém spodním rohu vybereme :material-power-plug:`Select COM port` pro výběr portu, na kterém je Robůtek připojený. Poté se nápis změní na vybraný port.
+5. Připojíme Robůtka přes `USB-C`. `micro-USB` požívejte primárně pokud nefunguje nahrávání přes `USB-C`.
+6. V levém spodním rohu vybereme :material-power-plug:`Select COM port` pro výběr portu, na kterém je Robůtek připojený. Poté se nápis změní na vybraný port.
 
 	??? tip "Mám více portů"
 		Pokud se vám v nabídce zobrazí více portů, odpojte Robůtka a zjisťe, který port zmizel. Po připojení Robůtka tento port vyberte.
-6. Dále zvolíme :material-eye:`Monitor`, ten slouží pro komunikaci se zařízením.
+7. Dále zvolíme :material-eye:`Monitor`, ten slouží pro komunikaci se zařízením.
 
 ## Nahrání programu
 

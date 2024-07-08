@@ -42,7 +42,7 @@ S událostí řízenou časem už jsme se setkali: pomocí `setInterval` umíme 
 Události řízené stiskem tlačítka můžeme ovládat pomocí přiložené knihovny `gpio`.
 `GPIO` je jednoduchá elektronická konstrukce, která nám umožňuje posílat nebo přijímat bit informace, a na základě toho měnit chování našeho programu.
 
-Abychom mohli přijímat signál ze stisknutí tlačítka, nejdříve musíme nastavit vybraný pin jako vstupní. To uděláme příkazem `#!ts gpio.pinMode(PIN, gpio.PinMode.INPUT)`, kde PIN je číslo pinu (najdeme na stránce), a druhý argument je režim. Pokud bychom chtěli např. použít LEDky přímo na desce, chceme dané piny použít jako výstupní, tedy `gpio.PinMode.OUTPUT`.
+Abychom mohli přijímat signál ze stisknutí tlačítka, nejdříve musíme nastavit vybraný pin jako vstupní. To uděláme příkazem `#!ts gpio.pinMode(PIN, gpio.PinMode.INPUT)`, kde PIN je číslo pinu (najdeme na stránce [Piny](../index.md#přehled-pinů)), a druhý argument je režim. Pokud bychom chtěli např. použít LEDky přímo na desce, chceme dané piny použít jako výstupní, tedy `gpio.PinMode.OUTPUT`.
 
 Jakmile máme nastavené vstupní tlačítko, můžeme na něm pozorovat události pomocí `#!ts gpio.on()`. Reakci na stisknutí tlačítka vyvoláme argumentem `"falling"`, reakci na puštění `"rising"`. Kód, který při stisku tlačítka něco vykoná, tedy může vypadat takto:
 
@@ -67,18 +67,18 @@ Pomocí událostí rozsvítíme při stisknutí tlačítka (GPIO 0) RGB LED na E
 
     const LED_PIN = 48;
     const LED_COUNT = 1;
-    const BTN_LEFT = 18;
+    const BTN_RIGHT = 0;
 
     const ledStrip = new SmartLed(LED_PIN, LED_COUNT, LED_WS2812);  // připojí pásek na pin 48, s 1 ledkou a typem WS2812
 
-    gpio.pinMode(BTN_LEFT, gpio.PinMode.INPUT); // nastaví pin 18 jako vstup
+    gpio.pinMode(BTN_RIGHT, gpio.PinMode.INPUT); // nastaví pin 0 jako vstup
 
-    gpio.on("falling", BTN_LEFT, () => { // událost, která proběhne při stisknutí tlačítka připojeného na pin 0
+    gpio.on("falling", BTN_RIGHT, () => { // událost, která proběhne při stisknutí tlačítka připojeného na pin 0
         ledStrip.set(0, colors.red); // nastaví barvu nulté LED na červenou (RGB 255 0 0)
         ledStrip.show(); // zobrazí nastavení na LED
     });
 
-    gpio.on("rising", BTN_PIN, () => { // událost, která proběhne při puštění tlačítka připojeného na pin 0
+    gpio.on("rising", BTN_RIGHT, () => { // událost, která proběhne při puštění tlačítka připojeného na pin 0
         ledStrip.set(0, colors.off); // nastaví nultou LED na zhasnutou (RGB 0 0 0)
         ledStrip.show(); // zobrazí nastavení na LED
     });
@@ -94,12 +94,12 @@ Vzpomeňme si z prvního programu, že opakování dosáhneme pomocí `setInterv
     ```ts
     import * as gpio from "gpio";
 
-    const LBTN_PIN = 18;
+    const BTN_RIGHT = 0;
 
-    gpio.pinMode(BTN_PIN, gpio.PinMode.INPUT); // nastaví pin nula jako vstup
+    gpio.pinMode(BTN_RIGHT, gpio.PinMode.INPUT); // nastaví pin 0 jako vstup
 
     setInterval(() => { // pravidelně vyvolává událost
-        console.log(gpio.read(BTN_PIN)); // načte a vypíše stav tlačítka připojeného na pin 0
+        console.log(gpio.read(BTN_RIGHT)); // načte a vypíše stav tlačítka připojeného na pin 0
     }, 500); // čas opakování se udává v milisekundách (500 ms je 0,5 sekundy)
     ```
 
