@@ -7,15 +7,18 @@ import { Servo } from "./servo.js";
 import { SmartLed, LED_WS2812 } from "smartled";
 
 import * as motors from "motor"
+import * as ledc from "ledc";
+
+ledc.configureTimer(0, 64000, 10);
 
 const leftMotorPins: motors.MotorPins = { motA: 11, motB: 12, encA: 39, encB: 40 }
-const rightMotorPins: motors.MotorPins = { motA: 45, motB: 13, encA: 41, encB: 42 }
+const rightMotorPins: motors.MotorPins = { motA: 45, motB: 13, encA: 42, encB: 41 }
 
-const leftMotorLedc: motors.LedcConfig = { timer: 1, channelA: 0, channelB: 1 }
-const rightMotorLedc: motors.LedcConfig = { timer: 1, channelA: 2, channelB: 3 }
+const leftMotorLedc: motors.LedcConfig = { timer: 0, channelA: 0, channelB: 1 }
+const rightMotorLedc: motors.LedcConfig = { timer: 0, channelA: 2, channelB: 3 }
 
-export const LeftMot = new motors.Motor({ pins: leftMotorPins, ledc: leftMotorLedc, encTicks: 400, diameter: 10 });
-export const RightMot = new motors.Motor({ pins: rightMotorPins, ledc: rightMotorLedc, encTicks: 400, diameter: 10 });
+export const LeftMot = new motors.Motor({ pins: leftMotorPins, ledc: leftMotorLedc, encTicks: 406, diameter: 34 });
+export const RightMot = new motors.Motor({ pins: rightMotorPins, ledc: rightMotorLedc, encTicks: 406, diameter: 34 });
 
 
 export function init() {
@@ -29,14 +32,6 @@ export function init() {
 
     gpio.write(LineSensors.S_PWR, 1);
 }
-
-
-
-type MoveDuration = {
-    distance?: number; // distance in cm
-    speed?: number; // speed in mm/s?
-}
-
 
 export type SensorType = 'W_FR' | 'W_FL' | 'W_BL' | 'W_BR' | 'L_FR' | 'L_FL' | 'L_BL' | 'L_BR';
 export class LineSensors {
