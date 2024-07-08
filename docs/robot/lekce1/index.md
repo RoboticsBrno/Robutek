@@ -194,7 +194,7 @@ Ve zdrojovém kódu jsou komentáře (`// tohle je komentář`), které nám pop
 	??? note "Řešení"
 		```ts
 		...
-		ledStrip.set(0, colors.red); // nastaví barvu LED na ESP32 na červenou
+		Robutek.ledStrip.set(0, colors.red); // nastaví barvu LED na ESP32 na červenou
 		...
 		```
 
@@ -210,15 +210,3 @@ Ve zdrojovém kódu jsou komentáře (`// tohle je komentář`), které nám pop
 		- `pink`
 		- `white`
 		- `off`
-
-5. Upravímes si číselné proměnné na pojmenované konstanty.
-
-	??? note "Pojmenované konstanty"
-		```ts
-		...
-		const LED_PIN = 48;
-		const LED_COUNT = 1;
-
-		const ledStrip = new SmartLed(LED_PIN, LED_COUNT, LED_WS2812);  // připojí pásek na pin 48, s 1 ledkou a typem WS2812
-		...
-		```

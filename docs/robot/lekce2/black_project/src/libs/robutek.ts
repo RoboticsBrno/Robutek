@@ -30,6 +30,14 @@ export function init() {
     gpio.write(LineSensors.S_PWR, 1);
 }
 
+
+
+type MoveDuration = {
+    distance?: number; // distance in cm
+    speed?: number; // speed in mm/s?
+}
+
+
 export type SensorType = 'W_FR' | 'W_FL' | 'W_BL' | 'W_BR' | 'L_FR' | 'L_FL' | 'L_BL' | 'L_BR';
 export class LineSensors {
 
