@@ -20,6 +20,8 @@ Desku lze napájet pomocí USB kabelu nebo power banky připojené přímo k des
 ## Programování:
 Letos budeme vývojové desky programovat na platformě ESP32-S3. Pro programování budeme používat jazyk TypeScript, v kombinaci s knihovnou [Jaculus](https://jaculus.org/).
 
+[Lekce 1](lekce1/){ .md-button .md-button--primary }
+
 <!-- <div align="center">
     <img src="./assets/elks-promo1.png" width="49%">
     <img src="./assets/elks-promo2.png" width="49%">
