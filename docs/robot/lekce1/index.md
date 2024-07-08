@@ -22,16 +22,16 @@ Aby nám všechno správně fungovalo, musíme ho nejprve nainstalovat a k němu
 3. V přepínači `Select board version` vybertne nejnovější dostupnou **(s nejvyšším číslem)**.
 <hr>
 ![](assets/JacWebInstall5.png)<br>
-4. Přepínač `Erase Flash` slouží k vymazání programů co už jsou nahrané na ESP. V defaultním stavu na `No` nevymaže programy na ESP.<br> 
+4. Přepínač `Erase Flash` slouží k vymazání programů co už jsou nahrané na ESP. V defaultním stavu na `No` nevymaže programy na ESP.<br>
 <hr>
 ![]()
-5. Zapneme Robůtka a podržíme tlačítko `IO0`. Současně s ním zmáčkneme tlačítko nalevo od tlačítka - `IO0` což je tlačítko `RESET`. Tímto si přepneme robůtka do tzv. boot módu. 
+5. Zapneme Robůtka a podržíme tlačítko `IO0`. Současně s ním zmáčkneme tlačítko nalevo od tlačítka - `IO0` což je tlačítko `RESET`. Tímto si přepneme robůtka do tzv. boot módu.
 <hr>
 ![](assets/JacWebInstall2.png)<br>
 6. Po připojení Robůtka v boot módu k počítači stiskneme v Jaculus web instalátoru tlačítko `Connenct`<br>
 <hr>
 ![](assets/JacWebInstall3.png)<br>
-7. V pop-up okénku zvolíme port `COM` na Windows nebo `ttyACM` na unix-like systémech a stiskneme 
+7. V pop-up okénku zvolíme port `COM` na Windows nebo `ttyACM` na unix-like systémech a stiskneme
 **Connect**<br>
 <hr>
 ![](assets/JacWebInstall4.png)<br>
@@ -46,14 +46,14 @@ Aby nám všechno správně fungovalo, musíme ho nejprve nainstalovat a k němu
 
 `node.js` je knihovna, která nám umožní stáhnout nástroje na používání Jacula.
 
-1. Stáhneme si [Node.js](https://nodejs.org/en/download) (nejnovější stabilní verzi - LTS)
+1. Stáhneme si [Node.js](https://nodejs.org/en/download) (nejnovější stabilní verzi - LTS) - [Stahuj ZDE pro Windows](http://files.lan/)
 2. Nainstalujeme jej dle výchozího nastavení (není potřeba nic měnit).
 
 ### Visual Studio Code
 
 Visual Studio Code je programovací prostředí, které nám umožní psát kód a s rozšířením nám dovolí nahrávat kód do zařízení.
 
-1. Stáhneme si [Visual Studio Code](https://code.visualstudio.com/download) (nejnovější stabilní verzi)
+1. Stáhneme si [Visual Studio Code](https://code.visualstudio.com/download) (nejnovější stabilní verzi)  - [Stahuj ZDE pro Windows](http://files.lan/)
 2. Nainstalujeme jej dle výchozího nastavení (není potřeba nic měnit).
 
 ### Jaculus
@@ -86,25 +86,35 @@ Nyní už se můžeme vrhnout na samotnou instalaci [`Jacula`](https://jaculus.o
 		Tools for controlling devices running Jaculus
 
 		Commands:
-		help           Print help for given command
-		list-ports     List available serial ports
-		serial-socket  Tunnel a serial port over a TCP socket
-		install        Install Jaculus to device
-		build          Compile target file
-		flash          Flash code to device (replace contents of ./code)
-		pull           Download a file/directory from device
-		ls             List files in a directory
-		read           Read a file from device
-		write          Write a file to device
-		rm             Delete a file on device
-		mkdir          Create a directory on device
-		rmdir          Delete a directory on device
-		upload         Upload a file/directory to device
-		start          Start a program
-		stop           Stop a program
-		status         Get status of device
-		version        Get version of device firmware
-		monitor        Monitor program output
+		help            Print help for given command
+		list-ports      List available serial ports
+		serial-socket   Tunnel a serial port over a TCP socket
+		install         Install Jaculus to device
+		build           Build TypeScript project
+		flash           Flash code to device (replace contents of ./code)
+		pull            Download a file/directory from device
+		ls              List files in a directory
+		read            Read a file from device
+		write           Write a file to device
+		rm              Delete a file on device
+		mkdir           Create a directory on device
+		rmdir           Delete a directory on device
+		upload          Upload a file/directory to device
+		format          Format device storage
+		resources-ls    List available resources
+		resources-read  Read a resource from device
+		get-examples    Get example project from device
+		start           Start a program
+		stop            Stop a program
+		status          Get status of device
+		version         Get version of device firmware
+		monitor         Monitor program output
+		wifi-get        Display current WiFi config
+		wifi-ap         Set WiFi to AP mode (create a hotspot)
+		wifi-add        Add a WiFi network
+		wifi-rm         Remove a WiFi network
+		wifi-sta        Set WiFi to Station mode (connect to a wifi)
+		wifi-disable    Disable WiFi
 
 		Global options:
 		--log-level   Set log level (default: info)
