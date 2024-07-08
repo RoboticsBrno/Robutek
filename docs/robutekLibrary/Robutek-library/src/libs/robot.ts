@@ -24,11 +24,11 @@ const RMOT = new motors.Motor(45, 13, 1, 4, 5);
 
 export function init() {
     adc.configure(Sensors.S_1, adc.Attenuation.Db0); // pin senzoru nakonfigurujeme s útlumem nastaveným na 0
-    adc.configure(Sensors.S_2, adc.Attenuation.Db0); // pin senzoru nakonfigurujeme s útlumem nastaveným na 0        
-    adc.configure(Sensors.S_3, adc.Attenuation.Db0); // pin senzoru nakonfigurujeme s útlumem nastaveným na 0        
+    adc.configure(Sensors.S_2, adc.Attenuation.Db0); // pin senzoru nakonfigurujeme s útlumem nastaveným na 0
+    adc.configure(Sensors.S_3, adc.Attenuation.Db0); // pin senzoru nakonfigurujeme s útlumem nastaveným na 0
     adc.configure(Sensors.S_4, adc.Attenuation.Db0); // pin senzoru nakonfigurujeme s útlumem nastaveným na 0
 
-    gpio.pinMode(Sensors.S_PWR, gpio.PinMode.OUTPUT); // nastavíme mód pinu podsvícení na output 
+    gpio.pinMode(Sensors.S_PWR, gpio.PinMode.OUTPUT); // nastavíme mód pinu podsvícení na output
     gpio.pinMode(Sensors.S_SW, gpio.PinMode.OUTPUT);
 
     gpio.write(Sensors.S_PWR, 1); // zapneme podsvícení robůtka
@@ -41,7 +41,7 @@ type MoveDuration = {
     speed?: number; // speed in mm/s?
 }
 export async function move(curve: number, duration?: MoveDuration) {
-    // curve = -1 to 1 
+    // curve = -1 to 1
 
     // Ensure the curve is between -1 and 1
     if (curve < -1) curve = -1;
@@ -54,7 +54,7 @@ export async function move(curve: number, duration?: MoveDuration) {
         // Calculate motor speeds
         let m1: number;
         let m2: number;
-        
+
         if (curve >= 0) {
             // Curve from 0 to 1 (m1 is max, m2 decreases)
             m1 = duration.speed;
@@ -64,7 +64,7 @@ export async function move(curve: number, duration?: MoveDuration) {
             m1 = duration.speed * (1 + curve); // curve is negative, so this increases from 0 to speed
             m2 = duration.speed;
         }
-        
+
         LMOT.write(m1)
         RMOT.write(m2)
 
