@@ -3,7 +3,22 @@ import * as wifi from "wifi";
 import { SmartLed, LED_WS2812 } from "smartled"
 import Layout from "./layout.js"
 
+
+// Změň mě!
+const OWNER = "owner";
+const DEVICE_NAME = "Robutek";
+
+
 const ledStrip = new SmartLed(48, 1, LED_WS2812);
+
+
+let stopTimeout = null;
+
+function stop() {
+    Robutek.leftMotor.setSpeed(0);
+    Robutek.rightMotor.setSpeed(0);
+    stopTimeout = null;
+}
 
 function scale(value: number): number {
     // Scale the joystick value from -32768..32767 to -1..1
@@ -34,9 +49,15 @@ function setMotorsJoystick(x: number, y: number, coef = 2.5) {
     // Set motor power
     Robutek.leftMotor.setSpeed(l * speedMul);
     Robutek.rightMotor.setSpeed(r * speedMul);
+
+    // Stop robot on connection loss
+    if (stopTimeout !== null) {
+        clearTimeout(stopTimeout);
+    }
+    stopTimeout = setTimeout(stop, 1000);
 }
 
-Layout.begin("Owner name", "Device Name", builder => {
+Layout.begin(OWNER, DEVICE_NAME, builder => {
 
     builder.ButtonBlink.onPress(async () => {
         ledStrip.clear();
