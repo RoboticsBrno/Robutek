@@ -207,7 +207,7 @@ Ve zdrojovém kódu jsou komentáře (`// tohle je komentář`), které nám pop
 	??? note "Řešení"
 		```ts
 		...
-		ledStrip.set(0, colors.red); // nastaví barvu LED na ESP32 na červenou
+		Robutek.ledStrip.set(0, colors.red); // nastaví barvu LED na ESP32 na červenou
 		...
 		```
 
@@ -224,14 +224,24 @@ Ve zdrojovém kódu jsou komentáře (`// tohle je komentář`), které nám pop
 		- `white`
 		- `off`
 
-5. Upravímes si číselné proměnné na pojmenované konstanty.
 
-	??? note "Pojmenované konstanty"
-		```ts
-		...
-		const LED_PIN = 48;
-		const LED_COUNT = 1;
+## Ovládání robota přes mobil
 
-		const ledStrip = new SmartLed(LED_PIN, LED_COUNT, LED_WS2812);  // připojí pásek na pin 48, s 1 ledkou a typem WS2812
-		...
-		```
+
+[Stáhnout ZIP s gridui examplem](./example-gridui.zip){ .md-button .md-button--primary }
+
+1. Musíme si stáhnou předpřipravený gridui ukázkový projekt, ten můžeme rovnou nahrát do Robůtka.
+
+2. Dole na liště klikneme na `Config WiFi`
+
+![](assets/add-wifi.png) <br>
+3. Vyberte možnost `Add a WiFi network`
+
+![](assets/wifi-ssid.png) <br>
+4. Do pole zadejte název WiFi sítě `TechnikaNaVylete`
+
+![](assets/wifi-passwd.png) <br>
+5. Dole v terminálu zadejte heslo WiFi sítě `huratabor`
+
+![](assets/connect-wifi.png) <br>
+6. Znovu klikneme na `Config WiFi` a vybereme `Set WiFI to Station mode (connect to wifi)`

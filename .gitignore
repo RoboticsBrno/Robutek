@@ -46,3 +46,5 @@ assets-large
 .resize-hash
 
 node_modules/
+
+build/

@@ -12,24 +12,19 @@ nejzákladnější příkazy: i velice jednoduchý program už může mít vidit
 
 ## Zadání A
 
-Nejdříve si zopakujeme předchozí lekci, a rozsvítíme RGB LED na ESP32 (`GPIO 48`) jednou barvou (například červenou).
+Nejdříve si zopakujeme předchozí lekci, a rozsvítíme RGB LED na Robůtkovi (`GPIO 48`) jednou barvou (například červenou).
 
 Na začátku tohoto úkolu si stáhneme nový [zip](./blank_project.zip) soubor obsahující prázdný projekt. Po stažení složku rozbalíme a otevřeme ve Visual Studio Code. V souboru `index.ts` jsou připraveny `import` příkazy: ty nám umožní využívat funkcionalitu z různých souborů, např. jednoduše ovládat LEDku, nebo využívat nadefinované barvy.
 
-Abychom mohli LED u procesoru ovládat, musíme ji získat příkazem `#!ts const led = new SmartLed(...)`, a do závorky napíšeme číslo PINu, počet LED světel (zatím je to 1), a typ světla: `LED_WS2812`. Barvu LED nastavíme pomocí `led.set(0, colors.nějaká_barva)` a zobrazíme pomocí `led.show()`.
+Barvu LED nastavíme pomocí `Robutek.ledStrip.set(0, colors.nějaká_barva)` a zobrazíme pomocí `Robutek.ledStrip.show()`.
 
 ??? note "Řešení"
     ```ts
-    import { SmartLed, LED_WS2812 } from "smartled";
+    import * as Robutek from "./libs/robutek.js"
     import * as colors from "./libs/colors.js"
 
-    const LED_PIN = 48;
-    const LED_COUNT = 1;
-
-    const ledStrip = new SmartLed(LED_PIN, LED_COUNT, LED_WS2812);  // připojí pásek na pin 48, s 1 ledkou a typem WS2812
-
-    ledStrip.set(0, colors.red); // nastaví barvu nulté LED na červenou (RGB 255 0 0)
-    ledStrip.show(); // zobrazí nastavení na LED
+    Robutek.ledStrip.set(0, colors.red); // nastaví barvu nulté LED na červenou (RGB 255 0 0)
+    Robutek.ledStrip.show(); // zobrazí nastavení na LED
     ```
 
 ## Co je to událost v programování?
@@ -61,26 +56,22 @@ Pomocí událostí rozsvítíme při stisknutí tlačítka (GPIO 0) RGB LED na E
 
 ??? note "Řešení"
     ```ts
-    import * as gpio from "gpio";
-    import { SmartLed, LED_WS2812 } from "smartled";
+    import * as Robutek from "./libs/robutek.js"
     import * as colors from "./libs/colors.js"
+    import * as gpio from "gpio"
 
-    const LED_PIN = 48;
-    const LED_COUNT = 1;
     const BTN_RIGHT = 0;
-
-    const ledStrip = new SmartLed(LED_PIN, LED_COUNT, LED_WS2812);  // připojí pásek na pin 48, s 1 ledkou a typem WS2812
 
     gpio.pinMode(BTN_RIGHT, gpio.PinMode.INPUT); // nastaví pin 0 jako vstup
 
     gpio.on("falling", BTN_RIGHT, () => { // událost, která proběhne při stisknutí tlačítka připojeného na pin 0
-        ledStrip.set(0, colors.red); // nastaví barvu nulté LED na červenou (RGB 255 0 0)
-        ledStrip.show(); // zobrazí nastavení na LED
+        Robutek.ledStrip.set(0, colors.red); // nastaví barvu nulté LED na červenou (RGB 255 0 0)
+        Robutek.ledStrip.show(); // zobrazí nastavení na LED
     });
 
     gpio.on("rising", BTN_RIGHT, () => { // událost, která proběhne při puštění tlačítka připojeného na pin 0
-        ledStrip.set(0, colors.off); // nastaví nultou LED na zhasnutou (RGB 0 0 0)
-        ledStrip.show(); // zobrazí nastavení na LED
+        Robutek.ledStrip.set(0, colors.off); // nastaví nultou LED na zhasnutou (RGB 0 0 0)
+        Robutek.ledStrip.show(); // zobrazí nastavení na LED
     });
     ```
 
@@ -109,4 +100,4 @@ Při stisknutí tlačítka (GPIO 0) vypíšeme pozdrav.
 
 ## Výstupní úkol V2 - Změna barvy
 
-Při stisknutí tlačítka (GPIO 0) rozsvítíme RGB LED na ESP32 (`GPIO 48`) jednou barvou a při puštění barvu změníme na jinou.
+Při stisknutí tlačítka (GPIO 0) rozsvítíme RGB LED na Robůtkovi (`GPIO 48`) jednou barvou a při puštění barvu změníme na jinou.
