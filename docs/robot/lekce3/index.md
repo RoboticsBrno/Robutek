@@ -97,11 +97,10 @@ Pomocí jedné proměnné se stavem a podmínky každou sekundu buď rozsvítím
 
 ??? note "Řešení"
     ```ts
-    import * as Robutek from "./libs/robutek.js"
-    import { SmartLed } from "smartled"
-    import * as colors from "./libs/colors.js"
+    import { LED_WS2812, SmartLed } from "smartled"
+    import * as colors from "./libs/colors.js";
 
-    const ledStrip = new SmartLed(Robutek.LedStrip.Pin, Robutek.LedStrip.Count, Robutek.LedStrip.Type);
+    const ledStrip = new SmartLed(48, 1, LED_WS2812);
 
     let on: boolean = false; // LED je vypnutá
 
@@ -126,11 +125,10 @@ opět nastavit na `0`.
 
 ??? note "Řešení"
     ```ts
-    import * as Robutek from "./libs/robutek.js"
-    import * as colors from "./libs/colors.js"
-    import { SmartLed } from "smartled"
+    import * as colors from "./libs/colors.js";
+    import { LED_WS2812, SmartLed } from "smartled";
 
-    const ledStrip = new SmartLed(Robutek.LedStrip.Pin, Robutek.LedStrip.Count, Robutek.LedStrip.Type);
+    const ledStrip = new SmartLed(48, 1, LED_WS2812);
 
     let shade = 0; // Držíme si stav s aktuálním odstínem
 
@@ -156,13 +154,12 @@ Pokud při stisku tlačítka svítí poslední LED, zhasneme ji, a rozsvítíme 
 
 ??? note "Řešení"
     ```ts
-    import * as Robutek from "./libs/robutek.js"
-    import * as colors from "./libs/colors.js"
-    import { SmartLed } from "smartled"
+    import * as colors from "./libs/colors.js";
+    import { LED_WS2812, SmartLed } from "smartled";
 
     import * as gpio from "gpio";
 
-    const ledStrip = new SmartLed(Robutek.LedStrip.Pin, Robutek.LedStrip.Count, Robutek.LedStrip.Type);
+    const ledStrip = new SmartLed(48, 1, LED_WS2812);
 
     const BTN_PIN = 0;
 
