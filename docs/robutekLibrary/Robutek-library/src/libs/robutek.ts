@@ -45,7 +45,7 @@ async function switchSensors(toValue: number) {
     }
     sw = toValue;
     gpio.write(Pins.SensSW, toValue);
-    await sleep(5);
+    await sleep(1);
 }
 
 export type SensorType = 'W_FR' | 'W_FL' | 'W_BL' | 'W_BR' | 'L_FR' | 'L_FL' | 'L_BL' | 'L_BR';
