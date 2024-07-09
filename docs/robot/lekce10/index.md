@@ -1,4 +1,4 @@
-# Bonus - Servo (Kreslení tužkou)
+# Lekce 6 - Servo (Kreslení tužkou)
 
 Na Robůtkovi jsou dvě pozice na připojení serva - piny 38 a 21.
 
@@ -63,6 +63,43 @@ Vytvořte program, který při zmáčknutí tlačítka zasune pero a druhé tla�
     });
 
     gpio.on("falling", RBTN_PIN, () => {
-        pen.werite(robutek.PenPos.Up);
+        pen.write(robutek.PenPos.Up);
+    });
+    ```
+
+## Zadání B
+
+Zkombinuj poznatky z lekce 5 s motory s touto, a vytvoř program který nakreslí fixou na papír čtverec po stistku tlačítka.
+
+??? note "Řešení"
+    ```ts
+    import { Pins } from "./libs/robutek.js"
+    import * as robutek from "./libs/robutek.js"
+    import { Servo } from "./libs/servo.js"
+    import * as gpio from "gpio"
+
+    const LBTN_PIN = 2;
+    const RBTN_PIN = 0;
+
+    gpio.pinMode(LBTN_PIN, gpio.PinMode.INPUT);
+    gpio.pinMode(RBTN_PIN, gpio.PinMode.INPUT);
+
+    const pen = new Servo(Pins.Servo2, 1, 4);
+
+    gpio.on("falling", LBTN_PIN, async () => {
+        pen.write(robutek.PenPos.Down); // fixa dolů
+
+        robutek.setSpeed(100) // Nastav rychlost na 100
+
+        await robutek.move(0, { distance: 300 }) // Ujeď 30 cm
+        await robutek.rotate(90)
+        await robutek.move(0, { distance: 300 })
+        await robutek.rotate(90)
+        await robutek.move(0, { distance: 300 })
+        await robutek.rotate(90)
+        await robutek.move(0, { distance: 300 })
+        await robutek.rotate(90)
+
+        pen.write(robutek.PenPos.Up); // fixa nahoru
     });
     ```
