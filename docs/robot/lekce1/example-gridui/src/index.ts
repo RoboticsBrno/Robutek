@@ -1,4 +1,4 @@
-import * as Robutek from "./libs/robutek.js"
+import * as robutek from "./libs/robutek.js"
 import * as wifi from "wifi";
 import { SmartLed, LED_WS2812 } from "smartled"
 import Layout from "./layout.js"
@@ -14,8 +14,8 @@ const ledStrip = new SmartLed(48, 1, LED_WS2812);
 let stopTimeout = null;
 
 function stop() {
-    Robutek.leftMotor.setSpeed(0);
-    Robutek.rightMotor.setSpeed(0);
+    robutek.leftMotor.setSpeed(0);
+    robutek.rightMotor.setSpeed(0);
     stopTimeout = null;
 }
 
@@ -46,8 +46,8 @@ function setMotorsJoystick(x: number, y: number, coef = 2.5) {
     console.log(`left motor power: ${l}, right motor power: ${r}`);
 
     // Set motor power
-    Robutek.leftMotor.setSpeed(l * speedMul);
-    Robutek.rightMotor.setSpeed(r * speedMul);
+    robutek.leftMotor.setSpeed(l * speedMul);
+    robutek.rightMotor.setSpeed(r * speedMul);
 
     // Stop robot on connection loss
     if (stopTimeout !== null) {
@@ -81,7 +81,7 @@ Layout.begin(OWNER, DEVICE_NAME, builder => {
 let speedLimiter = 0.5
 let speedMul = 500;
 
-Robutek.leftMotor.move();
-Robutek.rightMotor.move();
+robutek.leftMotor.move();
+robutek.rightMotor.move();
 
 console.log("Otevři aplikaci RBController nebo otevři prohlížeč a zadej IP: " + wifi.currentIp() + " pro ovládání robota.");

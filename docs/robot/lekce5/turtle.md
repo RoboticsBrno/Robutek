@@ -5,21 +5,21 @@ Z minulé lekce už umíme kreslit jednoduché tvary. Co když jich však chceme
 Pokud chceme nakreslit 2 čtverce vedle sebe, můžeme zkopírovat kód a mezitím se posunout:
 
 ```ts
-import * as Robutek from "./libs/robutek.js"
+import * as robutek from "./libs/robutek.js"
 
 draw(true);
 for (let i: number = 0; i < 4; i++) { // chování opakujeme 4x, pro každou stěnu čtverce
-    Robutek.move(10); // posun dopředu o 10 cm
-    Robutek.rotate(90); // rotace doprava o 90 stupňů
+    robutek.move(10); // posun dopředu o 10 cm
+    robutek.rotate(90); // rotace doprava o 90 stupňů
 }
 draw(false);
 
-Robutek.move(15);
+robutek.move(15);
 
 draw(true);
 for (let i: number = 0; i < 4; i++) {
-    Robutek.move(10);
-    Robutek.rotate(90);
+    robutek.move(10);
+    robutek.rotate(90);
 }
 draw(false);
 ``` 
@@ -30,16 +30,16 @@ Pokud bychom se pak rozhodli změnit např. velikost nakreslených čtverců, mu
 Můžeme si pomoct tím, co už známe: vnořeným `for` cyklem. Pokud chceme nakreslit např. 4 čtverce za sebou, můžeme to napsat takto:
 
 ```ts
-import * as Robutek from "./libs/robutek.js"
+import * as robutek from "./libs/robutek.js"
 
 for (let square: number = 0; square < 4; square++) {
     draw(true);
     for (let i: number = 0; i < 4; i++) { // chování opakujeme 4x, pro každou stěnu čtverce
-        Robutek.move(10); // posun dopředu o 10 cm
-        Robutek.rotate(90); // rotace doprava o 90 stupňů
+        robutek.move(10); // posun dopředu o 10 cm
+        robutek.rotate(90); // rotace doprava o 90 stupňů
     }
     draw(false);
-    Robutek.move(15);
+    robutek.move(15);
 }
 
 ```
