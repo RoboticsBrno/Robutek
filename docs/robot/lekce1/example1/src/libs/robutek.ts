@@ -49,13 +49,16 @@ export enum Pins {
 }
 
 let sw: number = 0;
-async function switchSensors(toValue: number) {
+function switchSensors(toValue: number) {
     if (toValue == sw) {
         return;
     }
     sw = toValue;
     gpio.write(Pins.SensSW, toValue);
-    await sleep(1);
+
+    // don't do this at home
+    const start = Date.now();
+    while (Date.now() - start < 2);
 }
 
 export const enum SensorType {
@@ -69,36 +72,37 @@ export const enum SensorType {
     LineBR = 'LineBR',
 }
 
-export async function readSensor(sensor: SensorType | `${SensorType}`): Promise<number> {
+export function readSensor(sensor: SensorType | `${SensorType}`): number {
     switch (sensor) {
         case SensorType.WheelFR:
-            await switchSensors(0);
+            switchSensors(0);
             return adc.read(Pins.Sens1);
         case SensorType.WheelFL:
-            await switchSensors(0);
+            switchSensors(0);
             return adc.read(Pins.Sens2);
         case SensorType.WheelBL:
-            await switchSensors(0);
+            switchSensors(0);
             return adc.read(Pins.Sens3);
         case SensorType.WheelBR:
-            await switchSensors(0);
+            switchSensors(0);
             return adc.read(Pins.Sens4);
         case SensorType.LineFR:
-            await switchSensors(1);
+            switchSensors(1);
             return adc.read(Pins.Sens1);
         case SensorType.LineFL:
-            await switchSensors(1);
+            switchSensors(1);
             return adc.read(Pins.Sens2);
         case SensorType.LineBL:
-            await switchSensors(1);
+            switchSensors(1);
             return adc.read(Pins.Sens3);
         case SensorType.LineBR:
-            await switchSensors(1);
+            switchSensors(1);
             return adc.read(Pins.Sens4);
         default:
             throw new Error('Invalid sensor type');
     }
 }
+
 ledc.configureTimer(0, 64000, 10);
 
 const leftMotorPins: motor.MotorPins = { motA: Pins.Motor1A, motB: Pins.Motor1B, encA: Pins.Enc1A, encB: Pins.Enc1B };

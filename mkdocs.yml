@@ -142,6 +142,7 @@ nav:
       - robot/project_line/index.md
       - robot/project_maze/index.md
       - robot/motors/index.md
+      - robot/sens/index.md
   - Příslušenství robota:
       - robotAccessories/ledStrip.md
       - robotAccessories/button.md
