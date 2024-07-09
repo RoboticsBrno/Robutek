@@ -73,8 +73,3 @@ robutek.leftMotor.move();
 robutek.rightMotor.move();
 
 console.log("Otevři aplikaci RBController nebo otevři prohlížeč a zadej IP: " + wifi.currentIp() + " pro ovládání robota.");
-
-
-setInterval(async () => {
-    console.log(await robutek.readSensor("LineFL"));
-}, 1000);

@@ -112,44 +112,46 @@ export function getSpeed() {
     return speed;
 }
 
-export type MoveDuration = { distance?: number, time?: number };
-
 /**
  * Move the robot
- * @param curve -1 (left) to 1 (right)
- * @param duration
+ * @param curve number in range -1 to 1, where -1 is full left, 0 is straight and 1 is full right
+ * @param duration optional duration of the move
  */
-export async function move(curve: number, duration?: MoveDuration) {
+export async function move(curve: number, duration?: motor.MoveDuration) {
     let lMot = 0;
     let rMot = 0;
 
     if (curve < 0) {
-        lMot = curve + 1;
+        lMot = 1 + curve * 2;
         rMot = 1;
     }
     else if (curve > 0) {
         lMot = 1;
-        rMot = 1 - curve;
+        rMot = 1 - curve * 2;
     }
     else {
         lMot = 1;
         rMot = 1;
     }
 
-    leftMotor.setSpeed(lMot*speed);
-    rightMotor.setSpeed(rMot*speed);
+    leftMotor.setSpeed(lMot * speed);
+    rightMotor.setSpeed(rMot * speed);
 
-    if (duration) {
-        if (duration.time) {
+    const hasTime = duration && duration.hasOwnProperty("time");
+    const hasDistance = duration && duration.hasOwnProperty("distance");
+
+    if (duration && (hasTime || hasDistance)) {
+        if (hasTime) {
             await Promise.all([
-                leftMotor.move({ time: duration.time*lMot }),
-                rightMotor.move({ time: duration.time*rMot })
+                leftMotor.move(duration),
+                rightMotor.move(duration)
             ]);
         }
-        else if (duration.distance) {
+        else if (hasDistance) {
+            const distance = (duration as { distance: number }).distance;
             await Promise.all([
-                leftMotor.move({ distance: duration.distance*lMot }),
-                rightMotor.move({ distance: duration.distance*rMot })
+                leftMotor.move({ distance: distance * lMot }),
+                rightMotor.move({ distance: distance * rMot })
             ]);
         }
     }
@@ -191,6 +193,10 @@ export async function rotate(angle?: number) {
     }
 }
 
+/**
+ * Stop the robot
+ * @param brake if true, the robot will brake, otherwise it will coast to a stop
+ */
 export async function stop(brake?: boolean) {
     await Promise.all([
         leftMotor.stop(brake),
