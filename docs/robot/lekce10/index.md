@@ -1,6 +1,6 @@
-# Lekce 10 - servo
+# Bonus - Servo
 
-Na Robůtkovi je připojené servo na pinu 38
+Na Robůtkovi jsou dvě pozice na připojení serva - piny 38 a 21.
 
 ## Začátek
 
@@ -22,7 +22,7 @@ servo.write(1023); // 180°
 
 ## Kreslení tužkou
 
-Na servo se dá připojit tužka. Abychom mohli tužku ovládat musíme ji získat příkazem `#!ts cosnt pen = new Pen(<číslo pinu>)`. Robůtek má 4 předdefinované konstaty pro ovládání `UP`, `DOWN`, `MIDDLE` a `UNLOAD`.
+Na servo se dá připojit tužka. Abychom mohli tužku ovládat musíme ji získat příkazem `#!ts const pen = new Pen(<číslo pinu>)`. Robůtek má 4 předdefinované konstaty pro ovládání `UP`, `DOWN`, `MIDDLE` a `UNLOAD`.
 
 ```ts
 import { Pen } from "./libs/robot.js"

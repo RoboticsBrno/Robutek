@@ -1,6 +1,6 @@
-# Lekce 9 - radio
+# Bonus - Radio
 
-Na ELKSRobůtkovi je k dispozici jednoduchá bezdrátová komunikace na vzdálenost jednotek metrů.
+Na Robůtkovi je k dispozici jednoduchá bezdrátová komunikace na vzdálenost jednotek metrů.
 
 - Až 16 "skupin", všechny desky ve stejné skupině přijmají zprávy od všech ostatních zároveň
 - Podporuje tři datové typy:

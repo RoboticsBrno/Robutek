@@ -132,9 +132,9 @@ nav:
       - robot/lekce3/index.md
       - robot/lekce4/index.md
       # - robot/lekce4/turtle.md - nekompletní
-      - robot/lekce5/turtle.md
-      - robot/lekce6/index.md
-      - robot/lekce7/index.md
+      # - robot/lekce5/turtle.md
+      # - robot/lekce6/index.md
+      # - robot/lekce7/index.md
       - robot/lekce8/index.md
       - robot/lekce9/index.md
       - robot/lekce10/index.md
