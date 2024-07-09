@@ -58,38 +58,47 @@ async function switchSensors(toValue: number) {
     await sleep(1);
 }
 
-export type SensorType = 'WheelFR' | 'WheelFL' | 'WheelBL' | 'WheelBR' | 'LineFR' | 'LineFL' | 'LineBL' | 'LineBR';
-export async function readSensor(sensor: SensorType): Promise<number> {
+export const enum SensorType {
+    WheelFR = 'WheelFR', // Wheel Front Right
+    WheelFL = 'WheelFL', // Wheel Front Left ...
+    WheelBL = 'WheelBL',
+    WheelBR = 'WheelBR',
+    LineFR = 'LineFR',
+    LineFL = 'LineFL',
+    LineBL = 'LineBL',
+    LineBR = 'LineBR',
+}
+
+export async function readSensor(sensor: SensorType | `${SensorType}`): Promise<number> {
     switch (sensor) {
-        case 'WheelFR':
+        case SensorType.WheelFR:
             await switchSensors(0);
             return adc.read(Pins.Sens1);
-        case 'WheelFL':
+        case SensorType.WheelFL:
             await switchSensors(0);
             return adc.read(Pins.Sens2);
-        case 'WheelBL':
+        case SensorType.WheelBL:
             await switchSensors(0);
             return adc.read(Pins.Sens3);
-        case 'WheelBR':
+        case SensorType.WheelBR:
             await switchSensors(0);
             return adc.read(Pins.Sens4);
-        case 'LineFR':
+        case SensorType.LineFR:
             await switchSensors(1);
             return adc.read(Pins.Sens1);
-        case 'LineFL':
+        case SensorType.LineFL:
             await switchSensors(1);
             return adc.read(Pins.Sens2);
-        case 'LineBL':
+        case SensorType.LineBL:
             await switchSensors(1);
             return adc.read(Pins.Sens3);
-        case 'LineBR':
+        case SensorType.LineBR:
             await switchSensors(1);
             return adc.read(Pins.Sens4);
         default:
             throw new Error('Invalid sensor type');
     }
 }
-
 ledc.configureTimer(0, 64000, 10);
 
 const leftMotorPins: motor.MotorPins = { motA: Pins.Motor1A, motB: Pins.Motor1B, encA: Pins.Enc1A, encB: Pins.Enc1B };
