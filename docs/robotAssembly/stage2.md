@@ -1,97 +1,94 @@
 # Stage 2 - Servo, fixa
 
 ## Seznam potřebných věcí
- - Robůtka stage 1
+
+ - Hotová stage 1
  - Vrchní dřevěná deska
  - Servo
- - Stahovací zip páska
+ - Stahovací zip pásek
  - Fixa
  - Šroubek
  - 5 matek
  - Držák na fixu
- - 4 Distanční sloupky
+ - 4 distanční sloupky
 
 ## Návod na složení
 
-![](assets/IMG-pen1.jpg)<br>
 1. Připravíme si fixu, držák na fixu, šroubek, matku a přípravek.
-<hr>
 
-![](assets/IMG-pen2.jpg)<br>
+    ![](assets/IMG-pen1.jpg)
+
 2. Nasuneme držák na fixu
-<hr>
 
-![](assets/IMG-pen4.jpg)<br>
+    ![](assets/IMG-pen2.jpg)
+
 3. Nasuneme na fixu přípravek. Zatlačíme až na doraz.
-<hr>
 
-![](assets/IMG-pen5.jpg)<br>
+    ![](assets/IMG-pen4.jpg)
+
 4. Držák přitiskneme k přípravku.
-!!! danger "Přípravek je udělán tak, aby držák seděl na fixe přesně."
-<hr>
 
-![](assets/IMG-pen6.jpg)<br>
+    !!! danger "Přípravek je udělán tak, aby držák seděl na fixe přesně."
+    ![](assets/IMG-pen5.jpg)
+
 5. Nasadíme na držák šroubek a matku.
-<hr>
 
-![](assets/IMG-pen7.jpg)<br>
+    ![](assets/IMG-pen6.jpg)
+
 6. Sešroubujeme.
-<hr>
 
-![](assets/IMG-pen8.jpg)<br>
+    ![](assets/IMG-pen7.jpg)
+
 7. Připravíme si Robůtka stage 1 a na šrouby zvrchu dáme distanční sloupky.
-<hr>
 
-![](assets/IMG-pen9.jpg)<br>
+    ![](assets/IMG-pen8.jpg)
+
 8. Protáhneme kabel od serva vrchní dřevěnou deskou.
-<hr>
 
-![](assets/IMG-pen10.jpg)<br>
+    ![](assets/IMG-pen9.jpg)
+
 9. Posadíme servo na vrchní dřevěnou desku.
-<hr>
 
-![](assets/IMG-pen11.jpg)<br>
-10. Protáhneme stahovací pásku kolem serva jako na obrázku.
-<hr>
+    ![](assets/IMG-pen10.jpg)
 
-![](assets/IMG-pen12.jpg)<br>
-![](assets/IMG-pen13.jpg)<br>
-11. Utáhneme sthovací pásku kolem serva.
-<hr>
+10. Protáhneme stahovací pásek kolem serva jako na obrázku.
 
-![](assets/IMG-pen14.jpg)<br>
-![](assets/IMG-pen15.jpg)<br>
-12. Připojíme konektor kablu serva ke tří-pinu na základní desce Robůtka, tak jako na obrázku.
-!!! danger "Šipka na konektoru jde na datový pin na desce!"
-<hr>
+    ![](assets/IMG-pen11.jpg)
 
-![](assets/IMG-pen16.jpg)<br>
+11. Utáhneme sthovací pásek kolem serva.
+
+    ![](assets/IMG-pen12.jpg)
+    ![](assets/IMG-pen13.jpg)
+
+12. Připojíme konektor kabelu serva ke tří pinovému konektoru na základní desce Robůtka, tak jako na obrázku.
+
+    !!! danger "Šipka na konektoru patří na datový pin na desce!"
+    ![](assets/IMG-pen14.jpg)
+    ![](assets/IMG-pen15.jpg)
+
 13. Posadíme vrchní dřevěnou desku se servem na šrouby s distančními sloupky.
-<hr>
 
-![](assets/IMG-pen17.jpg)<br>
+    ![](assets/IMG-pen16.jpg)
+
 14. Přišroubujeme vrchní dřevěnou desku maticemi ke zbytku Robůtka.
-<hr>
 
-![](assets/IMG-pen18.jpg)<br>
-![](assets/IMG-pen19.jpg)<br>
-15. Odštípneme přečnívající stahovací pásku.
-<hr>
+    ![](assets/IMG-pen17.jpg)
 
-![](assets/IMG-pen20.jpg)<br>
+15. Odštípneme přečnívající stahovací pásek.
+
+    ![](assets/IMG-pen18.jpg)
+    ![](assets/IMG-pen19.jpg)
+
 16. Vezmeme si jednu gumičku a zasukujeme ji.
-<hr>
 
-![](assets/IMG-pen21.jpg)<br>
+    ![](assets/IMG-pen20.jpg)
+
 17. Zasukovanou gumičku nasadíme na fixu tak, jako na obrázku.
-<hr>
 
-![](assets/IMG-pen22.jpg)<br>
+    ![](assets/IMG-pen21.jpg)
+
 18. Fixu nasadíme na Robůtka způsobem ukázaným na obrázku..
-<hr>
 
-![]()<br>
+    ![](assets/IMG-pen22.jpg)
+
 19. Máme hotovo!!!
-<hr>
-
-
