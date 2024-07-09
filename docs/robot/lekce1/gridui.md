@@ -34,7 +34,7 @@ Robůtek je teď připojený na WiFi.
 ### Android
 Připojte váš telefon na stejnou WiFi (`RoboRaj` na táboře), a stáhněte si aplikaci `RBControl` pro Android.
 
-[Aplikace RBControl](https://play.google.com/store/apps/details?id=com.tassadar.rbcontroller&hl=en&pli=1){ .md-button .md-button--primary }
+[Aplikace RBController](https://play.google.com/store/apps/details?id=com.tassadar.rbcontroller&hl=en&pli=1){ .md-button .md-button--primary }
 
 1. Po otevření programu nastavte jméno majitele na to stejné, co jste napsali do `OWNER` proměnné v kódu. Jinak Robůtka neuvidíte!
 2. Pokud je telefon na stejné WiFi jako Robůtek, aplikace ho najde a můžete ho ovládat.
