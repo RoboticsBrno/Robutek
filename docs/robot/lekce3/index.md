@@ -159,7 +159,7 @@ Pokud při stisku tlačítka svítí poslední LED, zhasneme ji, a rozsvítíme 
 
     import * as gpio from "gpio";
 
-    const ledStrip = new SmartLed(48, 1, LED_WS2812);
+    const ledStrip = new SmartLed(48, 9, LED_WS2812);
 
     const BTN_PIN = 0;
 
