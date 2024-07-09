@@ -30,19 +30,15 @@ if (gridui.version() < 0x040000) {
 }
 
 interface LayoutBuilder {
-    readonly ButtonBlink: gridui.builder.Button
     readonly Joystick: gridui.builder.Joystick
     readonly SetSpeed: gridui.builder.Slider
     readonly TextSpeed: gridui.builder.Text
-    readonly TextInfo: gridui.builder.Text
 }
 
 interface Layout {
-    readonly ButtonBlink: gridui.widget.Button
     readonly Joystick: gridui.widget.Joystick
     readonly SetSpeed: gridui.widget.Slider
     readonly TextSpeed: gridui.widget.Text
-    readonly TextInfo: gridui.widget.Text
 
     begin(ownerName: string, deviceName: string, builderCallback?: (layoutBuilder: LayoutBuilder) => void): void
 
@@ -54,10 +50,6 @@ const layout = {
     begin(ownerName: string, deviceName: string, builderCallback?: (layoutBuilder: LayoutBuilder) => void) {
         gridui.begin(ownerName, deviceName, (builder) => {
             const layoutBuilder: LayoutBuilder = {
-                ButtonBlink: builder.button(1, 1.5, 10, 2, 43594)
-                    .text("Blikni")
-                    .fontSize(18)
-                    .color("#fb0404"),
                 Joystick: builder.joystick(3, 10, 6, 5.5, 11866),
                 SetSpeed: builder.slider(1, 4, 10, 2.5, 4862)
                     .max(1)
@@ -66,9 +58,6 @@ const layout = {
                 TextSpeed: builder.text(1, 6.5, 10, 1, 47586)
                     .text("Nastavení maximální rychlosti")
                     .fontSize(17),
-                TextInfo: builder.text(1, 0, 10, 1, 26977)
-                    .text("Řízení Robůtka")
-                    .fontSize(19)
             }
 
             if (builderCallback !== undefined) {

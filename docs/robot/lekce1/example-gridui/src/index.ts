@@ -9,8 +9,6 @@ const OWNER = "owner";
 const DEVICE_NAME = "Robutek";
 
 
-const ledStrip = new SmartLed(48, 1, LED_WS2812);
-
 let stopTimeout = null;
 
 function stop() {
@@ -57,16 +55,6 @@ function setMotorsJoystick(x: number, y: number, coef = 2.5) {
 }
 
 Layout.begin(OWNER, DEVICE_NAME, builder => {
-
-    builder.ButtonBlink.onPress(async () => {
-        ledStrip.clear();
-        ledStrip.set(0, { r: 255, g: 0, b: 0 });
-        ledStrip.show();
-        await sleep(500);
-        ledStrip.clear();
-        ledStrip.show();
-    });
-
     builder.SetSpeed.onChanged(slider => {
         speedLimiter = slider.value;
         console.log(`speed limiter: ${speedLimiter}`);
