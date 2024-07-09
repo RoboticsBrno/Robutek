@@ -148,11 +148,13 @@ nav:
       - robot/lekce9/index.md
       - robot/project_sumo/index.md
       - robot/project_maze/index.md
-      - robot/motors/index.md
-      - robot/sens/index.md
-      - robot/sim/index.md
-      - robot/vl53/index.md
   - Příslušenství robota:
       - robotAccessories/ledStrip.md
       - robotAccessories/button.md
       - robotAccessories/tof.md
+  - Dokumentace:
+      - robot/docs/index.md
+      - robot/docs/wifi.md
+      - robot/docs/socket.md
+      - robot/docs/motors.md
+      - robot/docs/sens.md
