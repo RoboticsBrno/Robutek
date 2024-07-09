@@ -124,6 +124,7 @@ Najděte kamaráda, abyste si mohli navzájem zkusit, zda program funguje (jeden
 
 ??? note "Řešení"
     ```ts
+    import { Pins } from "./libs/robutek.js"
     import * as radio from "simpleradio";
     import * as gpio from "gpio";
     import { SmartLed, LED_WS2812 } from "smartled";
@@ -131,34 +132,30 @@ Najděte kamaráda, abyste si mohli navzájem zkusit, zda program funguje (jeden
 
     radio.begin(5); // skupina 5
 
-    const PIN_BTN_LEFT = 2;
-    const PIN_BTN_RIGHT = 0;
-
-    const LED_PIN = 48;
     const LED_COUNT = 3;
 
     // Nastavíme tlačítka jako vstupy
-    gpio.pinMode(PIN_BTN_LEFT, gpio.PinMode.INPUT);
-    gpio.pinMode(PIN_BTN_RIGHT, gpio.PinMode.INPUT);
+    gpio.pinMode(Pins.ButtonLeft, gpio.PinMode.INPUT);
+    gpio.pinMode(Pins.ButtonRight, gpio.PinMode.INPUT);
 
     gpio.on("falling", PIN_BTN_LEFT, () => {
         // Při stisknutí tlačítka 0
-        radio.sendKeyValue("IO2", 1); // odešleme hodnotu 1 s klíčem sw0
+        radio.sendKeyValue("IO2", 1); // odešleme hodnotu 1 s klíčem IO2
     });
     gpio.on("rising", PIN_BTN_LEFT, () => {
         // Při uvolnění tlačítka 0
-        radio.sendKeyValue("IO2", 0); // odešleme hodnotu 0 s klíčem sw0
+        radio.sendKeyValue("IO2", 0); // odešleme hodnotu 0 s klíčem IO2
     });
 
     gpio.on("falling", PIN_BTN_RIGHT, () => {
-        radio.sendKeyValue("IO0", 1);
+        radio.sendKeyValue("IO0", 1); // odešleme hodnotu 1 s klíčem IO0
     });
     gpio.on("rising", PIN_BTN_RIGHT, () => {
-        radio.sendKeyValue("IO0", 0);
+        radio.sendKeyValue("IO0", 0); // odešleme hodnotu 0 s klíčem IO0
     });
 
     // Nastavíme LED piny jako výstupy
-    const strip = new SmartLed(LED_PIN, LED_COUNT);
+    const strip = new SmartLed(Pins.ILED, LED_COUNT);
 
     // Zpracování příchozích správ
     radio.on("keyvalue", (klic, hodnota, info) => {

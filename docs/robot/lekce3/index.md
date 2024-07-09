@@ -97,10 +97,11 @@ Pomocí jedné proměnné se stavem a podmínky každou sekundu buď rozsvítím
 
 ??? note "Řešení"
     ```ts
+    import { Pins } from "./libs/robutek.js"
     import { LED_WS2812, SmartLed } from "smartled"
     import * as colors from "./libs/colors.js";
 
-    const ledStrip = new SmartLed(48, 1, LED_WS2812);
+    const ledStrip = new SmartLed(Pins.ILED, 1, LED_WS2812);
 
     let on: boolean = false; // LED je vypnutá
 
@@ -125,10 +126,11 @@ opět nastavit na `0`.
 
 ??? note "Řešení"
     ```ts
+    import { Pins } from "./libs/robutek.js"
     import * as colors from "./libs/colors.js";
     import { LED_WS2812, SmartLed } from "smartled";
 
-    const ledStrip = new SmartLed(48, 1, LED_WS2812);
+    const ledStrip = new SmartLed(Pins.ILED, 1, LED_WS2812);
 
     let shade = 0; // Držíme si stav s aktuálním odstínem
 
@@ -154,23 +156,22 @@ Pokud při stisku tlačítka svítí poslední LED, zhasneme ji, a rozsvítíme 
 
 ??? note "Řešení"
     ```ts
+    import { Pins } from "./libs/robutek.js"
     import * as colors from "./libs/colors.js";
     import { LED_WS2812, SmartLed } from "smartled";
 
     import * as gpio from "gpio";
 
-    const ledStrip = new SmartLed(48, 9, LED_WS2812);
+    const ledStrip = new SmartLed(Pins.ILED, 9, LED_WS2812);
 
-    const BTN_PIN = 0;
-
-    gpio.pinMode(BTN_PIN, gpio.PinMode.INPUT_PULLUP); // Nastavíme tlačítko
+    gpio.pinMode(Pins.ButtonRight, gpio.PinMode.INPUT_PULLUP); // Nastavíme tlačítko
 
     let index : number = 1;
     let color : Rgb = colors.light_blue; // Vybereme si barvu
     ledStrip.set(0, color); // Nastavíme LED na aktuální odstín
     ledStrip.show(); // Zobrazíme změny
 
-    gpio.on("falling", BTN_PIN, () => {
+    gpio.on("falling", Pins.ButtonRight, () => {
         ledStrip.set(index, colors.off); // Vypneme předchozí LED
         index = index + 1; // Zvedneme index (lze i index += 1)
         if(index > 8){ // Pokud jsme mimo rozsah pásku, vrátíme se na začátek

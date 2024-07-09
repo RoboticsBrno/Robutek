@@ -1,7 +1,8 @@
+import { Pins } from "./libs/robutek.js"
 import * as colors from "./libs/colors.js"
 import { LED_WS2812, SmartLed } from "smartled"
 
-const ledStrip = new SmartLed(48, 1, LED_WS2812);
+const ledStrip = new SmartLed(Pins.ILED, 1, LED_WS2812); // Pins.ILED je pin 48
 
 ledStrip.set(0, colors.green); // nastaví barvu LED na desce na zelenou, LED na pásku začínají od 1
 ledStrip.show(); // zobrazí nastavení na LED

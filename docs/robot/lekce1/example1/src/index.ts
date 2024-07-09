@@ -1,6 +1,7 @@
 import { LED_WS2812, SmartLed } from "smartled"
+import { Pins } from "./libs/robutek.js"
 
-const ledStrip = new SmartLed(48, 1, LED_WS2812);
+const ledStrip = new SmartLed(Pins.ILED, 1, LED_WS2812);
 
 ledStrip.clear(); // Zhasne LEDku na Robůtkovi, jenom pro jistotu, kdyby už předtím svítila
 ledStrip.set(0, { r: 255, g: 0, b: 0 }); // Nastaví první LEDku na červenou barvu, LEDky začínají na indexu 0

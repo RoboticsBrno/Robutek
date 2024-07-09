@@ -22,7 +22,7 @@ export enum Pins {
     // Jedna na desce a zároveň vývod pro pásek,
     // po připojení externího pásku se tedy jedná
     // o 8 + 1 = 9 diod celkem
-    SmartLeds = 48,
+    ILED = 48,
 
     ButtonLeft =  2,
     ButtonRight = 0,
