@@ -15,42 +15,48 @@ Aby nám všechno správně fungovalo, musíme ho nejprve nainstalovat a k němu
 
 Na linuxu je třeba přidat oprávnění udev, [více zde](https://docs.espressif.com/projects/esp-idf/en/v5.2.2/esp32s2/api-guides/dfu.html#udev-rule-linux-only).
 
-#### Flash Jacula
+#### Instalace Jacula
 
 1. Otevřeme si [Jaculus web installer](https://installer.jaculus.org/) v Chrome nebo Edge.
-!!! warning "Tento postup nefunguje ve Firefoxu a jinych prohlížečích nezaložených na chromium"
-<hr>
 
-![](assets/JacWebInstall1.png)<br>
-2. Zvolíme desku `ESP32 S3 DevKitC`<br>
-<hr>
-![]()
-3. V přepínači `Select board version` vybertne nejnovější dostupnou **(s nejvyšším číslem)**.
-<hr>
-![](assets/JacWebInstall5.png)<br>
-4. Přepínač `Erase Flash` slouží k vymazání programů co už jsou nahrané na ESP. V defaultním stavu na `No` nevymaže programy na ESP.<br>
-<hr>
-![]()
-5. Zapneme Robůtka a podržíme tlačítko `IO0`. Současně s ním zmáčkneme tlačítko nalevo od tlačítka - `IO0` což je tlačítko `RESET`. Tímto si přepneme robůtka do tzv. boot módu.
-<hr>
-![](assets/JacWebInstall2.png)<br>
-6. Po připojení Robůtka v boot módu k počítači stiskneme v Jaculus web instalátoru tlačítko `Connenct`<br>
-<hr>
-![](assets/JacWebInstall3.png)<br>
-7. V pop-up okénku zvolíme port `COM` na Windows nebo `ttyACM` na unix-like systémech a stiskneme
-**Connect**<br>
-<hr>
-![](assets/JacWebInstall4.png)<br>
-8. Po chvilce se nám zobrazí tlačítko **flash**, které zmáčkneme.<br>
-!!! tip "když vám flash přes USB-C nepojede zkuste Micro-USB"
-<hr>
-![]()
-9. Chvilku počkáme a jakmile přestanou v konzoli přibývat nové řádky, tak máme nainstalovaného Jacula!
+	!!! warning "Tento postup nefunguje ve Firefoxu a jinych prohlížečích, které nepodporují rozhraní WebSerial."
+
+2. Zvolíme desku `ESP32 S3 DevKitC`
+
+	![](assets/JacWebInstall1.png)
+
+
+3. V přepínači `Select board version` vybereme nejnovější dostupnou verzi (tzn. tu s nejvyšším číslem).
+
+4. Přepínač `Erase Flash` slouží k vymazání programů co už jsou nahrané na ESP. Ve výchozím stavu `No` nevymaže programy v ESP.
+
+	![](assets/JacWebInstall5.png)
+
+5. Zapneme Robůtka a podržíme tlačítko `IO0`. Současně s ním zmáčkneme tlačítko s popiskem `EN`, které se nachází nalevo od něj. Tímto přepneme robůtka do nahrávacího režimu.
+
+6. Po připojení Robůtka k počítači stiskneme na webové stránce tlačítko `Connect`.
+
+	![](assets/JacWebInstall2.png)
+
+
+7. Ve vyskakovacím okénku zvolíme port `COM` na Windows nebo `ttyACM` na unixových systémech a stiskneme `Connect`.
+
+	![](assets/JacWebInstall3.png)
+
+
+8. Po chvilce se nám zobrazí tlačítko `Flash`, které zmáčkneme.
+
+	![](assets/JacWebInstall4.png)
+
+	!!! tip "když nahrávání přes USB-C nefunguje zkuste Micro-USB"
+
+
+9. Chvíli počkáme a jakmile přestanou v konzoli přibývat nové řádky, máme nainstalovaného Jacula v mikrokontroléru!
 
 
 ### Node.js
 
-`node.js` je knihovna, která nám umožní stáhnout nástroje na používání Jacula.
+Node.js je program, který nám umožní nahrávat kód do Jacula a komunikovat s ním.
 
 1. Stáhneme si [Node.js](https://nodejs.org/en/download) (nejnovější stabilní verzi - LTS) - [Stahuj ZDE pro Windows](http://files.lan/)
 2. Nainstalujeme jej dle výchozího nastavení (není potřeba nic měnit).
@@ -66,7 +72,7 @@ Visual Studio Code je programovací prostředí, které nám umožní psát kód
 
 Nyní už se můžeme vrhnout na samotnou instalaci [`Jacula`](https://jaculus.org/getting-started/).
 
-1. Po instalaci `node` **restartujeme** aplikaci Visual Studio Code.
+1. Po instalaci `node.js` **restartujeme** aplikaci Visual Studio Code.
 2. V horním menu VSCode vybereme záložku `Terminal` a zvolíme `New Terminal`.
 3. Do terminálu zadáme příkaz vypsaný níže. Na `Linuxu` bude nejspíše potřeba `sudo` práva.
 
@@ -74,7 +80,7 @@ Nyní už se můžeme vrhnout na samotnou instalaci [`Jacula`](https://jaculus.o
 	npm install -g jaculus-tools
 	```
 
-	??? tip "Háže mi to chybu"
+	??? tip "Dostávám chybu"
 		Pro aplikování všech změn je nutný restart VSCode. Pokud se vám nedaří nainstalovat Jaculus, zkuste nejdříve restartovat VSCode.
 
 4. Pro otestování instalace zadáme do terminálu příkaz:
@@ -86,7 +92,7 @@ Nyní už se můžeme vrhnout na samotnou instalaci [`Jacula`](https://jaculus.o
 	Program by měl vypsat nápovědu.
 
 	??? info "Ukázka nápovědy"
-		```bash
+		```
 		Usage: jac <command>
 
 		Tools for controlling devices running Jaculus
@@ -164,15 +170,15 @@ Zde si vyzkoušíme vytvořit první projekt a nahrát jej do Robůtka.
 5. Připojíme Robůtka přes `USB-C`. `micro-USB` požívejte primárně pokud nefunguje nahrávání přes `USB-C`.
 6. V levém spodním rohu vybereme :material-power-plug:`Select COM port` pro výběr portu, na kterém je Robůtek připojený. Poté se nápis změní na vybraný port.
 
-	??? tip "Mám více portů"
-		Pokud se vám v nabídce zobrazí více portů, odpojte Robůtka a zjisťe, který port zmizel. Po připojení Robůtka tento port vyberte.
+	??? tip "Vidím více portů"
+		Pokud se vám v nabídce zobrazí více portů, odpojte Robůtka a zjisťete, který port zmizel. Po připojení Robůtka tento port vyberte.
 7. Dále zvolíme :material-eye:`Monitor`, ten slouží pro komunikaci se zařízením.
 
 ## Nahrání programu
 
-Pokud nám všem funguje připojení na :material-eye:`Monitor` a běží nám komunikace se zařízením, můžeme si tam zkusit nahrát náš první kód.
+Pokud nám funguje připojení na :material-eye:`Monitor` a běží nám komunikace se zařízením, můžeme do zařízení zkusit nahrát náš první program.
 
-1. Ve VSCodu máme otevřený první projekt. V levém `Exploreru` (`Průzkumníku`) vybereme soubor ze  `src` -> `index.ts`. V něm vidíme náš první program.
+1. Ve VSCode máme otevřený první projekt. V levém `Exploreru` (`Průzkumníku`) vybereme soubor ze  `src` -> `index.ts`. V něm vidíme náš první program.
 2. Poté zvolíme :octicons-gear-16:`Build and Flash` pro nahrání programu do zařízení.
 	![První program](./assets/first-code.png)
 3. Stejně jako v předchozí části kliknem na tlačítko :material-eye:`Monitor`. Měli bychom vidět výstup z programu.
@@ -190,7 +196,7 @@ Pokud nám funguje nahrávání kódu, můžeme se na něj podívat a zkusit jej
 Ve zdrojovém kódu jsou komentáře (`// tohle je komentář`), které nám popisují, co který řádek dělá.
 
 1. Prostudujeme si zdrojový kód.
-2. Upravíme si pozdrav na své jméno.
+2. Upravíme pozdrav na své jméno.
 
 	??? note "Řešení"
 		```ts
@@ -208,7 +214,7 @@ Ve zdrojovém kódu jsou komentáře (`// tohle je komentář`), které nám pop
 		...
 		```
 
-4. Upravíme si barvu.
+4. Upravíme barvu.
 
 	??? note "Řešení"
 		```ts
@@ -234,20 +240,24 @@ Ve zdrojovém kódu jsou komentáře (`// tohle je komentář`), které nám pop
 ## Ovládání robota přes mobil
 
 
-[Stáhnout ZIP s gridui examplem](./example-gridui.zip){ .md-button .md-button--primary }
+[Stáhnout ZIP s gridui ukázkou](./example-gridui.zip){ .md-button .md-button--primary }
 
-1. Musíme si stáhnou předpřipravený gridui ukázkový projekt, ten můžeme rovnou nahrát do Robůtka.
+1. Stáhneme si předpřipravený projekt, který můžeme rovnou nahrát do Robůtka.
 
-2. Dole na liště klikneme na `Config WiFi`
+2. Na dolní liště ve VSCode klikneme na `Config WiFi`.
 
-![](assets/add-wifi.png) <br>
-3. Vyberte možnost `Add a WiFi network`
+3. Vybereme možnost `Add a WiFi network`.
 
-![](assets/wifi-ssid.png) <br>
-4. Do pole zadejte název WiFi sítě `TechnikaNaVylete`
+	![](assets/add-wifi.png)
 
-![](assets/wifi-passwd.png) <br>
-5. Dole v terminálu zadejte heslo WiFi sítě `huratabor`
+4. Do pole zadáme název WiFi sítě.
 
-![](assets/connect-wifi.png) <br>
-6. Znovu klikneme na `Config WiFi` a vybereme `Set WiFI to Station mode (connect to wifi)`
+	![](assets/wifi-ssid.png)
+
+5. Dole v terminálu zadáme heslo WiFi sítě.
+
+	![](assets/wifi-passwd.png)
+
+6. Znovu klikneme na `Config WiFi` a vybereme `Set WiFI to Station mode (connect to wifi)`.
+
+	![](assets/connect-wifi.png)
