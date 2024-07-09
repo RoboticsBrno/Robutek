@@ -143,4 +143,4 @@ nav:
   - Příslušenství robota:
       - robotAccessories/ledStrip.md
       - robotAccessories/button.md
-      - robotAccessories/lidar.md
+      - robotAccessories/tof.md
