@@ -1,10 +1,10 @@
-# Bonus - Servo
+# Bonus - Servo (Kreslení tužkou)
 
 Na Robůtkovi jsou dvě pozice na připojení serva - piny 38 a 21.
 
 ## Začátek
 
-Abychom mohli používat servo musíme ho získat příkazem `#!ts const servo = new Servo(...)`, a do závorky napíšeme číslo PINu, timer (nastavte ho na 1) a kanál (nastavte ho na 3)
+Abychom mohli používat servo musíme ho získat příkazem `#!ts const servo = new Servo(...)`, a do závorky napíšeme číslo PINu, timer (nastavte ho na 1) a kanál (nastavte ho na 4)
 
 ```ts
 import { Servo } from "./libs/servo.js"
@@ -22,22 +22,21 @@ servo.write(1023); // 180°
 
 ## Kreslení tužkou
 
-Na servo se dá připojit tužka. Abychom mohli tužku ovládat musíme ji získat příkazem `#!ts const pen = new Pen(<číslo pinu>)`. Robůtek má 4 předdefinované konstaty pro ovládání `UP`, `DOWN`, `MIDDLE` a `UNLOAD`.
+Na servo se dá připojit tužka. Tužka se ovládá stejným způsobem jenom Robůtek má 3 předdefinované konstaty pro ovládání `Up`, `Down` a `Unload`.
 
 ```ts
-import { Pen } from "./libs/robot.js"
-
+import { Servo } from "./libs/servo.js"
 const SERVO_PIN = 38;
 
-const pen = new Pen(SERVO_PIN);
+const pen = new Servo(SERVO_PIN, 1, 4);
 ```
 
-Na nastavení pozice tužky použijeme funkci `#!ts pen.move()` a do závorek zadejte číslo on 0 od 1023 nebo jednu z konstant `Pen.UP`, `Pen.DOWN`, `Pen.MIDDLE` a `Pen.UNLOAD`.
+Na nastavení pozice tužky použijeme funkci `#!ts pen.write()` a do závorek zadejte číslo on 0 od 1023 nebo jednu z konstant `robutek.PenPos.Up`, `robutek.PenPos.Down` a `robutek.PenPos.Unload`.
 
 ```ts
-pen.move(Pen.DOWN);     // Začne kreslit
-pen.move(Pen.UP);       // Přestane kreslit
-pen.move(Pen.UNLOAD);   // Vytáhne tužku
+pen.write(robutek.PenPos.Down);     // Začne kreslit
+pen.write(robutek.PenPos.Up);       // Přestane kreslit
+pen.write(robutek.PenPos.Unload);   // Vytáhne tužku
 ```
 
 ## Zadání A
@@ -46,7 +45,8 @@ Vytvořte program, který při zmáčknutí tlačítka zasune pero a druhé tla�
 
 ??? note "Řešení"
     ```ts
-    import { Pen } from "./libs/robot.js"
+    import * as robutek from "./libs/robutek.js"
+    import { Servo } from "./libs/servo.js"
     import * as gpio from "gpio"
 
     const SERVO_PIN = 38;
@@ -56,13 +56,13 @@ Vytvořte program, který při zmáčknutí tlačítka zasune pero a druhé tla�
     gpio.pinMode(LBTN_PIN, gpio.PinMode.INPUT);
     gpio.pinMode(RBTN_PIN, gpio.PinMode.INPUT);
 
-    const pen = new Pen(SERVO_PIN);
+    const pen = new Servo(SERVO_PIN, 1, 4);
 
     gpio.on("falling", LBTN_PIN, () => {
-        pen.move(Pen.DOWN);
+        pen.write(robutek.PenPos.Down);
     });
 
     gpio.on("falling", RBTN_PIN, () => {
-        pen.move(Pen.UP);
+        pen.werite(robutek.PenPos.Up);
     });
     ```

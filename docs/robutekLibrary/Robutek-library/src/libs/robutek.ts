@@ -6,14 +6,13 @@ import * as motor from "motor"
 import * as ledc from "ledc";
 
 const robutekDiameter = 80;  // mm
-const wheelDiameter = 34;  // mm
+const wheelDiameter = 33.3;  // mm
 const wheelCircumference = Math.PI * wheelDiameter;
 
 export enum PenPos {
-    Down = 512 + 180,
-    Middle = 512,
+    Down = 512+50,
     Up = 512 - 180,
-    Unload = 0,
+    Unload = 150,
 }
 
 
