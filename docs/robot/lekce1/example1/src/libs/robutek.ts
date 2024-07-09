@@ -48,31 +48,31 @@ async function switchSensors(toValue: number) {
     await sleep(1);
 }
 
-export type SensorType = 'W_FR' | 'W_FL' | 'W_BL' | 'W_BR' | 'L_FR' | 'L_FL' | 'L_BL' | 'L_BR';
+export type SensorType = 'WheelFR' | 'WheelFL' | 'WheelBL' | 'WheelBR' | 'LineFR' | 'LineFL' | 'LineBL' | 'LineBR';
 export async function readSensor(sensor: SensorType): Promise<number> {
     switch (sensor) {
-        case 'W_FR':
+        case 'WheelFR':
             await switchSensors(0);
             return adc.read(Pins.Sens1);
-        case 'W_FL':
+        case 'WheelFL':
             await switchSensors(0);
             return adc.read(Pins.Sens2);
-        case 'W_BL':
+        case 'WheelBL':
             await switchSensors(0);
             return adc.read(Pins.Sens3);
-        case 'W_BR':
+        case 'WheelBR':
             await switchSensors(0);
             return adc.read(Pins.Sens4);
-        case 'L_FR':
+        case 'LineFR':
             await switchSensors(1);
             return adc.read(Pins.Sens1);
-        case 'L_FL':
+        case 'LineFL':
             await switchSensors(1);
             return adc.read(Pins.Sens2);
-        case 'L_BL':
+        case 'LineBL':
             await switchSensors(1);
             return adc.read(Pins.Sens3);
-        case 'L_BR':
+        case 'LineBR':
             await switchSensors(1);
             return adc.read(Pins.Sens4);
         default:
