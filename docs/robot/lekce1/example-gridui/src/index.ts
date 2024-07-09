@@ -11,7 +11,6 @@ const DEVICE_NAME = "Robutek";
 
 const ledStrip = new SmartLed(48, 1, LED_WS2812);
 
-
 let stopTimeout = null;
 
 function stop() {
@@ -65,9 +64,7 @@ Layout.begin(OWNER, DEVICE_NAME, builder => {
         ledStrip.show();
         await sleep(500);
         ledStrip.clear();
-        ledStrip.set(0, { r: 0, g: 255, b: 0 });
         ledStrip.show();
-        await sleep(500);
     });
 
     builder.SetSpeed.onChanged(slider => {
