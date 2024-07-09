@@ -2,7 +2,7 @@
 
 !!! tip "Pokud už máte zapájené motory a složeného Robůtka, můžete ho vyzkoušet přes dálkové ovládání"
 
-[Stáhnout ZIP s gridui ukázkou](./example-gridui.zip){ .md-button .md-button--primary }
+[Stáhnout ZIP s gridui ukázkou](../example-gridui.zip){ .md-button .md-button--primary }
 
 1. Stáhneme si předpřipravený projekt. Otevřete ho ve VSCode.
 
