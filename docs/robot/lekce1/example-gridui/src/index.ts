@@ -88,5 +88,5 @@ console.log("Otevři aplikaci RBController nebo otevři prohlížeč a zadej IP:
 
 
 setInterval(async () => {
-    console.log(await robutek.readSensor("L_FL"));
+    console.log(await robutek.readSensor("LineFL"));
 }, 1000);
