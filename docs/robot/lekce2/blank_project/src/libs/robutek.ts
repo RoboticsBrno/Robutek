@@ -10,9 +10,9 @@ const wheelDiameter = 34;  // mm
 const wheelCircumference = Math.PI * wheelDiameter;
 
 export enum PenPos {
-    Up = 512 + 180,
-    Down = 512 - 180,
+    Down = 512 + 180,
     Middle = 512,
+    Up = 512 - 180,
     Unload = 0,
 }
 
