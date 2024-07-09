@@ -138,6 +138,8 @@ nav:
       - robot/lekce8/index.md
       - robot/lekce9/index.md
       - robot/lekce10/index.md
+      - robot/project_line/index.md
+      - robot/project_maze/index.md
   - Příslušenství robota:
       - robotAccessories/ledStrip.md
       - robotAccessories/button.md
