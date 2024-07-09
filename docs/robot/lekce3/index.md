@@ -145,12 +145,12 @@ opět nastavit na `0`.
 ## Zadání C
 
 Tentokrát budeme reagovat na stisk tlačítka.
-Do desky si zapojíme pásku 8 inteligentních ledek, a vybranou barvou je budeme rozsvěcet.
+Do desky si zapojíme pásek 8 inteligentních ledek, a vybranou barvou je budeme rozsvěcet.
 
 Po stisku tlačítka zhasneme aktuální LEDku, a rozsvítíme tu další.
 Pokud při stisku tlačítka svítí poslední LED, zhasneme ji, a rozsvítíme opět první LED.
 
-!!! note "Led pásek je připojený za inteligentní ledku na desce, takže inde pásku začíná na 1"
+!!! note "Led pásek je připojený za inteligentní ledku na desce, takže index pásku začíná na 1."
 
 ??? note "Řešení"
     ```ts

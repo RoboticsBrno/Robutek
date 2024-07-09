@@ -39,7 +39,7 @@ Datový typ, který drží řetězec, se jmenuje `#!ts string`.
     let result : string = "5 + 1 je: " + 5 + 1;
     ```
     V `result` bude `"5 + 1 je: 51"`!
-    
+
     5 se přidá do řetězce, a poté se tam přidá 1, nesečtou se předem.
 
 
@@ -50,7 +50,7 @@ function greetName(name: string) : void {
 }
 ```
 
-Na dnešní cvičení si opět můžeme stáhnout [zip](./project8.zip). 
+Na dnešní cvičení si opět můžeme stáhnout [zip](./project8.zip).
 
 ## Zadání A
 
@@ -74,7 +74,7 @@ Napíšeme program, který při stisku tlačítka vypíše na výstup `"Senzor n
     gpio.pinMode(BTN_LEFT, gpio.PinMode.INPUT);
 
     adc.configure(SENSOR_PIN);
-    
+
     gpio.pinMode(LIGHTN_PIN, gpio.PinMode.OUTPUT);
     gpio.write(LIGHTN_PIN, 1);
 

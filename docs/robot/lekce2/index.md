@@ -101,8 +101,8 @@ Vzpomeňme si z prvního programu, že opakování dosáhneme pomocí `setInterv
 
 ## Výstupní úkol V1 - Pozdrav
 
-Při stisknutí tlačítka (GPIO 0) vypíšeme pozdrav.
+Při stisknutí tlačítka (`GPIO 0`) vypíšeme pozdrav.
 
 ## Výstupní úkol V2 - Změna barvy
 
-Při stisknutí tlačítka (GPIO 0) rozsvítíme RGB LED na Robůtkovi (`GPIO 48`) jednou barvou a při puštění barvu změníme na jinou.
+Při stisknutí tlačítka (`GPIO 0`) rozsvítíme RGB LED na Robůtkovi (`GPIO 48`) jednou barvou a při puštění barvu změníme na jinou.

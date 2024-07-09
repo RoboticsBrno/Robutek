@@ -1,4 +1,4 @@
-# Lekce 6 - ADC - senzory čáry, senzory kolem kol 
+# Lekce 6 - ADC - senzory čáry, senzory kolem kol
 
 V této lekci se naučíme pracovat s ADC převodníkem a zpracovávat data, které pomocí něj získáme.
 
@@ -19,7 +19,7 @@ const LIGHTN_PIN: number  = 47; // pin na zapnutí podsvícení pro senzory
 
 adc.configure(SENSOR_PIN); // nakonfigurujeme pin senzoru
 
-gpio.pinMode(LIGHTN_PIN, gpio.PinMode.OUTPUT); // nastavíme mód pinu podsvícení na output 
+gpio.pinMode(LIGHTN_PIN, gpio.PinMode.OUTPUT); // nastavíme mód pinu podsvícení na output
 gpio.write(LIGHTN_PIN, 1); // zapneme podsvícení robůtka
 
 setInterval(() => { // každých 100 ms vyčteme data a vypíšeme je do konzole
@@ -50,7 +50,7 @@ Proto musíme data takzvaně přemapovat na jiný číselný rozsah, k čemuž s
 
     adc.configure(SENSOR_PIN); // nakonfigurujeme pin senzoru
 
-    gpio.pinMode(LIGHTN_PIN, gpio.PinMode.OUTPUT); // nastavíme mód pinu podsvícení na output 
+    gpio.pinMode(LIGHTN_PIN, gpio.PinMode.OUTPUT); // nastavíme mód pinu podsvícení na output
     gpio.write(LIGHTN_PIN, 1); // zapneme podsvícení robůtka
 
     setInterval(() => {
@@ -69,7 +69,7 @@ Napíšeme program, který bude pomocí dat z senzoru kolem kol měnit jas RGB L
     import * as gpio from "gpio";
     import { SmartLed, LED_WS2812 } from "smartled";
 
-    const SENSOR_PIN: number  = 4; // pin levého předního senzoru 
+    const SENSOR_PIN: number  = 4; // pin levého předního senzoru
     const LIGHTN_PIN: number  = 47; // pin na zapnutí podsvícení pro senzory
 
     const LED_PIN: number  = 48;
@@ -83,18 +83,18 @@ Napíšeme program, který bude pomocí dat z senzoru kolem kol měnit jas RGB L
     const ledStrip: SmartLed  = new SmartLed(LED_PIN, LED_COUNT, LED_WS2812);  // připojí pásek na pin LED_PIN, s LED_COUT ledkami a typem WS2812
     adc.configure(SENSOR_PIN); // nakonfigurujeme pin senzoru
 
-    gpio.pinMode(LIGHTN_PIN, gpio.PinMode.OUTPUT); // nastavíme mód pinu podsvícení na output 
+    gpio.pinMode(LIGHTN_PIN, gpio.PinMode.OUTPUT); // nastavíme mód pinu podsvícení na output
     gpio.write(LIGHTN_PIN, 1); // zapneme podsvícení robůtka
 
     setInterval(() => {
         const value: number  = mapADC(255, adc.read(SENSOR_PIN));
-        
+
         for(let i = 0; i<LED_COUNT; i++) {
             ledStrip.set(i, {r: value, g: (255 - value*8), b: 0}) // nastavíme intenzitu červené barvy na hodnotu z Senzoru čáry (0-255) a zároveň čím více se povrch pod robůtkem bude blížit bílé tím více bude barva fialová
         }
-        
+
         ledStrip.show();
-    }, 10); 
+    }, 10);
     ```
 
 ## Zadání C
@@ -107,13 +107,13 @@ Senzorů čáry a senzorů kolem kol je dohromady 8, ale pro zmenšení počtu v
     import * as adc from "adc";
     import * as gpio from "gpio";
 
-    const SENSOR_PIN: number  = 4; // pin levého předního senzoru 
+    const SENSOR_PIN: number  = 4; // pin levého předního senzoru
     const LIGHTN_PIN: number  = 47; // pin na zapnutí podsvícení pro senzory
     const SENSOR_SWITCH_PIN: number  = 8; // pin na přepnutí mezi senzory u kola a senzory čáry
 
     adc.configure(SENSOR_PIN); // nakonfigurujeme pin senzoru
 
-    gpio.pinMode(LIGHTN_PIN, gpio.PinMode.OUTPUT); // nastavíme mód pinu podsvícení na output 
+    gpio.pinMode(LIGHTN_PIN, gpio.PinMode.OUTPUT); // nastavíme mód pinu podsvícení na output
     gpio.pinMode(SENSOR_SWITCH_PIN, gpio.PinMode.OUTPUT);
 
     gpio.write(LIGHTN_PIN, 1); // zapneme podsvícení robůtka
@@ -126,7 +126,7 @@ Senzorů čáry a senzorů kolem kol je dohromady 8, ale pro zmenšení počtu v
 
 ## Výstupní úkol V1
 
-Napište program, který vypíše hodnotu v rozsahu -1 až 1 na základě toho, zda je robot napravo nebo nalevo od čáry. Tzn. program, který vypíše do konzole 1, když černou čáru vidí jenom pravé senzory, a -1, když čáru vidí jenom levé senzory. Pokud černou vidí jen část senzorů na dané straně, vrátí hodnotu mezi 0 a 1 (-1). Pokud černou nevidí vůbec, vypíše 0. 
+Napište program, který vypíše hodnotu v rozsahu -1 až 1 na základě toho, zda je robot napravo nebo nalevo od čáry. Tzn. program, který vypíše do konzole 1, když černou čáru vidí jenom pravé senzory, a -1, když čáru vidí jenom levé senzory. Pokud černou vidí jen část senzorů na dané straně, vrátí hodnotu mezi 0 a 1 (-1). Pokud černou nevidí vůbec, vypíše 0.
 <!--
 ??? note "Řešení"
 ```ts
@@ -171,10 +171,10 @@ setInterval(() => { // každých 100 ms vyčteme data a vypíšeme je do konzole
     let right_value: number = right_up_value + right_down_value;
     let left_value: number = left_up_value + left_down_value;
 
-    let result: number =  right_value - left_value; 
-    
-    console.log(result); 
-    
+    let result: number =  right_value - left_value;
+
+    console.log(result);
+
 }, 1000);
 ``` -->
 

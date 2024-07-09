@@ -66,7 +66,7 @@ Stav pole si můžeme po každé změně vypsat pomocí `#!ts console.log(pole)`
 
     adc.configure(SENSOR_PIN); // nakonfigurujeme pin senzoru
 
-    gpio.pinMode(LIGHTN_PIN, gpio.PinMode.OUTPUT); // nastavíme mód pinu podsvícení na output 
+    gpio.pinMode(LIGHTN_PIN, gpio.PinMode.OUTPUT); // nastavíme mód pinu podsvícení na output
     gpio.write(LIGHTN_PIN, 1); // zapneme podsvícení robůtka
 
     let arr : number[] = [];

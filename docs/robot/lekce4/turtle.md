@@ -4,7 +4,7 @@ Tato lekce přímo navazuje na předchozí, a ukazuje praktické použití cykl�
 
 ## Želvička
 
-Cykly si vyzkoušíme  v programu `Želvička (TODO název?)`. Program obsahuje zjednodušenou verzi reality, ve které nám bude jezdit želvička a přijímat příkazy na základě vnějších podnětů. 
+Cykly si vyzkoušíme  v programu `Želvička (TODO název?)`. Program obsahuje zjednodušenou verzi reality, ve které nám bude jezdit želvička a přijímat příkazy na základě vnějších podnětů.
 
 // TODO Obrázek a link na simulátor
 
@@ -33,7 +33,7 @@ Napište program, který z výchozí pozice želvičky vyjede o kousek dopředu,
         motors.rotate(90); // rotace doprava o 90 stupňů
     }
     ```
-    
+
 Toto chování můžeme také provést v reakci na událost. Modifikujte program tak, aby želvička projela čtverec až po stisknutí tlačítka.
 
 ??? note "Řešení"
@@ -94,19 +94,19 @@ Napište kód, který způsobí, že želvička nakreslí místo čtverce trojú
     a + c > b
     b + c > a
     ```
-    
+
     Nejjednodušší trojúhelník je rovnostranný, který bude mít všechny strany stejně dlouhé a 60° úhel na každém rohu.
-    
+
     Hned po něm následuje rovnoramenný, který v nejjednodušším případě bude mít 90° úhel mezi kratšími stranami, a 45° mezi krátkou a dlouhou.
-    
+
     Pokud chceme nějaký méně pravidelný trojúhelník, můžeme na výpočet úhlu a délek použít kosínovu větu (Dodat jako knihovní funkci, tak jako barvičky(?)).
 
 ## Výstupní úkol V2 - Domeček
 
-Propojte dosavadní znalosti do jednoho kódu. 
+Propojte dosavadní znalosti do jednoho kódu.
 Napište program, který způsobí že si želvička nakreslí domeček z čtverce a trojúhelníkové střechy.
 
-Následně želvička přestane kreslit, a vjede doprostřed domečku, kde zastaví. 
+Následně želvička přestane kreslit, a vjede doprostřed domečku, kde zastaví.
 
 ### Dobrovolný úkol - Spuštění na vlastním robotovi
 
