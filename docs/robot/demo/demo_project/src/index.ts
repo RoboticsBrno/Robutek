@@ -164,8 +164,8 @@ function configureServo() {
 	adc.configure(JOY_PM2_X);
 	adc.configure(JOY_PM2_Y);
 
-	let servo0 = new Servo(SERVO_PIN_0, 1, 3);
-	let servo1 = new Servo(SERVO_PIN_1, 1, 4);
+	let servo0 = new Servo(SERVO_PIN_0, 1, 4);
+	let servo1 = new Servo(SERVO_PIN_1, 1, 5);
 
 	let joy = [0, 0];
 	setInterval(() => {

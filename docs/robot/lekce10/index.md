@@ -10,7 +10,7 @@ Abychom mohli používat servo musíme ho získat příkazem `#!ts const servo =
 import { Servo } from "./libs/servo.js"
 
 const SERVO_PIN = 38;
-const servo = new Servo(SERVO_PIN, 1, 3);
+const servo = new Servo(SERVO_PIN, 1, 4);
 ```
 
 Na nastavení pozice serva použijte funkci `#!ts servo.write()` a do závorek zadejte číslo od 0 do 1023.
