@@ -1,4 +1,4 @@
-# Lekce 4 - cykly
+# Lekce 6 - cykly
 
 V této lekci si představíme cykly, což je nástroj který nám umožňuje opakovat kód podle nějakého pravidla.
 Zatím je využijeme pro komunikaci s robotem, v následující lekci si ukážeme jejich použití při řízení robota.
@@ -28,7 +28,6 @@ Následně definujeme výraz `#!ts i < 3 `, který značí, kdy se cyklus má za
 Při prvním průchodu bude tedy `#!ts i = 0` při druhém `#!ts i = 1 ` a při třetím `#!ts i = 2 ` při dalším zvyšování by platilo `#!ts i = 3 ` tam ale už nebude pravdivý výraz ` i < 3 ` a cyklus se tedy ukončí.
 Do složených závorek píšeme vykonávaný kód, který se v tomto případě vykoná 3-krát.
 
-Kostru na tento úkol najdete [zde](./project4.zip).
 
 ## Zadání A
 Ve spojení se znalostmi z minulých lekcí napište program, který po stisku tlačítka vypíše čísla 0 až 9 (pomocí `#!ts console.log(cislo)`), vždy na samostatný řádek.
@@ -95,7 +94,7 @@ Pokud nechceme za vypsanými znaky nový řádek, místo známého `#!ts console
 
 ## Zadání výstupního úkolu V1
 Napište kod který který vypíše čísla od 9 do 0.
-Nápověda, zadání je velmi podobné jako zadání A jen jdou čísla sestupně namísto vzestupně.
+Zadání je velmi podobné jako zadání A, jen jdou čísla sestupně namísto vzestupně. Nekopírujte jen dodaný kód, ale zkuste si jej napsat sami.
 
 ## Zadání výstupního úkolu V2
 Stejně jako v zadání B budeme do konzole vykreslovat geometrický obrazec, akorát tentokrát to bude trojúhelník jako tenhle:
@@ -107,7 +106,3 @@ Stejně jako v zadání B budeme do konzole vykreslovat geometrický obrazec, ak
 ****
 *****
 ```
-
-!!! tip "Pro dobrovolníky"
-
-    - Zkuste kreslit různé tvary, a různé typy: např. trojuhelník, který je uvnitř dutý, stromeček, nebo kruh

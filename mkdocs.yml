@@ -131,9 +131,10 @@ nav:
       - robot/lekce1/gridui.md
       - robot/lekce2/index.md
       - robot/lekce3/index.md
-      - robot/lekce4/index.md
-      - robot/lekceMotory/index.md
-      - robot/lekce10/index.md
+      - robot/lekce4/motors.md
+      - robot/lekce5/pen.md
+      - robot/lekce6/for.md
+      - robot/lekce6/turtle.md
       # - robot/lekce4/turtle.md - nekompletní
       # - robot/lekce5/turtle.md
       # - robot/lekce6/index.md
@@ -144,6 +145,7 @@ nav:
       - robot/project_maze/index.md
       - robot/motors/index.md
       - robot/sens/index.md
+      - robot/sim/index.md
   - Příslušenství robota:
       - robotAccessories/ledStrip.md
       - robotAccessories/button.md
