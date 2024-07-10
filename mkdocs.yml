@@ -143,10 +143,10 @@ nav:
       - robot/lekce6/for.md
       - robot/lekce6/turtle.md
       - robot/lekce7/turtle.md
+      - robot/lekceCara/index.md
       - robot/lekce8/index.md
       - robot/lekce9/index.md
       - robot/project_sumo/index.md
-      - robot/project_line/index.md
       - robot/project_maze/index.md
       - robot/motors/index.md
       - robot/sens/index.md
