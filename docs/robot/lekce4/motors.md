@@ -1,4 +1,4 @@
-# Lekce 5 - Motory
+# Lekce 4 - Motory
 
 V této lekci zkusíme točit motory a pohybovat robotem.
 
