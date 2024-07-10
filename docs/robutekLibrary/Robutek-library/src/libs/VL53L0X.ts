@@ -16,29 +16,18 @@ type VL53L0XMeasurement = {
 
 export class VL53L0X {
 
-    i2c: I2C;
-    options: any;
-    ad: number;
-    StopVariable: number;
+    private i2c: I2C;
+    private ad: number;
+    private StopVariable: number;
 
-    /**
-    Init VL53 Sensor if no address is provided, default address is used.
-    Store Address in a variable which is used for communication.
-    */
-    constructor(i2c: I2C, options: any) {
-        this.options = options || {};
+    constructor(i2c: I2C) {
         this.i2c = i2c;
         this.ad = 0x52 >> 1;
-        if (this.options.address) {
-            // Change I2C address, if specified in options
-            this.ad = this.options.address >> 1;
-            this.i2c.writeTo(0x52 >> 1, [0x8a, this.ad]);
-        }
         this.init();
     }
 
     /** initialise VL53L0X */
-    init() {
+    private init() {
         this.w(0x80, 0x01);
         this.w(0xFF, 0x01);
         this.w(0x00, 0x00);
@@ -48,11 +37,11 @@ export class VL53L0X {
         this.w(0x80, 0x00);
     }
 
-    r(addr: number, n: number): Uint8Array {
+    private r(addr: number, n: number): Uint8Array {
         this.i2c.writeTo(this.ad, addr);
         return this.i2c.readFrom(this.ad, n);
     }
-    w(addr: number, d: number) {
+    private w(addr: number, d: number) {
         this.i2c.writeTo(this.ad, [addr, d]);
     }
 
@@ -94,6 +83,6 @@ export class VL53L0X {
     }
 }
 
-export function connect(i2c, options) {
-    return new VL53L0X(i2c, options);
+export function connect(i2c: I2C) {
+    return new VL53L0X(i2c);
 };
