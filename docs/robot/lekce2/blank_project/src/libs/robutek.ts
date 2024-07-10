@@ -177,6 +177,11 @@ export async function move(curve: number, duration?: motor.MoveDuration) {
                 rightMotor.move({ distance: distance * rMot })
             ]);
         }
+    } else {
+        await Promise.all([
+            leftMotor.move(),
+            rightMotor.move()
+        ]);
     }
 }
 
