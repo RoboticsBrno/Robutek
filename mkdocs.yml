@@ -135,10 +135,7 @@ nav:
       - robot/lekce5/pen.md
       - robot/lekce6/for.md
       - robot/lekce6/turtle.md
-      # - robot/lekce4/turtle.md - nekompletní
-      # - robot/lekce5/turtle.md
-      # - robot/lekce6/index.md
-      # - robot/lekce7/index.md
+      - robot/lekce7/turtle.md
       - robot/lekce8/index.md
       - robot/lekce9/index.md
       - robot/project_sumo/index.md

@@ -19,7 +19,12 @@ Program má textové okno, kam můžeme psát příkazy. Nám již známé pří
 V jedné z předchozích lekcí jsme použili znalosti o ovládání motorů a fixy na nakreslení čtverce.
 Museli jsme však několikrát pod sebou kopírovat kód na pohyb dopředu a otočení, ačkoliv jsme vykonávali čtyřikrát to stejné. Tentokrát pomocí for cyklu napište kód, díky kterému robot nakreslí čtverec a vrátí se do výchozí polohy.
 
+<<<<<<< Updated upstream
 	![](assets/square.png)
+=======
+
+![](assets/square.png)
+>>>>>>> Stashed changes
 
 
 ??? note "Řešení"
@@ -63,9 +68,7 @@ Vzdálenost, kterou je potřeba ujet si dopočítáme na základě toho, že kol
 Po nakreslení každého kola se můžeme otočit, ale pro plynulý pohyb chceme kreslit každé kolo z jiného směru.
 K tomu může pomoct například stavová proměnná, která nám řekne, jestli tentokrát pojedeme doprava, nebo doleva.
 
-
-	![](assets/square.png)
-
+![](assets/square.png)
 
 ??? note "Řešení"
     ```ts
@@ -76,16 +79,16 @@ K tomu může pomoct například stavová proměnná, která nám řekne, jestli
 
     robutek.setSpeed(100) // nastavíme rychlost na 100 mm/s
 
-l   et direction: number = 1; // směr otáčení
+    let direction: number = 1; // směr otáčení
     let circumference: number = 2 * 3.14 * 82; // obvod jednoho kruhu, který robot objede
-    for (let i: number = 0; i < 4; i++) { // chování opakujeme 4x, pro každou stěnu čtverce
-    await robutek.move(direction, { distance: circumference * 1.5 }); // chceme projet obvod 1,5x
-    if( direction == 1 ){
-        direction = -1;
-    } else {
-        direction = 1;
+    for (let i: number = 0; i < 4; i++) { // chování opakujeme 4x
+        await robutek.move(direction, { distance: circumference * 1.5 }); // chceme projet obvod 1,5x
+        if( direction == 1 ){
+            direction = -1;
+        } else {
+            direction = 1;
+        }
     }
-}
     ```
 
 
