@@ -1,13 +1,13 @@
 import { I2C } from "i2c";
 
 /* Copyright (c) 2017 Gordon Williams, Pur3 Ltd. See the file LICENSE for copying permission. */
-// modified from Espruino's VL53L0X module (https://www.espruino.com/VL53L1X)
+// modified from Espruino's VL53L0X module (https://www.espruino.com/VL53L0X)
 const C = {
     REG_SYSRANGE_START: 0,
     REG_RESULT_RANGE_STATUS: 0x0014
 };
 
-type VL53L0XMeasurement = {
+type Measurement = {
     distance: number,
     signalRate: number,
     ambientRate: number,
@@ -55,7 +55,7 @@ export class VL53L0X {
      *   effectiveSpadRtnCount //  effective SPAD count for the return signal
      * }
      */
-    async performSingleMeasurement(): Promise<VL53L0XMeasurement> {
+    async read(): Promise<Measurement> {
         // start measurement
         this.w(0x80, 0x01);
         this.w(0xFF, 0x01);
