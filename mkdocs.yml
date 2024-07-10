@@ -62,6 +62,8 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true
 
 plugins:
   - search
@@ -116,6 +118,10 @@ extra:
 
 extra_css:
   - assets/style.css
+
+extra_javascript:
+   - js/mathjax.js
+   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
   - Domů:

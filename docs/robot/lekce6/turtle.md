@@ -19,12 +19,7 @@ Program má textové okno, kam můžeme psát příkazy. Nám již známé pří
 V jedné z předchozích lekcí jsme použili znalosti o ovládání motorů a fixy na nakreslení čtverce.
 Museli jsme však několikrát pod sebou kopírovat kód na pohyb dopředu a otočení, ačkoliv jsme vykonávali čtyřikrát to stejné. Tentokrát pomocí for cyklu napište kód, díky kterému robot nakreslí čtverec a vrátí se do výchozí polohy.
 
-<<<<<<< Updated upstream
-	![](assets/square.png)
-=======
-
 ![](assets/square.png)
->>>>>>> Stashed changes
 
 
 ??? note "Řešení"
