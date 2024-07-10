@@ -150,3 +150,5 @@ nav:
       - robotAccessories/ledStrip.md
       - robotAccessories/button.md
       - robotAccessories/tof.md
+  - Piny robota:
+      - robotPins/index.md
