@@ -158,3 +158,5 @@ nav:
       - robot/docs/socket.md
       - robot/docs/motors.md
       - robot/docs/sens.md
+      - robot/docs/sim.md
+      - robot/docs/vl53.md

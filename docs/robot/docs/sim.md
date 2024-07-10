@@ -7,7 +7,7 @@ ze stolu, nebo pokreslili něco co nemáte.
 
 Při otevření odkazu vás uvítá následující obrazovka:
 
-	![](assets/sim.png)
+![](assets/sim.png)
 
 Vidíte zde hlavní okno s želvičkou (která reprezentuje našeho robůtka), programovací okno,
 a textové okno na výstup našich programů.
