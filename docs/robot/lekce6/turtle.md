@@ -63,7 +63,7 @@ Vzdálenost, kterou je potřeba ujet si dopočítáme na základě toho, že kol
 Po nakreslení každého kola se můžeme otočit, ale pro plynulý pohyb chceme kreslit každé kolo z jiného směru.
 K tomu může pomoct například stavová proměnná, která nám řekne, jestli tentokrát pojedeme doprava, nebo doleva.
 
-![](assets/square.png)
+![](assets/circles.png)
 
 ??? note "Řešení"
     ```ts
