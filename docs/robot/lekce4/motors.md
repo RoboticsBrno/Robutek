@@ -54,11 +54,10 @@ Patří dovnitř `async function main()`, pod komentář v přechozím kusu kód
     await robutek.move(0, { distance: 100 }) // Ujeď 100 mm == 10 cm
 ```
 
-**Úkol:** Zkus přidat dva řádky kódu, aby Robůtek dojel zase zpátky na stejné místo
+**Úkol:** Zkus přidat kód, aby Robůtek dojel zase zpátky na stejné místo
 ??? note "Řešení"
     ```ts
-	robutek.setSpeed(-100) // Nastav rychlost na -100, couvání
-    await robutek.move(0, { distance: 100 }) // Ujeď 100 mm == 10 cm
+    await robutek.move(0, { distance: -100 }) // Ujeď -100 mm == -10 cm
     ```
 
 
