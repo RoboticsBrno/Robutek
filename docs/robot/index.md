@@ -57,4 +57,4 @@ export enum Pins {
 
 ![Predni strana robota](assets/front.png)
 ![Zadni strana robota](assets/back.png)
-!!! danger "Pin pro přepínání vnitřních a venkovních čárových senzorů je pin <b>IO8.</b>"
+!!! danger "Pin pro přepínání vnitřních a venkovních čárových senzorů je <b>IO8.</b>"
