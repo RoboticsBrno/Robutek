@@ -25,7 +25,6 @@
 
     ![tof with cables](assets/tof_w_cables.jpg)
 
-
 6. Připojíme dálkoměr k Robůtkovi.
 
     ![tof w cables closeup](assets/tof_w_cables_closeup.jpg)
@@ -39,7 +38,12 @@
 | SDA   | →   | IO17    |
 <hr>
 
-7. Poté přilepíme dálkoměr k držáku pomocí tavné pistole.
+7. Na troj-pin `PMOD-VCC` vedle pinů je třeba připojit jumper pro zvolení napětí 3V3, tedy propojit dva piny blíže okraji robota.
+
+   !!! warning "Opatrně! Špatným nastavením `PMOD-VCC` lze zničit dálkoměr!"
+
+
+8. Poté přilepíme dálkoměr k držáku pomocí tavné pistole.
 
     ![attaching tof](assets/attaching_tof.jpg)
 
