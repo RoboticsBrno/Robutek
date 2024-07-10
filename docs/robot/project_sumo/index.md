@@ -9,3 +9,7 @@ Než se pustíte do řešení projděte si [dokumentaci k senzorům odrazu svět
 ## Kompetetivní zadání
 
 Dva Robůtci budou postaveni do hracího pole. Úkolem vašeho Robůtka bude zhodit protivníka z hracího pole a sám z něj nespadnout.
+
+Ukázka jednoduchého programu:
+
+![Ukázka jednoduchého programu](./assets/example.gif)
