@@ -169,12 +169,10 @@ async function main() {
       // Čára je pod levým senzorem, doprava!
       robutek.leftMotor.setSpeed(10);
       robutek.rightMotor.setSpeed(100);
-      previousLeft = true;
     } else if (r < threshold) {
       // Čára je pod pravým senzorem, doleva!
       robutek.leftMotor.setSpeed(100);
       robutek.rightMotor.setSpeed(10);
-      previousLeft = false;
     } else {
       robutek.leftMotor.setSpeed(100);
       robutek.rightMotor.setSpeed(100);
