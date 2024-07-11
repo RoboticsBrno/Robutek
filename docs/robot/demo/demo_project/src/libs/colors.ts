@@ -4,7 +4,7 @@
  * - G: zelená (rozsah 0-255)
  * - B: modrá (rozsah 0-255)
  */
-interface Rgb {
+export interface Rgb {
     r: number;
     g: number;
     b: number;
@@ -17,7 +17,7 @@ interface Rgb {
  * - Saturation: sytost barev (rozsah 0-1)
  * - Lightness: světlost (rozsah 0-1)
  */
-interface Hsl {
+export interface Hsl {
     h: number;
     s: number;
     l: number;
