@@ -98,7 +98,7 @@ Dále musíme podle hodnot ze senzorů ovládat motory. Použijeme jednoduchou s
 * a když není pod žádným, můžeme rovně
 
 ```ts
-    const threshold = 100; // Pod tímto číslem se považuje senzor na čáře
+    const threshold = 50; // Pod tímto číslem se považuje senzor na čáře
     if (l < threshold) {
       // Čára je pod levým senzorem, doprava!
       robutek.leftMotor.setSpeed(10);
@@ -164,7 +164,7 @@ async function main() {
 
     console.log(`l: ${l}, r: ${r}`);
 
-    const threshold = 100; // Pod tímto číslem se považuje senzor na čáře
+    const threshold = 50; // Pod tímto číslem se považuje senzor na čáře
     if (l < threshold) {
       // Čára je pod levým senzorem, doprava!
       robutek.leftMotor.setSpeed(10);
