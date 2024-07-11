@@ -38,7 +38,7 @@ main().catch(console.error)
 
 Ježdění má dvě části - nastavení rychlosti, a samotný pohyb:
 
-* `robutek.setSpeed(RYCHLOST)` - _RYCHLOST_ je číslo milimetrech za vteřinu, na Robůtkovi prakticky od -800 (couvání) do 800
+* `robutek.setSpeed(RYCHLOST)` - _RYCHLOST_ je číslo milimetrech za vteřinu, na Robůtkovi prakticky od 0 do 800
 * `await robutek.move(SMĚR, { distance: VZDÁLENOST_V_MM })`
     * _SMĚR_ je desetinné číslo od -1 do 1, kdy
         * -1 je znamená úplně doleva,
