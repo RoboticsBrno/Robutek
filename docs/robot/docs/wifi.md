@@ -61,12 +61,12 @@ K Robůtkovi se můžeme připojit i bezdrátově pomocí WiFi. K tomu ale potř
 3. A v terminále se zobrazí IP adresa (Nějakou dobu trvá než se Robůtek připojí k sítí, takže je možné že to bude chvíly trvat) <br>
 ![](assets/ip-address.png) <br>
 
-Nebo v kódu můžete získat IP adresu pomocí funkce `getIP()`:
+Nebo v kódu můžete získat IP adresu pomocí funkce `currentIp()`:
 
 ```ts
 import * as wifi from "wifi";
 
-console.log(wifi.)
+console.log(wifi.currentIp())
 ```
 
 ## Připojení k síti
