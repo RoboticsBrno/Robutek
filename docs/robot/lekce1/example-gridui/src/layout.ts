@@ -57,7 +57,7 @@ const layout = {
                     .value(0.5)
                     .precision(0.05),
                 TextSpeed: builder.text(1, 6.5, 10, 1, 47586)
-                    .text("Maximální rychlosti")
+                    .text("Maximální rychlost")
                     .fontSize(17)
             }
 

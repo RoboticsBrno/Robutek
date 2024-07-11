@@ -32,8 +32,8 @@ function setMotorsJoystick(x: number, y: number, coef = 2.5) {
     let l = (y + (x / coef));
 
     // Apply speed limiter
-    r = r * speedLimiter;
-    l = l * speedLimiter;
+    r *= speedLimiter;
+    l *= speedLimiter;
 
     // Swap r and l if both are negative
     if (r < 0 && l < 0) {
@@ -72,4 +72,4 @@ let speedMul = 500;
 robutek.leftMotor.move();
 robutek.rightMotor.move();
 
-console.log("Otevři aplikaci RBController nebo otevři prohlížeč a zadej IP: " + wifi.currentIp() + " pro ovládání robota.");
+console.log("Otevři aplikaci RBController nebo otevři prohlížeč a zadej IP: http://" + wifi.currentIp() + " pro ovládání robota.");
