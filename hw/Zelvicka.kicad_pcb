@@ -20319,7 +20319,7 @@
   (gr_text "IO12" (at 80.3 102.8 -90) (layer "B.SilkS") (tstamp 2a4fa425-9570-4421-b2ba-48707e554cd6)
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
-  (gr_text "IO18  1	0" (at 115.21 121.8) (layer "B.SilkS") (tstamp 2e40384a-5cba-4a2b-bb99-48c5f2892b53)
+  (gr_text "IO8  1	0" (at 115.21 121.8) (layer "B.SilkS") (tstamp 2e40384a-5cba-4a2b-bb99-48c5f2892b53)
     (effects (font (size 1.5 1.5) (thickness 0.25) bold) (justify left bottom mirror))
   )
   (gr_text "0" (at 116.8 107) (layer "B.SilkS") (tstamp 31b820cf-4f46-4586-8f9f-2db4aa229eef)
