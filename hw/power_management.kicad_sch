@@ -1394,7 +1394,7 @@
   (symbol (lib_id "RKL-MOSFET:JMTV210P02A") (at 254 78.74 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 127166bc-9537-4e65-9626-714b98dbafbf)
-    (property "Reference" "U8" (at 247.65 77.47 90)
+    (property "Reference" "Qp5" (at 247.65 77.47 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "JMTV210P02A" (at 243.84 80.01 90)
@@ -1422,9 +1422,6 @@
     (pin "8" (uuid 50a6f979-97ca-453f-b1da-86910e715413))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
-          (reference "U8") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e"
           (reference "Qp5") (unit 1)
         )
@@ -1435,7 +1432,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 144.78 132.08 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 14dd8960-0d2c-4ce2-a4e4-018d6f29ab77)
-    (property "Reference" "SW3" (at 146.05 130.81 90)
+    (property "Reference" "SW4" (at 146.05 130.81 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "OFF" (at 146.05 133.35 90)
@@ -1457,9 +1454,6 @@
     (pin "2" (uuid 1ab9d003-74cd-4e06-97c3-b6b81f66d4b3))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/75e5fa41-7632-4cae-90f1-8adc7193968e"
-          (reference "SW3") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e"
           (reference "SW4") (unit 1)
         )
@@ -1525,7 +1519,7 @@
   (symbol (lib_id "RKL-MOSFET:JMTV210P02A") (at 76.2 91.44 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2ec115a2-2808-410a-a4bb-d27ce9c72ff9)
-    (property "Reference" "U8" (at 76.2 85.09 0)
+    (property "Reference" "Qp3" (at 76.2 85.09 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "JMTV210P02A" (at 76.2 87.63 0)
@@ -1553,9 +1547,6 @@
     (pin "8" (uuid ea3791ae-0dfd-4c81-8550-005499181c47))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
-          (reference "U8") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e"
           (reference "Qp3") (unit 1)
         )
@@ -1566,7 +1557,7 @@
   (symbol (lib_id "RKL-MOSFET:JMTV210P02A") (at 162.56 38.1 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 31651a97-ffaf-4b6a-ac53-ca64ac9e4a3a)
-    (property "Reference" "U8" (at 162.56 31.75 0)
+    (property "Reference" "Qp1" (at 162.56 31.75 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "JMTV210P02A" (at 162.56 34.29 0)
@@ -1594,9 +1585,6 @@
     (pin "8" (uuid 0d398b35-9d9b-4240-8f71-ed9914282a7a))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
-          (reference "U8") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e"
           (reference "Qp1") (unit 1)
         )
@@ -1724,7 +1712,7 @@
   (symbol (lib_id "Device:R") (at 158.75 116.84 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3d881465-05d1-4a2b-ad6e-661edeb46a6b)
-    (property "Reference" "R33" (at 158.75 111.76 90)
+    (property "Reference" "R7" (at 158.75 111.76 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "200" (at 158.75 114.3 90)
@@ -1746,9 +1734,6 @@
     (pin "2" (uuid 3e4e41f3-1f24-4fa0-affd-52671c07a324))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
-          (reference "R33") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e"
           (reference "R7") (unit 1)
         )
@@ -1888,7 +1873,7 @@
   (symbol (lib_id "Device:R") (at 144.78 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 598555ba-6b3b-49d1-8ef8-282077793e2e)
-    (property "Reference" "R33" (at 148.59 121.92 0)
+    (property "Reference" "R64" (at 148.59 121.92 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "200" (at 148.59 124.46 0)
@@ -1910,9 +1895,6 @@
     (pin "2" (uuid 937c0678-6bf5-40d4-a721-a558b3516576))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
-          (reference "R33") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e"
           (reference "R64") (unit 1)
         )
@@ -2062,7 +2044,7 @@
   (symbol (lib_id "Device:R") (at 177.8 100.33 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8f1821d2-edd5-4a4b-abd7-1b28058be4a0)
-    (property "Reference" "R27" (at 180.34 101.6 0)
+    (property "Reference" "R17" (at 180.34 101.6 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "56k" (at 180.34 99.06 0)
@@ -2084,9 +2066,6 @@
     (pin "2" (uuid 999ca19c-9194-4fc2-92a0-f92b6eaf7c24))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
-          (reference "R27") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e"
           (reference "R17") (unit 1)
         )
@@ -2139,7 +2118,7 @@
   (symbol (lib_id "Device:C") (at 132.08 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 987c793b-9d45-4f7c-a413-435345b16bd6)
-    (property "Reference" "C38" (at 135.89 121.92 0)
+    (property "Reference" "C28" (at 135.89 121.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 135.89 124.46 0)
@@ -2164,9 +2143,6 @@
     (pin "2" (uuid 26dbb26f-b6ab-4c61-b85e-cbbd57d74b9d))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/e22ea24c-0368-422d-a8f9-a65d7c1f87fe"
-          (reference "C38") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e"
           (reference "C28") (unit 1)
         )
@@ -2220,7 +2196,7 @@
   (symbol (lib_id "Device:C") (at 190.5 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ad71167d-6f92-4930-b391-f1b702db77f3)
-    (property "Reference" "C38" (at 194.31 121.92 0)
+    (property "Reference" "C46" (at 194.31 121.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 194.31 124.46 0)
@@ -2245,9 +2221,6 @@
     (pin "2" (uuid 2a1aa922-73ce-49c5-ab95-9cffbd47620a))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/e22ea24c-0368-422d-a8f9-a65d7c1f87fe"
-          (reference "C38") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e"
           (reference "C46") (unit 1)
         )
@@ -2258,7 +2231,7 @@
   (symbol (lib_id "RKL-MOSFET:JMTV210P02A") (at 55.88 91.44 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b083f4f7-e3ae-4511-b24e-6a4ccafa32ca)
-    (property "Reference" "U8" (at 55.88 85.09 0)
+    (property "Reference" "Qp2" (at 55.88 85.09 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "JMTV210P02A" (at 55.88 87.63 0)
@@ -2286,9 +2259,6 @@
     (pin "8" (uuid b69b6efb-fb25-4f33-8cae-29104f3a65a6))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
-          (reference "U8") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e"
           (reference "Qp2") (unit 1)
         )
@@ -2331,7 +2301,7 @@
   (symbol (lib_id "Device:R") (at 177.8 123.19 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cf0d5370-cac8-4037-b0fd-6fac0de0100b)
-    (property "Reference" "R29" (at 181.61 121.92 0)
+    (property "Reference" "R16" (at 181.61 121.92 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "17.4k" (at 182.88 124.46 0)
@@ -2353,9 +2323,6 @@
     (pin "2" (uuid 5bc8b8bb-1f33-432c-9b45-f6a0e392cfc4))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
-          (reference "R29") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e"
           (reference "R16") (unit 1)
         )
@@ -2376,7 +2343,7 @@
   (symbol (lib_id "Device:D_Schottky") (at 254 57.15 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cfa3599c-7221-451f-bfe6-673567e637cd)
-    (property "Reference" "D2" (at 256.54 56.1975 90)
+    (property "Reference" "D3" (at 256.54 56.1975 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "D_Schottky" (at 256.54 58.7375 90)
@@ -2399,9 +2366,6 @@
     (pin "3" (uuid d8170742-befd-4572-8c50-355468be024f))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/cf5a8cac-e720-4f6c-b6d8-8f40c3604d15"
-          (reference "D2") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e"
           (reference "D3") (unit 1)
         )
@@ -2417,7 +2381,7 @@
   (symbol (lib_id "Diode:SMAJ5.0A") (at 254 97.79 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d3869af5-f7a9-4b10-bd71-421d9cdc9ca4)
-    (property "Reference" "D5" (at 256.54 96.52 90)
+    (property "Reference" "D6" (at 256.54 96.52 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SMAJ5.0A" (at 256.54 99.06 90)
@@ -2439,9 +2403,6 @@
     (pin "2" (uuid c138b633-b530-42bd-93d1-ef2068f71859))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/cf5a8cac-e720-4f6c-b6d8-8f40c3604d15"
-          (reference "D5") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e"
           (reference "D6") (unit 1)
         )
@@ -2574,7 +2535,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 114.3 109.22 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f00e3704-037b-422f-a8b6-7de5b0e0c350)
-    (property "Reference" "SW2" (at 113.03 107.95 90)
+    (property "Reference" "SW1" (at 113.03 107.95 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "ON" (at 113.03 110.49 90)
@@ -2596,9 +2557,6 @@
     (pin "2" (uuid d60da14b-f47f-4fbb-8f55-5b0a88972e65))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/75e5fa41-7632-4cae-90f1-8adc7193968e"
-          (reference "SW2") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e"
           (reference "SW1") (unit 1)
         )
@@ -2645,7 +2603,6 @@
     (instances
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e" (page "9"))
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42" (page "9"))
       )
     )
   )

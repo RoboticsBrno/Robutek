@@ -2478,7 +2478,7 @@
   (symbol (lib_id "Device:R") (at 73.66 41.91 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1d19d269-bbba-4acd-ba82-54603a9e005c)
-    (property "Reference" "R2" (at 69.85 40.64 0)
+    (property "Reference" "R46" (at 69.85 40.64 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 69.85 43.18 0)
@@ -2500,9 +2500,6 @@
     (pin "2" (uuid 8449f2ca-a721-400a-aac1-5e32aaaef0fd))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e"
-          (reference "R2") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
           (reference "R46") (unit 1)
         )
@@ -2513,7 +2510,7 @@
   (symbol (lib_id "Device:C") (at 66.04 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2364b92c-70f6-4f5d-98b5-f1bc03d85281)
-    (property "Reference" "C21" (at 66.04 128.27 0)
+    (property "Reference" "C51" (at 66.04 128.27 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "47n" (at 66.04 133.35 0)
@@ -2538,12 +2535,6 @@
     (pin "2" (uuid acf69894-bec2-48e7-bec0-f07a8ef374aa))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
-          (reference "C21") (unit 1)
-        )
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/30180d4c-33b6-4015-8bb1-ca093d0ad03d"
-          (reference "C42") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
           (reference "C51") (unit 1)
         )
@@ -2607,9 +2598,6 @@
     (pin "9" (uuid b9daf3ce-c7a7-4b11-9447-6da7f837fdc7))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/75e5fa41-7632-4cae-90f1-8adc7193968e"
-          (reference "U18") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
           (reference "U18") (unit 1)
         )
@@ -2657,7 +2645,7 @@
   (symbol (lib_id "Device:Q_NMOS_GSD") (at 78.74 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2f05680b-390a-450c-8d66-8b0df6c72c6f)
-    (property "Reference" "Q3" (at 85.09 57.15 0)
+    (property "Reference" "Q10" (at 85.09 57.15 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "NMOS" (at 85.09 54.61 0)
@@ -2692,9 +2680,6 @@
     (pin "3" (uuid 1cfe6645-5e73-434f-ac04-4aa1a825c2e9))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e"
-          (reference "Q3") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
           (reference "Q10") (unit 1)
         )
@@ -2836,9 +2821,6 @@
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
           (reference "R67") (unit 1)
         )
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/30180d4c-33b6-4015-8bb1-ca093d0ad03d"
-          (reference "R55") (unit 1)
-        )
       )
       (project "ELKS"
         (path "/065f5d09-c87d-436f-9299-69f9dd7aa26a/63c424ce-24ae-4950-94fd-89e18fc8d0e9"
@@ -2888,7 +2870,7 @@
   (symbol (lib_id "Device:R") (at 218.44 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 518cb550-7b37-4079-8e2e-8e85ff97bd08)
-    (property "Reference" "R8" (at 215.9 55.88 0)
+    (property "Reference" "R12" (at 215.9 55.88 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "4k7" (at 215.9 58.42 0)
@@ -2910,9 +2892,6 @@
     (pin "2" (uuid 681a4361-0ff3-400c-a899-716d1319e0ce))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/cf5a8cac-e720-4f6c-b6d8-8f40c3604d15"
-          (reference "R8") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
           (reference "R12") (unit 1)
         )
@@ -3010,7 +2989,7 @@
   (symbol (lib_id "Device:R") (at 218.44 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 583eb9b3-2e44-47f0-b36d-7496b6d7b712)
-    (property "Reference" "R8" (at 215.9 86.36 0)
+    (property "Reference" "R38" (at 215.9 86.36 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "4k7" (at 215.9 88.9 0)
@@ -3032,9 +3011,6 @@
     (pin "2" (uuid a246e740-d157-4879-98a8-fefb45268540))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/cf5a8cac-e720-4f6c-b6d8-8f40c3604d15"
-          (reference "R8") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
           (reference "R38") (unit 1)
         )
@@ -3151,7 +3127,7 @@
   (symbol (lib_id "Device:R") (at 142.24 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6d9df4aa-adfb-45d0-8a46-354f3a6e75c6)
-    (property "Reference" "R8" (at 139.7 55.88 0)
+    (property "Reference" "R9" (at 139.7 55.88 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "4k7" (at 139.7 58.42 0)
@@ -3173,9 +3149,6 @@
     (pin "2" (uuid b49d6b62-368f-45f6-b12b-c71f4c7a796b))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/cf5a8cac-e720-4f6c-b6d8-8f40c3604d15"
-          (reference "R8") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
           (reference "R9") (unit 1)
         )
@@ -3297,7 +3270,7 @@
   (symbol (lib_id "Device:R") (at 256.54 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 92a39020-d0bc-4506-8ece-71132f9af09d)
-    (property "Reference" "R8" (at 254 86.36 0)
+    (property "Reference" "R44" (at 254 86.36 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "4k7" (at 254 88.9 0)
@@ -3319,9 +3292,6 @@
     (pin "2" (uuid ee8a3302-39be-49f0-bb19-61bfa9dd2f7a))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/cf5a8cac-e720-4f6c-b6d8-8f40c3604d15"
-          (reference "R8") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
           (reference "R44") (unit 1)
         )
@@ -3332,7 +3302,7 @@
   (symbol (lib_id "Device:R") (at 256.54 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 96697d3c-dea2-4317-bc4d-fc483a9fb1b5)
-    (property "Reference" "R8" (at 254 55.88 0)
+    (property "Reference" "R25" (at 254 55.88 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "4k7" (at 254 58.42 0)
@@ -3354,9 +3324,6 @@
     (pin "2" (uuid 58d86fdb-f2da-4641-9543-b703c509e16c))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/cf5a8cac-e720-4f6c-b6d8-8f40c3604d15"
-          (reference "R8") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
           (reference "R25") (unit 1)
         )
@@ -3405,7 +3372,7 @@
   (symbol (lib_id "Device:C") (at 60.96 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9cc1c72c-a7f2-4b6f-b7d2-4229099449ad)
-    (property "Reference" "C21" (at 60.96 128.27 0)
+    (property "Reference" "C49" (at 60.96 128.27 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "47n" (at 60.96 133.35 0)
@@ -3430,12 +3397,6 @@
     (pin "2" (uuid 4731a2db-2f6a-4f8e-bf21-a999bccb3f03))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
-          (reference "C21") (unit 1)
-        )
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/30180d4c-33b6-4015-8bb1-ca093d0ad03d"
-          (reference "C42") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
           (reference "C49") (unit 1)
         )
@@ -3571,7 +3532,7 @@
   (symbol (lib_id "Device:C") (at 55.88 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b9a4bfde-2850-48dd-88f9-198c2f9e7549)
-    (property "Reference" "C21" (at 55.88 128.27 0)
+    (property "Reference" "C48" (at 55.88 128.27 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "47n" (at 55.88 133.35 0)
@@ -3596,12 +3557,6 @@
     (pin "2" (uuid 32fbcd7e-d450-4181-87ac-cc62501be721))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
-          (reference "C21") (unit 1)
-        )
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/30180d4c-33b6-4015-8bb1-ca093d0ad03d"
-          (reference "C42") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
           (reference "C48") (unit 1)
         )
@@ -3768,7 +3723,7 @@
   (symbol (lib_id "Device:C") (at 38.1 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d2316e37-a49b-4873-97eb-813af0b8a07f)
-    (property "Reference" "C17" (at 33.02 91.44 0)
+    (property "Reference" "C30" (at 33.02 91.44 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 33.02 93.98 0)
@@ -3796,12 +3751,6 @@
     (pin "2" (uuid 1c09f6e2-be21-4d10-a1de-b9f5dc1ddec5))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/75e5fa41-7632-4cae-90f1-8adc7193968e"
-          (reference "C17") (unit 1)
-        )
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42"
-          (reference "C40") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
           (reference "C30") (unit 1)
         )
@@ -3827,7 +3776,7 @@
   (symbol (lib_id "Device:R") (at 180.34 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d8b78584-359b-4e34-8669-bf95d8ffa2f6)
-    (property "Reference" "R8" (at 177.8 86.36 0)
+    (property "Reference" "R36" (at 177.8 86.36 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "4k7" (at 177.8 88.9 0)
@@ -3849,9 +3798,6 @@
     (pin "2" (uuid 9d7d40af-2a67-4134-b843-afa1c5f499a8))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/cf5a8cac-e720-4f6c-b6d8-8f40c3604d15"
-          (reference "R8") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
           (reference "R36") (unit 1)
         )
@@ -3862,7 +3808,7 @@
   (symbol (lib_id "Device:R") (at 180.34 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e22a4382-0c34-4524-8e01-a5e00e165560)
-    (property "Reference" "R8" (at 177.8 55.88 0)
+    (property "Reference" "R10" (at 177.8 55.88 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "4k7" (at 177.8 58.42 0)
@@ -3884,9 +3830,6 @@
     (pin "2" (uuid 34f7c3d1-1b26-4fe6-a97b-4c820d51627c))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/cf5a8cac-e720-4f6c-b6d8-8f40c3604d15"
-          (reference "R8") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
           (reference "R10") (unit 1)
         )
@@ -3921,9 +3864,6 @@
       (project "Zelvicka"
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
           (reference "R66") (unit 1)
-        )
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/30180d4c-33b6-4015-8bb1-ca093d0ad03d"
-          (reference "R55") (unit 1)
         )
       )
       (project "ELKS"
@@ -3962,9 +3902,6 @@
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
           (reference "R68") (unit 1)
         )
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/30180d4c-33b6-4015-8bb1-ca093d0ad03d"
-          (reference "R55") (unit 1)
-        )
       )
       (project "ELKS"
         (path "/065f5d09-c87d-436f-9299-69f9dd7aa26a/63c424ce-24ae-4950-94fd-89e18fc8d0e9"
@@ -3977,7 +3914,7 @@
   (symbol (lib_id "Device:R") (at 71.12 62.23 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid eb654a23-375a-4fb9-83f7-032ba3980e61)
-    (property "Reference" "R3" (at 73.66 60.96 0)
+    (property "Reference" "R53" (at 73.66 60.96 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 73.66 63.5 0)
@@ -3999,9 +3936,6 @@
     (pin "2" (uuid dba5ff4c-2c9f-4bb0-ac19-d74c3da5c1fe))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e"
-          (reference "R3") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
           (reference "R53") (unit 1)
         )
@@ -4012,7 +3946,7 @@
   (symbol (lib_id "Device:C") (at 71.12 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ef3b6f09-8740-43c7-bc08-095f8b26a202)
-    (property "Reference" "C21" (at 71.12 128.27 0)
+    (property "Reference" "C50" (at 71.12 128.27 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "47n" (at 71.12 133.35 0)
@@ -4037,12 +3971,6 @@
     (pin "2" (uuid ed3526b6-2f1f-4f3d-b86b-94507b9511d7))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
-          (reference "C21") (unit 1)
-        )
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/30180d4c-33b6-4015-8bb1-ca093d0ad03d"
-          (reference "C42") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
           (reference "C50") (unit 1)
         )
@@ -4120,9 +4048,6 @@
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
           (reference "R65") (unit 1)
         )
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/30180d4c-33b6-4015-8bb1-ca093d0ad03d"
-          (reference "R55") (unit 1)
-        )
       )
       (project "ELKS"
         (path "/065f5d09-c87d-436f-9299-69f9dd7aa26a/63c424ce-24ae-4950-94fd-89e18fc8d0e9"
@@ -4135,7 +4060,7 @@
   (symbol (lib_id "Device:R") (at 142.24 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f82dc526-9cd3-419a-b317-4ea96343d2fb)
-    (property "Reference" "R8" (at 139.7 86.36 0)
+    (property "Reference" "R34" (at 139.7 86.36 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "4k7" (at 139.7 88.9 0)
@@ -4157,9 +4082,6 @@
     (pin "2" (uuid 499100cf-75bb-4211-842f-f3350817b963))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/cf5a8cac-e720-4f6c-b6d8-8f40c3604d15"
-          (reference "R8") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
           (reference "R34") (unit 1)
         )

@@ -921,7 +921,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 182.88 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 116b24ef-d6e2-4e13-b48f-6d73b4437801)
-    (property "Reference" "#FLG01" (at 182.88 59.055 0)
+    (property "Reference" "#FLG06" (at 182.88 59.055 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 182.88 56.5658 0)
@@ -936,9 +936,6 @@
     (pin "1" (uuid d01e619a-92b8-4a9a-9484-76a3fa089afe))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/cf5a8cac-e720-4f6c-b6d8-8f40c3604d15"
-          (reference "#FLG01") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/e22ea24c-0368-422d-a8f9-a65d7c1f87fe"
           (reference "#FLG06") (unit 1)
         )
@@ -954,7 +951,7 @@
   (symbol (lib_id "Device:Q_NMOS_GSD") (at 116.84 111.76 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 19db0276-fdfc-4b59-8db3-3b38c9d9b214)
-    (property "Reference" "Q4" (at 114.3 109.22 90)
+    (property "Reference" "Q9" (at 114.3 109.22 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "NMOS" (at 113.03 111.76 90)
@@ -989,9 +986,6 @@
     (pin "3" (uuid fc908448-350c-4a72-8e8a-06e74b2dfc62))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e"
-          (reference "Q4") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/e22ea24c-0368-422d-a8f9-a65d7c1f87fe"
           (reference "Q9") (unit 1)
         )
@@ -1238,7 +1232,7 @@
   (symbol (lib_id "Device:R") (at 218.44 92.71 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9ab52625-94ba-4156-8c48-2f0173c39a96)
-    (property "Reference" "R2" (at 222.25 91.44 0)
+    (property "Reference" "R42" (at 222.25 91.44 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 222.25 93.98 0)
@@ -1260,12 +1254,6 @@
     (pin "2" (uuid a9b1c603-fdfe-4c07-a818-c7cdd8a38c3d))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e"
-          (reference "R2") (unit 1)
-        )
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
-          (reference "R46") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/e22ea24c-0368-422d-a8f9-a65d7c1f87fe"
           (reference "R42") (unit 1)
         )

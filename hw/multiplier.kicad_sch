@@ -1024,7 +1024,7 @@
   (symbol (lib_id "RKL-LDO:NCP708") (at 124.46 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 24adb79d-638f-4a2d-bd75-d822a9a52cf7)
-    (property "Reference" "U11" (at 124.46 34.29 0)
+    (property "Reference" "U2" (at 124.46 34.29 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "NCP708" (at 124.46 36.83 0)
@@ -1053,9 +1053,6 @@
     (pin "7" (uuid edf4849c-66eb-4bdc-85f2-a2bfa85cb112))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/cf5a8cac-e720-4f6c-b6d8-8f40c3604d15/5f9eb313-4daf-4894-964c-3ee2f806bea1"
-          (reference "U11") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
           (reference "U2") (unit 1)
         )
@@ -1108,7 +1105,7 @@
   (symbol (lib_id "Device:LED") (at 165.1 46.99 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 382af0fa-5d8f-44e8-ac63-1dedd1759dd0)
-    (property "Reference" "D7" (at 162.56 46.99 0)
+    (property "Reference" "D4" (at 162.56 46.99 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "LED" (at 160.02 46.99 0)
@@ -1130,12 +1127,6 @@
     (pin "2" (uuid 5b3a677b-5aac-4417-aa89-afde4b4c2264))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/e22ea24c-0368-422d-a8f9-a65d7c1f87fe"
-          (reference "D7") (unit 1)
-        )
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e"
-          (reference "D4") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
           (reference "D4") (unit 1)
         )
@@ -1990,7 +1981,7 @@
   (symbol (lib_id "Device:R") (at 165.1 54.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dc95dd97-0942-4618-9553-44f6c67d39c4)
-    (property "Reference" "R56" (at 162.56 54.61 90)
+    (property "Reference" "R40" (at 162.56 54.61 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 160.02 54.61 90)
@@ -2012,12 +2003,6 @@
     (pin "2" (uuid b2e63022-bcf7-483a-983d-df14e06e7e9b))
     (instances
       (project "Zelvicka"
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/e22ea24c-0368-422d-a8f9-a65d7c1f87fe"
-          (reference "R56") (unit 1)
-        )
-        (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e"
-          (reference "R40") (unit 1)
-        )
         (path "/04d53a73-373f-40ca-9ff1-406e2f105d42/b25751f2-11c3-433a-b099-5c0b39b7078e/d79845a6-d2a4-49ac-97d6-5f5626f716cd"
           (reference "R40") (unit 1)
         )
