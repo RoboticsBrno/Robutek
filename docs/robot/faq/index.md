@@ -1,9 +1,9 @@
 # Často kladené dotazy
 
-## Do kterého micro USB mám připojit kabel?
-- Používej konektor označený `USB` (ten druhý vám nemusí fungovat).
-- ??? "Proč ten druhý nefunguje?"
-	Konektor s označením `UART` je připojený skrze převodník. Musel by být nainstalovaný na počítači ovladač, aby tento port fungoval.
+## Do kterého USB mám připojit kabel?
+- Používej konektor `USB-C`, pokud ti nejde nahrát kód tak přes `micro-USB`.
+- ??? "Proč ten první nefunguje?"
+	`USB-C` je softwarové `USB` na ESP32 a pokud si nahraješ kód, který rozbije ESP tak nebude fungovat.<br>Naopak `micro-USB` je připojené přes převodník takže to se používá v případě nefunkčnosti `USB-C` (potenciální chyby: chyba při nahrávání, nekonečná smyčka v kódu, atd.).
 
 ## Jak komunikovat se zařízením?
 - V levém spodním rohu vyberte COM port (`Select COM Port`).
@@ -18,5 +18,3 @@
 - Pomocí ++ctrl+shift+p++ se vám otevře okno pro zadávání příkazů.
 - Zadejte `Jaculus: Get firmware version`.
 - Výsledek by se měl objevit v terminálu.
-
-##

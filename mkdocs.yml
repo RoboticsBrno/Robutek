@@ -52,6 +52,8 @@ markdown_extensions:
   - attr_list
   - pymdownx.tabbed
   - meta
+  - md_in_html
+  - footnotes
   - pymdownx.snippets:
       url_download: True
   - pymdownx.tasklist:
@@ -61,6 +63,8 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true
 
 plugins:
   - search
@@ -83,10 +87,13 @@ plugins:
   - zip_folders:
       folders:
         - robot/lekce1/example1
+        - robot/lekce1/example-gridui
+        - robot/lekce2/blank_project
         - robot/lekce3/project3
         - robot/lekce4/project4
         - robot/lekce6/project6
         - robot/lekce8/project8
+        - robutekLibrary/Robutek-library
       debug: true
 
   - auto-refresh-build-pages:
@@ -113,21 +120,43 @@ extra:
 extra_css:
   - assets/style.css
 
+extra_javascript:
+   - js/mathjax.js
+   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
 nav:
   - Domů:
       - index.md
+  - Složení robota:
+      - robotAssembly/index.md
+      - robotAssembly/stage1.md
+      - robotAssembly/stage2.md
   - Programování robota:
       - robot/index.md
       - robot/faq/index.md
       - robot/lekce1/index.md
+      - robot/lekce1/gridui.md
       - robot/lekce2/index.md
       - robot/lekce3/index.md
-      - robot/lekce4/index.md
-      - robot/lekce5/index.md
-      - robot/lekce6/index.md
-      - robot/lekce7/index.md
+      - robot/lekce4/motors.md
+      - robot/lekce5/pen.md
+      - robot/lekce6/for.md
+      - robot/lekce6/turtle.md
+      - robot/lekce7/turtle.md
+      - robot/lekceCara/index.md
       - robot/lekce8/index.md
       - robot/lekce9/index.md
-      - robot/lekce10/index.md
-  - Složení robota:
-      - robotAssembly/index.md
+      - robot/project_sumo/index.md
+      - robot/project_maze/index.md
+  - Příslušenství robota:
+      - robotAccessories/ledStrip.md
+      - robotAccessories/button.md
+      - robotAccessories/tof.md
+  - Dokumentace:
+      - robot/docs/index.md
+      - robot/docs/wifi.md
+      - robot/docs/socket.md
+      - robot/docs/motors.md
+      - robot/docs/sens.md
+      - robot/docs/sim.md
+      - robot/docs/vl53.md

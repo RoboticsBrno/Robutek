@@ -1,107 +1,60 @@
 # Programování robota
 
-<!-- ELKS neboli **ESP Learning Kit Starter** je vývojová deska pro mikrokontrolér ESP32-S3.
-Jedná se o vzdělávací nástroj pro výuku elektroniky a základů programování.
-Kity používáme v kroužcích pro začátečníky i pokročilé.
-
-Desku lze napájet pomocí USB kabelu nebo power banky připojené přímo k desce.
-
-![ELKS Demo](./assets/elks-promo0.png)
-
-## Funkce:
-- LED
-- Tlačítka
-- Potenciometry
-- Piezo
-- Servo výstupy
-- Digilent PMOD konektory
-- Konektor μŠup -->
 
 ## Programování:
-Letos budeme vývojové desky programovat na platformě ESP32-S3. Pro programování budeme používat jazyk TypeScript, v kombinaci s knihovnou [Jaculus](https://jaculus.org/).
+Robůtek je řízený mikrokontrolérem ESP32-S3. K programování budeme používat jazyk TypeScript, který budeme spouštět pomocí programu [Jaculus](https://jaculus.org/).
 
-<!-- <div align="center">
-    <img src="./assets/elks-promo1.png" width="49%">
-    <img src="./assets/elks-promo2.png" width="49%">
-</div>
-
-<div align="center">
-    <img src="./assets/elks-model.png">
-</div> -->
+[Lekce 1](lekce1/){ .md-button .md-button--primary }
 
 ## Přehled pinů
+Čísla pinů nemusíte přepisovat ručně, lze použít definici z knihovny:
 
-<!-- ### Tlačítka
+```typescript
+import * as gpio from "gpio";
 
-- `SW0` - 18
-- `SW1` - 16
-- `SW2` - 42
+import { Pins } from "./libs/robutek.js"; // <- definice pinů
 
-### LED
 
-- `LED-G` - 17
-- `LED-Y` - 15
-- `LED-R` - 45
-- `LED-B` - 46
+gpio.pinMode(Pins.StatusLED, gpio.PinMode.OUTPUT);
+gpio.write(Pins.StatusLED, 1)
+```
 
-### Potenciometry
+Pro kompletnost je pinout k nahlédnutí zde:
 
-- `POT0` - 2
-- `POT1` - 1
+```typescript
+export enum Pins {
+    StatusLED = 46,
 
-### Bzučák
+    // Jedna na desce a zároveň vývod pro pásek,
+    // po připojení externího pásku se tedy jedná
+    // o 8 + 1 = 9 diod celkem
+    SmartLeds = 48,
 
-- `BUZZER-PIN-A` - 0
-- `BUZZER-PIN-B` - 3
+    ButtonLeft =  2,
+    ButtonRight = 0,
 
-### Servo
+    Servo1 = 21,
+    Servo2 = 38,
 
-- `SER0` - 35
-- `SER1` - 40
+    Sens1 = 4,
+    Sens2 = 5,
+    Sens3 = 6,
+    Sens4 = 7,
 
-### I-LED-ESP32
+    SensSW = 8,
+    SensEN = 47,
 
-- `I-LED-ESP` - 48
+    Motor1A = 11,
+    Motor1B = 12,
+    Motor2A = 45,
+    Motor2B = 13,
+    Enc1A = 39,
+    Enc1B = 40,
+    Enc2A = 42,
+    Enc2B = 41,
+}
+```
 
-### I-LED-EXTERNAL
-
-- `I-LED-EXT` - 21
-
-### μŠup
-
-- `SCL` - 47
-- `SDA` - 48
-
-### PMOD_0
-
-  - #### 1
-
-    - `41`
-    - `37`
-    - `39`
-    - `5`
-
-  - #### 2
-
-    - `36`
-    - `38`
-    - `4`
-    - `6`
-
-### PMOD_1
-
-  - #### 1
-
-    - `7`
-    - `12`
-    - `13`
-    - `14`
-
-  - ### 2
-
-    - `10`
-    - `9`
-    - `8`
-    - `11`
-
- -->
+![Predni strana robota](assets/front.png)
+![Zadni strana robota](assets/back.png)
+!!! danger "Pin pro přepínání vnitřních a venkovních čárových senzorů je <b>IO8.</b>"

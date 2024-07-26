@@ -32,15 +32,15 @@ let d : number = b - a;
 Abychom na základě hodnot proměnných mohli měnit chování programu, potřebujeme **podmínky**.
 
 Podmínka `if` na základě pravdivostní hodnoty rozhodne, zda se vykoná daný kus kódu. Pokud proměnná
-`condition` je typu bool, potom po vykonání následujícího kódu:
+`podmínka` je typu bool, potom po vykonání následujícího kódu:
 ```ts
 let result : number = 10;
-if (condition) {
+if (podmínka) {
   result = 20;
 }
 ```
 
-Pokud `condition` má hodnotu `true`, bude v `result` 20, pokud má `condition` hodnotu `false`, bude v `result` 10.
+Pokud `podmínka` má hodnotu `true`, bude v `result` 20, pokud má `podmínka` hodnotu `false`, bude v `result` 10.
 
 Rovněž se můžeme v podmínce rozhodovat na základě porovnávání číselných hodnot.
 
@@ -53,7 +53,7 @@ if (first == second) {
 }
 ```
 
-To, zda jsou dvě čísla stejná, zjistíme pomocí `==`, zda je jedno větší než druhé zjišťujeme pomocí `<` a `>`, případně `<=` a `>=`.
+To, zda jsou dvě čísla stejná, zjistíme pomocí `==`, zda je jedno větší než druhé zjišťujeme pomocí `<` a `>`, případně `<=` a `>=` pokud chceme připustit rovnost.
 
 Pokud se chceme zachovat dvěma různými způsoby, použijeme konstrukci
 
@@ -97,13 +97,11 @@ Pomocí jedné proměnné se stavem a podmínky každou sekundu buď rozsvítím
 
 ??? note "Řešení"
     ```ts
-    import { SmartLed, LED_WS2812 } from "smartled";
-    import * as colors from "./libs/colors.js"
+    import { Pins } from "./libs/robutek.js"
+    import { LED_WS2812, SmartLed } from "smartled"
+    import * as colors from "./libs/colors.js";
 
-    const LED_PIN = 48;
-    const LED_COUNT = 1;
-
-    const ledStrip = new SmartLed(LED_PIN, LED_COUNT, LED_WS2812);  // připojí pásek na pin 48, s 1 ledkou a typem WS2812
+    const ledStrip = new SmartLed(Pins.ILED, 1, LED_WS2812);
 
     let on: boolean = false; // LED je vypnutá
 
@@ -128,13 +126,11 @@ opět nastavit na `0`.
 
 ??? note "Řešení"
     ```ts
-    import { SmartLed, LED_WS2812 } from "smartled";
-    import * as colors from "./libs/colors.js"
+    import { Pins } from "./libs/robutek.js"
+    import * as colors from "./libs/colors.js";
+    import { LED_WS2812, SmartLed } from "smartled";
 
-    const LED_PIN = 48;
-    const LED_COUNT = 1;
-
-    const ledStrip = new SmartLed(LED_PIN, LED_COUNT, LED_WS2812);  // připojí pásek na pin 48, s 1 ledkou a typem WS2812
+    const ledStrip = new SmartLed(Pins.ILED, 1, LED_WS2812);
 
     let shade = 0; // Držíme si stav s aktuálním odstínem
 
@@ -151,34 +147,35 @@ opět nastavit na `0`.
 ## Zadání C
 
 Tentokrát budeme reagovat na stisk tlačítka.
-Do desky si zapojíme pásku 8 inteligentních ledek, a vybranou barvou je budeme rozsvěcet.
+Do desky si zapojíme pásek 8 inteligentních ledek, a vybranou barvou je budeme rozsvěcet.
+
 Po stisku tlačítka zhasneme aktuální LEDku, a rozsvítíme tu další.
 Pokud při stisku tlačítka svítí poslední LED, zhasneme ji, a rozsvítíme opět první LED.
 
+!!! note "Led pásek je připojený za inteligentní ledku na desce, takže index pásku začíná na 1."
+
 ??? note "Řešení"
     ```ts
-    import { SmartLed, Rgb, LED_WS2812 } from "smartled";
-    import * as colors from "./libs/colors.js"
+    import { Pins } from "./libs/robutek.js"
+    import * as colors from "./libs/colors.js";
+    import { LED_WS2812, SmartLed } from "smartled";
+
     import * as gpio from "gpio";
 
-    const LED_PIN = 21;
-    const LED_COUNT = 8;
+    const ledStrip = new SmartLed(Pins.ILED, 9, LED_WS2812);
 
-    const BTN_PIN = 18;
+    gpio.pinMode(Pins.ButtonRight, gpio.PinMode.INPUT_PULLUP); // Nastavíme tlačítko
 
-    gpio.pinMode(BTN_PIN, gpio.PinMode.INPUT_PULLUP); // Nastavíme tlačítko
-    const ledStrip = new SmartLed(LED_PIN, LED_COUNT, LED_WS2812);  // připojí pásek na pin 21, s 8 ledkami a typem WS2812
-
-    let index : number = 0;
+    let index : number = 1;
     let color : Rgb = colors.light_blue; // Vybereme si barvu
     ledStrip.set(0, color); // Nastavíme LED na aktuální odstín
     ledStrip.show(); // Zobrazíme změny
 
-    gpio.on("falling", BTN_PIN, () => {
+    gpio.on("falling", Pins.ButtonRight, () => {
         ledStrip.set(index, colors.off); // Vypneme předchozí LED
         index = index + 1; // Zvedneme index (lze i index += 1)
-        if(index > 7){ // Pokud jsme mimo rozsah pásku, vrátíme se na začátek
-            index = 0;
+        if(index > 8){ // Pokud jsme mimo rozsah pásku, vrátíme se na začátek
+            index = 1;
         }
         ledStrip.set(index, color); // Nastavíme aktuální LED
         ledStrip.show();  // Zobrazíme změny

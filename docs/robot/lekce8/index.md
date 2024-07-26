@@ -1,4 +1,4 @@
-# Lekce 8 - Řetězce
+# Bonus - Řetězce
 
 Zatím jsme se zařízením po nahrání programu komunikovali jednostranně: pomocí `#!ts console.log()` jsme vypisovali různé věci na výstup, a ten jsme sledovali pomocí příkazu `Monitor`.
 
@@ -39,7 +39,7 @@ Datový typ, který drží řetězec, se jmenuje `#!ts string`.
     let result : string = "5 + 1 je: " + 5 + 1;
     ```
     V `result` bude `"5 + 1 je: 51"`!
-    
+
     5 se přidá do řetězce, a poté se tam přidá 1, nesečtou se předem.
 
 
@@ -50,7 +50,7 @@ function greetName(name: string) : void {
 }
 ```
 
-Na dnešní cvičení si opět můžeme stáhnout [zip](./project8.zip). 
+Na dnešní cvičení si opět můžeme stáhnout [zip](./project8.zip).
 
 ## Zadání A
 
@@ -59,24 +59,27 @@ Tato funkce bere jako argument řetězec; pokud argument není řetězec, přede
 
 Jako první úkol si vyzkoušíme spojit řetězec a číslo s tím, co už známe:
 
-Napíšeme program, který při stisku tlačítka vypíše na výstup `"Potenciometr naměřil X."`, kde X je aktuální hodnota naměřená z `POT0`.
+Napíšeme program, který při stisku tlačítka vypíše na výstup `"Senzor naměřil X."`, kde X je aktuální hodnota naměřená z ADC převodníku.
 
 ??? note "Řešení"
     ```ts
     import * as gpio from "gpio";
     import * as adc from "adc";
 
+    const BTN_LEFT = 2;
 
-    const BTN_LEFT = 18;
-
-    const POT0_PIN = 2;
+    const SENSOR_PIN: number  = 4;
+    const LIGHTN_PIN: number  = 47;
 
     gpio.pinMode(BTN_LEFT, gpio.PinMode.INPUT);
 
-    adc.configure(POT0_PIN);
+    adc.configure(SENSOR_PIN);
+
+    gpio.pinMode(LIGHTN_PIN, gpio.PinMode.OUTPUT);
+    gpio.write(LIGHTN_PIN, 1);
 
     gpio.on("falling", BTN_LEFT, () => {
-        console.log("Potenciometr naměřil " + adc.read(POT0_PIN) + ".");
+        console.log("Senzor naměřil " + adc.read(SENSOR_PIN) + ".");
     });
     ```
 

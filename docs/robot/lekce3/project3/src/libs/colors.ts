@@ -4,7 +4,7 @@
  * - G: zelená (rozsah 0-255)
  * - B: modrá (rozsah 0-255)
  */
-interface Rgb {
+export interface Rgb {
     r: number;
     g: number;
     b: number;
@@ -17,7 +17,7 @@ interface Rgb {
  * - Saturation: sytost barev (rozsah 0-1)
  * - Lightness: světlost (rozsah 0-1)
  */
-interface Hsl {
+export interface Hsl {
     h: number;
     s: number;
     l: number;
@@ -61,7 +61,7 @@ export function hsl_to_rbg( hsl: Hsl ) : Rgb {
  * @param brightness (0-100) - 50 je defaultní hodnota
  * @returns {Rgb}
  */
-export function rainbow( hue: number, brightness: number = 20) : Rgb {
+export function rainbow( hue: number, brightness: number = 50) : Rgb {
     hue = Math.min( hue, 360 ); // Zajistíme, že zadaná hodnota není mimo rozsah
     // fix range to 0-100
     let brightness_mapped = Math.min(Math.max(brightness, 0), 100);

@@ -1,11 +1,12 @@
-import { SmartLed, LED_WS2812 } from "smartled";
-import * as colors from "./libs/colors.js"
+import { LED_WS2812, SmartLed } from "smartled"
+import { Pins } from "./libs/robutek.js"
 
-const ledStrip = new SmartLed(48, 1, LED_WS2812);  // připojí pásek na pin 48, s 1 ledkou a typem WS2812
+const ledStrip = new SmartLed(Pins.ILED, 1, LED_WS2812);
 
-ledStrip.set(0, colors.green); // nastaví barvu LED na ESP32 na zelenou
-ledStrip.show(); // zobrazí nastavení na LED
+ledStrip.clear(); // Zhasne LEDku na Robůtkovi, jenom pro jistotu, kdyby už předtím svítila
+ledStrip.set(0, { r: 255, g: 0, b: 0 }); // Nastaví první LEDku na červenou barvu, LEDky začínají na indexu 0
+ledStrip.show(); // Rozsvítí LEDku s červenou, kterou jsme si nastavili
 
 setInterval(() => { // pravidelně vyvolává událost
-    console.log("Robotický tábor 2024, zdraví Jirka Vácha!"); // vypíše text: Robotický tábor 2024, zdraví Jirka Vácha!
+  console.log("Robotický tábor 2024, zdraví Jirka Vácha!"); // vypíše text: Robotický tábor 2024, zdraví Jirka Vácha!
 }, 1000); // čas opakování se udává v milisekundách (1000 ms je 1 sekunda)

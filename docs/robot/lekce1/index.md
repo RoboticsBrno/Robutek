@@ -4,30 +4,75 @@ V této lekci si představíme Jaculus, nainstalujeme si programovací prostřed
 
 ## Instalace
 
-Na našich robotech běží program, který se jmenuje Jaculus.
+Na našich robotech poběží program, který se jmenuje Jaculus.
 Tento program nám umožní jednoduše psát instrukce (programy), které nahrajeme do robota.
 Tyto programy budou specifikovat, jak se robot má chovat, a umožní nám s ním komunikovat.
-Aby nám všechno správně fungovalo, musíme nejprve nainstalovat několik programů.
+Aby nám všechno správně fungovalo, musíme ho nejprve nainstalovat a k němu i několik dalších programů.
+
+### Jaculus
+
+#### Linux
+
+Na linuxu je třeba přidat oprávnění udev, [více zde](https://docs.espressif.com/projects/esp-idf/en/v5.2.2/esp32s2/api-guides/dfu.html#udev-rule-linux-only).
+
+#### Instalace Jacula
+
+1. Otevřeme si [Jaculus web installer](https://installer.jaculus.org/) v Chrome nebo Edge.
+
+	!!! warning "Tento postup nefunguje ve Firefoxu a jinych prohlížečích, které nepodporují rozhraní WebSerial."
+
+2. Zvolíme desku `ESP32 S3 DevKitC`
+
+	![](assets/JacWebInstall1.png)
+
+
+3. V přepínači `Select board version` vybereme nejnovější dostupnou verzi (tzn. tu s nejvyšším číslem).
+
+4. Přepínač `Erase Flash` slouží k vymazání programů co už jsou nahrané na ESP. Ve výchozím stavu `No` nevymaže programy v ESP.
+
+	![](assets/JacWebInstall5.png)
+
+5. Zapneme Robůtka a podržíme tlačítko `IO0`. Současně s ním zmáčkneme tlačítko s popiskem `EN`, které se nachází nalevo od něj. Tímto přepneme robůtka do nahrávacího režimu.
+
+6. Po připojení Robůtka k počítači stiskneme na webové stránce tlačítko `Connect`.
+
+	![](assets/JacWebInstall2.png)
+
+
+7. Ve vyskakovacím okénku zvolíme port `COM` na Windows nebo `ttyACM` na unixových systémech a stiskneme `Connect`.
+
+	![](assets/JacWebInstall3.png)
+
+
+8. Po chvilce se nám zobrazí tlačítko `Flash`, které zmáčkneme.
+
+	![](assets/JacWebInstall4.png)
+
+	!!! tip "když nahrávání přes USB-C nefunguje zkuste Micro-USB"
+
+
+9. Chvíli počkáme a jakmile přestanou v konzoli přibývat nové řádky, máme nainstalovaného Jacula v mikrokontroléru!
+
 
 ### Node.js
 
-`node.js` je knihovna, která nám umožní stáhnout nástroje na používání Jacula.
+Node.js je program, který nám umožní nahrávat kód do Jacula a komunikovat s ním.
 
-1. Stáhneme si [Node.js](https://nodejs.org/en/download) (nejnovější stabilní verzi - LTS)
+1. Stáhneme si [Node.js](https://nodejs.org/en/download) (nejnovější stabilní verzi - LTS) - [Stahuj ZDE pro Windows](http://files.lan/)
 2. Nainstalujeme jej dle výchozího nastavení (není potřeba nic měnit).
 
 ### Visual Studio Code
 
 Visual Studio Code je programovací prostředí, které nám umožní psát kód a s rozšířením nám dovolí nahrávat kód do zařízení.
 
-1. Stáhneme si [Visual Studio Code](https://code.visualstudio.com/download) (nejnovější stabilní verzi)
+1. Stáhneme si [Visual Studio Code](https://code.visualstudio.com/download) (nejnovější stabilní verzi)  - [Stahuj ZDE pro Windows](http://files.lan/)
 2. Nainstalujeme jej dle výchozího nastavení (není potřeba nic měnit).
 
 ### Jaculus
 
 Nyní už se můžeme vrhnout na samotnou instalaci [`Jacula`](https://jaculus.org/getting-started/).
 
-1. Po instalaci `node` **restartujeme** aplikaci Visual Studio Code.
+1. Po instalaci `node.js` **restartujeme** aplikaci Visual Studio Code.
 2. V horním menu VSCode vybereme záložku `Terminal` a zvolíme `New Terminal`.
 3. Do terminálu zadáme příkaz vypsaný níže. Na `Linuxu` bude nejspíše potřeba `sudo` práva.
 
@@ -35,7 +80,7 @@ Nyní už se můžeme vrhnout na samotnou instalaci [`Jacula`](https://jaculus.o
 	npm install -g jaculus-tools
 	```
 
-	??? tip "Háže mi to chybu"
+	??? tip "Dostávám chybu"
 		Pro aplikování všech změn je nutný restart VSCode. Pokud se vám nedaří nainstalovat Jaculus, zkuste nejdříve restartovat VSCode.
 
 4. Pro otestování instalace zadáme do terminálu příkaz:
@@ -47,31 +92,41 @@ Nyní už se můžeme vrhnout na samotnou instalaci [`Jacula`](https://jaculus.o
 	Program by měl vypsat nápovědu.
 
 	??? info "Ukázka nápovědy"
-		```bash
+		```
 		Usage: jac <command>
 
 		Tools for controlling devices running Jaculus
 
 		Commands:
-		help           Print help for given command
-		list-ports     List available serial ports
-		serial-socket  Tunnel a serial port over a TCP socket
-		install        Install Jaculus to device
-		build          Compile target file
-		flash          Flash code to device (replace contents of ./code)
-		pull           Download a file/directory from device
-		ls             List files in a directory
-		read           Read a file from device
-		write          Write a file to device
-		rm             Delete a file on device
-		mkdir          Create a directory on device
-		rmdir          Delete a directory on device
-		upload         Upload a file/directory to device
-		start          Start a program
-		stop           Stop a program
-		status         Get status of device
-		version        Get version of device firmware
-		monitor        Monitor program output
+		help            Print help for given command
+		list-ports      List available serial ports
+		serial-socket   Tunnel a serial port over a TCP socket
+		install         Install Jaculus to device
+		build           Build TypeScript project
+		flash           Flash code to device (replace contents of ./code)
+		pull            Download a file/directory from device
+		ls              List files in a directory
+		read            Read a file from device
+		write           Write a file to device
+		rm              Delete a file on device
+		mkdir           Create a directory on device
+		rmdir           Delete a directory on device
+		upload          Upload a file/directory to device
+		format          Format device storage
+		resources-ls    List available resources
+		resources-read  Read a resource from device
+		get-examples    Get example project from device
+		start           Start a program
+		stop            Stop a program
+		status          Get status of device
+		version         Get version of device firmware
+		monitor         Monitor program output
+		wifi-get        Display current WiFi config
+		wifi-ap         Set WiFi to AP mode (create a hotspot)
+		wifi-add        Add a WiFi network
+		wifi-rm         Remove a WiFi network
+		wifi-sta        Set WiFi to Station mode (connect to a wifi)
+		wifi-disable    Disable WiFi
 
 		Global options:
 		--log-level   Set log level (default: info)
@@ -103,7 +158,7 @@ Rozšíření pro VSCode nám umožní jednoduše nahrávat kód do Jacula pomoc
 
 ## První projekt
 
-Zde si vyzkoušíme vytvořit první projekt a nahrát jej do ELKS.
+Zde si vyzkoušíme vytvořit první projekt a nahrát jej do Robůtka.
 
 [Stáhnout ZIP s prvním projektem](./example1.zip){ .md-button .md-button--primary }
 
@@ -112,17 +167,18 @@ Zde si vyzkoušíme vytvořit první projekt a nahrát jej do ELKS.
 2. Dále si [stáhneme zip](./example1.zip) soubor s prvním projektem.
 3. Poté si jej **rozbalíme** do vytvořené složky k táboru.
 4. Spustíme VSCode a pomocí záložky `File` -> `Open Folder` vybereme složku s projektem.
-5. V levém spodním rohu vybereme :material-power-plug:`Select COM port` pro výběr portu, na kterém je ELKS připojený. Poté se nápis změní na vybraný port.
+5. Připojíme Robůtka přes `USB-C`. `micro-USB` požívejte primárně pokud nefunguje nahrávání přes `USB-C`.
+6. V levém spodním rohu vybereme :material-power-plug:`Select COM port` pro výběr portu, na kterém je Robůtek připojený. Poté se nápis změní na vybraný port.
 
-	??? tip "Mám více portů"
-		Pokud se vám v nabídce zobrazí více portů, odpojte ELKS a zjisťe, který port zmizel. Po připojení ELKS tento port vyberte.
-6. Dále zvolíme :material-eye:`Monitor`, ten slouží pro komunikaci se zařízením.
+	??? tip "Vidím více portů"
+		Pokud se vám v nabídce zobrazí více portů, odpojte Robůtka a zjisťete, který port zmizel. Po připojení Robůtka tento port vyberte.
+7. Dále zvolíme :material-eye:`Monitor`, ten slouží pro komunikaci se zařízením.
 
 ## Nahrání programu
 
-Pokud nám všem funguje připojení na :material-eye:`Monitor` a běží nám komunikace se zařízením, můžeme si tam zkusit nahrát náš první kód.
+Pokud nám funguje připojení na :material-eye:`Monitor` a běží nám komunikace se zařízením, můžeme do zařízení zkusit nahrát náš první program.
 
-1. Ve VSCodu máme otevřený první projekt. V levém `Exploreru` (`Průzkumníku`) vybereme soubor ze  `src` -> `index.ts`. V něm vidíme náš první program.
+1. Ve VSCode máme otevřený první projekt. V levém `Exploreru` (`Průzkumníku`) vybereme soubor ze  `src` -> `index.ts`. V něm vidíme náš první program.
 2. Poté zvolíme :octicons-gear-16:`Build and Flash` pro nahrání programu do zařízení.
 	![První program](./assets/first-code.png)
 3. Stejně jako v předchozí části kliknem na tlačítko :material-eye:`Monitor`. Měli bychom vidět výstup z programu.
@@ -140,7 +196,7 @@ Pokud nám funguje nahrávání kódu, můžeme se na něj podívat a zkusit jej
 Ve zdrojovém kódu jsou komentáře (`// tohle je komentář`), které nám popisují, co který řádek dělá.
 
 1. Prostudujeme si zdrojový kód.
-2. Upravíme si pozdrav na své jméno.
+2. Upravíme pozdrav na své jméno.
 
 	??? note "Řešení"
 		```ts
@@ -158,12 +214,12 @@ Ve zdrojovém kódu jsou komentáře (`// tohle je komentář`), které nám pop
 		...
 		```
 
-4. Upravíme si barvu.
+4. Upravíme barvu.
 
 	??? note "Řešení"
 		```ts
 		...
-		ledStrip.set(0, colors.red); // nastaví barvu LED na ESP32 na červenou
+		ledStrip.set(0, colors.red); // nastaví barvu LED na Robůtkovi na červenou
 		...
 		```
 
@@ -179,15 +235,3 @@ Ve zdrojovém kódu jsou komentáře (`// tohle je komentář`), které nám pop
 		- `pink`
 		- `white`
 		- `off`
-
-5. Upravímes si číselné proměnné na pojmenované konstanty.
-
-	??? note "Pojmenované konstanty"
-		```ts
-		...
-		const LED_PIN = 48;
-		const LED_COUNT = 1;
-
-		const ledStrip = new SmartLed(LED_PIN, LED_COUNT, LED_WS2812);  // připojí pásek na pin 48, s 1 ledkou a typem WS2812
-		...
-		```
