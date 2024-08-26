@@ -1649,7 +1649,7 @@
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 139a5bc6-1cd5-46fb-baf6-622a4470ce8b)
     )
-    (pin "INOKB" output (at 76.2 73.66 0)
+    (pin "USB_SEL" output (at 76.2 73.66 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 529f6aac-8cb8-433d-9c5d-26d3b2538e98)
     )
