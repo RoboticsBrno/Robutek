@@ -1890,9 +1890,9 @@
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid e2d34b0d-fbc6-410a-8e3b-1ba325619710)
     )
-    (pin "SEL0" input (at 76.2 107.95 0)
+    (pin "USB_SEL" input (at 76.2 107.95 0)
       (effects (font (size 1.27 1.27)) (justify right))
-      (uuid d7f6069a-e2e6-4b19-8ca7-91eae8622a97)
+      (uuid df6c67e0-9cd6-4089-81f0-6d750540bbfe)
     )
     (instances
       (project "Zelvicka"
