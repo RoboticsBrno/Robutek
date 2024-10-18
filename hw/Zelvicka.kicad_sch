@@ -1154,7 +1154,7 @@
     (property "Basic/Extended" "E" (at 34.29 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLCPCB_CORRECTION" "2.54;0;0" (at 34.29 172.72 0)
+    (property "JLCPCB_CORRECTION" "2.54;0;180" (at 34.29 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Price (100ks)" "0.0675" (at 34.29 172.72 0)
