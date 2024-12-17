@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.6,
-          "height": 1.9,
-          "width": 1.0
+          "drill": 0.0,
+          "height": 0.35,
+          "width": 0.9
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -424,7 +424,19 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "RKL-AuxiliarySymbols",
+      "RKL-StandardPackages",
+      "RKL-Audio",
+      "RKL-Batteries",
+      "RKL-Connectors",
+      "RKL-Graphic",
+      "RKL-Inductors",
+      "RKL-ESP",
+      "RKL-LED",
+      "RLK-ElectorMechanicalComponents",
+      "RKL-SpecialModules"
+    ],
     "pinned_symbol_libs": [
       "RKL-MotorDrivers",
       "RKL-BatteryManager",
@@ -439,7 +451,10 @@
       "RKL-DcDcConverters",
       "RKL-MOSFET",
       "RKL-Chargers",
-      "RKL-Uncategorized"
+      "RKL-Uncategorized",
+      "RKL-AuxiliarySymbols",
+      "RKL-SpecialThings",
+      "RKL-Sensors"
     ]
   },
   "meta": {
@@ -569,6 +584,10 @@
     [
       "e6bcfa65-c1a8-416d-b4de-33ec34afe345",
       "Conectors"
+    ],
+    [
+      "28226bbf-052f-4c2b-9b46-7abd034f330a",
+      "Irradiation"
     ]
   ],
   "text_variables": {}
