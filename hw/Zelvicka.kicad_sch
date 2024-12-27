@@ -1047,6 +1047,12 @@
 		(uuid "9075a1da-4bcd-4e5d-8924-fbe4a559fe93")
 	)
 	(junction
+		(at 109.22 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "90cc32b6-0b10-40e5-b6da-07a0a4426e31")
+	)
+	(junction
 		(at 177.8 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1396,6 +1402,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 38.1) (xy 109.22 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "448e5432-596a-4778-8267-53b1224fae3e")
+	)
+	(wire
+		(pts
 			(xy 254 78.74) (xy 266.7 78.74)
 		)
 		(stroke
@@ -1456,7 +1472,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 60.96) (xy 259.08 60.96)
+			(xy 254 63.5) (xy 259.08 63.5)
 		)
 		(stroke
 			(width 0)
@@ -1566,7 +1582,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 60.96) (xy 259.08 109.22)
+			(xy 259.08 63.5) (xy 259.08 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1713,16 +1729,6 @@
 			(type default)
 		)
 		(uuid "81cc2490-7078-4930-8807-aab12d4da197")
-	)
-	(wire
-		(pts
-			(xy 76.2 38.1) (xy 114.3 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "842b9ce5-773a-4c5d-9bda-340860c02cff")
 	)
 	(wire
 		(pts
@@ -2096,6 +2102,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 38.1) (xy 114.3 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cde9853c-e43a-4c63-a425-c7e91913f369")
+	)
+	(wire
+		(pts
 			(xy 165.1 109.22) (xy 170.18 109.22)
 		)
 		(stroke
@@ -2113,16 +2129,6 @@
 			(type default)
 		)
 		(uuid "ceff2df8-0717-4594-a4a5-9c039e454227")
-	)
-	(wire
-		(pts
-			(xy 83.82 20.32) (xy 83.82 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0dd010d-237e-4f57-ac9a-9ab23d54cb9f")
 	)
 	(wire
 		(pts
@@ -2153,6 +2159,26 @@
 			(type default)
 		)
 		(uuid "d570bf9a-bb72-4b72-a025-d301fd157086")
+	)
+	(wire
+		(pts
+			(xy 83.82 20.32) (xy 83.82 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d67ed52d-e23f-431b-ae71-46058a8441c0")
+	)
+	(wire
+		(pts
+			(xy 203.2 63.5) (xy 198.12 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc0710d7-e8d4-4a13-a6b1-c162d9a1d0d9")
 	)
 	(wire
 		(pts
@@ -2223,6 +2249,16 @@
 			(type default)
 		)
 		(uuid "f12e75bf-43f6-4e0c-b106-e63a40cf7de2")
+	)
+	(wire
+		(pts
+			(xy 109.22 35.56) (xy 109.22 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f24d2e7f-576d-4b2a-a916-504cfb80e213")
 	)
 	(wire
 		(pts
@@ -2340,6 +2376,17 @@
 		)
 		(uuid "263342cc-0848-4f8e-aeb6-708ca6ba3026")
 	)
+	(label "OFF"
+		(at 198.12 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "368fa5dc-0f40-471f-b1ee-4ffea1c79832")
+	)
 	(label "3V3"
 		(at 254 30.48 0)
 		(fields_autoplaced yes)
@@ -2405,6 +2452,17 @@
 			(justify left bottom)
 		)
 		(uuid "80491034-026b-43e1-9f48-40aa857c90c5")
+	)
+	(label "OFF"
+		(at 109.22 35.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b50d430d-caef-4fb3-a51e-8f100ac5ed5b")
 	)
 	(label "5V"
 		(at 177.8 96.52 0)
@@ -4021,7 +4079,7 @@
 	)
 	(sheet
 		(at 203.2 25.4)
-		(size 50.8 38.1)
+		(size 50.8 40.64)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4041,7 +4099,7 @@
 			)
 		)
 		(property "Sheetfile" "motor_control.kicad_sch"
-			(at 203.2 64.0846 0)
+			(at 203.2 66.6246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4050,7 +4108,7 @@
 			)
 		)
 		(pin "GND" bidirectional
-			(at 254 60.96 0)
+			(at 254 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4178,6 +4236,16 @@
 				(justify right)
 			)
 			(uuid "622465d0-876f-47f1-8e72-13cef6ff5f3a")
+		)
+		(pin "POWER-OFF" input
+			(at 203.2 63.5 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "55540860-8faa-4a71-b89c-ae3a2b4f87a9")
 		)
 		(instances
 			(project "Zelvicka"

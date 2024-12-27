@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 2.0,
-          "width": 1.35
+          "drill": 0.0,
+          "height": 1.16,
+          "width": 0.79
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -588,13 +588,85 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Basic/Extended",
+          "name": "Basic/Extended",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "JLCPCB_CORRECTION",
+          "name": "JLCPCB_CORRECTION",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "JLCPCB_IGNORE",
+          "name": "JLCPCB_IGNORE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Price (100ks)",
+          "name": "Price (100ks)",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Price (1ks)",
+          "name": "Price (1ks)",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Type",
+          "name": "Sim.Type",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "info",
+          "name": "info",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "Value"
     },
     "connection_grid_size": 50.0,
     "drawing": {
