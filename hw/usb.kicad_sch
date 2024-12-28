@@ -3704,7 +3704,7 @@
 		(uuid "5be0201a-e1e1-46f2-b1c5-3f3e4a5c832b")
 	)
 	(label "OUT.D-"
-		(at 88.898 53.4987 0)
+		(at 88.9 53.34 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3726,7 +3726,7 @@
 		(uuid "17f838bb-d6d6-4800-9953-eb784d4424e5")
 	)
 	(label "OUT.D+"
-		(at 88.8975 56.0916 0)
+		(at 88.9 55.88 0)
 		(fields_autoplaced yes)
 		(effects
 			(font

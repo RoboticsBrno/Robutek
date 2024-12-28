@@ -65274,7 +65274,7 @@
 			(justify top mirror)
 		)
 	)
-	(gr_text "Sensor IR LEDs\nON IO47 = 1"
+	(gr_text "Sensor IR LEDs\nTURN ON: IO47 = 1"
 		(at 100 107.5 0)
 		(layer "B.SilkS")
 		(uuid "e74f85fb-976b-4365-adae-25e9c324e84f")
@@ -65372,13 +65372,13 @@
 		)
 	)
 	(gr_text "PWR"
-		(at 107.2 141.5 90)
+		(at 107.1 141.5 90)
 		(layer "F.SilkS")
 		(uuid "065e7991-ac8f-4631-84aa-0bbd148a26c0")
 		(effects
 			(font
-				(size 1.2 1.2)
-				(thickness 0.18)
+				(size 1 1)
+				(thickness 0.15)
 			)
 			(justify left bottom)
 		)
