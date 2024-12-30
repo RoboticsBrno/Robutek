@@ -4840,7 +4840,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "68"
 			(at 160.02 83.82 0)
 			(effects
 				(font
@@ -4849,7 +4849,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 155.702 82.55 90)
 			(effects
 				(font
@@ -4876,7 +4876,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25076"
+		(property "LCSC" "C2907197"
 			(at 157.48 82.55 0)
 			(effects
 				(font
@@ -5401,7 +5401,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "68"
 			(at 231.14 83.82 0)
 			(effects
 				(font
@@ -5410,7 +5410,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 235.458 82.55 90)
 			(effects
 				(font
@@ -5437,7 +5437,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25076"
+		(property "LCSC" "C2907197"
 			(at 233.68 82.55 0)
 			(effects
 				(font
@@ -6544,7 +6544,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "68"
 			(at 116.84 83.82 0)
 			(effects
 				(font
@@ -6553,7 +6553,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 121.158 82.55 90)
 			(effects
 				(font
@@ -6580,7 +6580,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25076"
+		(property "LCSC" "C2907197"
 			(at 119.38 82.55 0)
 			(effects
 				(font
@@ -7459,7 +7459,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "68"
 			(at 193.04 83.82 0)
 			(effects
 				(font
@@ -7468,7 +7468,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 197.358 82.55 90)
 			(effects
 				(font
@@ -7495,7 +7495,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25076"
+		(property "LCSC" "C2907197"
 			(at 195.58 82.55 0)
 			(effects
 				(font
