@@ -3114,7 +3114,8 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 223.52 78.74 0)
+		(at 223.52 81.28 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3122,15 +3123,6 @@
 		(dnp no)
 		(uuid "c423bbd4-7052-4a26-82e4-3aeab74b4382")
 		(property "Reference" "J6"
-			(at 226.06 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x04"
 			(at 226.06 81.28 0)
 			(effects
 				(font
@@ -3139,8 +3131,17 @@
 				(justify left)
 			)
 		)
+		(property "Value" "Conn_01x04"
+			(at 226.06 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(property "Footprint" "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical"
-			(at 223.52 78.74 0)
+			(at 223.52 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3149,7 +3150,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 223.52 78.74 0)
+			(at 223.52 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3158,7 +3159,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 223.52 78.74 0)
+			(at 223.52 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3167,7 +3168,7 @@
 			)
 		)
 		(property "LCSC" "C7433440"
-			(at 223.52 78.74 0)
+			(at 223.52 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3176,7 +3177,7 @@
 			)
 		)
 		(property "Price (100ks)" "0.0269"
-			(at 223.52 78.74 0)
+			(at 223.52 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3185,7 +3186,7 @@
 			)
 		)
 		(property "Price (1ks)" "0.0318"
-			(at 223.52 78.74 0)
+			(at 223.52 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3194,7 +3195,7 @@
 			)
 		)
 		(property "Basic/Extended" "E"
-			(at 223.52 78.74 0)
+			(at 223.52 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)

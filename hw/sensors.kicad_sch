@@ -1788,13 +1788,13 @@
 		)
 	)
 	(junction
-		(at 104.14 33.02)
+		(at 114.3 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "12044439-881e-41e1-bb59-d40f202d825f")
 	)
 	(junction
-		(at 68.58 50.8)
+		(at 71.12 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2c132f4f-9952-45f1-974f-49d600d6dbf9")
@@ -1804,12 +1804,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "36c37e3f-8a52-4963-8714-ed3401f7d726")
-	)
-	(junction
-		(at 195.58 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3b01a10e-47c1-4c1a-a6e3-a4a29f1f7591")
 	)
 	(junction
 		(at 139.7 63.5)
@@ -1842,10 +1836,22 @@
 		(uuid "5dae827f-64a9-4d64-ab83-742e1d3ddabd")
 	)
 	(junction
-		(at 78.74 43.18)
+		(at 93.98 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "63eb299e-bc57-4137-879f-5ebaf0f33889")
+		(uuid "5fc1c343-6f72-426a-9e2c-3b85596ff1e9")
+	)
+	(junction
+		(at 73.66 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "78381425-73a7-4e36-a87d-7d0bf2508aa8")
+	)
+	(junction
+		(at 101.6 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "78b534e9-c7ca-4efd-9b75-fca6bf5937a3")
 	)
 	(junction
 		(at 215.9 33.02)
@@ -1854,10 +1860,10 @@
 		(uuid "7f6fe186-8cd1-49e6-9644-632f893dc4cf")
 	)
 	(junction
-		(at 157.48 30.48)
+		(at 81.28 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "85753cf7-b813-4372-9bca-038bae85c0a3")
+		(uuid "869cadb1-e763-4d8d-a800-e059625d13ea")
 	)
 	(junction
 		(at 81.28 106.68)
@@ -1890,6 +1896,12 @@
 		(uuid "b41910f0-6a02-428b-84a8-040e0729bab7")
 	)
 	(junction
+		(at 177.8 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bb933ff1-a5ef-4ca9-9204-8e24ae48a094")
+	)
+	(junction
 		(at 177.8 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1914,22 +1926,16 @@
 		(uuid "cd141981-8321-4ae4-a68f-78def583a90e")
 	)
 	(junction
+		(at 73.66 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "db7a3600-88e8-45ee-87c5-fa0d00082fef")
+	)
+	(junction
 		(at 254 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "db8f6e2c-21cb-48e0-8971-37ee6e6fb6e2")
-	)
-	(junction
-		(at 71.12 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dd549e3d-7020-41c6-ba93-1a9af1ce2d0b")
-	)
-	(junction
-		(at 119.38 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ebe5e328-cf8a-41d8-8823-d53326b7a7a9")
 	)
 	(junction
 		(at 40.64 175.26)
@@ -1952,16 +1958,6 @@
 			(type default)
 		)
 		(uuid "0022eb6c-f98d-4a53-bd58-e0f714d5a31e")
-	)
-	(wire
-		(pts
-			(xy 157.48 30.48) (xy 157.48 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02a9434f-3ab0-49a6-89ad-c4c8e356c22b")
 	)
 	(wire
 		(pts
@@ -2002,16 +1998,6 @@
 			(type default)
 		)
 		(uuid "0b87fbe6-e469-4b8c-aa3f-9a867c6c5c36")
-	)
-	(wire
-		(pts
-			(xy 66.04 50.8) (xy 68.58 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d58d9a5-28ec-47b1-9630-5a706b1c7a50")
 	)
 	(wire
 		(pts
@@ -2065,16 +2051,6 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 30.48) (xy 233.68 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18bafc39-c983-49b0-8643-07d2cbdd53cf")
-	)
-	(wire
-		(pts
 			(xy 215.9 40.64) (xy 213.36 40.64)
 		)
 		(stroke
@@ -2082,6 +2058,16 @@
 			(type default)
 		)
 		(uuid "199cbbb5-4186-4609-9434-1811eaec4c1c")
+	)
+	(wire
+		(pts
+			(xy 177.8 46.99) (xy 177.8 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b8d7d46-4b0d-463d-9c13-6051808e67ea")
 	)
 	(wire
 		(pts
@@ -2095,6 +2081,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 40.64) (xy 236.22 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20cf7696-8d6a-47b3-97ff-d29bf681e9a7")
+	)
+	(wire
+		(pts
 			(xy 254 76.2) (xy 254 78.74)
 		)
 		(stroke
@@ -2102,16 +2098,6 @@
 			(type default)
 		)
 		(uuid "214cb100-f38e-4320-914b-5c6baca90ac5")
-	)
-	(wire
-		(pts
-			(xy 119.38 30.48) (xy 157.48 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22094dc5-2789-4067-8a29-42168faeb491")
 	)
 	(wire
 		(pts
@@ -2135,6 +2121,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 40.64) (xy 154.94 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24964013-e7bb-4aa2-b88a-fc56b53b05f6")
+	)
+	(wire
+		(pts
 			(xy 254 76.2) (xy 251.46 76.2)
 		)
 		(stroke
@@ -2142,6 +2138,16 @@
 			(type default)
 		)
 		(uuid "25a171db-759b-4c70-8a5f-f737d361afb9")
+	)
+	(wire
+		(pts
+			(xy 93.98 40.64) (xy 101.6 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "268b0bbd-7db2-4e24-8615-1568b8b106de")
 	)
 	(wire
 		(pts
@@ -2195,13 +2201,23 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 33.02) (xy 104.14 63.5)
+			(xy 114.3 33.02) (xy 114.3 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2ffa2bf8-a5ed-44c1-860b-4872ec86eaf2")
+	)
+	(wire
+		(pts
+			(xy 81.28 58.42) (xy 93.98 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30fbff0c-d0fc-4a2f-96c3-05b809058c09")
 	)
 	(wire
 		(pts
@@ -2215,23 +2231,13 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 38.1) (xy 78.74 43.18)
+			(xy 81.28 53.34) (xy 81.28 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3243210b-2b9c-48d2-adfc-64a21c9d76fb")
-	)
-	(wire
-		(pts
-			(xy 119.38 30.48) (xy 119.38 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "325bda88-7a7d-47ec-b3f2-24ea4cc0a13b")
 	)
 	(wire
 		(pts
@@ -2265,13 +2271,23 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 40.64) (xy 236.22 40.64)
+			(xy 73.66 27.94) (xy 93.98 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "37634c8a-a63e-40d3-8762-ee275afb45a1")
+		(uuid "37182d65-3794-47ad-8454-525fc12732ee")
+	)
+	(wire
+		(pts
+			(xy 86.36 45.72) (xy 109.22 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "377aef20-4046-4462-904d-f20097d0c468")
 	)
 	(wire
 		(pts
@@ -2285,6 +2301,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 25.4) (xy 73.66 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "393b0275-6dee-49e3-a365-c9421ec7bfaf")
+	)
+	(wire
+		(pts
 			(xy 139.7 45.72) (xy 147.32 45.72)
 		)
 		(stroke
@@ -2295,23 +2321,13 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 40.64) (xy 71.12 43.18)
+			(xy 73.66 55.88) (xy 73.66 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3a4863b0-af84-4006-a945-0b1b3ded3a65")
-	)
-	(wire
-		(pts
-			(xy 195.58 78.74) (xy 195.58 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b078a3c-4253-4ba5-acb9-70e725c3f776")
 	)
 	(wire
 		(pts
@@ -2335,13 +2351,33 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 30.48) (xy 233.68 30.48)
+			(xy 93.98 27.94) (xy 93.98 30.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "43c2f222-b2de-4a8d-b43a-14bdc4dfa745")
+		(uuid "3f12f150-0098-4ace-82ab-b48c98871577")
+	)
+	(wire
+		(pts
+			(xy 215.9 45.72) (xy 215.9 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "407b1d4e-ed7d-4657-a171-6611d2ad1c92")
+	)
+	(wire
+		(pts
+			(xy 66.04 66.04) (xy 71.12 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42f93478-ea53-44ce-95f4-5c440b46c730")
 	)
 	(wire
 		(pts
@@ -2355,7 +2391,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 50.8) (xy 68.58 53.34)
+			(xy 71.12 66.04) (xy 71.12 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2365,17 +2401,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 30.48) (xy 119.38 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f1be3c3-e73c-43dc-ad96-5478ce628211")
-	)
-	(wire
-		(pts
-			(xy 195.58 30.48) (xy 195.58 40.64)
+			(xy 195.58 27.94) (xy 195.58 40.64)
 		)
 		(stroke
 			(width 0)
@@ -2405,7 +2431,17 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 45.72) (xy 177.8 48.26)
+			(xy 101.6 35.56) (xy 101.6 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55faae45-f7c7-4799-80c9-c53f1d9e7798")
+	)
+	(wire
+		(pts
+			(xy 177.8 45.72) (xy 177.8 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2415,13 +2451,23 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 43.18) (xy 78.74 43.18)
+			(xy 73.66 58.42) (xy 81.28 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "56e87461-e569-44f2-bcf7-f50ccf645f44")
+	)
+	(wire
+		(pts
+			(xy 195.58 76.2) (xy 195.58 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57d567b9-e471-4151-b151-52f994e57f07")
 	)
 	(wire
 		(pts
@@ -2495,16 +2541,6 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 30.48) (xy 195.58 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60e53c93-23ce-4337-8cc2-294d7acb63b7")
-	)
-	(wire
-		(pts
 			(xy 215.9 33.02) (xy 254 33.02)
 		)
 		(stroke
@@ -2565,7 +2601,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 27.94) (xy 104.14 33.02)
+			(xy 114.3 22.86) (xy 114.3 33.02)
 		)
 		(stroke
 			(width 0)
@@ -2585,16 +2621,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 78.74) (xy 119.38 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7679a021-ab5a-4dbc-af18-48e933eae84c")
-	)
-	(wire
-		(pts
 			(xy 254 45.72) (xy 254 48.26)
 		)
 		(stroke
@@ -2602,6 +2628,16 @@
 			(type default)
 		)
 		(uuid "78db062b-0a10-45a1-b3fb-e6ff9c273850")
+	)
+	(wire
+		(pts
+			(xy 101.6 40.64) (xy 101.6 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7eb3702f-66a4-4fd8-92df-f4148eb3dd3a")
 	)
 	(wire
 		(pts
@@ -2655,7 +2691,17 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 27.94) (xy 63.5 30.48)
+			(xy 66.04 86.36) (xy 66.04 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87bc228d-cd4e-45a6-a8b7-830c2f7a6632")
+	)
+	(wire
+		(pts
+			(xy 73.66 27.94) (xy 73.66 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2725,7 +2771,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 60.96) (xy 78.74 55.88)
+			(xy 81.28 76.2) (xy 81.28 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2735,7 +2781,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 43.18) (xy 78.74 45.72)
+			(xy 81.28 58.42) (xy 81.28 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2755,7 +2801,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 63.5) (xy 139.7 63.5)
+			(xy 114.3 63.5) (xy 139.7 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2765,7 +2811,17 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 33.02) (xy 104.14 33.02)
+			(xy 81.28 106.68) (xy 81.28 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a139744-3aff-43e1-b2b5-4b40fa135364")
+	)
+	(wire
+		(pts
+			(xy 139.7 33.02) (xy 114.3 33.02)
 		)
 		(stroke
 			(width 0)
@@ -2812,6 +2868,16 @@
 			(type default)
 		)
 		(uuid "9d7fb33c-43bb-4f21-84b6-d4e352feab40")
+	)
+	(wire
+		(pts
+			(xy 109.22 45.72) (xy 109.22 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e625be7-edaf-45be-bcda-82247dc04860")
 	)
 	(wire
 		(pts
@@ -2865,26 +2931,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 40.64) (xy 121.92 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a70e0173-8205-4371-9dc9-c51d8c3e851d")
-	)
-	(wire
-		(pts
-			(xy 215.9 45.72) (xy 215.9 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8507be1-b756-4ccb-ae11-695acdce6c42")
-	)
-	(wire
-		(pts
 			(xy 215.9 76.2) (xy 215.9 78.74)
 		)
 		(stroke
@@ -2905,6 +2951,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 38.1) (xy 93.98 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad51e127-17ab-4209-98f3-7dab06e72400")
+	)
+	(wire
+		(pts
 			(xy 177.8 71.12) (xy 175.26 71.12)
 		)
 		(stroke
@@ -2915,7 +2971,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 30.48) (xy 71.12 33.02)
+			(xy 73.66 45.72) (xy 73.66 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2942,6 +2998,16 @@
 			(type default)
 		)
 		(uuid "b0fc0bed-6532-4f41-9ae9-49097b2d7a45")
+	)
+	(wire
+		(pts
+			(xy 73.66 45.72) (xy 76.2 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1244253-8337-4848-9444-729b758dd021")
 	)
 	(wire
 		(pts
@@ -2975,7 +3041,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 50.8) (xy 71.12 50.8)
+			(xy 71.12 66.04) (xy 73.66 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3005,13 +3071,13 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 40.64) (xy 160.02 40.64)
+			(xy 106.68 27.94) (xy 195.58 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bf2f85d5-9d57-490e-bf6a-77102cd0753d")
+		(uuid "be0aa000-af86-44d2-8c72-0a1807809a7f")
 	)
 	(wire
 		(pts
@@ -3022,6 +3088,16 @@
 			(type default)
 		)
 		(uuid "bfb7c77c-615f-400c-916b-1ab641b1fd6a")
+	)
+	(wire
+		(pts
+			(xy 109.22 40.64) (xy 121.92 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfc450f3-6ef8-4f9b-b08c-55520f8a6d4c")
 	)
 	(wire
 		(pts
@@ -3075,16 +3151,6 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 30.48) (xy 71.12 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8aa9169-d350-4abd-b04e-046bf74f296a")
-	)
-	(wire
-		(pts
 			(xy 261.62 76.2) (xy 261.62 137.16)
 		)
 		(stroke
@@ -3102,6 +3168,16 @@
 			(type default)
 		)
 		(uuid "cf4ba3c4-529d-4475-863e-e67362264c5a")
+	)
+	(wire
+		(pts
+			(xy 119.38 76.2) (xy 119.38 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0ee6d0d-159b-4ea7-8c50-a7e7c35733f7")
 	)
 	(wire
 		(pts
@@ -3165,6 +3241,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 86.36) (xy 66.04 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e23cbdd3-1ca0-4d15-a19c-9aed091fa29d")
+	)
+	(wire
+		(pts
 			(xy 215.9 63.5) (xy 254 63.5)
 		)
 		(stroke
@@ -3172,16 +3258,6 @@
 			(type default)
 		)
 		(uuid "e45e096e-8841-4721-89ce-3687917f73a4")
-	)
-	(wire
-		(pts
-			(xy 71.12 30.48) (xy 73.66 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5058e0c-19da-4702-bb5d-73d7b1b7a8a7")
 	)
 	(wire
 		(pts
@@ -3222,6 +3298,26 @@
 			(type default)
 		)
 		(uuid "ed3d4371-0237-477b-af42-0498f0f5e6a2")
+	)
+	(wire
+		(pts
+			(xy 154.94 40.64) (xy 160.02 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee2c642c-c1c2-44aa-a024-5510274390fa")
+	)
+	(wire
+		(pts
+			(xy 231.14 93.98) (xy 231.14 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee2d1129-73e5-447a-ad6d-0d58c339ea10")
 	)
 	(wire
 		(pts
@@ -3295,6 +3391,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 27.94) (xy 96.52 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faaf2425-26e3-49bb-b966-607db526755f")
+	)
+	(wire
+		(pts
 			(xy 83.82 111.76) (xy 86.36 111.76)
 		)
 		(stroke
@@ -3302,6 +3408,16 @@
 			(type default)
 		)
 		(uuid "fb3b3eee-8fa8-48b0-b1c4-fbca9ac55d70")
+	)
+	(wire
+		(pts
+			(xy 195.58 93.98) (xy 231.14 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb451886-ad38-4b5c-a97f-7dc46d8f44f4")
 	)
 	(wire
 		(pts
@@ -3322,6 +3438,16 @@
 			(type default)
 		)
 		(uuid "fc71b029-0f29-4c2f-a379-4c5db99c1250")
+	)
+	(wire
+		(pts
+			(xy 154.94 93.98) (xy 119.38 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcb7f346-bb1f-4f61-b121-b5b390888ac5")
 	)
 	(wire
 		(pts
@@ -3601,30 +3727,6 @@
 		)
 		(uuid "1d23997d-3ed9-4be1-b993-9ab19066b2e6")
 	)
-	(hierarchical_label "LineSens_L_EN"
-		(shape input)
-		(at 66.04 50.8 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "24e7dd0e-a9d4-474d-870f-45a8f7ea4782")
-	)
-	(hierarchical_label "GND"
-		(shape bidirectional)
-		(at 119.38 86.36 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2cd859bf-0258-41e8-a717-141df56a6a84")
-	)
 	(hierarchical_label "GND"
 		(shape bidirectional)
 		(at 233.68 86.36 270)
@@ -3651,7 +3753,7 @@
 	)
 	(hierarchical_label "3V3"
 		(shape input)
-		(at 104.14 27.94 90)
+		(at 114.3 22.86 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3711,7 +3813,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape bidirectional)
-		(at 195.58 86.36 270)
+		(at 101.6 63.5 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3719,7 +3821,7 @@
 			)
 			(justify right)
 		)
-		(uuid "6f307ff8-5941-4a1d-989d-7f6d484d074a")
+		(uuid "68888b83-ea4d-48c1-93b6-3bc4799cff80")
 	)
 	(hierarchical_label "GND"
 		(shape bidirectional)
@@ -3745,9 +3847,9 @@
 		)
 		(uuid "7692d32d-155e-4c21-8b0a-7e82d63b4803")
 	)
-	(hierarchical_label "5V"
+	(hierarchical_label "6V6"
 		(shape input)
-		(at 63.5 27.94 90)
+		(at 73.66 25.4 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3771,7 +3873,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape bidirectional)
-		(at 78.74 60.96 270)
+		(at 81.28 76.2 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3879,7 +3981,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape bidirectional)
-		(at 68.58 60.96 270)
+		(at 71.12 76.2 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4094,6 +4196,317 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 93.98 34.29 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0bfec8a2-26f2-49a5-881f-0898c29eba5c")
+		(property "Reference" "R34"
+			(at 90.17 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 90.17 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 95.758 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 93.98 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic/Extended" "B"
+			(at 93.98 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 93.98 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price (100ks)" "0.0005"
+			(at 93.98 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price (1ks)" "0.0005"
+			(at 93.98 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6f713e26-37c2-4ccf-b1cc-e10eeb39d3ef")
+		)
+		(pin "2"
+			(uuid "b2f626c8-fb53-4b93-ae3b-85d76cfd53be")
+		)
+		(instances
+			(project "Zelvicka"
+				(path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
+					(reference "R34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 139.7 82.55 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0c75fe11-da6c-48e5-b0a6-060491eccce8")
+		(property "Reference" "R8"
+			(at 135.89 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "17.4k"
+			(at 134.62 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 137.922 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C208810"
+			(at 139.7 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic/Extended" "E"
+			(at 139.7 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price (100ks)" "0.0020"
+			(at 139.7 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price (1ks)" "0.0020"
+			(at 139.7 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a168e0a-daa9-47a3-878b-9ae678b9ff9e")
+		)
+		(pin "2"
+			(uuid "20c68c2d-194a-45ef-b40b-bf86cac50597")
+		)
+		(instances
+			(project "Zelvicka"
+				(path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 215.9 82.55 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0e1efd53-0777-4391-aa2a-5c4c3d682eeb")
+		(property "Reference" "R38"
+			(at 212.09 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "17.4k"
+			(at 210.82 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 214.122 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 215.9 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C208810"
+			(at 215.9 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic/Extended" "E"
+			(at 215.9 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price (100ks)" "0.0020"
+			(at 215.9 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price (1ks)" "0.0020"
+			(at 215.9 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "333113b8-2391-47ab-bd4e-dcfd7b6e4dbc")
+		)
+		(pin "2"
+			(uuid "573f77a6-ce0d-4ee3-bb4b-ea961c40b00c")
+		)
+		(instances
+			(project "Zelvicka"
+				(path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
+					(reference "R38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Sensor_Proximity:ITR8307-S17-TR8")
 		(at 243.84 73.66 0)
 		(unit 1)
@@ -4215,7 +4628,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 71.12 36.83 180)
+		(at 73.66 52.07 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4223,7 +4636,7 @@
 		(dnp no)
 		(uuid "1d19d269-bbba-4acd-ba82-54603a9e005c")
 		(property "Reference" "R46"
-			(at 67.31 35.56 0)
+			(at 69.85 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4231,7 +4644,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 67.31 38.1 0)
+			(at 69.85 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4239,7 +4652,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 72.898 36.83 90)
+			(at 75.438 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4248,7 +4661,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 71.12 36.83 0)
+			(at 73.66 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4257,7 +4670,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 71.12 36.83 0)
+			(at 73.66 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4266,7 +4679,7 @@
 			)
 		)
 		(property "Basic/Extended" "B"
-			(at 71.12 36.83 0)
+			(at 73.66 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4275,7 +4688,7 @@
 			)
 		)
 		(property "LCSC" "C25744"
-			(at 71.12 36.83 0)
+			(at 73.66 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4284,7 +4697,7 @@
 			)
 		)
 		(property "Price (100ks)" "0.0005"
-			(at 71.12 36.83 0)
+			(at 73.66 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4293,7 +4706,7 @@
 			)
 		)
 		(property "Price (1ks)" "0.0005"
-			(at 71.12 36.83 0)
+			(at 73.66 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4559,7 +4972,7 @@
 	)
 	(symbol
 		(lib_id "Device:Q_NMOS_GSD")
-		(at 76.2 50.8 0)
+		(at 78.74 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4567,7 +4980,7 @@
 		(dnp no)
 		(uuid "2f05680b-390a-450c-8d66-8b0df6c72c6f")
 		(property "Reference" "Q10"
-			(at 82.55 52.07 0)
+			(at 85.09 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4576,7 +4989,7 @@
 			)
 		)
 		(property "Value" "NMOS"
-			(at 82.55 49.53 0)
+			(at 85.09 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4585,7 +4998,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-723"
-			(at 81.28 48.26 0)
+			(at 83.82 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4594,7 +5007,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2004141706_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2SK3541_C504051.pdf"
-			(at 76.2 50.8 0)
+			(at 78.74 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4603,7 +5016,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 76.2 50.8 0)
+			(at 78.74 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4612,7 +5025,7 @@
 			)
 		)
 		(property "Sim.Device" "NMOS"
-			(at 76.2 67.945 0)
+			(at 78.74 83.185 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4621,7 +5034,7 @@
 			)
 		)
 		(property "Sim.Type" "VDMOS"
-			(at 76.2 69.85 0)
+			(at 78.74 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4630,7 +5043,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 76.2 66.04 0)
+			(at 78.74 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4639,7 +5052,7 @@
 			)
 		)
 		(property "LCSC" "C2912553"
-			(at 76.2 50.8 0)
+			(at 78.74 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4648,7 +5061,7 @@
 			)
 		)
 		(property "Basic/Extended" "E"
-			(at 76.2 50.8 0)
+			(at 78.74 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4657,7 +5070,7 @@
 			)
 		)
 		(property "JLCPCB_CORRECTION" "0;0;180"
-			(at 76.2 50.8 0)
+			(at 78.74 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4666,7 +5079,7 @@
 			)
 		)
 		(property "Price (100ks)" "0.0261"
-			(at 76.2 50.8 0)
+			(at 78.74 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4675,7 +5088,7 @@
 			)
 		)
 		(property "Price (1ks)" "0.0261"
-			(at 76.2 50.8 0)
+			(at 78.74 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4696,6 +5109,358 @@
 			(project "Zelvicka"
 				(path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
 					(reference "Q10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 254 82.55 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2f2a8b53-e6db-44f2-b31a-dca88ab3b9b8")
+		(property "Reference" "R44"
+			(at 250.19 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "17.4k"
+			(at 248.92 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 252.222 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 254 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 254 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C208810"
+			(at 254 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic/Extended" "E"
+			(at 254 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price (100ks)" "0.0020"
+			(at 254 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price (1ks)" "0.0020"
+			(at 254 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4780c9e0-4d5c-4e84-811c-45a83269522d")
+		)
+		(pin "2"
+			(uuid "43bf20d8-5300-490c-ba79-4f0837feaee7")
+		)
+		(instances
+			(project "Zelvicka"
+				(path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
+					(reference "R44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 139.7 52.07 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3015b5f3-a593-4e6e-a66e-98ab4b0d95aa")
+		(property "Reference" "R9"
+			(at 135.89 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "17.4k"
+			(at 134.62 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 137.922 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C208810"
+			(at 139.7 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic/Extended" "E"
+			(at 139.7 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price (100ks)" "0.0020"
+			(at 139.7 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price (1ks)" "0.0020"
+			(at 139.7 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6a75a12c-4571-44f0-8e3a-35bca8e44066")
+		)
+		(pin "2"
+			(uuid "a428b73d-a4d9-4b11-9e73-bb03731749bf")
+		)
+		(instances
+			(project "Zelvicka"
+				(path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Q_NMOS_GSD")
+		(at 99.06 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "340e8fcc-9705-47ac-849a-859424150065")
+		(property "Reference" "Q3"
+			(at 105.41 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NMOS"
+			(at 105.41 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-723"
+			(at 104.14 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2004141706_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2SK3541_C504051.pdf"
+			(at 99.06 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NMOS"
+			(at 99.06 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "VDMOS"
+			(at 99.06 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 99.06 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2912553"
+			(at 99.06 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic/Extended" "E"
+			(at 99.06 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_CORRECTION" "0;0;180"
+			(at 99.06 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price (100ks)" "0.0261"
+			(at 99.06 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price (1ks)" "0.0261"
+			(at 99.06 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "93a2ed9c-6032-47c8-85c8-cc3c221c847a")
+		)
+		(pin "2"
+			(uuid "de1872d4-1b72-4a65-a672-2928fb8f37af")
+		)
+		(pin "3"
+			(uuid "9f0bb3e5-d14d-4e09-916f-1e5c9fd00a40")
+		)
+		(instances
+			(project "Zelvicka"
+				(path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -4922,6 +5687,110 @@
 			(project "Zelvicka"
 				(path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
 					(reference "R47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 215.9 52.07 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3b95292e-5bc4-4b45-8831-ec48e79c2b98")
+		(property "Reference" "R12"
+			(at 212.09 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "17.4k"
+			(at 210.82 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 214.122 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 215.9 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C208810"
+			(at 215.9 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic/Extended" "E"
+			(at 215.9 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price (100ks)" "0.0020"
+			(at 215.9 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price (1ks)" "0.0020"
+			(at 215.9 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d4c69ea9-e0b8-4eea-8527-8591490ab2c2")
+		)
+		(pin "2"
+			(uuid "066cb9e0-6468-482f-9cba-8688cb0db82a")
+		)
+		(instances
+			(project "Zelvicka"
+				(path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -5175,217 +6044,8 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 215.9 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "518cb550-7b37-4079-8e2e-8e85ff97bd08")
-		(property "Reference" "R12"
-			(at 213.36 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "4k7"
-			(at 213.36 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 214.122 52.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 215.9 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 215.9 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Basic/Extended" "B"
-			(at 215.9 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25900"
-			(at 215.9 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price (100ks)" "0.0005"
-			(at 215.9 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price (1ks)" "0.0005"
-			(at 215.9 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "12064460-7c15-4efd-accc-d666b931e9eb")
-		)
-		(pin "2"
-			(uuid "681a4361-0ff3-400c-a899-716d1319e0ce")
-		)
-		(instances
-			(project "Zelvicka"
-				(path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
-					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 215.9 82.55 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "583eb9b3-2e44-47f0-b36d-7496b6d7b712")
-		(property "Reference" "R38"
-			(at 213.36 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "4k7"
-			(at 213.36 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 214.122 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 215.9 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 215.9 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Basic/Extended" "B"
-			(at 215.9 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25900"
-			(at 215.9 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price (100ks)" "0.0005"
-			(at 215.9 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price (1ks)" "0.0005"
-			(at 215.9 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9aca3970-32b5-4bdb-b8a8-eb01afd792e6")
-		)
-		(pin "2"
-			(uuid "a246e740-d157-4879-98a8-fefb45268540")
-		)
-		(instances
-			(project "Zelvicka"
-				(path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
-					(reference "R38")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 233.68 82.55 180)
+		(at 233.68 82.55 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5393,7 +6053,7 @@
 		(dnp no)
 		(uuid "6b55299e-2089-4cb2-9981-9896e0a4f806")
 		(property "Reference" "R51"
-			(at 231.14 81.28 0)
+			(at 236.22 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5402,7 +6062,7 @@
 			)
 		)
 		(property "Value" "68"
-			(at 231.14 83.82 0)
+			(at 236.22 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5411,7 +6071,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 235.458 82.55 90)
+			(at 231.902 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5490,33 +6150,32 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 139.7 52.07 0)
+		(at 177.8 50.8 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6d9df4aa-adfb-45d0-8a46-354f3a6e75c6")
-		(property "Reference" "R9"
-			(at 137.16 50.8 0)
+		(uuid "6bd37d34-52cb-4ffa-9cc4-33bcfcff7aba")
+		(property "Reference" "R10"
+			(at 173.99 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "4k7"
-			(at 137.16 53.34 0)
+		(property "Value" "17.4k"
+			(at 172.72 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 137.922 52.07 90)
+			(at 176.022 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5525,7 +6184,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 139.7 52.07 0)
+			(at 177.8 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5534,7 +6193,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 139.7 52.07 0)
+			(at 177.8 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5542,8 +6201,8 @@
 				(hide yes)
 			)
 		)
-		(property "Basic/Extended" "B"
-			(at 139.7 52.07 0)
+		(property "LCSC" "C208810"
+			(at 177.8 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5551,8 +6210,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25900"
-			(at 139.7 52.07 0)
+		(property "Basic/Extended" "E"
+			(at 177.8 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5560,8 +6219,8 @@
 				(hide yes)
 			)
 		)
-		(property "Price (100ks)" "0.0005"
-			(at 139.7 52.07 0)
+		(property "Price (100ks)" "0.0020"
+			(at 177.8 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5569,8 +6228,8 @@
 				(hide yes)
 			)
 		)
-		(property "Price (1ks)" "0.0005"
-			(at 139.7 52.07 0)
+		(property "Price (1ks)" "0.0020"
+			(at 177.8 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5579,15 +6238,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "cc83aba4-fea3-47bf-8f10-bd08c181421f")
+			(uuid "c86ae569-719b-4b15-9927-cf156847babb")
 		)
 		(pin "2"
-			(uuid "b49d6b62-368f-45f6-b12b-c71f4c7a796b")
+			(uuid "43f466d8-050a-4299-8bf7-e3cbeecdf80a")
 		)
 		(instances
 			(project "Zelvicka"
 				(path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
-					(reference "R9")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -5708,6 +6367,110 @@
 			(project "Zelvicka"
 				(path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
 					(reference "S3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 254 52.07 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7d0de50e-2b3c-42ea-a7e2-54ef475037b5")
+		(property "Reference" "R25"
+			(at 250.19 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "17.4k"
+			(at 248.92 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 252.222 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 254 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 254 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C208810"
+			(at 254 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic/Extended" "E"
+			(at 254 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price (100ks)" "0.0020"
+			(at 254 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price (1ks)" "0.0020"
+			(at 254 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1ef99bc9-3395-463c-8e08-a1d326aa9a31")
+		)
+		(pin "2"
+			(uuid "2e5a6bd3-3ee4-4c8c-80e7-3184e667c775")
+		)
+		(instances
+			(project "Zelvicka"
+				(path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -6075,218 +6838,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 254 82.55 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "92a39020-d0bc-4506-8ece-71132f9af09d")
-		(property "Reference" "R44"
-			(at 251.46 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "4k7"
-			(at 251.46 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 252.222 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 254 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 254 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Basic/Extended" "B"
-			(at 254 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25900"
-			(at 254 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price (100ks)" "0.0005"
-			(at 254 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price (1ks)" "0.0005"
-			(at 254 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3c626627-8d71-4e3b-aa90-310280f702db")
-		)
-		(pin "2"
-			(uuid "ee8a3302-39be-49f0-bb19-61bfa9dd2f7a")
-		)
-		(instances
-			(project "Zelvicka"
-				(path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
-					(reference "R44")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 254 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "96697d3c-dea2-4317-bc4d-fc483a9fb1b5")
-		(property "Reference" "R25"
-			(at 251.46 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "4k7"
-			(at 251.46 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 252.222 52.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 254 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 254 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Basic/Extended" "B"
-			(at 254 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25900"
-			(at 254 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price (100ks)" "0.0005"
-			(at 254 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price (1ks)" "0.0005"
-			(at 254 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0f69d4f3-604a-4344-a39b-9264385fccd1")
-		)
-		(pin "2"
-			(uuid "58d86fdb-f2da-4641-9543-b703c509e16c")
-		)
-		(instances
-			(project "Zelvicka"
-				(path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
-					(reference "R25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "RKL-MOSFET:JMTV210P02A")
-		(at 78.74 30.48 0)
+		(at 81.28 45.72 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6295,7 +6848,7 @@
 		(dnp no)
 		(uuid "99d49905-e647-47dd-8e6a-fd9f372c66b8")
 		(property "Reference" "Qp4"
-			(at 78.74 24.13 0)
+			(at 81.28 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6303,7 +6856,7 @@
 			)
 		)
 		(property "Value" "JMTV210P02A"
-			(at 78.74 26.67 0)
+			(at 81.28 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6311,7 +6864,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:Diodes_UDFN2020-6_Type-F"
-			(at 78.74 20.32 0)
+			(at 81.28 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6320,7 +6873,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121830_Jiangsu-JieJie-Microelectronics-JMTV210P02A_C2938482.pdf"
-			(at 78.74 17.78 0)
+			(at 81.28 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6329,7 +6882,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 78.74 30.48 0)
+			(at 81.28 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6338,7 +6891,7 @@
 			)
 		)
 		(property "LCSC" "C2938482"
-			(at 78.74 15.24 0)
+			(at 81.28 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6347,7 +6900,7 @@
 			)
 		)
 		(property "Basic/Extended" "E"
-			(at 78.74 30.48 0)
+			(at 81.28 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6356,7 +6909,7 @@
 			)
 		)
 		(property "Price (100ks)" "0.0942"
-			(at 78.74 30.48 0)
+			(at 81.28 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6365,7 +6918,7 @@
 			)
 		)
 		(property "Price (1ks)" "0.0942"
-			(at 78.74 30.48 0)
+			(at 81.28 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6527,34 +7080,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 119.38 82.55 180)
+		(lib_id "RKL-MOSFET:JMTV210P02A")
+		(at 101.6 27.94 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "bc239b06-b526-4619-a6e4-1fd5df5dfcc5")
-		(property "Reference" "R39"
-			(at 116.84 81.28 0)
+		(uuid "b8103909-e6d1-4105-88d3-5eb2502ab239")
+		(property "Reference" "Qp6"
+			(at 101.6 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "68"
-			(at 116.84 83.82 0)
+		(property "Value" "JMTV210P02A"
+			(at 101.6 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 121.158 82.55 90)
+		(property "Footprint" "Package_DFN_QFN:Diodes_UDFN2020-6_Type-F"
+			(at 101.6 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6562,8 +7114,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 119.38 82.55 0)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121830_Jiangsu-JieJie-Microelectronics-JMTV210P02A_C2938482.pdf"
+			(at 101.6 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6572,7 +7124,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 119.38 82.55 0)
+			(at 101.6 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6580,8 +7132,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2907197"
-			(at 119.38 82.55 0)
+		(property "LCSC" "C2938482"
+			(at 101.6 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6589,8 +7141,8 @@
 				(hide yes)
 			)
 		)
-		(property "Basic/Extended" "B"
-			(at 119.38 82.55 0)
+		(property "Basic/Extended" "E"
+			(at 101.6 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6598,8 +7150,8 @@
 				(hide yes)
 			)
 		)
-		(property "Price (100ks)" "0.000428571 "
-			(at 119.38 82.55 0)
+		(property "Price (100ks)" "0.0942"
+			(at 101.6 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6607,8 +7159,8 @@
 				(hide yes)
 			)
 		)
-		(property "Price (1ks)" "0.000428571 "
-			(at 119.38 82.55 0)
+		(property "Price (1ks)" "0.0942"
+			(at 101.6 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6617,15 +7169,33 @@
 			)
 		)
 		(pin "1"
-			(uuid "cf680ae0-6e65-4f6a-b8b5-2f9e422fffaf")
+			(uuid "04d3708c-fbf3-422e-828c-0728217f2c83")
 		)
 		(pin "2"
-			(uuid "70dcb590-7c71-423d-b412-e9db2e306eb4")
+			(uuid "99f53c9a-a3b8-49b2-ac47-1979cd577742")
+		)
+		(pin "3"
+			(uuid "b3ec1ac8-1e7e-4df2-9a87-4233c12ca924")
+		)
+		(pin "4"
+			(uuid "78aad397-4a71-4806-8ce3-10b30db0d8d7")
+		)
+		(pin "5"
+			(uuid "32a64cc3-346a-4b7c-98c9-8de7357135e4")
+		)
+		(pin "6"
+			(uuid "9b6e637f-fc5c-4aa2-8021-cfbfa9cf5548")
+		)
+		(pin "7"
+			(uuid "68558b9a-f548-4eec-8fb5-5ca6d2bc66f6")
+		)
+		(pin "8"
+			(uuid "d903a12f-c38d-4ef9-8242-1b7881ee9202")
 		)
 		(instances
 			(project "Zelvicka"
 				(path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
-					(reference "R39")
+					(reference "Qp6")
 					(unit 1)
 				)
 			)
@@ -6909,216 +7479,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 177.8 82.55 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d8b78584-359b-4e34-8669-bf95d8ffa2f6")
-		(property "Reference" "R36"
-			(at 175.26 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "4k7"
-			(at 175.26 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 176.022 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 177.8 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 177.8 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Basic/Extended" "B"
-			(at 177.8 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25900"
-			(at 177.8 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price (100ks)" "0.0005"
-			(at 177.8 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price (1ks)" "0.0005"
-			(at 177.8 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f92b72d9-c209-4619-a8e2-b789019b1d15")
-		)
-		(pin "2"
-			(uuid "9d7d40af-2a67-4134-b843-afa1c5f499a8")
-		)
-		(instances
-			(project "Zelvicka"
-				(path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
-					(reference "R36")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 177.8 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e22a4382-0c34-4524-8e01-a5e00e165560")
-		(property "Reference" "R10"
-			(at 175.26 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "4k7"
-			(at 175.26 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 176.022 52.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 177.8 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 177.8 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Basic/Extended" "B"
-			(at 177.8 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25900"
-			(at 177.8 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price (100ks)" "0.0005"
-			(at 177.8 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price (1ks)" "0.0005"
-			(at 177.8 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "055c169a-5366-435e-80c4-dd4e29027118")
-		)
-		(pin "2"
-			(uuid "34f7c3d1-1b26-4fe6-a97b-4c820d51627c")
-		)
-		(instances
-			(project "Zelvicka"
-				(path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
-					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 67.31 101.6 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7337,7 +7697,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 68.58 57.15 180)
+		(at 71.12 72.39 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7346,7 +7706,7 @@
 		(fields_autoplaced yes)
 		(uuid "eb654a23-375a-4fb9-83f7-032ba3980e61")
 		(property "Reference" "R53"
-			(at 71.12 55.88 0)
+			(at 73.66 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7355,7 +7715,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 71.12 58.42 0)
+			(at 73.66 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7364,7 +7724,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 70.358 57.15 90)
+			(at 72.898 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7373,7 +7733,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 68.58 57.15 0)
+			(at 71.12 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7382,7 +7742,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 68.58 57.15 0)
+			(at 71.12 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7391,7 +7751,7 @@
 			)
 		)
 		(property "Basic/Extended" "B"
-			(at 68.58 57.15 0)
+			(at 71.12 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7400,7 +7760,7 @@
 			)
 		)
 		(property "LCSC" "C25744"
-			(at 68.58 57.15 0)
+			(at 71.12 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7409,7 +7769,7 @@
 			)
 		)
 		(property "Price (100ks)" "0.0005"
-			(at 68.58 57.15 0)
+			(at 71.12 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7418,7 +7778,7 @@
 			)
 		)
 		(property "Price (1ks)" "0.0005"
-			(at 68.58 57.15 0)
+			(at 71.12 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7443,33 +7803,32 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 195.58 82.55 180)
+		(at 177.8 82.55 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f1805ca9-86ef-431b-8183-67396f8a58d4")
-		(property "Reference" "R49"
-			(at 193.04 81.28 0)
+		(uuid "f5c29431-86f3-460c-8e6f-6754eab5eecf")
+		(property "Reference" "R36"
+			(at 173.99 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "68"
-			(at 193.04 83.82 0)
+		(property "Value" "17.4k"
+			(at 172.72 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 197.358 82.55 90)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 176.022 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7478,7 +7837,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 195.58 82.55 0)
+			(at 177.8 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7487,7 +7846,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 195.58 82.55 0)
+			(at 177.8 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7495,8 +7854,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2907197"
-			(at 195.58 82.55 0)
+		(property "LCSC" "C208810"
+			(at 177.8 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7504,8 +7863,8 @@
 				(hide yes)
 			)
 		)
-		(property "Basic/Extended" "B"
-			(at 195.58 82.55 0)
+		(property "Basic/Extended" "E"
+			(at 177.8 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7513,8 +7872,8 @@
 				(hide yes)
 			)
 		)
-		(property "Price (100ks)" "0.000428571 "
-			(at 195.58 82.55 0)
+		(property "Price (100ks)" "0.0020"
+			(at 177.8 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7522,8 +7881,8 @@
 				(hide yes)
 			)
 		)
-		(property "Price (1ks)" "0.000428571 "
-			(at 195.58 82.55 0)
+		(property "Price (1ks)" "0.0020"
+			(at 177.8 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7532,15 +7891,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "a1671346-1723-44b2-9709-2219aaf35936")
+			(uuid "aed9f28a-0eea-4102-93ca-5cea6825c0e4")
 		)
 		(pin "2"
-			(uuid "96fbc7b3-172a-449e-aef0-9591093203db")
+			(uuid "fda854d2-b1bf-4a44-aceb-89685c065ce6")
 		)
 		(instances
 			(project "Zelvicka"
 				(path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
-					(reference "R49")
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -7650,111 +8009,6 @@
 			(project "ELKS"
 				(path "/065f5d09-c87d-436f-9299-69f9dd7aa26a/63c424ce-24ae-4950-94fd-89e18fc8d0e9"
 					(reference "R27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 139.7 82.55 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f82dc526-9cd3-419a-b317-4ea96343d2fb")
-		(property "Reference" "R34"
-			(at 137.16 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "4k7"
-			(at 137.16 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 137.922 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 139.7 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 139.7 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Basic/Extended" "B"
-			(at 139.7 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25900"
-			(at 139.7 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price (100ks)" "0.0005"
-			(at 139.7 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price (1ks)" "0.0005"
-			(at 139.7 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "37755fbf-7c38-49e2-b343-4bf9dd5185bc")
-		)
-		(pin "2"
-			(uuid "499100cf-75bb-4211-842f-f3350817b963")
-		)
-		(instances
-			(project "Zelvicka"
-				(path "/04d53a73-373f-40ca-9ff1-406e2f105d42/0ddaa12b-e734-4d81-a63d-f9827b2fc54a"
-					(reference "R34")
 					(unit 1)
 				)
 			)
