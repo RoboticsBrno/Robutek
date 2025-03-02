@@ -48,3 +48,4 @@ assets-large
 node_modules/
 
 build/
+hw/fp-lib-table

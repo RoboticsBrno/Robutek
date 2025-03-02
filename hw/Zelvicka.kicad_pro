@@ -469,7 +469,8 @@
       "RKL-ESP",
       "RKL-LED",
       "RLK-ElectorMechanicalComponents",
-      "RKL-SpecialModules"
+      "RKL-SpecialModules",
+      "Library"
     ],
     "pinned_symbol_libs": [
       "RKL-MotorDrivers",
