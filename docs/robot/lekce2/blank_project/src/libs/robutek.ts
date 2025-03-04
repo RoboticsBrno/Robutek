@@ -5,7 +5,7 @@ import * as gpio from "gpio";
 import * as motor from "motor"
 import * as ledc from "ledc";
 
-const robutekDiameter = 80;  // mm
+const robutekDiameter = 83;  // mm
 const wheelDiameter = 33.3;  // mm
 const wheelCircumference = Math.PI * wheelDiameter;
 
@@ -111,8 +111,19 @@ const rightMotorPins: motor.MotorPins = { motA: Pins.Motor2A, motB: Pins.Motor2B
 const leftMotorLedc: motor.LedcConfig = { timer: 0, channelA: 0, channelB: 1 };
 const rightMotorLedc: motor.LedcConfig = { timer: 0, channelA: 2, channelB: 3 };
 
-export const leftMotor = new motor.Motor({ pins: leftMotorPins, ledc: leftMotorLedc, encTicks: 410, circumference: wheelCircumference });
-export const rightMotor = new motor.Motor({ pins: rightMotorPins, ledc: rightMotorLedc, encTicks: 410, circumference: wheelCircumference });
+const reg: motor.RegParams = {
+    kp: 7000,
+    ki: 350,
+    kd: 350,
+    kv: 166,
+    ka: 11000,
+    kc: 72,
+    maxIOut: 1023,
+    unwindFactor: 1
+};
+
+export const leftMotor = new motor.Motor({ pins: leftMotorPins, ledc: leftMotorLedc, encTicks: 812, reg, circumference: wheelCircumference });
+export const rightMotor = new motor.Motor({ pins: rightMotorPins, ledc: rightMotorLedc, encTicks: 812, reg, circumference: wheelCircumference });
 
 
 adc.configure(Pins.Sens1, adc.Attenuation.Db0);
@@ -126,13 +137,22 @@ gpio.write(Pins.SensEN, 1);
 gpio.pinMode(Pins.SensSW, gpio.PinMode.OUTPUT);
 
 let speed = 0;
+let ramp = 0;
 
 export function setSpeed(value: number) {
     speed = value;
 }
 
+export function setRamp(value: number) {
+    ramp = value;
+}
+
 export function getSpeed() {
     return speed;
+}
+
+export function getRamp() {
+    return ramp;
 }
 
 /**
@@ -159,6 +179,8 @@ export async function move(curve: number, duration?: motor.MoveDuration) {
 
     leftMotor.setSpeed(lMot * speed);
     rightMotor.setSpeed(rMot * speed);
+    leftMotor.setRamp(lMot * ramp);
+    rightMotor.setRamp(rMot * ramp);
 
     const hasTime = duration && duration.hasOwnProperty("time");
     const hasDistance = duration && duration.hasOwnProperty("distance");
@@ -187,38 +209,32 @@ export async function move(curve: number, duration?: motor.MoveDuration) {
 
 /**
  * Rotate the robot
- * @param angle in degrees (optional)
+ * @param angle in degrees
  */
-export async function rotate(angle?: number) {
+export async function rotate(angle: number) {
     leftMotor.setSpeed(speed);
     rightMotor.setSpeed(speed);
+    leftMotor.setRamp(ramp);
+    rightMotor.setRamp(ramp);
 
-    if (!angle) {
-        await Promise.all([
-            leftMotor.move(),
-            rightMotor.move()
-        ]);
+    const arcLength = (Math.abs(angle) / 360) * Math.PI * robutekDiameter;
+
+    let lMot:number;
+    let rMot:number;
+
+    if (angle < 0) {
+        lMot = -arcLength;
+        rMot = arcLength;
     }
     else {
-        const arcLength = (Math.abs(angle) / 360) * Math.PI * robutekDiameter;
-
-        let lMot:number;
-        let rMot:number;
-
-        if (angle < 0) {
-            lMot = -arcLength;
-            rMot = arcLength;
-        }
-        else {
-            lMot = arcLength;
-            rMot = -arcLength;
-        }
-
-        await Promise.all([
-            leftMotor.move({ distance: lMot }),
-            rightMotor.move({ distance: rMot })
-        ]);
+        lMot = arcLength;
+        rMot = -arcLength;
     }
+
+    await Promise.all([
+        leftMotor.move({ distance: lMot }),
+        rightMotor.move({ distance: rMot })
+    ]);
 }
 
 /**

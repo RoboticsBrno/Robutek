@@ -1,0 +1,9 @@
+mkdocs==1.6.0
+mkdocs-material==9.5.24
+mkdocs-macros-plugin==1.0.5
+mkdocs-open-in-new-tab==1.0.3
+mkdocs-glightbox==0.4.0
+mkdocs-typedoc==1.0.4
+mkdocs-resize-images==1.0.1
+mkdocs-zip-folders==1.0.3
+mkdocs-auto-refresh-build-pages==1.0.2

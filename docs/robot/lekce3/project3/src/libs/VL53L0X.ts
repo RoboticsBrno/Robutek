@@ -7,7 +7,7 @@ const C = {
     REG_RESULT_RANGE_STATUS: 0x0014
 };
 
-type Measurement = {
+export type Measurement = {
     distance: number,
     signalRate: number,
     ambientRate: number,
