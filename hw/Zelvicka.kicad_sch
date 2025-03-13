@@ -999,12 +999,6 @@
 		(uuid "074cb98c-aae0-4c99-a4bb-a39db9ae47ba")
 	)
 	(junction
-		(at 101.6 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0eec4430-f152-4019-ac0e-8704f18aa73d")
-	)
-	(junction
 		(at 198.12 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1222,7 +1216,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 53.34) (xy 101.6 53.34)
+			(xy 76.2 53.34) (xy 104.14 53.34)
 		)
 		(stroke
 			(width 0)
@@ -1762,16 +1756,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 55.88) (xy 101.6 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81952526-fc35-4167-a81f-f210d4fe5f28")
-	)
-	(wire
-		(pts
 			(xy 81.28 175.26) (xy 81.28 177.8)
 		)
 		(stroke
@@ -1799,16 +1783,6 @@
 			(type default)
 		)
 		(uuid "8adb76ae-1b60-47c9-a844-1652be52dc12")
-	)
-	(wire
-		(pts
-			(xy 101.6 53.34) (xy 104.14 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b38fd87-766a-49c8-8ade-01f4a4a0867c")
 	)
 	(wire
 		(pts
@@ -4031,7 +4005,7 @@
 			(uuid "d3cede4b-2bed-4277-b207-18ae0d291a08")
 		)
 		(pin "IR-FL" input
-			(at 203.2 83.82 180)
+			(at 203.2 81.28 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4071,7 +4045,7 @@
 			(uuid "c11eb58c-52ac-483a-a5bb-3db8ee880a3e")
 		)
 		(pin "IR-FR" input
-			(at 203.2 81.28 180)
+			(at 203.2 83.82 180)
 			(effects
 				(font
 					(size 1.27 1.27)
