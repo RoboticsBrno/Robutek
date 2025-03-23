@@ -5605,7 +5605,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "68"
+		(property "Value" "90"
 			(at 160.02 83.82 0)
 			(effects
 				(font
@@ -5641,7 +5641,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2907197"
+		(property "LCSC" "C320576"
 			(at 157.48 82.55 0)
 			(effects
 				(font
@@ -6061,7 +6061,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "68"
+		(property "Value" "90"
 			(at 236.22 83.82 0)
 			(effects
 				(font
@@ -6097,7 +6097,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2907197"
+		(property "LCSC" "C320576"
 			(at 233.68 82.55 0)
 			(effects
 				(font
