@@ -3355,6 +3355,15 @@
 				(hide yes)
 			)
 		)
+		(property "Basic/Extended" "E"
+			(at 95.25 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a6b2e010-ca20-47da-aa25-887cf43bae7a")
 		)
@@ -4141,6 +4150,15 @@
 			)
 		)
 		(property "LCSC" "C84817"
+			(at 96.52 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic/Extended" "E"
 			(at 96.52 147.32 0)
 			(effects
 				(font
@@ -5021,7 +5039,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5120765"
+		(property "LCSC" "C6186"
 			(at 114.3 30.48 0)
 			(effects
 				(font
@@ -5049,6 +5067,15 @@
 			)
 		)
 		(property "JLCPCB_CORRECTION" "0;0;-90"
+			(at 114.3 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic/Extended" "B"
 			(at 114.3 30.48 0)
 			(effects
 				(font
@@ -5130,7 +5157,7 @@
 				(hide yes)
 			)
 		)
-		(property "Basic/Extended" ""
+		(property "Basic/Extended" "B"
 			(at 58.42 151.13 0)
 			(effects
 				(font
@@ -5527,25 +5554,24 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a0bb4193-ac21-4ce2-9309-44a80c22fb79")
 		(property "Reference" "D9"
-			(at 115.8875 138.43 0)
+			(at 115.57 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "D_Schottky"
-			(at 115.8875 140.97 0)
+		(property "Value" "D_Schottky_mini"
+			(at 118.745 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-523"
 			(at 115.57 144.78 0)
 			(effects
 				(font
@@ -5554,7 +5580,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2210091830_Slkor-SLKORMICRO-Elec--1N5819WT_C5185918.pdf"
 			(at 115.57 144.78 0)
 			(effects
 				(font
@@ -5564,6 +5590,24 @@
 			)
 		)
 		(property "Description" "Schottky diode"
+			(at 115.57 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5185918"
+			(at 115.57 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic/Extended" "E"
 			(at 115.57 144.78 0)
 			(effects
 				(font
@@ -5994,7 +6038,7 @@
 				(hide yes)
 			)
 		)
-		(property "Basic/Extended" ""
+		(property "Basic/Extended" "B"
 			(at 139.7 151.13 0)
 			(effects
 				(font
@@ -7020,7 +7064,7 @@
 				(hide yes)
 			)
 		)
-		(property "Basic/Extended" ""
+		(property "Basic/Extended" "B"
 			(at 106.68 156.21 0)
 			(effects
 				(font
@@ -7233,7 +7277,7 @@
 				(hide yes)
 			)
 		)
-		(property "Basic/Extended" ""
+		(property "Basic/Extended" "B"
 			(at 127 151.13 0)
 			(effects
 				(font

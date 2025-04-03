@@ -8075,6 +8075,15 @@
 				(hide yes)
 			)
 		)
+		(property "Basic/Extended" "E"
+			(at 71.12 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "5299973a-878b-41b9-a314-12f6b187dfa5")
 		)
