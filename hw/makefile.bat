@@ -1,0 +1,1 @@
+kikit fab jlcpcb --assembly --no-drc --schematic Zelvicka.kicad_sch Zelvicka.kicad_pcb jlcdata
