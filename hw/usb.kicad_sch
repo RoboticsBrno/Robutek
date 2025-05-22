@@ -2084,7 +2084,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Power_Protection:TPD4E02B04DQA"
+		(symbol "RKL-Uncategorized:TPD4E02B04DQA"
 			(pin_names
 				(hide yes)
 			)
@@ -2092,43 +2092,22 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 7.62 3.81 0)
+				(at 10.16 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "TPD4E02B04DQA"
-				(at 7.62 1.905 0)
+			(property "Value" ""
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" "Package_SON:USON-10_2.5x1.0mm_P0.5mm"
-				(at 7.62 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tpd4e02b04.pdf"
-				(at 3.175 8.255 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "4-Channel ESD Protection Diode for USB Type-C and HDMI 2.0, USON-10"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -2137,7 +2116,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "ESD protection USB HDMI"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -2146,7 +2125,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "USON*2.5x1.0mm*P0.5mm*"
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -2157,7 +2136,7 @@
 			)
 			(symbol "TPD4E02B04DQA_0_0"
 				(pin passive line
-					(at 0 -5.08 90)
+					(at 0 -10.16 90)
 					(length 2.54)
 					(name "G"
 						(effects
@@ -2177,8 +2156,8 @@
 			)
 			(symbol "TPD4E02B04DQA_0_1"
 				(rectangle
-					(start -6.35 5.08)
-					(end 6.35 -2.54)
+					(start -6.35 0)
+					(end 6.35 -7.62)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -2189,7 +2168,7 @@
 				)
 				(polyline
 					(pts
-						(xy -5.08 5.08) (xy -5.08 -1.27) (xy 5.08 -1.27) (xy 5.08 5.08)
+						(xy -5.08 0) (xy -5.08 -6.35) (xy 5.08 -6.35) (xy 5.08 0)
 					)
 					(stroke
 						(width 0)
@@ -2201,7 +2180,7 @@
 				)
 				(polyline
 					(pts
-						(xy -4.445 0) (xy -5.715 0) (xy -5.08 1.27) (xy -4.445 0)
+						(xy -4.445 -5.08) (xy -5.715 -5.08) (xy -5.08 -3.81) (xy -4.445 -5.08)
 					)
 					(stroke
 						(width 0)
@@ -2213,7 +2192,7 @@
 				)
 				(polyline
 					(pts
-						(xy -3.175 1.524) (xy -2.921 1.27) (xy -2.159 1.27) (xy -1.905 1.016)
+						(xy -3.175 -3.556) (xy -2.921 -3.81) (xy -2.159 -3.81) (xy -1.905 -4.064)
 					)
 					(stroke
 						(width 0)
@@ -2225,7 +2204,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.54 5.08) (xy -2.54 -1.27)
+						(xy -2.54 0) (xy -2.54 -6.35)
 					)
 					(stroke
 						(width 0)
@@ -2237,7 +2216,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.54 1.27) (xy -1.905 0) (xy -3.175 0) (xy -2.54 1.27)
+						(xy -2.54 -3.81) (xy -1.905 -5.08) (xy -3.175 -5.08) (xy -2.54 -3.81)
 					)
 					(stroke
 						(width 0)
@@ -2249,7 +2228,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -1.27) (xy 0 -2.54)
+						(xy 0 -6.35) (xy 0 -7.62)
 					)
 					(stroke
 						(width 0)
@@ -2260,7 +2239,7 @@
 					)
 				)
 				(circle
-					(center 0 -1.27)
+					(center 0 -6.35)
 					(radius 0.254)
 					(stroke
 						(width 0)
@@ -2272,7 +2251,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 5.08) (xy 2.54 -1.27)
+						(xy 2.54 0) (xy 2.54 -6.35)
 					)
 					(stroke
 						(width 0)
@@ -2284,7 +2263,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 1.27) (xy 1.905 0) (xy 3.175 0) (xy 2.54 1.27)
+						(xy 2.54 -3.81) (xy 1.905 -5.08) (xy 3.175 -5.08) (xy 2.54 -3.81)
 					)
 					(stroke
 						(width 0)
@@ -2295,7 +2274,7 @@
 					)
 				)
 				(circle
-					(center 2.54 -1.27)
+					(center 2.54 -6.35)
 					(radius 0.254)
 					(stroke
 						(width 0)
@@ -2307,7 +2286,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.08 1.27) (xy 4.445 0) (xy 5.715 0) (xy 5.08 1.27)
+						(xy 5.08 -3.81) (xy 4.445 -5.08) (xy 5.715 -5.08) (xy 5.08 -3.81)
 					)
 					(stroke
 						(width 0)
@@ -2321,7 +2300,7 @@
 			(symbol "TPD4E02B04DQA_1_1"
 				(polyline
 					(pts
-						(xy -5.715 1.524) (xy -5.461 1.27) (xy -4.699 1.27) (xy -4.445 1.016)
+						(xy -5.715 -3.556) (xy -5.461 -3.81) (xy -4.699 -3.81) (xy -4.445 -4.064)
 					)
 					(stroke
 						(width 0)
@@ -2333,7 +2312,7 @@
 				)
 				(polyline
 					(pts
-						(xy -5.08 1.27) (xy -5.715 2.54) (xy -4.445 2.54) (xy -5.08 1.27)
+						(xy -5.08 -3.81) (xy -5.715 -2.54) (xy -4.445 -2.54) (xy -5.08 -3.81)
 					)
 					(stroke
 						(width 0)
@@ -2345,7 +2324,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.54 1.27) (xy -3.175 2.54) (xy -1.905 2.54) (xy -2.54 1.27)
+						(xy -2.54 -3.81) (xy -3.175 -2.54) (xy -1.905 -2.54) (xy -2.54 -3.81)
 					)
 					(stroke
 						(width 0)
@@ -2356,7 +2335,7 @@
 					)
 				)
 				(circle
-					(center -2.54 -1.27)
+					(center -2.54 -6.35)
 					(radius 0.254)
 					(stroke
 						(width 0)
@@ -2368,7 +2347,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.905 1.524) (xy 2.159 1.27) (xy 2.921 1.27) (xy 3.175 1.016)
+						(xy 1.905 -3.556) (xy 2.159 -3.81) (xy 2.921 -3.81) (xy 3.175 -4.064)
 					)
 					(stroke
 						(width 0)
@@ -2380,7 +2359,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 1.27) (xy 1.905 2.54) (xy 3.175 2.54) (xy 2.54 1.27)
+						(xy 2.54 -3.81) (xy 1.905 -2.54) (xy 3.175 -2.54) (xy 2.54 -3.81)
 					)
 					(stroke
 						(width 0)
@@ -2392,7 +2371,7 @@
 				)
 				(polyline
 					(pts
-						(xy 4.445 1.524) (xy 4.699 1.27) (xy 5.461 1.27) (xy 5.715 1.016)
+						(xy 4.445 -3.556) (xy 4.699 -3.81) (xy 5.461 -3.81) (xy 5.715 -4.064)
 					)
 					(stroke
 						(width 0)
@@ -2404,7 +2383,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.08 1.27) (xy 4.445 2.54) (xy 5.715 2.54) (xy 5.08 1.27)
+						(xy 5.08 -3.81) (xy 4.445 -2.54) (xy 5.715 -2.54) (xy 5.08 -3.81)
 					)
 					(stroke
 						(width 0)
@@ -2415,7 +2394,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 7.62 270)
+					(at -5.08 2.54 270)
 					(length 2.54)
 					(name "IO1"
 						(effects
@@ -2432,8 +2411,27 @@
 						)
 					)
 				)
+				(pin passive line
+					(at -5.08 2.54 270)
+					(length 2.54)
+					(hide yes)
+					(name "IO1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin no_connect line
-					(at -5.08 -2.54 90)
+					(at -5.08 -7.62 90)
 					(length 2.54)
 					(hide yes)
 					(name "NC"
@@ -2452,7 +2450,7 @@
 					)
 				)
 				(pin passive line
-					(at -2.54 7.62 270)
+					(at -2.54 2.54 270)
 					(length 2.54)
 					(name "IO2"
 						(effects
@@ -2469,8 +2467,27 @@
 						)
 					)
 				)
+				(pin passive line
+					(at -2.54 2.54 270)
+					(length 2.54)
+					(hide yes)
+					(name "IO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin no_connect line
-					(at -2.54 -2.54 90)
+					(at -2.54 -7.62 90)
 					(length 2.54)
 					(hide yes)
 					(name "NC"
@@ -2489,7 +2506,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -5.08 90)
+					(at 0 -10.16 90)
 					(length 2.54)
 					(hide yes)
 					(name "G"
@@ -2508,7 +2525,7 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 7.62 270)
+					(at 2.54 2.54 270)
 					(length 2.54)
 					(name "IO3"
 						(effects
@@ -2525,8 +2542,27 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 2.54 2.54 270)
+					(length 2.54)
+					(hide yes)
+					(name "IO3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin no_connect line
-					(at 2.54 -2.54 90)
+					(at 2.54 -7.62 90)
 					(length 2.54)
 					(hide yes)
 					(name "NC"
@@ -2545,7 +2581,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 7.62 270)
+					(at 5.08 2.54 270)
 					(length 2.54)
 					(name "IO4"
 						(effects
@@ -2562,8 +2598,582 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 5.08 2.54 270)
+					(length 2.54)
+					(hide yes)
+					(name "IO4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin no_connect line
-					(at 5.08 -2.54 90)
+					(at 5.08 -7.62 90)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "TPD4E02B04DQA_1"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 10.16 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TPD4E02B04DQA_1_0_0"
+				(pin passive line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TPD4E02B04DQA_1_0_1"
+				(rectangle
+					(start -6.35 0)
+					(end 6.35 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -5.08 -6.35) (xy 5.08 -6.35) (xy 5.08 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.445 -5.08) (xy -5.715 -5.08) (xy -5.08 -3.81) (xy -4.445 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.175 -3.556) (xy -2.921 -3.81) (xy -2.159 -3.81) (xy -1.905 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.54 -6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -3.81) (xy -1.905 -5.08) (xy -3.175 -5.08) (xy -2.54 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -6.35) (xy 0 -7.62)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -6.35)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 2.54 -6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -3.81) (xy 1.905 -5.08) (xy 3.175 -5.08) (xy 2.54 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 -6.35)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -3.81) (xy 4.445 -5.08) (xy 5.715 -5.08) (xy 5.08 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TPD4E02B04DQA_1_1_1"
+				(polyline
+					(pts
+						(xy -5.715 -3.556) (xy -5.461 -3.81) (xy -4.699 -3.81) (xy -4.445 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -3.81) (xy -5.715 -2.54) (xy -4.445 -2.54) (xy -5.08 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -3.81) (xy -3.175 -2.54) (xy -1.905 -2.54) (xy -2.54 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.54 -6.35)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 -3.556) (xy 2.159 -3.81) (xy 2.921 -3.81) (xy 3.175 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -3.81) (xy 1.905 -2.54) (xy 3.175 -2.54) (xy 2.54 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.445 -3.556) (xy 4.699 -3.81) (xy 5.461 -3.81) (xy 5.715 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -3.81) (xy 4.445 -2.54) (xy 5.715 -2.54) (xy 5.08 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 270)
+					(length 2.54)
+					(name "IO1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 270)
+					(length 2.54)
+					(hide yes)
+					(name "IO1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -5.08 -7.62 90)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 2.54 270)
+					(length 2.54)
+					(name "IO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 2.54 270)
+					(length 2.54)
+					(hide yes)
+					(name "IO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -2.54 -7.62 90)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(hide yes)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 2.54 270)
+					(length 2.54)
+					(name "IO3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 2.54 270)
+					(length 2.54)
+					(hide yes)
+					(name "IO3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 2.54 -7.62 90)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 270)
+					(length 2.54)
+					(name "IO4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 270)
+					(length 2.54)
+					(hide yes)
+					(name "IO4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 -7.62 90)
 					(length 2.54)
 					(hide yes)
 					(name "NC"
@@ -5173,8 +5783,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Power_Protection:TPD4E02B04DQA")
-		(at 73.66 68.58 0)
+		(lib_id "RKL-Uncategorized:TPD4E02B04DQA")
+		(at 73.66 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5182,7 +5792,7 @@
 		(dnp no)
 		(uuid "6608f78f-b888-4a9c-aaae-19ffe29b27e3")
 		(property "Reference" "U3"
-			(at 77.47 73.66 0)
+			(at 76.835 73.025 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5191,7 +5801,7 @@
 			)
 		)
 		(property "Value" "TPD4E02B04DQA"
-			(at 82.55 78.74 90)
+			(at 82.55 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5200,17 +5810,16 @@
 			)
 		)
 		(property "Footprint" "Package_SON:USON-10_2.5x1.0mm_P0.5mm"
-			(at 81.28 68.58 0)
+			(at 73.66 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tpd4e02b04.pdf"
-			(at 76.835 60.325 0)
+			(at 73.66 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5219,7 +5828,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 73.66 68.58 0)
+			(at 73.66 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5228,7 +5837,7 @@
 			)
 		)
 		(property "LCSC" "C106794"
-			(at 73.66 68.58 90)
+			(at 73.66 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5237,7 +5846,7 @@
 			)
 		)
 		(property "Basic/Extended" "E"
-			(at 73.66 68.58 0)
+			(at 73.66 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5246,7 +5855,7 @@
 			)
 		)
 		(property "JLCPCB_CORRECTION" "0;0;-90"
-			(at 73.66 68.58 0)
+			(at 73.66 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5255,7 +5864,7 @@
 			)
 		)
 		(property "Price (100ks)" "0.0546"
-			(at 73.66 68.58 0)
+			(at 73.66 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5264,7 +5873,7 @@
 			)
 		)
 		(property "Price (1ks)" "0.0681"
-			(at 73.66 68.58 0)
+			(at 73.66 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5302,6 +5911,18 @@
 		(pin "9"
 			(uuid "66fbd061-a435-43bd-aebe-46dbdcadc966")
 		)
+		(pin "9"
+			(uuid "fc67e42b-bb03-49f3-9603-0665e33a86e7")
+		)
+		(pin "7"
+			(uuid "25cb7583-b8c5-4248-a144-da93b4c2db59")
+		)
+		(pin "10"
+			(uuid "1cc592f5-989a-42a3-9eea-83bc19b2b554")
+		)
+		(pin "6"
+			(uuid "2cc818f0-dff9-4fd9-aedf-08820087b000")
+		)
 		(instances
 			(project "Zelvicka"
 				(path "/04d53a73-373f-40ca-9ff1-406e2f105d42/cf5a8cac-e720-4f6c-b6d8-8f40c3604d15"
@@ -5318,8 +5939,9 @@
 		)
 	)
 	(symbol
-		(lib_id "Power_Protection:TPD4E02B04DQA")
-		(at 60.96 149.86 0)
+		(lib_name "TPD4E02B04DQA_1")
+		(lib_id "RKL-Uncategorized:TPD4E02B04DQA")
+		(at 60.96 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5327,7 +5949,7 @@
 		(dnp no)
 		(uuid "9852aabd-6d7a-4e10-af54-a60f9a0313da")
 		(property "Reference" "U8"
-			(at 68.58 149.86 0)
+			(at 68.58 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5336,7 +5958,7 @@
 			)
 		)
 		(property "Value" "TPD4E02B04DQA"
-			(at 68.58 146.05 0)
+			(at 68.58 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5345,17 +5967,16 @@
 			)
 		)
 		(property "Footprint" "Package_SON:USON-10_2.5x1.0mm_P0.5mm"
-			(at 68.58 149.86 0)
+			(at 60.96 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tpd4e02b04.pdf"
-			(at 64.135 141.605 0)
+			(at 60.96 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5364,7 +5985,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 60.96 149.86 0)
+			(at 60.96 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5373,7 +5994,7 @@
 			)
 		)
 		(property "LCSC" "C106794"
-			(at 60.96 149.86 90)
+			(at 60.96 144.78 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5382,7 +6003,7 @@
 			)
 		)
 		(property "Basic/Extended" "E"
-			(at 60.96 149.86 0)
+			(at 60.96 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5391,7 +6012,7 @@
 			)
 		)
 		(property "JLCPCB_CORRECTION" "0;0;-90"
-			(at 60.96 149.86 0)
+			(at 60.96 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5400,7 +6021,7 @@
 			)
 		)
 		(property "Price (100ks)" "0.0546"
-			(at 60.96 149.86 0)
+			(at 60.96 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5409,7 +6030,7 @@
 			)
 		)
 		(property "Price (1ks)" "0.0681"
-			(at 60.96 149.86 0)
+			(at 60.96 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5446,6 +6067,18 @@
 		)
 		(pin "9"
 			(uuid "1e82bdad-bd18-48bf-93b6-de396ef28d91")
+		)
+		(pin "7"
+			(uuid "cc77ad4f-dcc1-473e-90da-8f44f85aea3f")
+		)
+		(pin "6"
+			(uuid "eae86213-ca52-4211-97da-24aeb12594c5")
+		)
+		(pin "10"
+			(uuid "a35893f6-b5d8-4878-b718-c2be4154130b")
+		)
+		(pin "9"
+			(uuid "2a561b46-ff9c-48f0-82de-f1f00bca8b91")
 		)
 		(instances
 			(project "Zelvicka"
