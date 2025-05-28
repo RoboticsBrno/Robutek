@@ -4185,7 +4185,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MH253ESO"
+		(property "Value" "MGH201C1T3"
 			(at 256.54 118.11 0)
 			(effects
 				(font
@@ -4474,7 +4474,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MH253ESO"
+		(property "Value" "MGH201C1T3"
 			(at 256.54 64.77 0)
 			(effects
 				(font
@@ -5126,7 +5126,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MH253ESO"
+		(property "Value" "MGH201C1T3"
 			(at 256.54 39.37 0)
 			(effects
 				(font
@@ -6913,7 +6913,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MH253ESO"
+		(property "Value" "MGH201C1T3"
 			(at 256.54 92.71 0)
 			(effects
 				(font

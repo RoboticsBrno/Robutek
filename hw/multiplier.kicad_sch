@@ -3367,6 +3367,14 @@
 				(hide yes)
 			)
 		)
+		(property "info" "420mA, 970mΩ"
+			(at 95.25 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "a6b2e010-ca20-47da-aa25-887cf43bae7a")
 		)
@@ -4774,7 +4782,7 @@
 				)
 			)
 		)
-		(property "Value" "1.2u"
+		(property "Value" "1.2uH"
 			(at 82.55 68.6054 90)
 			(effects
 				(font
@@ -4843,6 +4851,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "info" "12A, 12.1mΩ"
+			(at 82.55 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -5176,6 +5192,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "info" "25V, X5R"
+			(at 58.42 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -6057,6 +6081,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "info" "25V, X5R"
+			(at 139.7 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -7262,7 +7294,7 @@
 				(hide yes)
 			)
 		)
-		(property "Note" ""
+		(property "Note" "10V, X5R"
 			(at 127 151.13 0)
 			(effects
 				(font
@@ -7287,6 +7319,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "info" "10V, X5R"
+			(at 127 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
