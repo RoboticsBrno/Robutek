@@ -7,3 +7,4 @@ mkdocs-typedoc==1.0.4
 mkdocs-resize-images==1.0.1
 mkdocs-zip-folders==1.0.3
 mkdocs-auto-refresh-build-pages==1.0.2
+mike==2.1.3

@@ -1,8 +1,8 @@
-docs_dir: docs
-site_name: Robůtek
+docs_dir: docs/v2
+site_name: Robůtek V2
 site_url: https://robutek.robotikabrno.cz
 site_description: >-
-  Návod na programování Robůtek
+  Návod na programování Robůtek V2
 
 repo_name: RoboticsBrno/Robutek
 repo_url: https://github.com/RoboticsBrno/Robutek

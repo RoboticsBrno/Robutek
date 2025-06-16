@@ -12,16 +12,35 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: 3.x
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         with:
           key: mkdocs-material-${{ env.cache_id }}
           path: .cache
           restore-keys: |
             mkdocs-material-
       - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force
+      - name: Deploy V1
+        run: |
+          echo "Deploying v1..."
+          mike build v1 --config-file mkdocs.v1.yml
+
+      - name: Deploy V2
+        run: |
+          echo "Deploying v2..."
+          mike build v2 --config-file mkdocs.v2.yml
+      
+      - name: Set default version
+        run: |
+          echo "Setting default version as v2..."
+          mike set default v2 --config-file mkdocs.v2.yml
+
+      - name: Push gh-pages to origin
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git push origin gh-pages
