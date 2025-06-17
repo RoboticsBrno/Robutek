@@ -22,6 +22,7 @@ theme:
     - navigation.top
     - content.code.copy
     - content.code.annotate
+    - versioning
   custom_dir: overrides
 
   icon:
@@ -69,6 +70,7 @@ markdown_extensions:
 plugins:
   - search
   - open-in-new-tab
+  - mike
   - glightbox:
       auto_caption: true
   - resize-images:
@@ -113,6 +115,8 @@ extra:
       link: https://www.youtube.com/@robotikabrno-robotarnaasps2392
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/robotarna.helceletka
+  version:
+    provider: mike
 #   analytics:
 #     provider: google
 #     property: ASD
@@ -149,9 +153,10 @@ nav:
       - robot/project_sumo/index.md
       - robot/project_maze/index.md
   - Příslušenství robota:
-      - robotAccessories/ledStrip.md
+      - robotAccessories/led_strip.md
       - robotAccessories/button.md
       - robotAccessories/tof.md
+      - robotAccessories/rgb_sens.md
   - Dokumentace:
       - robot/docs/index.md
       - robot/docs/wifi.md
