@@ -1,8 +1,55 @@
-# Robůtek
+# 🖍️ Robůtek
 
-![top](https://roboticsbrno.github.io/Robutek/top.png)
-![bottom](https://roboticsbrno.github.io/Robutek/bottom.png)
-![gif](https://roboticsbrno.github.io/Robutek/rotating.gif)
+Robůtek je robotická platforma založená na čipu ESP32-S3. Je velice rozšitiřelný, ale ze základu umí jezdit, kreslit fixou, jezdit po čáře, pohybovat se bludištěm. Programování je přes [Jaculus](https://jaculus.org).
+
+---
+
+## 🔧 Vlastnosti
+
+- Diferenciální pohon
+- Enkodéry na kolech pro přesný pohyb (V2 - lepší přesnost)
+- Držák na **fixu** pro kreslení na papír
+- **IR senzory** pro sledování čáry
+- **RGB senzor** pro detekování barev na podlaze (V2)
+- **Rozšiřující paluba** s:
+  - Servem pro zvedání fixy
+  - Adresovatelný RGB pásek
+  - Laserový senzorem vzdálenosti (VL53L0X)
+  - Přídavný RGB senzor (V2)
+
+---
+
+## 📅 Historie
+
+| Rok | Verze | Popis |
+|-----|-------|-------|
+| 2024 | v1    | První plnohodnotný robůtek |
+| 2025 | v2    | Opravené chyby na desce, rgb senzor, větší přesnost motorů |
+
+---
+
+##  🙌 Jak přispívat
+
+### HW
+- HW složka nechaná tak jak je beze změn
+
+### Návody
+- Rozděleno do dvou složek `docs/v1` a `docs/v2` pro různé verze Robůtka, což znamená dva soubory konfigurace mkdocs - `mkdocs.v1.yml` a `mkdocs.v2.yml`
+- Do složek projektů není potřeba vkládat `@types` a `src/libs`, protože se kopírují automaticky z `robutekLibrary`
+  - Spuštěním `update-projects.sh` se soubory automaticky nakopírují
+
+### Robutek library
+- Knihovna přesunuta do `robutekLibrary`
+- Funguje jako referenční projekt pro ostatní projekty v dokumentaci (kopírují se `@types` a `src/libs`)
+
+- TODO? - rozdělení do `robutek-v1.ts` a `robutek-v2.ts`?
+
+### Další verze dokumentace
+- Zkopírovat poslední verzi dokumentace jako reference
+- Zkopírovat `mkdocs-vx.yml` a upravit
+- Zkopírovat `build_vx.sh` a upravit
+- Upravit `.github/workflows/deploy-ghpages.yml` a `.github/workflows/test-ghpages.yml`
+
 
 
 <!-- ## elektro
