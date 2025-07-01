@@ -1,0 +1,167 @@
+docs_dir: docs/v1
+site_name: Robůtek V1
+site_url: https://robutek.robotikabrno.cz
+site_description: >-
+  Návod na programování Robůtek V1
+
+repo_name: RoboticsBrno/Robutek
+repo_url: https://github.com/RoboticsBrno/Robutek
+
+dev_addr: "127.0.0.1:8001"
+copyright: Copyright © RoboticsBrno
+use_directory_urls: True
+
+theme:
+  name: material
+  language: cs
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+    - content.code.copy
+    - content.code.annotate
+    - versioning
+  custom_dir: overrides
+
+  icon:
+    repo: fontawesome/brands/github
+
+  palette:
+    - scheme: slate
+      primary: lime
+      accent: lime
+      toggle:
+        icon: material/weather-sunny
+        name: Přepnout na světý režim
+    - scheme: default
+      primary: lime
+      accent: lime
+      toggle:
+        icon: material/weather-night
+        name: Přepnout na tmavý režim
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.keys
+  - admonition
+  - pymdownx.details
+  - pymdownx.keys
+  - attr_list
+  - pymdownx.tabbed
+  - meta
+  - md_in_html
+  - footnotes
+  - pymdownx.snippets:
+      url_download: True
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: "¤"
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true
+
+plugins:
+  - search
+  - open-in-new-tab
+  - mike
+  - glightbox:
+      auto_caption: true
+  - resize-images:
+      source-dir: assets-large
+      target-dir: assets
+      enable_cache: True
+      size: [1000, 800]
+      extensions: [".jpg", ".jpeg", ".png", ".gif"]
+  - typedoc:
+      source: "./docs/robot/lekce1/example1/@types/*.d.ts"
+      output_dir: "jaculusApi"
+      tsconfig: "./docs/robot/lekce1/example1/tsconfig.json"
+      options: "typedoc.json"
+      name: "Jaculus API documentation"
+
+  - zip_folders:
+      folders:
+        - robot/lekce1/example1
+        - robot/lekce1/example-gridui
+        - robot/lekce2/blank_project
+        - robot/lekce3/project3
+        - robot/lekce4/project4
+        - robot/lekce6/project6
+        - robot/lekce8/project8
+        - robutekLibrary/Robutek-library
+      debug: true
+
+  - auto-refresh-build-pages:
+      update_message: "Návod byl aktualizován, chcete načíst novou verzi?"
+      yes_button_text: "Ano"
+      no_button_text: "Ne"
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/RoboticsBrno
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/RobotikaBrno
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/robotarna.helceletka
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@robotikabrno-robotarnaasps2392
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/robotarna.helceletka
+  version:
+    provider: mike
+
+#   analytics:
+#     provider: google
+#     property: ASD
+
+extra_css:
+  - assets/style.css
+
+extra_javascript:
+   - js/mathjax.js
+   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Domů:
+      - index.md
+  - Složení robota:
+      - robotAssembly/index.md
+      - robotAssembly/stage1.md
+      - robotAssembly/stage2.md
+  - Programování robota:
+      - robot/index.md
+      - robot/faq/index.md
+      - robot/lekce1/index.md
+      - robot/lekce1/gridui.md
+      - robot/lekce2/index.md
+      - robot/lekce3/index.md
+      - robot/lekce4/motors.md
+      - robot/lekce5/pen.md
+      - robot/lekce6/for.md
+      - robot/lekce6/turtle.md
+      - robot/lekce7/turtle.md
+      - robot/lekceCara/index.md
+      - robot/lekce8/index.md
+      - robot/lekce9/index.md
+      - robot/project_sumo/index.md
+      - robot/project_maze/index.md
+  - Příslušenství robota:
+      - robotAccessories/ledStrip.md
+      - robotAccessories/button.md
+      - robotAccessories/tof.md
+  - Dokumentace:
+      - robot/docs/index.md
+      - robot/docs/wifi.md
+      - robot/docs/socket.md
+      - robot/docs/motors.md
+      - robot/docs/sens.md
+      - robot/docs/sim.md
+      - robot/docs/vl53.md

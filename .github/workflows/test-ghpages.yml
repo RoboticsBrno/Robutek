@@ -11,16 +11,42 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: 3.x
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         with:
           key: mkdocs-material-${{ env.cache_id }}
           path: .cache
           restore-keys: |
             mkdocs-material-
+
       - run: pip install -r requirements.txt
-      - run: mkdocs build
+
+      
+      - name: Configure git identity
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      
+      - name: Update project files
+        run:
+          bash update-projects.sh
+      # Deploying means pushing to local 'gh-pages' branch
+      # and not to the remote 'gh-pages' branch.
+      - name: Deploy V1
+        run: |
+          echo "Deploying v1..."
+          mike deploy --config-file mkdocs.v1.yml v1 --ignore-remote-status
+
+      - name: Deploy V2
+        run: |
+          echo "Deploying v2..."
+          mike deploy --config-file mkdocs.v2.yml v2 latest --ignore-remote-status
+      
+      - name: Set default version
+        run: |
+          echo "Setting default version as v2..."
+          mike set-default --config-file mkdocs.v2.yml v2 --ignore-remote-status
