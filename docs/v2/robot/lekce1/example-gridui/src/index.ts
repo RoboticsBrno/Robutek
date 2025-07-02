@@ -1,7 +1,8 @@
-import * as robutek from "./libs/robutek.js"
 import * as wifi from "wifi";
 import { SmartLed, LED_WS2812 } from "smartled"
 import Layout from "./layout.js"
+import { createRobutek } from "./libs/robutek.ts"
+const robutek = createRobutek("V2");
 
 
 // Změň mě!
