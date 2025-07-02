@@ -30,14 +30,14 @@ theme:
 
   palette:
     - scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: lime
+      accent: lime
       toggle:
         icon: material/weather-sunny
         name: Přepnout na světý režim
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: lime
+      accent: lime
       toggle:
         icon: material/weather-night
         name: Přepnout na tmavý režim
