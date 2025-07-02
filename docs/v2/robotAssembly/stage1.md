@@ -4,7 +4,7 @@ V této kapitole si postavíme samotného Robůtka.
 ## Seznam potřebných součástek
 
  - 4 šroubky M3x30
- - 4 matice M3
+ - 4 matky M3
  - 2 motory s kolem
  - 2 magnetky (enkodéry)
  - Vložka pod motor
@@ -80,7 +80,7 @@ V této kapitole si postavíme samotného Robůtka.
 
 11. Vložte baterii.
 
-    !!! danger "Dejte si pozor na orientaci baterie."
+    !!! danger "Dejte si pozor na polaritu baterie."
     ![](assets/IMG-step11a.jpeg)
     ![](assets/IMG-step11b.jpeg)
 
