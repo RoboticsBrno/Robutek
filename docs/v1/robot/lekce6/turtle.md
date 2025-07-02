@@ -24,8 +24,9 @@ Museli jsme však několikrát pod sebou kopírovat kód na pohyb dopředu a oto
 
 ??? note "Řešení"
     ```ts
-	import * as robutek from "./libs/robutek.js"; // ovládání motorů
-    
+	import { createRobutek } from "./libs/robutek.js"
+    const robutek = createRobutek("V1");
+
     let pen = new Servo(robutek.Pins.Servo2, 1, 4);
     pen.write(robutek.PenPos.Down); // dáme dolů tužku
 
@@ -67,7 +68,8 @@ K tomu může pomoct například stavová proměnná, která nám řekne, jestli
 
 ??? note "Řešení"
     ```ts
-	import * as robutek from "./libs/robutek.js"; // ovládání motorů
+    import { createRobutek } from "./libs/robutek.js"
+    const robutek = createRobutek("V1");
     
     let pen = new Servo(robutek.Pins.Servo2, 1, 4);
     pen.write(robutek.PenPos.Down); // dáme dolů tužku

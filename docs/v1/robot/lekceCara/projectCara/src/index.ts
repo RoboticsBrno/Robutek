@@ -1,5 +1,5 @@
 import * as gpio from "gpio";
-import { createRobutek } from "./libs/robutek.ts"
+import { createRobutek } from "./libs/robutek.js"
 const robutek = createRobutek("V1");
 
 // Sledujeme teď čáru?
@@ -35,8 +35,8 @@ async function main() {
     }
 
     // Vyčti hodnotu ze senzorů
-    const l = robutek.readSensor(robutek.SensorType.WheelFL);
-    const r = robutek.readSensor(robutek.SensorType.WheelFR);
+    const l = robutek.readSensor("WheelFL");
+    const r = robutek.readSensor("WheelFR");
 
     console.log(`l: ${l}, r: ${r}`);
 

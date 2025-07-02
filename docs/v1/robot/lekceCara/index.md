@@ -125,16 +125,16 @@ A to je vše! S tímto kódem zvládne sledovat čáru...ale ne moc rychle. **Zk
 Pro úplnost je zde celý kód:
 
 ```ts
-import * as robutek from "./libs/robutek.js";
 import * as gpio from "gpio";
-import { Pins } from "./libs/robutek.js";
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V1");
 
 // Sledujeme teď čáru?
 let following = false;
 
 // Zapínací tlačítko
-gpio.pinMode(Pins.ButtonLeft, gpio.PinMode.INPUT);
-gpio.on("rising", Pins.ButtonLeft, async () => {
+gpio.pinMode(robutek.Pins.ButtonLeft, gpio.PinMode.INPUT);
+gpio.on("rising", robutek.Pins.ButtonLeft, async () => {
   if (!following) {
     // Pokud ještě nesledujeme čáru...
     await sleep(500); // počkáme 500ms ať stihneš dát pryč ruku

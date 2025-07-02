@@ -9,7 +9,8 @@ Protože chceme být schopni přesně řídit rychlost, případně pozici motor
 Nejprve si musíme knihovnu importovat. To uděláme pomocí příkazu `import`:
 
 ```ts
-import * as robutek from "./libs/robutek.js"
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V2");
 ```
 
 ## Dostupné rozhraní
@@ -47,7 +48,8 @@ Nyní si ukážeme, jak můžeme ovládat motory Robůtka. Nejprve si musíme im
 Na začátku programu je rychlost nastavená na 0, takže se motory nebudou pohybovat ani po zavolání funkce `move`. Je tedy potřeba prvně zavolat funkci `setSpeed` a až poté `move`.
 
 ```ts
-import * as robutek from "./libs/robutek.js";
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V2");
 
 robutek.setSpeed(100);
 robutek.move(0, { distance: 1000 });
@@ -58,7 +60,8 @@ Takto můžeme posílat jednotlivé příkazy na pohyb Robůtka, neumíme však 
 Funkce, které u sebe mají slovíčko `async`, jsou asynchronní. To znamená, že například zavoláním funkce `move` se začne pohyb motoru, ale program se hned přesune na další příkaz. Pokud ale chceme provést nějakou posloupnost pohybů a chceme tedy počkat, až se motor zastaví, musíme použít příkaz `await`. Ten ale nelze používat kdekoliv, bude tedy potřeba upravit program tak, aby nám to dovolil.
 
 ```ts
-import * as robutek from "./libs/robutek.js";
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V2");
 
 async function main() {
     robutek.setSpeed(100);

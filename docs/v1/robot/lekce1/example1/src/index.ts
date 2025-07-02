@@ -1,5 +1,5 @@
 import { LED_WS2812, SmartLed } from "smartled"
-import { createRobutek } from "./libs/robutek.ts"
+import { createRobutek } from "./libs/robutek.js"
 const robutek = createRobutek("V1");
 
 const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812);

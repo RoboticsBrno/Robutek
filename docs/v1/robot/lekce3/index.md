@@ -97,11 +97,12 @@ Pomocí jedné proměnné se stavem a podmínky každou sekundu buď rozsvítím
 
 ??? note "Řešení"
     ```ts
-    import { Pins } from "./libs/robutek.js"
     import { LED_WS2812, SmartLed } from "smartled"
     import * as colors from "./libs/colors.js";
+    import { createRobutek } from "./libs/robutek.js"
+    const robutek = createRobutek("V1");
 
-    const ledStrip = new SmartLed(Pins.ILED, 1, LED_WS2812);
+    const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812);
 
     let on: boolean = false; // LED je vypnutá
 
@@ -126,11 +127,12 @@ opět nastavit na `0`.
 
 ??? note "Řešení"
     ```ts
-    import { Pins } from "./libs/robutek.js"
     import * as colors from "./libs/colors.js";
     import { LED_WS2812, SmartLed } from "smartled";
+    import { createRobutek } from "./libs/robutek.js"
+    const robutek = createRobutek("V1");
 
-    const ledStrip = new SmartLed(Pins.ILED, 1, LED_WS2812);
+    const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812);
 
     let shade = 0; // Držíme si stav s aktuálním odstínem
 
@@ -156,22 +158,23 @@ Pokud při stisku tlačítka svítí poslední LED, zhasneme ji, a rozsvítíme 
 
 ??? note "Řešení"
     ```ts
-    import { Pins } from "./libs/robutek.js"
     import * as colors from "./libs/colors.js";
     import { LED_WS2812, SmartLed } from "smartled";
+    import { createRobutek } from "./libs/robutek.js"
+    const robutek = createRobutek("V1");
 
     import * as gpio from "gpio";
 
-    const ledStrip = new SmartLed(Pins.ILED, 9, LED_WS2812);
+    const ledStrip = new SmartLed(robutek.Pins.ILED, 9, LED_WS2812);
 
-    gpio.pinMode(Pins.ButtonRight, gpio.PinMode.INPUT_PULLUP); // Nastavíme tlačítko
+    gpio.pinMode(robutek.Pins.ButtonRight, gpio.PinMode.INPUT_PULLUP); // Nastavíme tlačítko
 
     let index : number = 1;
     let color : Rgb = colors.light_blue; // Vybereme si barvu
     ledStrip.set(0, color); // Nastavíme LED na aktuální odstín
     ledStrip.show(); // Zobrazíme změny
 
-    gpio.on("falling", Pins.ButtonRight, () => {
+    gpio.on("falling", robutek.Pins.ButtonRight, () => {
         ledStrip.set(index, colors.off); // Vypneme předchozí LED
         index = index + 1; // Zvedneme index (lze i index += 1)
         if(index > 8){ // Pokud jsme mimo rozsah pásku, vrátíme se na začátek

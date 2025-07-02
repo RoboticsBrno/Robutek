@@ -1,7 +1,8 @@
 import * as colors from "./libs/colors.js"
-import { createRobutek } from "./libs/robutek.js"
 import { LED_WS2812, SmartLed } from "smartled"
 import { Servo } from "./libs/servo.js";
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V2");
 
 const ledStrip = new SmartLed(48, 1, LED_WS2812);
 
@@ -10,7 +11,6 @@ ledStrip.show(); // zobrazí nastavení na LED
 
 const pen = new Servo(38, 1, 4);
 
-const robutek = createRobutek("V2");
 robutek.setSpeed(150); // nastaví rychlost robota na 150 mm/s
 
 async function main() {
@@ -36,5 +36,5 @@ main();
 
 
 setInterval(() => { // pravidelně vyvolává událost
-    console.log("Robotický tábor 2024, zdraví Jirka Vácha!"); // vypíše text: Robotický tábor 2024, zdraví Jirka Vácha!
+    console.log("Robotický tábor 2025, zdraví Jirka Vácha!"); // vypíše text: Robotický tábor 2025, zdraví Jirka Vácha!
 }, 1000); // čas opakování se udává v milisekundách (1000 ms je 1 sekunda)

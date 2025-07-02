@@ -7,10 +7,11 @@ Na Robůtkovi jsou dvě pozice na připojení serva - piny 38 a 21. Pokud jste s
 Abychom mohli používat servo, musíme ho získat příkazem `#!ts const servo = new Servo(...)`, kde do závorky napíšeme číslo PINu, timer (zde ho nastavíme na 1) a kanál (zde ho nastavíme na 4)
 
 ```ts
-import { Pins } from "./libs/robutek.js"
 import { Servo } from "./libs/servo.js"
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V1");
 
-const servo = new Servo(Pins.Servo2, 1, 4); // Pins.Servo2 je pin 38
+const servo = new Servo(robutek.Pins.Servo2, 1, 4); // Pins.Servo2 je pin 38
 ```
 
 Na nastavení pozice serva použijeme funkci `#!ts servo.write()` a do závorek zadáme číslo od 0 do 1023,
@@ -28,10 +29,11 @@ Abychom si nemuseli pamatovat konkrétní hodnoty pro zvedání tužky, Robůtek
 Pokud bychom do něj dávali různé druhy tužek, můžeme si samozřejmě nadefinovat vlastní.
 
 ```ts
-import { Pins } from "./libs/robutek.js"
 import { Servo } from "./libs/servo.js"
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V1");
 
-const pen = new Servo(Pins.Servo2, 1, 4); // Pins.Servo2 je pin 38
+const pen = new Servo(robutek.Pins.Servo2, 1, 4); // Pins.Servo2 je pin 38
 ```
 
 Na nastavení pozice tužky použijeme funkci `#!ts pen.write()` a do závorek zadejte číslo on 0 od 1023 nebo jednu z konstant `robutek.PenPos.Up`, `robutek.PenPos.Down` a `robutek.PenPos.Unload`.
@@ -48,10 +50,10 @@ Vytvořte program, který při zmáčknutí tlačítka zasune pero a druhé tla�
 
 ??? note "Řešení"
     ```ts
-    import { Pins } from "./libs/robutek.js"
-    import * as robutek from "./libs/robutek.js"
     import { Servo } from "./libs/servo.js"
     import * as gpio from "gpio"
+    import { createRobutek } from "./libs/robutek.js"
+    const robutek = createRobutek("V1");
 
     const LBTN_PIN = 2;
     const RBTN_PIN = 0;
@@ -59,7 +61,7 @@ Vytvořte program, který při zmáčknutí tlačítka zasune pero a druhé tla�
     gpio.pinMode(LBTN_PIN, gpio.PinMode.INPUT);
     gpio.pinMode(RBTN_PIN, gpio.PinMode.INPUT);
 
-    const pen = new Servo(Pins.Servo2, 1, 4);
+    const pen = new Servo(robutek.Pins.Servo2, 1, 4);
 
     gpio.on("falling", LBTN_PIN, () => {
         pen.write(robutek.PenPos.Down);
@@ -76,10 +78,10 @@ Zkombinuj poznatky z lekce 5 s motory s touto, a vytvoř program který nakresl�
 
 ??? note "Řešení"
     ```ts
-    import { Pins } from "./libs/robutek.js"
-    import * as robutek from "./libs/robutek.js"
     import { Servo } from "./libs/servo.js"
     import * as gpio from "gpio"
+    import { createRobutek } from "./libs/robutek.js"
+    const robutek = createRobutek("V1");
 
     const LBTN_PIN = 2;
     const RBTN_PIN = 0;
@@ -87,7 +89,7 @@ Zkombinuj poznatky z lekce 5 s motory s touto, a vytvoř program který nakresl�
     gpio.pinMode(LBTN_PIN, gpio.PinMode.INPUT);
     gpio.pinMode(RBTN_PIN, gpio.PinMode.INPUT);
 
-    const pen = new Servo(Pins.Servo2, 1, 4);
+    const pen = new Servo(robutek.Pins.Servo2, 1, 4);
 
     gpio.on("falling", LBTN_PIN, async () => {
         pen.write(robutek.PenPos.Down); // fixa dolů

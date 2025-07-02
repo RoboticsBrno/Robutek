@@ -11,12 +11,11 @@ Robůtek je řízený mikrokontrolérem ESP32-S3. K programování budeme použ�
 
 ```typescript
 import * as gpio from "gpio";
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V2");
 
-import { Pins } from "./libs/robutek.js"; // <- definice pinů
-
-
-gpio.pinMode(Pins.StatusLED, gpio.PinMode.OUTPUT);
-gpio.write(Pins.StatusLED, 1)
+gpio.pinMode(robutek.Pins.StatusLED, gpio.PinMode.OUTPUT);
+gpio.write(robutek.Pins.StatusLED, 1)
 ```
 
 Pro kompletnost je pinout k nahlédnutí zde:
