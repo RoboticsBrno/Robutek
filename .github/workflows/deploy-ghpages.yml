@@ -49,6 +49,15 @@ jobs:
           echo "Setting default version as v2..."
           mike set-default --config-file mkdocs.v2.yml v2 --ignore-remote-status
 
+      - name: Add CNAME
+        run: |
+          git checkout gh-pages
+          echo "robutek.robotikabrno.cz" > CNAME
+          git add CNAME
+          git commit -m "Add CNAME" || echo "No changes to commit"
+          git checkout -
+
       - name: Push gh-pages to origin
         run: |
           git push --force origin gh-pages
+
