@@ -27,35 +27,41 @@ source .venv/bin/activate
 python3 -m pip install -r requirements.txt
 ```
 
-pro windows:
+pro windows CMD:
 ```bash
 python3 -m venv .venv
-.venv\Scripts\activate 
+./.venv/Scripts/Activate.bat
 python3 -m pip install -r requirements.txt
 ```
 
+pro windows Powershell:
+```bash
+python3 -m venv .venv
+./.venv/Scripts/Activate.ps1
+python3 -m pip install -r requirements.txt
+```
 
-## Znovu otevření už nainstalovaných toolů
+## Znovu otevření už nainstalovaných toolů (vscode to někdy dělá sám)
 pro linux a macos:
 ```bash
 source .venv/bin/activate
 ```
 
-pro windows:
+pro windows CMD: 
 ```bash
-.venv\Scripts\activate 
+./.venv/Scripts/Activate.bat
 ```
 
+pro windows Powershell: 
+```bash
+./.venv/Scripts/Activate.ps1
+```
 
 ## Práce s dokumentací
 
 Lokální spuštění dokumentace:
-- pro v1 - `mkdocs serve --config-file mkdocs.v1.yml`
-- pro v2 - `mkdocs serve --config-file mkdocs.v2.yml`
-
-
-## Vychytávky
-Pro více rozjetých dokumentací je možné použít `--dev-addr 127.0.0.1:8001` pro specifikaci adresy a portu.
+- pro v1 - `python3 -m mkdocs serve --config-file mkdocs.v1.yml`
+- pro v2 - `python3 -m mkdocs serve --config-file mkdocs.v2.yml`
 
 ## Práce s obrázky
 
@@ -67,3 +73,9 @@ změny v adresáři `assets-large` a při buildu zmenší obrázky do požadovan
 Složka `assets-large` se neukládá do gitu, protože by byla zbytečně velká. Velké fotky si necháme jen lokálně a po dokončení návodu je můžete smazat.
 
 Podporovené soubory jsou `.jpg`, `.jpeg`, `.png`, `.gif`, `.svg`.
+
+
+## Vychytávky
+Pro více rozjetých dokumentací je možné použít `--dev-addr 127.0.0.1:8001` pro specifikaci adresy a portu.
+
+
