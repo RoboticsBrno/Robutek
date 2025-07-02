@@ -95,6 +95,7 @@ plugins:
         - robot/lekce4/project4
         - robot/lekce6/project6
         - robot/lekce8/project8
+        - robot/lekceGridUI/colors-gridui
         - robutekLibrary/Robutek-library
       debug: true
 
@@ -150,6 +151,7 @@ nav:
       - robot/lekceCara/index.md
       - robot/lekce8/index.md
       - robot/lekce9/index.md
+      - robot/lekceGridUI/index.md
       - robot/project_sumo/index.md
       - robot/project_maze/index.md
   - Příslušenství robota:
