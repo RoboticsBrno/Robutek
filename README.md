@@ -34,10 +34,7 @@ Robůtek je robotická platforma založená na čipu ESP32-S3. Je velice rozšit
 - HW složka nechaná tak jak je beze změn
 
 ### DEV
-- `pip install -r requirements.txt`
-
-- pro v1 - `mkdocs serve --config-file mkdocs.v1.yml`
-- pro v2 - `mkdocs serve --config-file mkdocs.v2.yml`
+- -> DEVELOPMENT.md
 
 ### Návody
 - Rozděleno do dvou složek `docs/v1` a `docs/v2` pro různé verze Robůtka, což znamená dva soubory konfigurace mkdocs - `mkdocs.v1.yml` a `mkdocs.v2.yml`
