@@ -1,5 +1,5 @@
 import * as colors from "./libs/colors.js"
-import * as robutek from "./libs/robutek.js"
+import { createRobutek } from "./libs/robutek.js"
 import { LED_WS2812, SmartLed } from "smartled"
 import { Servo } from "./libs/servo.js";
 
@@ -10,6 +10,7 @@ ledStrip.show(); // zobrazí nastavení na LED
 
 const pen = new Servo(38, 1, 4);
 
+const robutek = createRobutek("V2");
 robutek.setSpeed(150); // nastaví rychlost robota na 150 mm/s
 
 async function main() {
