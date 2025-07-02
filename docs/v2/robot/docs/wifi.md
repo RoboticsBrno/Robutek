@@ -68,7 +68,3 @@ import * as wifi from "wifi";
 
 console.log(wifi.currentIp())
 ```
-
-## Připojení k síti
-
-1.
