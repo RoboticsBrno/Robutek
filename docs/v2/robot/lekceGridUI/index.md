@@ -50,6 +50,7 @@ setInterval(() => {
 Nemusíme ale ledce nastavovat jenom jestli je zapnutá nebo vypnutá. Vlastně můžeme měnit všechny její vlastností, které jsem si nastavili v designeru.
 
 ![](assets/suggExample.png)
+!!! tip "Našeptávač se ve VSCode zobrazuje sám, ale pokud vám zmizí, znovu si ho můžete zobrazit stisknutím ++ctrl+space++. "
 
 Jak vidíte, našeptávač nám nabízí přístup k barvě stavu, výšce, šířce, pozici... Prostě ke všem vlastnostem ledky, které si můžeme v designeru nastavit. Některým z nich můžeme v kódu prostě přiřadit hodnotu a ona se projeví na rozhraní (viz příklad blikání ledkou na rozhraní v GridUI). Když si potom jednu vlastnost vybereme a najedeme na ni myší, ukáže se nám, jaký typ hodnoty požadují. Vlastnost `.on` u ledky bere booleanskou hodnotu, vlastnost `.widgetH` číslo, které určuje výšku widgetu, a `.color` string ve formátu `#ffffff` (RGB hodnoty v hexadecimální soustavě).
 
