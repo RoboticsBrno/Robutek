@@ -4,15 +4,16 @@ V této kapitole si postavíme samotného Robůtka.
 ## Seznam potřebných součástek
 
  - 4 šroubky M3x30
+ - 4 matice M3
  - 2 motory s kolem
  - 2 magnetky (enkodéry)
  - Vložka pod motor
- - Vrchní domeček pro motory
  - Spodní domeček pro motory
+ - Vrchní domeček pro motory
  - Dřevěná základna
  - Dřevěná paluba
  - Základní deska
- - Baterie H10 INR14500
+ - Baterie Li-ion 14500
  - Zarážka fixy
 
 
@@ -42,7 +43,9 @@ V této kapitole si postavíme samotného Robůtka.
 
     !!! danger "Dávejte si pozor aby jste pinheady neuštípli."
     ![](assets/IMG-step5a.jpeg)
+    !!! danger "Neuštípněte pin heady!"
     ![](assets/IMG-step5b.jpeg)
+    !!! danger "Neuštípněte pin heady!"
     ![](assets/IMG-step5c.jpeg)
 
 6. Položte vložku pod motor na destičku plošného spoje. Dbejte na její orientaci.
@@ -71,9 +74,9 @@ V této kapitole si postavíme samotného Robůtka.
 10. Nasaďte dřevěnou základnu. Přišroubujte ji k robůtku pomocí čtyř M3x30 šroubků.
 
     ![](assets/IMG-step10a.jpeg)
-    ![](assets/IMG-step10b.jpeg)
     !!! danger "Šrouby do dřevěné základny neutahujte silou aby neprorazily skrz destičku."
     ![](assets/IMG-step10c.jpeg)
+    ![](assets/IMG-step10b.jpeg)
 
 11. Vložte baterii.
 
