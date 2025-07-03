@@ -44,8 +44,8 @@ enum PinsV1 {
 enum PinsV2 {
     StatusLED = 46,
 
-    ILED = 36,
-    ILEDOnBoard = 48,
+    ILED = 48,
+    ILEDConnector = 36,
 
     ButtonLeft =  2,
     ButtonRight = 0,
@@ -128,7 +128,7 @@ export class Robutek<PinsType extends typeof PinsV1 | typeof PinsV2> extends Dif
     }
 
     constructor(pins: PinsType, encTicks: number, reg: motor.RegParams, ledcConfig: RobutekLedcConfig) {
-        ledc.configureTimer(ledcConfig.timer, 2000, 10);
+        ledc.configureTimer(ledcConfig.timer, 20000, 10);
 
         const leftMotorPins: motor.MotorPins = { motA: pins.Motor1A, motB: pins.Motor1B, encA: pins.Enc1A, encB: pins.Enc1B };
         const rightMotorPins: motor.MotorPins = { motA: pins.Motor2A, motB: pins.Motor2B, encA: pins.Enc2A, encB: pins.Enc2B };
