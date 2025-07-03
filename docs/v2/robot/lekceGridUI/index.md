@@ -17,11 +17,13 @@ Tady máte ke stažení popsaný projekt (nastavení barvy ledky na desce, blika
 
 ## Spuštění
 ```ts
-import * as robutek from "./libs/robutek.js"
-import * as wifi from "wifi";
+import * as colors from "./libs/colors.js"
+import * as gpio from "gpio"
 import { SmartLed, LED_WS2812 } from "smartled"
 import Layout from "./layout.js"
-import * as colors from "./libs/colors.js"
+import * as wifi from "wifi";
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V2");
 
 // změň mě!
 const OWNER = "owner";
