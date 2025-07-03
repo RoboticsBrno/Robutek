@@ -128,8 +128,8 @@ extra_css:
   - assets/style.css
 
 extra_javascript:
-   - js/mathjax.js
-   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - js/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
   - Domů:
@@ -141,8 +141,8 @@ nav:
   - Programování robota:
       - robot/index.md
       - robot/faq/index.md
+      - robot/lekce0/index.md
       - robot/lekce1/index.md
-      - robot/lekce1/gridui.md
       - robot/lekce2/index.md
       - robot/lekce3/index.md
       - robot/lekce4/motors.md
@@ -156,10 +156,10 @@ nav:
       - robot/project_sumo/index.md
       - robot/project_maze/index.md
   - Příslušenství robota:
-      - robotAccessories/led_strip.md
+      - robotAccessories/ledStrip.md
       - robotAccessories/button.md
       - robotAccessories/tof.md
-      - robotAccessories/rgb_sens.md
+      - robotAccessories/rgbSens.md
   - Dokumentace:
       - robot/docs/index.md
       - robot/docs/wifi.md
