@@ -2,93 +2,92 @@
 
 ## Seznam potřebných věcí
 
- - Hotová stage 1
- - Vrchní dřevěná deska
- - Servo
+ - Hotový robůtek ze stage 1
+ - Servo motor
  - Stahovací zip pásek
  - Fixa
- - Šroubek
- - 5 matek
  - Držák na fixu
- - 4 distanční sloupky
+ - Šroubek a matka
+ - Gumička
 
 ## Návod na složení
 
-1. Připravíme si fixu, držák na fixu, šroubek, matku a přípravek.
+1. Sundejte z robůtka dřevěnou palubu (pokud ji na robůtku máte).
 
-    ![](assets/IMG-pen1.jpg)
+    ![](assets/IMG-step12c.jpeg)
+    ![](assets/IMG-step12b.jpeg)
+    ![](assets/IMG-step12a.jpeg)
 
-2. Nasuneme držák na fixu
+2. Připravte si fixu, držák na fixu, šroubek, matku a přípravek.
 
-    ![](assets/IMG-pen2.jpg)
+    ![](assets/IMG-stage2-step1.jpeg)
 
-3. Nasuneme na fixu přípravek. Zatlačíme až na doraz.
+3. Odtrhněte z držáku na fixu brim.
 
-    ![](assets/IMG-pen4.jpg)
+    ![](assets/IMG-stage2-step2a.jpeg)
+    ![](assets/IMG-stage2-step2b.jpeg)
 
-4. Držák přitiskneme k přípravku.
+4. Nasuňte držák na fixu.
 
-    !!! danger "Přípravek je udělán tak, aby držák seděl na fixe přesně."
-    ![](assets/IMG-pen5.jpg)
+    ![](assets/IMG-stage2-step3mod.png)
 
-5. Nasadíme na držák šroubek a matku.
+5. Nasuňte na fixu přípravek. Zatlačte ji až na doraz.
 
-    ![](assets/IMG-pen6.jpg)
+    ![](assets/IMG-stage2-step4mod.png)
 
-6. Sešroubujeme.
+6. Držák přitiskněte k přípravku.
 
-    ![](assets/IMG-pen7.jpg)
+    ![](assets/IMG-stage2-step5mod.png)
 
-7. Připravíme si Robůtka stage 1 a na šrouby zvrchu dáme distanční sloupky.
+7. Nasaďte na držák šroubek s matkou, a sešroubujte.
 
-    ![](assets/IMG-pen8.jpg)
+    ![](assets/IMG-stage2-step6mod.png)
 
-8. Protáhneme kabel od serva vrchní dřevěnou deskou.
+8. Protáhněte kabel od serva dřevěnou palubou.
 
-    ![](assets/IMG-pen9.jpg)
+    ![](assets/IMG-stage2-step7.jpeg)
 
-9. Posadíme servo na vrchní dřevěnou desku.
+9. Posaďte servo na dřevěnou palubu.
 
-    ![](assets/IMG-pen10.jpg)
+    ![](assets/IMG-stage2-step8.jpeg)
 
-10. Protáhneme stahovací pásek kolem serva jako na obrázku.
+10. Protáhněte stahovací pásek kolem serva.
 
-    ![](assets/IMG-pen11.jpg)
+    ![](assets/IMG-stage2-step9a.jpeg)
+    !!! danger "Utáhněte stahovací pásek tak, aby servem nešlo hnout."
+    ![](assets/IMG-stage2-step9b.jpeg)
 
-11. Utáhneme sthovací pásek kolem serva.
+11. Odštípněte přečnívající stahovací pásek.
 
-    ![](assets/IMG-pen12.jpg)
-    ![](assets/IMG-pen13.jpg)
+    ![](assets/IMG-stage2-step10a.jpeg)
+    ![](assets/IMG-stage2-step10b.jpeg)
 
-12. Připojíme konektor kabelu serva ke tří pinovému konektoru na základní desce Robůtka, tak jako na obrázku.
+12. Připojte konektor kabelu serva ke tří pinovému konektoru na základní desce robůtka.
 
     !!! danger "Šipka na konektoru patří na datový pin na desce!"
-    ![](assets/IMG-pen14.jpg)
-    ![](assets/IMG-pen15.jpg)
+    ![](assets/IMG-stage2-step11a.jpeg)
+    ![](assets/IMG-stage2-step11b.jpeg)
+    ![](assets/IMG-stage2-step11c.jpeg)
 
-13. Posadíme vrchní dřevěnou desku se servem na šrouby s distančními sloupky.
+13. Přišroubujte dřevěnou palubu zpátky na robůtka.
 
-    ![](assets/IMG-pen16.jpg)
+    ![](assets/IMG-stage2-step12a.jpeg)
+    ![](assets/IMG-stage2-step12b.jpeg)
 
-14. Přišroubujeme vrchní dřevěnou desku maticemi ke zbytku Robůtka.
+14. Nasaďte na servo packu.
 
-    ![](assets/IMG-pen17.jpg)
+    ![](assets/IMG-stage2-step13a.jpeg)
+    ![](assets/IMG-stage2-step13b.jpeg)
 
-15. Odštípneme přečnívající stahovací pásek.
+15. Obmotejte držák na fixu gumičkou.
 
-    ![](assets/IMG-pen18.jpg)
-    ![](assets/IMG-pen19.jpg)
+    ![](assets/IMG-stage2-step14a.jpeg)
 
-16. Vezmeme si jednu gumičku a zasukujeme ji.
+16. Fixu dejte do robůtka a zahákněte packu serva do gumičky.
 
-    ![](assets/IMG-pen20.jpg)
+    ![](assets/IMG-stage2-step14b.jpeg)
 
-17. Zasukovanou gumičku nasadíme na fixu tak, jako na obrázku.
+    !!! danger "<h2><b>S FIXOU NEJEZDĚTE ROBŮTKEM PO ZEMI, JENOM PO PAPÍŘE NA VYHRAZENÉM MÍSTĚ.</b><br>Lidem, co toto poruší, bude fixa zabavena!</h2>"
 
-    ![](assets/IMG-pen21.jpg)
-
-18. Fixu nasadíme na Robůtka způsobem ukázaným na obrázku..
-
-    ![](assets/IMG-pen22.jpg)
-
-19. Máme hotovo!!!
+    ![](assets/IMG-stage2-final.JPG)
+    Máte hotovo!
