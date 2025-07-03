@@ -1,6 +1,8 @@
 import * as motor from "motor"
 
 
+const PI_180 = 180 / Math.PI;
+
 export class DifferentialDrive {
     private speed: number = 0;
     private ramp: number = 0;
@@ -111,6 +113,36 @@ export class DifferentialDrive {
             this.leftMotor.move({ distance: lMot }),
             this.rightMotor.move({ distance: rMot })
         ]);
+    }
+
+    private headingOffset: number = 0;
+    private getHeadingRaw(): number {
+        const difference = this.leftMotor.getPosition() - this.rightMotor.getPosition();
+        const heading = (difference / this.diameter) * PI_180;
+        return Math.round(heading);
+    }
+    /**
+     * Get the current heading of the robot, measured from start
+     * @returns heading in degrees
+     */
+    public getHeading(): number {
+        return this.getHeadingRaw() + this.headingOffset;
+    }
+
+    /**
+     * Get the current heading of the robot, clamped to 0-360 degrees
+     * @returns heading in degrees, always in range 0-360
+     */
+    public getHeadingClamped(): number {
+        const heading = this.getHeading() % 360;
+        return heading < 0 ? heading + 360 : heading;
+    }
+
+    /**
+     * Reset the heading of the robot to 0 degrees
+     */
+    public resetHeading(): void {
+        this.headingOffset = -this.getHeadingRaw();
     }
 
     /**
