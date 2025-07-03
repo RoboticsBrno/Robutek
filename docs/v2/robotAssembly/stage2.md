@@ -22,7 +22,7 @@
 
     ![](assets/IMG-stage2-step1.jpeg)
 
-3. Odtrhněte z držáku na fixu brim.
+3. Očistěte držák na fixu.
 
     ![](assets/IMG-stage2-step2a.jpeg)
     ![](assets/IMG-stage2-step2b.jpeg)
