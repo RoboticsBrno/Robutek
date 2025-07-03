@@ -96,6 +96,9 @@ plugins:
         - robot/lekce6/project6
         - robot/lekce8/project8
         - robutekLibrary/Robutek-library
+      formats:
+        - zip
+        - tar.gz
       debug: true
 
   - auto-refresh-build-pages:
