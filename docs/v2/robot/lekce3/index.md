@@ -13,57 +13,69 @@ Každý jazyk má několik základních typů, zatím nám budou stačit dva:
 Hodnoty přiřazujeme do proměnných pomocí operátoru `=`. Příklad použití:
 
 ```ts
-let first : number; // Vytvoří proměnnou se jménem first, a typem number
+let first: number; // Vytvoří proměnnou se jménem first, a typem number
 first = 10; // Přiřadí do proměnné hodnotu 10
 first = 15; // Změní hodnotu proměnné na 15
-let second : number = 20; // Vytváření a přiřazení můžeme zkombinovat
-let truth : boolean = true; // Vytvoří proměnnou typu bool, která reprezentuje pravdu
+let second: number = 20; // Vytváření a přiřazení můžeme zkombinovat
+let truth: boolean = true; // Vytvoří proměnnou typu bool, která reprezentuje pravdu
 ```
 
 S proměnnými stejně jako s čísly můžeme provádět základní operace.
 
 ```ts
-let a : number = 10;
-let b : number = 5;
-let c : number = a + b;
-let d : number = b - a;
+let a: number = 10;
+let b: number = 5;
+let c: number = a + b; // c je 15
+let d: number = b - a; // d je -5
 ```
 
 Abychom na základě hodnot proměnných mohli měnit chování programu, potřebujeme **podmínky**.
 
-Podmínka `if` na základě pravdivostní hodnoty rozhodne, zda se vykoná daný kus kódu. Pokud proměnná
-`podmínka` je typu bool, potom po vykonání následujícího kódu:
+Podmínka `if` nám umožňuje rozhodnout, jestli se určitý kus kódu vykoná, nebo ne.  
+Používá se k tomu pravdivostní hodnoty true(pravda) a false(nepravda).
+
+Například, pokud máme proměnnou `podmínka` typu boolean, pak následující kód:
+
 ```ts
-let result : number = 10;
+let result: number = 10;
 if (podmínka) {
   result = 20;
 }
 ```
 
-Pokud `podmínka` má hodnotu `true`, bude v `result` 20, pokud má `podmínka` hodnotu `false`, bude v `result` 10.
+znamená:  
+Pokud je `podmínka` pravda (`true`), proměnná `result` bude mít hodnotu 20.  
+Pokud je `podmínka` nepravda (`false`), `result` zůstane 10.
 
-Rovněž se můžeme v podmínce rozhodovat na základě porovnávání číselných hodnot.
+Podmínky často používáme i pro porovnávání čísel. Například:
 
 ```ts
-let first : number;
-let second : number;
-...
+let first: number;
+let second: number;
+// ...
 if (first == second) {
-  ...
+  // tento kód se vykoná, pokud jsou obě čísla stejná
 }
 ```
 
-To, zda jsou dvě čísla stejná, zjistíme pomocí `==`, zda je jedno větší než druhé zjišťujeme pomocí `<` a `>`, případně `<=` a `>=` pokud chceme připustit rovnost.
+Porovnávat můžeme různými způsoby:
 
-Pokud se chceme zachovat dvěma různými způsoby, použijeme konstrukci
+- `==` zjistí, jestli jsou hodnoty stejné
+- `<` zjistí, jestli je první číslo menší než druhé
+- `>` zjistí, jestli je první číslo větší než druhé
+- `<=` a `>=` zjistí, jestli je menší/rovno nebo větší/rovno
+
+Pokud chceme, aby se podle podmínky vykonal jeden nebo druhý kus kódu, použijeme `if ... else`:
 
 ```ts
 if (podmínka) {
-  a
+  // tento kód se vykoná, když je podmínka pravda
 } else {
-  b
+  // tento kód se vykoná, když je podmínka nepravda
 }
 ```
+
+Takto můžeme jednoduše řídit, co má program dělat podle různých situací.
 
 Pokud podmínka platí, vykoná se kód `a`, pokud neplatí, vykoná se kód `b`.
 
@@ -79,28 +91,30 @@ Tyto barvy mícháme v různých poměrech od 0 do 255, a vytváříme tak různ
 Ve výchozím stavu je LED vypnutá (hodnoty `(0, 0, 0)`), a nejsilnější bílé světlo získáme použitím všech
 barev na maximum (hodnoty `(255, 255, 255)`).
 
-Druhou variantou je použití předdefinovaných barev, které jsou v souboru `colors.ts`. Příklad použití obou variant:
+Druhou variantou je použití předdefinovaných barev, které jsou v souboru `colors.ts`. Nesmíme zapomenout soubor importovat `import * as colors from './libs/colors.js'`. Příklad použití obou variant:
 
-  ```ts
-  ledStrip.set(0, colors.off); // Vypne LEDku pomocí předdefinované barvy
-  ledStrip.set(0, {r: 0, g: 0, b: 0}); // Vypne LEDku pomocí vlastní barvy
+```ts
+ledStrip.set(0, colors.off); // Vypne LEDku pomocí předdefinované barvy
+ledStrip.set(0, { r: 0, g: 0, b: 0 }); // Vypne LEDku pomocí vlastní barvy
 
-  ledStrip.set(0, colors.green); // Rozsvítí LEDku zeleně pomocí předdefinované barvy
-  ledStrip.set(0, {r: 0, g: 255, b: 0}); // Rozsvítí LEDku zeleně pomocí vlastní barvy
-  ```
+ledStrip.set(0, colors.green); // Rozsvítí LEDku zeleně pomocí předdefinované barvy
+ledStrip.set(0, { r: 0, g: 255, b: 0 }); // Rozsvítí LEDku zeleně pomocí vlastní barvy
+```
 
 Pro tuto lekci si stáhneme [zip](./project3.zip), nebo navážeme na předchozí cvičení. Své řešení budeme psát do souboru `index.ts`.
+
+[Stáhnout ZIP s prázdným projektem](./project3.zip){ .md-button .md-button--primary }
 
 ## Zadání A
 
 Pomocí jedné proměnné se stavem a podmínky každou sekundu buď rozsvítíme, nebo zhasneme LED na desce.
 
 ??? note "Řešení"
-    ```ts
-    import { LED_WS2812, SmartLed } from "smartled"
-    import * as colors from "./libs/colors.js";
-    import { createRobutek } from "./libs/robutek.js"
-    const robutek = createRobutek("V2");
+```ts
+import { LED_WS2812, SmartLed } from "smartled"
+import \* as colors from "./libs/colors.js";
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V2");
 
     const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812);
 
@@ -126,11 +140,11 @@ a na základě toho vrátí barvu na barevném spektru. V daném intervalu (nap�
 opět nastavit na `0`.
 
 ??? note "Řešení"
-    ```ts
-    import * as colors from "./libs/colors.js";
-    import { LED_WS2812, SmartLed } from "smartled";
-    import { createRobutek } from "./libs/robutek.js"
-    const robutek = createRobutek("V2");
+```ts
+import \* as colors from "./libs/colors.js";
+import { LED_WS2812, SmartLed } from "smartled";
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V2");
 
     const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812);
 
@@ -149,40 +163,41 @@ opět nastavit na `0`.
 ## Zadání C
 
 Tentokrát budeme reagovat na stisk tlačítka.
-Do desky si zapojíme pásek 8 inteligentních ledek, a vybranou barvou je budeme rozsvěcet.
+Do desky si [zapojíme](../../robotAccessories/ledStrip.md) pásek 8 inteligentních ledek, a vybranou barvou je budeme rozsvěcet.
 
 Po stisku tlačítka zhasneme aktuální LEDku, a rozsvítíme tu další.
 Pokud při stisku tlačítka svítí poslední LED, zhasneme ji, a rozsvítíme opět první LED.
 
-!!! note "Led pásek je připojený za inteligentní ledku na desce, takže index pásku začíná na 1."
-
 ??? note "Řešení"
+
     ```ts
     import * as colors from "./libs/colors.js";
     import { LED_WS2812, SmartLed } from "smartled";
-    import { createRobutek } from "./libs/robutek.js"
-    const robutek = createRobutek("V2");
-
+    import { createRobutek } from "./libs/robutek.js";
     import * as gpio from "gpio";
 
-    const ledStrip = new SmartLed(robutek.Pins.ILED, 9, LED_WS2812);
+    const robutek = createRobutek("V2");
+
+    const ledStrip = new SmartLed(robutek.Pins.ILEDConnector, 8, LED_WS2812);
 
     gpio.pinMode(robutek.Pins.ButtonRight, gpio.PinMode.INPUT_PULLUP); // Nastavíme tlačítko
 
-    let index : number = 1;
-    let color : Rgb = colors.light_blue; // Vybereme si barvu
+    let index: number = 0;
+    let color: colors.Rgb = colors.light_blue; // Vybereme si barvu
     ledStrip.set(0, color); // Nastavíme LED na aktuální odstín
     ledStrip.show(); // Zobrazíme změny
 
     gpio.on("falling", robutek.Pins.ButtonRight, () => {
-        ledStrip.set(index, colors.off); // Vypneme předchozí LED
-        index = index + 1; // Zvedneme index (lze i index += 1)
-        if(index > 8){ // Pokud jsme mimo rozsah pásku, vrátíme se na začátek
-            index = 1;
-        }
-        ledStrip.set(index, color); // Nastavíme aktuální LED
-        ledStrip.show();  // Zobrazíme změny
+      ledStrip.set(index, colors.off); // Vypneme předchozí LED
+      index = index + 1; // Zvedneme index (lze i index += 1)
+      if (index >= 8) {
+        // Pokud jsme mimo rozsah pásku, vrátíme se na začátek
+        index = 0;
+      }
+      ledStrip.set(index, color); // Nastavíme aktuální LED
+      ledStrip.show(); // Zobrazíme změny
     });
+
     ```
 
 ## Výstupní úkol V1 - Knightrider

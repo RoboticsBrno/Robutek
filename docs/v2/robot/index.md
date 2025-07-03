@@ -4,7 +4,7 @@
 ## Programování:
 Robůtek je řízený mikrokontrolérem ESP32-S3. K programování budeme používat jazyk TypeScript, který budeme spouštět pomocí programu [Jaculus](https://jaculus.org/).
 
-[Lekce 1](lekce1/){ .md-button .md-button--primary }
+[Lekce 0](lekce0/){ .md-button .md-button--primary }
 
 ## Přehled pinů
 Čísla pinů nemusíte přepisovat ručně, lze použít definici z knihovny:
@@ -19,6 +19,8 @@ gpio.write(robutek.Pins.StatusLED, 1)
 ```
 
 Pro kompletnost je pinout k nahlédnutí zde:
+
+<!-- TODO update pins -->
 
 ```typescript
 export enum Pins {
