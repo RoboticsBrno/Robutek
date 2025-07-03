@@ -13,6 +13,8 @@ V této kapitole si postavíme samotného Robůtka.
  - Dřevěná základna
  - Dřevěná paluba
  - Základní deska
+ - Velký kartáček
+ - Malý kartáček
  - Baterie Li-ion 14500
  - Zarážka fixy
 
@@ -79,13 +81,21 @@ V této kapitole si postavíme samotného Robůtka.
     ![](assets/IMG-step10c.jpeg)
     ![](assets/IMG-step10b.jpeg)
 
-11. Vložte baterii.
+11. Připravte si kartáčky (jeden malý a jeden velký). Uchopte si kartáček kleštěmi a zatlačte ho do drážky správné velikosti (malý kartáček do malé drážky, velký kartáček do velké drážky).
+
+    ![](assets/IMG-stepKa.jpeg)
+    ![](assets/IMG-stepKb.jpeg)
+    !!! danger "Zatlačte kartáčky až na doraz, aby nevylézala kovová část kartáčku."
+    ![](assets/IMG-stepKc.jpeg)
+    ![](assets/IMG-stepKd.jpeg)
+
+12. Vložte baterii.
 
     !!! danger "Dejte si pozor na polaritu baterie."
     ![](assets/IMG-step11a.jpeg)
     ![](assets/IMG-step11b.jpeg)
 
-12. Přišroubujte dřevěnou palubu.
+13. Přišroubujte dřevěnou palubu.
 
     !!! danger "Pozor na orientaci paluby, díry musí sedět na součastky na desce."
     ![](assets/IMG-step12a.jpeg)
