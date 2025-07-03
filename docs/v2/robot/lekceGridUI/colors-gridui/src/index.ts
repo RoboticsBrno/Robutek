@@ -9,8 +9,8 @@ const robutek = createRobutek("V2");
 const ledStrip = new SmartLed(48, 1, LED_WS2812);  // připojí pásek na pin 48, s 1 ledkou a typem WS2812
 
 // Změň mě!
-const OWNER = "Parz";
-const DEVICE_NAME = "Robutek";
+const OWNER = "owner";
+const DEVICE_NAME = "robutek";
 
 let text = "rgb(0 0 0)"
 
