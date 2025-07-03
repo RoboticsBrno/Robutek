@@ -25,7 +25,7 @@
 3. Očistěte držák na fixu.
 
     ![](assets/IMG-stage2-step2a.jpeg)
-    ![](assets/IMG-stage2-step2b.jpeg)
+    ![](assets/IMG-stage2-step2b-fix.jpeg)
 
 4. Nasuňte držák na fixu.
 
