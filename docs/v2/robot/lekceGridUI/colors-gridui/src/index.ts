@@ -1,14 +1,16 @@
-import * as robutek from "./libs/robutek.js"
-import * as wifi from "wifi";
+import * as colors from "./libs/colors.js"
+import * as gpio from "gpio"
 import { SmartLed, LED_WS2812 } from "smartled"
 import Layout from "./layout.js"
-import * as colors from "./libs/colors.js"
+import * as wifi from "wifi";
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V2");
 
 const ledStrip = new SmartLed(48, 1, LED_WS2812);  // připojí pásek na pin 48, s 1 ledkou a typem WS2812
 
 // Změň mě!
 const OWNER = "owner";
-const DEVICE_NAME = "robutek";
+const DEVICE_NAME = "Robutek";
 
 let text = "#ffffff";
 let r = "ff"
@@ -33,7 +35,7 @@ function colorToHexString(color:colors.Rgb) { //překládá barvu na string pož
 }
 
 setInterval(() => {
-    Layout.Led.on = !Layout.Led.on; // bliká ledkou na rozhraní
+    Layout.Led.on = !Layout.Led.on; // bliká ledkou na rozhraní GridUI
 }, 500);
 
 
@@ -44,7 +46,9 @@ Layout.begin(OWNER, DEVICE_NAME, builder => {
         text = colorToHexString(colors.rainbow(slider.value));
         Layout.Led.color = text; // nastavuje barvu ledky na rozhraní
         Layout.Text.text = text; // vypisuje rgb kód v textovém poli na rozhraní
+        
     })
 });
 
-console.log("Otevři aplikaci RBController nebo otevři prohlížeč a zadej IP: http://" + wifi.currentIp() + " pro ovládání robota.");
+//console.log("Otevři aplikaci RBController nebo otevři prohlížeč a zadej IP: http://" + wifi.currentIp() + " pro ovládání robota.");
+Layout.SetColor.value = 180
