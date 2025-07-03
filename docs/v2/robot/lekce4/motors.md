@@ -11,7 +11,7 @@ Otevři ve Visual Studiu Code a najdi `src/index.ts`, mělo by tam být něco ja
 
 ```typescript
 import { createRobutek } from "./libs/robutek.js"
-const robutek = createRobutek("V2");;
+const robutek = createRobutek("V2");
 import * as colors from "./libs/colors.js";
 import * as gpio from "gpio";
 import { SmartLed, LED_WS2812 } from "smartled";
