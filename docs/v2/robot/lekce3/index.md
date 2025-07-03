@@ -110,25 +110,27 @@ Pro tuto lekci si stáhneme [zip](./project3.zip), nebo navážeme na předchoz�
 Pomocí jedné proměnné se stavem a podmínky každou sekundu buď rozsvítíme, nebo zhasneme LED na desce.
 
 ??? note "Řešení"
-```ts
-import { LED_WS2812, SmartLed } from "smartled"
-import \* as colors from "./libs/colors.js";
-import { createRobutek } from "./libs/robutek.js"
-const robutek = createRobutek("V2");
+
+    ```ts
+    import { LED_WS2812, SmartLed } from "smartled";
+    import * as colors from "./libs/colors.js";
+    import { createRobutek } from "./libs/robutek.js";
+    const robutek = createRobutek("V2");
 
     const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812);
 
     let on: boolean = false; // LED je vypnutá
 
     setInterval(() => {
-      if (on) { // Pokud je LED zapnutá
+      if (on) {
+        // Pokud je LED zapnutá
         ledStrip.set(0, colors.off); // Vypneme LED
         ledStrip.show(); // Zobrazíme změny
         on = false;
       } else {
         ledStrip.set(0, colors.green); // Rozsvítíme LED zelenou barvou
         ledStrip.show(); // Zobrazíme změny
-        on = true
+        on = true;
       }
     }, 1000);
     ```
@@ -140,11 +142,12 @@ a na základě toho vrátí barvu na barevném spektru. V daném intervalu (nap�
 opět nastavit na `0`.
 
 ??? note "Řešení"
-```ts
-import \* as colors from "./libs/colors.js";
-import { LED_WS2812, SmartLed } from "smartled";
-import { createRobutek } from "./libs/robutek.js"
-const robutek = createRobutek("V2");
+
+    ```ts
+    import * as colors from "./libs/colors.js";
+    import { LED_WS2812, SmartLed } from "smartled";
+    import { createRobutek } from "./libs/robutek.js"
+    const robutek = createRobutek("V2");
 
     const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812);
 
@@ -197,7 +200,6 @@ Pokud při stisku tlačítka svítí poslední LED, zhasneme ji, a rozsvítíme 
       ledStrip.set(index, color); // Nastavíme aktuální LED
       ledStrip.show(); // Zobrazíme změny
     });
-
     ```
 
 ## Výstupní úkol V1 - Knightrider
