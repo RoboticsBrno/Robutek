@@ -124,19 +124,20 @@ Najděte kamaráda, abyste si mohli navzájem zkusit, zda program funguje (jeden
 
 ??? note "Řešení"
     ```ts
-    import { Pins } from "./libs/robutek.js"
     import * as radio from "simpleradio";
     import * as gpio from "gpio";
     import { SmartLed, LED_WS2812 } from "smartled";
     import * as colors from "./libs/colors.js";
+    import { createRobutek } from "./libs/robutek.js"
+    const robutek = createRobutek("V1");
 
     radio.begin(5); // skupina 5
 
     const LED_COUNT = 3;
 
     // Nastavíme tlačítka jako vstupy
-    gpio.pinMode(Pins.ButtonLeft, gpio.PinMode.INPUT);
-    gpio.pinMode(Pins.ButtonRight, gpio.PinMode.INPUT);
+    gpio.pinMode(robutek.Pins.ButtonLeft, gpio.PinMode.INPUT);
+    gpio.pinMode(robutek.Pins.ButtonRight, gpio.PinMode.INPUT);
 
     gpio.on("falling", PIN_BTN_LEFT, () => {
         // Při stisknutí tlačítka 0
@@ -155,7 +156,7 @@ Najděte kamaráda, abyste si mohli navzájem zkusit, zda program funguje (jeden
     });
 
     // Nastavíme LED piny jako výstupy
-    const strip = new SmartLed(Pins.ILED, LED_COUNT);
+    const strip = new SmartLed(robutek.Pins.ILED, LED_COUNT);
 
     // Zpracování příchozích správ
     radio.on("keyvalue", (klic, hodnota, info) => {

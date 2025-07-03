@@ -5,7 +5,8 @@ Z minulé lekce už umíme kreslit jednoduché tvary. Co když jich však chceme
 Pokud chceme nakreslit 2 čtverce vedle sebe, můžeme zkopírovat kód a mezitím se posunout:
 
 ```ts
-import * as robutek from "./libs/robutek.js"
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V1");
 
 let pen = new Servo(robutek.Pins.Servo2, 1, 4);
 robutek.setSpeed(100);
@@ -34,7 +35,9 @@ Pokud bychom se pak rozhodli změnit např. velikost nakreslených čtverců, mu
 Můžeme si pomoct tím, co už známe: vnořeným `for` cyklem. Pokud chceme nakreslit např. 4 čtverce za sebou, můžeme to napsat takto:
 
 ```ts
-import * as robutek from "./libs/robutek.js";import { Servo } from "./libs/servojs";
+import { Servo } from "./libs/servo.js";
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V1");
 
 let pen = new Servo(robutek.Pins.Servo2, 1, 4);
 robutek.setSpeed(100);
@@ -61,8 +64,9 @@ Funkce je pojmenovaný kus kódu. Tento kus kódu jednou napíšeme, a poté ho 
 V programu rozlišujeme mezi definicí funkce a jejím voláním. Definice vypadá následovně:
 
 ```ts
-import * as robutek from "./libs/robutek.js";
 import { Servo } from "./libs/servo.js";
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V1");
 
 let pen = new Servo(robutek.Pins.Servo2, 1, 4);
 robutek.setSpeed(100);
@@ -93,8 +97,9 @@ Když spustíme tento kód, nic se nestane. Chybí nám totiž funkci <tt>zavola
 Nakreslení dvou čtverců může tedy vypadat takto:
 
 ```ts
-import * as robutek from "./libs/robutek.js";
-import { Servo } from "./libs/servojs";
+import { Servo } from "./libs/servo.js";
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V1");
 
 let pen = new Servo(robutek.Pins.Servo2, 1, 4);
 robutek.setSpeed(100);
@@ -126,8 +131,9 @@ Na tak malém příkladu to možná není zjevné, ale i `motors.move()`, které
 Program však neřeší případ, kdy chceme aby každý čtverec měl jinou velikost. V tu chvíli nám pomůžou <tt>argumenty</tt>, které do funkce umíme předat. Jde o proměnné, které existují v dané funkci, a my jim při volání funkce přiřadíme konkrétní hodnotu.
 
 ```ts
-import * as robutek from "./libs/robutek.js";
 import { Servo } from "./libs/servo.js";
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V1");
 
 let pen = new Servo(robutek.Pins.Servo2, 1, 4);
 robutek.setSpeed(100);
@@ -154,8 +160,9 @@ Vytvořte funkci, která bere 2 argumenty, a nakreslí obdélník daných rozmě
 
 ??? note "Řešení"
     ```ts
-    import * as robutek from "./libs/robutek.js";
     import { Servo } from "./libs/servo.js";
+    import { createRobutek } from "./libs/robutek.js"
+    const robutek = createRobutek("V1");
 
     let pen = new Servo(robutek.Pins.Servo2, 1, 4);
     robutek.setSpeed(100);
@@ -203,8 +210,9 @@ Napište funkci `draw_polygon()`, která vezme 2 argumenty: počet stran a délk
 
 ??? note "Řešení"
     ```ts
-    import * as robutek from "./libs/robutek.js";
     import { Servo } from "./libs/servo.js";
+    import { createRobutek } from "./libs/robutek.js"
+    const robutek = createRobutek("V1");
 
     let pen = new Servo(robutek.Pins.Servo2, 1, 4);
     robutek.setSpeed(100);

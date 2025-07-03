@@ -16,16 +16,17 @@ Nejdříve si zopakujeme předchozí lekci, a rozsvítíme RGB LED na Robůtkovi
 
 Na začátku tohoto úkolu si stáhneme nový [zip](./blank_project.zip) soubor obsahující prázdný projekt. Po stažení složku rozbalíme a otevřeme ve Visual Studio Code. V souboru `index.ts` jsou připraveny `import` příkazy: ty nám umožní využívat funkcionalitu z různých souborů, např. jednoduše ovládat LEDku, nebo využívat nadefinované barvy.
 
-Pásek se inicializuje pomocí `const ledStrip = new SmartLed(Pins.ILED, 1, LED_WS2812);`.
+Pásek se inicializuje pomocí `const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812);`.
 Barvu LED nastavíme pomocí `ledStrip.set(0, colors.<nějaká_barva>)` a zobrazíme pomocí `ledStrip.show()`.
 
 ??? note "Řešení"
     ```ts
-    import { Pins } from "./libs/robutek.js"
     import * as colors from "./libs/colors.js";
     import { LED_WS2812, SmartLed } from "smartled";
+    import { createRobutek } from "./libs/robutek.js"
+    const robutek = createRobutek("V1");
 
-    const ledStrip = new SmartLed(Pins.ILED, 1, LED_WS2812); // Pins.ILED je pin 48
+    const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812); // Pins.ILED je pin 48
 
     ledStrip.set(0, colors.red); // nastaví barvu první LED na červenou (RGB 255 0 0)
     ledStrip.show(); // zobrazí nastavení na LED
@@ -60,21 +61,22 @@ Pomocí událostí rozsvítíme při stisknutí tlačítka (`GPIO 0`) RGB LED na
 
 ??? note "Řešení"
     ```ts
-    import { Pins } from "./libs/robutek.js"
     import * as colors from "./libs/colors.js";
     import { LED_WS2812, SmartLed } from "smartled";
     import * as gpio from "gpio";
+    import { createRobutek } from "./libs/robutek.js"
+    const robutek = createRobutek("V1");
 
     const ledStrip = new SmartLed(48, 1, LED_WS2812);
 
-    gpio.pinMode(Pins.ButtonRight, gpio.PinMode.INPUT); // nastaví pin 0 jako vstup
+    gpio.pinMode(robutek.Pins.ButtonRight, gpio.PinMode.INPUT); // nastaví pin 0 jako vstup
 
-    gpio.on("falling", Pins.ButtonRight, () => { // událost, která proběhne při stisknutí tlačítka připojeného na pin 0
+    gpio.on("falling", robutek.Pins.ButtonRight, () => { // událost, která proběhne při stisknutí tlačítka připojeného na pin 0
         ledStrip.set(0, colors.red); // nastaví barvu první LED na červenou (RGB 255 0 0)
         ledStrip.show(); // zobrazí nastavení na LED
     });
 
-    gpio.on("rising", Pins.ButtonRight, () => { // událost, která proběhne při puštění tlačítka připojeného na pin 0
+    gpio.on("rising", robutek.Pins.ButtonRight, () => { // událost, která proběhne při puštění tlačítka připojeného na pin 0
         ledStrip.set(0, colors.off); // nastaví první LED na zhasnutou (RGB 0 0 0)
         ledStrip.show(); // zobrazí nastavení na LED
     });
@@ -88,20 +90,21 @@ Vzpomeňme si z prvního programu, že opakování dosáhneme pomocí `setInterv
 
 ??? note "Řešení"
     ```ts
-    import { Pins } from "./libs/robutek.js"
     import * as gpio from "gpio";
+    import { createRobutek } from "./libs/robutek.js"
+    const robutek = createRobutek("V1");
 
-    gpio.pinMode(Pins.ButtonRight, gpio.PinMode.INPUT); // nastaví pin 0 jako vstup
+    gpio.pinMode(robutek.Pins.ButtonRight, gpio.PinMode.INPUT); // nastaví pin 0 jako vstup
 
     setInterval(() => { // pravidelně vyvolává událost
-        console.log(gpio.read(Pins.ButtonRight)); // načte a vypíše stav tlačítka připojeného na pin 0
+        console.log(gpio.read(robutek.Pins.ButtonRight)); // načte a vypíše stav tlačítka připojeného na pin 0
     }, 500); // čas opakování se udává v milisekundách (500 ms je 0,5 sekundy)
     ```
 
 ## Výstupní úkol V1 - Pozdrav
 
-Při stisknutí tlačítka (`Pins.ButtonRight`) vypíšeme pozdrav.
+Při stisknutí tlačítka (`robutek.Pins.ButtonRight`) vypíšeme pozdrav.
 
 ## Výstupní úkol V2 - Změna barvy
 
-Při stisknutí tlačítka (`Pins.ButtonRight`) rozsvítíme RGB LED na Robůtkovi (`Pins.ILED`) jednou barvou a při puštění barvu změníme na jinou.
+Při stisknutí tlačítka (`robutek.Pins.ButtonRight`) rozsvítíme RGB LED na Robůtkovi (`robutek.Pins.ILED`) jednou barvou a při puštění barvu změníme na jinou.

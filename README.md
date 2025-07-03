@@ -11,6 +11,7 @@ Robůtek je robotická platforma založená na čipu ESP32-S3. Je velice rozšit
 - Držák na **fixu** pro kreslení na papír
 - **IR senzory** pro sledování čáry
 - **RGB senzor** pro detekování barev na podlaze (V2)
+- **RGB podsvícení** pro hezčí vzhled Robůtka (V2)
 - **Rozšiřující paluba** s:
   - Servem pro zvedání fixy
   - Adresovatelný RGB pásek
@@ -39,7 +40,8 @@ Robůtek je robotická platforma založená na čipu ESP32-S3. Je velice rozšit
 ### Návody
 - Rozděleno do dvou složek `docs/v1` a `docs/v2` pro různé verze Robůtka, což znamená dva soubory konfigurace mkdocs - `mkdocs.v1.yml` a `mkdocs.v2.yml`
 - Do složek projektů není potřeba vkládat `@types` a `src/libs`, protože se kopírují automaticky z `robutekLibrary`
-  - Spuštěním `update-projects.sh` se soubory automaticky nakopírují
+  - Spuštěním `bash update-projects.sh` se soubory automaticky nakopírují
+  - Spuštěním `bash jac-autocompile.sh` se ve všech projektech spustí `jac build`
 
 ## Práce s obrázky
 
@@ -61,7 +63,6 @@ Podporovené soubory jsou `.jpg`, `.jpeg`, `.png`, `.gif`, `.svg`.
 ### Další verze dokumentace
 - Zkopírovat poslední verzi dokumentace jako reference
 - Zkopírovat `mkdocs-vx.yml` a upravit
-- Zkopírovat `build_vx.sh` a upravit
 - Upravit `.github/workflows/deploy-ghpages.yml` a `.github/workflows/test-ghpages.yml`
 
 

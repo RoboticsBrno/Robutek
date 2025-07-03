@@ -163,7 +163,7 @@ Zde si vyzkoušíme vytvořit první projekt a nahrát jej do Robůtka.
 [Stáhnout ZIP s prvním projektem](./example1.zip){ .md-button .md-button--primary }
 
 
-1. V prvním kroku si na počítači nachystáme složku `RoboCamp-2024` do které si budeme ukládat veškeré projekty.
+1. V prvním kroku si na počítači nachystáme složku `RoboCamp-2025` do které si budeme ukládat veškeré projekty.
 2. Dále si [stáhneme zip](./example1.zip) soubor s prvním projektem.
 3. Poté si jej **rozbalíme** do vytvořené složky k táboru.
 4. Spustíme VSCode a pomocí záložky `File` -> `Open Folder` vybereme složku s projektem.
@@ -186,8 +186,8 @@ Pokud nám funguje připojení na :material-eye:`Monitor` a běží nám komunik
 	$ jac monitor --port /dev/tty.usbmodem213101
 	Connecting to serial at /dev/tty.usbmodem213101 at 921600 bauds... Connected.
 
-	Robotický tábor 2024, zdraví Jirka Vácha!
-	Robotický tábor 2024, zdraví Jirka Vácha!
+	Robotický tábor 2025, zdraví Jirka Vácha!
+	Robotický tábor 2025, zdraví Jirka Vácha!
 	```
 4. Pro ukončení terminálu, do něj klikneme a stiskneme ++ctrl+c++.
 ## Úprava programu
@@ -201,7 +201,7 @@ Ve zdrojovém kódu jsou komentáře (`// tohle je komentář`), které nám pop
 	??? note "Řešení"
 		```ts
 		...
-		console.log("Robotický tábor 2024, zdraví Franta Flinta!");  // tady jsem změnil své jméno
+		console.log("Robotický tábor 2025, zdraví Franta Flinta!");  // tady jsem změnil své jméno
 		...
 		```
 

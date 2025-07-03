@@ -1,7 +1,6 @@
-import * as robutek from "./libs/robutek.js";
 import * as gpio from "gpio";
-import { Pins } from "./libs/robutek.js";
-import { SensorType } from "./libs/robutek.js";
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V1");
 
 // Sledujeme teď čáru?
 let following = false;
@@ -10,8 +9,8 @@ let following = false;
 let previousLeft = false;
 
 // Zapínací tlačítko
-gpio.pinMode(Pins.ButtonLeft, gpio.PinMode.INPUT);
-gpio.on("rising", Pins.ButtonLeft, async () => {
+gpio.pinMode(robutek.Pins.ButtonLeft, gpio.PinMode.INPUT);
+gpio.on("rising", robutek.Pins.ButtonLeft, async () => {
   if (!following) {
     // Pokud ještě nesledujeme čáru...
     await sleep(500); // počkáme 500ms ať stihneš dát pryč ruku
@@ -36,8 +35,8 @@ async function main() {
     }
 
     // Vyčti hodnotu ze senzorů
-    const l = robutek.readSensor(SensorType.WheelFL);
-    const r = robutek.readSensor(SensorType.WheelFR);
+    const l = robutek.readSensor("WheelFL");
+    const r = robutek.readSensor("WheelFR");
 
     console.log(`l: ${l}, r: ${r}`);
 

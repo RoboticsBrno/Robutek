@@ -21,11 +21,12 @@ Barvu LED nastavíme pomocí `ledStrip.set(0, colors.<nějaká_barva>)` a zobraz
 
 ??? note "Řešení"
     ```ts
-    import { Pins } from "./libs/robutek.js"
     import * as colors from "./libs/colors.js";
     import { LED_WS2812, SmartLed } from "smartled";
+    import { createRobutek } from "./libs/robutek.js"
+    const robutek = createRobutek("V2");
 
-    const ledStrip = new SmartLed(Pins.ILED, 1, LED_WS2812); // Pins.ILED je pin 48
+    const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812); // Pins.ILED je pin 48
 
     ledStrip.set(0, colors.red); // nastaví barvu první LED na červenou (RGB 255 0 0)
     ledStrip.show(); // zobrazí nastavení na LED
@@ -60,7 +61,8 @@ Pomocí událostí rozsvítíme při stisknutí tlačítka (`GPIO 0`) RGB LED na
 
 ??? note "Řešení"
     ```ts
-    import { Pins } from "./libs/robutek.js"
+    import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V2");
     import * as colors from "./libs/colors.js";
     import { LED_WS2812, SmartLed } from "smartled";
     import * as gpio from "gpio";
@@ -88,8 +90,9 @@ Vzpomeňme si z prvního programu, že opakování dosáhneme pomocí `setInterv
 
 ??? note "Řešení"
     ```ts
-    import { Pins } from "./libs/robutek.js"
     import * as gpio from "gpio";
+    import { createRobutek } from "./libs/robutek.js"
+    const robutek = createRobutek("V2");
 
     gpio.pinMode(Pins.ButtonRight, gpio.PinMode.INPUT); // nastaví pin 0 jako vstup
 

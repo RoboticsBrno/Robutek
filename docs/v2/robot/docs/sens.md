@@ -6,14 +6,15 @@ Senzory jsou uspořádány do dvou sad po čtyřech senzorech (A1, A2, A3, A4 a 
 
 Přisvětlení senzorů je potřeba zapnout samostatně pomocí pinu `IO47`. Pokud je tento pin nastaven na logickou hodnotu 1, senzory si přisvětlují plochu, pokud je nastaven na logickou hodnotu 0, senzory si nepřisvětlují plochu.
 
-Protože je senzorů hodně a je potřeba je nastavovat a přepínat, v knihovně `robutek.ts` jsme nachystali několik funkcí, které používání senzorů usnadňují.
+Protože je senzorů hodně a je potřeba je nastavovat a přepínat, v knihovně `robutek.js` jsme nachystali několik funkcí, které používání senzorů usnadňují.
 
 ## Import knihovny
 
 Nejprve si musíme knihovnu importovat. To uděláme pomocí příkazu `import`:
 
 ```ts
-import * as robutek from "./libs/robutek.js"
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V2");
 ```
 
 ## Dostupné rozhraní
@@ -27,8 +28,9 @@ Při importu knihovny se senzory správně nastaví a připraví k použití. K 
 Nyní si ukážeme, jak můžeme číst hodnoty senzorů. Nejprve si musíme importovat knihovnu a poté můžeme začít s čtením hodnot senzorů.
 
 ```ts
-import * as robutek from "./libs/robutek.js";
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V2");
 
-let sensorValue = robutek.readSensor(robutek.SensorPos.LineFL);
+let sensorValue = robutek.readSensor("LineFL");
 console.log(sensorValue);
 ```

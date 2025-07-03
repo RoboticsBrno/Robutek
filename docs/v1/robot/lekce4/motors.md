@@ -10,11 +10,11 @@ Začneme opět s prázdným projektem, stáhni/nakopíruj si ho do nové složky
 Otevři ve Visual Studiu Code a najdi `src/index.ts`, mělo by tam být něco jako:
 
 ```typescript
-import * as robutek from "./libs/robutek.js";
-import { Pins } from "./libs/robutek.js";
 import * as colors from "./libs/colors.js";
 import * as gpio from "gpio";
 import { SmartLed, LED_WS2812 } from "smartled";
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V1");
 ```
 
 To je dobrý začátek - pokračovat budeme na konci souboru.
@@ -77,11 +77,12 @@ Napiš program tak, aby Robůtek popojel 10cm dopředu, otočil se čelem vzad (
 ??? note "Řešení"
 
     ```ts
-    import * as robutek from "./libs/robutek.js";
     import * as colors from "./libs/colors.js";
     import * as gpio from "gpio";
     import { SmartLed, LED_WS2812 } from "smartled";
-    import { Pins } from "./libs/robutek.js";
+    import { createRobutek } from "./libs/robutek.js"
+    const robutek = createRobutek("V1");
+
 
     async function main() {
         // Tady bude kód na ovládání motorů
@@ -106,11 +107,11 @@ Kombinováním `robutek.move` a `robutek.rotate` můžeš s Robůtkem "vyjezdit"
 ??? note "Řešení"
 
     ```ts
-    import * as robutek from "./libs/robutek.js";
     import * as colors from "./libs/colors.js";
     import * as gpio from "gpio";
     import { SmartLed, LED_WS2812 } from "smartled";
-    import { Pins } from "./libs/robutek.js";
+    import { createRobutek } from "./libs/robutek.js"
+    const robutek = createRobutek("V1");
 
     async function main() {
         // Tady bude kód na ovládání motorů
