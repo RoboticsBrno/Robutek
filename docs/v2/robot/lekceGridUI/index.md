@@ -4,6 +4,8 @@ Pokud už jste si užili dost ovládání Robůtka joystickem, nebo byste si k n
 
 Rozhraní zobrazené na ovládacím zařízení je vytvářeno pomocí souboru `layout.ts`, najdete ho vedle souboru `index.ts`, který obvykle upravujete. Na [gridui.robotikabrno.cz](https://gridui.robotikabrno.cz/) si můžete navrhnout vysněné rozhraní a stránka pro vás soubor `layout.ts` vygeneruje sama. Všimněte si, že všechny widgety mají svoje id, kterým je budeme rozlišovat v kódu.
 
+[GridUI designer](https://gridui.robotikabrno.cz/){ .md-button .md-button--primary }
+
 !!! tip "Nemusíte si vkládat jenom ovládací prvky, můžete si taky na své rozhraní dát třeba ledky nebo textové pole na zobrazování dat z Robůtka. "
 
 ![](assets\guiExample.png)
@@ -13,6 +15,8 @@ Takhle by třeba mohlo vypadat rozhraní navržené v designeru, máme na něm p
 Tady máte ke stažení popsaný projekt (nastavení barvy ledky na desce, blikající ledka stejné barvy na rozhraní...).
 
 [Stáhnout ZIP s ukázkou](colors-gridui.zip){ .md-button .md-button--primary }
+
+
 
 
 ## Spuštění
@@ -35,10 +39,10 @@ Layout.begin(OWNER, DEVICE_NAME, builder => {
     })
 });
 ```
-Po připojení robůtka k wi-fi (popsáno v [lekci 1.5](../lekce1/gridui.md)) inizializujeme rozhraní funkcí `Layout.begin()`, které v argumentech předáváme jméno vlastníka, jméno zařízení a blok kódu, ve kterém nastavíme události spouštěné změnami v rozhraní. Tak zrovna `builder.SetColor.onChanged(slider => { kód tu })` bude obsahovat kód, který se spustí, když widget s id `SetColor` projde nějakou změnou. V tomto případě je daný widget náš posuvník a změnou bude, když jím někdo posune. V proměnné `slider` je našemu kódu předán stav posuvníku, takže si poté můžeme vyčíst třeba jeho aktuální hodnotu takto:
+Po připojení robůtka k wi-fi (popsáno v [lekci 1](../lekce1/index.md)) inizializujeme rozhraní funkcí `Layout.begin()`, které v argumentech předáváme jméno vlastníka, jméno zařízení a blok kódu, ve kterém nastavíme události spouštěné změnami v rozhraní. Tak zrovna `builder.SetColor.onChanged(slider => { // kód zde })` bude obsahovat kód, který se spustí, když widget s id `SetColor` projde nějakou změnou. V tomto případě je daný widget náš posuvník a změnou bude, když jím někdo posune. V proměnné `slider` je našemu kódu předán stav posuvníku, takže si poté můžeme vyčíst třeba jeho aktuální hodnotu takto:
 
 ```ts
-hodnota = slider.value
+let hodnota = slider.value
 ```
 
 ## Upravování widgetů
