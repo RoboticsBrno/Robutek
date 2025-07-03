@@ -75,7 +75,7 @@ enum PinsV2 {
 }
 
 
-const regV1: motor.RegParams = {
+const RegV1: motor.RegParams = {
     kp: 7000,
     ki: 350,
     kd: 350,
@@ -86,7 +86,7 @@ const regV1: motor.RegParams = {
     unwindFactor: 1
 };
 
-const regV2: motor.RegParams = {
+const RegV2: motor.RegParams = {
     kp: 7000,
     ki: 350,
     kd: 400,
@@ -127,8 +127,8 @@ export class Robutek<PinsType extends typeof PinsV1 | typeof PinsV2> extends Dif
         Unload: 150,
     }
 
-    constructor(pins: PinsType, reg: motor.RegParams, ledcConfig: RobutekLedcConfig) {
-        ledc.configureTimer(ledcConfig.timer, 4000, 10);
+    constructor(pins: PinsType, encTicks: number, reg: motor.RegParams, ledcConfig: RobutekLedcConfig) {
+        ledc.configureTimer(ledcConfig.timer, 2000, 10);
 
         const leftMotorPins: motor.MotorPins = { motA: pins.Motor1A, motB: pins.Motor1B, encA: pins.Enc1A, encB: pins.Enc1B };
         const rightMotorPins: motor.MotorPins = { motA: pins.Motor2A, motB: pins.Motor2B, encA: pins.Enc2A, encB: pins.Enc2B };
@@ -136,8 +136,8 @@ export class Robutek<PinsType extends typeof PinsV1 | typeof PinsV2> extends Dif
         const leftMotorLedc: motor.LedcConfig = { timer: ledcConfig.timer, channelA: ledcConfig.channels[0], channelB: ledcConfig.channels[1] };
         const rightMotorLedc: motor.LedcConfig = { timer: ledcConfig.timer, channelA: ledcConfig.channels[2], channelB: ledcConfig.channels[3] };
 
-        const leftMotor = new motor.Motor({ pins: leftMotorPins, ledc: leftMotorLedc, encTicks: 812, reg, circumference: wheelCircumference });
-        const rightMotor = new motor.Motor({ pins: rightMotorPins, ledc: rightMotorLedc, encTicks: 812, reg, circumference: wheelCircumference });
+        const leftMotor = new motor.Motor({ pins: leftMotorPins, ledc: leftMotorLedc, encTicks: encTicks, reg, circumference: wheelCircumference });
+        const rightMotor = new motor.Motor({ pins: rightMotorPins, ledc: rightMotorLedc, encTicks: encTicks, reg, circumference: wheelCircumference });
 
         super(leftMotor, rightMotor, robutekDiameter);
 
@@ -218,9 +218,9 @@ export function createRobutek(version: "V1", ledcConfig?: RobutekLedcConfig): Ro
 export function createRobutek(version: "V2", ledcConfig?: RobutekLedcConfig): Robutek<typeof PinsV2>;
 export function createRobutek(version: "V1" | "V2", ledcConfig: RobutekLedcConfig = defaultLedcConfig): Robutek<typeof PinsV1 | typeof PinsV2> {
     if (version === "V1") {
-        return new Robutek(PinsV1, regV1, ledcConfig) as Robutek<typeof PinsV1>;
+        return new Robutek(PinsV1, EncoderTicksV1, RegV1, ledcConfig) as Robutek<typeof PinsV1>;
     }
     else {
-        return new Robutek(PinsV2, regV2, ledcConfig) as Robutek<typeof PinsV2>;
+        return new Robutek(PinsV2, EncoderTicksV2 ,RegV2, ledcConfig) as Robutek<typeof PinsV2>;
     }
 }
