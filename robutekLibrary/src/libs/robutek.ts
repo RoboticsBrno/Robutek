@@ -3,7 +3,7 @@ import * as adc from "adc";
 import * as gpio from "gpio";
 import * as motor from "motor"
 import * as ledc from "ledc";
-import { DifferentialDrive } from "./differentialDrive";
+import { DifferentialDrive } from "./differentialDrive.js";
 
 const robutekDiameter = 83;  // mm
 const wheelDiameter = 33.3;  // mm
