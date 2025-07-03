@@ -84,6 +84,7 @@ V této kapitole si postavíme samotného Robůtka.
 
     ![](assets/IMG-stepKa.jpeg)
     ![](assets/IMG-stepKb.jpeg)
+    !!! danger "Zatlačte kartáčky až na doraz, aby nevylézala kovová část kartáčku."
     ![](assets/IMG-stepKc.jpeg)
     ![](assets/IMG-stepKd.jpeg)
 
