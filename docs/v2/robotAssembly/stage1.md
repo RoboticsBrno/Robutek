@@ -73,8 +73,9 @@ V této kapitole si postavíme samotného Robůtka.
 
 10. Nasaďte dřevěnou základnu. Přišroubujte ji k robůtku pomocí čtyř M3x30 šroubků.
 
+    !!! danger "Pozor na orientaci základny, díry musí sedět na součastky na desce."
+    !!! danger "Šrouby do dřevěné základny neutahujte silou, aby ji nepoškodily."
     ![](assets/IMG-step10a.jpeg)
-    !!! danger "Šrouby do dřevěné základny neutahujte silou aby neprorazily skrz destičku."
     ![](assets/IMG-step10c.jpeg)
     ![](assets/IMG-step10b.jpeg)
 
@@ -86,6 +87,7 @@ V této kapitole si postavíme samotného Robůtka.
 
 12. Přišroubujte dřevěnou palubu.
 
+    !!! danger "Pozor na orientaci paluby, díry musí sedět na součastky na desce."
     ![](assets/IMG-step12a.jpeg)
     ![](assets/IMG-step12b.jpeg)
     ![](assets/IMG-step12c.jpeg)
