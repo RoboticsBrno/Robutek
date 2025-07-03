@@ -39,7 +39,7 @@ Layout.begin(OWNER, DEVICE_NAME, builder => {
     })
 });
 ```
-Po připojení robůtka k wi-fi (popsáno v [lekci 1](../lekce1/index.md)) inizializujeme rozhraní funkcí `Layout.begin()`, které v argumentech předáváme jméno vlastníka, jméno zařízení a blok kódu, ve kterém nastavíme události spouštěné změnami v rozhraní. Tak zrovna `builder.SetColor.onChanged(slider => { // kód zde })` bude obsahovat kód, který se spustí, když widget s id `SetColor` projde nějakou změnou. V tomto případě je daný widget náš posuvník a změnou bude, když jím někdo posune. V proměnné `slider` je našemu kódu předán stav posuvníku, takže si poté můžeme vyčíst třeba jeho aktuální hodnotu takto:
+Po připojení robůtka k wi-fi (popsáno v [lekci 1](../lekce1/index.md#lekce-15-dalkove-ovladani)) inizializujeme rozhraní funkcí `Layout.begin()`, které v argumentech předáváme jméno vlastníka, jméno zařízení a blok kódu, ve kterém nastavíme události spouštěné změnami v rozhraní. Tak zrovna `builder.SetColor.onChanged(slider => { // kód zde })` bude obsahovat kód, který se spustí, když widget s id `SetColor` projde nějakou změnou. V tomto případě je daný widget náš posuvník a změnou bude, když jím někdo posune. V proměnné `slider` je našemu kódu předán stav posuvníku, takže si poté můžeme vyčíst třeba jeho aktuální hodnotu takto:
 
 ```ts
 let hodnota = slider.value
