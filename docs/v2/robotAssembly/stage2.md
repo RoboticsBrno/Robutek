@@ -29,6 +29,8 @@
 
 4. Nasuňte držák na fixu.
 
+    <!-- TODO add arrow and warning about black part orientation  -->
+
     ![](assets/IMG-stage2-step3mod.png)
 
 5. Nasuňte na fixu přípravek. Zatlačte ji až na doraz.
@@ -76,6 +78,8 @@
 
 14. Nasaďte na servo packu.
 
+    !!! warning "Pozor na orientaci pacičky, díra s ozubeným vnitřkem musí být směrem k servu."
+
     ![](assets/IMG-stage2-step13a.jpeg)
     ![](assets/IMG-stage2-step13b.jpeg)
 
@@ -83,7 +87,7 @@
 
     ![](assets/IMG-stage2-step14a.jpeg)
 
-16. Fixu dejte do robůtka a zahákněte packu serva do gumičky.
+16. Fixu dejte do robůtka a zahákněte packu serva do díry v černém dílu.
 
     ![](assets/IMG-stage2-step14b.jpeg)
 

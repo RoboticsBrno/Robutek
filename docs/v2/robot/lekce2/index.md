@@ -20,17 +20,17 @@ Barvu LED nastavíme pomocí `ledStrip.set(0, colors.<nějaká_barva>)` a zobraz
 
 ??? note "Řešení"
 
-```ts
-import * as colors from "./libs/colors.js";
-import { LED_WS2812, SmartLed } from "smartled";
-import { createRobutek } from "./libs/robutek.js";
-const robutek = createRobutek("V2");
+    ```ts
+    import * as colors from "./libs/colors.js";
+    import { LED_WS2812, SmartLed } from "smartled";
+    import { createRobutek } from "./libs/robutek.js";
+    const robutek = createRobutek("V2");
 
-const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812); // robutek.Pins.ILED je pin 48
+    const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812); // robutek.Pins.ILED je pin 48
 
-ledStrip.set(0, colors.red); // nastaví barvu první LED na červenou (RGB 255 0 0)
-ledStrip.show(); // zobrazí nastavení na LED
-```
+    ledStrip.set(0, colors.red); // nastaví barvu první LED na červenou (RGB 255 0 0)
+    ledStrip.show(); // zobrazí nastavení na LED
+    ```
 
 ## Co je to událost v programování?
 
@@ -61,7 +61,6 @@ Pomocí událostí rozsvítíme při stisknutí tlačítka (`GPIO 0`) RGB LED na
 
 ??? note "Řešení"
 
-<!-- TODO: broken program -->
     ```ts
     import { createRobutek } from "./libs/robutek.js"
     import * as colors from "./libs/colors.js";
