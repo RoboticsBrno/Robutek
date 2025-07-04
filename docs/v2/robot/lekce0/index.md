@@ -1,4 +1,4 @@
-# Lekce 0 - Instalace prostředí --- TODO - UPDATE
+# Lekce 0 - Instalace prostředí
 
 V této lekci si představíme Jaculus, nainstalujeme si programovací prostředí a spustíme první program.
 
@@ -17,11 +17,11 @@ Na linuxu je třeba přidat oprávnění udev, [více zde](https://docs.espressi
 
 #### Instalace Jacula
 
-1. Otevřeme si [Jaculus web installer](https://installer.jaculus.org/) v Chrome nebo Edge.
+1. Otevřeme si [Jaculus web installer](https://installer.jaculus.org/?baudrate=921600&chip=ESP32-S3&variant=ESP32-S3-Generic-QuadPSRAM&version=latest&erase=noErase) v Chrome nebo Edge.
 
     !!! warning "Tento postup nefunguje ve Firefoxu a jinych prohlížečích, které nepodporují rozhraní WebSerial."
 
-2. Zvolíme desku `ESP32 S3 DevKitC`
+2. Zvolíme desku `ESP32-S3` a variantu `Generic Quad PSRAM`
 
     ![](assets/JacWebInstall1.png)
 
@@ -156,3 +156,6 @@ Rozšíření pro VSCode nám umožní jednoduše nahrávat kód do Jacula pomoc
     1. Stáhněte si <a target="_blank" href="https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers">driver</a> pro váš operační systém. Naleznete jej v záložce `Downloads -> Software -> CP210x Universal Windows Driver`.
     2. Rozbalte ZIP soubor a poté pravým tlačítkem klikněte na `silabser.inf` a vyberte `Install`.
     3. Vyzkoušejte, zda se vám podařilo připojit Jaculus. (možná budete muset restartovat počítač).
+
+!!! tip "Něco ti nefunguje?"
+    Podívej se na [Časro kladené dotazy](../faq/index.md)
