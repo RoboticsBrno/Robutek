@@ -1,4 +1,4 @@
-# Lekce 8 - Řetězce
+# Bonus - Řetězce
 
 Zatím jsme se zařízením po nahrání programu komunikovali jednostranně: pomocí `#!ts console.log()` jsme vypisovali různé věci na výstup, a ten jsme sledovali pomocí příkazu `Monitor`.
 
@@ -7,7 +7,7 @@ Na to, abychom za běhu mohli posílat informace do zařízení, potřebujeme no
 Řetězce jsou sekvence znaků, a umožňují nám předávat informace.
 Datový typ, který drží řetězec, se jmenuje `#!ts string`.
 
-- Řetězec je vždy uzavřený do uvozovek `#!ts ""`, `''` nebo <code>``</code> pro formátovací řetězce.
+- Řetězec je vždy uzavřený do uvozovek `#!ts ""`, `''` nebo <code>``</code>
     ```ts
     let str : string = "ahoj";  // vytvoří řetězec
     ```
@@ -29,7 +29,7 @@ Datový typ, který drží řetězec, se jmenuje `#!ts string`.
     let str4 : string = answer + " " + 5;  // dobře 5
 
     let num : number = 5;
-    let str5 : string = "Je mi " + num + " let";
+    let str5 : string = "Je mi " + number + " let";
     ```
 
 ??? warning "Automatický převod na řetězec"
@@ -41,12 +41,6 @@ Datový typ, který drží řetězec, se jmenuje `#!ts string`.
     V `result` bude `"5 + 1 je: 51"`!
 
     5 se přidá do řetězce, a poté se tam přidá 1, nesečtou se předem.
-    
-    Pro správné fungování by se muselo 5 + 1 dát do závorky, takhle:
-    ```ts
-    let result : string = "(5 + 1) je: " + (5 + 1);
-    ```
-    V `result` bude `"(5 + 1) je: 6"`!
 
 
 Stejně jako ostatní typy je můžeme předávat do funkcí a vracet:
@@ -69,23 +63,23 @@ Napíšeme program, který při stisku tlačítka vypíše na výstup `"Senzor n
 
 ??? note "Řešení"
     ```ts
-    import { createRobutek } from "./libs/robutek.js";
     import * as gpio from "gpio";
     import * as adc from "adc";
 
-    const robutek = createRobutek("V2");
+    const BTN_LEFT = 2;
 
-    gpio.pinMode(robutek.Pins.ButtonLeft, gpio.PinMode.INPUT);
+    const SENSOR_PIN: number  = 4;
+    const LIGHTN_PIN: number  = 47;
 
-    adc.configure(robutek.Pins.Sens1);
+    gpio.pinMode(BTN_LEFT, gpio.PinMode.INPUT);
 
-    gpio.pinMode(robutek.Pins.StatusLED, gpio.PinMode.OUTPUT);
-    gpio.write(robutek.Pins.StatusLED, 1);
+    adc.configure(SENSOR_PIN);
 
-    console.log("Pro vypsání hodnoty na senzoru zmáčkněte levé tlačítko na robůtkovi."); // vypíšeme výzvu
+    gpio.pinMode(LIGHTN_PIN, gpio.PinMode.OUTPUT);
+    gpio.write(LIGHTN_PIN, 1);
 
-    gpio.on("falling", robutek.Pins.ButtonLeft, () => { // vždy, když zmáčkneme tlačítko, vypíšeme naměřenou hodnotu na senzoru
-        console.log("Senzor naměřil " + robutek.readSensor("LineFL") + ".");
+    gpio.on("falling", BTN_LEFT, () => {
+        console.log("Senzor naměřil " + adc.read(SENSOR_PIN) + ".");
     });
     ```
 
@@ -143,16 +137,12 @@ Napíšeme program, který se zeptá, jak se jmenujeme, a počká na odpověď. 
 
 ### Standardní funkce
 
-Každý jazyk nabízí řadu funkcí na práci se řetězci. Můžeme je například převádět na čísla, obracet, měnit znaky, a podobně. Pro nás je zajímavé umět načíst ze vstupu číslo: to můžeme udělat tak, že pomocí funkce `read()` dostaneme řetězec ze vstupu, a poté na něm zavoláme funkci `parseInt()`, která nám ho převede na celočíselnou hodnotu. Kdybychom chtěli převést hodnotu s desetinými čísly, tak využijeme funkce `parseFloat()`.
+Každý jazyk nabízí řadu funkcí na práci se řetězci. Můžeme je například převádět na čísla, obracet, měnit znaky, a podobně. Pro nás je zajímavé umět načíst ze vstupu číslo: to můžeme udělat tak, že pomocí funkce `read()` dostaneme řetězec ze vstupu, a poté na něm zavoláme funkci `parseInt()`, která nám ho převede na celočíselnou hodnotu.
 
 ```ts
 let str : string = "20"; // Řetězec se znaky pro 20
 let num : number = parseInt(str); // Převedeme řetězec na číslo, a můžeme s ním počítat
 let doubled : number = num * 2; // doubled bude mít hodnotu 40
-
-str = "0.234689"; // Řetězec se znaky pro desetinné číslo hodnoty 0,234689 oddělujeme desetinnou tečkou.
-let des : number = parseFloat(str); // Převedeme řetězec na desetinné číslo.
-let doubled_des : number = des * 2; // doubled_des bude mít hodnotu 0,469378
 ```
 
 ## Výchozí úloha V1
