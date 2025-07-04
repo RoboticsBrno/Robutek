@@ -6,16 +6,16 @@
 1. K pásku připájíme kabel pro připojení do robůtka.
 
     !!! danger "Dejte si pozor ať kabel nepřipájíte k **DOUT** pinu místo **DIN** pinu."
-    ![soldered light](assets/soldered_light.jpg)
+    ![soldered light](assets/stage3/soldered_light.jpg)
 
 2. Pásek připojíme k Robůtkovi.
 
     !!! comment "Žlutý drát patří doprava."
-    ![light connector](assets/light_connector.jpg)
+    ![light connector](assets/stage3/light_connector.jpg)
 
 <!-- TODO update pictures to use current wood design -->
 3. Pásek přilepíme tavnou pistolí k Robůtkovi.
 
-    ![gluing light](assets/gluing_light.jpg)
+    ![gluing light](assets/stage3/gluing_light.jpg)
 
 [Krok 4 - Tlačítko](stage4.md){.md-button .md-button--primary}
