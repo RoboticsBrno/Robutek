@@ -157,19 +157,22 @@ nav:
       - robot/lekce9/index.md
   - Rozšiřující bloky:
       - robotExtensions/index.md
-      - Bloky: 
-          - GridUI:
-            - robotExtensions/blokGridUI/index.md
-          - Čára:
-            - robotExtensions/blokCara/index.md
-            - robotExtensions/blokCara/logic.md
-          - Sumo:
-            - robotExtensions/blokSumo/index.md
-            - robotExtensions/blokSumo/logic.md
-          - Bludiště:
-            - robotExtensions/blokMaze/index.md
-            - GPIO: 
-              - robotExtensions/blokMaze/gpio.md
-              - robotExtensions/blokMaze/gpio-adv.md
-            - robotExtensions/blokMaze/tof.md
-            - robotExtensions/blokMaze/logic.md
+      - GridUI:
+        - robotExtensions/blokGridUI/index.md
+      - Čára:
+        - robotExtensions/blokCara/index.md
+        - robotExtensions/blokCara/logic.md
+      - Sumo:
+        - robotExtensions/blokSumo/index.md
+        - robotExtensions/blokSumo/logic.md
+      - Bludiště:
+        - robotExtensions/blokMaze/index.md
+        - GPIO: 
+          - robotExtensions/blokMaze/gpio.md
+          - robotExtensions/blokMaze/gpio-adv.md
+        - robotExtensions/blokMaze/tof.md
+        - robotExtensions/blokMaze/logic.md
+      - Senzor barev:
+        - robotExtensions/blokRGB/index.md
+      - I2C:
+        - robotExtensions/blokI2C/index.md
