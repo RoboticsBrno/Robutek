@@ -8,8 +8,8 @@ Nás budou zajímat zejména senzory LineFL a LineFR.
 Hodnotu ze senzoru jde vyčíst následujícím způsobem
 
 ```ts
-const l = robutek.readSensor("WheelFL");
-const r = robutek.readSensor("WheelFR");
+const l = robutek.readSensor("LineFL");
+const r = robutek.readSensor("LineFR");
 ```
 
 Načtené hodnoty si můžeme jednoduše vypsat
