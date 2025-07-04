@@ -39,7 +39,7 @@ Layout.begin(OWNER, DEVICE_NAME, builder => {
     })
 });
 ```
-Po připojení robůtka k wi-fi (popsáno v [lekci 1](../lekce1/index.md#lekce-15-dalkove-ovladani)) inizializujeme rozhraní funkcí `Layout.begin()`, které v argumentech předáváme jméno vlastníka, jméno zařízení a blok kódu, ve kterém nastavíme události spouštěné změnami v rozhraní. Tak zrovna `builder.SetColor.onChanged(slider => { // kód zde })` bude obsahovat kód, který se spustí, když widget s id `SetColor` projde nějakou změnou. V tomto případě je daný widget náš posuvník a změnou bude, když jím někdo posune. V proměnné `slider` je našemu kódu předán stav posuvníku, takže si poté můžeme vyčíst třeba jeho aktuální hodnotu takto:
+Po připojení robůtka k wi-fi (popsáno v [lekci 1](../lekce1/index.md#dalkove-ovladani)) inizializujeme rozhraní funkcí `Layout.begin()`, které v argumentech předáváme jméno vlastníka, jméno zařízení a blok kódu, ve kterém nastavíme události spouštěné změnami v rozhraní. Tak zrovna `builder.SetColor.onChanged(slider => { // kód zde })` bude obsahovat kód, který se spustí, když widget s id `SetColor` projde nějakou změnou. V tomto případě je daný widget náš posuvník a změnou bude, když jím někdo posune. V proměnné `slider` je našemu kódu předán stav posuvníku, takže si poté můžeme vyčíst třeba jeho aktuální hodnotu takto:
 
 ```ts
 let hodnota = slider.value
@@ -56,10 +56,13 @@ setInterval(() => {
 Nemusíme ale ledce nastavovat jenom jestli je zapnutá nebo vypnutá. Vlastně můžeme měnit všechny její vlastností, které jsem si nastavili v designeru.
 
 ![](assets/suggExample.png)
-!!! tip "Našeptávač se ve VSCode zobrazuje sám, ale pokud vám zmizí, znovu si ho můžete zobrazit stisknutím ++ctrl+space++. "
+!!! info "Našeptávač se ve VSCode zobrazuje sám, ale pokud vám zmizí, znovu si ho můžete zobrazit stisknutím ++ctrl+space++. "
 
 Jak vidíte, našeptávač nám nabízí přístup k barvě stavu, výšce, šířce, pozici... Prostě ke všem vlastnostem ledky, které si můžeme v designeru nastavit. Některým z nich můžeme v kódu prostě přiřadit hodnotu a ona se projeví na rozhraní (viz příklad blikání ledkou na rozhraní v GridUI). Když si potom jednu vlastnost vybereme a najedeme na ni myší, ukáže se nám, jaký typ hodnoty požadují. Vlastnost `.on` u ledky bere booleanskou hodnotu, vlastnost `.widgetH` číslo, které určuje výšku widgetu, a `.color` string ve formátu `#ffffff` (RGB hodnoty v hexadecimální soustavě).
 
 
 Obdobně snadno přijdete na všechno, co se dá vyvádět s ostatními widgety. Ještě jedna věc: nastavovat hodnoty můžete všem vlastnostem, které jsou speciální pro konkrétní widget (barva, velikost fontu, hodnota posuvník atd.) zatímco k obecným vlastnostem, jako je pozice, velikost widgetu a uuid, můžete přistupovat pouze ke čtení.
 
+Pohled na jednotlivé widgety a jejich vlastnosti je dostupný v dalším bloku.
+
+[Widgety v GridUI](widgets.md){ .md-button .md-button--primary }
