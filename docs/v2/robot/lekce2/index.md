@@ -61,7 +61,11 @@ Pomocí událostí rozsvítíme při stisknutí tlačítka (`GPIO 0`) RGB LED na
 
 ??? note "Řešení"
 
+<!-- TODO BROKEN example -->
+
     ```ts
+
+
     import { createRobutek } from "./libs/robutek.js"
     import * as colors from "./libs/colors.js";
     import { LED_WS2812, SmartLed } from "smartled";
