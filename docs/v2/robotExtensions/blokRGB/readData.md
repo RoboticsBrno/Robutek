@@ -59,3 +59,7 @@ Udělejte program, mění barvu LED na desce na barvu, kterou měří senzor. Po
     }, 50);
     ```
 
+### Možné pokračování
+
+ - Udělej program, který bude měřit barvu předmětu před senzorem a "pozná", o jakou barvu se jedná. Pokud před něj dáme zelený předmět, vypíše nám do konzole "zelená" atd...
+ 
