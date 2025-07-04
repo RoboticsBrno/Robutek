@@ -1,4 +1,4 @@
-# Projekt - Sumo
+# Sumo
 
 Po seznámení s Robůtkem a programovacím prostředí se můžeme pustit do prvního projektu. Naším cílem bude vytvořit robota, který nespadne z hracího pole.
 Hrací pople je pokryté černou barvou a jeho okraj oblepený bílou páskou. Když Robůtkovi senzorz detekují bílou pásku tak se otočí a vyrazí náhodně zpět do hracího pole.
@@ -12,4 +12,4 @@ Dva Robůtci budou postaveni do hracího pole. Úkolem vašeho Robůtka bude zho
 
 Ukázka jednoduchého programu:
 
-![Ukázka jednoduchého programu](./assets/example.gif)
+![Ukázka jednoduchého programu](assets/example.gif)

@@ -1,4 +1,4 @@
-# Senzor vzdálenosti
+# Stage 5 - Senzor vzdálenosti
 
 1. Uřizneme si dva 2 cm dlouhé kusy dřevíčka pro držák Lidaru.
 
@@ -46,4 +46,7 @@
 8. Poté přilepíme dálkoměr k držáku pomocí tavné pistole.
 
     ![attaching tof](assets/attaching_tof.jpg)
+
+
+[4. Pohled na senzor vzálenosti ](tof.md){ .md-button .md-button--primary }
 

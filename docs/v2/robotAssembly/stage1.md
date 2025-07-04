@@ -102,3 +102,5 @@ V této kapitole si postavíme samotného Robůtka.
     ![](assets/IMG-step12b.jpeg)
     ![](assets/IMG-step12c.jpeg)
     Máte hotovo!
+
+[Krok 2](stage2.md){.md-button .md-button--primary}

@@ -79,12 +79,12 @@ plugins:
       enable_cache: True
       size: [1000, 800]
       extensions: [".jpg", ".jpeg", ".png", ".gif"]
-  - typedoc:
-      source: "./docs/robot/lekce1/example1/@types/*.d.ts"
-      output_dir: "jaculusApi"
-      tsconfig: "./docs/robot/lekce1/example1/tsconfig.json"
-      options: "typedoc.json"
-      name: "Jaculus API documentation"
+  # - typedoc:
+  #     source: "./docs/robot/lekce1/example1/@types/*.d.ts"
+  #     output_dir: "jaculusApi"
+  #     tsconfig: "./docs/robot/lekce1/example1/tsconfig.json"
+  #     options: "typedoc.json"
+  #     name: "Jaculus API documentation"
 
   - zip_folders:
       folders:
@@ -95,8 +95,8 @@ plugins:
         - robot/lekce4/project4
         - robot/lekce6/project6
         - robot/lekce8/project8
-        - robot/lekceGridUI/colors-gridui
-        - robutekLibrary/Robutek-library
+        - robotExtensions/blokGridUI/colors-gridui
+        - robutekLibrary
       formats:
         - zip
         - tar.gz
@@ -139,34 +139,37 @@ nav:
       - robotAssembly/index.md
       - robotAssembly/stage1.md
       - robotAssembly/stage2.md
-  - Programování robota:
+      - robotAssembly/stage3.md
+      - robotAssembly/stage4.md
+      - robotAssembly/stage5.md
+  - Programovací lekce:
       - robot/index.md
       - robot/faq/index.md
       - robot/lekce0/index.md
       - robot/lekce1/index.md
       - robot/lekce2/index.md
       - robot/lekce3/index.md
-      - robot/lekce4/motors.md
-      - robot/lekce5/pen.md
-      - robot/lekce6/for.md
-      - robot/lekce6/turtle.md
-      - robot/lekce7/turtle.md
-      - robot/lekceCara/index.md
+      - robot/lekce4/index.md
+      - robot/lekce5/index.md
+      - robot/lekce6/index.md
+      - robot/lekce7/index.md
       - robot/lekce8/index.md
       - robot/lekce9/index.md
-      - robot/lekceGridUI/index.md
-      - robot/project_sumo/index.md
-      - robot/project_maze/index.md
-  - Příslušenství robota:
-      - robotAccessories/ledStrip.md
-      - robotAccessories/button.md
-      - robotAccessories/tof.md
-      - robotAccessories/rgbSens.md
-  - Dokumentace:
-      - robot/docs/index.md
-      - robot/docs/wifi.md
-      - robot/docs/socket.md
-      - robot/docs/motors.md
-      - robot/docs/sens.md
-      - robot/docs/sim.md
-      - robot/docs/vl53.md
+  - Rozšiřující bloky:
+      - robotExtensions/index.md
+      - Bloky: 
+          - GridUI:
+            - robotExtensions/blokGridUI/index.md
+          - Čára:
+            - robotExtensions/blokCara/index.md
+            - robotExtensions/blokCara/logic.md
+          - Sumo:
+            - robotExtensions/blokSumo/index.md
+            - robotExtensions/blokSumo/logic.md
+          - Bludiště:
+            - robotExtensions/blokMaze/index.md
+            - GPIO: 
+              - robotExtensions/blokMaze/gpio.md
+              - robotExtensions/blokMaze/gpio-adv.md
+            - robotExtensions/blokMaze/tof.md
+            - robotExtensions/blokMaze/logic.md

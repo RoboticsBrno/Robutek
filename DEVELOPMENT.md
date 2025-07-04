@@ -63,6 +63,12 @@ Lokální spuštění dokumentace:
 - pro v1 - `python3 -m mkdocs serve --config-file mkdocs.v1.yml`
 - pro v2 - `python3 -m mkdocs serve --config-file mkdocs.v2.yml`
 
+### Návody
+- Rozděleno do dvou složek `docs/v1` a `docs/v2` pro různé verze Robůtka, což znamená dva soubory konfigurace mkdocs - `mkdocs.v1.yml` a `mkdocs.v2.yml`
+- Do složek projektů není potřeba vkládat `@types` a `src/libs`, protože se kopírují automaticky z `robutekLibrary`
+  - Spuštěním `bash update-projects.sh` se soubory automaticky nakopírují
+  - Spuštěním `bash jac-autocompile.sh` se ve všech projektech spustí `jac build`
+
 ## Práce s obrázky
 
 Obrázky přidávej do podsložek v `docs` podle adresy stránky, na které se mají zobrazit.

@@ -1,4 +1,4 @@
-# RGB pásek
+# Stage 3 - RGB pásek
 
 !!! comment "Příslušenstí si můžete dát kamkoliv na Robůtka, ale v návodech jsou doporučené pozice."
 
@@ -18,3 +18,4 @@
 
     ![gluing light](assets/gluing_light.jpg)
 
+[Krok 4 - Tlačítko](stage4.md){.md-button .md-button--primary}

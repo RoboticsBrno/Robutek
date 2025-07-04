@@ -1,193 +1,110 @@
-# Lekce 5 - funkce
+# Lekce 5 - Servo (Kreslení tužkou)
 
-## Funkce - Co to je?
-Funkce je část programu, kterou můžeme volat (spouštět) jinými částmi programu.
-Rozdělení programu na funkce ho výrazně zpřehledňuje a umožňuje nám opakovaně používat jeden kus kódu.
+Na Robůtkovi jsou dvě pozice na připojení serva - piny 38 a 21. Pokud jste si podle návodu ke složení robota připevnili servo a tužku, jste připraveni na to kreslit.
 
-## Vytvoření a zavolání funkce
+## Začátek
+
+Abychom mohli používat servo, musíme ho získat příkazem `#!ts const servo = new Servo(...)`, kde do závorky napíšeme číslo PINu, timer (zde ho nastavíme na 1) a kanál (zde ho nastavíme na 4)
+
 ```ts
-function sayHello(): void {
-    console.log("Ahoj");
-    console.log("z funkce");
-}
+import { Servo } from "./libs/servo.js"
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V2");
+
+const servo = new Servo(robutek.Pins.Servo2, 1, 4); // Pins.Servo2 je pin 38
 ```
 
-Funkci zavoláme následujícím způsobem:
+Na nastavení pozice serva použijeme funkci `#!ts servo.write()` a do závorek zadáme číslo od 0 do 1023,
+které určí úhel otočení.
 ```ts
-sayHello();
+servo.write(0);    // 0°
+servo.write(512);  // 90°
+servo.write(1023); // 180°
 ```
 
-??? info "Kód nám vypíše:"
-    ```bash
-    info:    Device: Starting machine
-    Ahoj
-    z funkce
-    ```
+## Kreslení tužkou
 
-## Předávání argumentů
-Funkcím můžeme při volání předávat argumenty. Argumenty funkce píšeme při vytváření funkce do závorky.
-Pokud je argumentů více, oddělujeme je čárkou. Parametry je taky potřeba vhodně otypovat.
+Tím, že zvedáme nebo pokládáme servo, můžeme ovládat připevněnou tužku. 
+Abychom si nemuseli pamatovat konkrétní hodnoty pro zvedání tužky, Robůtek má 3 předdefinované konstaty pro ovládání: `Up`, `Down` a `Unload`.
+Pokud bychom do něj dávali různé druhy tužek, můžeme si samozřejmě nadefinovat vlastní.
+
 ```ts
-function getSquare(num: number): void {
-    let square: number = num * num;
-    console.log("Druhá mocnina zadaného čísla je:");
-    console.log(square);
-}
+import { Servo } from "./libs/servo.js"
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V2");
+
+const pen = new Servo(Pins.Servo2, 1, 4); // Pins.Servo2 je pin 38
 ```
 
-Funckci zavoláme následujícím způsobem:
-```ts
-getSquare(5);
-```
-
-??? info "To by nám mělo vypsat:"
-    ```bash
-    info:    Device: Starting machine
-    Druhá mocnina zadaného čísla je:
-    25
-    ```
-
-## Vracení hodnot
-Z funkce je možné vrátit hodnotu. Můžeme tak jednoduchým způsobem pojmenovat složitější výpočty a provádět je opakovaně.
-Hodnoty vracíme pomocí klíčového slova `#!ts return`. Podobně jako v případě parametrů musíme specifikovat **typ** vracené hodnoty.
-Pokud funkce žádnou hodnotu nevrací, návratový typ je `#!ts void`, tedy "prázdná hodnota".
+Na nastavení pozice tužky použijeme funkci `#!ts pen.write()` a do závorek zadejte číslo on 0 od 1023 nebo jednu z konstant `robutek.PenPos.Up`, `robutek.PenPos.Down` a `robutek.PenPos.Unload`.
 
 ```ts
-function getAverage(num1: number, num2: number): number {
-    let sum: number = num1 + num2; // Součet dvou čísel
-    return sum / 2; // Vrátíme průměr dvou čísel jako návratovou hodnotu
-}
-```
-
-Funkci použijeme následujícím způsobem:
-```ts
-let average: number = getAverage(5, 10);
-
-console.log("Průměr je:");
-console.log(average);
-```
-
-??? info "Výstup programu"
-    ```bash
-    info:    Device: Starting machine
-    Průměr je:
-    7.5
-    ```
-
-
-??? warning "Nedosažitelný kód"
-    Použitím klíčového slova `#!ts return` ukončíme vykonávání současné funkce a vrátíme se zpátky do funkce která ji zavolala.
-    Z toho vyplývá, že to co napíšeme za `#!ts return` se již nikdy nevykoná.
-    ```ts
-    function getSquare(num: number): number { // Druhá mocnina
-        return num * num;
-        console.log("Toto se nikdy nevypíše");
-    }
-    ```
-
-<!-- ## Asynchronní funkce
-Když zavoláme běžnou funkci, tato funkce se vykoná a program potom pokračuje dál.
-V následujícím programu se nejdřív vykoná ```timeConsumingFunc``` a až poté co dokončí svoji práci se zavolá funkce ```somethingElse```.
-```ts
-
-    function timeConsumingFunc() {
-        // Neco velmi casove narocneho zde
-    }
-
-    timeConsumingFunc();
-    somethingElse();
-```
-
-
-??? tip "Co znamená asynchronní vykonávání funkce? "
-    Když zavoláme asynchronní funkci, řízení se nepředá výhradně volané funkci, ale asynchronní zavolaná funkce a původní funkce se začnou střídat v řízení. -->
-
-Samozřejmě můžeme funkce kombinovat, vzájemně volat z jiných funkcí, a výsledky ukládat do proměnných. 
-Můžeme tak kombinovat funkcionalitu dříve napsaných funkcí a zpřehlednit celkový kód.
-
-```ts
-function getSquare(num: number): number { // Druhá mocnina
-    return num * num;
-}
-
-function sumSquares(first: number, second: number) { // Sečti druhé mocniny
-    let result = getSquare(first) + getSquare(second);
-    return result;
-}
+pen.write(robutek.PenPos.Down);     // Začne kreslit
+pen.write(robutek.PenPos.Up);       // Přestane kreslit
+pen.write(robutek.PenPos.Unload);   // Vytáhne tužku
 ```
 
 ## Zadání A
 
-Podíváme se opět na příklady z předchozích lekcí, a zobecníme části kódu tak, aby šly jednoduše měnit.
-V prvním příkladu vytvoříme funkci `#!ts count`, která jako argumenty vezme dvě čísla, a postupně vypíše čísla od prvního argumentu, po druhý.
-tedy zavolání funkce `#!ts count(1, 5)` vypíše
-
-```bash
-1
-2
-3
-4
-5
-```
+Vytvořte program, který při zmáčknutí tlačítka zasune pero a druhé tlačítko, které ho vysune.
 
 ??? note "Řešení"
     ```ts
-    function count(lower: number, upper: number): void {
-        for (let counter = lower; counter <= upper; counter++) {
-            console.log(counter);
-        }
-    }
+    import { Servo } from "./libs/servo.js"
+    import * as gpio from "gpio"
+    import { createRobutek } from "./libs/robutek.js"
+    const robutek = createRobutek("V2");
+
+    const LBTN_PIN = 2;
+    const RBTN_PIN = 0;
+
+    gpio.pinMode(LBTN_PIN, gpio.PinMode.INPUT);
+    gpio.pinMode(RBTN_PIN, gpio.PinMode.INPUT);
+
+    const pen = new Servo(robutek.Pins.Servo2, 1, 4);
+
+    gpio.on("falling", LBTN_PIN, () => {
+        pen.write(robutek.PenPos.Down);
+    });
+
+    gpio.on("falling", RBTN_PIN, () => {
+        pen.write(robutek.PenPos.Up);
+    });
     ```
 
 ## Zadání B
 
-Místo vypisování čtverečku si chceme napsat funkci, která na výstup nakreslí obdélník libovolné velikosti.
-Napíšeme tedy funkci `#!ts drawRectangle` (nakresli obdélník), která vezme argument šířky a délky, a poté vypíše obdélník dané velikosti.
-??? note "Řešení"
-    ```ts
-    import { stdout } from "stdio";
-
-    function drawRectangle(cols: number, rows: number): void { // funkce, která vykreslí obdélník (počet sloupců, počet řádků)
-        for (let row: number = 0; row < rows; row++) { // projdeme všechny řádky
-            for (let col: number = 0; col < cols; col++) { // projdeme všechny sloupce
-                stdout.write("*"); // vypíšeme hvězdičku
-            }
-            stdout.write("\n"); // přesuneme se na další řádek
-        }
-    }
-
-    drawRectangle(5, 2); // vypíše obdélník o velikosti šířky 5 a délky 2
-    ```
-
-## Zadání C
-
-Nakonec se vrátíme k LED páskům, které teď můžeme rozsvítit jednou funkcí vybraným způsobem.
-Napíšeme funkci, která na vstupu vezme barvu a číslo LED, kterou chceme rozsvítit.
+Zkombinuj poznatky z lekce 5 s motory s touto, a vytvoř program který nakreslí fixou na papír čtverec po stistku tlačítka.
 
 ??? note "Řešení"
     ```ts
-    import { SmartLed, LED_WS2812 } from "smartled";
-    import * as colors from "./libs/colors.js"
+    import { Servo } from "./libs/servo.js"
+    import * as gpio from "gpio"
+    import { createRobutek } from "./libs/robutek.js"
+    const robutek = createRobutek("V2");
 
-    const LED_PIN = 21;
-    const LED_COUNT = 8;
+    const LBTN_PIN = 2;
+    const RBTN_PIN = 0;
 
-    const ledStrip = new SmartLed(LED_PIN, LED_COUNT, LED_WS2812);  // připojí pásek na pin 21, s 8 ledkami a typem WS2812
+    gpio.pinMode(LBTN_PIN, gpio.PinMode.INPUT);
+    gpio.pinMode(RBTN_PIN, gpio.PinMode.INPUT);
 
-    function setLed(color: colors.Rgb, index: number){
-        ledStrip.set(index, color); // Nastavíme LED na aktuální odstín
-        ledStrip.show(); // Zobrazíme vybranou barvu
-    }
+    const pen = new Servo(robutek.Pins.Servo2, 1, 4);
+
+    gpio.on("falling", LBTN_PIN, async () => {
+        pen.write(robutek.PenPos.Down); // fixa dolů
+
+        robutek.setSpeed(100) // Nastav rychlost na 100
+
+        await robutek.move(0, { distance: 300 }) // Ujeď 30 cm
+        await robutek.rotate(90)
+        await robutek.move(0, { distance: 300 })
+        await robutek.rotate(90)
+        await robutek.move(0, { distance: 300 })
+        await robutek.rotate(90)
+        await robutek.move(0, { distance: 300 })
+        await robutek.rotate(90)
+
+        pen.write(robutek.PenPos.Up); // fixa nahoru
+    });
     ```
-
-## Zadání výstupního úkolu V1
-
-Zkombinujeme to, co jsme se zatím naučili:
-vytvoříme funkci, která na vstupu dostane barvu, číslo počáteční a koncové LED, a zabarví všechny LED v tomto rozsahu.
-Ostatní LED zhasne.
-
-!!! tip "Pro dobrovolníky"
-
-    - Můžeme vybrané LEDky rozsvítit různými barvami: např. funkcí `#!ts colors.rainbow()` procházet definovaný rozsah barev
-
-    - Místo jedné barvy můžeme zadat počáteční a koncovou barvu, přičemž LED mezi nimi budou mezi těmito dvěma barvami postupně přecházet.

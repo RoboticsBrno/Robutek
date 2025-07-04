@@ -1,4 +1,4 @@
-# Bonus - GridUI designer
+# GridUI designer
 
 Pokud už jste si užili dost ovládání Robůtka joystickem, nebo byste si k němu rádi přidali  nějaké další ovládací prvky, můžete si upravit rozhraní zobrazované na mobilu/v prohlížeči, jak jen chcete.
 

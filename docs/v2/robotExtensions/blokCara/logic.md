@@ -1,11 +1,11 @@
-# Lekce 8 - sledování čáry
+# Sledování čáry
 
 Po seznámení s Robůtkem a programovacím prostředí se můžeme pustit do prvního projektu. Naším cílem bude vytvořit robota, který bude následovat černou čáru nakreslenou na bílém podkladu.
 
 K vyřešení tohoto úkolu budeme používat senzory odrazu světla, které jsou umístěné na spodní straně Robůtka. Tyto senzory dokáží rozpoznat, zda se pod nimi nachází bílá nebo černá plocha, případně jakou část pozorované plochy tvoří čára.
 
 Začneme opět s prázdným projektem, stáhni/nakopíruj si ho do nové složky pro tuto lekci:
-[Stáhnout ZIP s prázdným projektem](../lekce2/blank_project.zip){ .md-button .md-button--primary }
+[Stáhnout ZIP s prázdným projektem](../../robot/lekce2/blank_project.zip){ .md-button .md-button--primary }
 
 
 ## Startování na tlačítko
