@@ -15,7 +15,7 @@ const r = robutek.readSensor("LineFR");
 Načtené hodnoty si můžeme jednoduše vypsat
 
 ```ts
-console.log(`l: ${l}, r: ${r}`);
+console.log(`l: ${l}; r: ${r}`);
 ```
 Celý program na vyzkoušení senzorů může vypadat třeba takto:
 ```ts
@@ -31,4 +31,4 @@ async function main() {
 }
 main().catch(console.error);
 ```
-
+!!! tip "Běžte na [viz.jaculus.org](https://viz.jaculus.org) a uvidíte grafickou vizualizaci výstupu ze senzorů."
