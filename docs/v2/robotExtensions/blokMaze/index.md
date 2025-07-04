@@ -6,6 +6,6 @@ K tomu, abychom se dokázali v bludišti pohybovat, musíme mít způsob, jak de
 
 [1. Pohled na gpio](gpio.md){ .md-button .md-button--primary}
 
-[2. Pohled na senzor vzdálenosti](lidar.md){ .md-button }
+[2. Pohled na senzor vzdálenosti](tof.md){ .md-button }
 
 [3. Pohled na logiku procházení ](gpio.md){ .md-button }

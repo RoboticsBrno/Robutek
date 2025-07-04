@@ -171,6 +171,5 @@ nav:
             - GPIO: 
               - robotExtensions/blokMaze/gpio.md
               - robotExtensions/blokMaze/gpio-adv.md
-            - robotExtensions/blokMaze/tof-build.md
             - robotExtensions/blokMaze/tof.md
             - robotExtensions/blokMaze/logic.md
