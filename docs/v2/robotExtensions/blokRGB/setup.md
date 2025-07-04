@@ -2,13 +2,17 @@
 
 Prvním krokem je nastavení komunikace přes I2C.
 
-[Pokročilý pohled na I2C ](../blokI2C/index.md){ .md-button .md-button--primary }
+[Pokročilý pohled na I2C ](../blokI2C/index.md){ .md-button }
 
 !!! note "Pokud prohodíme SDA a SCL, komunikace nebude fungovat"
 
 ```ts
 import { I2C1 } from "i2c";
-I2C1.setup({ sda: 10, scl: 3, bitrate: 400000 });
+import { createRobutek } from "./libs/robutek.js"
+
+const robutek = createRobutek("V2");
+
+I2C1.setup({ sda: robutek.Pins.sda, scl: robutek.Pins.scl, bitrate: 400000 });
 ```
 
 Poté musíme senzor inicializovat a povolit.

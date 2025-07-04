@@ -4,8 +4,8 @@ Robůtek disponuje dvěma RGB senzory. Jeden z nich je zabudován v podvozku ved
 
 Pokud chceme používat externí senzor, musíme ho nejprve zapojit do robota.
 
-[Externí senzor](externalSensor.md){ .md-button}
+[Externí senzor](externalSensor.md){ .md-button .md-button--primary }
 
 Pokud chceme používat vestavěný senzor, můžeme rovnou senzor inicializovat.
 
-[Inicializace senzoru](setup.md){ .md-button}
+[Inicializace senzoru](setup.md){ .md-button .md-button--primary }

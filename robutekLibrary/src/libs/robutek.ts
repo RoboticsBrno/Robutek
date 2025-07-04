@@ -70,8 +70,8 @@ enum PinsV2 {
     Enc2A = 41,
     Enc2B = 42,
 
-    SDA = 3,
-    SCL = 10
+    SDA = 10,
+    SCL = 3
 }
 
 

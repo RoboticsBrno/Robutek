@@ -36,8 +36,12 @@ Udělejte program, který kazdých 500ms vypíše, jakou barvu senzor právě sn
     import * as colors from "./libs/colors.js";
     import { I2C1 } from "i2c";
     import { ZSCS2016C, Calibration } from "./libs/zscs2016c.js";
+    import { createRobutek } from "./libs/robutek.js"
 
-    I2C1.setup({ sda: 10, scl: 3, bitrate: 400000 });
+    const robutek = createRobutek("V2");
+
+    I2C1.setup({ sda: robutek.Pins.sda, scl: robutek.Pins.scl, bitrate: 400000 });
+
     const sensor = new ZSCS2016C(I2C1, false);
     sensor.enable();
 

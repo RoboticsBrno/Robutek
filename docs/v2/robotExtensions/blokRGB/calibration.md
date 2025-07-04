@@ -23,10 +23,13 @@ sensor.printCalib();
 Kalibrační program využívající tyto funkce pak vypadá takto. Tento program nám vypíše kalibrační hodnoty pro náš senzor za současných podmínek. Procesem kalibrace nás program provede zprávami v terminálu.
 
 ```ts
-import { ZSCS2016C } from "./libs/zscs2016c.js";
 import { I2C1 } from "i2c";
+import { ZSCS2016C } from "./libs/zscs2016c.js";
+import { createRobutek } from "./libs/robutek.js"
 
-I2C1.setup({ sda: 10, scl: 3, bitrate: 400000 });
+const robutek = createRobutek("V2");
+
+I2C1.setup({ sda: robutek.Pins.sda, scl: robutek.Pins.scl, bitrate: 400000 });
 const sensor = new ZSCS2016C(I2C1, false);
 
 sensor.enable();
@@ -53,8 +56,11 @@ Kalibraci je nutné provádět pouze jednou. Poté si totiž hodnoty manuálně 
 ```ts
 import { I2C1 } from "i2c";
 import { ZSCS2016C, Calibration } from "./libs/zscs2016c.js";
+import { createRobutek } from "./libs/robutek.js"
 
-I2C1.setup({ sda: 10, scl: 3, bitrate: 400000 });
+const robutek = createRobutek("V2");
+
+I2C1.setup({ sda: robutek.Pins.sda, scl: robutek.Pins.scl, bitrate: 400000 });
 const sensor = new ZSCS2016C(I2C1, false);
 sensor.enable();
 
