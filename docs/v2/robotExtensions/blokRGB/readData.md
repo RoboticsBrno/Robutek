@@ -26,9 +26,7 @@ takto může vypadat objekt rgb (toto je fialová barva)
 
 ### Příklad
 
-Udělejte program, který kazdých 500ms vypíše, jakou barvu senzor právě snímá.
-
-<!-- TODO change task to display color on LED  -->
+Udělejte program, mění barvu LED na desce na barvu, kterou měří senzor. Pokud používáme vestavěný senzor, není vhodné měnit barvu ledek, kterou jsou přímo vedle něj.
 
 ??? note "Řešení"
 
@@ -36,27 +34,28 @@ Udělejte program, který kazdých 500ms vypíše, jakou barvu senzor právě sn
     import * as colors from "./libs/colors.js";
     import { I2C1 } from "i2c";
     import { ZSCS2016C, Calibration } from "./libs/zscs2016c.js";
-    import { createRobutek } from "./libs/robutek.js"
+    import { LED_WS2812B, SmartLed } from "smartled";
+    import { createRobutek } from "./libs/robutek.js";
 
     const robutek = createRobutek("V2");
-
-    I2C1.setup({ sda: robutek.Pins.sda, scl: robutek.Pins.scl, bitrate: 400000 });
-
+    I2C1.setup({ sda: 10, scl: 3, bitrate: 400000 });
     const sensor = new ZSCS2016C(I2C1, false);
     sensor.enable();
 
+    const ledStrip = new SmartLed(robutek.Pins.ILED, 7, LED_WS2812B);
+
+    // zde si musíme doplnit kalibrační údaje, které jsme si naměřili
     const calib: Calibration = {
-    mins: [3426, 7332, 4844, 529, 15877],
-    maxs: [62644, 65535, 65535, 13320, 6555],
+        mins: [3426, 7332, 4844, 529, 15877],
+        maxs: [62644, 65535, 65535, 13320, 6555],
     };
     sensor.setCalibration(calib);
-
+    ledStrip.show();
     setInterval(() => {
         const calData = sensor.readCalRGB();
         const rgb: colors.Rgb = colors.sensorDataToRGB(calData);
-        console.log(`red: ${rgb.r} green: ${rgb.g} blue: ${rgb.b}`);
-
-    }, 500);
+        ledStrip.set(1, rgb);
+        ledStrip.show();
+    }, 50);
     ```
 
-<!-- TODO add more tasks -->

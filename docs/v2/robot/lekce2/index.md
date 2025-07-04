@@ -61,7 +61,11 @@ Pomocí událostí rozsvítíme při stisknutí tlačítka (`GPIO 0`) RGB LED na
 
 ??? note "Řešení"
 
+<!-- TODO BROKEN example -->
+
     ```ts
+
+
     import { createRobutek } from "./libs/robutek.js"
     import * as colors from "./libs/colors.js";
     import { LED_WS2812, SmartLed } from "smartled";
@@ -111,4 +115,3 @@ Při stisknutí tlačítka (`Pins.ButtonRight`) vypíšeme pozdrav.
 ## Výstupní úkol V2 - Změna barvy
 
 Při stisknutí tlačítka (`Pins.ButtonRight`) rozsvítíme RGB LED na Robůtkovi (`Pins.ILED`) jednou barvou a při puštění barvu změníme na jinou.
-
