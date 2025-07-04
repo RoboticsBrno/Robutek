@@ -21,12 +21,12 @@ Tady máte ke stažení popsaný projekt (nastavení barvy ledky na desce, blika
 
 ## Spuštění
 ```ts
-import * as colors from "./libs/colors.js"
-import * as gpio from "gpio"
-import { SmartLed, LED_WS2812 } from "smartled"
-import Layout from "./layout.js"
+import * as colors from "./libs/colors.js";
+import * as gpio from "gpio";
+import { SmartLed, LED_WS2812 } from "smartled";
+import Layout from "./layout.js";
 import * as wifi from "wifi";
-import { createRobutek } from "./libs/robutek.js"
+import { createRobutek } from "./libs/robutek.js";
 const robutek = createRobutek("V2");
 
 // změň mě!
@@ -36,13 +36,13 @@ const DEVICE_NAME = "Robutek";
 Layout.begin(OWNER, DEVICE_NAME, builder => {
     builder.SetColor.onChanged(slider => {
         // kód spuštěný změnou na posuvníku
-    })
+    });
 });
 ```
 Po připojení robůtka k wi-fi (popsáno v [lekci 1](../lekce1/index.md#dalkove-ovladani)) inizializujeme rozhraní funkcí `Layout.begin()`, které v argumentech předáváme jméno vlastníka, jméno zařízení a blok kódu, ve kterém nastavíme události spouštěné změnami v rozhraní. Tak zrovna `builder.SetColor.onChanged(slider => { // kód zde })` bude obsahovat kód, který se spustí, když widget s id `SetColor` projde nějakou změnou. V tomto případě je daný widget náš posuvník a změnou bude, když jím někdo posune. V proměnné `slider` je našemu kódu předán stav posuvníku, takže si poté můžeme vyčíst třeba jeho aktuální hodnotu takto:
 
 ```ts
-let hodnota = slider.value
+let hodnota = slider.value;
 ```
 
 ## Upravování widgetů
