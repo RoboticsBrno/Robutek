@@ -11,7 +11,7 @@ import { Servo } from "./libs/servo.js"
 import { createRobutek } from "./libs/robutek.js"
 const robutek = createRobutek("V1");
 
-const servo = new Servo(robutek.Pins.Servo2, 1, 4); // Pins.Servo2 je pin 38
+const servo = new Servo(robutek.Pins.Servo2, 1, 4); // robutek.Pins.Servo2 je pin 38
 ```
 
 Na nastavení pozice serva použijeme funkci `#!ts servo.write()` a do závorek zadáme číslo od 0 do 1023,
@@ -33,7 +33,7 @@ import { Servo } from "./libs/servo.js"
 import { createRobutek } from "./libs/robutek.js"
 const robutek = createRobutek("V1");
 
-const pen = new Servo(robutek.Pins.Servo2, 1, 4); // Pins.Servo2 je pin 38
+const pen = new Servo(robutek.Pins.Servo2, 1, 4); // robutek.Pins.Servo2 je pin 38
 ```
 
 Na nastavení pozice tužky použijeme funkci `#!ts pen.write()` a do závorek zadejte číslo on 0 od 1023 nebo jednu z konstant `robutek.PenPos.Up`, `robutek.PenPos.Down` a `robutek.PenPos.Unload`.

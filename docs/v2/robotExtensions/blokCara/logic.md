@@ -20,8 +20,8 @@ Tentokrát přistupujeme k pravému a levému motoru napřímo, abychom je mohli
 let following = false;
 
 // Zapínací tlačítko
-gpio.pinMode(Pins.ButtonLeft, gpio.PinMode.INPUT);
-gpio.on("rising", Pins.ButtonLeft, async () => {
+gpio.pinMode(robutek.Pins.ButtonLeft, gpio.PinMode.INPUT);
+gpio.on("rising", robutek.Pins.ButtonLeft, async () => {
   if (!following) {
     // Pokud ještě nesledujeme čáru...
     await sleep(500); // počkáme 500ms ať stihneš dát pryč ruku
