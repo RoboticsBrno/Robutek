@@ -23,8 +23,8 @@ enum PinsV1 {
     Servo1 = 21,
     Servo2 = 38,
 
-    Sens1 = 4,
-    Sens2 = 5,
+    Sens1 = 5,
+    Sens2 = 4,
     Sens3 = 6,
     Sens4 = 7,
 
@@ -108,12 +108,12 @@ const EncoderTicksV1 = 812;
 const EncoderTicksV2 = 560;
 
 export type SensorType =
-    | 'WheelFR' // Wheel Front Right
     | 'WheelFL' // Wheel Front Left ...
+    | 'WheelFR' // Wheel Front Right
     | 'WheelBL'
     | 'WheelBR'
-    | 'LineFR'
     | 'LineFL'
+    | 'LineFR'
     | 'LineBL'
     | 'LineBR';
 
@@ -169,30 +169,30 @@ export class Robutek<PinsType extends typeof PinsV1 | typeof PinsV2> extends Dif
 
     public readSensor(sensor: SensorType): number {
         switch (sensor) {
-            case 'WheelFR':
+            case 'WheelFL':
                 this.switchSensors(0);
                 return adc.read(this.Pins.Sens1);
-            case 'WheelFL':
+            case 'WheelFR':
                 this.switchSensors(0);
                 return adc.read(this.Pins.Sens2);
             case 'WheelBL':
                 this.switchSensors(0);
-                return adc.read(this.Pins.Sens4);
+                return adc.read(this.Pins.Sens3);
             case 'WheelBR':
                 this.switchSensors(0);
-                return adc.read(this.Pins.Sens3);
-            case 'LineFR':
+                return adc.read(this.Pins.Sens4);
+            case 'LineFL':
                 this.switchSensors(1);
                 return adc.read(this.Pins.Sens1);
-            case 'LineFL':
+            case 'LineFR':
                 this.switchSensors(1);
                 return adc.read(this.Pins.Sens2);
             case 'LineBL':
                 this.switchSensors(1);
-                return adc.read(this.Pins.Sens4);
+                return adc.read(this.Pins.Sens3);
             case 'LineBR':
                 this.switchSensors(1);
-                return adc.read(this.Pins.Sens3);
+                return adc.read(this.Pins.Sens4);
             default:
                 throw new Error('Invalid sensor type');
         }
