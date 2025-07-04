@@ -28,6 +28,8 @@ takto může vypadat objekt rgb (toto je fialová barva)
 
 Udělejte program, který kazdých 500ms vypíše, jakou barvu senzor právě snímá.
 
+<!-- TODO change task to display color on LED  -->
+
 ??? note "Řešení"
 
     ```ts
@@ -52,3 +54,5 @@ Udělejte program, který kazdých 500ms vypíše, jakou barvu senzor právě sn
 
     }, 500);
     ```
+
+<!-- TODO add more tasks -->
