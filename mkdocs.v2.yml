@@ -160,6 +160,7 @@ nav:
       - GridUI:
         - robotExtensions/blokGridUI/index.md
       - Čára:
+        - robotExtensions/blokCara/index.md
         - robotExtensions/blokCara/sensors.md
         - robotExtensions/blokCara/linefollow.md
         - robotExtensions/blokCara/additions.md

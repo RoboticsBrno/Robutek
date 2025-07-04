@@ -36,8 +36,8 @@ while(true) {
         robutek.leftMotor.setSpeed(10);
         robutek.rightMotor.setSpeed(100);
     } else {
-        robutek.leftMotor.setSpeed(500);
-        robutek.leftMotor.setSpeed(500);
+        robutek.leftMotor.setSpeed(100);
+        robutek.leftMotor.setSpeed(100);
     }
     await sleep(10);
 }
@@ -50,6 +50,12 @@ import { createRobutek } from "./libs/robutek.js"
 const robutek = createRobutek("V2");
 const thresh = 700; // Mez pod kterou se barva považuje za černou
 async function main() {
+    /*
+    Nastavíme nějakou rozumnou rychlost,
+    čím menší, tím snáze se robůtek na čáře
+    udrží
+    */
+    //robutek.setSpeed(0);
     robutek.leftMotor.move();
     robutek.rightMotor.move();
     while(true) {
@@ -62,11 +68,10 @@ async function main() {
             robutek.leftMotor.setSpeed(10);
             robutek.rightMotor.setSpeed(100);
         } else {
-            robutek.leftMotor.setSpeed(500);
-            robutek.leftMotor.setSpeed(500);
+            robutek.leftMotor.setSpeed(100);
+            robutek.leftMotor.setSpeed(100);
         }
-        console.log(`l: ${l}; r: ${r}`);
-        await sleep(100);
+        await sleep(10);
     }
 }
 main().catch(console.error);
