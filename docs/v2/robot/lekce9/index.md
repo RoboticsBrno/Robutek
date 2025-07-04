@@ -1,4 +1,4 @@
-# Bonus - Radio
+# Lekce 9 - Radio
 
 Na Robůtkovi je k dispozici jednoduchá bezdrátová komunikace na vzdálenost jednotek metrů.
 

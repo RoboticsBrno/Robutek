@@ -1,10 +1,10 @@
-# Lekce 6.5 - Cykly znovu a lépe
+# Simulátor
 
-Tato lekce ukazuje praktické využití cyklů za účelem kreslení obrazců. V předchozích lekcích jsme si ukázali jednoduchou jízdu s robotem a zvedání tužky, a navážeme na to dále.
+???+ warning "Varování"
 
-## Želvička
+    Simulátor neni aktuální, lépe funguje s dokumentací V1
 
-Tato lekce je určena primárně na práci v [Simulátoru](https://xondika.github.io/sitrusj/). Program obsahuje zjednodušenou verzi reality, ve které nám bude jezdit želvička a přijímat příkazy na základě vnějších podnětů.
+Tato lekce je určena na práci v [Simulátoru](https://xondika.github.io/sitrusj/). Program obsahuje zjednodušenou verzi reality, ve které nám bude jezdit želvička a přijímat příkazy na základě vnějších podnětů.
 
 Programy nám budou fungovat i na skutečném robotovi. Je však je důležité nejdříve si v simulaci ověřit funkčnost, aby se nám skutečný robot nezačal chovat neočekávaným způsobem a nezpůsobil sobě nebo nám škody.
 

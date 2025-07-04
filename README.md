@@ -37,23 +37,6 @@ Robůtek je robotická platforma založená na čipu ESP32-S3. Je velice rozšit
 ### DEV
 - -> DEVELOPMENT.md
 
-### Návody
-- Rozděleno do dvou složek `docs/v1` a `docs/v2` pro různé verze Robůtka, což znamená dva soubory konfigurace mkdocs - `mkdocs.v1.yml` a `mkdocs.v2.yml`
-- Do složek projektů není potřeba vkládat `@types` a `src/libs`, protože se kopírují automaticky z `robutekLibrary`
-  - Spuštěním `bash update-projects.sh` se soubory automaticky nakopírují
-  - Spuštěním `bash jac-autocompile.sh` se ve všech projektech spustí `jac build`
-
-## Práce s obrázky
-
-Obrázky přidávej do podsložek v `docs` podle adresy stránky, na které se mají zobrazit.
-Uvnitř této stránky vytvoř složku `assets-large` a vlož do ní obrázky v plné velikosti.
-
-Plugin [mkdocs-resize-images](https://github.com/JakubAndrysek/mkdocs-resize-images) automaticky rozpozná
-změny v adresáři `assets-large` a při buildu zmenší obrázky do požadované velikosti a uloží je do složky `assets`.
-Složka `assets-large` se neukládá do gitu, protože by byla zbytečně velká. Velké fotky si necháme jen lokálně a po dokončení návodu je můžete smazat.
-
-Podporovené soubory jsou `.jpg`, `.jpeg`, `.png`, `.gif`, `.svg`.
-
 ### Robutek library
 - Knihovna přesunuta do `robutekLibrary`
 - Funguje jako referenční projekt pro ostatní projekty v dokumentaci (kopírují se `@types` a `src/libs`)

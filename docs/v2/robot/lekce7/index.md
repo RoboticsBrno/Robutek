@@ -1,95 +1,250 @@
-# Lekce 7 - pole
+# Lekce 7 - Funkce
 
-Pole neboli `#!ts array` slouží k uložení více hodnot stejného typu.
-Hodnoty jsou uloženy za sebou, můžeme je do pole přidávat, odebírat, a přistupovat podle indexu.
+Z minulé lekce už umíme kreslit jednoduché tvary. Co když jich však chceme nakreslit více?
 
-- Pole vytvoříme pomocí hranatých závorek
-    ```ts
-    let arr : number[] = [1, 2, 3, 4, 5];  // vytvoří pole
-    ```
-- K jednotlivým prvkům se dostaneme pomocí indexu (pořadí v poli) v hranatých závorkách
-    - Indexování začíná od 0: první prvek je na indexu 0
-        ```ts
-        let arr : number[] = [1, 2, 3, 4, 5];  // vytvoří pole
-        let num : number = arr[0];  // do proměnné num uložíme hodnotu na indexu 0 (tedy 1.)
-        ```
-    - Můžeme přistupovat na libovolné místo v poli:
-        ```ts
-        let arr : number[] = [1, 2, 3, 4, 5];  // vytvoří pole
-        let num : number = arr[2];  // do proměnné num uložíme hodnotu na indexu 2 (tedy 3.)
-        ```
-    - Index můžeme použít i pro změnu hodnoty
-        ```ts
-        let arr : number[] = [1, 2, 3, 4, 5];  // vytvoří pole
-        arr[2] = 10;  // změní hodnotu na indexu 2 z 3 na 10: výsledné pole bude [1, 2, 10, 4, 5]
-        ```
-- Délku pole zjistíme pomocí funkce
-    ```ts
-    let arr : number[] = [1, 2, 3, 4, 5];  // vytvoří pole
-    let length : number = arr.length; // hodnota length bude 5
-    ```
-- Hodnotu na konec pole přidáme pomocí funkce `push`
-    ```ts
-    let arr : number[] = [1, 2, 3, 4, 5];  // vytvoří pole
-    arr.push(6);  // přidá hodnotu na konec: výsledné pole bude [1, 2, 3, 4, 5, 6]
-    ```
+Pokud chceme nakreslit 2 čtverce vedle sebe, můžeme zkopírovat kód a mezitím se posunout:
 
-- Hodnotu z konce pole odebereme pomocí funce `pop`
-    ```ts
-    let arr : number[] = [1, 2, 3, 4, 5];  // vytvoří pole
-    let num : number = arr.pop();  // odebere hodnotu z konce: výsledné pole bude [1, 2, 3, 4]
-    ```
+```ts
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V2");;
 
-K řešení budeme potřebovat [stejné nástroje](../lekce6/project6.zip) jako v předchozí lekci.
-Složku si můžete rozbalit jako project7.
+let pen = new Servo(robutek.Pins.Servo2, 1, 4);
+robutek.setSpeed(100);
+
+pen.write(robutek.PenPos.Down); // dáme dolů tužku
+
+for (let i: number = 0; i < 4; i++) { // chování opakujeme 4x, pro každou stěnu čtverce
+    await robutek.move(0, { distance: 100 }); // posun dopředu o 10 cm
+    await robutek.rotate(90); // rotace doprava o 90 stupňů
+}
+pen.write(robutek.PenPos.Up); // dáme nahoru
+
+await robutek.move(150);
+
+pen.write(robutek.PenPos.Down);
+for (let i: number = 0; i < 4; i++) {
+    await robutek.move(0, { distance: 100 });
+    await robutek.rotate(90);
+}
+pen.write(robutek.PenPos.Up);
+``` 
+
+To se ještě dá zvládnout, ale pokud bychom to udělali ještě párkrát, kód by se stával hůře čitelným.
+Pokud bychom se pak rozhodli změnit např. velikost nakreslených čtverců, museli bychom to měnit v každé kopii tohoto kódu, což zabere čas, a je v tom jednoduché udělat chybu.
+
+Můžeme si pomoct tím, co už známe: vnořeným `for` cyklem. Pokud chceme nakreslit např. 4 čtverce za sebou, můžeme to napsat takto:
+
+```ts
+import { Servo } from "./libs/servo.js";
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V2");
+
+let pen = new Servo(robutek.Pins.Servo2, 1, 4);
+robutek.setSpeed(100);
+
+for (let square: number = 0; square < 4; square++) {
+    pen.write(robutek.PenPos.Down);
+    for (let i: number = 0; i < 4; i++) {
+        await robutek.move(0, { distance: 100 });
+        await robutek.rotate(90);
+    }
+    
+    pen.write(robutek.PenPos.Up);
+    await robutek.move(0, { distance: 100 });
+}
+
+```
+
+Co když se však chceme pohybovat mezi čtverci různě daleko, nebo mít každý jinak velký? Odpovědí na tuto otázku jsou <tt>funkce</tt>.
+
+## Funkce
+
+Funkce je pojmenovaný kus kódu. Tento kus kódu jednou napíšeme, a poté ho ze zbytku programu můžeme libovolně volat (spouštět). Celkově tak zpřehledňuje programy, a dělá je rozšířitelnější.
+
+V programu rozlišujeme mezi definicí funkce a jejím voláním. Definice vypadá následovně:
+
+```ts
+import { Servo } from "./libs/servo.js";
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V2");
+
+let pen = new Servo(robutek.Pins.Servo2, 1, 4);
+robutek.setSpeed(100);
+
+async function draw_square(): void {
+    pen.write(robutek.PenPos.Down);
+    for (let i: number = 0; i < 4; i++) {
+        await robutek.move(0, { distance: 100 });
+        await robutek.rotate(90);
+    }
+    pen.write(robutek.PenPos.Up);
+}
+```
+
+Definice funkce se skládá z:
+- klíčového slova function
+- jména funkce
+- seznamu argumentů (v závorkách)
+- návratového typu
+- těla funkce (ve špičatých závorkách)
+
+Protože v těle funkce používáme klíčové slovo `await`, je potřeba aby funkce byla označena jako `async`.
+Znamená to, že je tzv. asynchronní a během čekání na její vykonání se můžou plnit další úkoly.
+
+K argumentům a návratovým hodnotám se dostaneme později, zatím je pro nás zajímavé jednoduše to, že jsme si nějak pojmenovali kus kódu.
+
+Když spustíme tento kód, nic se nestane. Chybí nám totiž funkci <tt>zavolat</tt>. Volání funkce provedeme jejím jménem, následovaným závorkami. Pokud je funkce asynchronní a my chceme čekat na její vykonání než začneme provádět další úkol, před její volání dáme klíčové slovo `await`.
+Nakreslení dvou čtverců může tedy vypadat takto:
+
+```ts
+import { Servo } from "./libs/servo.js";
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V2");
+
+let pen = new Servo(robutek.Pins.Servo2, 1, 4);
+robutek.setSpeed(100);
+
+async function draw_square(): void {
+    pen.write(robutek.PenPos.Down);
+    for (let i: number = 0; i < 4; i++) {
+        await robutek.move(0, { distance: 100 });
+        await robutek.rotate(90);
+    }
+    pen.write(robutek.PenPos.Up);
+}
+
+await draw_square();
+await robutek.move(0, {distance: 150 });
+await draw_square();
+```
+
+Program nám nakreslí 2 čtverce, a přinesli jsme si tím následující výhody:
+- ze sekvence "nakresli čtverec" "pohni se" "nakresli čtverec" je na první pohled zjevné co se bude dít, a čtenář programu nemusí analyzovat detaily toho, jak přesně kreslení každého čtverce probíhá
+- když se rozhodneme, že čtverce mají mít jinou velikost, stačí udělat změnu na jednom místě
+
+!!! warning "Nezapomínejte při volání funkcí které obsahují pohyb na `async`"
+    Pokud bychom v předchozím příkladu funkce volali bez `async`, příkazy by se nám bily a 
+    robot by udělal ve výsledku nesmyslný pohyb.
+
+Na tak malém příkladu to možná není zjevné, ale i `motors.move()`, které jsme používali doteď, není nic jiného než funkce, která v sobě skrývá nějaký složitější výpočet. Funkce tedy můžeme propojovat různými způsoby, a tvořit tak programy, které toho dělají čím dál více.
+
+Program však neřeší případ, kdy chceme aby každý čtverec měl jinou velikost. V tu chvíli nám pomůžou <tt>argumenty</tt>, které do funkce umíme předat. Jde o proměnné, které existují v dané funkci, a my jim při volání funkce přiřadíme konkrétní hodnotu.
+
+```ts
+import { Servo } from "./libs/servo.js";
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V2");
+
+let pen = new Servo(robutek.Pins.Servo2, 1, 4);
+robutek.setSpeed(100);
+
+async function draw_square(size: number): void {
+    pen.write(robutek.PenPos.Down);
+    for (let i: number = 0; i < 4; i++) {
+        await robutek.move(0, { distance: size });
+        await robutek.rotate(90);
+    }
+    pen.write(robutek.PenPos.Up);
+}
+
+await draw_square(100);
+await robutek.move(0, {distance: 150 });
+await draw_square(150);
+```
+
+Ve funkci používáme proměnný argument `size` značící velikost čtverce, který můžeme při volání nastavit na jakoukoliv hodnotu, a máme vyřešeno.
 
 ## Zadání A
 
-Opět navážeme na předchozí lekce, a budeme do pole ukládat hodnoty ze sensoru.
-Vytvoříme si pole, které při stisku vybraného tlačítka přidá aktuální hodnotu z ADC převodníku.
-Druhé tlačítko z tohoto pole poslední hodnotu smaže.
-Stav pole si můžeme po každé změně vypsat pomocí `#!ts console.log(pole)`.
+Vytvořte funkci, která bere 2 argumenty, a nakreslí obdélník daných rozměrů. Zkuste ji zavolat s rúznými argumenty.
 
 ??? note "Řešení"
     ```ts
-    import * as adc from "adc";
-    import * as gpio from "gpio";
+    import { Servo } from "./libs/servo.js";
+    import { createRobutek } from "./libs/robutek.js"
+    const robutek = createRobutek("V2");
 
-    const SENSOR_PIN: number  = 4; // pin levého předního senzoru u kola z pohledu zvrchu
-    const LIGHTN_PIN: number  = 47; // pin na zapnutí podsvícení pro senzory
+    let pen = new Servo(robutek.Pins.Servo2, 1, 4);
+    robutek.setSpeed(100);
+    
+    async function draw_rectangle(sizeA: number, sizeB: number): void {
+        pen.write(robutek.PenPos.Down);
+        for (let i: number = 0; i < 4; i++) {
+            if(i % 2 == 0){ // zbytek po dělení 2, tedy každá druhá strana
+                await robutek.move(0, { distance: sizeA });
+            } else {
+                await robutek.move(0, { distance: sizeB });
+            }
+            await robutek.rotate(90);
+        }
+        pen.write(robutek.PenPos.Up);
+    }
 
-    const LBTN_PIN : number = 2; // pin levého tlačítka
-    const RBTN_PIN : number = 0; // pin pravého tlačítka
-
-    gpio.pinMode(LBTN_PIN, gpio.PinMode.INPUT); // nastavíme levé tlačítko
-    gpio.pinMode(RBTN_PIN, gpio.PinMode.INPUT); // nastavíme pravé tlačítko
-
-    adc.configure(SENSOR_PIN); // nakonfigurujeme pin senzoru
-
-    gpio.pinMode(LIGHTN_PIN, gpio.PinMode.OUTPUT); // nastavíme mód pinu podsvícení na output
-    gpio.write(LIGHTN_PIN, 1); // zapneme podsvícení robůtka
-
-    let arr : number[] = [];
-
-    gpio.on("falling", LBTN_PIN, () => { // Při stisknutí levého tlačítka
-        arr.push(adc.read(SENSOR_PIN)); // Přidáme do pole naměřenou hodnotu
-        console.log(arr); // Vypíšeme nový stav
-    });
-    gpio.on("falling", RBTN_PIN, () => { // Při stisknutí pravého tlačítka
-        arr.pop(); // Odebereme z pole poslední hodnotu
-        console.log(arr); // Vypíšeme nový stav
-    });
+    await draw_rectangle(100, 150);
+    await draw_rectangle(150, 50);
     ```
 
-## Výchozí úkol V1
+### Vracení hodnot
 
-Tentokrát si vytvoříme o něco rozsáhlejší program, který naváže na předchozí úkol.
-Vytvoříme si pole čísel, do kterého pomocí prvního tlačítka načteme naměřené hodnoty z ADC převodníku.
-Při stisku prvního tlačítka kontrolujeme, jestli už pole má délku 8.
-Pokud už je délka 8, další hodnoty nepřidáváme a stisk tlačítka pole nezmění.
+Kromě toho, že funkce můžou brát argumenty, je také můžou vracet. To je užitečné v případě, že si chceme do funkce dát nějaký výpočet, a zajímá nás jeho výsledek. Hodnotu z funkce vracíme pomocí klíčového slova `return`.
 
-Druhé tlačítko smaže poslední prvek -- zde kontrolujeme, jestli tam nějaký prvek je.
+Funkce 
+```ts
+function add(a: number, b: number): number {
+    return a + b;
+}
+```
+tedy bere 2 čísla a vrací výsledek výpočtu nad nimi (zde jen sčítání).
 
-Při každé změně hodnot v poli se rozsvítí LED pásek podle naměřených hodnot.
-Všechny hodnoty v poli převedeme na rozsah `colors.rainbow` (tedy 0-360) a rozsvítíme LED
-na odpovídajícím indexu naměřenou hodnotou.
+Příklad použití: chceme-li nakreslit pravidelný n-úhelník, vzorec pro vnitřní úhly je podle [wikipedie](https://cs.wikipedia.org/wiki/Pravideln%C3%BD_mnoho%C3%BAheln%C3%ADk)
+
+$$(1 - \frac{2}{n}) * 180$$
+
+kde, `n` je počet stran.
+
+Tento výpočet nechceme psát několikrát, je proto vhodné jej vyčlenit do funkce, která vrací napočítanou hodnotu.
+
+## Zadání B
+
+Napište funkci `draw_polygon()`, která vezme 2 argumenty: počet stran a délku každé strany. Na výpočet úhlu použijte pomocnou funkci, která spočítá jak moc je potřeba zatočit.
+
+??? note "Řešení"
+    ```ts
+    import { Servo } from "./libs/servo.js";
+    import { createRobutek } from "./libs/robutek.js"
+    const robutek = createRobutek("V2");;
+
+    let pen = new Servo(robutek.Pins.Servo2, 1, 4);
+    robutek.setSpeed(100);
+    
+    function turn_angle(sides: number): number {
+        return 180 - (1 - 2 / sides) * 180;
+    }
+
+    async function draw_polygon(sides: number, size: number): void {
+        pen.write(robutek.PenPos.Down);
+        for (let side: number = 0; side < sides; side++) {
+            await robutek.move(0, { distance: size });
+            await robutek.rotate(turn_angle(sides));
+        }
+        pen.write(robutek.PenPos.Up);
+    }
+
+    await draw_polygon(5, 100);
+    await robutek.move(0, { distance: 250 });
+    await draw_polygon(8, 100);
+    ```
+
+
+## Výstupní úkol V1 - Domovní vybavení
+
+Opět si nakreslete domeček, tentokrát ale bude zajímavější.
+Vytvořte si funkci `draw_window(size)`, která nakreslí 4 malě čtverce, a kolem nich pátý.
+Znovu nakreslete domeček, ale tentokrát mu dejte pomocí `draw_window()` několik oken. Kolem domu můžete z n-úhelníků nebo koleček nakreslit ozdobné stromy. Také mu můžete dát dveře a komín.
+
+Pokud se vám nedaří kreslit dobré tvary kvůli nepřesnostem motorů nebo simulátoru, zkuste snížit rychlost,
+se kterou se robot pohybuje.
+
+Nakonec můžete celý kód na kreslení domečku dát do vlastní funkce. Vytvořte vesnici tak, že vedle sebe nakreslíte několik domků.
+
+

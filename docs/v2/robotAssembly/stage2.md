@@ -91,3 +91,5 @@
 
     ![](assets/IMG-stage2-final.JPG)
     Máte hotovo!
+
+[Krok 3 - Led pásek](stage3.md){.md-button .md-button--primary}

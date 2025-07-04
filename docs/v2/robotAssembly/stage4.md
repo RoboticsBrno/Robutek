@@ -1,4 +1,4 @@
-# Tlačítko
+# Stage 4 - Tlačítko
 
 !!! comment "Příslušenstí si můžete dát kamkoliv na Robůtka, ale v návodech jsou doporučené pozice."
 
@@ -33,3 +33,6 @@
 | OUTPUT   | →   | IO1     |
 | GND      | →   | GND     |
 | VCC      | →   | VCC     |
+
+
+[Krok 5 - Senzor vzdálenosti](stage5.md){.md-button .md-button--primary}

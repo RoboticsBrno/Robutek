@@ -1,4 +1,4 @@
-# Bonus - Řetězce
+# Lekce 8 - Řetězce
 
 Zatím jsme se zařízením po nahrání programu komunikovali jednostranně: pomocí `#!ts console.log()` jsme vypisovali různé věci na výstup, a ten jsme sledovali pomocí příkazu `Monitor`.
 

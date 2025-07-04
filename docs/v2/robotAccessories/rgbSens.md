@@ -1,2 +1,0 @@
-# RGB sensor TODO
-//TODO
