@@ -26,22 +26,17 @@ V této kapitole si postavíme samotného Robůtka.
     ![](assets/stage1/IMG-step1a.jpeg)
     ![](assets/stage1/IMG-step1b.jpeg)
 
-2. Připravte si motor s kolem a magnetku. Magnetku nasaďte tak, aby byla ve středu hřídele. Toto zopakujte pro druhé kolo.
-
-    ![](assets/stage1/IMG-step2a.jpeg)
-    ![](assets/stage1/IMG-step2b.jpeg)
-
-3. Připravte si domeček pro motory.
+2. Připravte si domeček pro motory.
 
     ![](assets/stage1/IMG-step3.jpeg)
 
-4. Vsaďte oba motory do domečku. <!-- TODO: zadefinovat otočení -->
+3. Vsaďte oba motory do domečku. <!-- TODO: zadefinovat otočení -->
 
     !!! danger "Netlačte motory do domečku silou, měly by jít vsadit lehce. Ujistěte se, zda jste motor otočili správně a že kolejničky motoru jsou zarovnány s drážkami v domečku."
     ![](assets/stage1/IMG-step4a.jpeg)
     ![](assets/stage1/IMG-step4b.jpeg)
 
-5. Pomocí malého plochého šroubováku odstraňte plastové zarážky s pinheadů. <!-- TODO: opravit fotky --> 
+4. Pomocí malého plochého šroubováku odstraňte plastové zarážky s pinheadů. <!-- TODO: opravit fotky --> 
 
     !!! danger "Dávejte si pozor aby jste pinheady neohl ani neuštípli."
     ![](assets/stage1/IMG-step5a.jpeg)
@@ -50,33 +45,32 @@ V této kapitole si postavíme samotného Robůtka.
     !!! danger "Neuštípněte pin heady!"
     ![](assets/stage1/IMG-step5c.jpeg)
 
-6. Položte vložku pod motor na destičku plošného spoje. Dbejte na její orientaci.
+5. Položte vložku pod motor na destičku plošného spoje. Dbejte na její orientaci.
 
     ![](assets/stage1/IMG-step6.jpeg)
 
-7. Nasaďte domeček s motory na vložku tak, aby se pin heady dotýkaly kontaktů motorů.
+6. Nasaďte domeček s motory na vložku tak, aby se pin heady dotýkaly kontaktů motorů.
 
     ![](assets/stage1/IMG-step7a.jpeg)
-    ![](assets/stage1/IMG-step7b.jpeg)
     !!! danger "Kontakty motoru musí být mezi pin heady."
     ![](assets/stage1/IMG-step7c.jpeg)
     ![](assets/stage1/IMG-step7d.jpeg)
 
-8. Zajdi za orgem aby ti zapájel motory. Zároveň ti zkontroluje že motory jedou jak mají.
-!!! danger "Přečti si popisek kroku, je do důležité!"
+7. Zajdi za orgem aby ti zapájel motory. Zároveň ti zkontroluje že motory jedou jak mají.
+!!! danger "Přečti si popisek tohoto kroku, je do důležité!"
 
-9. Nasaďte vrchní domeček na spodní domeček.
+8. Nasaďte vrchní domeček na spodní domeček.
 
     ![](assets/stage1/IMG-step8a.jpeg)
     ![](assets/stage1/IMG-step8b.jpeg)
 
-10. Na spodní straně robůtka zacvakněte zarážku fixy do domečku.
+9. Na spodní straně robůtka zacvakněte zarážku fixy do domečku.
 
     ![](assets/stage1/IMG-step9a.jpeg)
     ![](assets/stage1/IMG-step9b.jpeg)
     ![](assets/stage1/IMG-step9c.jpeg)
 
-11. Nasaďte dřevěnou základnu. Přišroubujte ji k robůtku pomocí čtyř M3x30 šroubků.
+10. Nasaďte dřevěnou základnu. Přišroubujte ji k robůtku pomocí čtyř M3x30 šroubků.
 
     !!! danger "Pozor na orientaci základny, díry musí sedět na součastky na desce."
     !!! danger "Šrouby do dřevěné základny neutahujte silou, aby ji nepoškodily."
@@ -84,7 +78,7 @@ V této kapitole si postavíme samotného Robůtka.
     ![](assets/stage1/IMG-step10c.jpeg)
     ![](assets/stage1/IMG-step10b.jpeg)
 
-12. Připravte si kartáčky (jeden malý a jeden velký). Uchopte si kartáček kleštěmi a zatlačte ho do drážky správné velikosti (malý kartáček do malé drážky, velký kartáček do velké drážky).
+11. Připravte si kartáčky (jeden malý a jeden velký). Uchopte si kartáček kleštěmi a zatlačte ho do drážky správné velikosti (malý kartáček do malé drážky, velký kartáček do velké drážky).
 
     ![](assets/stage1/IMG-stepKa.jpeg)
     ![](assets/stage1/IMG-stepKb.jpeg)
@@ -92,13 +86,13 @@ V této kapitole si postavíme samotného Robůtka.
     ![](assets/stage1/IMG-stepKc.jpeg)
     ![](assets/stage1/IMG-stepKd.jpeg)
 
-13. Vložte baterii.
+12. Vložte baterii.
 
     !!! danger "Dejte si pozor na polaritu baterie."
     ![](assets/stage1/IMG-step11a.jpeg)
     ![](assets/stage1/IMG-step11b.jpeg)
 
-14. Přišroubujte dřevěnou palubu.
+13. Přišroubujte dřevěnou palubu.
 
     !!! danger "Pozor na orientaci paluby, díry musí sedět na součastky na desce."
     ![](assets/stage1/IMG-step12a.jpeg)
