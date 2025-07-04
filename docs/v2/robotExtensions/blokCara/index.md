@@ -4,6 +4,8 @@ Po seznámení s Robůtkem a programovacím prostředí se můžeme pustit do pr
 
 K vyřešení tohoto úkolu budeme používat senzory odrazu světla, které jsou umístěné na spodní straně Robůtka. Tyto senzory dokáží rozpoznat, zda se pod nimi nachází bílá nebo černá plocha, případně jakou část pozorované plochy tvoří čára.
 
-[Senzory na robůtkovi](sensors.md){ .md-button }
+[Senzory na robůtkovi](sensors.md){ .md-button .md-button--primary }
 
-[Algoritmus sledování čáry](linefollow.md){ .md-button }
+[Jednoduché sledování čáry](linefollow.md){ .md-button }
+
+[Vylepšené sledování čáry](additions.md){ .md-button }
