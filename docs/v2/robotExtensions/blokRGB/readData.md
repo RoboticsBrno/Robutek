@@ -38,7 +38,8 @@ Udělejte program, mění barvu LED na desce na barvu, kterou měří senzor. Po
     import { createRobutek } from "./libs/robutek.js";
 
     const robutek = createRobutek("V2");
-    I2C1.setup({ sda: 10, scl: 3, bitrate: 400000 });
+    
+    I2C1.setup({ sda: robutek.Pins.SDA, scl: robutek.Pins.SCL, bitrate: 400000 });
     const sensor = new ZSCS2016C(I2C1, false);
     sensor.enable();
 

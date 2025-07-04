@@ -38,6 +38,6 @@ TODO
 
     !!! warning "Při montáži desky si musíme dát pozor, abychom neskřipli kabel mezi palubu a motorový blok"
 
-Jakmile máme senzor připojený, musíme ho inicializovat.
+Jakmile máme senzor připojený, musíme ho naprogramovat.
 
-[2. Inicializace senzoru](setup.md){ .md-button .md-button--primary}
+[Programování](setup.md){ .md-button .md-button--primary}

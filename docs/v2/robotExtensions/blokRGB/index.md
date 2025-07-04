@@ -6,6 +6,6 @@ Pokud chceme používat externí senzor, musíme ho nejprve zapojit do robota.
 
 [Externí senzor](externalSensor.md){ .md-button .md-button--primary }
 
-Pokud chceme používat vestavěný senzor, můžeme rovnou senzor inicializovat.
+Pokud chceme používat vestavěný senzor, můžeme rovnou senzor naprogramovat.
 
-[Inicializace senzoru](setup.md){ .md-button .md-button--primary }
+[Programování](setup.md){ .md-button .md-button--primary }

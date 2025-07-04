@@ -12,7 +12,7 @@ import { createRobutek } from "./libs/robutek.js"
 
 const robutek = createRobutek("V2");
 
-I2C1.setup({ sda: robutek.Pins.sda, scl: robutek.Pins.scl, bitrate: 400000 });
+I2C1.setup({ sda: robutek.Pins.SDA, scl: robutek.Pins.SCL, bitrate: 400000 });
 ```
 
 Poté musíme senzor inicializovat a povolit.
