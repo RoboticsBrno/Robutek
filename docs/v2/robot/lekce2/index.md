@@ -73,16 +73,16 @@ Pomocí událostí rozsvítíme při stisknutí tlačítka (`GPIO 0`) RGB LED na
 
     const robutek = createRobutek("V2");
 
-    const ledStrip = new SmartLed(robutek.Pins., 1, LED_WS2812);
+    const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812);
 
-    gpio.pinMode(Pins.ButtonRight, gpio.PinMode.INPUT); // nastaví pin 0 jako vstup
+    gpio.pinMode(robutek.Pins.ButtonRight, gpio.PinMode.INPUT); // nastaví pin 0 jako vstup
 
-    gpio.on("falling", Pins.ButtonRight, () => { // událost, která proběhne při stisknutí tlačítka připojeného na pin 0
+    gpio.on("falling", robutek.Pins.ButtonRight, () => { // událost, která proběhne při stisknutí tlačítka připojeného na pin 0
         ledStrip.set(0, colors.red); // nastaví barvu první LED na červenou (RGB 255 0 0)
         ledStrip.show(); // zobrazí nastavení na LED
     });
 
-    gpio.on("rising", Pins.ButtonRight, () => { // událost, která proběhne při puštění tlačítka připojeného na pin 0
+    gpio.on("rising", robutek.Pins.ButtonRight, () => { // událost, která proběhne při puštění tlačítka připojeného na pin 0
         ledStrip.set(0, colors.off); // nastaví první LED na zhasnutou (RGB 0 0 0)
         ledStrip.show(); // zobrazí nastavení na LED
     });
@@ -110,8 +110,9 @@ Vzpomeňme si z prvního programu, že opakování dosáhneme pomocí `setInterv
 
 ## Výstupní úkol V1 - Pozdrav
 
-Při stisknutí tlačítka (`Pins.ButtonRight`) vypíšeme pozdrav.
+Při stisknutí tlačítka (`robutek.Pins.ButtonRight`) vypíšeme pozdrav.
 
 ## Výstupní úkol V2 - Změna barvy
 
-Při stisknutí tlačítka (`Pins.ButtonRight`) rozsvítíme RGB LED na Robůtkovi (`Pins.ILED`) jednou barvou a při puštění barvu změníme na jinou.
+Při stisknutí tlačítka (`robutek.Pins.ButtonRight`) rozsvítíme RGB LED na Robůtkovi (`robutek.Pins.ILED`) jednou barvou a při puštění barvu změníme na jinou.
+

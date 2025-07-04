@@ -35,15 +35,15 @@ V této kapitole si postavíme samotného Robůtka.
 
     ![](assets/stage1/IMG-step3.jpeg)
 
-4. Vsaďte oba motory do domečku.
+4. Vsaďte oba motory do domečku. <!-- TODO: zadefinovat otočení -->
 
-    !!! danger "Netlačte motory do domečku silou, měly by jít vsadit lehce. Ujistěte se, že kolejničky motoru jsou zarovnány s drážkami v domečku."
+    !!! danger "Netlačte motory do domečku silou, měly by jít vsadit lehce. Ujistěte se, zda jste motor otočili správně a že kolejničky motoru jsou zarovnány s drážkami v domečku."
     ![](assets/stage1/IMG-step4a.jpeg)
     ![](assets/stage1/IMG-step4b.jpeg)
 
-5. Najděte pin heady na pohon motorů na vrchní straně destičky plošného spoje. Pomocí štípaček, sundejte jejich plastové izolátory.
+5. Pomocí malého plochého šroubováku odstraňte plastové zarážky s pinheadů. <!-- TODO: opravit fotky --> 
 
-    !!! danger "Dávejte si pozor aby jste pinheady neuštípli."
+    !!! danger "Dávejte si pozor aby jste pinheady neohl ani neuštípli."
     ![](assets/stage1/IMG-step5a.jpeg)
     !!! danger "Neuštípněte pin heady!"
     ![](assets/stage1/IMG-step5b.jpeg)

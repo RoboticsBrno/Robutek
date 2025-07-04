@@ -26,7 +26,7 @@ Barvu LED nastavíme pomocí `ledStrip.set(0, colors.<nějaká_barva>)` a zobraz
     import { createRobutek } from "./libs/robutek.js"
     const robutek = createRobutek("V1");
 
-    const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812); // Pins.ILED je pin 48
+    const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812); // robutek.Pins.ILED je pin 48
 
     ledStrip.set(0, colors.red); // nastaví barvu první LED na červenou (RGB 255 0 0)
     ledStrip.show(); // zobrazí nastavení na LED

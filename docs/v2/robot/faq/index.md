@@ -23,6 +23,6 @@
 - Zadejte `Jaculus: Get firmware version`.
 - Výsledek by se měl objevit v terminálu.
 
-## Jak nainstalovat prostředí?
+## Jak nainstalovat vývojové prostředí?
 
-- Koukni na [Lekci 1](../lekce1/index.md).
+- Koukni na [Lekci 0](../lekce0/index.md).
