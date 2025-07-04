@@ -32,28 +32,29 @@ Na linuxu je třeba přidat oprávnění udev, [více zde](https://docs.espressi
 
     ![](assets/JacWebInstall5.png)
 
-5. Zapneme Robůtka a podržíme tlačítko `IO0`. Současně s ním zmáčkneme tlačítko s popiskem `EN`, které se nachází nalevo od něj. Tímto přepneme robůtka do nahrávacího režimu.
+    !!! danger "Přepnutí do Nahrávacího módu"
+        Zapneme Robůtka a podržíme tlačítko `IO0`. Současně s ním zmáčkneme tlačítko s popiskem `EN`, které se nachází nalevo od něj. Tímto přepneme robůtka do nahrávacího režimu.
 
-6. Připojíme Robůtka k počítači přes `USB-C`
+5. Připojíme Robůtka k počítači přes `USB-C`
 
-7. Po připojení Robůtka k počítači stiskneme na webové stránce tlačítko `Connect`.
+6. Po připojení Robůtka k počítači stiskneme na webové stránce tlačítko `Connect`.
 
     ![](assets/JacWebInstall2.png)
 
 
-8. Ve vyskakovacím okénku zvolíme port `COM` na Windows nebo `ttyACM` na unixových systémech a stiskneme `Connect`.
+7. Ve vyskakovacím okénku zvolíme port `COM` na Windows nebo `ttyACM` na unixových systémech a stiskneme `Connect`.
 
     ![](assets/JacWebInstall3.png)
 
 
-9. Po chvilce se nám zobrazí tlačítko `Flash`, které zmáčkneme.
+8. Po chvilce se nám zobrazí tlačítko `Flash`, které zmáčkneme.
 
     ![](assets/JacWebInstall4.png)
 
     !!! tip "když nahrávání přes USB-C nefunguje zkuste Micro-USB"
 
 
-10. Chvíli počkáme a jakmile přestanou v konzoli přibývat nové řádky, máme nainstalovaného Jacula v mikrokontroléru!
+9. Chvíli počkáme a jakmile přestanou v konzoli přibývat nové řádky, máme nainstalovaného Jacula v mikrokontroléru!
 
 
 ### Node.js
