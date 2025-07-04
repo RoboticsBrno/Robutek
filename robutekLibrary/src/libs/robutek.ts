@@ -169,10 +169,10 @@ export class Robutek<PinsType extends typeof PinsV1 | typeof PinsV2> extends Dif
 
     public readSensor(sensor: SensorType): number {
         switch (sensor) {
-            case 'WheelFR':
+            case 'WheelFL':
                 this.switchSensors(0);
                 return adc.read(this.Pins.Sens1);
-            case 'WheelFL':
+            case 'WheelFR':
                 this.switchSensors(0);
                 return adc.read(this.Pins.Sens2);
             case 'WheelBL':
@@ -181,10 +181,10 @@ export class Robutek<PinsType extends typeof PinsV1 | typeof PinsV2> extends Dif
             case 'WheelBR':
                 this.switchSensors(0);
                 return adc.read(this.Pins.Sens3);
-            case 'LineFR':
+            case 'LineFL':
                 this.switchSensors(1);
                 return adc.read(this.Pins.Sens1);
-            case 'LineFL':
+            case 'LineFR':
                 this.switchSensors(1);
                 return adc.read(this.Pins.Sens2);
             case 'LineBL':
