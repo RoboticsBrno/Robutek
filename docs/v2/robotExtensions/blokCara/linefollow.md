@@ -1,4 +1,4 @@
-# Program na sledování čáry
+# Jednoduché sledování čáry
 
 ## Základní myšlenka
 
