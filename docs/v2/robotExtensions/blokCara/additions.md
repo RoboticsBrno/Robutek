@@ -20,7 +20,7 @@ Robůtek už jezdí plynuleji a snad i rychleji. Dost možná se ale pořád tř
 
 !!! tip "k_d je často potřeba nastavit opravdu velké pro dosažení plynule jízdy!"
 
-TODO: program s p-d regulací
+TODO: program s PD regulací
 
 ## Na závěr
 
