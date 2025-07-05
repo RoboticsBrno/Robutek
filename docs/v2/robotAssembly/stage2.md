@@ -12,7 +12,7 @@
 
 ## Návod na složení
 
-1. Sundejte z robůtka dřevěnou palubu (pokud ji na robůtku máte).
+1. Sundejte z Robůtka dřevěnou palubu (pokud ji na robůtku máte).
 
     ![](assets/stage2/IMG-step12c.jpeg)
     ![](assets/stage2/IMG-step12b.jpeg)
@@ -45,7 +45,7 @@
 
     ![](assets/stage2/IMG-stage2-step6mod.png)
 
-8. Protáhněte kabel od serva dřevěnou palubou.
+8. Protáhněte kabel od serva dřevěnou palubou. Palubu si odmontujte z Robůtka.
 
     ![](assets/stage2/IMG-stage2-step7.jpeg)
 
@@ -64,30 +64,32 @@
     ![](assets/stage2/IMG-stage2-step10a.jpeg)
     ![](assets/stage2/IMG-stage2-step10b.jpeg)
 
-12. Připojte konektor kabelu serva ke tří pinovému konektoru na základní desce robůtka.
+12. Připojte konektor kabelu serva ke tří pinovému konektoru na základní desce Robůtka, dle obrázku.
 
     !!! danger "Šipka na konektoru patří na datový pin na desce!"
     ![](assets/stage2/IMG-stage2-step11a.jpeg)
     ![](assets/stage2/IMG-stage2-step11b.jpeg)
     ![](assets/stage2/IMG-stage2-step11c.jpeg)
 
-13. Přišroubujte dřevěnou palubu zpátky na robůtka.
+13. Přišroubujte dřevěnou palubu zpátky na Robůtka.
 
     ![](assets/stage2/IMG-stage2-step12a.jpeg)
     ![](assets/stage2/IMG-stage2-step12b.jpeg)
 
-14. Nasaďte na servo packu.
+14. Otočte si servo do nulové pozice.
 
-    !!! warning "Pozor na orientaci pacičky, díra s ozubeným vnitřkem musí být směrem k servu."
+    !!! danger "Buď zajděte za orgem, který vám servo nastaví nebo pokud to umíte si ho můžete nastavit sami."
+
+15. Nasaďte na servo packu, dle polohy na obrázku.
 
     ![](assets/stage2/IMG-stage2-step13a.jpeg)
     ![](assets/stage2/IMG-stage2-step13b.jpeg)
 
-15. Obmotejte držák na fixu gumičkou.
+16. Obmotejte držák na fixu gumičkou.
 
     ![](assets/stage2/IMG-stage2-step14a.jpeg)
 
-16. Fixu dejte do robůtka a zahákněte packu serva do díry v černém dílu.
+17. Fixu dejte do Robůtka a zahákněte packu serva do díry v černém dílu.
 
     ![](assets/stage2/IMG-stage2-step14b.jpeg)
 
