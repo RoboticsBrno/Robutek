@@ -174,22 +174,131 @@ Layout.Joystick1.keys = "wasd"; // přiřazené klávesy, viz tip níže
 Layout.Joystick1.text = ":D"; // popisek
 ```
 ??? tip "`Layout.<joystickId>.keys`"
-    Pokud ovládáte robůtka z počítače, můžete joysticku přiřadit čtyři klávesy, které odpovídají směrům nahoru, doleva, dolů a doprava v  tomto pořadí. K tomu slouží `.keys`. Mohli bychom je třeba přemapovat na číslíčka na numpadu a používat je místo šipek nebo obvyklého WASD.
-
-
+    Pokud ovládáte robůtka z počítače, můžete joysticku přiřadit čtyři klávesy, které odpovídají směrům nahoru, doleva, dolů a doprava v  tomto pořadí. K tomu slouží `.keys`. Mohli bychom je třeba přemapovat na číslíčka na numpadu a ty používat místo šipek nebo obvyklého WASD.
 
 ## LED
 
+![](assets/led.png)
+
+LEDka má následující příkazy:
+
+```ts
+Layout.Led1.color = "rgb(40 80 150)"; // barva
+Layout.Led1.on = true; // určuje, jeli LEDka rozsvícená
+```
+
 ## Orientace
-Nutno otestovat.
+Nutno otestovat, TODO.
 
 ## Výběr
 
+!!! danger "Čtení ze `.selectedIndex` není momentálně naimplementované a činí tak výběrový widget prakticky nepoužitelným."
+
+![](assets/select.png)
+
+Widget Select (výběr) umožňuje uživateli vybrat jednu z předem určených možností. Má metodu `.onChanged` použitelnou uvnitř `Layout.begin()`:
+
+```ts
+const OWNER = "owner";
+const DEVICE_NAME = "robutek";
+
+Layout.begin(OWNER, DEVICE_NAME, builder => {
+    console.log(sel.selectedIndex);
+});
+```
+
+Můžeme nastavovat a číst tyto vlastnosti:
+
+```ts
+Layout.Select1.color = "rgb(255 255 255)";
+Layout.Select1.background = "rgb(150 30 80)";
+Layout.Select1.disabled = false;
+Layout.Select1.options = "Snídaně, Oběd, Věčeře, Půlnoční svačinka";
+Layout.Select1.selectedIndex = 3;
+```
+
 ## Posuvník
+
+![](assets/slider.png)
+
+Slider (posuvník) má metodu `.onChanged` použitelnou uvnitř `Layout.begin()`:
+
+```ts
+const OWNER = "owner";
+const DEVICE_NAME = "robutek";
+
+Layout.begin(OWNER, DEVICE_NAME, builder => {
+    builder.Slider1.onChanged(slid => {
+        console.log(slid.value);
+    })
+});
+```
+
+Můžeme nastavovat a číst tyto vlastnosti:
+
+```ts
+Layout.Slider1.color = "rgb(0 180 0)"; // barva
+Layout.Slider1.fontSize = 20; // velikost fontu popisku
+Layout.Slider1.showValue = true; // určuje, zobrazí-li se popisek
+Layout.Slider1.max = 10; // maximální hodnota
+Layout.Slider1.min = 1; // minimální hodnota
+Layout.Slider1.value = 3.5 // aktuální hodnota
+Layout.Slider1.precision = 0.5; // přesnost (např. zaokrouhlí na nejbližší násobek 0.5)
+```
 
 ## SpinEdit
 
+![](assets/spinedit.png)
+
+SpinEdit má metodu `.onChanged` použitelnou uvnitř `Layout.begin()`:
+
+```ts
+const OWNER = "owner";
+const DEVICE_NAME = "robutek";
+
+Layout.begin(OWNER, DEVICE_NAME, builder => {
+    builder.Spinedit1.onChanged(spin => {
+        console.log(sspin.value);
+    })
+});
+```
+
+Můžeme nastavovat a číst tyto vlastnosti:
+
+```ts
+Layout.Slider1.color = "rgb(0 180 0)"; // barva
+Layout.Slider1.fontSize = 20; // velikost fontu popisku
+Layout.Slider1.showValue = true; // určuje, zobrazí-li se popisek
+Layout.Slider1.max = 10; // maximální hodnota
+Layout.Slider1.min = 1; // minimální hodnota
+Layout.Slider1.value = 3.5 // aktuální hodnota
+Layout.Slider1.precision = 0.5; // přesnost (např. zaokrouhlí na nejbližší násobek 0.5)
+```
+
 ## Přepínač
+
+![](assets/switcher.png)
+
+Switcher (přepínač) má metodu `.onChanged` použitelnou uvnitř `Layout.begin()`. Můžeme taky číst (a pouze číst!) hodnotu na přepínači:
+
+```ts
+const OWNER = "owner";
+const DEVICE_NAME = "robutek";
+
+Layout.begin(OWNER, DEVICE_NAME, builder => {
+    builder.Switcher1.onChanged(swi => {
+        console.log(swi.value);
+    })
+});
+```
+
+Můžeme nastavovat a číst tyto vlastnosti:
+```ts
+Layout.Switcher1.color = "rgb(244 205 64)" // barva
+Layout.Switcher1.fontSize = 28 // velikost fontu
+Layout.Switcher1.min = 0 // minimální hodnota
+Layout.Switcher1.max = 3 // maximální hodnota
+```
 
 ## Text
 
