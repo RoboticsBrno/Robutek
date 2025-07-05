@@ -42,6 +42,8 @@ servo.write(0);
 
 <!-- TODO FOTO jak ma byt pacicka nasazena -->
 
+![](./assets/servoArmAttached.jpg)
+
 Jakmile mamé pacičku správně nastavenou, můžeme na ni nasadit fixu.
 
 ![](../../robotAssembly/assets/stage2/IMG-stage2-step14b.jpeg)
