@@ -142,6 +142,8 @@ nav:
       - robotAssembly/stage3.md
       - robotAssembly/stage4.md
       - robotAssembly/stage5.md
+      - robotAssembly/stage6.md
+
   - Programovací lekce:
       - robot/index.md
       - robot/faq/index.md
