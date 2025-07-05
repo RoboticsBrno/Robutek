@@ -99,44 +99,45 @@ Nyní už se můžeme vrhnout na samotnou instalaci [`Jacula`](https://jaculus.o
         Usage: jac <command>
 
         Tools for controlling devices running Jaculus
-
+        
         Commands:
-        help            Print help for given command
-        list-ports      List available serial ports
-        serial-socket   Tunnel a serial port over a TCP socket
-        install         Install Jaculus to device
-        build           Build TypeScript project
-        flash           Flash code to device (replace contents of ./code)
-        pull            Download a file/directory from device
-        ls              List files in a directory
-        read            Read a file from device
-        write           Write a file to device
-        rm              Delete a file on device
-        mkdir           Create a directory on device
-        rmdir           Delete a directory on device
-        upload          Upload a file/directory to device
-        format          Format device storage
-        resources-ls    List available resources
-        resources-read  Read a resource from device
-        get-examples    Get example project from device
-        start           Start a program
-        stop            Stop a program
-        status          Get status of device
-        version         Get version of device firmware
-        monitor         Monitor program output
-        wifi-get        Display current WiFi config
-        wifi-ap         Set WiFi to AP mode (create a hotspot)
-        wifi-add        Add a WiFi network
-        wifi-rm         Remove a WiFi network
-        wifi-sta        Set WiFi to Station mode (connect to a wifi)
-        wifi-disable    Disable WiFi
-
+          help            Print help for given command                       
+          list-ports      List available serial ports                        
+          serial-socket   Tunnel a serial port over a TCP socket             
+          install         Install Jaculus to device                          
+          build           Build TypeScript project                           
+          flash           Flash code to device (replace contents of ./code)  
+          pull            Download a file/directory from device              
+          ls              List files in a directory                          
+          read            Read a file from device                            
+          write           Write a file to device                             
+          rm              Delete a file on device                            
+          mkdir           Create a directory on device                       
+          rmdir           Delete a directory on device                       
+          upload          Upload a file/directory to device                  
+          format          Format device storage                              
+          project-create  Create project from package                        
+          project-update  Update existing project from package skeleton      
+          resources-ls    List available resources                           
+          resources-read  Read a resource from device                        
+          start           Start a program                                    
+          stop            Stop a program                                     
+          status          Get status of device                               
+          version         Get version of device firmware                     
+          monitor         Monitor program output                             
+          wifi-get        Display current WiFi config                        
+          wifi-ap         Set WiFi to AP mode (create a hotspot)             
+          wifi-add        Add a WiFi network                                 
+          wifi-rm         Remove a WiFi network                              
+          wifi-sta        Set WiFi to Station mode (connect to a wifi)       
+          wifi-disable    Disable WiFi                                       
+        
         Global options:
-        --log-level   Set log level (default: info)
-        --help        Print this help message
-        --port        Serial port to use (default: first available)
-        --baudrate    Baudrate to use (default: 921600)
-        --socket      host:port to use
+          --log-level   Set log level (default: info)                  
+          --help        Print this help message                        
+          --port        Serial port to use (default: first available)  
+          --baudrate    Baudrate to use (default: 921600)              
+          --socket      host:port to use 
         ```
 
 
