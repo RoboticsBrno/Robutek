@@ -21,13 +21,13 @@ for (let i: number = 0; i < 3; i++) {
 Do kulatých závorek píšeme tři věci:
 
 - řídící proměnnou s její výchozí hodnotou
-- výraz který určuje počet opakování
+- výraz, který určuje počet opakování
 - nakonec jednoduchou operaci která se provede při každém průchodu cyklem jako poslední operace
 
 Tedy vytváříme proměnnou `#!ts i` s výchozí hodnotou `#!ts 0`, která bude existovat po dobu vykonávání cyklu.
 Ačkoliv v běžném životě počítáme věci od `1`, v informatice častěji začínáme `0`. Může zde však být cokoliv.
 
-Následně definujeme výraz `#!ts i < 3 `, který značí, kdy se cyklus má zastavit.
+Následně definujeme výraz `#!ts i < 3 `, který určuje, za jakých podmínek má cyklus běžet.
 
 Na konci cyklu zvýšíme `#!ts i ` o jedna.
 
