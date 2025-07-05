@@ -17,8 +17,8 @@ pen.write(robutek.PenPos.Down); // dáme dolů tužku
 
 // chování opakujeme 4x, pro každou stěnu čtverce
 for (let i: number = 0; i < 4; i++) {
-  await robutek.move(0, { distance: 100 }); // posun dopředu o 10 cm
-  await robutek.rotate(90); // rotace doprava o 90 stupňů
+    await robutek.move(0, { distance: 100 }); // posun dopředu o 10 cm
+    await robutek.rotate(90); // rotace doprava o 90 stupňů
 }
 pen.write(robutek.PenPos.Up); // dáme nahoru
 
@@ -26,8 +26,8 @@ await robutek.move(0, { distance: 300 });
 
 pen.write(robutek.PenPos.Down);
 for (let i: number = 0; i < 4; i++) {
-  await robutek.move(0, { distance: 100 });
-  await robutek.rotate(90);
+    await robutek.move(0, { distance: 100 });
+    await robutek.rotate(90);
 }
 pen.write(robutek.PenPos.Up);
 ```
@@ -47,14 +47,14 @@ const pen = new Servo(robutek.Pins.Servo2, 1, 4);
 robutek.setSpeed(100);
 
 for (let square: number = 0; square < 4; square++) {
-  pen.write(robutek.PenPos.Down);
-  for (let i: number = 0; i < 4; i++) {
-    await robutek.move(0, { distance: 100 });
-    await robutek.rotate(90);
-  }
+    pen.write(robutek.PenPos.Down);
+    for (let i: number = 0; i < 4; i++) {
+        await robutek.move(0, { distance: 100 });
+        await robutek.rotate(90);
+    }
 
-  pen.write(robutek.PenPos.Up);
-  await robutek.move(0, { distance: 150 });
+    pen.write(robutek.PenPos.Up);
+    await robutek.move(0, { distance: 150 });
 }
 ```
 
@@ -75,12 +75,12 @@ const pen = new Servo(robutek.Pins.Servo2, 1, 4);
 robutek.setSpeed(100);
 
 async function draw_square(): Promise<void> {
-  pen.write(robutek.PenPos.Down);
-  for (let i: number = 0; i < 4; i++) {
-    await robutek.move(0, { distance: 100 });
-    await robutek.rotate(90);
-  }
-  pen.write(robutek.PenPos.Up);
+    pen.write(robutek.PenPos.Down);
+    for (let i: number = 0; i < 4; i++) {
+        await robutek.move(0, { distance: 100 });
+        await robutek.rotate(90);
+    }
+    pen.write(robutek.PenPos.Up);
 }
 ```
 
@@ -114,12 +114,12 @@ const pen = new Servo(robutek.Pins.Servo2, 1, 4);
 robutek.setSpeed(100);
 
 async function draw_square(): Promise<void> {
-  pen.write(robutek.PenPos.Down);
-  for (let i: number = 0; i < 4; i++) {
-    await robutek.move(0, { distance: 100 });
-    await robutek.rotate(90);
-  }
-  pen.write(robutek.PenPos.Up);
+    pen.write(robutek.PenPos.Down);
+    for (let i: number = 0; i < 4; i++) {
+        await robutek.move(0, { distance: 100 });
+        await robutek.rotate(90);
+    }
+    pen.write(robutek.PenPos.Up);
 }
 
 await draw_square();
@@ -150,12 +150,12 @@ const pen = new Servo(robutek.Pins.Servo2, 1, 4);
 robutek.setSpeed(100);
 
 async function draw_square(size: number): Promise<void> {
-  pen.write(robutek.PenPos.Down);
-  for (let i: number = 0; i < 4; i++) {
-    await robutek.move(0, { distance: size });
-    await robutek.rotate(90);
-  }
-  pen.write(robutek.PenPos.Up);
+    pen.write(robutek.PenPos.Down);
+    for (let i: number = 0; i < 4; i++) {
+        await robutek.move(0, { distance: size });
+        await robutek.rotate(90);
+    }
+    pen.write(robutek.PenPos.Up);
 }
 
 await draw_square(100);
