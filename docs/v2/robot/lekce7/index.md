@@ -181,14 +181,14 @@ Vytvořte funkci, která bere 2 argumenty, a nakreslí obdélník daných rozmě
     robutek.setSpeed(100);
 
     async function draw_rectangle(sizeA: number, sizeB: number): Promise<void> {
-    pen.write(robutek.PenPos.Down);
-    for (let i: number = 0; i < 2; i++) {
-        await robutek.move(0, { distance: sizeA });
-        await robutek.rotate(90);
-        await robutek.move(0, { distance: sizeB });
-        await robutek.rotate(90);
-    }
-    pen.write(robutek.PenPos.Up);
+        pen.write(robutek.PenPos.Down);
+        for (let i: number = 0; i < 2; i++) {
+            await robutek.move(0, { distance: sizeA });
+            await robutek.rotate(90);
+            await robutek.move(0, { distance: sizeB });
+            await robutek.rotate(90);
+        }
+        pen.write(robutek.PenPos.Up);
     }
 
     await draw_rectangle(50, 200);
