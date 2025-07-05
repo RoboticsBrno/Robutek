@@ -199,11 +199,11 @@ Vytvořte funkci, která bere 2 argumenty, a nakreslí obdélník daných rozmě
 
 Kromě toho, že funkce můžou brát argumenty, tak je mohou i vracet. To je užitečné v případě, že si chceme do funkce dát nějaký výpočet, a zajímá nás jeho výsledek. Hodnotu z funkce vracíme pomocí klíčového slova `return`.
 
-Tato funkce sečte paramatry `a` a `b` a vrátí výsledek toho výpočtu
+Tato funkce sečte paramatry `a` a `b` a vrátí výsledek výpočtu
 
 ```ts
 function add(a: number, b: number): number {
-  return a + b;
+    return a + b;
 }
 
 let cisloA = 5;
@@ -226,7 +226,7 @@ Tento výpočet nechceme psát několikrát, je proto vhodné jej vyčlenit do f
 
 ```ts
 function polygonAngle(sides: number): number {
-  return (1 - 2 / sides) * 180;
+    return (1 - 2 / sides) * 180;
 }
 
 console.log(`čtverec: ${polygonAngle(4)}°`);
