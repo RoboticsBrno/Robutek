@@ -7,13 +7,18 @@ Ukážeme si ovládání RGB LED umístěné na ESP32 a práci s událostmi ří
 TypeScript (JavaScript) je imperativní programovací jazyk. To znamená, že se vykoná vše, co do programu napíšeme,
 v pořadí, v jakém jsme to napsali.
 
-[Stáhnout ZIP s prázdným projektem](./blank_project.zip){ .md-button .md-button--primary }
+=== "Odkaz"
+    ```
+    https://robutek.robotikabrno.cz/v2/robot/blank_project.tar.gz
+    ```
+=== "Zip"
+    [Stáhnout ZIP](../blank_project.zip){ .md-button .md-button--primary }
 
 ## Zadání A
 
 Nejdříve si zopakujeme předchozí lekci, a rozsvítíme RGB LED na Robůtkovi (`robutek.Pins.ILED`) jednou barvou (například červenou).
 
-Na začátku tohoto úkolu si stáhneme nový [zip](./blank_project.zip) soubor obsahující prázdný projekt. Po stažení složku rozbalíme a otevřeme ve Visual Studio Code. V souboru `index.ts` jsou připraveny `import` příkazy: ty nám umožní využívat funkcionalitu z různých souborů, např. jednoduše ovládat LEDku, nebo využívat nadefinované barvy.
+Na začátku tohoto úkolu si otevřeme nový  prázdný projekt.  V souboru `index.ts` jsou připraveny `import` příkazy: ty nám umožní využívat funkcionalitu z různých souborů, např. jednoduše ovládat LEDku, nebo využívat nadefinované barvy.
 
 Pásek se inicializuje pomocí `const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812);`.
 Barvu LED nastavíme pomocí `ledStrip.set(0, colors.<nějaká_barva>)` a zobrazíme pomocí `ledStrip.show()`.

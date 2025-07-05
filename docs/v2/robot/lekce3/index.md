@@ -101,9 +101,13 @@ ledStrip.set(0, colors.green); // Rozsvítí LEDku zeleně pomocí předdefinova
 ledStrip.set(0, { r: 0, g: 255, b: 0 }); // Rozsvítí LEDku zeleně pomocí vlastní barvy
 ```
 
-Pro tuto lekci si stáhneme [zip](./project3.zip), nebo navážeme na předchozí cvičení. Své řešení budeme psát do souboru `index.ts`.
+=== "Odkaz"
+    ```
+    https://robutek.robotikabrno.cz/v2/robot/lekce3/project3.tar.gz
+    ```
+=== "Zip"
+    [Stáhnout ZIP](./project3.zip){ .md-button .md-button--primary }
 
-[Stáhnout ZIP s prázdným projektem](./project3.zip){ .md-button .md-button--primary }
 
 ## Zadání A
 
@@ -166,7 +170,7 @@ opět nastavit na `0`.
 ## Zadání C
 
 Tentokrát budeme reagovat na stisk tlačítka.
-Do desky si [zapojíme](../../robotAccessories/ledStrip.md) pásek 8 inteligentních ledek, a vybranou barvou je budeme rozsvěcet.
+Do desky si [zapojíme](../../robotAssembly/stage3.md) pásek 8 inteligentních ledek, a vybranou barvou je budeme rozsvěcet.
 
 Po stisku tlačítka zhasneme aktuální LEDku, a rozsvítíme tu další.
 Pokud při stisku tlačítka svítí poslední LED, zhasneme ji, a rozsvítíme opět první LED.

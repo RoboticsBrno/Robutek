@@ -51,7 +51,8 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.keys
   - attr_list
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - meta
   - md_in_html
   - footnotes
@@ -88,9 +89,9 @@ plugins:
 
   - zip_folders:
       folders:
+        - robot/blank_project
         - robot/lekce1/example1
         - robot/lekce1/example-gridui
-        - robot/lekce2/blank_project
         - robot/lekce3/project3
         - robot/lekce4/project4
         - robot/lekce6/project6
