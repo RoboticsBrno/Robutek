@@ -51,7 +51,8 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.keys
   - attr_list
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - meta
   - md_in_html
   - footnotes
