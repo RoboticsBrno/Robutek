@@ -108,11 +108,11 @@ Pokud nechceme za vypsanými znaky nový řádek, místo známého `#!ts console
 
     // projdeme všechny řádky
     for(let row: number = 0; row < SQUARE_SIZE; row++){
-    // projdeme všechny sloupce
-    for(let col: number = 0; col < SQUARE_SIZE; col++){
-    stdout.write("\*"); // vypíšeme hvězdičku
-    }
-    stdout.write("\n"); // přesuneme se na další řádek
+    	// projdeme všechny sloupce
+    	for(let col: number = 0; col < SQUARE_SIZE; col++){
+    		stdout.write("\*"); // vypíšeme hvězdičku
+    	}
+    	stdout.write("\n"); // přesuneme se na další řádek
     }
     ```
 
@@ -123,7 +123,7 @@ Zadání je velmi podobné jako zadání A, jen jdou čísla sestupně namísto 
 
 ## Zadání výstupního úkolu V2
 
-Napište program, který bude periodicky blikat ledkou - 500ms svítí, 500ms nesvití.
+Napište program, který bude periodicky blikat ledkou - 500ms svítí, 500ms nesvití. Nepoužívejte `setInterval`.
 
 ## Zadání výstupního úkolu V3
 
