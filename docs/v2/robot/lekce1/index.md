@@ -47,8 +47,8 @@ Pokud nám funguje připojení na :material-eye:`Monitor` a běží nám komunik
 	<!-- TODO: update 2 and 3 current library and jaculus implementations -->
 3. Měli bychom vidět výstup z programu.
 	```bash
-	$ jac monitor --port /dev/tty.usbmodem213101
-	Connecting to serial at /dev/tty.usbmodem213101 at 921600 bauds... Connected.
+	$ jac monitor --port COM7
+	Connecting to serial at COM7 at 921600 bauds... Connected.
 
 	Robotický tábor 2025, zdraví Jirka Vácha!
 	Robotický tábor 2025, zdraví Jirka Vácha!
@@ -109,9 +109,14 @@ Ve zdrojovém kódu jsou komentáře (`// tohle je komentář`), které nám pop
 
 !!! tip "Pokud už máte zapájené motory a složeného Robůtka, můžete ho vyzkoušet přes dálkové ovládání"
 
-[Stáhnout ZIP s gridui ukázkou](./example-gridui.zip){ .md-button .md-button--primary }
+=== "Odkaz"
+    ```
+    https://robutek.robotikabrno.cz/v2/robot/lekce1/example-gridui.tar.gz
+    ```
+=== "Zip"
+    [Stáhnout ZIP](./example-gridui.zip){ .md-button .md-button--primary }
 
-1. Stáhneme si [předpřipravený projekt](./example-gridui.zip). Otevřete ho ve VSCode.
+1. Otevřeme si projekt.
 
 2. V projektu v `src/index.ts` upravte proměnné `OWNER` a `DEVICE_NAME` v horní části na vaše jméno.
 
