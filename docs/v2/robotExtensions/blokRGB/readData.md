@@ -24,7 +24,12 @@ takto může vypadat objekt rgb (toto je fialová barva)
 
     Knihovna umožňuje také měření jednotlivých barevných kanálu: `readCalRed()`, `readCalGreen()`, `readCalBlue()`, `readCalIR()`, `readCalClear()`.
 
-### Příklad
+
+### Příklad 1
+
+<!-- TODO TO STEJNE JAKO 1, akorat s console log a JacViz, ceka na fix JacViz  -->
+
+### Příklad 2
 
 Udělejte program, mění barvu LED na desce na barvu, kterou měří senzor. Pokud používáme vestavěný senzor, není vhodné měnit barvu ledek, kterou jsou přímo vedle něj.
 
@@ -38,7 +43,7 @@ Udělejte program, mění barvu LED na desce na barvu, kterou měří senzor. Po
     import { createRobutek } from "./libs/robutek.js";
 
     const robutek = createRobutek("V2");
-    
+
     I2C1.setup({ sda: robutek.Pins.SDA, scl: robutek.Pins.SCL, bitrate: 400000 });
     const sensor = new ZSCS2016C(I2C1, false);
     sensor.enable();
@@ -51,6 +56,7 @@ Udělejte program, mění barvu LED na desce na barvu, kterou měří senzor. Po
         maxs: [62644, 65535, 65535, 13320, 6555],
     };
     sensor.setCalibration(calib);
+    ledStrip.clear();
     ledStrip.show();
     setInterval(() => {
         const calData = sensor.readCalRGB();
@@ -62,5 +68,4 @@ Udělejte program, mění barvu LED na desce na barvu, kterou měří senzor. Po
 
 ### Možné pokračování
 
- - Udělej program, který bude měřit barvu předmětu před senzorem a "pozná", o jakou barvu se jedná. Pokud před něj dáme zelený předmět, vypíše nám do konzole "zelená" atd...
- 
+- Udělej program, který bude měřit barvu předmětu před senzorem a "pozná", o jakou barvu se jedná. Pokud před něj dáme zelený předmět, vypíše nám do konzole "zelená" atd...
