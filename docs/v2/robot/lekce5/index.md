@@ -40,7 +40,7 @@ const servo = new Servo(robutek.Pins.Servo2, 1, 4);
 servo.write(0);
 ```
 
-<!-- TODO FOTO jak ma byt pacicka nasazena -->
+![](./assets/servoArmAttached.jpg)
 
 Jakmile mamé pacičku správně nastavenou, můžeme na ni nasadit fixu.
 
