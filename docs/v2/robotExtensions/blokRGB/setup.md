@@ -1,8 +1,18 @@
 # Inicializace senzoru
 
+=== "Odkaz"
+    ```
+    https://robutek.robotikabrno.cz/v2/robot/blank_project.tar.gz
+    ```
+=== "Zip"
+    [Stáhnout ZIP](../../robot/blank_project.zip){ .md-button .md-button--primary }
+
+
 Prvním krokem je nastavení komunikace přes I2C.
 
+<!-- 
 [Pokročilý pohled na I2C ](../blokI2C/index.md){ .md-button }
+-->
 
 !!! note "Pokud prohodíme SDA a SCL, komunikace nebude fungovat"
 

@@ -14,7 +14,12 @@ Takhle by třeba mohlo vypadat rozhraní navržené v designeru, máme na něm p
 
 Tady máte ke stažení popsaný projekt (nastavení barvy ledky na desce, blikající ledka stejné barvy na rozhraní...).
 
-[Stáhnout ZIP s ukázkou](colors-gridui.zip){ .md-button .md-button--primary }
+=== "Odkaz"
+    ```
+    https://robutek.robotikabrno.cz/v2/robotExtentions/blokGridUI/colors-gridui.tar.gz
+    ```
+=== "Zip"
+    [Stáhnout ZIP](colors_gridui.zip){ .md-button .md-button--primary }
 
 
 
@@ -39,7 +44,7 @@ Layout.begin(OWNER, DEVICE_NAME, builder => {
     })
 });
 ```
-Po připojení robůtka k wi-fi (popsáno v [lekci 1](../lekce1/index.md#lekce-15-dalkove-ovladani)) inizializujeme rozhraní funkcí `Layout.begin()`, které v argumentech předáváme jméno vlastníka, jméno zařízení a blok kódu, ve kterém nastavíme události spouštěné změnami v rozhraní. Tak zrovna `builder.SetColor.onChanged(slider => { // kód zde })` bude obsahovat kód, který se spustí, když widget s id `SetColor` projde nějakou změnou. V tomto případě je daný widget náš posuvník a změnou bude, když jím někdo posune. V proměnné `slider` je našemu kódu předán stav posuvníku, takže si poté můžeme vyčíst třeba jeho aktuální hodnotu takto:
+Po připojení robůtka k wi-fi (popsáno v [lekci 1](../../robot/lekce1/index.md#lekce-15-dalkove-ovladani)) inizializujeme rozhraní funkcí `Layout.begin()`, které v argumentech předáváme jméno vlastníka, jméno zařízení a blok kódu, ve kterém nastavíme události spouštěné změnami v rozhraní. Tak zrovna `builder.SetColor.onChanged(slider => { // kód zde })` bude obsahovat kód, který se spustí, když widget s id `SetColor` projde nějakou změnou. V tomto případě je daný widget náš posuvník a změnou bude, když jím někdo posune. V proměnné `slider` je našemu kódu předán stav posuvníku, takže si poté můžeme vyčíst třeba jeho aktuální hodnotu takto:
 
 ```ts
 let hodnota = slider.value

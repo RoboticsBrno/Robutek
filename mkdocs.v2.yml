@@ -162,10 +162,10 @@ nav:
           - robotExtensions/blokGridUI/index.md
       - Čára:
           - robotExtensions/blokCara/index.md
-          - robotExtensions/blokCara/logic.md
+      #    - robotExtensions/blokCara/logic.md
       - Sumo:
           - robotExtensions/blokSumo/index.md
-          - robotExtensions/blokSumo/logic.md
+      #    - robotExtensions/blokSumo/logic.md
       - Bludiště:
           - robotExtensions/blokMaze/index.md
           - GPIO:
@@ -180,5 +180,5 @@ nav:
               - robotExtensions/blokRGB/setup.md
               - robotExtensions/blokRGB/calibration.md
               - robotExtensions/blokRGB/readData.md
-      - I2C:
-          - robotExtensions/blokI2C/index.md
+      # - I2C:
+      #     - robotExtensions/blokI2C/index.md
