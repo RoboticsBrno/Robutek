@@ -32,7 +32,23 @@ main().catch(console.error);
 
 Robůtek s sebou škube tam a zpátky, jak bychom to mohli vyřešit. Dřív jsme věděli, že čára je pod jedním senzorem, druhým senzorem a nebo "někde mezi". Teď ale víme jak moc mimo jsme a tak můžeme reagovat přiměřeně. Zvolíme si nějaký koeficient k_p, kterým vynásobíme rozdíl mezi ideální a reálnou pozicí vůči čáře a toto číslo použijeme při zatáčení
 
-TODO: program s p-regulací
+```ts
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V2");
+const setpoint = 512;
+const k_p = 0.5;
+async function main() {
+    robutek.setSpeed(300);
+    while(true) {
+        const l = robutek.readSensor("LineFR");
+        let error = setpoint - l;
+        let normalized_error = error / 512;
+        robutek.move(normalized_error * k_p);
+        await sleep(1);
+    }
+}
+main().catch(console.error);
+```
 
 ## Ještě jemnější styl jízdy
 
