@@ -7,13 +7,18 @@ Ukážeme si ovládání RGB LED umístěné na ESP32 a práci s událostmi ří
 TypeScript (JavaScript) je imperativní programovací jazyk. To znamená, že se vykoná vše, co do programu napíšeme,
 v pořadí, v jakém jsme to napsali.
 
-[Stáhnout ZIP s prázdným projektem](./blank_project.zip){ .md-button .md-button--primary }
+=== "Odkaz"
+    ```
+    https://robutek.robotikabrno.cz/v2/robot/blank_project.tar.gz
+    ```
+=== "Zip"
+    [Stáhnout ZIP](../blank_project.zip){ .md-button .md-button--primary }
 
 ## Zadání A
 
 Nejdříve si zopakujeme předchozí lekci, a rozsvítíme RGB LED na Robůtkovi (`robutek.Pins.ILED`) jednou barvou (například červenou).
 
-Na začátku tohoto úkolu si stáhneme nový [zip](./blank_project.zip) soubor obsahující prázdný projekt. Po stažení složku rozbalíme a otevřeme ve Visual Studio Code. V souboru `index.ts` jsou připraveny `import` příkazy: ty nám umožní využívat funkcionalitu z různých souborů, např. jednoduše ovládat LEDku, nebo využívat nadefinované barvy.
+Na začátku tohoto úkolu si otevřeme nový  prázdný projekt.  V souboru `index.ts` jsou připraveny `import` příkazy: ty nám umožní využívat funkcionalitu z různých souborů, např. jednoduše ovládat LEDku, nebo využívat nadefinované barvy.
 
 Pásek se inicializuje pomocí `const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812);`.
 Barvu LED nastavíme pomocí `ledStrip.set(0, colors.<nějaká_barva>)` a zobrazíme pomocí `ledStrip.show()`.
@@ -61,7 +66,11 @@ Pomocí událostí rozsvítíme při stisknutí tlačítka (`GPIO 0`) RGB LED na
 
 ??? note "Řešení"
 
+<!-- TODO BROKEN example -->
+
     ```ts
+
+
     import { createRobutek } from "./libs/robutek.js"
     import * as colors from "./libs/colors.js";
     import { LED_WS2812, SmartLed } from "smartled";
@@ -69,16 +78,16 @@ Pomocí událostí rozsvítíme při stisknutí tlačítka (`GPIO 0`) RGB LED na
 
     const robutek = createRobutek("V2");
 
-    const ledStrip = new SmartLed(robutek.Pins., 1, LED_WS2812);
+    const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812);
 
-    gpio.pinMode(Pins.ButtonRight, gpio.PinMode.INPUT); // nastaví pin 0 jako vstup
+    gpio.pinMode(robutek.Pins.ButtonRight, gpio.PinMode.INPUT); // nastaví pin 0 jako vstup
 
-    gpio.on("falling", Pins.ButtonRight, () => { // událost, která proběhne při stisknutí tlačítka připojeného na pin 0
+    gpio.on("falling", robutek.Pins.ButtonRight, () => { // událost, která proběhne při stisknutí tlačítka připojeného na pin 0
         ledStrip.set(0, colors.red); // nastaví barvu první LED na červenou (RGB 255 0 0)
         ledStrip.show(); // zobrazí nastavení na LED
     });
 
-    gpio.on("rising", Pins.ButtonRight, () => { // událost, která proběhne při puštění tlačítka připojeného na pin 0
+    gpio.on("rising", robutek.Pins.ButtonRight, () => { // událost, která proběhne při puštění tlačítka připojeného na pin 0
         ledStrip.set(0, colors.off); // nastaví první LED na zhasnutou (RGB 0 0 0)
         ledStrip.show(); // zobrazí nastavení na LED
     });
@@ -106,9 +115,9 @@ Vzpomeňme si z prvního programu, že opakování dosáhneme pomocí `setInterv
 
 ## Výstupní úkol V1 - Pozdrav
 
-Při stisknutí tlačítka (`Pins.ButtonRight`) vypíšeme pozdrav.
+Při stisknutí tlačítka (`robutek.Pins.ButtonRight`) vypíšeme pozdrav.
 
 ## Výstupní úkol V2 - Změna barvy
 
-Při stisknutí tlačítka (`Pins.ButtonRight`) rozsvítíme RGB LED na Robůtkovi (`Pins.ILED`) jednou barvou a při puštění barvu změníme na jinou.
+Při stisknutí tlačítka (`robutek.Pins.ButtonRight`) rozsvítíme RGB LED na Robůtkovi (`robutek.Pins.ILED`) jednou barvou a při puštění barvu změníme na jinou.
 

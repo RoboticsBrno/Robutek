@@ -2,20 +2,41 @@
 
 Zde si vyzkoušíme vytvořit první projekt a nahrát jej do Robůtka.
 
-[Stáhnout ZIP s prvním projektem](./example1.zip){ .md-button .md-button--primary }
+=== "Přes VS Code rozšíření"
+
+    ```
+    https://robutek.robotikabrno.cz/v2/robot/lekce1/example1.tar.gz
+    ```
+
+    1. V prvním kroku si na počítači nachystáme složku `RoboCamp-2025`, do které si budeme ukládat veškeré projekty.
+    2. Dále v rozšíření Jaculus vybereme `Create Project`.
+    3. Zvolíme umístění projektu do složky `RoboCamp-2025`.
+    4. Zadáme název projektu, např. `prvniProjekt`, potvrdíme `Enter`.
+    5. Vložíme odkaz na projekt, potvrdíme `Enter`.
+    6. Otevře se nám vytvořený projekt.
+    7. Připojíme Robůtka přes `USB-C`. Pokud `USB-C` nefunguje, požívejte `micro-USB`.
+    8. V levém spodním rohu vybereme :material-power-plug:`Select COM port` pro výběr portu, na kterém je Robůtek připojený. Poté se nápis změní na vybraný port.
+
+        ??? tip "Vidím více portů"
+            Pokud se vám v nabídce zobrazí více portů, odpojte Robůtka a zjisťete, který port zmizel. Po připojení Robůtka tento port vyberte.
+
+    9. Dále zvolíme :material-eye:`Monitor`, ten slouží pro komunikaci se zařízením.
 
 
-1. V prvním kroku si na počítači nachystáme složku `RoboCamp-2025`, do které si budeme ukládat veškeré projekty.
-2. Dále si [stáhneme zip](./example1.zip) soubor s prvním projektem.
-3. Poté si jej **rozbalíme** do vytvořené složky k táboru.
-4. Spustíme VSCode a pomocí záložky `File` -> `Open Folder` vybereme složku s projektem.
-5. Připojíme Robůtka přes `USB-C`. Pokud `USB-C` nefunguje, požívejte `micro-USB`.
-6. V levém spodním rohu vybereme :material-power-plug:`Select COM port` pro výběr portu, na kterém je Robůtek připojený. Poté se nápis změní na vybraný port.
+=== "Ručně ze zipu"
+    [Stáhnout ZIP s prvním projektem](./example1.zip){ .md-button .md-button--primary }
 
-	??? tip "Vidím více portů"
-		Pokud se vám v nabídce zobrazí více portů, odpojte Robůtka a zjisťete, který port zmizel. Po připojení Robůtka tento port vyberte.
+    1. V prvním kroku si na počítači nachystáme složku `RoboCamp-2025`, do které si budeme ukládat veškeré projekty.
+    2. Dále si [stáhneme zip](./example1.zip) soubor s prvním projektem.
+    3. Poté si jej **rozbalíme** do vytvořené složky k táboru.
+    4. Spustíme VSCode a pomocí záložky `File` -> `Open Folder` vybereme složku s projektem.
+    5. Připojíme Robůtka přes `USB-C`. Pokud `USB-C` nefunguje, požívejte `micro-USB`.
+    6. V levém spodním rohu vybereme :material-power-plug:`Select COM port` pro výběr portu, na kterém je Robůtek připojený. Poté se nápis změní na vybraný port.
 
-7. Dále zvolíme :material-eye:`Monitor`, ten slouží pro komunikaci se zařízením.
+        ??? tip "Vidím více portů"
+            Pokud se vám v nabídce zobrazí více portů, odpojte Robůtka a zjisťete, který port zmizel. Po připojení Robůtka tento port vyberte.
+
+    7. Dále zvolíme :material-eye:`Monitor`, ten slouží pro komunikaci se zařízením.
 
 ## Nahrání programu
 
@@ -27,13 +48,15 @@ Pokud nám funguje připojení na :material-eye:`Monitor` a běží nám komunik
 	<!-- TODO: update 2 and 3 current library and jaculus implementations -->
 3. Měli bychom vidět výstup z programu.
 	```bash
-	$ jac monitor --port /dev/tty.usbmodem213101
-	Connecting to serial at /dev/tty.usbmodem213101 at 921600 bauds... Connected.
+	$ jac monitor --port COM7
+	Connecting to serial at COM7 at 921600 bauds... Connected.
 
 	Robotický tábor 2025, zdraví Jirka Vácha!
 	Robotický tábor 2025, zdraví Jirka Vácha!
 	```
 4. Pro ukončení terminálu, do něj klikneme a stiskneme ++ctrl+c++.
+
+
 ## Úprava programu
 
 Pokud nám funguje nahrávání kódu, můžeme se na něj podívat a zkusit jej upravit.
@@ -89,29 +112,37 @@ Ve zdrojovém kódu jsou komentáře (`// tohle je komentář`), které nám pop
 
 !!! tip "Pokud už máte zapájené motory a složeného Robůtka, můžete ho vyzkoušet přes dálkové ovládání"
 
-[Stáhnout ZIP s gridui ukázkou](./example-gridui.zip){ .md-button .md-button--primary }
+=== "Odkaz"
+    ```
+    https://robutek.robotikabrno.cz/v2/robot/lekce1/example-gridui.tar.gz
+    ```
+=== "Zip"
+    [Stáhnout ZIP](./example-gridui.zip){ .md-button .md-button--primary }
 
-1. Stáhneme si [předpřipravený projekt](./example-gridui.zip). Otevřete ho ve VSCode.
+1. Otevřeme si projekt.
 
 2. V projektu v `src/index.ts` upravte proměnné `OWNER` a `DEVICE_NAME` v horní části na vaše jméno.
 
     ![](assets/gridui_owner.png)
 
-2. Na dolní liště ve VSCode klikneme na `Config WiFi`.
+2. Na bočním panelu vybereme rozšíření `Jaculus`.
+3. V Otevřeném panelu klikneme na `WiFi Configuration` a poté na `Configure WiFi`.
 
-3. Vybereme možnost `Add a WiFi network`.
+    ![](assets/wifi-config.png)
+
+4. Vybereme možnost `Add a WiFi network`.
 
 	![](assets/add-wifi.png)
 
-4. Do pole zadáme název WiFi sítě. Na táboře použijte wifi pro roboty, `RoboRaj`.
+5. Do pole zadáme název WiFi sítě. Na táboře použijte wifi pro roboty, `RoboRaj`.
 
 	![](assets/wifi-ssid.png)
 
-5. Dole v terminálu zadáme heslo `PlnoRobutku`.
+6. Dole v terminálu zadáme heslo `PlnoRobutku`.
 
 	![](assets/wifi-passwd.png)
 
-6. Znovu klikneme na `Config WiFi` a vybereme `Set WiFI to Station mode (connect to wifi)`.
+7. Znovu klikneme na `Config WiFi` a vybereme `Set WiFI to Station mode (connect to wifi)`.
 
 	![](assets/connect-wifi.png)
 

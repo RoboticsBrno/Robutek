@@ -4,7 +4,8 @@ Po seznámení s Robůtkem a programovacím prostředí se můžeme pustit do pr
 Hrací pople je pokryté černou barvou a jeho okraj oblepený bílou páskou. Když Robůtkovi senzorz detekují bílou pásku tak se otočí a vyrazí náhodně zpět do hracího pole.
 
 K řešení budeme používat senzory odrazu světla, které jsou umístěné na spodní straně Robůtka. Tyto senzory dokáží rozpoznat, zda se pod nimi nachází bílá nebo černá plocha.
-Než se pustíte do řešení projděte si [dokumentaci k senzorům odrazu světla](../sens/index.md)
+
+Než se pustíte do řešení projděte si [Blok Čára](../blokCara/index.md)
 
 ## Kompetetivní zadání
 

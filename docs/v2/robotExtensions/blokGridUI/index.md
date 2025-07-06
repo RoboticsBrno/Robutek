@@ -14,7 +14,12 @@ Takhle by třeba mohlo vypadat rozhraní navržené v designeru, máme na něm p
 
 Tady máte ke stažení popsaný projekt (nastavení barvy ledky na desce, blikající ledka stejné barvy na rozhraní...).
 
-[Stáhnout ZIP s ukázkou](colors-gridui.zip){ .md-button .md-button--primary }
+=== "Odkaz"
+    ```
+    https://robutek.robotikabrno.cz/v2/robotExtentions/blokGridUI/colors-gridui.tar.gz
+    ```
+=== "Zip"
+    [Stáhnout ZIP](colors_gridui.zip){ .md-button .md-button--primary }
 
 
 

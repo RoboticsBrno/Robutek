@@ -1,4 +1,4 @@
-# Lekce 0 - Instalace prostředí --- TODO - UPDATE
+# Lekce 0 - Instalace prostředí
 
 V této lekci si představíme Jaculus, nainstalujeme si programovací prostředí a spustíme první program.
 
@@ -17,11 +17,11 @@ Na linuxu je třeba přidat oprávnění udev, [více zde](https://docs.espressi
 
 #### Instalace Jacula
 
-1. Otevřeme si [Jaculus web installer](https://installer.jaculus.org/) v Chrome nebo Edge.
+1. Otevřeme si [Jaculus web installer](https://installer.jaculus.org/?baudrate=921600&chip=ESP32-S3&variant=ESP32-S3-Generic-QuadPSRAM&version=latest&erase=noErase) v Chrome nebo Edge.
 
     !!! warning "Tento postup nefunguje ve Firefoxu a jinych prohlížečích, které nepodporují rozhraní WebSerial."
 
-2. Zvolíme desku `ESP32 S3 DevKitC`
+2. Zvolíme desku `ESP32-S3` a variantu `Generic Quad PSRAM`
 
     ![](assets/JacWebInstall1.png)
 
@@ -32,28 +32,29 @@ Na linuxu je třeba přidat oprávnění udev, [více zde](https://docs.espressi
 
     ![](assets/JacWebInstall5.png)
 
-5. Zapneme Robůtka a podržíme tlačítko `IO0`. Současně s ním zmáčkneme tlačítko s popiskem `EN`, které se nachází nalevo od něj. Tímto přepneme robůtka do nahrávacího režimu.
+    !!! danger "Přepnutí do Nahrávacího módu"
+        Zapneme Robůtka a podržíme tlačítko `IO0`. Současně s ním zmáčkneme tlačítko s popiskem `EN`, které se nachází nalevo od něj. Tímto přepneme robůtka do nahrávacího režimu.
 
-6. Připojíme Robůtka k počítači přes `USB-C`
+5. Připojíme Robůtka k počítači přes `USB-C`
 
-7. Po připojení Robůtka k počítači stiskneme na webové stránce tlačítko `Connect`.
+6. Po připojení Robůtka k počítači stiskneme na webové stránce tlačítko `Connect`.
 
     ![](assets/JacWebInstall2.png)
 
 
-8. Ve vyskakovacím okénku zvolíme port `COM` na Windows nebo `ttyACM` na unixových systémech a stiskneme `Connect`.
+7. Ve vyskakovacím okénku zvolíme port `COM` na Windows nebo `ttyACM` na unixových systémech a stiskneme `Connect`.
 
     ![](assets/JacWebInstall3.png)
 
 
-9. Po chvilce se nám zobrazí tlačítko `Flash`, které zmáčkneme.
+8. Po chvilce se nám zobrazí tlačítko `Flash`, které zmáčkneme.
 
     ![](assets/JacWebInstall4.png)
 
     !!! tip "když nahrávání přes USB-C nefunguje zkuste Micro-USB"
 
 
-10. Chvíli počkáme a jakmile přestanou v konzoli přibývat nové řádky, máme nainstalovaného Jacula v mikrokontroléru!
+9. Chvíli počkáme a jakmile přestanou v konzoli přibývat nové řádky, máme nainstalovaného Jacula v mikrokontroléru!
 
 
 ### Node.js
@@ -98,44 +99,45 @@ Nyní už se můžeme vrhnout na samotnou instalaci [`Jacula`](https://jaculus.o
         Usage: jac <command>
 
         Tools for controlling devices running Jaculus
-
+        
         Commands:
-        help            Print help for given command
-        list-ports      List available serial ports
-        serial-socket   Tunnel a serial port over a TCP socket
-        install         Install Jaculus to device
-        build           Build TypeScript project
-        flash           Flash code to device (replace contents of ./code)
-        pull            Download a file/directory from device
-        ls              List files in a directory
-        read            Read a file from device
-        write           Write a file to device
-        rm              Delete a file on device
-        mkdir           Create a directory on device
-        rmdir           Delete a directory on device
-        upload          Upload a file/directory to device
-        format          Format device storage
-        resources-ls    List available resources
-        resources-read  Read a resource from device
-        get-examples    Get example project from device
-        start           Start a program
-        stop            Stop a program
-        status          Get status of device
-        version         Get version of device firmware
-        monitor         Monitor program output
-        wifi-get        Display current WiFi config
-        wifi-ap         Set WiFi to AP mode (create a hotspot)
-        wifi-add        Add a WiFi network
-        wifi-rm         Remove a WiFi network
-        wifi-sta        Set WiFi to Station mode (connect to a wifi)
-        wifi-disable    Disable WiFi
-
+          help            Print help for given command                       
+          list-ports      List available serial ports                        
+          serial-socket   Tunnel a serial port over a TCP socket             
+          install         Install Jaculus to device                          
+          build           Build TypeScript project                           
+          flash           Flash code to device (replace contents of ./code)  
+          pull            Download a file/directory from device              
+          ls              List files in a directory                          
+          read            Read a file from device                            
+          write           Write a file to device                             
+          rm              Delete a file on device                            
+          mkdir           Create a directory on device                       
+          rmdir           Delete a directory on device                       
+          upload          Upload a file/directory to device                  
+          format          Format device storage                              
+          project-create  Create project from package                        
+          project-update  Update existing project from package skeleton      
+          resources-ls    List available resources                           
+          resources-read  Read a resource from device                        
+          start           Start a program                                    
+          stop            Stop a program                                     
+          status          Get status of device                               
+          version         Get version of device firmware                     
+          monitor         Monitor program output                             
+          wifi-get        Display current WiFi config                        
+          wifi-ap         Set WiFi to AP mode (create a hotspot)             
+          wifi-add        Add a WiFi network                                 
+          wifi-rm         Remove a WiFi network                              
+          wifi-sta        Set WiFi to Station mode (connect to a wifi)       
+          wifi-disable    Disable WiFi                                       
+        
         Global options:
-        --log-level   Set log level (default: info)
-        --help        Print this help message
-        --port        Serial port to use (default: first available)
-        --baudrate    Baudrate to use (default: 921600)
-        --socket      host:port to use
+          --log-level   Set log level (default: info)                  
+          --help        Print this help message                        
+          --port        Serial port to use (default: first available)  
+          --baudrate    Baudrate to use (default: 921600)              
+          --socket      host:port to use 
         ```
 
 
@@ -156,3 +158,6 @@ Rozšíření pro VSCode nám umožní jednoduše nahrávat kód do Jacula pomoc
     1. Stáhněte si <a target="_blank" href="https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers">driver</a> pro váš operační systém. Naleznete jej v záložce `Downloads -> Software -> CP210x Universal Windows Driver`.
     2. Rozbalte ZIP soubor a poté pravým tlačítkem klikněte na `silabser.inf` a vyberte `Install`.
     3. Vyzkoušejte, zda se vám podařilo připojit Jaculus. (možná budete muset restartovat počítač).
+
+!!! tip "Něco ti nefunguje?"
+    Podívej se na [Časro kladené dotazy](../faq/index.md)
