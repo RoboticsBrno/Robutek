@@ -97,6 +97,7 @@ plugins:
         - robot/lekce6/project6
         - robot/lekce8/project8
         - robotExtensions/blokGridUI/colors-gridui
+        - robotExtensions/blokGridUI/blank-gridui
         - robutekLibrary
       formats:
         - zip
@@ -161,7 +162,8 @@ nav:
   - Rozšiřující bloky:
       - robotExtensions/index.md
       - GridUI:
-          - robotExtensions/blokGridUI/index.md
+        - robotExtensions/blokGridUI/index.md
+        - robotExtensions/blokGridUI/widgets.md
       - Čára:
           - robotExtensions/blokCara/index.md
       #    - robotExtensions/blokCara/logic.md
