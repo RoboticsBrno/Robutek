@@ -65,12 +65,7 @@ gpio.on("falling", BTN_PIN, () => {
 Pomocí událostí rozsvítíme při stisknutí tlačítka (`GPIO 0`) RGB LED na ESP32 (`GPIO 48`) a při puštění ho opět zhasneme.
 
 ??? note "Řešení"
-
-<!-- TODO BROKEN example -->
-
     ```ts
-
-
     import { createRobutek } from "./libs/robutek.js"
     import * as colors from "./libs/colors.js";
     import { LED_WS2812, SmartLed } from "smartled";
