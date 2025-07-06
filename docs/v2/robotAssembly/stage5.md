@@ -8,7 +8,7 @@
 # Stage 5.1 - Výroba stojánku (dobrovolné)
 1. Uřizněte si dva 2 cm dlouhé kusy dřevíčka.
 2. Uříznuté kousky si obruste aby byly krásně hladké.
-3. a 4. Herkules dejte na delší stranu jednoho z dílů.
-5. Slepte do pravého úhlu
+3. Herkules dejte na delší stranu jednoho z dílů.
+4. Slepte do pravého úhlu
 
     ![cutting tof holder](assets/stage5/glueing.png)
