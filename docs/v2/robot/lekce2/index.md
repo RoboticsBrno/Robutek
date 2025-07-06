@@ -47,22 +47,21 @@ S událostí řízenou časem už jsme se setkali: pomocí `setInterval` umíme 
 Události řízené stiskem tlačítka můžeme ovládat pomocí přiložené knihovny `gpio`.
 `GPIO` je jednoduchá elektronická konstrukce, která nám umožňuje posílat nebo přijímat bitové informace, a na základě toho měnit chování našeho programu.
 
-Abychom mohli přijímat signál ze stisknutí tlačítka, nejdříve musíme nastavit vybraný pin jako vstupní. To uděláme příkazem `#!ts gpio.pinMode(PIN, gpio.PinMode.INPUT)`, kde `PIN` je číslo pinu (najdeme na stránce [Piny](../index.md#prehled-pinu)), a druhý argument je režim. Pokud bychom chtěli např. použít LEDky přímo na desce, chceme dané piny použít jako výstupní, tedy `gpio.PinMode.OUTPUT`.
+Abychom mohli přijímat signál ze stisknutí tlačítka, nejdříve musíme nastavit vybraný pin jako vstupní. To uděláme příkazem `#!ts gpio.pinMode(PIN, gpio.PinMode.INPUT)`, kde `PIN` je číslo pinu (najdeme pod `robutek.Pins.`), a druhý argument je režim. Pokud bychom chtěli např. použít LEDky přímo na desce, chceme dané piny použít jako výstupní, tedy `gpio.PinMode.OUTPUT`.
 
 Jakmile máme nastavené vstupní tlačítko, můžeme na něm pozorovat události pomocí `#!ts gpio.on()`. Reakci na stisknutí tlačítka vyvoláme argumentem `"falling"`, reakci na puštění `"rising"`. Kód, který při stisku tlačítka něco vykoná, tedy může vypadat takto:
 
 ```ts
-const BTN_PIN = 0; // číslo pinu tlačítka;
-gpio.pinMode(BTN_PIN, gpio.PinMode.INPUT);
+gpio.pinMode(robutek.Pins.ButtonRight, gpio.PinMode.INPUT);
 
-gpio.on("falling", BTN_PIN, () => {
+gpio.on("falling", robutek.Pins.ButtonRight, () => {
   // něco udělej
 });
 ```
 
 ## Zadání B
 
-Pomocí událostí rozsvítíme při stisknutí tlačítka (`GPIO 0`) RGB LED na ESP32 (`GPIO 48`) a při puštění ho opět zhasneme.
+Pomocí událostí rozsvítíme při stisknutí tlačítka (`robutek.Pins.ButtonRight`) RGB LED na ESP32 (`robutek.Pins.ILED`) a při puštění ho opět zhasneme.
 
 ??? note "Řešení"
     ```ts
