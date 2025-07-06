@@ -126,7 +126,7 @@ Najděte kamaráda, abyste si mohli navzájem zkusit, zda program funguje (jeden
     ```ts
     import * as radio from "simpleradio";
     import * as gpio from "gpio";
-    import { SmartLed, LED_WS2812 } from "smartled";
+    import { SmartLed, LED_WS2812B } from "smartled";
     import * as colors from "./libs/colors.js";
     import { createRobutek } from "./libs/robutek.js"
     const robutek = createRobutek("V2");

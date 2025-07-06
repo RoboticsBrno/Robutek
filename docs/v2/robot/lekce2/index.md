@@ -20,18 +20,18 @@ Nejdříve si zopakujeme předchozí lekci, a rozsvítíme RGB LED na Robůtkovi
 
 Na začátku tohoto úkolu si otevřeme nový  prázdný projekt.  V souboru `index.ts` jsou připraveny `import` příkazy: ty nám umožní využívat funkcionalitu z různých souborů, např. jednoduše ovládat LEDku, nebo využívat nadefinované barvy.
 
-Pásek se inicializuje pomocí `const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812);`.
+Pásek se inicializuje pomocí `const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812B);`.
 Barvu LED nastavíme pomocí `ledStrip.set(0, colors.<nějaká_barva>)` a zobrazíme pomocí `ledStrip.show()`.
 
 ??? note "Řešení"
 
     ```ts
     import * as colors from "./libs/colors.js";
-    import { LED_WS2812, SmartLed } from "smartled";
+    import { LED_WS2812B, SmartLed } from "smartled";
     import { createRobutek } from "./libs/robutek.js";
     const robutek = createRobutek("V2");
 
-    const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812); // robutek.Pins.ILED je pin 48
+    const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812B); // robutek.Pins.ILED je pin 48
 
     ledStrip.set(0, colors.red); // nastaví barvu první LED na červenou (RGB 255 0 0)
     ledStrip.show(); // zobrazí nastavení na LED
@@ -68,12 +68,12 @@ Pomocí událostí rozsvítíme při stisknutí tlačítka (`GPIO 0`) RGB LED na
     ```ts
     import { createRobutek } from "./libs/robutek.js"
     import * as colors from "./libs/colors.js";
-    import { LED_WS2812, SmartLed } from "smartled";
+    import { LED_WS2812B, SmartLed } from "smartled";
     import * as gpio from "gpio";
 
     const robutek = createRobutek("V2");
 
-    const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812);
+    const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812B);
 
     gpio.pinMode(robutek.Pins.ButtonRight, gpio.PinMode.INPUT); // nastaví pin 0 jako vstup
 
