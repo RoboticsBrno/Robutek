@@ -1,8 +1,8 @@
 # Lekce 4 - Motory
 
-V této lekci zkusíme točit motory a pohybovat robotem.
+V této lekci si vyzkoušíme točit motory a pohybovat robotem.
 
-!!! tip "Polož si Robůtka na něco tak, aby se kola nedotýkala země a mohla se volně točit - tak můžeš kód otestovat bez toho, aby Robůtek sjel ze stolu."
+!!! tip "Položme si Robůtka na něco tak, aby se kola nedotýkala země a mohla se volně točit - tak můžeme kód otestovat bez toho, aby Robůtek sjel ze stolu."
 
 === "Odkaz"
     ```
@@ -19,14 +19,14 @@ import { SmartLed, LED_WS2812B } from "smartled";
 const robutek = createRobutek("V2");
 ```
 
-To je dobrý začátek - pokračovat budeme na konci souboru.
+To je dobrý začátek - pokračujme na konci souboru.
 
 # Async main funkce
 
-Motory jsou tzv. asynchroní, to znamená, se ovládají příkazem, který může trvat delší dobu, než se vykoná
+Motory jsou tzv. asynchroní, to znamená, že se ovládají příkazem, který může trvat delší dobu, než se vykoná
 (například "ujeď 50cm" bude trvat několik vteřin).
 
-Abychom mohli motory používat, je třeba přidat tuto "kostru" s `async function()`. Klidně ji nakopíruj, patří na konec souboru `src/index.ts`.
+Abychom mohli motory používat, je třeba přidat tuto "kostru" s `async function()`. Klidně ji zkopírujme, patří na konec souboru `src/index.ts`.
 
 ```typescript
 async function main() {

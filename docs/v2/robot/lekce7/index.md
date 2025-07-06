@@ -62,7 +62,7 @@ Co když se však chceme pohybovat mezi čtverci různě daleko, nebo mít každ
 
 ## Funkce
 
-Funkce je pojmenovaný kus kódu. Tento kus kódu jednou napíšeme, a poté ho ze zbytku programu můžeme libovolně volat (spouštět). Celkově tak zpřehledňuje programy, a dělá je rozšířitelnější.
+Funkce je pojmenovaný kus kódu. Tento kus kódu jednou napíšeme a poté ho ze zbytku programu můžeme libovolně volat (spouštět). Celkově tak zpřehledňuje programy a dělá je rozšířitelnější.
 
 V programu rozlišujeme mezi definicí funkce a jejím voláním. Definice vypadá následovně:
 

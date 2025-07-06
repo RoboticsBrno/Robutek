@@ -22,7 +22,7 @@ Do kulatých závorek píšeme tři věci:
 
 - řídící proměnnou s její výchozí hodnotou
 - výraz, který určuje počet opakování
-- nakonec jednoduchou operaci která se provede při každém průchodu cyklem jako poslední operace
+- nakonec jednoduchou operaci, která se provede při každém průchodu cyklem jako poslední operace
 
 Tedy vytváříme proměnnou `#!ts i` s výchozí hodnotou `#!ts 0`, která bude existovat po dobu vykonávání cyklu.
 Ačkoliv v běžném životě počítáme věci od `1`, v informatice častěji začínáme `0`. Může zde však být cokoliv.
@@ -31,7 +31,7 @@ Následně definujeme výraz `#!ts i < 3 `, který určuje, za jakých podmínek
 
 Na konci cyklu zvýšíme `#!ts i ` o jedna.
 
-Při prvním průchodu bude tedy `#!ts i = 0` při druhém `#!ts i = 1 ` a při třetím `#!ts i = 2 ` při dalším zvyšování by platilo `#!ts i = 3 ` tam ale už nebude pravdivý výraz `i < 3` a cyklus se tedy ukončí.
+Při prvním průchodu bude tedy `#!ts i = 0`, při druhém `#!ts i = 1`, a při třetím `#!ts i = 2`. Při dalším zvyšování by platilo `#!ts i = 3`, tam ale už nebude pravdivý výraz `i < 3` a cyklus se tedy ukončí.
 
 Do složených závorek píšeme vykonávaný kód, který se v tomto případě vykoná 3-krát.
 

@@ -1,6 +1,6 @@
 # Lekce 5 - Servo (Kreslení tužkou)
 
-Abychom mohli používat servo, musíme ho inicializovat. K tomu slouží příkaz `#!ts const servo = new Servo(SERVO_PIN, 1, 4)`. Parametr `SERVO_PIN` specifikuje, ne který pin je servo připojeno.
+Abychom mohli používat servo, musíme ho inicializovat. K tomu slouží příkaz `#!ts const servo = new Servo(SERVO_PIN, 1, 4)`. Parametr `SERVO_PIN` specifikuje, na který pin je servo připojeno.
 
 ```ts
 import { Servo } from "./libs/servo.js";
@@ -20,7 +20,7 @@ servo.write(512); // 90°
 servo.write(1023); // 180°
 ```
 
-!!! note "Pro konverzi úhlu na číslo musíte úhel vynásobit 1024 a vydělit 180"
+!!! note "Pro konverzi úhlu na číslo musíme úhel vynásobit 1024 a vydělit 180"
 
 ## Kreslení tužkou
 
@@ -28,7 +28,7 @@ Tím, že zvedáme nebo pokládáme servo, můžeme ovládat připevněnou tužk
 Abychom si nemuseli pamatovat konkrétní hodnoty pro zvedání tužky, Robůtek má 3 předdefinované konstaty pro ovládání: `Up`, `Down` a `Unload`.
 Pokud bychom do něj dávali různé druhy tužek, můžeme si samozřejmě nadefinovat vlastní.
 
-Aby ovládací konstanty fungovaly, musí být pacička nasazena ve spravné pozici. Proto musíme servo programem otočit na 0° a pacičku nasadit tak, aby směřovala přímo vzhůru.
+Aby ovládací konstanty fungovaly, musí být pacička nasazena ve správné pozici. Proto musíme servo programem otočit na 0° a pacičku nasadit tak, aby směřovala přímo vzhůru.
 
 ```ts
 import { createRobutek } from "./libs/robutek.js";
@@ -42,7 +42,7 @@ servo.write(0);
 
 ![](./assets/servoArmAttached.jpg)
 
-Jakmile mamé pacičku správně nastavenou, můžeme na ni nasadit fixu.
+Jakmile máme pacičku správně nastavenou, můžeme na ni nasadit fixu.
 
 ![](../../robotAssembly/assets/stage2/IMG-stage2-step14b.jpeg)
 
@@ -69,11 +69,11 @@ pen.write(robutek.PenPos.Unload);
 
 !!! note "Neočekávaný výsledek"
 
-    Pokud tento program zpustíme, zjistíme, že se provede pouze poslední `write`. Program totiž nečeká na dokončení pohybu, ale příkazy pošle okamžitě po sobě. Servo pak provede pouze poslední přijatý příkaz, z našeho pohledu tedy pohyb na pozici `Unload`. V běžném programu to však nebude problém, jelikož mezi příkazy write budeme provádět i jiné příkazy, jako třeba příkaz `move`, u kterých program čeká na dokoncčení.
+    Pokud tento program spustíme, zjistíme, že se provede pouze poslední `write`. Program totiž nečeká na dokončení pohybu, ale příkazy pošle okamžitě po sobě. Servo pak provede pouze poslední přijatý příkaz, z našeho pohledu tedy pohyb na pozici `Unload`. V běžném programu to však nebude problém, jelikož mezi příkazy write budeme provádět i jiné příkazy, jako třeba příkaz `move`, u kterých program čeká na dokončení.
 
 ## Zadání A
 
-Vytvořte program, který při zmáčknutí tlačítka zasune pero a druhé tlačítko, které ho vysune.
+Vytvořme program, který při zmáčknutí tlačítka zasune pero a druhé tlačítko, které ho vysune.
 
 ??? note "Řešení"
 
@@ -100,7 +100,7 @@ Vytvořte program, který při zmáčknutí tlačítka zasune pero a druhé tla�
 
 ## Zadání B
 
-Zkombinuj poznatky z [lekce 4](../lekce4/index.md) s touto a vytvoř program, který po stistku tlačítka nakreslí fixou na papír čtverec.
+Zkombinujme poznatky z [lekce 4](../lekce4/index.md) s touto a vytvořme program, který po stisku tlačítka nakreslí fixou na papír čtverec.
 
 ??? note "Řešení"
 
@@ -142,4 +142,4 @@ Př stisknutí jednoho tlačítka vykreslí Robůtek kruh, při stisknutí druh�
 
 ## Výstupní úkol V1
 
-Při stisknutí jednoho tlačítka vykreslí Robůtek první písemeno vašeho jméno, při stisku druhého tlačítka první písmeno vašeho příjmení.
+Při stisknutí jednoho tlačítka vykreslí Robůtek první písmeno našeho jména, při stisku druhého tlačítka první písmeno našeho příjmení.

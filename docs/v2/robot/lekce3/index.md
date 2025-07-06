@@ -1,7 +1,7 @@
 # Lekce 3 - Proměnné a podmínky
 
 V imperativním programování si držíme stav pomocí **proměnných**. Proměnné jsou pojmenované hodnoty,
-které můžeme měnit, a opakovaně používat v různých částech kódu.
+které můžeme měnit a opakovaně používat v různých částech kódu.
 
 Proměnná má svůj typ, který určuje, jaké hodnoty může proměnná mít. Proměnnou vytvoříme pomocí
 klíčového slova `let`.
