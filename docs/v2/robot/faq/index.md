@@ -26,3 +26,7 @@
 ## Jak nainstalovat vývojové prostředí?
 
 - Koukni na [Lekci 0](../lekce0/index.md).
+
+## Nefunguje nahrání programu?
+
+- Pokud se program nenahraje za ~10 vteřin, zkuste zmáčknout tlačítko označené `EN` a program nahrát znovu.

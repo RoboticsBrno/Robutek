@@ -6,14 +6,12 @@ V této lekci si představíme Jaculus, nainstalujeme si programovací prostřed
 
 Na našich robotech poběží program, který se jmenuje Jaculus.
 Tento program nám umožní jednoduše psát instrukce (programy), které nahrajeme do robota.
-Tyto programy budou specifikovat, jak se robot má chovat, a umožní nám s ním komunikovat.
-Aby nám všechno správně fungovalo, musíme ho nejprve nainstalovat a k němu i několik dalších programů.
+Tyto programy budou specifikovat, jak se robot má chovat a umožní nám s ním komunikovat.
+Aby nám všechno správně fungovalo, musíme Jacula nejprve nainstalovat, a k němu i několik dalších programů.
 
 ### Jaculus
 
-#### Linux
-
-Na linuxu je třeba přidat oprávnění udev, [více zde](https://docs.espressif.com/projects/esp-idf/en/v5.2.2/esp32s2/api-guides/dfu.html#udev-rule-linux-only).
+!!! note "Na Linuxu je třeba přidat oprávnění udev, [více zde](https://docs.espressif.com/projects/esp-idf/en/v5.2.2/esp32s2/api-guides/dfu.html#udev-rule-linux-only)."
 
 #### Instalace Jacula
 
