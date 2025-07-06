@@ -3,8 +3,8 @@
 ## Do kterého USB mám připojit kabel?
 
 - Používej konektor `USB-C`, pokud ti nejde nahrát kód, použij `micro-USB`.
-- ??? "Proč USB-C nefunguje?"
-  `USB-C` je softwarové `USB` na ESP32. Pokud nahraješ kód, který rozbije ESP, `USB-C` nebude fungovat.<br>Naopak `micro-USB` je připojené přes převodník, takže bude fungovat i když má ESP problém. (potenciální chyby: chyba při nahrávání, nekonečná smyčka v kódu, atd.).
+??? "Proč USB-C nefunguje?"
+    `USB-C` je softwarové `USB` na ESP32. Pokud nahraješ kód, který rozbije ESP, `USB-C` nebude fungovat.<br>Naopak `micro-USB` je připojené přes převodník, takže bude fungovat i když má ESP problém. (potenciální chyby: chyba při nahrávání, nekonečná smyčka v kódu, atd.).
 
 ## Jak komunikovat se zařízením?
 
