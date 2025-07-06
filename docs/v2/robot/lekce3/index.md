@@ -1,4 +1,4 @@
-# Lekce 3 - proměnné a podmínky
+# Lekce 3 - Proměnné a podmínky
 
 V imperativním programování si držíme stav pomocí **proměnných**. Proměnné jsou pojmenované hodnoty,
 které můžeme měnit, a opakovaně používat v různých částech kódu.
