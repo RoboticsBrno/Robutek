@@ -11,15 +11,16 @@ Zde si vyzkoušíme vytvořit první projekt a nahrát jej do Robůtka.
     1. V prvním kroku si na počítači nachystáme složku `RoboCamp-2025`, do které si budeme ukládat veškeré projekty.
     2. Dále v rozšíření vybereme `Create Project`.
     3. Zvolíme umístění projektu do složky `RoboCamp-2025`.
-    4. Zadáme název projektu, např. `prvniProjekt`.
-    5. Vložíme odkaz na projekt.
-    6. Připojíme Robůtka přes `USB-C`. Pokud `USB-C` nefunguje, požívejte `micro-USB`.
-    7. V levém spodním rohu vybereme :material-power-plug:`Select COM port` pro výběr portu, na kterém je Robůtek připojený. Poté se nápis změní na vybraný port.
+    4. Zadáme název projektu, např. `prvniProjekt`, potvrdíme `Enter`.
+    5. Vložíme odkaz na projekt, potvrdíme `Enter`.
+    6. Otevře se nám vytvořený projekt.
+    7. Připojíme Robůtka přes `USB-C`. Pokud `USB-C` nefunguje, požívejte `micro-USB`.
+    8. V levém spodním rohu vybereme :material-power-plug:`Select COM port` pro výběr portu, na kterém je Robůtek připojený. Poté se nápis změní na vybraný port.
 
         ??? tip "Vidím více portů"
             Pokud se vám v nabídce zobrazí více portů, odpojte Robůtka a zjisťete, který port zmizel. Po připojení Robůtka tento port vyberte.
 
-    8. Dále zvolíme :material-eye:`Monitor`, ten slouží pro komunikaci se zařízením.
+    9. Dále zvolíme :material-eye:`Monitor`, ten slouží pro komunikaci se zařízením.
 
 
 === "Ručně ze zipu"
@@ -122,21 +123,24 @@ Ve zdrojovém kódu jsou komentáře (`// tohle je komentář`), které nám pop
 
     ![](assets/gridui_owner.png)
 
-2. Na dolní liště ve VSCode klikneme na `Config WiFi`.
+2. Na bočním panelu vybereme rozšíření `Jaculus`.
+3. V Otevřeném panelu klikneme na `WiFi Configuration` a poté na `Configure WiFi`.
 
-3. Vybereme možnost `Add a WiFi network`.
+    ![](assets/wifi-config.png)
+
+4. Vybereme možnost `Add a WiFi network`.
 
 	![](assets/add-wifi.png)
 
-4. Do pole zadáme název WiFi sítě. Na táboře použijte wifi pro roboty, `RoboRaj`.
+5. Do pole zadáme název WiFi sítě. Na táboře použijte wifi pro roboty, `RoboRaj`.
 
 	![](assets/wifi-ssid.png)
 
-5. Dole v terminálu zadáme heslo `PlnoRobutku`.
+6. Dole v terminálu zadáme heslo `PlnoRobutku`.
 
 	![](assets/wifi-passwd.png)
 
-6. Znovu klikneme na `Config WiFi` a vybereme `Set WiFI to Station mode (connect to wifi)`.
+7. Znovu klikneme na `Config WiFi` a vybereme `Set WiFI to Station mode (connect to wifi)`.
 
 	![](assets/connect-wifi.png)
 
