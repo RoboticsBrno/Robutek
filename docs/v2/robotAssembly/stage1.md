@@ -57,7 +57,7 @@ V této kapitole si postavíme samotného Robůtka.
     ![](assets/stage1/IMG-step7d.jpeg)
 
 7. Zajdi za orgem aby ti zapájel motory. Zároveň ti zkontroluje že motory jedou jak mají.
-!!! danger "Přečti si popisek tohoto kroku, je do důležité!"
+    !!! danger "Přečti si popisek tohoto kroku, je do důležité!"
 
 8. Nasaďte vrchní domeček na spodní domeček.
 
@@ -71,6 +71,8 @@ V této kapitole si postavíme samotného Robůtka.
     ![](assets/stage1/IMG-step9c.jpeg)
 
 10. Nasaďte dřevěnou základnu. Přišroubujte ji k robůtku pomocí čtyř M3x30 šroubků.
+
+    !!! danger "Běžte na stůl 2 za orgem."
 
     !!! danger "Pozor na orientaci základny, díry musí sedět na součastky na desce."
     !!! danger "Šrouby do dřevěné základny neutahujte silou, aby ji nepoškodily."
