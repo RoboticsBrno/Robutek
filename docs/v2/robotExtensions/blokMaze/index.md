@@ -8,4 +8,4 @@ K tomu, abychom se dokázali v bludišti pohybovat, musíme mít způsob, jak de
 
 [2. Pohled na senzor vzdálenosti](tof.md){ .md-button }
 
-[3. Pohled na logiku procházení ](gpio.md){ .md-button }
+[3. Pohled na logiku procházení ](logic.md){ .md-button }

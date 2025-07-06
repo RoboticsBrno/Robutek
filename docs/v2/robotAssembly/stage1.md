@@ -32,32 +32,33 @@ V této kapitole si postavíme samotného Robůtka.
 
 3. Vsaďte oba motory do domečku. <!-- TODO: zadefinovat otočení -->
 
-    !!! danger "Netlačte motory do domečku silou, měly by jít vsadit lehce. Ujistěte se, zda jste motor otočili správně a že kolejničky motoru jsou zarovnány s drážkami v domečku."
+    !!! danger "Netlačte motory do domečku silou, měly by jít vsadit lehce. Ujistěte se, zda jste motor otočili správně a že jsou kolejničky motoru zarovnány s drážkami v domečku."
     ![](assets/stage1/IMG-step4a.jpeg)
     ![](assets/stage1/IMG-step4b.jpeg)
 
-4. Pomocí malého plochého šroubováku odstraňte plastové zarážky s pinheadů. <!-- TODO: opravit fotky --> 
+4. Pomocí malého plochého šroubováku odstraňte plastové zarážky z pinheadů. <!-- TODO: opravit fotky --> 
 
-    !!! danger "Dávejte si pozor aby jste pinheady neohl ani neuštípli."
+    !!! danger "Dávejte si pozor, abyste pinheady neohli ani neuštípli."
     ![](assets/stage1/IMG-step5a.jpeg)
-    !!! danger "Neuštípněte pin heady!"
+    !!! danger "Neuštípněte pinheady!"
     ![](assets/stage1/IMG-step5b.jpeg)
-    !!! danger "Neuštípněte pin heady!"
+    !!! danger "Neuštípněte pinheady!"
     ![](assets/stage1/IMG-step5c.jpeg)
 
 5. Položte vložku pod motor na destičku plošného spoje. Dbejte na její orientaci.
 
     ![](assets/stage1/IMG-step6.jpeg)
 
-6. Nasaďte domeček s motory na vložku tak, aby se pin heady dotýkaly kontaktů motorů.
+6. Nasaďte domeček s motory na vložku tak, aby se pinheady dotýkaly kontaktů motorů.
 
     ![](assets/stage1/IMG-step7a.jpeg)
-    !!! danger "Kontakty motoru musí být mezi pin heady."
+    !!! danger "Kontakty motoru musí být mezi pinheady."
     ![](assets/stage1/IMG-step7c.jpeg)
     ![](assets/stage1/IMG-step7d.jpeg)
 
-7. Zajdi za orgem aby ti zapájel motory. Zároveň ti zkontroluje že motory jedou jak mají.
-!!! danger "Přečti si popisek tohoto kroku, je do důležité!"
+7. Zajděte za orgem, aby vám zapájel motory. Zároveň vám zkontroluje, že motory jedou, jak mají.
+
+    !!! danger "Přečtěte si popisek tohoto kroku, je to důležité!"
 
 8. Nasaďte vrchní domeček na spodní domeček.
 
@@ -70,9 +71,11 @@ V této kapitole si postavíme samotného Robůtka.
     ![](assets/stage1/IMG-step9b.jpeg)
     ![](assets/stage1/IMG-step9c.jpeg)
 
-10. Nasaďte dřevěnou základnu. Přišroubujte ji k robůtku pomocí čtyř M3x30 šroubků.
+10. Nasaďte dřevěnou základnu. Přišroubujte ji k robůtku pomocí čtyř šroubků M3x30.
 
-    !!! danger "Pozor na orientaci základny, díry musí sedět na součastky na desce."
+    !!! danger "Běžte na stůl 2 za orgem."
+
+    !!! danger "Pozor na orientaci základny, díry musí sedět na součástky na desce."
     !!! danger "Šrouby do dřevěné základny neutahujte silou, aby ji nepoškodily."
     ![](assets/stage1/IMG-step10a.jpeg)
     ![](assets/stage1/IMG-step10c.jpeg)
@@ -94,7 +97,7 @@ V této kapitole si postavíme samotného Robůtka.
 
 13. Přišroubujte dřevěnou palubu.
 
-    !!! danger "Pozor na orientaci paluby, díry musí sedět na součastky na desce."
+    !!! danger "Pozor na orientaci paluby, díry musí sedět na součástky na desce."
     ![](assets/stage1/IMG-step12a.jpeg)
     ![](assets/stage1/IMG-step12b.jpeg)
     ![](assets/stage1/IMG-step12c.jpeg)

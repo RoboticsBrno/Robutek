@@ -33,7 +33,7 @@
 
     ![](assets/stage2/IMG-stage2-step3mod.png)
 
-5. Nasuňte na fixu přípravek. Zatlačte ji až na doraz.
+5. Nasuňte na fixu přípravek. Zatlačte jej až na doraz.
 
     ![](assets/stage2/IMG-stage2-step4mod.png)
 
@@ -41,7 +41,7 @@
 
     ![](assets/stage2/IMG-stage2-step5mod.png)
 
-7. Nasaďte na držák šroubek s matkou, a sešroubujte.
+7. Nasaďte na držák šroubek s matkou a sešroubujte.
 
     ![](assets/stage2/IMG-stage2-step6mod.png)
 
@@ -64,7 +64,7 @@
     ![](assets/stage2/IMG-stage2-step10a.jpeg)
     ![](assets/stage2/IMG-stage2-step10b.jpeg)
 
-12. Připojte konektor kabelu serva ke tří pinovému konektoru na základní desce Robůtka, dle obrázku.
+12. Připojte konektor kabelu serva ke třípinovému konektoru na základní desce Robůtka dle obrázku.
 
     !!! danger "Šipka na konektoru patří na datový pin na desce!"
     ![](assets/stage2/IMG-stage2-step11a.jpeg)
@@ -78,9 +78,9 @@
 
 14. Otočte si servo do nulové pozice.
 
-    !!! danger "Buď zajděte za orgem, který vám servo nastaví nebo pokud to umíte si ho můžete nastavit sami."
+    !!! danger "Buď zajděte za orgem, který vám servo nastaví, nebo pokud to umíte, můžete si ho nastavit sami."
 
-15. Nasaďte na servo packu, dle polohy na obrázku.
+15. Nasaďte na servo páčku dle polohy na obrázku.
 
     ![](assets/stage2/IMG-stage2-step13a.jpeg)
     ![](assets/stage2/IMG-stage2-step13b.jpeg)
@@ -89,7 +89,7 @@
 
     ![](assets/stage2/IMG-stage2-step14a.jpeg)
 
-17. Fixu dejte do Robůtka a zahákněte packu serva do díry v černém dílu.
+17. Fixu dejte do Robůtka a zahákněte páčku serva do díry v černém dílu.
 
     ![](assets/stage2/IMG-stage2-step14b.jpeg)
 

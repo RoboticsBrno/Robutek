@@ -89,14 +89,15 @@ plugins:
 
   - zip_folders:
       folders:
+        - robot/blank_project
         - robot/lekce1/example1
         - robot/lekce1/example-gridui
-        - robot/lekce2/blank_project
         - robot/lekce3/project3
         - robot/lekce4/project4
         - robot/lekce6/project6
         - robot/lekce8/project8
         - robotExtensions/blokGridUI/colors-gridui
+        - robotExtensions/blokGridUI/blank-gridui
         - robutekLibrary
       formats:
         - zip
@@ -143,6 +144,8 @@ nav:
       - robotAssembly/stage3.md
       - robotAssembly/stage4.md
       - robotAssembly/stage5.md
+      - robotAssembly/stage6.md
+
   - Programovací lekce:
       - robot/index.md
       - robot/faq/index.md
@@ -159,13 +162,14 @@ nav:
   - Rozšiřující bloky:
       - robotExtensions/index.md
       - GridUI:
-          - robotExtensions/blokGridUI/index.md
+        - robotExtensions/blokGridUI/index.md
+        - robotExtensions/blokGridUI/widgets.md
       - Čára:
           - robotExtensions/blokCara/index.md
-          - robotExtensions/blokCara/logic.md
+      #    - robotExtensions/blokCara/logic.md
       - Sumo:
           - robotExtensions/blokSumo/index.md
-          - robotExtensions/blokSumo/logic.md
+      #    - robotExtensions/blokSumo/logic.md
       - Bludiště:
           - robotExtensions/blokMaze/index.md
           - GPIO:
@@ -180,5 +184,5 @@ nav:
               - robotExtensions/blokRGB/setup.md
               - robotExtensions/blokRGB/calibration.md
               - robotExtensions/blokRGB/readData.md
-      - I2C:
-          - robotExtensions/blokI2C/index.md
+      # - I2C:
+      #     - robotExtensions/blokI2C/index.md

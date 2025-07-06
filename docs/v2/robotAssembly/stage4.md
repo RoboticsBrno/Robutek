@@ -1,14 +1,14 @@
 # Stage 4 - Tlačítko
 
-!!! comment "Příslušenstí si můžete dát kamkoliv na Robůtka, ale v návodech jsou doporučené pozice."
+!!! comment "Příslušenství si můžete dát kamkoliv na Robůtka, ale v návodech jsou doporučené pozice."
 
 
-1. Uřizneme si 3 cm dlouhý kus dřevíčka jako držák tlačítka.
+1. Uřízneme si 3 cm dlouhý kus dřevíčka jako držák tlačítka.
 
     ![cutting switch holder](assets/stage4/cutting_switch_holder.jpg)
 
 
-2. Uříznutý kousek si obrousíme aby byl krásně hladký.
+2. Uříznutý kousek si obrousíme, aby byl krásně hladký.
 
     ![sanding switch holder](assets/stage4/sanding_switch_holder.jpg)
 
