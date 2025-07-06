@@ -36,9 +36,9 @@ V této kapitole si postavíme samotného Robůtka.
     ![](assets/stage1/IMG-step4a.jpeg)
     ![](assets/stage1/IMG-step4b.jpeg)
 
-4. Pomocí malého plochého šroubováku odstraňte plastové zarážky s pinheadů. <!-- TODO: opravit fotky --> 
+4. Pomocí malého plochého šroubováku (nebo štípaček) odstraňte plastové zarážky z pinheadů. <!-- TODO: opravit fotky -->
 
-    !!! danger "Dávejte si pozor aby jste pinheady neohl ani neuštípli."
+    !!! danger "Dávejte si pozor aby jste pinheady neohli ani neuštípli."
     ![](assets/stage1/IMG-step5a.jpeg)
     !!! danger "Neuštípněte pin heady!"
     ![](assets/stage1/IMG-step5b.jpeg)
@@ -57,6 +57,7 @@ V této kapitole si postavíme samotného Robůtka.
     ![](assets/stage1/IMG-step7d.jpeg)
 
 7. Zajdi za orgem aby ti zapájel motory. Zároveň ti zkontroluje že motory jedou jak mají.
+
     !!! danger "Přečti si popisek tohoto kroku, je do důležité!"
 
 8. Nasaďte vrchní domeček na spodní domeček.
