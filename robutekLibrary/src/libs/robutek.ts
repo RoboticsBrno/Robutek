@@ -140,6 +140,7 @@ export class Robutek<PinsType extends typeof PinsV1 | typeof PinsV2> extends Dif
         const rightMotor = new motor.Motor({ pins: rightMotorPins, ledc: rightMotorLedc, encTicks: encTicks, reg, circumference: wheelCircumference });
 
         super(leftMotor, rightMotor, robutekDiameter);
+        this.stop();
 
         adc.configure(pins.Sens1, adc.Attenuation.Db0);
         adc.configure(pins.Sens2, adc.Attenuation.Db0);
