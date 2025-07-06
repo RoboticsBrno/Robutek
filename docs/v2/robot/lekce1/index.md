@@ -45,6 +45,9 @@ Pokud nám funguje připojení na :material-eye:`Monitor` a běží nám komunik
 
 1. Ve VSCode máme otevřený první projekt. V levém `Exploreru` (`Průzkumníku`) vybereme soubor ze  `src` -> `index.ts`. V něm vidíme náš první program.
 2. Poté zvolíme :material-arrow-right:`Build, Flash and Monitor` pro nahrání programu do zařízení.
+
+	!!! danger "Pokud se program nenahraje za ~10 vteřin, zkuste zmáčknout tlačítko označené `EN` a program nahrát znovu."
+	
 	![První program](./assets/first-code.png)
 	<!-- TODO: update 2 and 3 current library and jaculus implementations -->
 3. Měli bychom vidět výstup z programu.
@@ -56,6 +59,8 @@ Pokud nám funguje připojení na :material-eye:`Monitor` a běží nám komunik
 	Robotický tábor 2025, zdraví Jirka Vácha!
 	```
 4. Pro ukončení terminálu, do něj klikneme a stiskneme ++ctrl+c++.
+
+
 
 
 ## Úprava programu
