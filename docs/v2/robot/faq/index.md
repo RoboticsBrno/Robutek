@@ -26,3 +26,14 @@
 ## Jak nainstalovat vývojové prostředí?
 
 - Koukni na [Lekci 0](../lekce0/index.md).
+
+## Chyba při spuštění příkazu v konzoli
+
+  - Pokud chyba obsahuje `running scripts is disabled on this system`, otevřete si aplikaci `Powershell` a spusťte příkaz `Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser`. Poté restartujte všechny konzole, které máme otevřené.
+
+  Chyba vypadá přibližně takto.
+
+  ![scriptsDisabled](./assets/scriptsDisabled.png)
+
+
+
