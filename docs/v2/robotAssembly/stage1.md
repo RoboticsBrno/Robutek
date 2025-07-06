@@ -57,6 +57,7 @@ V této kapitole si postavíme samotného Robůtka.
     ![](assets/stage1/IMG-step7d.jpeg)
 
 7. Zajděte za orgem, aby vám zapájel motory. Zároveň vám zkontroluje, že motory jedou, jak mají.
+
     !!! danger "Přečtěte si popisek tohoto kroku, je to důležité!"
 
 8. Nasaďte vrchní domeček na spodní domeček.
