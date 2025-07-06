@@ -40,8 +40,7 @@ Ježdění má tři části - nastavení rychlosti, rampy, a samotný pohyb:
 
 <!-- TODO change speed limit, maybe tell kids its not a hard limit and that they can experiment -->
 
-- `robutek.setSpeed(SPEED)` - _SPEED_ je číslo milimetrech za vteřinu, na Robůtkovi prakticky od 0 do 800 (záporné při značí couvání při
-  nekonečné jízdě nebo jízdě na čas)
+- `robutek.setSpeed(SPEED)` - _SPEED_ je číslo milimetrech za vteřinu, na Robůtkovi prakticky od -800 do 800 (záporné značí couvání)
 - `robutek.setRamp(ACCEL)` - _ACCEL_ je číslo udávající zrychlení Robůtka v mm/s^2. V případě, že je rovna nule, je zrychlení okamžité.
 - `await robutek.move(DIR, { distance: DISTANCE-MM })`
   - _DIR_ je desetinné číslo od -1 do 1, kdy
@@ -108,35 +107,34 @@ Napiš program tak, aby Robůtek popojel 10cm dopředu, otočil se čelem vzad (
 
 # Tvary
 
-Kombinováním `robutek.move` a `robutek.rotate` můžeš s Robůtkem "vyjezdit" různé tvary.
+Kombinováním `robutek.move` a `robutek.rotate` můžeš s Robůtkem "vyjezdit" různé tvary. Tento program s robotkem vyjezdí čtverec.
 
-**Úkol:** udělěj program tak, aby Robůtek objel čtverec a skončil zpátky na stejném místě.
-??? note "Řešení"
+```ts
+import { createRobutek } from "./libs/robutek.js";
+const robutek = createRobutek("V2");
 
-    ```ts
-    import { createRobutek } from "./libs/robutek.js";
-    const robutek = createRobutek("V2");
+async function main() {
+    // Tady bude kód na ovládání motorů
 
-    async function main() {
-        // Tady bude kód na ovládání motorů
+    robutek.setSpeed(100);  // Nastav rychlost na 100 mm/s
 
-        robutek.setSpeed(100);  // Nastav rychlost na 100 mm/s
+    await robutek.move(0, { distance: 300 });  // Ujeď 30 cm
+    await robutek.rotate(90);
+    await robutek.move(0, { distance: 300 });
+    await robutek.rotate(90);
+    await robutek.move(0, { distance: 300 });
+    await robutek.rotate(90);
+    await robutek.move(0, { distance: 300 });
+    await robutek.rotate(90);
+}
 
-        await robutek.move(0, { distance: 300 });  // Ujeď 30 cm
-        await robutek.rotate(90);
-        await robutek.move(0, { distance: 300 });
-        await robutek.rotate(90);
-        await robutek.move(0, { distance: 300 });
-        await robutek.rotate(90);
-        await robutek.move(0, { distance: 300 });
-        await robutek.rotate(90);
-    }
+main().catch(console.error);
+```
 
-    main().catch(console.error);
-    ```
-
-## Výstupní úkol
+## Výstupní úkol V1
 
 Napiš program tak, aby robotek vyjezdil šestiúhelník.
 
-<!-- TODO maybe add Vystupni ukol -->
+# Výstupní úkol V2
+
+Napiš program tak, aby robot vyjezdil kruh.

@@ -9,7 +9,7 @@ Zde si vyzkoušíme vytvořit první projekt a nahrát jej do Robůtka.
     ```
 
     1. V prvním kroku si na počítači nachystáme složku `RoboCamp-2025`, do které si budeme ukládat veškeré projekty.
-    2. Dále v rozšíření vybereme `Create Project`.
+    2. Dále v rozšíření Jaculus vybereme `Create Project`.
     3. Zvolíme umístění projektu do složky `RoboCamp-2025`.
     4. Zadáme název projektu, např. `prvniProjekt`.
     5. Vložíme odkaz na projekt.
@@ -54,6 +54,8 @@ Pokud nám funguje připojení na :material-eye:`Monitor` a běží nám komunik
 	Robotický tábor 2025, zdraví Jirka Vácha!
 	```
 4. Pro ukončení terminálu, do něj klikneme a stiskneme ++ctrl+c++.
+
+
 ## Úprava programu
 
 Pokud nám funguje nahrávání kódu, můžeme se na něj podívat a zkusit jej upravit.
