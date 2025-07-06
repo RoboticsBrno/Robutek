@@ -6,7 +6,27 @@ V předchozím příkladu jsme se ptali na otázku jestli čára pod senzorem je
 
 Řekněme, že pracujeme s levým senzorem. Pak budeme předpokládat, že čára je napravo od něj a ztmavující se povrch pod senzorem znamená, že jedeme příliš doprava a zesvětlující se povrch znamená že jedeme příliš doleva. Ideální stav bude, pokud bude senzor nad hranicí bílé a černé.
 
-TODO: program na jeden senzor
+```ts
+import { createRobutek } from "./libs/robutek.js"
+const robutek = createRobutek("V2");
+const thresh = 500; // Mez pod kterou se barva považuje za černou
+async function main() {
+    robutek.leftMotor.move();
+    robutek.rightMotor.move();
+    while(true) {
+        const l = robutek.readSensor("LineFR");
+        if(l > thresh) {
+            robutek.leftMotor.setSpeed(100);
+            robutek.rightMotor.setSpeed(10);
+        } else {
+            robutek.leftMotor.setSpeed(10);
+            robutek.rightMotor.setSpeed(100);
+        }
+        await sleep(1);
+    }
+}
+main().catch(console.error);
+```
 
 ## Jemnější styl jízdy
 
