@@ -15,7 +15,7 @@ V této lekci zkusíme točit motory a pohybovat robotem.
 import { createRobutek } from "./libs/robutek.js";
 import * as colors from "./libs/colors.js";
 import * as gpio from "gpio";
-import { SmartLed, LED_WS2812 } from "smartled";
+import { SmartLed, LED_WS2812B } from "smartled";
 const robutek = createRobutek("V2");
 ```
 
