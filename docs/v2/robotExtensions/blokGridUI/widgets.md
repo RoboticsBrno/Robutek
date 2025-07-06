@@ -11,7 +11,7 @@ Nejprve však zopakování obecných vlastností z [předchozího bloku](index.m
 
 ![](assets\generalProperties.png)
 
-!!! NOTE "Na obrázku si všimnete ještě dvou dalších řádků: `tab` a `css`. Těm se budeme věnovat v následujících blocích (MOŽNÁ, TODO!)."
+!!! NOTE "Na obrázku si všimnete ještě dvou dalších řádků: `tab` a `css`. Vlastnosti `tab` se budeme věnovat v budoucím bloku (až ho vyrobím)."
 
 K vlastnostem widgetu přistupujeme pomocí `id` příkazem `Layout.<id>.<vlastnost>`. Budeme-li tedy mít na rozhraní nějaký widget s `id = mujWidget`, jeho výšku přečteme příkazem `Layout.mujWidget.widgetH`, x-ovou souřadnici příkazem `Layout.mujWidget.widgetX` atd.
 
@@ -54,7 +54,7 @@ setInterval(() => { // jednou za sekundu vypisuje do konzole stav tlačítka (tr
 
 ```
 ??? info "A co znamená to `state`?"
-    Do proměnné `state` (ve funkci `builder.Button1.onPress()`) se nám ukládá aktuální stav tlačítka (nebo jakéhokoli jiného použitého widgetu) včetné všech jeho vlastností. Uvnitř následujícího bloku kódu tedy můžeme místo `Layout.Button1.color` apod. psát `state.color`. Jde o proměnnou, můžete jí tedy dát jakékoliv jméno.
+    Do proměnné `state` (ve funkci `builder.Button1.onPress()`) se nám ukládá aktuální stav tlačítka (nebo jakéhokoli jiného použitého widgetu) včetně všech jeho vlastností. Uvnitř následujícího bloku kódu tedy můžeme místo `Layout.Button1.color` apod. psát `state.color`. Jde o proměnnou, můžete jí tedy dát jakékoliv jméno.
 
 Také můžeme nastavovat (i číst!) všechny vlastnosti tlačítka, viz následující blok kódu:
 ```ts
@@ -187,9 +187,6 @@ Layout.Led1.color = "rgb(40 80 150)"; // barva
 Layout.Led1.on = true; // určuje, jeli LEDka rozsvícená
 ```
 
-## Orientace
-Nutno otestovat, TODO.
-
 ## Výběr
 
 !!! danger "Čtení ze `.selectedIndex` není momentálně naimplementované a činí tak výběrový widget prakticky nepoužitelným."
@@ -301,5 +298,21 @@ Layout.Switcher1.max = 3 // maximální hodnota
 ```
 
 ## Text
+
+![](assets/text.png)
+
+Widget text je normální textové pole, do kterého (na rozdíl od Inputu) uživatel rozhraní nemůže nic psát. Můžete u něj nastavovat a číst následující vlastnosti:
+
+```ts
+Layout.Text1.background = "rgb(58 164 38)" // barva textového pole
+Layout.Text1.color = "rgb(200 255 200)" // barva textu
+Layout.Text1.fontSize = 18 // velikost fontu textu
+
+Layout.Text1.text = "tábor" // hlavní text
+Layout.Text1.prefix = "Robotický " // text vložený před hlavní text
+Layout.Text1.suffix = " je mega." // text vložený za hlavní text
+```
+
+!!! warning "Pokud se váš text nevejde na jeden řádek, vlastnost `.align` se automaticky nastaví na `"flex-start"`."
 
 
