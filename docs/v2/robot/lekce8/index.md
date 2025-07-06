@@ -1,19 +1,19 @@
 # Lekce 8 - Řetězce
 
-Zatím jsme se zařízením po nahrání programu komunikovali jednostranně: pomocí `#!ts console.log()` jsme vypisovali různé věci na výstup, a ten jsme sledovali pomocí příkazu `Monitor`.
+Zatím jsme se zařízením po nahrání programu komunikovali jednostranně: pomocí `#!ts console.log()` jsme vypisovali různé věci na výstup a ten jsme sledovali pomocí příkazu `Monitor`.
 
 Na to, abychom za běhu mohli posílat informace do zařízení, potřebujeme nový datový typ: řetězce.
 
-Řetězce jsou sekvence znaků, a umožňují nám předávat informace.
+Řetězce jsou sekvence znaků a umožňují nám předávat informace.
 Datový typ, který drží řetězec, se jmenuje `#!ts string`.
 
 - Řetězec je vždy uzavřený do uvozovek `#!ts ""`, `''` nebo <code>``</code> pro formátovací řetězce.
     ```ts
-    let str : string = "ahoj";  // vytvoří řetězec
+    let str : string = "ahoj";  // vytvoříme řetězec
     ```
 - Řetězce můžeme spojovat pomocí `#!ts +`
     ```ts
-    let str : string = "ahoj" + " " + "jak se máš?";  // vytvoří řetězec "ahoj jak se máš?"
+    let str : string = "ahoj" + " " + "jak se máš?";  // vytvoříme řetězec "ahoj jak se máš?"
 
     let answer : string = "dobře";
 
@@ -34,15 +34,15 @@ Datový typ, který drží řetězec, se jmenuje `#!ts string`.
 
 ??? warning "Automatický převod na řetězec"
     Sčítání řetězců a čísel nefunguje ve všech jazycích, jde o chování specifické pro TypeScript(JavaScript) a pár podobných jazyků.
-    Nenechte se zaskočit tím, jak se to chová:
+    Nenechme se zaskočit tím, jak se to chová:
     ```ts
     let result : string = "5 + 1 je: " + 5 + 1;
     ```
     V `result` bude `"5 + 1 je: 51"`!
 
-    5 se přidá do řetězce, a poté se tam přidá 1, nesečtou se předem.
+    5 se přidá do řetězce a poté se tam přidá 1, nesečtou se předem.
     
-    Pro správné fungování by se muselo 5 + 1 dát do závorky, takhle:
+    Pro správné fungování bychom museli 5 + 1 dát do závorky, takhle:
     ```ts
     let result : string = "(5 + 1) je: " + (5 + 1);
     ```
