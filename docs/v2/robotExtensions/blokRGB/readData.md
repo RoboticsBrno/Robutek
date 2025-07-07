@@ -40,14 +40,14 @@ r: 123, g: 234, b: 45
     ```ts
     import * as colors from "./libs/colors.js";
     import { I2C1 } from "i2c";
-    import { ZSCS2016C, Calibration } from "./libs/zscs2016c.js";
+    import { ZSCS2016C } from "./libs/zscs2016c.js";
     import { LED_WS2812B, SmartLed } from "smartled";
     import { createRobutek } from "./libs/robutek.js";
 
     const robutek = createRobutek("V2");
 
     I2C1.setup({ sda: robutek.Pins.SDA, scl: robutek.Pins.SCL, bitrate: 400000 });
-    const sensor = new ZSCS2016C(I2C1, false);
+    const sensor = new ZSCS2016C(I2C1, true);
 
     const ledStrip = new SmartLed(robutek.Pins.ILED, 7, LED_WS2812B);
     ledStrip.set(1, { r: 255, g: 255, b: 255 });
@@ -73,14 +73,14 @@ Vytvoř program, který mění barvu LED na desce na barvu, kterou měří senzo
     ```ts
     import * as colors from "./libs/colors.js";
     import { I2C1 } from "i2c";
-    import { ZSCS2016C, Calibration } from "./libs/zscs2016c.js";
+    import { ZSCS2016C } from "./libs/zscs2016c.js";
     import { LED_WS2812B, SmartLed } from "smartled";
     import { createRobutek } from "./libs/robutek.js";
 
     const robutek = createRobutek("V2");
 
     I2C1.setup({ sda: robutek.Pins.SDA, scl: robutek.Pins.SCL, bitrate: 400000 });
-    const sensor = new ZSCS2016C(I2C1, false);
+    const sensor = new ZSCS2016C(I2C1, true);
 
     const ledStrip = new SmartLed(robutek.Pins.ILED, 7, LED_WS2812B);
     ledStrip.set(1, { r: 255, g: 255, b: 255 });

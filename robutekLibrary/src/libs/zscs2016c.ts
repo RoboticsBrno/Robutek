@@ -51,15 +51,15 @@ function readInt16(bus: i2c.I2C, address: number, reg: Reg) {
     return value[0] | (value[1] << 8);
 }
 
-type Calibration = {
-    mins: number[];
-    maxs: number[];
-};
-
 function scale(value: number, min: number, max: number) {
     const val = (value - min) / (max - min);
     return Math.min(Math.max(val, 0), 1);
 }
+
+export type Calibration = {
+    mins: number[];
+    maxs: number[];
+};
 
 export class ZSCS2016C {
     readonly bus: i2c.I2C;
@@ -150,7 +150,7 @@ export class ZSCS2016C {
      * @note This method is more efficient and accurate than reading all channels individually.
      * @returns Array of scaled RGB values [R, G, B] (0-1)
      */
-    readRGB() {
+    readRGB(): [number, number, number] {
         let value = this.readRawRGB();
         return [
             scale(value[0], this.cal.mins[0], this.cal.maxs[0]),
