@@ -50,14 +50,55 @@ async function main() {
 main().catch(console.error);
 ```
 
-## Ještě jemnější styl jízdy
+## Vyhlazení kmitů
 
 Robůtek už jezdí plynuleji a snad i rychleji. Dost možná se ale pořád třepe, ale i to se dá řešit. Můžeme si změřit rychlost s jakou se přibližuje/vzdaluje čáře a při příliš velké rychlosti změny "povolit otěže" (jet rovněji). Rychlost přibližování/vzdalování se čáře změříme jako rozdíl výstupu ze senzoru ve dvou po sobě jdoucích průchodech while cyklem. Takto získané číslo opět vynásobíme nějakým koeficientem k_d a výsledek odečteme od korekce vypočítané pomocí. Tento způsob řízení robůtka se nazývá PD regulace.
 
 !!! tip "k_d je často potřeba nastavit opravdu velké pro dosažení plynule jízdy!"
 
-TODO: program s PD regulací
+```ts
 
-## Na závěr
+import { createRobutek } from "./libs/robutek.js"
+import Layout from "./layout.js"
+const robutek = createRobutek("V2");
+const setpoint = 512;
+let speed = 789;
+let k_p = 0.96;
+let k_d = 4.86;
 
-- Pokud jste si beze změn stáhli a spustili kód z těchto stránek, tak vám robot jezdí docela pomalu. Dá se zrychlit? Jak moc?
+function move(steering: number, speed: number) {
+    if(steering < 0) {
+        robutek.leftMotor.setSpeed((1 + steering) * speed)
+        robutek.rightMotor.setSpeed(speed)
+    } else if(steering > 0) {
+        robutek.rightMotor.setSpeed((1 - steering) * speed)
+        robutek.leftMotor.setSpeed(speed)
+    }
+}
+
+async function main() {
+    let previous_error = 0;
+    robutek.leftMotor.move()
+    robutek.rightMotor.move()
+    console.log("start")
+    while(true) {
+        const l = robutek.readSensor("LineFR");
+        let error = setpoint - l;
+        let normalized_error = error / 512;
+        let speed_of_change = normalized_error - previous_error;
+        move(normalized_error * k_p + speed_of_change * k_d, speed);
+        previous_error = normalized_error;
+        await sleep(1);
+    }
+}
+
+main().catch(console.error);
+```
+
+!!! tip "K určení hodnot k_d a k_p je potřeba experimentovat. Hodí se naprogramovat si GUI v GridUI abyste kvůli každé změně parametů nemuseli nahrávat kód znovu"
+
+## Co dál
+
+- Naše řídící algoritmy v této kapitole jezdí jenom na jeden senzor, dají se ale upravit tak, aby fungovaly se dvěma přednímy senzory.
+
+- Co má robot dělat pokud sjede z čáry? Máme boční senzory, kterými bychom si mohli pomoct, včas rozpoznat sjetí z čáry a vrátit se na ni.
