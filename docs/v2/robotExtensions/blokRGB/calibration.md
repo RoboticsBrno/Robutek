@@ -11,10 +11,10 @@ const sensor = new ZSCS2016C(I2C1, ADDR_BIT);
 await sensor.runCalibration();
 
 // perzistentně uloží kalibrační hodnoty pod zadaným klíčem
-sensor.saveCalibration("key");
+sensor.saveCalibration("KEY");
 
 // načte kalibrační hodnoty z paměti pod zadaným klíčem
-sensor.loadCalibration("key");
+sensor.loadCalibration("KEY");
 ```
 
 Kalibrační program využívající tyto funkce pak vypadá takto. Tento program nám vypíše kalibrační hodnoty pro náš senzor za současných podmínek. Procesem kalibrace nás program provede zprávami v terminálu.
@@ -43,7 +43,7 @@ async function main() {
     await sensor.runCalibration();
     console.log(`Calibration data: ${JSON.stringify(sensor.getCalibration())}`);
 
-    // uloží kalibrační hodnoty pod klíčem 'default'
+    // uloží současné kalibrační hodnoty pod klíčem 'default'
     sensor.saveCalibration("default");
 }
 
@@ -61,6 +61,8 @@ main().catch(console.error);
     ```
 
 Kalibraci je nutné provádět pouze jednou. Poté se perzestentně ukládají paměti pod zadaným klíčem. Stejným pomocí stejného klíče je pak možné kalibraci znovu načíst a použít. Je také možné uložit více kalibrací pod různými klíči a podle potřeby je přepínat.
+
+!!! danger "Robůtek disponuje dvěma RGB senzory, kalibraci je třeba provést pro každý z nich zvlášt. Kalibrační soubory si můžeme pojmenovat například `external` pro vnější senzor a `internal` pro vestavěný senzor."
 
 ```ts
 
