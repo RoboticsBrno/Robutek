@@ -101,6 +101,11 @@ ledStrip.set(0, colors.green); // Rozsvítí LEDku zeleně pomocí předdefinova
 ledStrip.set(0, { r: 0, g: 255, b: 0 }); // Rozsvítí LEDku zeleně pomocí vlastní barvy
 ```
 
+
+
+
+Vytvoříme si nový projekt z odkazu: 
+
 === "Odkaz"
     ```
     https://robutek.robotikabrno.cz/v2/robot/lekce3/project3.tar.gz

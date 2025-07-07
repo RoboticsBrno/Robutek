@@ -7,6 +7,11 @@ Ukážeme si ovládání RGB LED umístěné na ESP32 a práci s událostmi ří
 TypeScript (JavaScript) je imperativní programovací jazyk. To znamená, že se vykoná vše, co do programu napíšeme,
 v pořadí, v jakém jsme to napsali.
 
+!!! note "Poznámka"
+    V lekci 1. jsme se naučili jak vytvořit nový projekt z odkazu. Teď si tuto znalost ověříme.
+
+Vytvořte si nový projekt z nového odkazu:
+
 === "Odkaz"
     ```
     https://robutek.robotikabrno.cz/v2/robot/blank_project.tar.gz

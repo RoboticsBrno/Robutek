@@ -4,6 +4,8 @@ V této lekci si vyzkoušíme točit motory a pohybovat robotem.
 
 !!! tip "Položme si Robůtka na něco tak, aby se kola nedotýkala země a mohla se volně točit - tak můžeme kód otestovat bez toho, aby Robůtek sjel ze stolu."
 
+Vytvoříme si nový projekt z odkazu na prázdný projekt:
+
 === "Odkaz"
     ```
     https://robutek.robotikabrno.cz/v2/robot/blank_project.tar.gz
