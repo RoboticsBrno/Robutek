@@ -95,7 +95,10 @@ Nyní napíšeme program, který do konzole vypíše čtverec složený z hvězd
 
 Velikost tohoto čtverce určete pomocí konstanty, jejíž hodnota udává počet řádku a sloupců.
 
-Pokud nechceme za vypsanými znaky nový řádek, místo známého `#!ts console.log()` použijeme `#!ts stdout.write`
+Pokud nechceme za vypsanými znaky nový řádek, místo známého `#!ts console.log()` použijeme `#!ts stdout.write` ale potřebujeme importovat novou knihovnu: 
+```ts
+import { stdout } from "stdio";
+```
 
 ??? note "Řešení"
 
