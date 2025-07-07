@@ -78,7 +78,19 @@
 
 14. Otočte si servo do nulové pozice.
 
-    !!! danger "Buď zajděte za orgem, který vám servo nastaví, nebo pokud to umíte, můžete si ho nastavit sami."
+    Abychom mohli jednoduše pohybovat tužkou, jsou v knihovně dostupné konstanty pro pozice serva. Páču na servo je ale potřeba nasadit do správné pozice, aby konstanty odpovídaly.
+
+    Pro správné umístění otočíme servo programem na pozici 0 a páčku nasadíme tak, aby směřovala přímo vzhůru. K tomu je potřeba spustit následující kód:
+
+    ```ts
+    import { createRobutek } from "./libs/robutek.js";
+    import { Servo } from "./libs/servo.js";
+
+    const robutek = createRobutek("V2");
+    const servo = new Servo(robutek.Pins.Servo2, 1, 4);
+
+    servo.write(0);
+    ```
 
 15. Nasaďte na servo páčku dle polohy na obrázku.
 
