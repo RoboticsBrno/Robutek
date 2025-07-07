@@ -51,24 +51,28 @@ V této kapitole si postavíme samotného Robůtka.
     ![](assets/stage1/IMG-step7a.jpeg)
     !!! danger "Kontakty motoru musí být mezi pinheady."
     ![](assets/stage1/IMG-step7c.jpeg)
-    ![](assets/stage1/IMG-step7d.jpeg)
+    ![](assets/stage1/IMG-step6b.jpg)
 
 7. Zajděte za orgem, aby vám zapájel motory. Zároveň vám zkontroluje, že motory jedou, jak mají.
 
     !!! danger "Přečtěte si popisek tohoto kroku, je to důležité!"
 
-8. Nasaďte vrchní domeček na spodní domeček.
+8. Nasaďte enkodéry (magnety) na osku motoru.
+
+    ![](assets/stage1/IMG-step7d.jpeg)
+
+9. Nasaďte vrchní domeček na spodní domeček.
 
     ![](assets/stage1/IMG-step8a.jpeg)
     ![](assets/stage1/IMG-step8b.jpeg)
 
-9. Na spodní straně robůtka zacvakněte zarážku fixy do domečku.
+10. Na spodní straně robůtka zacvakněte zarážku fixy do domečku.
 
     ![](assets/stage1/IMG-step9a.jpeg)
     ![](assets/stage1/IMG-step9b.jpeg)
     ![](assets/stage1/IMG-step9c.jpeg)
 
-10. Nasaďte dřevěnou základnu. Přišroubujte ji k robůtku pomocí čtyř šroubků M3x30.
+11. Nasaďte dřevěnou základnu. Přišroubujte ji k robůtku pomocí čtyř šroubků M3x30.
 
     !!! danger "Běžte na stůl 2 za orgem."
 
@@ -78,7 +82,7 @@ V této kapitole si postavíme samotného Robůtka.
     ![](assets/stage1/IMG-step10c.jpeg)
     ![](assets/stage1/IMG-step10b.jpeg)
 
-11. Připravte si kartáčky (jeden malý a jeden velký). Uchopte si kartáček kleštěmi a zatlačte ho do drážky správné velikosti (malý kartáček do malé drážky, velký kartáček do velké drážky).
+12. Připravte si kartáčky (jeden malý a jeden velký). Uchopte si kartáček kleštěmi a zatlačte ho do drážky správné velikosti (malý kartáček do malé drážky, velký kartáček do velké drážky).
 
     ![](assets/stage1/IMG-stepKa.jpeg)
     ![](assets/stage1/IMG-stepKb.jpeg)
@@ -86,13 +90,13 @@ V této kapitole si postavíme samotného Robůtka.
     ![](assets/stage1/IMG-stepKc.jpeg)
     ![](assets/stage1/IMG-stepKd.jpeg)
 
-12. Vložte baterii.
+13. Vložte baterii.
 
     !!! danger "Dejte si pozor na polaritu baterie."
     ![](assets/stage1/IMG-step11a.jpeg)
     ![](assets/stage1/IMG-step11b.jpeg)
 
-13. Přišroubujte dřevěnou palubu.
+14. Přišroubujte dřevěnou palubu.
 
     !!! danger "Pozor na orientaci paluby, díry musí sedět na součástky na desce."
     ![](assets/stage1/IMG-step12a.jpeg)
