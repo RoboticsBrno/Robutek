@@ -11,7 +11,7 @@ Na Robůtkovi je k dispozici jednoduchá bezdrátová komunikace na vzdálenost 
 
 ## Spuštění
 
-Pokud chcete používat radio, je třeba importovat jeho knihovnu a poté zavolat `#!ts begin(<číslo skupiny>);`
+Pokud chcete používat radio, je třeba importovat jeho knihovnu a poté zavolat `#!ts begin(<číslo skupiny>)`.
 
 ```ts
 import * as radio from "simpleradio";

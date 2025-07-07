@@ -20,7 +20,7 @@ Nejdříve si zopakujeme předchozí lekci a rozsvítíme RGB LED na Robůtkovi 
 
 Na začátku tohoto úkolu si otevřeme nový prázdný projekt. V souboru `index.ts` jsou připraveny `import` příkazy: ty nám umožní využívat funkcionalitu z různých souborů, např. jednoduše ovládat LEDku, nebo využívat nadefinované barvy.
 
-Pásek inicializujeme pomocí `const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812B);`.
+Pásek inicializujeme pomocí `const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812B)`.
 Barvu LED nastavíme pomocí `ledStrip.set(0, colors.<nějaká_barva>)` a zobrazíme pomocí `ledStrip.show()`.
 
 ??? note "Řešení"
