@@ -106,7 +106,7 @@ Zkombinujme poznatky z [lekce 4](../lekce4/index.md) s touto a vytvořme program
 
     ```ts
     import { Servo } from "./libs/servo.js"
-    import \* as gpio from "gpio"
+    import * as gpio from "gpio"
     import { createRobutek } from "./libs/robutek.js"
     const robutek = createRobutek("V2");
 
