@@ -116,7 +116,7 @@ Pomocí jedné proměnné se stavem a podmínky každou sekundu buď rozsvítím
 ??? note "Řešení"
 
     ```ts
-    import { s, SmartLed } from "smartled";
+    import { LED_WS2812B, SmartLed } from "smartled";
     import * as colors from "./libs/colors.js";
     import { createRobutek } from "./libs/robutek.js";
     const robutek = createRobutek("V2");

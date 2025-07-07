@@ -140,6 +140,6 @@ Zkombinujme poznatky z [lekce 4](../lekce4/index.md) s touto a vytvořme program
 
 Př stisknutí jednoho tlačítka vykreslí Robůtek kruh, při stisknutí druhého vykreslí trojúhelník.
 
-## Výstupní úkol V1
+## Výstupní úkol V2
 
 Při stisknutí jednoho tlačítka vykreslí Robůtek první písmeno našeho jména, při stisku druhého tlačítka první písmeno našeho příjmení.
