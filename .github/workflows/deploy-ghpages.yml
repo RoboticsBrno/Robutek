@@ -38,6 +38,8 @@ jobs:
       - name: Update project files
         run:
           bash update-projects.sh
+          git add .
+          git commit --allow-empty-message
 
       - name: Jac build
         run: bash jac-autocompile.sh

@@ -1,13 +1,12 @@
 # Programování robota
 
-
 ## Programování:
 Robůtek je řízený mikrokontrolérem ESP32-S3. K programování budeme používat jazyk TypeScript, který budeme spouštět pomocí programu [Jaculus](https://jaculus.org/).
 
 [Lekce 0](lekce0/){ .md-button .md-button--primary }
 
 ## Přehled pinů
-Čísla pinů nemusíte přepisovat ručně, lze použít definici z knihovny:
+Čísla pinů nemusíme přepisovat ručně, lze použít definici z knihovny:
 
 ```typescript
 import * as gpio from "gpio";
@@ -58,4 +57,3 @@ export enum Pins {
 
 ![Predni strana robota](assets/front.png)
 ![Zadni strana robota](assets/back.png)
-!!! danger "Pin pro přepínání vnitřních a venkovních čárových senzorů je <b>IO8.</b>"

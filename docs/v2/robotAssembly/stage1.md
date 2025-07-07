@@ -23,84 +23,85 @@ V této kapitole si postavíme samotného Robůtka.
 
 1. Ulomte okraje desky.
 
-    ![](assets/IMG-step1a.jpeg)
-    ![](assets/IMG-step1b.jpeg)
+    ![](assets/stage1/IMG-step1a.jpeg)
+    ![](assets/stage1/IMG-step1b.jpeg)
 
-2. Připravte si motor s kolem a magnetku. Magnetku nasaďte tak, aby byla ve středu hřídele. Toto zopakujte pro druhé kolo.
+2. Připravte si domeček pro motory.
 
-    ![](assets/IMG-step2a.jpeg)
-    ![](assets/IMG-step2b.jpeg)
+    ![](assets/stage1/IMG-step3.jpeg)
 
-3. Připravte si domeček pro motory.
+3. Vsaďte oba motory do domečku. <!-- TODO: zadefinovat otočení -->
 
-    ![](assets/IMG-step3.jpeg)
+    !!! danger "Netlačte motory do domečku silou, měly by jít vsadit lehce. Ujistěte se, zda jste motor otočili správně a že jsou kolejničky motoru zarovnány s drážkami v domečku."
+    ![](assets/stage1/03-motorkyOrientace.png)
+    ![](assets/stage1/IMG-step4b.jpeg)
 
-4. Vsaďte oba motory do domečku.
+4. Pomocí malého plochého šroubováku odstraňte plastové zarážky z pinheadů. <!-- TODO: opravit fotky --> 
 
-    !!! danger "Netlačte motory do domečku silou, měly by jít vsadit lehce. Ujistěte se, že kolejničky motoru jsou zarovnány s drážkami v domečku."
-    ![](assets/IMG-step4a.jpeg)
-    ![](assets/IMG-step4b.jpeg)
+    !!! danger "Dávejte si pozor, abyste pinheady neohli."
+    ![](assets/stage1/06-izolacniStavitko-souhrn.jpg)
 
-5. Najděte pin heady na pohon motorů na vrchní straně destičky plošného spoje. Pomocí štípaček, sundejte jejich plastové izolátory.
 
-    !!! danger "Dávejte si pozor aby jste pinheady neuštípli."
-    ![](assets/IMG-step5a.jpeg)
-    !!! danger "Neuštípněte pin heady!"
-    ![](assets/IMG-step5b.jpeg)
-    !!! danger "Neuštípněte pin heady!"
-    ![](assets/IMG-step5c.jpeg)
+5. Položte vložku pod motor na destičku plošného spoje. Dbejte na její orientaci.
 
-6. Položte vložku pod motor na destičku plošného spoje. Dbejte na její orientaci.
+    ![](assets/stage1/IMG-step6.jpeg)
 
-    ![](assets/IMG-step6.jpeg)
+6. Nasaďte domeček s motory na vložku tak, aby se pinheady dotýkaly kontaktů motorů.
 
-7. Nasaďte domeček s motory na vložku tak, aby se pin heady dotýkaly kontaktů motorů.
+    ![](assets/stage1/IMG-step7a.jpeg)
+    !!! danger "Kontakty motoru musí být mezi pinheady."
+    ![](assets/stage1/IMG-step7c.jpeg)
+    ![](assets/stage1/IMG-step6b.jpg)
 
-    ![](assets/IMG-step7a.jpeg)
-    ![](assets/IMG-step7b.jpeg)
-    !!! danger "Kontakty motoru musí být mezi pin heady."
-    ![](assets/IMG-step7c.jpeg)
-    ![](assets/IMG-step7d.jpeg)
+7. Zajděte za orgem, aby vám zapájel motory. Zároveň vám zkontroluje, že motory jedou, jak mají.
 
-8. Nasaďte vrchní domeček na spodní domeček.
+    !!! danger "Přečtěte si popisek tohoto kroku, je to důležité!"
 
-    ![](assets/IMG-step8a.jpeg)
-    ![](assets/IMG-step8b.jpeg)
+8. Nasaďte enkodéry (magnety) na osku motoru.
 
-9. Na spodní straně robůtka zacvakněte zarážku fixy do domečku.
+    ![](assets/stage1/IMG-step7d.jpeg)
 
-    ![](assets/IMG-step9a.jpeg)
-    ![](assets/IMG-step9b.jpeg)
-    ![](assets/IMG-step9c.jpeg)
+9. Nasaďte vrchní domeček na spodní domeček.
 
-10. Nasaďte dřevěnou základnu. Přišroubujte ji k robůtku pomocí čtyř M3x30 šroubků.
+    ![](assets/stage1/IMG-step8a.jpeg)
+    ![](assets/stage1/IMG-step8b.jpeg)
 
-    !!! danger "Pozor na orientaci základny, díry musí sedět na součastky na desce."
+10. Na spodní straně robůtka zacvakněte zarážku fixy do domečku.
+
+    ![](assets/stage1/IMG-step9a.jpeg)
+    ![](assets/stage1/IMG-step9b.jpeg)
+    ![](assets/stage1/IMG-step9c.jpeg)
+
+11. Nasaďte dřevěnou základnu. Přišroubujte ji k robůtku pomocí čtyř šroubků M3x30.
+
+    !!! danger "Běžte na stůl 2 za orgem."
+
+    !!! danger "Pozor na orientaci základny, díry musí sedět na součástky na desce."
     !!! danger "Šrouby do dřevěné základny neutahujte silou, aby ji nepoškodily."
-    ![](assets/IMG-step10a.jpeg)
-    ![](assets/IMG-step10c.jpeg)
-    ![](assets/IMG-step10b.jpeg)
+    ![](assets/stage1/IMG-step10a.jpeg)
+    ![](assets/stage1/IMG-step10c.jpeg)
+    ![](assets/stage1/IMG-step10b.jpeg)
 
-11. Připravte si kartáčky (jeden malý a jeden velký). Uchopte si kartáček kleštěmi a zatlačte ho do drážky správné velikosti (malý kartáček do malé drážky, velký kartáček do velké drážky).
+12. Připravte si kartáčky (jeden malý a jeden velký). Uchopte si kartáček kleštěmi a zatlačte ho do drážky správné velikosti (malý kartáček do malé drážky, velký kartáček do velké drážky).
 
-    ![](assets/IMG-stepKa.jpeg)
-    ![](assets/IMG-stepKb.jpeg)
+    ![](assets/stage1/IMG-stepKa.jpeg)
+    ![](assets/stage1/IMG-stepKb.jpeg)
     !!! danger "Zatlačte kartáčky až na doraz, aby nevylézala kovová část kartáčku."
-    ![](assets/IMG-stepKc.jpeg)
-    ![](assets/IMG-stepKd.jpeg)
+    ![](assets/stage1/IMG-stepKc.jpeg)
+    ![](assets/stage1/IMG-stepKd.jpeg)
 
-12. Vložte baterii.
+13. Vložte baterii.
 
     !!! danger "Dejte si pozor na polaritu baterie."
-    ![](assets/IMG-step11a.jpeg)
-    ![](assets/IMG-step11b.jpeg)
+    ![](assets/stage1/IMG-step11a.jpeg)
+    ![](assets/stage1/IMG-step11b.jpeg)
 
-13. Přišroubujte dřevěnou palubu.
+14. Přišroubujte dřevěnou palubu.
 
-    !!! danger "Pozor na orientaci paluby, díry musí sedět na součastky na desce."
-    ![](assets/IMG-step12a.jpeg)
-    ![](assets/IMG-step12b.jpeg)
-    ![](assets/IMG-step12c.jpeg)
+    !!! danger "Pozor na orientaci paluby, díry musí sedět na součástky na desce."
+    ![](assets/stage1/IMG-step12a.jpeg)
+    ![](assets/stage1/IMG-step12b.jpeg)
+    ![](assets/stage1/IMG-step12c.jpeg)
     Máte hotovo!
 
 [Krok 2](stage2.md){.md-button .md-button--primary}

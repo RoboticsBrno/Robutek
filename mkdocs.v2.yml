@@ -51,7 +51,8 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.keys
   - attr_list
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - meta
   - md_in_html
   - footnotes
@@ -88,14 +89,15 @@ plugins:
 
   - zip_folders:
       folders:
+        - robot/blank_project
         - robot/lekce1/example1
         - robot/lekce1/example-gridui
-        - robot/lekce2/blank_project
         - robot/lekce3/project3
         - robot/lekce4/project4
         - robot/lekce6/project6
         - robot/lekce8/project8
         - robotExtensions/blokGridUI/colors-gridui
+        - robotExtensions/blokGridUI/blank-gridui
         - robutekLibrary
       formats:
         - zip
@@ -142,6 +144,8 @@ nav:
       - robotAssembly/stage3.md
       - robotAssembly/stage4.md
       - robotAssembly/stage5.md
+      - robotAssembly/stage6.md
+
   - Programovací lekce:
       - robot/index.md
       - robot/faq/index.md
@@ -159,22 +163,28 @@ nav:
       - robotExtensions/index.md
       - GridUI:
         - robotExtensions/blokGridUI/index.md
+        - robotExtensions/blokGridUI/widgets.md
       - Čára:
         - robotExtensions/blokCara/index.md
         - robotExtensions/blokCara/sensors.md
         - robotExtensions/blokCara/linefollow.md
         - robotExtensions/blokCara/additions.md
       - Sumo:
-        - robotExtensions/blokSumo/index.md
-        - robotExtensions/blokSumo/logic.md
+          - robotExtensions/blokSumo/index.md
+      #    - robotExtensions/blokSumo/logic.md
       - Bludiště:
-        - robotExtensions/blokMaze/index.md
-        - GPIO: 
-          - robotExtensions/blokMaze/gpio.md
-          - robotExtensions/blokMaze/gpio-adv.md
-        - robotExtensions/blokMaze/tof.md
-        - robotExtensions/blokMaze/logic.md
+          - robotExtensions/blokMaze/index.md
+          - GPIO:
+              - robotExtensions/blokMaze/gpio.md
+              - robotExtensions/blokMaze/gpio-adv.md
+          - robotExtensions/blokMaze/tof.md
+          - robotExtensions/blokMaze/logic.md
       - Senzor barev:
-        - robotExtensions/blokRGB/index.md
-      - I2C:
-        - robotExtensions/blokI2C/index.md
+          - robotExtensions/blokRGB/index.md
+          - robotExtensions/blokRGB/externalSensor.md
+          - Programování:
+              - robotExtensions/blokRGB/setup.md
+              - robotExtensions/blokRGB/calibration.md
+              - robotExtensions/blokRGB/readData.md
+      # - I2C:
+      #     - robotExtensions/blokI2C/index.md

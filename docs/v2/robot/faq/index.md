@@ -3,8 +3,8 @@
 ## Do kterého USB mám připojit kabel?
 
 - Používej konektor `USB-C`, pokud ti nejde nahrát kód, použij `micro-USB`.
-- ??? "Proč USB-C nefunguje?"
-  `USB-C` je softwarové `USB` na ESP32. Pokud nahraješ kód, který rozbije ESP, `USB-C` nebude fungovat.<br>Naopak `micro-USB` je připojené přes převodník, takže bude fungovat i když má ESP problém. (potenciální chyby: chyba při nahrávání, nekonečná smyčka v kódu, atd.).
+??? "Proč USB-C nefunguje?"
+    `USB-C` je softwarové `USB` na ESP32. Pokud nahraješ kód, který rozbije ESP, `USB-C` nebude fungovat.<br>Naopak `micro-USB` je připojené přes převodník, takže bude fungovat i když má ESP problém. (potenciální chyby: chyba při nahrávání, nekonečná smyčka v kódu, atd.).
 
 ## Jak komunikovat se zařízením?
 
@@ -23,6 +23,18 @@
 - Zadejte `Jaculus: Get firmware version`.
 - Výsledek by se měl objevit v terminálu.
 
-## Jak nainstalovat prostředí?
+## Jak nainstalovat vývojové prostředí?
 
-- Koukni na [Lekci 1](../lekce1/index.md).
+- Koukni na [Lekci 0](../lekce0/index.md).
+
+## Nefunguje nahrání programu?
+
+- Pokud se program nenahraje za ~10 vteřin, zkuste zmáčknout tlačítko označené `EN` a program nahrát znovu.
+
+## Chyba při spuštění příkazu v konzoli
+
+  - Pokud chyba obsahuje `running scripts is disabled on this system`, otevřete si aplikaci `Powershell` a spusťte příkaz `Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser`. Poté restartujte všechny konzole, které máme otevřené.
+
+  Chyba vypadá přibližně takto.
+
+  ![scriptsDisabled](./assets/scriptsDisabled.png)
