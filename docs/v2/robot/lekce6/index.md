@@ -43,15 +43,18 @@ Ve spojení se znalostmi z minulých lekcí napište program, který po stisku t
 
     ```ts
     import * as gpio from "gpio";
+    import { createRobutek } from "./libs/robutek";
 
-    gpio.pinMode(BTN_PIN, gpio.PinMode.INPUT); // nastaví pin 0 jako vstup
+    const robutek = createRobutek("V2")
 
-    gpio.on("falling", BTN_PIN, () => { // událost, která proběhne při stisknutí tlačítka připojeného na pin 0
-    	console.log("Stisknuto, začínáme počítat");
-    	for (let i: number = 0; i < 9; i++) { // vypíšeme čísla od 0 do 8
-    		console.log(i);
-    	}
-    	console.log(""); // oddělíme jednotlivé stisky
+    gpio.pinMode(robutek.Pins.ButtonRight, gpio.PinMode.INPUT); // nastaví pin 0 jako vstup
+
+    gpio.on("falling", robutek.Pins.ButtonRight, () => { // událost, která proběhne při stisknutí tlačítka připojeného na pin 0
+        console.log("Stisknuto, začínáme počítat");
+        for (let i: number = 0; i < 9; i++) { // vypíšeme čísla od 0 do 8
+            console.log(i);
+        }
+        console.log(""); // oddělíme jednotlivé stisky
     });
     ```
 
