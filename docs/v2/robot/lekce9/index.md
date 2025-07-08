@@ -126,6 +126,7 @@ a stejně tak pro další tlačítko a LED.
 Najděte kamaráda, abyste si mohli navzájem zkusit, zda program funguje (jeden vysílá, druhý přijmá).
 
 ??? note "Řešení"
+
     ```ts
     import * as radio from "simpleradio";
     import * as gpio from "gpio";
@@ -136,43 +137,42 @@ Najděte kamaráda, abyste si mohli navzájem zkusit, zda program funguje (jeden
 
     radio.begin(5); // skupina 5
 
-    const LED_COUNT = 3;
+    // nastavíme pásek
+    const ledStrip = new SmartLed(robutek.Pins.ILEDConnector, 8, LED_WS2812B)
 
     // Nastavíme tlačítka jako vstupy
     gpio.pinMode(robutek.Pins.ButtonLeft, gpio.PinMode.INPUT);
     gpio.pinMode(robutek.Pins.ButtonRight, gpio.PinMode.INPUT);
 
-    gpio.on("falling", PIN_BTN_LEFT, () => {
-        // Při stisknutí tlačítka 0
-        radio.sendKeyValue("IO2", 1); // odešleme hodnotu 1 s klíčem IO2
+    gpio.on("falling", robutek.Pins.ButtonLeft, () => {
+        // Při stisknutí levého tlačítka
+        radio.sendKeyValue("LEFT", 1); // odešleme hodnotu 1 s klíčem LEFT
     });
-    gpio.on("rising", PIN_BTN_LEFT, () => {
-        // Při uvolnění tlačítka 0
-        radio.sendKeyValue("IO2", 0); // odešleme hodnotu 0 s klíčem IO2
-    });
-
-    gpio.on("falling", PIN_BTN_RIGHT, () => {
-        radio.sendKeyValue("IO0", 1); // odešleme hodnotu 1 s klíčem IO0
-    });
-    gpio.on("rising", PIN_BTN_RIGHT, () => {
-        radio.sendKeyValue("IO0", 0); // odešleme hodnotu 0 s klíčem IO0
+    gpio.on("rising", robutek.Pins.ButtonLeft, () => {
+        // Při uvolnění levého tlačítka
+        radio.sendKeyValue("LEFT", 0); // odešleme hodnotu 0 s klíčem LEFT
     });
 
-    // Nastavíme LED piny jako výstupy
-    const strip = new SmartLed(robutek.Pins.ILED, LED_COUNT);
+    gpio.on("falling", robutek.Pins.ButtonRight, () => {
+        // Při stisknutí pravého tlačítka
+        radio.sendKeyValue("RIGHT", 1); // odešleme hodnotu 1 s klíčem RIGHT
+    });
+    gpio.on("rising", robutek.Pins.ButtonRight, () => {
+        // Při uvolnění pravého tlačítka
+        radio.sendKeyValue("RIGHT", 0); // odešleme hodnotu 0 s klíčem RIGHT
+    });
 
     // Zpracování příchozích správ
     radio.on("keyvalue", (klic, hodnota, info) => {
-        if (klic === "IO0") {
-            strip.set(1, colors.rainbow(0, hodnota * 10))
-        } else if (klic === "IO2") {
-            strip.set(2, colors.rainbow(150, hodnota * 10))
+        if (klic === "RIGHT") {
+            ledStrip.set(0, colors.rainbow(0, hodnota * 10))
+        } else if (klic === "LEFT") {
+            ledStrip.set(1, colors.rainbow(150, hodnota * 10))
         }
-
-        strip.show();
+        ledStrip.show();
     });
     ```
 
 ## Výchozí úkol V1
 
-Změňtě program ze zadání A tak, aby místo tlačítek vyčítal ADC převodník. Na LED pásku se bude zobrazovat hondota z ADC.
+Změňtě program ze zadání A tak, aby místo tlačítek vyčítal čárový senzor. Na LED pásku se bude zobrazovat hodnota senzoru jako jas bílé barvy LED.
