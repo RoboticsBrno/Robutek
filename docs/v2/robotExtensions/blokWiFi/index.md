@@ -16,6 +16,8 @@ V menu můžeme vybrat z několika možností.
  - `Set WiFi to Station mode (connect to wifi)` - zapnutí WiFi v režimu stanice, Robůtek se připojuje k WiFi
  - `Set WiFi to AP mode (create a hotspot)` - zapnutí WiFi v režimu hotspotu, Robůtek vytváři hotspot, ostatní zařízení se připojují k němu
 
+Pro připojení k WiFi bez hesla a vytvoření hotspotu bez hesla stačí ponechat heslo prázdné. 
+
 !!! danger "Problémy s WiFi"
     
     Zapnutá WiFi může Robůtkovi způsobovat problémy. Proto WiFi vypínáme, pokud ji zrovna nepotřebujeme.
@@ -24,7 +26,7 @@ V menu můžeme vybrat z několika možností.
 
 Knihovny pro Robůtka nám dávají k dispozici 2 funkce.
 
- - `currentIp()` - vrací současnou konfiguraci WiFi
+ - `currentIp()` - vrací současnou konfiguraci WiFi, pokud není připojen k WiFi, vrací `null`
  - `listNetwork()` - vrací pole všech uložených WiFi sítí
 
     ```ts
