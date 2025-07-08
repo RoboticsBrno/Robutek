@@ -10,7 +10,7 @@ Na začátku předpokládáme, že se je čára mezi dvěma přednímy senzory. 
 
 ## Program
 
-Senzor nám barvu popíše jako číslo od 0 do 1023, nás ale nezajímá konkrétní číslo, ale zda se ta barva ještě dá považovat za bílou a nebo už je to černá, to znamená zvolit si nějakou prahovou hodnotu (threshold) ve které se bude naše vnímání barvy lámat.
+Senzor nám barvu popíše jako číslo od 0 do 1023, nás ale nezajímá konkrétní číslo, ale zda se ta barva ještě dá považovat za bílou a nebo už je to černá. Zvolíme si tedy nějakou prahovou hodnotu (threshold) ve které se bude naše vnímání barvy lámat.
 
 ```ts
 const thresh = 700; // Mez pod kterou se barva považuje za černou TODO: Ověřit že to tak reálně je
