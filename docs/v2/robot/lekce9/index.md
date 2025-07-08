@@ -13,6 +13,9 @@ Na Robůtkovi je k dispozici jednoduchá bezdrátová komunikace na vzdálenost 
 
 Pokud chcete používat radio, je třeba importovat jeho knihovnu a poté zavolat `#!ts begin(<číslo skupiny>)`.
 
+!!! danger "Před spuštěním rádia je potřeba vypnout WiFi. Vypínání se provádí přes Jaculus extension zmáčknutím tlačítko `Configure WiFi` a vybráním možnosti `Disable WiFi`. Robotka musíme mít připojeného k počítači a musíme mít vybraný správný port."
+
+
 ```ts
 import * as radio from "simpleradio";
 
