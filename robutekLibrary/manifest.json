@@ -1,0 +1,7 @@
+{
+    "skeletonFiles": [
+        "@types/*",
+        "src/lib/*",
+        "tsconfig.json"
+    ]
+}
