@@ -44,6 +44,37 @@ radio.sendNumber(42);
 radio.sendNumber(-2.42);
 ```
 
+!!! danger "Odesílání stejných dat po sobě"
+
+    Jako důsledek způsobu posílání dat není možné poslat dvakrát po sobě stejnou zprávu. Pokud toto potřebujeme, musíme data upravit. Je mnoho různých způsobů, jak můžeme data upravit. Ukážeme si tyto:
+
+     - Řetězce: na konec řetězce přidáme počítadlo
+
+        ```ts
+        radio.sendString(`Hodnota: ${counter}`);
+        ``` 
+
+     - Číslo: při odeslání musíme číslo __bitshiftnout__ doleva a přičíst jedničku nebo nulu, při příjmu __bitshiftnout__ doprava
+
+        ```ts
+        let counter = 0;
+        let value = 42;
+
+        // Operátor "<<" bitshiftne levý operand o pravý operand bitů doleva, 
+        // přičtením zbytku po dělení 2 a následném přičtení jedničky zajistíme
+        // střídání 0 a 1 na posledním bitu zprávy
+        radio.sendNumber((value << 1) + (counter % 2));   
+        counter++;
+
+        // Při příjmu čísla získáme hodnotu bitshiftnutím doprava o jeden bit,
+        // tím se zbavíme měnícího se bitu a dostaneme původní zprávu
+        radio.on("number", (cislo, info) => {
+          const originalValue = cislo >> 1;
+          console.log("Původní hodnota:", originalValue);
+        });
+        ```
+
+     - Klíč + hodnota: na hodnotě provedeme úpravy pro řetězec nebo číslo podle datového typu hodnoty
 ```ts
 // Odeslání klíč - hodnota
 radio.sendKeyValue("rychlost", 10);
