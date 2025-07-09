@@ -14,9 +14,9 @@
 
 1. Sundejte z Robůtka dřevěnou palubu (pokud ji na robůtku máte).
 
-    ![](assets/stage2/IMG-step12c.jpeg)
-    ![](assets/stage2/IMG-step12b.jpeg)
-    ![](assets/stage2/IMG-step12a.jpeg)
+    ![](assets/stage1/IMG-step12c.jpeg) <!-- don't change links, it should say stage 1  -->
+    ![](assets/stage1/IMG-step12b.jpeg)
+    ![](assets/stage1/IMG-step12a.jpeg)
 
 2. Připravte si fixu, držák na fixu, šroubek, matku a přípravek.
 
@@ -45,7 +45,7 @@
 
     ![](assets/stage2/IMG-stage2-step6mod.png)
 
-8. Protáhněte kabel od serva dřevěnou palubou. Palubu si odmontujte z Robůtka.
+8. Protáhněte kabel od serva dřevěnou palubou.
 
     ![](assets/stage2/IMG-stage2-step7.jpeg)
 
