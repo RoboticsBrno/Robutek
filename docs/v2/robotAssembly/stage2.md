@@ -14,7 +14,7 @@
 
 1. Sundejte z Robůtka dřevěnou palubu (pokud ji na robůtku máte).
 
-    ![](assets/stage1/IMG-step12c.jpeg)
+    ![](assets/stage1/IMG-step12c.jpeg) <!-- don't change links, it should say stage 1  -->
     ![](assets/stage1/IMG-step12b.jpeg)
     ![](assets/stage1/IMG-step12a.jpeg)
 
