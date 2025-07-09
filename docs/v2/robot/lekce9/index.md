@@ -206,4 +206,4 @@ Najděte kamaráda, abyste si mohli navzájem zkusit, zda program funguje (jeden
 
 ## Výchozí úkol V1
 
-Změňtě program ze zadání A tak, aby místo tlačítek vyčítal čárový senzor. Na LED pásku se bude zobrazovat hodnota senzoru jako jas bílé barvy LED.
+Změňte program ze zadání A tak, aby místo tlačítek vyčítal čárový senzor. Na LED pásku se bude zobrazovat hodnota senzoru jako jas bílé barvy LED. Využijte k  RGB objekt `ledStrip.set(0, {r: RED, g: GREEN, b: BLUE})`. Pokud jsou hodnoty `RED`, `GREEN`, `BLUE` stejné, smíchají se do bílého světla. Jas tohoto světla určí pak velikost hodnoty, tedy při hodnotě 0 bude LED vypnutá, při hodnotě 255 bude svítit maximálně.
