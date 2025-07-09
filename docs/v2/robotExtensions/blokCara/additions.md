@@ -58,8 +58,6 @@ main().catch(console.error);
 
 Robůtek už jezdí plynuleji a snad i rychleji. Dost možná se ale pořád třepe, ale i to se dá řešit. Můžeme si změřit rychlost s jakou se přibližuje/vzdaluje čáře a při příliš velké rychlosti změny "povolit otěže" (jet rovněji). Rychlost přibližování/vzdalování se čáře změříme jako rozdíl výstupu ze senzoru ve dvou po sobě jdoucích průchodech while cyklem. Takto získané číslo opět vynásobíme nějakým koeficientem k_d a výsledek odečteme od korekce vypočítané pomocí. Tento způsob řízení robůtka se nazývá PD regulace.
 
-!!! tip "k_d je často potřeba nastavit opravdu velké pro dosažení plynule jízdy!"
-
 ```ts
 
 import { createRobutek } from "./libs/robutek.js"
