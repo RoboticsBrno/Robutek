@@ -7,6 +7,11 @@ Ukážeme si ovládání RGB LED umístěné na ESP32 a práci s událostmi ří
 TypeScript (JavaScript) je imperativní programovací jazyk. To znamená, že se vykoná vše, co do programu napíšeme,
 v pořadí, v jakém jsme to napsali.
 
+!!! note "Poznámka"
+    V lekci 1. jsme se naučili jak vytvořit nový projekt z odkazu. Teď si tuto znalost ověříme.
+
+Vytvořte si nový projekt z nového odkazu:
+
 === "Odkaz"
     ```
     https://robutek.robotikabrno.cz/v2/robot/blank_project.tar.gz
@@ -20,7 +25,7 @@ Nejdříve si zopakujeme předchozí lekci a rozsvítíme RGB LED na Robůtkovi 
 
 Na začátku tohoto úkolu si otevřeme nový prázdný projekt. V souboru `index.ts` jsou připraveny `import` příkazy: ty nám umožní využívat funkcionalitu z různých souborů, např. jednoduše ovládat LEDku, nebo využívat nadefinované barvy.
 
-Pásek inicializujeme pomocí `const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812B);`.
+Pásek inicializujeme pomocí `const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812B)`.
 Barvu LED nastavíme pomocí `ledStrip.set(0, colors.<nějaká_barva>)` a zobrazíme pomocí `ledStrip.show()`.
 
 ??? note "Řešení"
@@ -42,7 +47,20 @@ Barvu LED nastavíme pomocí `ledStrip.set(0, colors.<nějaká_barva>)` a zobraz
 Událost je situace, kterou program rozpozná (například stisknutí nebo puštění tlačítka, uplynutí určitého času).
 Po zaznamenání události se vykoná kód, který je k této události přiřazen.
 
-S událostí řízenou časem už jsme se setkali: pomocí `setInterval` umíme každých `X` milisekund spouštět daný kód.
+S událostí řízenou časem už jsme se setkali: pomocí `setInterval` umíme každých `X` milisekund spouštět daný kód. Zatim ale nevíme, jak `setInterval` ukončit, tedy jak přestat kód opakovaně spouštět. K tomu slouží funkce `clearInterval(INTERVAL_ID)`. `INTERVAL_ID` nám při vytáření intervalu vrátí funkce `setInterval()`.
+
+```ts
+import { createRobutek } from "./libs/robutek";
+const intervalId = setInterval(()=>{
+    console.log("interval");
+}, 1000);
+
+await sleep(10000);
+
+clearInterval(intervalId);
+```
+
+
 
 Události řízené stiskem tlačítka můžeme ovládat pomocí přiložené knihovny `gpio`.
 `GPIO` je jednoduchá elektronická konstrukce, která nám umožňuje posílat nebo přijímat bitové informace, a na základě toho měnit chování našeho programu.
@@ -64,6 +82,7 @@ gpio.on("falling", robutek.Pins.ButtonRight, () => {
 Pomocí událostí rozsvítíme při stisknutí tlačítka (`robutek.Pins.ButtonRight`) RGB LED na ESP32 (`robutek.Pins.ILED`) a při puštění ho opět zhasneme.
 
 ??? note "Řešení"
+
     ```ts
     import { createRobutek } from "./libs/robutek.js"
     import * as colors from "./libs/colors.js";
@@ -103,7 +122,7 @@ Vzpomeňme si z prvního programu, že opakování dosáhneme pomocí `setInterv
     gpio.pinMode(robutek.Pins.ButtonRight, gpio.PinMode.INPUT); // nastaví pin 0 jako vstup
 
     setInterval(() => { // pravidelně vyvolává událost
-    console.log(gpio.read(robutek.Pins.ButtonRight)); // načte a vypíše stav tlačítka připojeného na pin 0
+        console.log(gpio.read(robutek.Pins.ButtonRight)); // načte a vypíše stav tlačítka připojeného na pin 0
     }, 500); // čas opakování se udává v milisekundách (500 ms je 0,5 sekundy)
     ```
 

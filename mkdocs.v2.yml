@@ -186,5 +186,7 @@ nav:
               - robotExtensions/blokRGB/setup.md
               - robotExtensions/blokRGB/calibration.md
               - robotExtensions/blokRGB/readData.md
+      - WiFi: 
+          - robotExtensions/blokWiFi/index.md
       # - I2C:
       #     - robotExtensions/blokI2C/index.md

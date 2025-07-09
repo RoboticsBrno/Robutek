@@ -1,10 +1,10 @@
 # Měření
 
-Pro měření využejeme funkce `readCalRGB()`. Tato funkce nám vráti kalibrované data v rozsahu `0-1`. Formát vrácených dat však přimo neodpovídá formátu, který očekává knihovna `SmartLeds`. K převodu mezi nimi využijeme funkci `sensorDataToRGB(SENSOR_DATA)` z knihovny `colors`. S formátem RGB už můžeme pracovat pohodlně.
+Pro měření využejeme funkce `readRGB()`. Tato funkce nám vráti kalibrované data v rozsahu `0-1`. Formát vrácených dat však přimo neodpovídá formátu, který očekává knihovna `SmartLeds`. K převodu mezi nimi využijeme funkci `sensorDataToRGB(SENSOR_DATA)` z knihovny `colors`. S formátem RGB už můžeme pracovat pohodlně.
 
 ```ts
 // vyčteme kalibrovaná data, funkce vrací pole se 3 hodnotami 0-1
-const sensorData = sensor.readCalRGB();
+const sensorData = sensor.readRGB();
 
 // provedeme převod na formát RGB
 const rgb = colors.sensorDataToRGB(sensorData);
@@ -22,7 +22,7 @@ takto může vypadat objekt rgb (toto je fialová barva)
 
 !!! note "Další funkce"
 
-    Knihovna umožňuje také měření jednotlivých barevných kanálů: `readRed()`, `readGreen()`, `readBlue()`, `readIR()`, `readClear()`. Pro čtení hodnot na RGB kanálech je však efektivnější použít funkci `readCalRGB()`.
+    Knihovna umožňuje také měření jednotlivých barevných kanálů: `readRed()`, `readGreen()`, `readBlue()`, `readIR()`, `readClear()`. Pro čtení hodnot na RGB kanálech je však efektivnější použít funkci `readRGB()`.
 
 
 ### Příklad 1
@@ -58,7 +58,7 @@ r: 123, g: 234, b: 45
     sensor.loadCalibration("default");
 
     setInterval(() => {
-        const calData = sensor.readCalRGB();
+        const calData = sensor.readRGB();
         const rgb = colors.sensorDataToRGB(calData);
         console.log(`r: ${rgb.r}, g: ${rgb.g}, b: ${rgb.b}`);
     }, 50);

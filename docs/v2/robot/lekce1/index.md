@@ -4,9 +4,12 @@ Zde si vyzkoušíme vytvořit první projekt a nahrát jej do Robůtka.
 
 === "Přes VS Code rozšíření"
 
+    Odkaz na projekt:
     ```
     https://robutek.robotikabrno.cz/v2/robot/lekce1/example1.tar.gz
     ```
+    !!! warning "Varování"
+        Odkaz si zkopírujte než začnete tvořit projekt, když vyjedete z VSCode při vytváření projektu, vytváření projektu se vám zruší.
 
     1. V prvním kroku si na počítači nachystáme složku `RoboCamp-2025`, do které si budeme ukládat veškeré projekty.
     2. Klikneme pravým tlačítkem na ikonku `Visual Studio Code` a vybereme možnost `New window`.

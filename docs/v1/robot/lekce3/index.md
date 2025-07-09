@@ -167,7 +167,7 @@ Pokud při stisku tlačítka svítí poslední LED, zhasneme ji, a rozsvítíme 
 
     const ledStrip = new SmartLed(robutek.Pins.ILED, 9, LED_WS2812);
 
-    gpio.pinMode(robutek.Pins.ButtonRight, gpio.PinMode.INPUT_PULLUP); // Nastavíme tlačítko
+    gpio.pinMode(robutek.Pins.ButtonRight, gpio.PinMode.INPUT); // Nastavíme tlačítko
 
     let index : number = 1;
     let color : Rgb = colors.light_blue; // Vybereme si barvu

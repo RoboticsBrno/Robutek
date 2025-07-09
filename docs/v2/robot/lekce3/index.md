@@ -101,6 +101,11 @@ ledStrip.set(0, colors.green); // Rozsvítí LEDku zeleně pomocí předdefinova
 ledStrip.set(0, { r: 0, g: 255, b: 0 }); // Rozsvítí LEDku zeleně pomocí vlastní barvy
 ```
 
+
+
+
+Vytvoříme si nový projekt z odkazu: 
+
 === "Odkaz"
     ```
     https://robutek.robotikabrno.cz/v2/robot/lekce3/project3.tar.gz
@@ -187,7 +192,7 @@ Pokud při stisku tlačítka svítí poslední LED, zhasneme ji, a rozsvítíme 
 
     const ledStrip = new SmartLed(robutek.Pins.ILEDConnector, 8, LED_WS2812B);
 
-    gpio.pinMode(robutek.Pins.ButtonRight, gpio.PinMode.INPUT_PULLUP); // Nastavíme tlačítko
+    gpio.pinMode(robutek.Pins.ButtonRight, gpio.PinMode.INPUT); // Nastavíme tlačítko
 
     let index: number = 0;
     let color: colors.Rgb = colors.light_blue; // Vybereme si barvu
