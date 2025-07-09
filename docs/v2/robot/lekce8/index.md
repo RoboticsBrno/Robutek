@@ -96,7 +96,9 @@ Aby komunikace se zařízením nebyla pouze jednostranná, a my mohli z počíta
 Jakmile máme vytvořený objekt typu readline, pomocí `await reader.read()` počkáme na vstup. Jelikož jde o speciální funkci, můžeme ji volat pouze z nové funkce, která je označena jako `async function`.
 
 ??? info "Ukázka práce s řetězcem s readline"
+
     ```ts
+
     import { stdout } from "stdio";
     import { readline } from "./libs/readline.js";
 
@@ -113,6 +115,7 @@ Jakmile máme vytvořený objekt typu readline, pomocí `await reader.read()` po
                 stdout.write("Ukončuji.\n");  // vypíše text na konzoli
                 break;  // ukončí cyklus
             }
+            await sleep(10)
         }
         reader.close();  // ukončí čtení z konzole
     }

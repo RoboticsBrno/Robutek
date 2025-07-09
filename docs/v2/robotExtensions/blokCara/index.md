@@ -103,7 +103,7 @@ async function main() {
     // <--- Tady budeme řídit robota podle čáry
 
     // Krátký sleep, který nechá běžet zbytek Robůtka
-    await sleep(1);
+    await sleep(10);
   }
 }
 
@@ -222,7 +222,7 @@ async function main() {
     }
 
     // Krátký sleep, který nechá běžet zbytek Robůtka
-    await sleep(1);
+    await sleep(10);
   }
 }
 
