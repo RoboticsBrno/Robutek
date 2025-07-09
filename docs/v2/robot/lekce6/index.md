@@ -51,7 +51,7 @@ Ve spojení se znalostmi z minulých lekcí napište program, který po stisku t
 
     gpio.on("falling", robutek.Pins.ButtonRight, () => { // událost, která proběhne při stisknutí tlačítka připojeného na pin 0
         console.log("Stisknuto, začínáme počítat");
-        for (let i: number = 0; i < 9; i++) { // vypíšeme čísla od 0 do 8
+        for (let i: number = 0; i < 10; i++) { // vypíšeme čísla od 0 do 9
             console.log(i);
         }
         console.log(""); // oddělíme jednotlivé stisky
