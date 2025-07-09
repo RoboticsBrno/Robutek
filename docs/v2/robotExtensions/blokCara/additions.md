@@ -30,7 +30,7 @@ main().catch(console.error);
 
 ## Jemnější styl jízdy
 
-Robůtek s sebou škube tam a zpátky, jak bychom to mohli vyřešit. Dřív jsme věděli, že čára je pod jedním senzorem, druhým senzorem a nebo "někde mezi". Teď ale víme jak moc mimo jsme a tak můžeme reagovat přiměřeně. Zvolíme si nějaký koeficient k_p, kterým vynásobíme rozdíl mezi ideální a reálnou pozicí vůči čáře a toto číslo použijeme při zatáčení
+Robůtek s sebou škube tam a zpátky, jak bychom to mohli vyřešit? Dřív jsme věděli, že čára je pod jedním senzorem, druhým senzorem a nebo "někde mezi". Teď ale víme jak moc mimo jsme a tak můžeme reagovat přiměřeně. Zvolíme si nějakou ideální pozici (setpoint) a nějaký koeficient k_p, kterým vynásobíme rozdíl mezi ideální a reálnou pozicí vůči čáře a toto číslo použijeme při zatáčení.
 
 ```ts
 import { createRobutek } from "./libs/robutek.js"
@@ -42,6 +42,10 @@ async function main() {
     while(true) {
         const l = robutek.readSensor("LineFR");
         let error = setpoint - l;
+        /* 
+        robutek.move prijima hodnoty od -1 do 1,
+        prevedeme si proto chybu do tohoto rozsahu
+        */
         let normalized_error = error / 512;
         robutek.move(normalized_error * k_p);
         await sleep(1);
