@@ -61,7 +61,6 @@ Robůtek už jezdí plynuleji a snad i rychleji. Dost možná se ale pořád tř
 ```ts
 
 import { createRobutek } from "./libs/robutek.js"
-import Layout from "./layout.js"
 const robutek = createRobutek("V2");
 const setpoint = 512;
 let speed = 789;
