@@ -6,13 +6,14 @@ set -e
 # Find all tsconfig.json files in docs/ and run command in those directories
 find "docs" -type f -name "tsconfig.json" | while read -r tsconfig_path; do
     target_dir=$(dirname "$tsconfig_path")
-    
+
     # Change to the directory containing tsconfig.json and run your command
     echo "Running command in: $target_dir"
-    cd "$target_dir"
-    
+    pushd "$target_dir"
+
     npx jac build
-    
+    rm -rf build
+
     # Return to the original directory
-    cd - > /dev/null
+    popd
 done

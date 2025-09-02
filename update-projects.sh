@@ -11,5 +11,6 @@ find "docs" -type f -name "tsconfig.json" | while read -r tsconfig_path; do
     cp -r "robutekLibrary/@types" "$target_dir"
     cp -r "robutekLibrary/src/libs" "$target_dir/src"
     cp -r "robutekLibrary/tsconfig.json" "$target_dir/tsconfig.json"
+    cp -r "robutekLibrary/manifest.json" "$target_dir/manifest.json"
 
 done

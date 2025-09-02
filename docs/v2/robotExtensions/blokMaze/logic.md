@@ -7,6 +7,7 @@ U bludiště se standartně používá algoritmus pod názvem **pravidlo pravé 
 Pokud se můžeme otočit vpravo a udělat *"krok"*, uděláme ho, pokud ne, otočime se vlevo a zkusíme znova.
 
 ??? abstract "Pseudo kód"
+
     ```ts
     while (true){
         if (can_go_right()) {

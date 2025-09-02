@@ -1,8 +1,10 @@
 # Lekce 4 - Motory
 
-V této lekci zkusíme točit motory a pohybovat robotem.
+V této lekci si vyzkoušíme točit motory a pohybovat robotem.
 
-!!! tip "Polož si Robůtka na něco tak, aby se kola nedotýkala země a mohla se volně točit - tak můžeš kód otestovat bez toho, aby Robůtek sjel ze stolu."
+!!! tip "Položme si Robůtka na něco tak, aby se kola nedotýkala země a mohla se volně točit - tak můžeme kód otestovat bez toho, aby Robůtek sjel ze stolu."
+
+Vytvoříme si nový projekt z odkazu na prázdný projekt:
 
 === "Odkaz"
     ```
@@ -15,18 +17,18 @@ V této lekci zkusíme točit motory a pohybovat robotem.
 import { createRobutek } from "./libs/robutek.js";
 import * as colors from "./libs/colors.js";
 import * as gpio from "gpio";
-import { SmartLed, LED_WS2812 } from "smartled";
+import { SmartLed, LED_WS2812B } from "smartled";
 const robutek = createRobutek("V2");
 ```
 
-To je dobrý začátek - pokračovat budeme na konci souboru.
+To je dobrý začátek - pokračujme na konci souboru.
 
 # Async main funkce
 
-Motory jsou tzv. asynchroní, to znamená, se ovládají příkazem, který může trvat delší dobu, než se vykoná
+Motory jsou tzv. asynchroní, to znamená, že se ovládají příkazem, který může trvat delší dobu, než se vykoná
 (například "ujeď 50cm" bude trvat několik vteřin).
 
-Abychom mohli motory používat, je třeba přidat tuto "kostru" s `async function()`. Klidně ji nakopíruj, patří na konec souboru `src/index.ts`.
+Abychom mohli motory používat, je třeba přidat tuto "kostru" s `async function()`. Klidně ji zkopírujme, patří na konec souboru `src/index.ts`.
 
 ```typescript
 async function main() {
@@ -36,23 +38,27 @@ async function main() {
 main().catch(console.error);
 ```
 
-# Ježdění na vzdálenost
+# Řízení motorů
 
 Ježdění má tři části - nastavení rychlosti, rampy, a samotný pohyb:
 
-<!-- TODO change speed limit, maybe tell kids its not a hard limit and that they can experiment -->
-
-- `robutek.setSpeed(SPEED)` - _SPEED_ je číslo milimetrech za vteřinu, na Robůtkovi prakticky od -800 do 800 (záporné značí couvání)
-- `robutek.setRamp(ACCEL)` - _ACCEL_ je číslo udávající zrychlení Robůtka v mm/s^2. V případě, že je rovna nule, je zrychlení okamžité.
-- `await robutek.move(DIR, { distance: DISTANCE-MM })`
-  - _DIR_ je desetinné číslo od -1 do 1, kdy
-    - -1 je znamená úplně doleva,
-    - 0 je rovně a
-    - 1 je úplně doprava.
-  - _DISTANCE-MM_ značí, jak daleko má robot jet v milimetrech
+- `robutek.setSpeed(SPEED)` – _SPEED_ je rychlost pohybu v milimetrech za vteřinu, na Robůtkovi v rozsahu od -1200 do 1200 (záporné číslo znamená jízdu dozadu, s výjimkou pohybu na vzdálenost, kde se couvání zadává zápornou vzdáleností).
+- `robutek.setRamp(ACCEL)` – _ACCEL_ je číslo udávající zrychlení Robůtka v mm/s². V případě, že je rovna nule, je zrychlení okamžité.
+- `await robutek.move(CURVE, { distance: DISTANCE })`
+    - _CURVE_ je desetinné číslo od -1 do 1, kdy
+        - -1 je znamená otáčení na místě doleva,
+        - 0 je rovně a
+        - 1 je otáčení doprava.
+        - Čísla mezi znači jízdu po oblouku s různým poloměrem.
+    - _DISTANCE_ značí ujetou vzdálenost v milimetrech
+- `await robutek.move(CURVE, { time: TIME })` – _TIME_ je čas v milisekundách, po který má robot jet.
+- `robutek.move(CURVE)` – Robůtek pojede neomezeně dlouho, dokud ho nezastavíme pomocí příkazu `robutek.stop()`.
 
 Zadávání parametrů rychlosti a rampy není potřeba opakovat při každém pohybu - knihovna si hodnotu pamatuje a při dalším volání funkce
 `move` ji použije.
+
+Rychlost je možné měnit i během jízdy, pomocí příkazu `robutek.setSpeed`. Příkazem `robutek.move(CURVE)` je také možné měnit směr jízdy, aniž by bylo nutné zastavovat Robůtka.
+
 
 ## Příklad
 

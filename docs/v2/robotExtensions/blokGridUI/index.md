@@ -16,10 +16,10 @@ Tady máte ke stažení popsaný projekt (nastavení barvy ledky na desce, blika
 
 === "Odkaz"
     ```
-    https://robutek.robotikabrno.cz/v2/robotExtentions/blokGridUI/colors-gridui.tar.gz
+    https://robutek.robotikabrno.cz/v2/robotExtensions/blokGridUI/colors-gridui.tar.gz
     ```
 === "Zip"
-    [Stáhnout ZIP](colors_gridui.zip){ .md-button .md-button--primary }
+    [Stáhnout ZIP](colors-gridui.zip){ .md-button .md-button--primary }
 
 
 

@@ -22,7 +22,7 @@ Do kulatých závorek píšeme tři věci:
 
 - řídící proměnnou s její výchozí hodnotou
 - výraz, který určuje počet opakování
-- nakonec jednoduchou operaci která se provede při každém průchodu cyklem jako poslední operace
+- nakonec jednoduchou operaci, která se provede při každém průchodu cyklem jako poslední operace
 
 Tedy vytváříme proměnnou `#!ts i` s výchozí hodnotou `#!ts 0`, která bude existovat po dobu vykonávání cyklu.
 Ačkoliv v běžném životě počítáme věci od `1`, v informatice častěji začínáme `0`. Může zde však být cokoliv.
@@ -31,7 +31,7 @@ Následně definujeme výraz `#!ts i < 3 `, který určuje, za jakých podmínek
 
 Na konci cyklu zvýšíme `#!ts i ` o jedna.
 
-Při prvním průchodu bude tedy `#!ts i = 0` při druhém `#!ts i = 1 ` a při třetím `#!ts i = 2 ` při dalším zvyšování by platilo `#!ts i = 3 ` tam ale už nebude pravdivý výraz `i < 3` a cyklus se tedy ukončí.
+Při prvním průchodu bude tedy `#!ts i = 0`, při druhém `#!ts i = 1`, a při třetím `#!ts i = 2`. Při dalším zvyšování by platilo `#!ts i = 3`, tam ale už nebude pravdivý výraz `i < 3` a cyklus se tedy ukončí.
 
 Do složených závorek píšeme vykonávaný kód, který se v tomto případě vykoná 3-krát.
 
@@ -43,15 +43,18 @@ Ve spojení se znalostmi z minulých lekcí napište program, který po stisku t
 
     ```ts
     import * as gpio from "gpio";
+    import { createRobutek } from "./libs/robutek";
 
-    gpio.pinMode(BTN_PIN, gpio.PinMode.INPUT); // nastaví pin 0 jako vstup
+    const robutek = createRobutek("V2")
 
-    gpio.on("falling", BTN_PIN, () => { // událost, která proběhne při stisknutí tlačítka připojeného na pin 0
-    	console.log("Stisknuto, začínáme počítat");
-    	for (let i: number = 0; i < 9; i++) { // vypíšeme čísla od 0 do 8
-    		console.log(i);
-    	}
-    	console.log(""); // oddělíme jednotlivé stisky
+    gpio.pinMode(robutek.Pins.ButtonRight, gpio.PinMode.INPUT); // nastaví pin 0 jako vstup
+
+    gpio.on("falling", robutek.Pins.ButtonRight, () => { // událost, která proběhne při stisknutí tlačítka připojeného na pin 0
+        console.log("Stisknuto, začínáme počítat");
+        for (let i: number = 0; i < 10; i++) { // vypíšeme čísla od 0 do 9
+            console.log(i);
+        }
+        console.log(""); // oddělíme jednotlivé stisky
     });
     ```
 
@@ -95,7 +98,10 @@ Nyní napíšeme program, který do konzole vypíše čtverec složený z hvězd
 
 Velikost tohoto čtverce určete pomocí konstanty, jejíž hodnota udává počet řádku a sloupců.
 
-Pokud nechceme za vypsanými znaky nový řádek, místo známého `#!ts console.log()` použijeme `#!ts stdout.write`
+Pokud nechceme za vypsanými znaky nový řádek, místo známého `#!ts console.log()` použijeme `#!ts stdout.write` ale potřebujeme importovat novou knihovnu: 
+```ts
+import { stdout } from "stdio";
+```
 
 ??? note "Řešení"
 

@@ -52,6 +52,7 @@ async function main() {
     while (true) {
         const m = await vl.read();
         console.log("Distance: " + m.distance + " mm  \tSignal: " + m.signalRate + "\tAmb: " + m.ambientRate + "\tSPAD: " + m.effectiveSpadRtnCount);
+        await sleep(10);
     }
 }
 

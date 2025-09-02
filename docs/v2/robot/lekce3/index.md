@@ -1,7 +1,7 @@
 # Lekce 3 - Proměnné a podmínky
 
 V imperativním programování si držíme stav pomocí **proměnných**. Proměnné jsou pojmenované hodnoty,
-které můžeme měnit, a opakovaně používat v různých částech kódu.
+které můžeme měnit a opakovaně používat v různých částech kódu.
 
 Proměnná má svůj typ, který určuje, jaké hodnoty může proměnná mít. Proměnnou vytvoříme pomocí
 klíčového slova `let`.
@@ -101,6 +101,11 @@ ledStrip.set(0, colors.green); // Rozsvítí LEDku zeleně pomocí předdefinova
 ledStrip.set(0, { r: 0, g: 255, b: 0 }); // Rozsvítí LEDku zeleně pomocí vlastní barvy
 ```
 
+
+
+
+Vytvoříme si nový projekt z odkazu: 
+
 === "Odkaz"
     ```
     https://robutek.robotikabrno.cz/v2/robot/lekce3/project3.tar.gz
@@ -116,12 +121,12 @@ Pomocí jedné proměnné se stavem a podmínky každou sekundu buď rozsvítím
 ??? note "Řešení"
 
     ```ts
-    import { LED_WS2812, SmartLed } from "smartled";
+    import { LED_WS2812B, SmartLed } from "smartled";
     import * as colors from "./libs/colors.js";
     import { createRobutek } from "./libs/robutek.js";
     const robutek = createRobutek("V2");
 
-    const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812);
+    const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812B);
 
     let on: boolean = false; // LED je vypnutá
 
@@ -149,11 +154,11 @@ opět nastavit na `0`.
 
     ```ts
     import * as colors from "./libs/colors.js";
-    import { LED_WS2812, SmartLed } from "smartled";
+    import { LED_WS2812B, SmartLed } from "smartled";
     import { createRobutek } from "./libs/robutek.js"
     const robutek = createRobutek("V2");
 
-    const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812);
+    const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812B);
 
     let shade = 0; // Držíme si stav s aktuálním odstínem
 
@@ -179,15 +184,15 @@ Pokud při stisku tlačítka svítí poslední LED, zhasneme ji, a rozsvítíme 
 
     ```ts
     import * as colors from "./libs/colors.js";
-    import { LED_WS2812, SmartLed } from "smartled";
+    import { LED_WS2812B, SmartLed } from "smartled";
     import { createRobutek } from "./libs/robutek.js";
     import * as gpio from "gpio";
 
     const robutek = createRobutek("V2");
 
-    const ledStrip = new SmartLed(robutek.Pins.ILEDConnector, 8, LED_WS2812);
+    const ledStrip = new SmartLed(robutek.Pins.ILEDConnector, 8, LED_WS2812B);
 
-    gpio.pinMode(robutek.Pins.ButtonRight, gpio.PinMode.INPUT_PULLUP); // Nastavíme tlačítko
+    gpio.pinMode(robutek.Pins.ButtonRight, gpio.PinMode.INPUT); // Nastavíme tlačítko
 
     let index: number = 0;
     let color: colors.Rgb = colors.light_blue; // Vybereme si barvu

@@ -57,7 +57,7 @@ async function main() {
     }
 
     // Krátký sleep, který nechá běžet zbytek Robůtka
-    await sleep(1);
+    await sleep(10);
   }
 }
 

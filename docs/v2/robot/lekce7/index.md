@@ -62,7 +62,7 @@ Co když se však chceme pohybovat mezi čtverci různě daleko, nebo mít každ
 
 ## Funkce
 
-Funkce je pojmenovaný kus kódu. Tento kus kódu jednou napíšeme, a poté ho ze zbytku programu můžeme libovolně volat (spouštět). Celkově tak zpřehledňuje programy, a dělá je rozšířitelnější.
+Funkce je pojmenovaný kus kódu. Tento kus kódu jednou napíšeme a poté ho ze zbytku programu můžeme libovolně volat (spouštět). Celkově tak zpřehledňuje programy a dělá je rozšířitelnější.
 
 V programu rozlišujeme mezi definicí funkce a jejím voláním. Definice vypadá následovně:
 
@@ -257,12 +257,12 @@ Napište funkci `drawPolygon()`, která vezme 2 argumenty: počet stran a délku
     }
 
     async function drawPolygon(sides: number, size: number): Promise<void> {
-    pen.write(robutek.PenPos.Down);
-    for (let side: number = 0; side < sides; side++) {
-        await robutek.move(0, { distance: size });
-        await robutek.rotate(turnAngle(sides));
-    }
-    pen.write(robutek.PenPos.Up);
+        pen.write(robutek.PenPos.Down);
+        for (let side: number = 0; side < sides; side++) {
+            await robutek.move(0, { distance: size });
+            await robutek.rotate(turnAngle(sides));
+        }
+        pen.write(robutek.PenPos.Up);
     }
 
     await drawPolygon(5, 100); // pětiúhelník
@@ -272,8 +272,4 @@ Napište funkci `drawPolygon()`, která vezme 2 argumenty: počet stran a délku
 
 ## Výstupní úkol V1
 
-Napište program, který nakreslí jednoduchý domek se stromkem. Rozdělte kreslení mezi funkce `drawHouse()` s parametrem určujícím velikost domu a `drawTree()` s paramterem určujícím výšku stromu.
-
-## Výstupní úkol V2
-
-Vytvořte funkci, která nakreslí slunce s počtem paprsků daným paramterem.
+Napište program, který nakreslí jednoduchý domek (čtverec s trojúhelníkovou střechou) se stromkem (jedna linka jako kmen a kružnice jako koruna). Rozdělte kreslení mezi funkce `drawHouse()` a `drawTree()` s parametrem výška stromu.

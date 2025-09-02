@@ -8,11 +8,15 @@
 
     ![light connector](assets/stage3/light_w_cable.jpg)
 
-2. Pásek připojte k Robůtkovi.
+2. Zapájejte pásek.
+
+    ![light connector](assets/stage3/soldering.jpg)
+
+3. Pásek připojte k Robůtkovi.
 
     ![light connector](assets/stage3/cabel-connect.jpg)
-
-3. Příslušenství si můžete dát kamkoliv na Robůtka, na obrázku je doporučené místo.
+    
+4. Příslušenství si můžete dát kamkoliv na Robůtka, na obrázku je doporučené místo.
 
 !!! danger "Pásek přidělejte **GUMOLEPEM, NE SEKUNĎÁKEM!!**" 
 ![light connector](assets/stage3/glue-in-place.jpg)

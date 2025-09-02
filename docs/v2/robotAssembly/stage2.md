@@ -14,9 +14,9 @@
 
 1. Sundejte z Robůtka dřevěnou palubu (pokud ji na robůtku máte).
 
-    ![](assets/stage2/IMG-step12c.jpeg)
-    ![](assets/stage2/IMG-step12b.jpeg)
-    ![](assets/stage2/IMG-step12a.jpeg)
+    ![](assets/stage1/IMG-step12c.jpeg) <!-- don't change links, it should say stage 1  -->
+    ![](assets/stage1/IMG-step12b.jpeg)
+    ![](assets/stage1/IMG-step12a.jpeg)
 
 2. Připravte si fixu, držák na fixu, šroubek, matku a přípravek.
 
@@ -45,7 +45,7 @@
 
     ![](assets/stage2/IMG-stage2-step6mod.png)
 
-8. Protáhněte kabel od serva dřevěnou palubou. Palubu si odmontujte z Robůtka.
+8. Protáhněte kabel od serva dřevěnou palubou.
 
     ![](assets/stage2/IMG-stage2-step7.jpeg)
 
@@ -78,7 +78,19 @@
 
 14. Otočte si servo do nulové pozice.
 
-    !!! danger "Buď zajděte za orgem, který vám servo nastaví, nebo pokud to umíte, můžete si ho nastavit sami."
+    Abychom mohli jednoduše pohybovat tužkou, jsou v knihovně dostupné konstanty pro pozice serva. Páču na servo je ale potřeba nasadit do správné pozice, aby konstanty odpovídaly.
+
+    Pro správné umístění otočíme servo programem na pozici 0 a páčku nasadíme tak, aby směřovala přímo vzhůru. K tomu je potřeba spustit následující kód:
+
+    ```ts
+    import { createRobutek } from "./libs/robutek.js";
+    import { Servo } from "./libs/servo.js";
+
+    const robutek = createRobutek("V2");
+    const servo = new Servo(robutek.Pins.Servo2, 1, 4);
+
+    servo.write(0);
+    ```
 
 15. Nasaďte na servo páčku dle polohy na obrázku.
 

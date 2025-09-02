@@ -73,4 +73,6 @@ let speedMul = 500;
 robutek.leftMotor.move();
 robutek.rightMotor.move();
 
+await sleep(10000);
+
 console.log("Otevři aplikaci RBController nebo otevři prohlížeč a zadej IP: http://" + wifi.currentIp() + " pro ovládání robota.");
