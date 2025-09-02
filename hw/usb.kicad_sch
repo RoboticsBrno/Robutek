@@ -3496,7 +3496,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 153.67) (xy 144.78 143.51)
+			(xy 127 152.4) (xy 144.78 142.24)
 		)
 		(stroke
 			(width 0)
@@ -3626,7 +3626,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 153.67) (xy 127 157.48)
+			(xy 127 152.4) (xy 127 157.48)
 		)
 		(stroke
 			(width 0)
@@ -3983,16 +3983,6 @@
 			(type default)
 		)
 		(uuid "8889cce1-bba4-479d-aef2-68a038801267")
-	)
-	(wire
-		(pts
-			(xy 144.78 143.51) (xy 144.78 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d4536b6-3355-4bca-8a25-9ddcf73d3c25")
 	)
 	(wire
 		(pts
