@@ -5844,7 +5844,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C320576"
+		(property "LCSC" "C2933510"
 			(at 157.48 82.55 0)
 			(effects
 				(font
@@ -5853,7 +5853,7 @@
 				(hide yes)
 			)
 		)
-		(property "Basic/Extended" "B"
+		(property "Basic/Extended" "E"
 			(at 157.48 82.55 0)
 			(effects
 				(font
@@ -6300,7 +6300,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C320576"
+		(property "LCSC" "C2933510"
 			(at 233.68 82.55 0)
 			(effects
 				(font
@@ -6309,7 +6309,7 @@
 				(hide yes)
 			)
 		)
-		(property "Basic/Extended" "B"
+		(property "Basic/Extended" "E"
 			(at 233.68 82.55 0)
 			(effects
 				(font
