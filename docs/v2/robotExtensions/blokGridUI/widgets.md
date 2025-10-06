@@ -1,5 +1,5 @@
 # Widgety
-[GridUI designer](https://gridui.robotikabrno.cz/) nám nabízí spoustu různých widgetů, ale co všechno s nimi dokážeme vyvádět? Tady jich většinu projdeme a ukážeme si všechny informace, které jsme schopni ze jednotlivých widgetů tahat a naopak co u nich všechno můžeme kódem nastavovat.
+[GridUI designer](https://gridui.robotikabrno.cz/) nám nabízí spoustu různých widgetů, ale co všechno s nimi dokážeme vyvádět? Tady jich většinu projdeme a ukážeme si všechny informace, které jsme schopni z jednotlivých widgetů získat a naopak, co u nich všechno můžeme kódem nastavovat.
 
 [GridUI designer](https://gridui.robotikabrno.cz/){ .md-button .md-button--primary }
 
@@ -117,7 +117,7 @@ Layout.Circle1.max = 100; // maximální hodnota
 Layout.Circle1.value = 75; // jeden konec vybarvené části kruhu
 Layout.Circle1.valueStart = 50; // druhý konec vybarvené části kruhu
 ```
-!!! tip "Doporučuji si nejprve ručně pohrát s hodnotama v [designeru](https://gridui.robotikabrno.cz/) a pochopit, co která doopravdy dělá."
+!!! tip "Doporučuji si nejprve ručně pohrát s hodnotami v [designeru](https://gridui.robotikabrno.cz/) a pochopit, co která doopravdy dělá."
 
 ## Vstup
 
@@ -149,7 +149,7 @@ Layout.Input1.text = "superTajneHeslo"; // text ve vstupu
 
 ![](assets\joystick.png)
 
-U joysticku opět můžeme v `Layout.begin()` nastavit kód zpuštěný změnou jeho polohy nebo kliknutím/ťuknutím na něj. Také můžeme vyčítat jeho pozici pomocí `Layout.<joystickID></JoystickId>.x` a `Layout.<joystickId>.y`.
+U joysticku opět můžeme v `Layout.begin()` nastavit kód spuštěný změnou jeho polohy nebo kliknutím/ťuknutím na něj. Také můžeme vyčítat jeho pozici pomocí `Layout.<joystickID></JoystickId>.x` a `Layout.<joystickId>.y`.
 
 ```ts
 const OWNER = "owner";
