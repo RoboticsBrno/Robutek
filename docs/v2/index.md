@@ -54,7 +54,7 @@ Robůtek v základu umí:
 ## Jak začít
 
 1. **Sestavte hardware** podle [návodu na složení](robotAssembly/stage1).
-2. **Připravte prostředí pro Jaculus** – nainstalujte a postupujte dle [oficiální dokumentace Jaculus](https://jaculus.org/getting-started/).
+2. **Připravte prostředí pro Jaculus** – nainstalujte a postupujte dle [návodu](robot/lekce0/).
 3. **Nahrajte základní projekt** – využijte referenční **Robutek library** (viz níže) jako startovní bod.
 4. **Vyzkoušejte si senzory a pohyb** – zkuste si zajezdit, vypčíst enkodéry, IR senzory na čáru a RGB senzor.
 5. **Vyzkoušejte kreslení** – zasuňte fixu do držáku, servo zvedání fixy použijte pro start/stop kreslení.
