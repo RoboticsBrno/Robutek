@@ -4,6 +4,8 @@ import * as gpio from "gpio";
 import * as motor from "motor"
 import * as ledc from "ledc";
 import { DifferentialDrive } from "./differentialDrive.js";
+import { I2C1 } from "i2c";
+import { startBatteryChecker } from "./batteryChecker.js";
 
 const robutekDiameter = 83;  // mm
 const wheelDiameter = 33.3;  // mm
@@ -152,7 +154,10 @@ export class Robutek<PinsType extends typeof PinsV1 | typeof PinsV2> extends Dif
 
         gpio.pinMode(pins.SensSW, gpio.PinMode.OUTPUT);
 
+        gpio.pinMode(pins.StatusLED, gpio.PinMode.OUTPUT);
+
         this.Pins = pins;
+        this.setStatusLED(0);
     }
 
     private sw: number = 0;
@@ -199,6 +204,10 @@ export class Robutek<PinsType extends typeof PinsV1 | typeof PinsV2> extends Dif
         }
     }
 
+    public setStatusLED(state: number) {
+        gpio.write(this.Pins.StatusLED, state);
+    }
+
     public close() {
         this.leftMotor.close();
         this.rightMotor.close();
@@ -222,6 +231,9 @@ export function createRobutek(version: "V1" | "V2", ledcConfig: RobutekLedcConfi
         return new Robutek(PinsV1, EncoderTicksV1, RegV1, ledcConfig) as Robutek<typeof PinsV1>;
     }
     else {
-        return new Robutek(PinsV2, EncoderTicksV2 ,RegV2, ledcConfig) as Robutek<typeof PinsV2>;
+        const robutek = new Robutek(PinsV2, EncoderTicksV2 ,RegV2, ledcConfig) as Robutek<typeof PinsV2>;
+        I2C1.setup({ scl: robutek.Pins.SCL, sda: robutek.Pins.SDA });
+        startBatteryChecker(I2C1, (status) => robutek.setStatusLED(status));
+        return robutek;
     }
 }
