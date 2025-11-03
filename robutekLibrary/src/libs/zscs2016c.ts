@@ -1,5 +1,5 @@
 import * as i2c from "i2c";
-import { open as kvOpen, KeyValueNamespace } from "keyvalue";
+import { open as kvOpen } from "keyvalue";
 
 const ADDRESS_LOW = 0b1000_010;
 const ADDRESS_HIGH = 0b1000_011;
