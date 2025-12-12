@@ -80,12 +80,6 @@ plugins:
       enable_cache: True
       size: [1000, 800]
       extensions: [".jpg", ".jpeg", ".png", ".gif"]
-  # - typedoc:
-  #     source: "./docs/robot/lekce1/example1/@types/*.d.ts"
-  #     output_dir: "jaculusApi"
-  #     tsconfig: "./docs/robot/lekce1/example1/tsconfig.json"
-  #     options: "typedoc.json"
-  #     name: "Jaculus API documentation"
 
   - zip_folders:
       folders:
@@ -104,10 +98,6 @@ plugins:
         - tar.gz
       debug: true
 
-  - auto-refresh-build-pages:
-      update_message: "Návod byl aktualizován, chcete načíst novou verzi?"
-      yes_button_text: "Ano"
-      no_button_text: "Ne"
 
 extra:
   social:
@@ -123,9 +113,6 @@ extra:
       link: https://www.instagram.com/robotarna.helceletka
   version:
     provider: mike
-#   analytics:
-#     provider: google
-#     property: ASD
 
 extra_css:
   - assets/style.css
@@ -186,7 +173,7 @@ nav:
               - robotExtensions/blokRGB/setup.md
               - robotExtensions/blokRGB/calibration.md
               - robotExtensions/blokRGB/readData.md
-      - WiFi: 
+      - WiFi:
           - robotExtensions/blokWiFi/index.md
       # - I2C:
       #     - robotExtensions/blokI2C/index.md

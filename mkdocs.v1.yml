@@ -101,10 +101,6 @@ plugins:
         - tar.gz
       debug: true
 
-  - auto-refresh-build-pages:
-      update_message: "Návod byl aktualizován, chcete načíst novou verzi?"
-      yes_button_text: "Ano"
-      no_button_text: "Ne"
 
 extra:
   social:
@@ -120,10 +116,6 @@ extra:
       link: https://www.instagram.com/robotarna.helceletka
   version:
     provider: mike
-
-#   analytics:
-#     provider: google
-#     property: ASD
 
 extra_css:
   - assets/style.css
