@@ -30,13 +30,17 @@ V této kapitole si postavíme samotného Robůtka.
 
     ![](assets/stage1/IMG-step3.jpeg)
 
+3. Nasaďte kolečka na motory tak, jako na obrázku v dalším kroku.
+
+    !!! comment "Díra pro osu kola může být potřeba mírně rozšířit pilníkem, aby šlo nasadit snadněji, dejte však pozor, abyste díru nerozšířili příliš - kolo má jít nasadit trochu silou, aby dobře drželo."
+
 3. Vsaďte oba motory do domečku. <!-- TODO: zadefinovat otočení -->
 
     !!! danger "Netlačte motory do domečku silou, měly by jít vsadit lehce. Ujistěte se, zda jste motor otočili správně a že jsou kolejničky motoru zarovnány s drážkami v domečku."
     ![](assets/stage1/03-motorkyOrientace.png)
     ![](assets/stage1/IMG-step4b.jpeg)
 
-4. Pomocí malého plochého šroubováku odstraňte plastové zarážky z pinheadů. <!-- TODO: opravit fotky --> 
+4. Pomocí malého plochého šroubováku odstraňte plastové zarážky z pinheadů. <!-- TODO: opravit fotky -->
 
     !!! danger "Dávejte si pozor, abyste pinheady neohli."
     ![](assets/stage1/06-izolacniStavitko-souhrn.jpg)
@@ -53,9 +57,9 @@ V této kapitole si postavíme samotného Robůtka.
     ![](assets/stage1/IMG-step7c.jpeg)
     ![](assets/stage1/IMG-step6b.jpg)
 
-7. Zajděte za orgem, aby vám zapájel motory. Zároveň vám zkontroluje, že motory jedou, jak mají.
+7. Zkontrolujte, že mají motory dobrý kontakt s pinheady.
 
-    !!! danger "Přečtěte si popisek tohoto kroku, je to důležité!"
+    !!! comment "Volitelně můžete motory i zapájet, ale je potřeba dávat pozor, aby se nepřehřály a nepoškodily plastové části motoru, je tedy třeba pracovat velmi rychle a použít dostatek tavidla (doporučujeme pouze pokročilým)."
 
 8. Nasaďte enkodéry (magnety) na osku motoru.
 
@@ -72,9 +76,7 @@ V této kapitole si postavíme samotného Robůtka.
     ![](assets/stage1/IMG-step9b.jpeg)
     ![](assets/stage1/IMG-step9c.jpeg)
 
-11. Nasaďte dřevěnou základnu. Přišroubujte ji k robůtku pomocí čtyř šroubků M3x30.
-
-    !!! danger "Běžte na stůl 2 za orgem."
+11. Nasaďte dřevěnou základnu. Přišroubujte ji pomocí čtyř šroubků M3x30.
 
     !!! danger "Pozor na orientaci základny, díry musí sedět na součástky na desce."
     !!! danger "Šrouby do dřevěné základny neutahujte silou, aby ji nepoškodily."
