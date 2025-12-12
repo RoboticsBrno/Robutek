@@ -27,14 +27,7 @@ source .venv/bin/activate
 python3 -m pip install -r requirements.txt
 ```
 
-pro windows CMD:
-```bash
-python3 -m venv .venv
-./.venv/Scripts/Activate.bat
-python3 -m pip install -r requirements.txt
-```
-
-pro windows Powershell:
+pro windows PowerShell:
 ```bash
 python3 -m venv .venv
 ./.venv/Scripts/Activate.ps1
@@ -47,12 +40,7 @@ pro linux a macos:
 source .venv/bin/activate
 ```
 
-pro windows CMD: 
-```bash
-./.venv/Scripts/Activate.bat
-```
-
-pro windows Powershell: 
+pro windows PowerShell:
 ```bash
 ./.venv/Scripts/Activate.ps1
 ```
@@ -83,5 +71,3 @@ Podporovené soubory jsou `.jpg`, `.jpeg`, `.png`, `.gif`, `.svg`.
 
 ## Vychytávky
 Pro více rozjetých dokumentací je možné použít `--dev-addr 127.0.0.1:8001` pro specifikaci adresy a portu.
-
-
