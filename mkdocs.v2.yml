@@ -111,6 +111,8 @@ extra:
       link: https://www.youtube.com/@robotikabrno-robotarnaasps2392
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/robotarna.helceletka
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/wqhsRXPUzD
   version:
     provider: mike
 

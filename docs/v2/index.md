@@ -27,6 +27,8 @@ Robůtek v základu umí:
 - pohybovat se bludištěm,
 - přidávat další senzory
 
+Také se můžete se připojit na náš [Discord server](https://discord.gg/wqhsRXPUzD), kde vám rádi poradíme nejen s dotazy ohledně Robůtka.
+
 ---
 
 ## Schopnosti
@@ -106,4 +108,3 @@ Nacházejí se v sekci [**Programovací lekce**](robot/).
 - **Zjednodušená stavba** díky integrovaným encodérům
 
 ---
-
