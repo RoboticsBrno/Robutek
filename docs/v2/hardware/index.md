@@ -19,3 +19,6 @@ V hardwaru Robůtka jsou použity zejména tyto periferie:
 - [Vestavěné senzory](sensors.md)
 - [Akční členy a LED](actuators.md)
 - [Externí moduly](expansion.md)
+
+![Predni strana robota](assets/front.png)
+![Zadni strana robota](assets/back.png)

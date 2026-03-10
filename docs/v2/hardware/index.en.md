@@ -19,3 +19,6 @@ The Robutek hardware mainly uses these peripherals:
 - [Built-in sensors](sensors.md)
 - [Actuators and LEDs](actuators.md)
 - [External modules](expansion.md)
+
+![Front side](assets/front.png)
+![Back side](assets/back.png)
