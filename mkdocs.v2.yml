@@ -70,6 +70,83 @@ markdown_extensions:
 
 plugins:
   - search
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: cs
+          default: true
+          name: Čeština
+          build: true
+          site_name: Robůtek V2
+          theme:
+            language: cs
+        - locale: en
+          name: English
+          build: true
+          site_name: Robutek V2
+          theme:
+            language: en
+          nav:
+            - Home:
+                - index.md
+            - Hardware:
+                - hardware/index.md
+                - hardware/pinout.md
+                - hardware/sensors.md
+                - hardware/actuators.md
+                - hardware/expansion.md
+            - Robot Assembly:
+                - robotAssembly/index.md
+                - robotAssembly/stage1.md
+                - robotAssembly/stage2.md
+                - robotAssembly/stage3.md
+                - robotAssembly/stage4.md
+                - robotAssembly/stage5.md
+                - robotAssembly/stage6.md
+            - Programming Lessons:
+                - robot/index.md
+                - robot/faq/index.md
+                - robot/lekce0/index.md
+                - robot/lekce1/index.md
+                - robot/lekce2/index.md
+                - robot/lekce3/index.md
+                - robot/lekce4/index.md
+                - robot/lekce5/index.md
+                - robot/lekce6/index.md
+                - robot/lekce7/index.md
+                - robot/lekce8/index.md
+                - robot/lekce9/index.md
+            - Extensions:
+                - robotExtensions/index.md
+                - GridUI:
+                    - robotExtensions/blokGridUI/index.md
+                    - robotExtensions/blokGridUI/widgets.md
+                - Line:
+                    - robotExtensions/blokCara/index.md
+                    - robotExtensions/blokCara/sensors.md
+                    - robotExtensions/blokCara/linefollow.md
+                    - robotExtensions/blokCara/additions.md
+                - Sumo:
+                    - robotExtensions/blokSumo/index.md
+                - Maze:
+                    - robotExtensions/blokMaze/index.md
+                    - GPIO:
+                        - robotExtensions/blokMaze/gpio.md
+                        - robotExtensions/blokMaze/gpio-adv.md
+                    - robotExtensions/blokMaze/tof.md
+                    - robotExtensions/blokMaze/logic.md
+                - Color Sensor:
+                    - robotExtensions/blokRGB/index.md
+                    - robotExtensions/blokRGB/externalSensor.md
+                    - Programming:
+                        - robotExtensions/blokRGB/setup.md
+                        - robotExtensions/blokRGB/calibration.md
+                        - robotExtensions/blokRGB/readData.md
+                - WiFi:
+                    - robotExtensions/blokWiFi/index.md
   - open-in-new-tab
   - mike
   - glightbox:
@@ -126,6 +203,12 @@ extra_javascript:
 nav:
   - Domů:
       - index.md
+  - Hardware:
+      - hardware/index.md
+      - hardware/pinout.md
+      - hardware/sensors.md
+      - hardware/actuators.md
+      - hardware/expansion.md
   - Složení robota:
       - robotAssembly/index.md
       - robotAssembly/stage1.md

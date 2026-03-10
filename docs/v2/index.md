@@ -6,16 +6,16 @@ title: Robůtek
 
 ## Rozcestník
 
-1. [Úvod](#Úvod)
-2. [Návod na složení](robotAssembly/stage1)
-3. [Dokumentace]()
-4. [Programovací lekce](robot/)
+1. [Úvod](#uvod)
+2. [Návod na složení](robotAssembly/stage1.md)
+3. [Hardware reference](hardware/index.md)
+4. [Programovací lekce](robot/index.md)
 
 ## Úvod
 
 !!! note "Toto je dokumentace pro verzi V2 Robůtka."
     Hledáte verzi **V1**?
-    Najdete ji [tady](../v1).
+    Najdete ji [tady](https://robutek.robotikabrno.cz/v1/).
 
 Robůtek je robotická platforma určená pro výuku programování a robotiky, a zároveň jako rozšiřitelná platforma pro stavění vlastních robotů s minimálními vstupními nároky.
 
@@ -55,8 +55,8 @@ Také se můžete se připojit na náš [Discord server](https://discord.gg/wqhs
 
 ## Jak začít
 
-1. **Sestavte hardware** podle [návodu na složení](robotAssembly/stage1).
-2. **Připravte prostředí pro Jaculus** – nainstalujte a postupujte dle [návodu](robot/lekce0/).
+1. **Sestavte hardware** podle [návodu na složení](robotAssembly/stage1.md).
+2. **Připravte prostředí pro Jaculus** – nainstalujte a postupujte dle [návodu](robot/lekce0/index.md).
 3. **Nahrajte základní projekt** – využijte referenční **Robutek library** (viz níže) jako startovní bod.
 4. **Vyzkoušejte si senzory a pohyb** – zkuste si zajezdit, vypčíst enkodéry, IR senzory na čáru a RGB senzor.
 5. **Vyzkoušejte kreslení** – zasuňte fixu do držáku, servo zvedání fixy použijte pro start/stop kreslení.
@@ -76,13 +76,23 @@ Také se můžete se připojit na náš [Discord server](https://discord.gg/wqhs
 - **Kreslení:** Servo na kontrolu kreslení
 - **Programování:** **Jaculus** (viz [oficiální web](https://jaculus.org/getting-started/))
 
+### Hardware reference
+
+Pokud hledáte čistě hardwarové informace bez závislosti na konkrétním programovacím jazyku, použijte novou sekci [**Hardware**](hardware/index.md).
+Najdete tam:
+
+- přehled pinů a konektorů,
+- popis vestavěných senzorů,
+- popis motorů, serva a LED,
+- přehled externích modulů na `I2C` a dalších rozhraních.
+
 ---
 
 ## Programovací lekce
 
 V rámci [Robotického tábora 2025](https://robotickytabor.cz/) vznikly lekce pro výuku programování a práce s Robůtky.
 Byly zamýšlené pro práci s lektorem a nejsou vhodné pro samostatné studium.
-Nacházejí se v sekci [**Programovací lekce**](robot/).
+Nacházejí se v sekci [**Programovací lekce**](robot/index.md).
 
 ---
 
@@ -106,5 +116,3 @@ Nacházejí se v sekci [**Programovací lekce**](robot/).
 - Integrovaný **RGB senzor** pro detekci barev na podlaze.
 - **RGB podsvícení** pro hezčí vzhled a vizuální signalizaci.
 - **Zjednodušená stavba** díky integrovaným encodérům
-
----
