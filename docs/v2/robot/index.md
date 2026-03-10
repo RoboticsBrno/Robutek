@@ -19,16 +19,12 @@ gpio.write(robutek.Pins.StatusLED, 1)
 
 Pro kompletnost je pinout k nahlédnutí zde:
 
-<!-- TODO update pins -->
-
 ```typescript
-export enum Pins {
+enum Pins {
     StatusLED = 46,
 
-    // Jedna na desce a zároveň vývod pro pásek,
-    // po připojení externího pásku se tedy jedná
-    // o 8 + 1 = 9 diod celkem
-    SmartLeds = 48,
+    ILED = 48,
+    ILEDConnector = 36,
 
     ButtonLeft =  2,
     ButtonRight = 0,
@@ -48,10 +44,13 @@ export enum Pins {
     Motor1B = 12,
     Motor2A = 45,
     Motor2B = 13,
-    Enc1A = 39,
-    Enc1B = 40,
-    Enc2A = 42,
-    Enc2B = 41,
+    Enc1A = 40,
+    Enc1B = 39,
+    Enc2A = 41,
+    Enc2B = 42,
+
+    SDA = 10,
+    SCL = 3
 }
 ```
 
