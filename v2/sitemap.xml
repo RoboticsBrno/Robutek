@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/hardware/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/hardware/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/hardware/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/hardware/actuators/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/hardware/actuators/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/hardware/actuators/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/hardware/expansion/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/hardware/expansion/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/hardware/expansion/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/hardware/pinout/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/hardware/pinout/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/hardware/pinout/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/hardware/sensors/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/hardware/sensors/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/hardware/sensors/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robot/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robot/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robot/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robot/docs/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robot/docs/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robot/docs/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robot/docs/ble/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robot/docs/ble/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robot/docs/ble/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robot/docs/motors/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robot/docs/motors/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robot/docs/motors/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robot/docs/sens/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robot/docs/sens/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robot/docs/sens/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robot/docs/sim/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robot/docs/sim/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robot/docs/sim/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robot/docs/socket/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robot/docs/socket/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robot/docs/socket/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robot/docs/vl53/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robot/docs/vl53/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robot/docs/vl53/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robot/docs/wifi/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robot/docs/wifi/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robot/docs/wifi/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robot/faq/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robot/faq/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robot/faq/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robot/lekce0/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robot/lekce0/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robot/lekce0/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robot/lekce1/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robot/lekce1/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robot/lekce1/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robot/lekce2/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robot/lekce2/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robot/lekce2/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robot/lekce3/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robot/lekce3/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robot/lekce3/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robot/lekce4/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robot/lekce4/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robot/lekce4/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robot/lekce5/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robot/lekce5/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robot/lekce5/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robot/lekce6/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robot/lekce6/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robot/lekce6/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robot/lekce7/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robot/lekce7/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robot/lekce7/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robot/lekce8/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robot/lekce8/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robot/lekce8/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robot/lekce9/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robot/lekce9/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robot/lekce9/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotAssembly/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotAssembly/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotAssembly/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotAssembly/stage1/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotAssembly/stage1/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotAssembly/stage1/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotAssembly/stage2/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotAssembly/stage2/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotAssembly/stage2/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotAssembly/stage3/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotAssembly/stage3/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotAssembly/stage3/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotAssembly/stage4/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotAssembly/stage4/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotAssembly/stage4/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotAssembly/stage5/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotAssembly/stage5/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotAssembly/stage5/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotAssembly/stage6/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotAssembly/stage6/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotAssembly/stage6/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotExtensions/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotExtensions/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotExtensions/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotExtensions/blokCara/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotExtensions/blokCara/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotExtensions/blokCara/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotExtensions/blokCara/additions/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotExtensions/blokCara/additions/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotExtensions/blokCara/additions/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotExtensions/blokCara/linefollow/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotExtensions/blokCara/linefollow/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotExtensions/blokCara/linefollow/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotExtensions/blokCara/sensors/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotExtensions/blokCara/sensors/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotExtensions/blokCara/sensors/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotExtensions/blokGridUI/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotExtensions/blokGridUI/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotExtensions/blokGridUI/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotExtensions/blokGridUI/widgets/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotExtensions/blokGridUI/widgets/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotExtensions/blokGridUI/widgets/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotExtensions/blokI2C/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotExtensions/blokI2C/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotExtensions/blokI2C/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotExtensions/blokMaze/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotExtensions/blokMaze/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotExtensions/blokMaze/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotExtensions/blokMaze/gpio-adv/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotExtensions/blokMaze/gpio-adv/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotExtensions/blokMaze/gpio-adv/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotExtensions/blokMaze/gpio/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotExtensions/blokMaze/gpio/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotExtensions/blokMaze/gpio/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotExtensions/blokMaze/logic/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotExtensions/blokMaze/logic/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotExtensions/blokMaze/logic/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotExtensions/blokMaze/tof/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotExtensions/blokMaze/tof/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotExtensions/blokMaze/tof/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotExtensions/blokRGB/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotExtensions/blokRGB/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotExtensions/blokRGB/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotExtensions/blokRGB/calibration/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotExtensions/blokRGB/calibration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotExtensions/blokRGB/calibration/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotExtensions/blokRGB/externalSensor/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotExtensions/blokRGB/externalSensor/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotExtensions/blokRGB/externalSensor/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotExtensions/blokRGB/readData/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotExtensions/blokRGB/readData/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotExtensions/blokRGB/readData/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotExtensions/blokRGB/setup/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotExtensions/blokRGB/setup/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotExtensions/blokRGB/setup/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotExtensions/blokSim/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotExtensions/blokSim/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotExtensions/blokSim/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotExtensions/blokSumo/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotExtensions/blokSumo/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotExtensions/blokSumo/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotExtensions/blokSumo/logic/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotExtensions/blokSumo/logic/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotExtensions/blokSumo/logic/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robotExtensions/blokWiFi/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robotExtensions/blokWiFi/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robotExtensions/blokWiFi/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/robutekLibrary/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2/robutekLibrary/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2en/robutekLibrary/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/hardware/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/hardware/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2hardware/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/hardware/actuators/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/hardware/actuators/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2hardware/actuators/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/hardware/expansion/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/hardware/expansion/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2hardware/expansion/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/hardware/pinout/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/hardware/pinout/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2hardware/pinout/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/hardware/sensors/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/hardware/sensors/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2hardware/sensors/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robot/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robot/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robot/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robot/docs/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robot/docs/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robot/docs/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robot/docs/ble/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robot/docs/ble/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robot/docs/ble/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robot/docs/motors/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robot/docs/motors/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robot/docs/motors/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robot/docs/sens/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robot/docs/sens/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robot/docs/sens/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robot/docs/sim/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robot/docs/sim/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robot/docs/sim/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robot/docs/socket/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robot/docs/socket/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robot/docs/socket/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robot/docs/vl53/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robot/docs/vl53/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robot/docs/vl53/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robot/docs/wifi/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robot/docs/wifi/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robot/docs/wifi/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robot/faq/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robot/faq/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robot/faq/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robot/lekce0/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robot/lekce0/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robot/lekce0/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robot/lekce1/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robot/lekce1/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robot/lekce1/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robot/lekce2/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robot/lekce2/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robot/lekce2/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robot/lekce3/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robot/lekce3/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robot/lekce3/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robot/lekce4/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robot/lekce4/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robot/lekce4/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robot/lekce5/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robot/lekce5/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robot/lekce5/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robot/lekce6/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robot/lekce6/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robot/lekce6/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robot/lekce7/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robot/lekce7/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robot/lekce7/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robot/lekce8/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robot/lekce8/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robot/lekce8/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robot/lekce9/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robot/lekce9/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robot/lekce9/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotAssembly/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotAssembly/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotAssembly/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotAssembly/stage1/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotAssembly/stage1/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotAssembly/stage1/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotAssembly/stage2/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotAssembly/stage2/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotAssembly/stage2/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotAssembly/stage3/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotAssembly/stage3/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotAssembly/stage3/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotAssembly/stage4/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotAssembly/stage4/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotAssembly/stage4/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotAssembly/stage5/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotAssembly/stage5/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotAssembly/stage5/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotAssembly/stage6/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotAssembly/stage6/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotAssembly/stage6/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotExtensions/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotExtensions/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotExtensions/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokCara/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokCara/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotExtensions/blokCara/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokCara/additions/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokCara/additions/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotExtensions/blokCara/additions/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokCara/linefollow/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokCara/linefollow/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotExtensions/blokCara/linefollow/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokCara/sensors/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokCara/sensors/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotExtensions/blokCara/sensors/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokGridUI/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokGridUI/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotExtensions/blokGridUI/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokGridUI/widgets/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokGridUI/widgets/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotExtensions/blokGridUI/widgets/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokI2C/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokI2C/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotExtensions/blokI2C/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokMaze/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokMaze/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotExtensions/blokMaze/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokMaze/gpio-adv/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokMaze/gpio-adv/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotExtensions/blokMaze/gpio-adv/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokMaze/gpio/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokMaze/gpio/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotExtensions/blokMaze/gpio/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokMaze/logic/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokMaze/logic/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotExtensions/blokMaze/logic/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokMaze/tof/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokMaze/tof/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotExtensions/blokMaze/tof/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokRGB/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokRGB/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotExtensions/blokRGB/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokRGB/calibration/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokRGB/calibration/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotExtensions/blokRGB/calibration/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokRGB/externalSensor/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokRGB/externalSensor/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotExtensions/blokRGB/externalSensor/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokRGB/readData/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokRGB/readData/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotExtensions/blokRGB/readData/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokRGB/setup/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokRGB/setup/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotExtensions/blokRGB/setup/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokSim/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokSim/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotExtensions/blokSim/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokSumo/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokSumo/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotExtensions/blokSumo/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokSumo/logic/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokSumo/logic/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotExtensions/blokSumo/logic/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokWiFi/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robotExtensions/blokWiFi/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robotExtensions/blokWiFi/"/>
+    </url>
+    <url>
+        <loc>https://robutek.robotikabrno.cz/v2/en/robutekLibrary/</loc>
+        <lastmod>2026-03-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://robutek.robotikabrno.cz/v2/en/robutekLibrary/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://robutek.robotikabrno.cz/v2robutekLibrary/"/>
+    </url>
+</urlset>
