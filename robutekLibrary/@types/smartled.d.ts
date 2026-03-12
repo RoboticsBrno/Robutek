@@ -1,9 +1,5 @@
 declare module "smartled" {
-    interface Rgb {
-        r: number;
-        g: number;
-        b: number;
-    }
+    type Color = number;  // 0xRRGGBB
 
     interface LedType {
         T0H: number;
@@ -30,16 +26,16 @@ declare module "smartled" {
         /**
          * Set the color of the given LED.
          * @param index The index of the LED to set.
-         * @param rgb The color to set the LED to.
+         * @param color The color to set the LED to.
          */
-        public set(index: number, rgb: Rgb): void;
+        public set(index: number, color: Color): void;
 
         /**
          * Get the color of the given LED.
          * @param index The index of the LED to get.
          * @returns The color of the LED.
          */
-        public get(index: number): Rgb;
+        public get(index: number): Color;
 
         /**
          * Clear the buffer.

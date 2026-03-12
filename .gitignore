@@ -52,3 +52,5 @@ hw/fp-lib-table
 
 docs/**/@types
 docs/**/libs
+docs/**/manifest.json
+docs/**/tsconfig.json
