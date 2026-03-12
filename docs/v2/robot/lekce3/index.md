@@ -31,7 +31,7 @@ let d: number = b - a; // d je -5
 
 Abychom na základě hodnot proměnných mohli měnit chování programu, potřebujeme **podmínky**.
 
-Podmínka `if` nám umožňuje rozhodnout, jestli se určitý kus kódu vykoná, nebo ne.  
+Podmínka `if` nám umožňuje rozhodnout, jestli se určitý kus kódu vykoná, nebo ne.
 Používá se k tomu pravdivostní hodnoty true(pravda) a false(nepravda).
 
 Například, pokud máme proměnnou `podmínka` typu boolean, pak následující kód:
@@ -43,8 +43,8 @@ if (podmínka) {
 }
 ```
 
-znamená:  
-Pokud je `podmínka` pravda (`true`), proměnná `result` bude mít hodnotu 20.  
+znamená:
+Pokud je `podmínka` pravda (`true`), proměnná `result` bude mít hodnotu 20.
 Pokud je `podmínka` nepravda (`false`), `result` zůstane 10.
 
 Podmínky často používáme i pro porovnávání čísel. Například:
@@ -95,16 +95,16 @@ Druhou variantou je použití předdefinovaných barev, které jsou v souboru `c
 
 ```ts
 ledStrip.set(0, colors.off); // Vypne LEDku pomocí předdefinované barvy
-ledStrip.set(0, { r: 0, g: 0, b: 0 }); // Vypne LEDku pomocí vlastní barvy
+ledStrip.set(0, colors.rgb(0, 0, 0)); // Vypne LEDku pomocí vlastní barvy
 
 ledStrip.set(0, colors.green); // Rozsvítí LEDku zeleně pomocí předdefinované barvy
-ledStrip.set(0, { r: 0, g: 255, b: 0 }); // Rozsvítí LEDku zeleně pomocí vlastní barvy
+ledStrip.set(0, colors.rgb(0, 255, 0)); // Rozsvítí LEDku zeleně pomocí vlastní barvy
 ```
 
 
 
 
-Vytvoříme si nový projekt z odkazu: 
+Vytvoříme si nový projekt z odkazu:
 
 === "Odkaz"
     ```

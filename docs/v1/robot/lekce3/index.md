@@ -83,10 +83,10 @@ Druhou variantou je použití předdefinovaných barev, které jsou v souboru `c
 
   ```ts
   ledStrip.set(0, colors.off); // Vypne LEDku pomocí předdefinované barvy
-  ledStrip.set(0, {r: 0, g: 0, b: 0}); // Vypne LEDku pomocí vlastní barvy
+  ledStrip.set(0, colors.rgb(0, 0, 0)); // Vypne LEDku pomocí vlastní barvy
 
   ledStrip.set(0, colors.green); // Rozsvítí LEDku zeleně pomocí předdefinované barvy
-  ledStrip.set(0, {r: 0, g: 255, b: 0}); // Rozsvítí LEDku zeleně pomocí vlastní barvy
+  ledStrip.set(0, colors.rgb(0, 255, 0)); // Rozsvítí LEDku zeleně pomocí vlastní barvy
   ```
 
 Pro tuto lekci si stáhneme [zip](./project3.zip), nebo navážeme na předchozí cvičení. Své řešení budeme psát do souboru `index.ts`.

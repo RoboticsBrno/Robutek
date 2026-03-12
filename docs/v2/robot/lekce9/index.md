@@ -52,7 +52,7 @@ radio.sendNumber(-2.42);
 
         ```ts
         radio.sendString(`Hodnota: ${counter}`);
-        ``` 
+        ```
 
      - Číslo: při odeslání musíme číslo __bitshiftnout__ doleva a přičíst jedničku nebo nulu, při příjmu __bitshiftnout__ doprava
 
@@ -60,10 +60,10 @@ radio.sendNumber(-2.42);
         let counter = 0;
         let value = 42;
 
-        // Operátor "<<" bitshiftne levý operand o pravý operand bitů doleva, 
+        // Operátor "<<" bitshiftne levý operand o pravý operand bitů doleva,
         // přičtením zbytku po dělení 2 a následném přičtení jedničky zajistíme
         // střídání 0 a 1 na posledním bitu zprávy
-        radio.sendNumber((value << 1) + (counter % 2));   
+        radio.sendNumber((value << 1) + (counter % 2));
         counter++;
 
         // Při příjmu čísla získáme hodnotu bitshiftnutím doprava o jeden bit,
@@ -206,4 +206,4 @@ Najděte kamaráda, abyste si mohli navzájem zkusit, zda program funguje (jeden
 
 ## Výchozí úkol V1
 
-Změňte program ze zadání A tak, aby místo tlačítek vyčítal čárový senzor. Na LED pásku se bude zobrazovat hodnota senzoru jako jas bílé barvy LED. Využijte k  RGB objekt `ledStrip.set(0, {r: RED, g: GREEN, b: BLUE})`. Pokud jsou hodnoty `RED`, `GREEN`, `BLUE` stejné, smíchají se do bílého světla. Jas tohoto světla určí pak velikost hodnoty, tedy při hodnotě 0 bude LED vypnutá, při hodnotě 255 bude svítit maximálně.
+Změňte program ze zadání A tak, aby místo tlačítek vyčítal čárový senzor. Na LED pásku se bude zobrazovat hodnota senzoru jako jas bílé barvy LED. Pro popis barvy použijte funkci `colors.rgb(RED, GREEN, BLUE)`. Pokud jsou hodnoty `RED`, `GREEN`, `BLUE` stejné, smíchají se do bílého světla. Jas pak určí velikost hodnoty, tedy při hodnotě 0 bude LED vypnutá, při hodnotě 255 bude svítit maximálně.

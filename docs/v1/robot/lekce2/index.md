@@ -28,7 +28,7 @@ Barvu LED nastavíme pomocí `ledStrip.set(0, colors.<nějaká_barva>)` a zobraz
 
     const ledStrip = new SmartLed(robutek.Pins.ILED, 1, LED_WS2812); // robutek.Pins.ILED je pin 48
 
-    ledStrip.set(0, colors.red); // nastaví barvu první LED na červenou (RGB 255 0 0)
+    ledStrip.set(0, colors.red); // nastaví barvu první LED na červenou
     ledStrip.show(); // zobrazí nastavení na LED
     ```
 
@@ -72,12 +72,12 @@ Pomocí událostí rozsvítíme při stisknutí tlačítka (`GPIO 0`) RGB LED na
     gpio.pinMode(robutek.Pins.ButtonRight, gpio.PinMode.INPUT); // nastaví pin 0 jako vstup
 
     gpio.on("falling", robutek.Pins.ButtonRight, () => { // událost, která proběhne při stisknutí tlačítka připojeného na pin 0
-        ledStrip.set(0, colors.red); // nastaví barvu první LED na červenou (RGB 255 0 0)
+        ledStrip.set(0, colors.red); // nastaví barvu první LED na červenou
         ledStrip.show(); // zobrazí nastavení na LED
     });
 
     gpio.on("rising", robutek.Pins.ButtonRight, () => { // událost, která proběhne při puštění tlačítka připojeného na pin 0
-        ledStrip.set(0, colors.off); // nastaví první LED na zhasnutou (RGB 0 0 0)
+        ledStrip.set(0, colors.off); // nastaví první LED na zhasnutou
         ledStrip.show(); // zobrazí nastavení na LED
     });
     ```

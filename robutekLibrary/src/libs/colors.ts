@@ -4,68 +4,80 @@
  * - G: zelená (rozsah 0-255)
  * - B: modrá (rozsah 0-255)
  */
-export interface Rgb {
-    r: number;
-    g: number;
-    b: number;
+export type Color = number;
+
+
+/** * Vytvoří barvu z RGB hodnot
+ * @param r Red (0-255)
+ * @param g Green (0-255)
+ * @param b Blue (0-255)
+ * @returns Zadanou barvu
+ */
+export function rgb(r: number, g: number, b: number): Color {
+    r = r & 0xff;
+    g = g & 0xff;
+    b = b & 0xff;
+    return (r << 16) | (g << 8) | b;
 }
 
 
 /**
- * Alternativní způsob, jak vyjádřit barvu, je HSL:
- * - Hue: odstín (rozsah 0-360)
- * - Saturation: sytost barev (rozsah 0-1)
- * - Lightness: světlost (rozsah 0-1)
+ * Vytvoří barvu z HSL hodnot
+ * @param h Hue (0-360)
+ * @param s Saturation (0-1)
+ * @param l Lightness (0-1)
+ * @returns Zadanou barvu
  */
-export interface Hsl {
-    h: number;
-    s: number;
-    l: number;
-}
-
-/**
- * Mezi jednotlivými reprezentacemi lze převádět
- * @param hsl {Number} Hue (0-360), Saturation (0-1), Lightness (0-1)
- * @returns {Rgb} Red (0-255), Green (0-255), Blue (0-255)
- */
-export function hsl_to_rbg( hsl: Hsl ) : Rgb {
-    const chroma = ( 1 - Math.abs( 2 * hsl.l - 1 ) * hsl.s );
-    const hue = hsl.h / 60;
+export function hsl(h: number, s: number, l: number) : Color {
+    const chroma = ( 1 - Math.abs( 2 * l - 1 ) * s );
+    const hue = h / 60;
     const x = chroma * ( 1 - Math.abs( ( hue % 2 ) - 1 ) );
 
-    let color : Rgb = { r: 0, g: 0, b: 0 };
+    let r = 0, g = 0, b = 0;
     if( hue > 0 && hue < 1 ){
-        color = { r: chroma, g: x, b: 0 };
+        r = chroma;
+        g = x;
+        b = 0;
     } else if( hue >= 1 && hue < 2 ){
-        color = { r: x, g: chroma, b: 0 };
+        r = x;
+        g = chroma;
+        b = 0;
     } else if( hue >= 2 && hue < 3 ){
-        color = { r: 0, g: chroma, b: x };
+        r = 0;
+        g = chroma;
+        b = x;
     } else if( hue >= 3 && hue < 4 ){
-        color = { r: 0, g: x, b: chroma };
+        r = 0;
+        g = x;
+        b = chroma;
     } else if( hue >= 4 && hue < 5 ){
-        color = { r: x, g: 0, b: chroma };
+        r = x;
+        g = 0;
+        b = chroma;
     } else {
-        color = { r: chroma, g: 0, b: x };
+        r = chroma;
+        g = 0;
+        b = x;
     }
-    const correction = hsl.l - chroma / 2;
-    color.r = ( color.r + correction ) * 255;
-    color.g = ( color.g + correction ) * 255;
-    color.b = ( color.b + correction ) * 255;
+    const correction = l - chroma / 2;
+    r = ( r + correction ) * 255;
+    g = ( g + correction ) * 255;
+    b = ( b + correction ) * 255;
 
-    return color;
+    return rgb( r, g, b );
 }
 
 /**
- * Funkce rainbow zafixuje sytost a světlost, a prochází barvami
+ * Vytvoří barvu podle odstínu a jasu
  * @param hue (0-360)
  * @param brightness (0-100) - 50 je defaultní hodnota
- * @returns {Rgb}
+ * @returns Zadanou barvu
  */
-export function rainbow( hue: number, brightness: number = 50) : Rgb {
+export function rainbow( hue: number, brightness: number = 50) : Color {
     hue = Math.min( hue, 360 ); // Zajistíme, že zadaná hodnota není mimo rozsah
     // fix range to 0-100
     let brightness_mapped = Math.min(Math.max(brightness, 0), 100);
-    return hsl_to_rbg( { h: hue, s: 1, l: brightness_mapped / 100 } );
+    return hsl(hue, 1, brightness_mapped / 100);
 }
 
 /* Základní barvy pro LED pásky*/
@@ -77,14 +89,18 @@ export const light_blue = rainbow( 177 );
 export const blue = rainbow( 240 );
 export const purple = rainbow( 285 );
 export const pink = rainbow( 323 );
-export const white : Rgb = { r: 100, g: 100, b: 100 };
-export const off : Rgb = { r: 0, g: 0, b: 0 };
+export const white : Color = rgb(100, 100, 100);
+export const off : Color = rgb(0, 0, 0);
 
-export function sensorDataToRGB(data: [number, number, number]): Rgb {
+
+export function sensorDataToRGB(data: [number, number, number]): Color {
     const [r, g, b] = data;
-    return {
-        r: r * 255,
-        g: g * 255,
-        b: b * 255
-    };
+    return rgb(r, g, b);
+}
+
+export function rgbComponents(color: Color): [number, number, number] {
+    const r = (color >> 16) & 0xff;
+    const g = (color >> 8) & 0xff;
+    const b = color & 0xff;
+    return [r, g, b];
 }

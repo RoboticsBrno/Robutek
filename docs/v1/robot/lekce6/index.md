@@ -67,6 +67,7 @@ Napíšeme program, který bude pomocí dat z senzoru kolem kol měnit jas RGB L
     ```ts
     import * as adc from "adc";
     import * as gpio from "gpio";
+    import * as colors from "./libs/colors.js";
     import { SmartLed, LED_WS2812 } from "smartled";
 
     const SENSOR_PIN: number  = 4; // pin levého předního senzoru
@@ -90,7 +91,7 @@ Napíšeme program, který bude pomocí dat z senzoru kolem kol měnit jas RGB L
         const value: number  = mapADC(255, adc.read(SENSOR_PIN));
 
         for(let i = 0; i<LED_COUNT; i++) {
-            ledStrip.set(i, {r: value, g: (255 - value*8), b: 0}) // nastavíme intenzitu červené barvy na hodnotu z Senzoru čáry (0-255) a zároveň čím více se povrch pod robůtkem bude blížit bílé tím více bude barva fialová
+            ledStrip.set(i, colors.rgb(value, (255 - value*8), 0)) // nastavíme intenzitu červené barvy na hodnotu z Senzoru čáry (0-255) a zároveň čím více se povrch pod robůtkem bude blížit bílé tím více bude barva fialová
         }
 
         ledStrip.show();
@@ -177,15 +178,3 @@ setInterval(() => { // každých 100 ms vyčteme data a vypíšeme je do konzole
 
 }, 1000);
 ``` -->
-
-
-
-
-
-
-
-
-
-
-
-

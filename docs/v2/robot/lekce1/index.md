@@ -50,7 +50,7 @@ Pokud nám funguje připojení na :material-eye:`Monitor` a běží nám komunik
 2. Poté zvolíme :material-arrow-right:`Build, Flash and Monitor` pro nahrání programu do zařízení.
 
 	!!! danger "Pokud se program nenahraje za ~10 vteřin, zkuste zmáčknout tlačítko označené `EN` a program nahrát znovu."
-	
+
 	![První program](./assets/first-code.png)
 	<!-- TODO: update 2 and 3 current library and jaculus implementations -->
 3. Měli bychom vidět výstup z programu.
@@ -93,13 +93,13 @@ Ve zdrojovém kódu jsou komentáře (`// tohle je komentář`), které nám pop
 4. Upravíme barvu.
 
     ??? note "Řešení"
-        Barvu lze zadat ve formátu RGB - poměr červené, zelené a modré barvy 
+        Barvu lze zadat ve formátu RGB - poměr červené, zelené a modré barvy
         ```ts
         ...
-        ledStrip.set(0, { r: 0, g: 255, b: 0 }); // nastavíme barvu LED na Robůtkovi na zelenou
+        ledStrip.set(0, colors.rgb(0, 255, 0)); // nastavíme barvu LED na Robůtkovi na zelenou
         ...
         ```
-        Můžeme také využít předem definované barvy. 
+        Můžeme také využít předem definované barvy.
         ```ts
         import * as colors from "./libs/colors.js"; // musíme na začátku programu importovat knihovnu s barvami
         ledStrip.set(0, colors.blue); // nastavíme barvu na modrou

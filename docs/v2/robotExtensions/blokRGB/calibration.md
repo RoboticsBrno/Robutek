@@ -23,6 +23,7 @@ Kalibrační program využívající tyto funkce pak vypadá takto. Tento progra
 import { I2C1 } from "i2c";
 import { ZSCS2016C } from "./libs/zscs2016c.js";
 import { createRobutek } from "./libs/robutek.js"
+import * as colors from "./libs/colors.js";
 import { SmartLed, LED_WS2812B } from "smartled";
 
 const robutek = createRobutek("V2");
@@ -32,8 +33,8 @@ const sensor = new ZSCS2016C(I2C1, true);
 
 const ledStrip = new SmartLed(robutek.Pins.ILED, 7, LED_WS2812B);
 
-ledStrip.set(1, { r: 255, g: 255, b: 255 });
-ledStrip.set(2, { r: 255, g: 255, b: 255 });
+ledStrip.set(1, colors.rgb(255, 255, 255));
+ledStrip.set(2, colors.rgb(255, 255, 255));
 ledStrip.show();
 
 sensor.enable();
@@ -69,6 +70,7 @@ Kalibraci je nutné provádět pouze jednou. Poté se perzestentně ukládají p
 import { I2C1 } from "i2c";
 import { ZSCS2016C } from "./libs/zscs2016c.js";
 import { createRobutek } from "./libs/robutek.js"
+import * as colors from "./libs/colors.js";
 import { SmartLed, LED_WS2812B } from "smartled";
 
 const robutek = createRobutek("V2");
@@ -77,8 +79,8 @@ I2C1.setup({ sda: robutek.Pins.SDA, scl: robutek.Pins.SCL, bitrate: 400000 });
 const sensor = new ZSCS2016C(I2C1, true);
 
 const ledStrip = new SmartLed(robutek.Pins.ILED, 7, LED_WS2812B);
-ledStrip.set(1, { r: 255, g: 255, b: 255 });
-ledStrip.set(2, { r: 255, g: 255, b: 255 });
+ledStrip.set(1, colors.rgb(255, 255, 255));
+ledStrip.set(2, colors.rgb(255, 255, 255));
 ledStrip.show();
 
 sensor.enable();

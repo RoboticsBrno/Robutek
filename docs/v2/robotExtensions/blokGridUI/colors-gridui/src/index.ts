@@ -14,8 +14,9 @@ const DEVICE_NAME = "robutek";
 
 let text = "rgb(0 0 0)";
 
-function colorToRgbString(col:colors.Rgb){ // překládá rgb barvu na string pro GridUI
-    return "rgb(" + Math.trunc(col.r) + " " + Math.trunc(col.g) + " " + Math.trunc(col.b) + ")"
+function colorToRgbString(col: colors.Color){ // překládá rgb barvu na string pro GridUI
+    let [r, g, b] = colors.rgbComponents(col);
+    return "rgb(" + r + " " + g + " " + b + ")"
 };
 
 setInterval(() => {
@@ -33,7 +34,6 @@ Layout.begin(OWNER, DEVICE_NAME, builder => {
         text = colorToRgbString(col);
         Layout.Led.color = text; // nastavuje barvu ledky na rozhraní
         Layout.Text.text = text; // vypisuje rgb kód v textovém poli na rozhraní
-        
     });
 });
 
