@@ -1,4 +1,4 @@
----
+--- 
 title: Robůtek
 ---
 
@@ -9,14 +9,14 @@ title: Robůtek
     <h2 style="margin-top:0;">Rozcestník</h2>
     <ol>
       <li><a href="#uvod">Úvod</a></li>
-      <li><a href="robotAssembly/stage1.md">Návod na složení</a></li>
-      <li><a href="hardware/index.md">Hardware reference</a></li>
-      <li><a href="robot/index.md">Programovací lekce</a></li>
+      <li><a href="robotAssembly/stage1/">Návod na složení</a></li>
+      <li><a href="hardware/">Hardware reference</a></li>
+      <li><a href="robot/">Programovací lekce</a></li>
     </ol>
     <a href="https://lectronz.com/products/robutek" class="md-button md-button--primary">→ Koupit Robutka</a>
   </div>
   <div>
-    <img src="/robot/assets/Robutek.png" alt="Robůtek" style="width: 100%; border-radius: 8px;">
+    <img src="robot/assets/Robutek.png" alt="Robůtek" style="width: 100%; border-radius: 8px;">
   </div>
 </div>
 
