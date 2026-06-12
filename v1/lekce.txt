@@ -1,0 +1,39 @@
+Táborové lekce: želvička 2024
+
+Technický blok:
+Instalace Jaculus a IDE (simulátor?)
+Bezdrát, ovládání přes bt (?)
+Mechanická výroba (?): skládání robota a mechanické zvedání tužky, nárazníky?
+Bločky?
+Diferenciální řízení
+Senzorika
+
+Základy programování:
+Struktura programu
+Proměnné a podmínky
+Události (první tři asi lze převzít z minulého tábora)
+Řídicí struktury (tady by se to pěkně ukazovalo v simulátoru s kreslící želvičkou)
+Řetězce
+Rekurze (?)
+OOP (?)
+
+Základy algoritmiky:
+Graf
+Fronta, zásobník
+Hledání nejkratší cesty
+
+Jízda v bludišti a po čáře - úvodní lekce
+
+Projekty: skupinky, soutěž o nejlepší čas
+
+Simulátor specifikace:
+- 2D vykreslování
+- Schopnost kreslit čáry a překážky, export a import JSON
+- Řízení robota: z klávesnice nebo jako popis instrukcí
+ + Šipky pro zrychlení: pravá-levá zvedne rychlost jednoho z motorů, dopředu a dozadu sníží rychlost obou současně (?)
+ + Pseudokód (JavaScript?) specifikující chování robota (e.g. když narazím na čáru nebo detekuju zeď - změním směr, nebo pomocí cyklů (událostí) kreslím obrázek)
+- Senzorika:
+ + Senzory čáry tak jak jsou na robotovi, přepínání mezi krajními a čárovými jedním tlačítkem
+ + Lidar: dám si ho na robota jak chci, ručně nasměruji, potom mi při požadavku čtení vrátí vzdálenost zdi kterou našel.
+   Ve směru překážky mi vrací normální rozdělení kolem skutečné hodnoty, ve větší vzdálenosti s nějakou pravděpodobností selže.
+   Hodnoty bych dal nastavitelné (pro nás, abychom to upravili na základě skutečných hodnot), ale dětem už bych je zafixoval a schoval.

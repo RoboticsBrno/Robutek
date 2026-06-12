@@ -1,0 +1,62 @@
+body > header > nav > a {
+	background-color: white;
+	border-radius: 20px;
+	padding: .2rem !important;
+}
+
+body > header > nav > a > img{
+	height: 1.6rem !important; 
+}
+
+body > div.md-container > main > div > div.md-sidebar.md-sidebar--primary > div > div > nav > label > a > img {
+	background-color: white;
+	border-radius: 50px;
+}
+
+
+nav img:hover {
+	animation-name: spin;
+	animation-duration: 500ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+
+/* #fancy-image { */
+.fancy-image:hover {
+	animation-name: spin;
+	animation-duration: 2000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+#indexHead {
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
+	align-items: flex-end;
+	justify-content: space-around;
+}
+
+.col--1 {
+	flex: 1;
+}
+
+[data-md-color-scheme="default"] img {
+	-webkit-filter: drop-shadow(0px 0px 2px #222222);
+	filter: drop-shadow(0px 0px 2px #222222);
+}
