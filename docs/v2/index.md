@@ -4,8 +4,8 @@ title: Robůtek
 
 # Vítejte na stránkách projektu Robůtek!
 
-<div style="display:grid; grid-template-columns: 1fr 2fr; gap:30px; align-items:start; margin-bottom:30px;">
-  <div>
+<div style="display:flex; flex-wrap:wrap; gap:30px; margin-bottom:30px; align-items:flex-start;">
+  <div style="flex:1 1 320px; min-width:320px;">
     <h2 style="margin-top:0;">Rozcestník</h2>
     <ol>
       <li><a href="#uvod">Úvod</a></li>
@@ -15,8 +15,8 @@ title: Robůtek
     </ol>
     <a href="https://lectronz.com/products/robutek" class="md-button md-button--primary">→ Koupit Robutka</a>
   </div>
-  <div>
-    <img src="robot/assets/Robutek.png" alt="Robůtek" style="width: 100%; border-radius: 8px;">
+  <div style="flex:2 1 320px; min-width:320px;">
+    <img src="robot/assets/Robutek.png" alt="Robůtek" style="width: 100%; border-radius: 8px; display:block;">
   </div>
 </div>
 
