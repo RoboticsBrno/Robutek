@@ -16,7 +16,7 @@ title: Robutek
     <a href="https://lectronz.com/products/robutek" class="md-button md-button--primary">→ Buy Robutek</a>
   </div>
   <div>
-    <img src="robot/assets/Robutek.png" alt="Robutek" style="width: 100%; border-radius: 8px;">
+    <img src="../robot/assets/Robutek.png" alt="Robutek" style="width: 100%; border-radius: 8px;">
   </div>
 </div>
 

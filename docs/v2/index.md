@@ -20,7 +20,7 @@ title: Robůtek
   </div>
 </div>
 
-<!-- ## Rozcestník    
+<!-- ## Rozcestník
 
 1. [Úvod](#uvod)
 2. [Návod na složení](robotAssembly/stage1.md)
