@@ -4,12 +4,30 @@ title: Robůtek
 
 # Vítejte na stránkách projektu Robůtek!
 
-## Rozcestník
+<div style="display:grid; grid-template-columns: 1fr 2fr; gap:30px; align-items:start; margin-bottom:30px;">
+  <div>
+    <h2 style="margin-top:0;">Rozcestník</h2>
+    <ol>
+      <li><a href="#uvod">Úvod</a></li>
+      <li><a href="robotAssembly/stage1.md">Návod na složení</a></li>
+      <li><a href="hardware/index.md">Hardware reference</a></li>
+      <li><a href="robot/index.md">Programovací lekce</a></li>
+    </ol>
+    <a href="https://lectronz.com/products/robutek" class="md-button md-button--primary">→ Koupit Robutka</a>
+  </div>
+  <div>
+    <img src="/robot/assets/Robutek.png" alt="Robůtek" style="width: 100%; border-radius: 8px;">
+  </div>
+</div>
+
+<!-- ## Rozcestník    
 
 1. [Úvod](#uvod)
 2. [Návod na složení](robotAssembly/stage1.md)
 3. [Hardware reference](hardware/index.md)
 4. [Programovací lekce](robot/index.md)
+
+[→ Koupit Robutka](https://lectronz.com/products/robutek){ .md-button .md-button--primary } -->
 
 ## Úvod
 

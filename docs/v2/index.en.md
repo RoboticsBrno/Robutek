@@ -4,13 +4,28 @@ title: Robutek
 
 # Welcome to the Robutek project page
 
-## Quick links
+<!-- ## Quick links
 
 1. [Introduction](#introduction)
 2. [Assembly guide](robotAssembly/stage1.md)
 3. [Hardware reference](hardware/index.md)
-4. [Programming lessons](robot/index.md)
+4. [Programming lessons](robot/index.md) -->
 
+<div style="display:grid; grid-template-columns: 1fr 2fr; gap:30px; align-items:start; margin-bottom:30px;">
+  <div>
+    <h2 style="margin-top:0;">Quick links</h2>
+    <ol>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="robotAssembly/stage1.md">Hardware reference</a></li>
+      <li><a href="hardware/index.md">Hardware reference</a></li>
+      <li><a href="robot/index.md">Programming lessons</a></li>
+    </ol>
+    <a href="https://lectronz.com/products/robutek" class="md-button md-button--primary">→ Buy Robutek</a>
+  </div>
+  <div>
+    <img src="/robot/assets/Robutek.png" alt="Robůtek" style="width: 100%; border-radius: 8px;">
+  </div>
+</div>
 ## Introduction
 
 !!! note "This documentation is for Robutek V2."
